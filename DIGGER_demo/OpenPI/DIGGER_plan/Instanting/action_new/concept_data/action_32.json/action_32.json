@@ -1,0 +1,4 @@
+[
+    "(:action clean ; Clean a specified area or item and update its status\n  :parameters (?agent - player ?target - object ?location - location)\n  :precondition (and\n    (at ?target ?location)\n    (at ?agent ?location)\n    (or (dusty ?location) (full ?target) (dirty ?target)))\n  :effect (and\n    (or (dust_free ?location) (clean ?target) (not (full ?target))",
+    "(:action pickup\n  :parameters (?item - object ?container - object ?agent - person)\n  :precondition (and (at ?item around_house) (at ?agent around_house))\n  :effect (and (inventory ?agent ?item) (not (at ?item around_house))"
+]

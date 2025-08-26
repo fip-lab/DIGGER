@@ -1,0 +1,136 @@
+[
+    {
+        "title": "How to Use Almond Milk",
+        "steps": [
+            "Combine almond milk with protein powder.",
+            "Consume almond milk for its nutritional or dietary value."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Make Almond Milk Yogurt",
+        "steps": [
+            "Make the almond milk.",
+            "Add culture starter to the milk.",
+            "Ferment the almond yogurt mixture.",
+            "Place the fermented almond yogurt into the refrigerator to slow down fermentation.",
+            "Place a piece of cheesecloth over a mason jar opening and put on the outer lid to keep the cheesecloth in place.",
+            "Pour the fermented almond yogurt over the cheesecloth to allow the yogurt to strain into the jar.",
+            "Finished."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Make Almond Flour or Meal",
+        "steps": [
+            "Place any amount of sprouted almonds in a food processor, coffee bean grinder, Vitamix, or blender.",
+            "Pulse the almonds in the food processor for less time than you might have making almond flour.",
+            "Use immediately or label and store in a chilled place."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Use Almond Meal",
+        "steps": [
+            "Research the nutritional significance of almond meal.",
+            "Find recipes that use almond meal.",
+            "Prepare your own almond meal.",
+            "Buy almond meal from a health food store.",
+            "Use almond meal as a thickening agent.",
+            "Use almond meal as a flour substitute.",
+            "Use almond meal as an additive in sweets and desserts.",
+            "Use almond meal as a staple in a raw food diet."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Make an Almond Milkshake",
+        "steps": [
+            "Add some almonds or oats for extra crunch, protein, and fiber.",
+            "Try a simple banana-vanilla smoothie.",
+            "Try a peanut butter-chocolate-banana smoothie for extra protein.",
+            "Try a yogurt based almond milkshake if you can have dairy.",
+            "Try an ice cream based coffee almond milkshake if you can have dairy."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Eat Almonds",
+        "steps": [
+            "Go for whole, raw almonds.",
+            "Avoid almonds if you have problems with your kidneys or gallbladders.",
+            "Make sure almonds don't interact with your medication."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Use Sour Milk",
+        "steps": [
+            "Bake with it.",
+            "Use sour milk to make desserts.",
+            "Make scrambled eggs using sour milk.",
+            "Turn it into cheese.",
+            "Add sour milk main meal dishes that have a creamy consistency or a cheesy, creamy topping.",
+            "Make chocolate milk.",
+            "Use it for pet food.",
+            "Make a sour milk face mask."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Make Almond Butter",
+        "steps": [
+            "Enjoy almond butter straight from the fridge.",
+            "Add almond butter to smoothies.",
+            "Bake cookies with almond butter.",
+            "Make an almond butter cake."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Use Nuts in Desserts",
+        "steps": [
+            "Use nuts as toppings and fillings for puddings, crumbles and dessert cakes.",
+            "Make baklava for dessert.",
+            "Make dessert pies with nuts.",
+            "Cream nuts to use as fillings or to substitute for cream.Nut creams can be very useful at dessert time, helping to fill out a dessert pie or dish, or serving as a non-dairy alternative to cream.",
+            "Add nuts to ice cream or make ice cream from nuts.",
+            "Make nut cakes for dessert."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Buy Almond Milk",
+        "steps": [
+            "Clarify the type of almond milk for which you are looking.",
+            "Visit the websites of popular almond milk brands like Silk Pure Almond, Blue Diamond Almond Breeze, and Pacific Foods to find coupons for almond milk from these brands.",
+            "Enroll in supermarket clubs and sign up to get coupons.",
+            "Buy almond milk in bulk online.",
+            "Call the grocery store before visiting, if you do not know whether they carry almond milk.",
+            "Purchase almond milk from large grocery stores, like Safeway or Tesco.",
+            "Go to a natural or organic food store to find specialty almond milk.",
+            "Ask your local market to carry almond milk, if it's not currently in stock."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Remove Lactose from Milk",
+        "steps": [
+            "Buy lactose-free milk that has already had its lactose removed.",
+            "Try drinking chocolate milk if you find it doesn\u2019t affect you.",
+            "Opt for a non-dairy milk to have naturally lactose-free milk.",
+            "Drink milk with food if you don\u2019t have any alternatives."
+        ],
+        "cluster_label": 196
+    },
+    {
+        "title": "How to Choose Between Nut Milks",
+        "steps": [
+            "Opt for almond milk if you\u2019re on a budget.",
+            "Pick almond milk if you want to try the most popular type of nut milk.",
+            "Try different nut milks to see which tastes the best to you.",
+            "Check the percentage of nuts a milk contains before buying it."
+        ],
+        "cluster_label": 196
+    }
+]

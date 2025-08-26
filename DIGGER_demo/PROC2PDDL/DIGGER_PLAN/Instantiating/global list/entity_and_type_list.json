@@ -1,0 +1,156 @@
+[
+    {
+        "3-decorate": {
+            "character": "?npc",
+            "part": "?entity",
+            "supply": "?item",
+            "costume": "?clothing",
+            "disguise": "?clothing"
+        }
+    },
+    {
+        "prepare_meat": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "pick_hard_lock": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "finishing_papyrus": {
+            "day": "?state",
+            "board": "?object",
+            "finishing_papyrus": "?p",
+            "step": "?state",
+            "papyrus": "?p",
+            "ivory": "?object",
+            "process": "?state",
+            "shell": "?object",
+            "ridge": "?object",
+            "type": "?state",
+            "one": "?state",
+            "sheet": "?object",
+            "hour": "?state",
+            "piece": "?object",
+            "linen": "?object",
+            "stone": "?object",
+            "slab": "?object",
+            "paper": "?object"
+        }
+    },
+    {
+        "gather_kindling": {
+            "bark": "?object",
+            "energy": "?object",
+            "tree": "?object",
+            "foot": "?object",
+            "flame": "?object",
+            "split": "?object",
+            "m": "?object",
+            "kindling": "?object",
+            "needle": "?object",
+            "leave": "?object",
+            "help": "?task",
+            "thing": "?object",
+            "branch": "?object",
+            "area": "?area",
+            "fire": "?object",
+            "tinder": "?object",
+            "water": "?object",
+            "trunk": "?object",
+            "building": "?object",
+            "wood": "?object",
+            "food": "?object",
+            "stick": "?stick",
+            "ground": "?place",
+            "twig": "?object",
+            "material": "?object",
+            "shelter": "?object",
+            "grass": "?object"
+        }
+    },
+    {
+        "make_papyrus": {
+            "bet": "?object",
+            "cyperus": "?object",
+            "plant": "?object",
+            "papyrus": "?p",
+            "reed": "?object",
+            "nursery": "?location",
+            "river": "?location",
+            "grass": "?object",
+            "make_papyrus": "?action",
+            "paper": "?object"
+        }
+    },
+    {
+        "move_to_bunker": {
+            "damage": "?object",
+            "hiding": "?state",
+            "protection": "?state",
+            "place": "?location",
+            "building": "?building",
+            "sight": "?state",
+            "brick": "?material",
+            "move_to_bunker": "?action",
+            "type": "?state",
+            "shelter": "?building",
+            "area": "?location",
+            "basement": "?basement"
+        }
+    },
+    {
+        "ready_sc": {
+            "day": "?context",
+            "place": "?location",
+            "help": "?context",
+            "minute": "?context",
+            "society": "?context",
+            "loss": "?context",
+            "fridge": "?object",
+            "electricity": "?resource",
+            "electronic": "?object",
+            "stuff": "?object",
+            "home": "?location",
+            "chaos": "?context",
+            "lot": "?context",
+            "food": "?resource",
+            "kilometer": "?context",
+            "ready_sc": "?context",
+            "mile": "?context",
+            "danger": "?context",
+            "shelter": "?location",
+            "confusion": "?context",
+            "odd": "?context",
+            "shortage": "?context"
+        }
+    },
+    {
+        "heal-old-man": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    }
+]

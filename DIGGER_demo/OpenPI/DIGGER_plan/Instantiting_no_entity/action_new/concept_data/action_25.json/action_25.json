@@ -1,0 +1,4 @@
+[
+    "(:action place ; Place an item and update its status\n :parameters (?p - player ?item - object ?target - location)\n :precondition (and (inventory ?p ?item) (at ?p ?target) (suitable ?target ?item))\n :effect (and (placed ?item ?target) (not (inventory ?p ?item))",
+    "(:action blend\n    :parameters (?p - player ?item1 - object ?item2 - object ?bl - blender)\n    :precondition (and \n                    (at ?p ?bl)\n                    (is_blender ?bl)\n                    (or \n                        (and (in_blender ?bl bananas) (in_blender ?bl sorbet) (in_blender ?bl yogurt))\n                        (and (inventory ?p ?item1) (blended ?bl))\n                    )\n                  )\n    :effect (and \n                (or \n                    (and (blended ?bl) (smooth_texture ?bl))"
+]

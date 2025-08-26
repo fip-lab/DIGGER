@@ -1,0 +1,374 @@
+{
+    "goal": "Freeze Baked Cookies or Biscuits",
+    "steps": [
+        "Place the biscuits or cookies into a rigid, airtight container.",
+        "Separate the biscuits and cookies using freezer paper, baking paper, or foil.",
+        "Place biscuits in freezer.",
+        "Thaw."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/9/97/Freeze-cookies-Step-1.jpg/aid517416-v4-728px-Freeze-cookies-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/d/d3/Freeze-cookies-Step-2.jpg/aid517416-v4-728px-Freeze-cookies-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/a/a5/Freeze-cookies-Step-3.jpg/aid517416-v4-728px-Freeze-cookies-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/e/e8/Freeze-cookies-Step-4.jpg/aid517416-v4-728px-Freeze-cookies-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "the cookies",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "on plate | on tray",
+                        "after": "in container",
+                        "saliency": 0.5988612836438924,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "placement",
+                        "before": "in different container",
+                        "after": "now in airtight container",
+                        "saliency": 0.5492581090407177,
+                        "attribute_annotation": "placement"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "on sheet",
+                        "after": "in lined tin",
+                        "saliency": 0.6765010351966874,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "unlined",
+                        "after": "lined",
+                        "saliency": 0.4202035886818496,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "touching | together",
+                        "after": "seperated | separated",
+                        "saliency": 0.3268633540372671,
+                        "attribute_annotation": "organization | position"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "on table | on counter",
+                        "after": "in freezer",
+                        "saliency": 0.5471014492753623,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "flexibility",
+                        "before": "pliable",
+                        "after": "hard",
+                        "saliency": 0.4133885438233264,
+                        "attribute_annotation": "flexibility"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm",
+                        "after": "frozen | cold | freezing",
+                        "saliency": 0.3146997929606625,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "soft",
+                        "after": "hard",
+                        "saliency": 0.28583505866114567,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "placement",
+                        "before": "in freezer",
+                        "after": "now outside freezer",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "placement"
+                    },
+                    {
+                        "attribute": "flexibility",
+                        "before": "hard",
+                        "after": "chewy",
+                        "saliency": 0.3616287094547964,
+                        "attribute_annotation": "flexibility"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "frozen | cold",
+                        "after": "warm | thawed",
+                        "saliency": 0.3146997929606625,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "hard",
+                        "after": "soft",
+                        "saliency": 0.28583505866114567,
+                        "attribute_annotation": "texture"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "the cookies and biscuits",
+                "cookies | biscuits",
+                "the cookies"
+            ]
+        },
+        {
+            "entity": "baking paper",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "placement",
+                        "before": "outside of bowl",
+                        "after": "now inside of bowl",
+                        "saliency": 0.5708247066942719,
+                        "attribute_annotation": "placement"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on roll",
+                        "after": "in container | between cookies",
+                        "saliency": 0.4155452035886818,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.277864044168392,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "in one piece",
+                        "after": "segmented",
+                        "saliency": 0.2319703243616287,
+                        "attribute_annotation": "size"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "movement",
+                        "before": "in bowl",
+                        "after": "now removed from bowl",
+                        "saliency": 0.6139579020013803,
+                        "attribute_annotation": "movement"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "the aluminum foil",
+                "aluminum foil",
+                "freezer paper",
+                "baking paper",
+                "foil"
+            ]
+        },
+        {
+            "entity": "the bowl",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.3332815734989648,
+                        "attribute_annotation": "volume | fullness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.24059696342305037,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirtied",
+                        "saliency": 0.21765010351966874,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "placement",
+                        "before": "outside of freezer",
+                        "after": "now inside of freezer",
+                        "saliency": 0.5169082125603864,
+                        "attribute_annotation": "placement"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the bowl",
+                "container"
+            ]
+        },
+        {
+            "entity": "freezer",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.40260524499654937,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.3508454106280194,
+                        "attribute_annotation": "volume"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "freezer"
+            ]
+        },
+        {
+            "entity": "tray",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "weight",
+                        "before": "laden",
+                        "after": "empty",
+                        "saliency": 0.31849551414768806,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "tray"
+            ]
+        }
+    ],
+    "clusters": {
+        "the cookies": {
+            "entity_cluster": [
+                "the cookies",
+                "biscuits",
+                "the cookies and biscuits",
+                "cookies"
+            ],
+            "attribute_cluster": {
+                "placement": [
+                    "placement"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "organization": [
+                    "organization"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "location": [
+                    "position",
+                    "location"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "flexibility": [
+                    "flexibility"
+                ]
+            }
+        },
+        "the bowl": {
+            "entity_cluster": [
+                "the bowl",
+                "container"
+            ],
+            "attribute_cluster": {
+                "placement": [
+                    "placement"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "tray": {
+            "entity_cluster": [
+                "tray"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "freezer": {
+            "entity_cluster": [
+                "freezer"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "baking paper": {
+            "entity_cluster": [
+                "foil",
+                "the aluminum foil",
+                "freezer paper",
+                "baking paper",
+                "aluminum foil"
+            ],
+            "attribute_cluster": {
+                "movement": [
+                    "movement"
+                ],
+                "placement": [
+                    "placement"
+                ],
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "size": [
+                    "size"
+                ]
+            }
+        }
+    }
+}

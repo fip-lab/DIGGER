@@ -1,0 +1,6 @@
+[
+    "(:action secure\n    :parameters (?entity - object)\n    :precondition (and\n                    (object ?entity)\n                    (not (secured ?entity)))\n    :effect (secured ?entity)\n)",
+    "(:action learn ; General action for acquiring knowledge or resources\n    :parameters (?p - person ?r - resource ?s - system)\n    :precondition (and\n                    (or (not (knows ?p ?r))\n                        (not (has ?p ?r))\n                        (not (has-system ?p ?s)))\n                    (or (has-access-to-computer ?p)\n                        (has-unix-system ?p)\n                        (open-source ?s)\n                        (unix-based ?s)))\n    :effect (or\n            (knows ?p ?r)\n            (has ?p ?r)\n            (has-system ?p ?s))",
+    "(:action understand ; Acquire knowledge or skills on a specific topic\n    :parameters (?p - person ?topic - subject)\n    :precondition (not (understands ?p ?topic))\n    :effect (understands ?p ?topic)\n)",
+    "(:action setup ; Setup a resource and ensure it is ready for use\n    :parameters (?entity - object)\n    :precondition (and\n                    (secured ?entity)\n                    (not (setup ?entity)))\n    :effect (setup ?entity)\n)"
+]

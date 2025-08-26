@@ -1,0 +1,756 @@
+{
+    "goal": "Paint Bare Wood",
+    "steps": [
+        "Acquire oil based paints, which air dry slowly.",
+        "The under-coat should be thin, and smooth, move your paint brush down the wood, don't paint up or horizontally.",
+        "Paint the second coat, but be much more careful this time, make sure there are no paint bubbles appearing and smooth out any drips or pools left over from the under-coat.",
+        "Be the most precise with this.",
+        "Finished."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/a/af/Paint-Bare-Wood-Step-1.jpg/aid1335470-v4-728px-Paint-Bare-Wood-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/9/9d/Paint-Bare-Wood-Step-2.jpg/aid1335470-v4-728px-Paint-Bare-Wood-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/4/44/Paint-Bare-Wood-Step-3.jpg/aid1335470-v4-728px-Paint-Bare-Wood-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/3/34/Paint-Bare-Wood-Step-4.jpg/aid1335470-v4-728px-Paint-Bare-Wood-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/f/f4/Paint-Bare-Wood-Final.jpg/aid1335470-v4-728px-Paint-Bare-Wood-Final.jpg"
+    ],
+    "states": [
+        {
+            "entity": "paint brush",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.40476190476190477,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "moisture | wetness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.35293933120020077,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "colored",
+                        "saliency": 0.3730001882175795,
+                        "attribute_annotation": "color"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "horizontal",
+                        "after": "moving vertically",
+                        "saliency": 0.2353190287972897,
+                        "attribute_annotation": "orientation"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "moisture | wetness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.5482778091473745,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "paintbrush | the brush",
+                "paint brush",
+                "brush"
+            ]
+        },
+        {
+            "entity": "paint base",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unknown",
+                        "after": "confirmed to be oil",
+                        "saliency": 0.3929983060417843,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "thickness",
+                        "before": "thinner",
+                        "after": "thicker",
+                        "saliency": 0.665913796348579,
+                        "attribute_annotation": "thickness"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "the coating of paint",
+                "paint base"
+            ]
+        },
+        {
+            "entity": "bare wood",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.6070958027479766,
+                        "attribute_annotation": "moisture | wetness"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "tacky",
+                        "saliency": 0.3400150574063618,
+                        "attribute_annotation": "texture"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.3812347073216638,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.6459156785243741,
+                        "attribute_annotation": "moisture | wetness"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "brown",
+                        "after": "white",
+                        "saliency": 0.5247506117071334,
+                        "attribute_annotation": "color"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.3870694522868436,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.6070958027479766,
+                        "attribute_annotation": "moisture | wetness"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "sticky",
+                        "saliency": 0.3400150574063618,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.6070958027479766,
+                        "attribute_annotation": "moisture | wetness"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "wood | the wood",
+                "bare wood"
+            ]
+        },
+        {
+            "entity": "paint",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry",
+                        "saliency": 0.4894598155467721,
+                        "attribute_annotation": "moisture"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in can | on shelf",
+                        "after": "on wood | on work area",
+                        "saliency": 0.2741389045736872,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "ownership",
+                        "before": "owned by art store",
+                        "after": "bought by you",
+                        "saliency": 0.45181629964238657,
+                        "attribute_annotation": "ownership"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "size",
+                        "before": "clumped",
+                        "after": "spread evenly",
+                        "saliency": 0.20529832486354224,
+                        "attribute_annotation": "size"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "texture",
+                        "before": "bubbly",
+                        "after": "smooth",
+                        "saliency": 0.19153020892151326,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "awareness",
+                        "before": "sloppy",
+                        "after": "precise, careful",
+                        "saliency": 0.10471171340736557,
+                        "attribute_annotation": "awareness"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "moisture",
+                        "before": "wet | paint-filled",
+                        "after": "dry | cleaned",
+                        "saliency": 0.26824142041533344,
+                        "attribute_annotation": "moisture | cleanness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "paint | brushes",
+                "oil based paint"
+            ]
+        },
+        {
+            "entity": "bubbles",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent",
+                        "saliency": 0.5518068887634104,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "bubbles",
+                "paint bubbles"
+            ]
+        },
+        {
+            "entity": "coat",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in tin",
+                        "after": "on wood",
+                        "saliency": 0.47769621682665164,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in tin",
+                        "after": "on wood",
+                        "saliency": 0.5165160926030492,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "coat"
+            ]
+        },
+        {
+            "entity": "caulking compound",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.4753434970826275,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "caulking compound",
+                "caulking gun"
+            ]
+        },
+        {
+            "entity": "paint direction",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "direction",
+                        "before": "unknown",
+                        "after": "downward",
+                        "saliency": 0.45181629964238657,
+                        "attribute_annotation": "direction"
+                    },
+                    {
+                        "attribute": "thickness",
+                        "before": "uneven",
+                        "after": "thin and even",
+                        "saliency": 0.45181629964238657,
+                        "attribute_annotation": "thickness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "paint direction",
+                "paint thickness"
+            ]
+        },
+        {
+            "entity": "precision",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "magnitude",
+                        "before": "medium",
+                        "after": "high",
+                        "saliency": 0.4400527009222661,
+                        "attribute_annotation": "magnitude"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "skill",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.3812347073216638,
+                        "attribute_annotation": "skill"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "degree of care",
+                "precision"
+            ]
+        },
+        {
+            "entity": "drop cloth",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.40476190476190477,
+                        "attribute_annotation": "availability"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered",
+                        "saliency": 0.12765857331074723,
+                        "attribute_annotation": "coverage"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed",
+                        "saliency": 0.3929983060417843,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "drop clothq",
+                "drop cloth",
+                "floor"
+            ]
+        },
+        {
+            "entity": "linseed oil",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.40476190476190477,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "linseed oil"
+            ]
+        },
+        {
+            "entity": "pools",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "coverage",
+                        "before": "on wood",
+                        "after": "rubbed even",
+                        "saliency": 0.3730001882175795,
+                        "attribute_annotation": "coverage"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed",
+                        "saliency": 0.2353190287972897,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "drips",
+                "pools"
+            ]
+        },
+        {
+            "entity": "tin",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.3282514586862413,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.3282514586862413,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "tin"
+            ]
+        }
+    ],
+    "clusters": {
+        "bare wood": {
+            "entity_cluster": [
+                "bare wood",
+                "the wood",
+                "wood"
+            ],
+            "attribute_cluster": {
+                "moisture": [
+                    "moisture",
+                    "wetness"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "color": [
+                    "color"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "bubbles": {
+            "entity_cluster": [
+                "paint bubbles",
+                "bubbles"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "precision": {
+            "entity_cluster": [
+                "precision",
+                "degree of care"
+            ],
+            "attribute_cluster": {
+                "magnitude": [
+                    "magnitude"
+                ],
+                "skill": [
+                    "skill"
+                ]
+            }
+        },
+        "pools": {
+            "entity_cluster": [
+                "drips",
+                "pools"
+            ],
+            "attribute_cluster": {
+                "coverage": [
+                    "coverage"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "paint brush": {
+            "entity_cluster": [
+                "the brush",
+                "brush",
+                "paintbrush",
+                "paint brush",
+                "brushes"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "moisture": [
+                    "moisture"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "location": [
+                    "location"
+                ],
+                "size": [
+                    "size"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "awareness": [
+                    "awareness"
+                ],
+                "color": [
+                    "color"
+                ],
+                "orientation": [
+                    "orientation"
+                ]
+            }
+        },
+        "drop cloth": {
+            "entity_cluster": [
+                "floor",
+                "drop clothq",
+                "drop cloth"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability"
+                ],
+                "location": [
+                    "location"
+                ],
+                "coverage": [
+                    "coverage"
+                ]
+            }
+        },
+        "coat": {
+            "entity_cluster": [
+                "coat"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "paint": {
+            "entity_cluster": [
+                "oil based paint",
+                "paint"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "size": [
+                    "size"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "awareness": [
+                    "awareness"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "moisture": [
+                    "moisture"
+                ],
+                "ownership": [
+                    "ownership"
+                ]
+            }
+        },
+        "caulking compound": {
+            "entity_cluster": [
+                "caulking gun",
+                "caulking compound"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "tin": {
+            "entity_cluster": [
+                "tin"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "paint direction": {
+            "entity_cluster": [
+                "paint direction",
+                "paint thickness"
+            ],
+            "attribute_cluster": {
+                "direction": [
+                    "direction"
+                ],
+                "thickness": [
+                    "thickness"
+                ]
+            }
+        },
+        "linseed oil": {
+            "entity_cluster": [
+                "linseed oil"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "paint base": {
+            "entity_cluster": [
+                "the coating of paint",
+                "paint base"
+            ],
+            "attribute_cluster": {
+                "thickness": [
+                    "thickness"
+                ],
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        }
+    }
+}

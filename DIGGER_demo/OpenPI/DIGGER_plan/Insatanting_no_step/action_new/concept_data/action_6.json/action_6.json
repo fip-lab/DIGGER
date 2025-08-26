@@ -1,0 +1,6 @@
+[
+    "(:action purchase\n  ; Purchase or acquire an item and update its status\n  :parameters (?p - player ?item - item ?location - location)\n  :precondition (and\n    (at ?p ?location)\n    (or (and (at ?item ?location) (for_sale ?item ?location))\n        (stored ?location ?item))\n  )\n  :effect (and\n    (inventory ?p ?item)\n    (not (at ?item ?location))",
+    "(:action store_eraser\n       :parameters (?p - player ?eraser - item ?car - location)\n       :precondition (and (inventory ?p ?eraser) (at ?p ?car))\n       :effect (and (stored ?car ?eraser) (not (inventory ?p ?eraser))",
+    "(:action store ; Store an item in a location\n    :parameters (?agent - agent ?item - object ?location - location)\n    :precondition (and (inventory ?agent ?item) (at ?agent ?location))\n    :effect (and (stored ?location ?item) (not (inventory ?agent ?item))",
+    "(:action use ; Utilize a resource to achieve a desired state change\n:parameters (?user - person ?resource - object ?target - object ?location - place)\n:precondition (and (at ?user ?location) (stored ?location ?resource) (needs_transformation ?target))\n:effect (and (transformed ?target) (not (needs_transformation ?target))"
+]

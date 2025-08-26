@@ -1,0 +1,101 @@
+[
+    {
+        "Make a Pipe Cleaner Bird": {
+            "can": "?item",
+            "dust": "?item",
+            "paper": "?item",
+            "bird": "?item",
+            "spray": "?item",
+            "bag": "?item",
+            "rug": "?item",
+            "room": "?location",
+            "mat": "?item",
+            "pipe": "?item",
+            "door": "?location",
+            "house": "?location",
+            "surface": "?location",
+            "waste": "?item",
+            "throw": "?action",
+            "basket": "?container",
+            "cleaner": "?item",
+            "tv": "?item",
+            "item": "?item",
+            "screen": "?item",
+            "towel": "?item",
+            "rag": "?item",
+            "home": "?location",
+            "trash": "?item",
+            "glass": "?item"
+        }
+    },
+    {
+        "Make Marshmallow Cream Cheese Fruit Dip": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "Camouflage Equipment": {
+            "gear": "?e",
+            "set": "?c",
+            "nosiness": "?context",
+            "person": "?employee",
+            "place": "?l",
+            "spy": "?entity",
+            "friend": "?team",
+            "mission": "?project",
+            "equipment": "?e",
+            "up": "?context",
+            "meeting": "?project",
+            "camouflage": "?e",
+            "people": "?g",
+            "victim": "?target",
+            "group": "?g",
+            "use": "?action"
+        }
+    },
+    {
+        "Make Rhubarb Cordial": {
+            "cordial": "?substance",
+            "part": "?object",
+            "rhubarb": "?substance",
+            "cutting": "?object",
+            "clipping": "?object",
+            "hormone": "?substance",
+            "yard": "?place",
+            "area": "?place",
+            "pot": "?container",
+            "bush": "?object"
+        }
+    },
+    {
+        "Make a Pitcher of Melon Pina Coladas": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "Make Soap Bubbles for Your Children": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    }
+]

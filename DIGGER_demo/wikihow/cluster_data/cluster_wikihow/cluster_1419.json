@@ -1,0 +1,177 @@
+[
+    {
+        "title": "How to Select a Purse",
+        "steps": [
+            "Select the occasion.",
+            "Set a budget.",
+            "Decide on a color.",
+            "Choose the size you need.",
+            "Consider alternative materials.",
+            "Decide how long you will use the purse.",
+            "Consult a friend or salesperson."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Choose a Sleeping Bag for Backpacking",
+        "steps": [
+            "Select a backpacking sleeping bag rated for temperatures you anticipate during your trip.",
+            "Choose a gender-specific sleeping bag.",
+            "Pick a backpacking sleeping bag with a low weight.",
+            "Consider the size of the sleeping bag.",
+            "Evaluate the shape of the backpacking sleeping bag.",
+            "Determine the type of insulation you prefer.",
+            "Choose a sleeping bag with a waterproof outer shell.",
+            "Select a sleeping bag with features ideal for backpacking.",
+            "Compare prices between sleeping bags."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Choose a Birthing Center",
+        "steps": [
+            "Make sure you definitely want to deliver your baby in a birthing center rather than a hospital.",
+            "Shop around your local area to find a birthing center near you.",
+            "Contact the birthing centers in your area and schedule a time to tour the facility.",
+            "Select a birthing center that makes you comfortable.",
+            "Inquire about how long you will be permitted to stay after the baby is born.",
+            "Find out what their visitation policy is.",
+            "Find out if you're appropriate for the birthing center.",
+            "Book early."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Choose What Type of Diaper to Wear if You're an Adult Bedwetter",
+        "steps": [
+            "Decide whether or not you want to use cloth or disposable diapers.",
+            "If you decide on using cloth diapers pick which style you want to wear to bed.",
+            "Purchase other diapering supplies.",
+            "Be aware of the terminology used for adult incontinence products.",
+            "Get appropriate measurements.",
+            "Ask for samples.",
+            "Buy a waterproof sheet to put over the bed.",
+            "Check for signs of diaper rash.",
+            "Check online for information regarding incontinence garments."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Choose the Right Sperm Donor",
+        "steps": [
+            "Choose someone you know if you want them to have a relationship with your child.",
+            "Look up donor insemination laws in your state.",
+            "Think of someone you know who would hit most of your major criteria.",
+            "Ask the man if he\u2019s willing to be your sperm donor.",
+            "Lay out what you want his rights to be.",
+            "Ask him about his medical and family history.",
+            "Talk to an attorney to make a contract that will satisfy you and the donor.",
+            "Choose a sperm bank to freeze and test his sperm."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Change a Diaper",
+        "steps": [
+            "Choose an area to change your baby's diaper.",
+            "Organize the changing area.",
+            "Stock up on diapers and wipes.",
+            "Store diaper cream or petroleum jelly.",
+            "Have a place to put soiled diapers.",
+            "Keep distractions nearby.",
+            "Store changes of clothing and extra sheets."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Choose Clothes for Baby Girls",
+        "steps": [
+            "Know the correct size of your baby.",
+            "Follow fashion trends when picking clothes for baby girls.",
+            "Select clothes with comfort and safety in mind.",
+            "Search for clothing that is easy to put on, take off and care for.",
+            "Purchase durable outfits.",
+            "Make and stay within your budget."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Pack a Diaper Bag",
+        "steps": [
+            "Select a suitable diaper bag.",
+            "Keep a food stock.",
+            "Be prepared to bring some diapers and a small portion of diapering supplies.",
+            "Pack a diaper-changing mat inside the bag, as well as a set or two of clothes.",
+            "Keep health essentials in the bag.",
+            "Pack for the weather.",
+            "Pack some clothing including some comfortable socks and a baby hat to keep the sensitive parts warm and cozy.",
+            "Keep your baby entertained.",
+            "Bring sanitary wipes and gel.",
+            "Pack extra plastic bags.",
+            "Give yourself a treat."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Buy Cloth Diapers",
+        "steps": [
+            "Know the four basic kinds cloth diapers.",
+            "Know the pros and cons of AIOs.",
+            "Know the pros and cons of AI2s and Pocket diapers.",
+            "Know the pros and cons of fitted diapers.",
+            "Know the pros and cons of prefold diapers.",
+            "Realistically assess your lifestyle.",
+            "Assess your budget.",
+            "Determine the number of diapers you need.",
+            "Decide if you want one-size-fits-all or sized diapers.",
+            "Decide if you want snaps or aplix.",
+            "Consider trying several brands before investing in a complete system.",
+            "Find a reputable source to buy your diapers."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Choose a Diaper Bag",
+        "steps": [
+            "Find a color or pattern you like.",
+            "Determine a budget for the diaper bag.",
+            "Spend time carrying the bags around the store.",
+            "Read the care instructions on the bag."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Use Cloth Diapers",
+        "steps": [
+            "Buy enough diapers to last 2 or 3 days.",
+            "Purchase some disposable diapers to supplement your reusables.",
+            "Seek out secondhand cloth diapers.",
+            "Pay attention to sizing.",
+            "Buy necessary accessories.",
+            "Consider repurposing cloth diapers after your baby's done with them."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Buy Baby Walkers",
+        "steps": [
+            "Choose a baby walker designed with safety features.",
+            "Choose a baby walker that provides additional stimulation for your baby.",
+            "Select a baby walker with an adjustable height.",
+            "Choose a baby walker that allows your baby to maneuver easily.",
+            "Select a baby walker with a padded seat.",
+            "Buy a collapsible or folding baby walker.",
+            "Read product reviews on a variety of baby walkers."
+        ],
+        "cluster_label": 1419
+    },
+    {
+        "title": "How to Organize a Diaper Bag",
+        "steps": [
+            "Change out the diapers and wipes as needed.",
+            "Add seasonal items to the bag.",
+            "Update the bag as your baby grows."
+        ],
+        "cluster_label": 1419
+    }
+]

@@ -1,0 +1,4 @@
+[
+    "(:action place ; Place an item into a container or garnish an item\n    :parameters (?actor - person ?item - object ?container - object)\n    :precondition (and \n        (available ?actor)\n        (or \n            (and (inventory ?item) (empty ?container))\n            (and (smooth ?container) (power ?container off) (empty ?item))\n            (and (in smoothie ?container) (inventory ?item))\n        )\n    )\n    :effect (and \n        (or \n            (and (in ?item ?container) (not (inventory ?item))",
+    "(:action blend\n    :parameters (?bl - blender ?item - object ?ingredient - object)\n    :precondition (and \n        (in ?item ?bl) \n        (inventory ?ingredient) \n        (not (power ?bl on))\n    )\n    :effect (and \n        (smooth ?bl) \n        (power ?bl on) \n        (not (power ?bl off))"
+]

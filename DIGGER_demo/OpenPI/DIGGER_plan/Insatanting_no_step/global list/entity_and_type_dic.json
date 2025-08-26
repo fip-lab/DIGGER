@@ -1,0 +1,113 @@
+{
+    "?item": [
+        "can",
+        "dust",
+        "paper",
+        "bird",
+        "spray",
+        "bag",
+        "rug",
+        "mat",
+        "pipe",
+        "waste",
+        "cleaner",
+        "tv",
+        "item",
+        "screen",
+        "towel",
+        "rag",
+        "trash",
+        "glass"
+    ],
+    "?location": [
+        "room",
+        "door",
+        "house",
+        "surface",
+        "home",
+        "socket",
+        "stove",
+        "socket",
+        "stove",
+        "socket",
+        "stove"
+    ],
+    "?action": [
+        "throw",
+        "purchase",
+        "use",
+        "purchase",
+        "purchase"
+    ],
+    "?container": [
+        "basket",
+        "jar",
+        "saucepan",
+        "pot",
+        "jar",
+        "saucepan",
+        "jar",
+        "saucepan"
+    ],
+    "?object": [
+        "candles",
+        "water",
+        "part",
+        "cutting",
+        "clipping",
+        "bush",
+        "candles",
+        "water",
+        "candles",
+        "water"
+    ],
+    "?state": [
+        "amount",
+        "amount",
+        "amount"
+    ],
+    "?e": [
+        "gear",
+        "equipment",
+        "camouflage"
+    ],
+    "?c": [
+        "set"
+    ],
+    "?context": [
+        "nosiness",
+        "up"
+    ],
+    "?employee": [
+        "person"
+    ],
+    "?l": [
+        "place"
+    ],
+    "?entity": [
+        "spy"
+    ],
+    "?team": [
+        "friend"
+    ],
+    "?project": [
+        "mission",
+        "meeting"
+    ],
+    "?g": [
+        "people",
+        "group"
+    ],
+    "?target": [
+        "victim"
+    ],
+    "?substance": [
+        "cordial",
+        "rhubarb",
+        "hormone"
+    ],
+    "?place": [
+        "yard",
+        "area"
+    ]
+}

@@ -1,0 +1,40 @@
+[
+    {
+        "cluster_label": 339,
+        "task": "How to Free Your Child from Lice",
+        "step": [
+            "Avoid sharing.",
+            "Ensure hair hygiene.",
+            "Teach your children steps to avoid lice.",
+            "Make sure your child's school or organization checks for lice.",
+            "Look for the telltale signs of a louse.",
+            "Check your child\u2019s hair."
+        ],
+        "steps_predictions": [
+            "break_family_memebers_trust npc basement",
+            "make_hair_hygiene my_equipment",
+            "teach-child lice",
+            "check_lice npc",
+            "check_louse louse",
+            "check_child npc"
+        ],
+        "goal_state": " ((not (in anish npc)))"
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Change Your Toddler's Clothes Without a Tantrum",
+        "step": [
+            "Lay out any items and clothing that you need ahead of time.",
+            "Dress your child first thing in the morning.",
+            "Leave plenty of time to change your child.",
+            "Pick clothes that are comfortable and easy."
+        ],
+        "steps_predictions": [
+            "lay_out_items items",
+            "dress-child npc",
+            "change_child npc basement",
+            "pick_clothes npc"
+        ],
+        "goal_state": " ((on_tinder npc) (has_temporary clothing))"
+    }
+]

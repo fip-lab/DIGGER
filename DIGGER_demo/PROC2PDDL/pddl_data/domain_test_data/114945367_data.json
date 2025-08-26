@@ -1,0 +1,61 @@
+[
+    {
+        "task": "build_a_shelter",
+        "step": [
+            "go west npc camp path",
+            "build_shelter npc path twigs_leaves long_branch propped_branches"
+        ],
+        "desc": [
+            "Lean branches against the main branch to form the structure of your shelter. Gather a bunch of branches that are long enough to be propped up against the main branch of your shelter. Think about forming ribs with the branches. Try to keep them as close together as you can."
+        ],
+        "action": [
+            "(:action build_shelter ; built shelter\n      :parameters (?p - player ?loc - location ?twigs_leaves - twigs_leaves ?long_branch - long_branch ?propped_branches - propped_branches)\n      :precondition (and (at ?p ?loc) (has_twigs_leaves ?loc) (has_branches ?loc) (has_branches ?loc))\n      :effect (and (has_shelter ?p))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )"
+        ],
+        "goal_state": "((has_shelter npc))"
+    },
+    {
+        "task": "collect_water",
+        "step": [
+            "go west npc camp path",
+            "go west npc path cliff",
+            "go up npc cliff waterfall",
+            "get_water npc waterfall water"
+        ],
+        "desc": [
+            "Search for a source of fresh water."
+        ],
+        "action": [
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)) (not (strained ?water)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )"
+        ],
+        "goal_state": "((inventory npc water))"
+    },
+    {
+        "task": "start_a_fire",
+        "step": [
+            "go west npc camp path",
+            "get_dry_materials npc path dry_materials",
+            "get_twigs_leaves npc path twigs_leaves",
+            "get_logs npc path logs",
+            "build_teepee npc path dry_materials twigs_leaves teepee",
+            "start_fire npc path teepee logs"
+        ],
+        "desc": [
+            "Use dry sticks, branches, or tree bark to serve as your kindling.",
+            "Find small, dry material to use as tinder. Look for dry grass, leaves, tree bark, pine needles, or any other small flammable materials you can find in the area. Tinder needs to be material that is easy to light and will produce a large flame so you can start your fire.",
+            "Search for a dry, flat area between 2 trees with splits in their trunks. Look around the area to find a relatively flat area with a tree that has a trunk that splits about 3\u20135 feet (0.91\u20131.52 m) off of the ground. If possible, try to find 2 trees that have a split in their trunks about 3\u20135 feet (0.91\u20131.52 m) off of the ground and are about 10 feet (3.0 m) apart from each other.",
+            "Gather small twigs and branches to use for kindling. Kindling needs to be material that will catch easily when you light your tinder.",
+            "Avoid using too much energy. It may be difficult for you to find adequate food and water if you're lost in the woods. Try not to sweat or use too much energy by doing things like running around and screaming for help if you're by yourself. Conserve as much energy as you can for doing things like building shelter, fire, and searching for water."
+        ],
+        "action": [
+            "(:action get_logs ; get logs\n      :parameters (?p - player ?loc - location ?logs - logs)\n      :precondition (and (at ?p ?loc) (has_logs ?loc))\n      :effect (and (inventory ?p ?logs))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action build_teepee ; build teepee structure\n      :parameters (?p - player ?loc - location ?dry_materials - dry_materials ?twigs_leaves - twigs_leaves ?teepee - teepee)\n      :precondition (and (at ?p ?loc) (inventory ?p ?dry_materials) (inventory ?p ?twigs_leaves))\n      :effect (and (inventory ?p ?teepee))\n   )",
+            "(:action start_fire ; start_fire\n      :parameters (?p - player ?loc - location ?teepee - teepee ?logs - logs)\n      :precondition (and (at ?p ?loc) (inventory ?p ?teepee) (inventory ?p ?logs))\n      :effect (and (has_fire ?p))\n   )\n)",
+            "(:action get_twigs_leaves ; get twigs and leaves\n      :parameters (?p - player ?loc - location ?twigs_leaves - twigs_leaves)\n      :precondition (and (at ?p ?loc) (has_twigs_leaves ?loc))\n      :effect (and (inventory ?p ?twigs_leaves))\n   )",
+            "(:action get_dry_materials ; get dry materials\n      :parameters (?p - player ?loc - location ?dry_materials - dry_materials)\n      :precondition (and (at ?p ?loc) (has_dry_materials ?loc))\n      :effect (and (inventory ?p ?dry_materials))\n   )"
+        ],
+        "goal_state": "((has_fire ?p))"
+    }
+]

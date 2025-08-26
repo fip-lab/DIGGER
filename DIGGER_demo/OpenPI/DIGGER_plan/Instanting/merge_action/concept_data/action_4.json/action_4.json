@@ -1,0 +1,18 @@
+{
+    "ask": [
+        "(:action ask_for_moss\n    :parameters (?p - player ?loc - location ?moss - fairy_moss)\n    :precondition (and (at ?p ?loc) (for_sale ?moss ?loc))\n    :effect (and (purchased ?moss) (inventory ?p ?moss))\n)\n\n"
+    ],
+    "find": [
+        "(:action find_container\n    :parameters (?p - player ?container - container ?loc - location)\n    :precondition (and (at ?p ?loc) (in_cabinet ?container ?loc))\n    :effect (and (on_countertop ?container) (not (in_cabinet ?container ?loc)))\n)\n\n"
+    ],
+    "fill": [
+        "(:action fill_bowl\n    :parameters (?p - player ?bowl - container ?water - water ?loc - location)\n    :precondition (and (at ?p ?loc) (on_countertop ?bowl) (in_pipes ?water))\n    :effect (and (fuller ?bowl) (emptier ?water) (out_of_faucet ?water))\n)\n\n",
+        "(:action place_suitable_position\n    :parameters (?p - player ?bowl - container ?loc - location)\n    :precondition (and (fuller ?bowl) (inside_bowl ?moss ?bowl))\n    :effect (and (at ?bowl ?loc))\n)\n\n"
+    ],
+    "add": [
+        "(:action add_fairy_moss\n    :parameters (?p - player ?moss - fairy_moss ?bowl - container)\n    :precondition (and (inventory ?p ?moss) (fuller ?bowl))\n    :effect (and (inside_bowl ?moss ?bowl) (not (inventory ?p ?moss)))\n)\n\n"
+    ],
+    "prune": [
+        "(:action prune_fairy_moss\n    :parameters (?p - player ?moss - fairy_moss ?bowl - container)\n    :precondition (and (inside_bowl ?moss ?bowl) (at ?p ?bowl))\n    :effect (and (pruned ?moss))\n)\n```\n\nExplanation of each action:\n\n1. **ask_for_moss**:\n    - **Parameters**: player, location, fairy moss\n    - **Preconditions**: The player is at the location where the moss is for sale.\n    - **Effects**: The moss is purchased and added to the player's inventory.\n\n2. **find_container**:\n    - **Parameters**: player, container, location\n    - **Preconditions**: The player is at the location where the container is stored in the cabinet.\n    - **Effects**: The container is moved from the cabinet to the countertop.\n\n3. **fill_bowl**:\n    - **Parameters**: player, bowl (container), water, location\n    - **Preconditions**: The player is at the location, the bowl is on the countertop, and water is available in the pipes.\n    - **Effects**: The bowl is filled with water, and the water is reduced from the pipes.\n\n4. **add_fairy_moss**:\n    - **Parameters**: player, fairy moss, bowl (container)\n    - **Preconditions**: The player has the fairy moss in their inventory, and the bowl is filled with water.\n    - **Effects**: The fairy moss is added to the bowl, and it is removed from the player's inventory.\n\n5. **place_suitable_position**:\n    - **Parameters**: player, bowl (container), location\n    - **Preconditions**: The bowl is filled with water and contains the fairy moss.\n    - **Effects**: The bowl is placed at the specified suitable location.\n\n6. **prune_fairy_moss**:\n    - **Parameters**: player, fairy moss, bowl (container)\n    - **Preconditions**: The fairy moss is inside the bowl, and the player is at the bowl's location.\n    - **Effects**: The fairy moss is pruned.\n\nThese actions should cover the steps required to grow fairy moss indoors based on the provided descriptions and entity states."
+    ]
+}

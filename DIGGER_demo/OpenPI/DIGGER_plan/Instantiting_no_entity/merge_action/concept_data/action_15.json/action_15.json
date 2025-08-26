@@ -1,0 +1,14 @@
+{
+    "prepare": [
+        "(:action prepare_area\n    :parameters (?area - location ?p - player)\n    :precondition (and (at ?p ?area) (not (prepared ?area)))\n    :effect (prepared ?area)\n)\n\n"
+    ],
+    "take": [
+        "(:action take_cutting\n    :parameters (?cutting - clipping ?bush - rose_bush ?p - player)\n    :precondition (and (at ?p ?bush) (not (has_cutting ?p ?cutting)) (is_part_of ?cutting ?bush))\n    :effect (and (has_cutting ?p ?cutting) (not (is_part_of ?cutting ?bush)))\n)\n\n"
+    ],
+    "dip": [
+        "(:action dip_in_hormide\n    :parameters (?cutting - clipping ?hormide - rooting_hormide ?p - player)\n    :precondition (and (has_cutting ?p ?cutting) (at ?p ?hormide) (not (dipped_in_hormide ?cutting)))\n    :effect (dipped_in_hormide ?cutting)\n)\n\n"
+    ],
+    "plant": [
+        "(:action plant_cutting\n    :parameters (?cutting - clipping ?area - location ?p - player)\n    :precondition (and (has_cutting ?p ?cutting) (prepared ?area) (at ?p ?area) (dipped_in_hormide ?cutting))\n    :effect (and (planted ?cutting ?area) (not (has_cutting ?p ?cutting)))\n)\n```\n\nThese actions should capture the intent and logic of each step described in the task of growing a rose bush from cuttings."
+    ]
+}

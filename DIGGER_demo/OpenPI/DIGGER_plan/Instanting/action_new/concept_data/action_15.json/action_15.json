@@ -1,0 +1,6 @@
+[
+    "(:action prepare\n  ; Prepare a resource or area and update its status\n  :parameters (?actor - agent ?target - entity)\n  :precondition (and (at ?actor ?target) (not (prepared ?target)))\n  :effect (prepared ?target)\n)",
+    "(:action take ; General action for taking an item from a source\n  :parameters (?agent - entity ?source - container ?item - object)\n  :precondition (and (at ?agent ?source) (attached ?item ?source))\n  :effect (and (not (attached ?item ?source))",
+    "(:action dip ; Dip an item into a substance to change its state\n    :parameters (?p - player ?item - object ?substance - substance)\n    :precondition (and (at ?p ?item) (prepared ?item) (compatible ?item ?substance))\n    :effect (dipped ?item ?substance))",
+    "(:action plant\n  ; Plant a resource and update its state through various stages\n  :parameters (?p - player ?resource - object ?l - location)\n  \n  :precondition (and \n    (at ?p ?resource)\n    (or \n      (and (is_cutting ?resource) (not (dipped_into_rooting_hormone ?resource)))\n      (and (is_cutting ?resource) (dipped_into_rooting_hormone ?resource) (not (planted ?resource ?l)))\n      (and (prepared ?l) (not (planted ?resource ?l)))\n    )\n  )\n  \n  :effect (and \n    (or \n      (dipped_into_rooting_hormone ?resource)\n      (planted ?resource ?l)\n    )"
+]

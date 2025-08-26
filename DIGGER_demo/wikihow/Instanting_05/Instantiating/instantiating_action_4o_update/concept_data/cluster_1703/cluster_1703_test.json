@@ -1,0 +1,42 @@
+[
+    {
+        "task": "How to Remove Nail Polish Without Using Remover",
+        "instantiting_action": [
+            "choose(agent item container)",
+            "clean(entity agent)",
+            "use(agent resource target)",
+            "wipe(agent target tool)",
+            "add(actor item target)",
+            "make(agent item1 item2)",
+            "avoid(actor resource related_entity)",
+            "chip(entity tool)",
+            "condition(entity target tool)",
+            "treat(agent item area)",
+            "dry(entity method)",
+            "open(entity opener)",
+            "take(actor item)",
+            "apply_polish(p nail product)",
+            "reuse(user resource)"
+        ]
+    },
+    {
+        "task": "How to Remove Old Nail Polish",
+        "instantiting_action": [
+            "choose(agent item bottle)",
+            "clean(entity agent)",
+            "use(agent resource target)",
+            "wipe(agent target tool)",
+            "add(actor item target)",
+            "make(agent item1 item2)",
+            "avoid(actor resource related_entity)",
+            "chip(entity tool)",
+            "condition(entity target tool)",
+            "treat(agent item area)",
+            "dry(entity method)",
+            "open(entity opener)",
+            "take(actor item)",
+            "apply_polish(p nail product)",
+            "reuse(user resource)"
+        ]
+    }
+]

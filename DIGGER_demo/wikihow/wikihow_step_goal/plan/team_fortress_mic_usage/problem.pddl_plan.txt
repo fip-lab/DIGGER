@@ -1,0 +1,7 @@
+(make_microphone_working mic)
+(adjust_panel_visibility panel)
+(talk_using_microphone mic voice)
+(advise_teammates advice)
+(select_voice_panel panel)
+(use_microphone_efficiently voice)
+; cost = 6 (unit cost)

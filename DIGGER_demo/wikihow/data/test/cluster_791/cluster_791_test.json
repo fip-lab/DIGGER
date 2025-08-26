@@ -1,0 +1,83 @@
+[
+    {
+        "cluster_label": 791,
+        "task": "How to Make the Most from Your Old Candles",
+        "step": [
+            "Obtain some old candles.",
+            "Find an old saucepan or something similar that can get wax on it.",
+            "Break up the old wax and stick a few pieces in the saucepan over low heat.",
+            "Stir the candles until they have melted.",
+            "Prepare the container for the wax while you are waiting for the candles to melt.",
+            "Pour.",
+            "Take the little bit of wax that you left in the saucepan and make sure that it is completely melted.",
+            "Pour the extra wax into the dip to make the dip fill in.",
+            "Let this little bit of wax completely harden.",
+            "Remember depending on what type of container you used, either light the candle directly in the container or you can slip it right out of the container.",
+            "Keep in mind that if you are having a hard time getting the candle out of the container, stick the container in the freezer for about five to ten minutes.",
+            "Decorate your new candle with glitter, sand, flowers or any other idea you might have to make your candle pretty.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "obtain_candle npc",
+            "find_saupan stove_knob velveeta",
+            "break_wicks wick1",
+            "stirf_candle npc",
+            "prepare_candle npc",
+            "pour-into-glass water faucet",
+            "burn_wicks wick1",
+            "pour_wicks_into_dip wick1",
+            "make_wicks_harden wick1",
+            "light_candle npc",
+            "free_candle npc",
+            "decorate_candle npc",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((in_candle npc) (served_wicks wick1))"
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Melt Candles",
+        "step": [
+            "Use an electric stove if possible.",
+            "Set up a double boiler.",
+            "Fill the pan halfway with water and bring it to the boil.",
+            "Place the bowl with the wax in it into the pan.",
+            "Take the bowl with the melted wax from the pan."
+        ],
+        "steps_predictions": [
+            "use_electric_kettle stove_knob npc",
+            "set_double_boiled stove_knob velveeta",
+            "fill-papyrus water pot",
+            "place-wicks-in-pan wick1",
+            "take_bowl_with_wand velveeta"
+        ],
+        "goal_state": " ((in_bowl candles) (served_fire wick1))"
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Create a Secret Candle Stash",
+        "step": [
+            "Find a tall, thick candle, a sharp steak knife, or other medium sized knife, and drill with a thick bit, a lighter of any sort, and a sponge or other squishy item in a color relatively close to your candle, and of course, something to hide.",
+            "Use the drill to make some holes as far into the candle as possible, while staying far enough away from the edge of the candle to leave a strong outside wall.",
+            "Cut out the rest of the inside with the knife, using the holes from the drill to get the it inside.",
+            "Spark the lighter and hover the flame below the hole in the candle to melt the wax.",
+            "Cut the squishy object into a circle about one half inch bigger than the hole in the candle.",
+            "Use the hole to store whatever you want.",
+            "Close off the stash by stuffing the squishy item in the candle.",
+            "Place somewhere inconspicuous.",
+            "Enjoy your privacy!."
+        ],
+        "steps_predictions": [
+            "drink_water npc",
+            "drink_water npc",
+            "cut_papyrus npc papyrus",
+            "start_lighter npc",
+            "cut_squishy_object npc",
+            "store_stuff npc basement",
+            "close_stuffing item in_candle alice",
+            "place-in-close-cage npc basement",
+            "get_privileges npc home"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))"
+    }
+]

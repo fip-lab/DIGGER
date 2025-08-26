@@ -1,0 +1,32 @@
+[
+    {
+        "cluster_label": 1208,
+        "task": "How to Eat Soft Boiled Eggs",
+        "step": [
+            "Coat the soft boiled eggs in the batter.",
+            "Deep-fry the battered soft boiled eggs.",
+            "Season the deep-fried soft boiled eggs."
+        ],
+        "steps_predictions": [
+            "coat-with-ingredients soft_balls mixing_bowl",
+            "deep_fry_cheese velveeta",
+            "season-ingredients soft-cooked eggs"
+        ],
+        "goal_state": " ((in_bowl eggs) (served_cheese velveeta))"
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Thaw Frozen Fish",
+        "step": [
+            "Rinse the fish when you remove it from the freezer.",
+            "Cook the fish right away.",
+            "Know which recipes require thawed fish."
+        ],
+        "steps_predictions": [
+            "clean_fish npc",
+            "cook npc",
+            "cook npc"
+        ],
+        "goal_state": " ((thawed fish))"
+    }
+]

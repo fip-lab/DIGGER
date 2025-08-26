@@ -1,0 +1,888 @@
+[
+    {
+        "step": [
+            "Decide on who the memory cookbook will focus.",
+            "Set about gathering together the memorabilia.",
+            "Find photographs, anecdotes, quotes, and other relevant snippets to place into the memory cookbook.",
+            "Consider asking other members of your family or circle of friends for recipes and ideas.",
+            "Decide on the need for illustrations.",
+            "Choose your method of preparing and printing the cookbook.",
+            "Distribute the memory cookbook."
+        ],
+        "task": "How to Create a Memory Cookbook",
+        "goal_state": "create_memebers_know npc memory_cookbook",
+        "steps": "```pddl\n1. (choose(person item website container cooking recipient))\n2. (collect(collector item source))\n3. (record_and_mark(person subject recorder notepad container time))\n4. (decorate(person entity tool))\n5. (add_photos(actor picture scrapbook))\n6. (create(creator item resource context))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 2606,
+                "task": "How to Make a Memory Book",
+                "step": [
+                    "Find a template or program you like.",
+                    "Ready your content.",
+                    "Pick a consistent style.",
+                    "Design your memory book.",
+                    "Share your memory book."
+                ],
+                "steps_predictions": [
+                    "find_template npc covering_tracks track",
+                    "prepare_content you content",
+                    "pick_composing_style character",
+                    "create_memebers_know npc memory_book",
+                    "gather_memebers npc memory_book"
+                ],
+                "goal_state": " ((knowledge npc covering_tracks))",
+                "similar_entity": {
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    },
+                    "character": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[character]] is related to [[person]]",
+                            "You are likely to find [[a character]] in [[a play in a theater]]"
+                        ]
+                    },
+                    "memory book": {
+                        "eraser": [
+                            {
+                                "attribute": "location",
+                                "before": "in store | absent | at shop/in drawer | owned by store",
+                                "after": "in home | present | in hand | bought by you"
+                            },
+                            {
+                                "attribute": "cost",
+                                "before": "for sale at store",
+                                "after": "purchased fro store"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "on linoleum"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "whole",
+                                "after": "getting smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "content": {
+                        "stuff": [
+                            {
+                                "attribute": "location",
+                                "before": "in store",
+                                "after": "in home"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[content]] is related to [[happy]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 2606,
+                "task": "How to Create a Wedding Memory Book",
+                "step": [
+                    "Choose a website that will help you create your memory book.",
+                    "Upload the pictures to the website.",
+                    "Select a design theme for your online book.",
+                    "Customize each page until you’re satisfied with the results.",
+                    "Order copies of the book, or share it with others."
+                ],
+                "steps_predictions": [
+                    "choose_website npc covering_tracks track",
+                    "upload_pictures npc covering_tracks track",
+                    "select_theme npc covering_tracks track",
+                    "customize_page npc covering_tracks track",
+                    "buy_copy npc book"
+                ],
+                "goal_state": " ((selected npc covering_tracks))",
+                "similar_entity": {
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "book": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[page]] is related to [[book]]",
+                            "[[a book]] is used for [[learning]]",
+                            "[[a book]] is part of [[library]]",
+                            "[[A book]] is created by [[a writer]].",
+                            "You are likely to find [[a book]] in [[a classroom]]",
+                            "[[the bible]] is [[a book]]",
+                            "[[A book]] is made of [[Paper]].",
+                            "[[a book]] contains [[knowledge]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 2606,
+                "task": "How to Make a Cookbook Scrapbook",
+                "step": [
+                    "Decide upon the format for your cookbook scrapbook.",
+                    "Gather all of your recipes.",
+                    "Create a theme for your scrapbook, if you have one.",
+                    "Choose cardstock or strong paper to use in your cookbook scrap booking project.",
+                    "Protect heirloom recipe cards.",
+                    "Consider adding the following elements to your scrapbook: photos of the recipe creators, stories about the recipe or the person who wrote it, a shopping list at the beginning, collage elements from magazines, signatures and other decorative elements.",
+                    "Spend time decorating each page on the computer, book creation software or by hand.",
+                    "Place plastic tabs at the beginning of each new section.",
+                    "Give a family cooking scrapbook to friends and family for gifts."
+                ],
+                "steps_predictions": [
+                    "choose_scraps npc",
+                    "gather_cook npc kitchen",
+                    "create_theme npc scrapbook",
+                    "choose_cardstock npc",
+                    "protect_heirloom_card recipe cards",
+                    "add-ingredients-to-scraps book",
+                    "create_room npc covering_tracks track",
+                    "place-tape-on-panel tabs",
+                    "gather_gems npc"
+                ],
+                "goal_state": " ((selected_items npc covering_tracks))",
+                "similar_entity": {
+                    "cards": {
+                        "fizzy drink": [
+                            {
+                                "attribute": "cost",
+                                "before": "for sale in store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "sealing",
+                                "before": "sealed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "unobtained",
+                                "after": "obtained"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty",
+                                "after": "filled"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in container",
+                                "after": "on bolt"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on bolt",
+                                "after": "on towel"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[deal]] is related to [[cards]]"
+                        ]
+                    },
+                    "scrapbook": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Scrapbooking]] is a translation of [[scrapbook]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "tabs": {
+                        "table": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clear",
+                                "after": "cluttered"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "kitchen": {
+                        "kitchen counter": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "messy"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[food]]",
+                            "[[a kitchen]] is used for [[cooking food]]",
+                            "[[table]] is related to [[kitchen]]"
+                        ]
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    },
+                    "recipe": {
+                        "recipe": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unknown",
+                                "after": "learned"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a recipe]] is [[a set of instructions]]"
+                        ]
+                    },
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "book": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[page]] is related to [[book]]",
+                            "[[a book]] is used for [[learning]]",
+                            "[[a book]] is part of [[library]]",
+                            "[[A book]] is created by [[a writer]].",
+                            "You are likely to find [[a book]] in [[a classroom]]",
+                            "[[the bible]] is [[a book]]",
+                            "[[A book]] is made of [[Paper]].",
+                            "[[a book]] contains [[knowledge]]"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Mark the container with the current date and the intended opening date.",
+            "Do something to remind yourself or others about the time capsule.",
+            "Make extra arrangements for a time capsule that will outlive you.",
+            "Seal the time capsule and store it.",
+            "Place a marker of some kind on the exact site of a buried capsule."
+        ],
+        "task": "How to Create a Time Capsule",
+        "goal_state": "create_time_capsule time_capsule",
+        "steps": "```pddl\n; Step 1: Choose items to include in the time capsule\n(choose agent item location container theme recipient)\n\n; Step 2: Record and mark the items with a date\n(record_and_mark agent subject recorder notepad container date)\n\n; Step 3: Add the chosen items to the time capsule container\n(add actor item container)\n\n; Step 4: Protect the items in the container with necessary resources\n(protect actor item container resource)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 2606,
+                "task": "How to Make a Family Time Capsule",
+                "step": [
+                    "Find a sturdy container: Make sure it can't get crushed easily, and buy a moisture absorbing sachet and mothballs to put in it.",
+                    "Write a letter to yourself to be opened in a certain amount of time (5,10 or 15 years).",
+                    "Take a current photo of each family member, and one of the whole family.",
+                    "Take a hair cutting of each family member and put them into labelled envelopes, if you have the ability.",
+                    "Write a questionnaire for each family member to answer.",
+                    "Get anyone who is not partnered (married or de facto) to describe their ideal partner.",
+                    "Put anything that is not used, but had special meaning to a family member (e.g.",
+                    "Put the capsule somewhere safe and dry, where you won't forget about it.",
+                    "Mark the date to be opened on the time capsule in large permanent writing."
+                ],
+                "steps_predictions": [
+                    "buy_shelter npc",
+                    "putobjectinreceptacle agent1 letter1",
+                    "create_family npc family",
+                    "cut_family_member npc",
+                    "write_family_member_objectinreceptacle agent1 questionnaire1",
+                    "listen_to_secret npc",
+                    "put_objectinreceptacle agent npc ss",
+                    "put_in_cocoa user1 bottle1",
+                    "mark_date npc covering_tracks track"
+                ],
+                "goal_state": " ((objectAtLocation npc family))",
+                "similar_entity": {
+                    "letter": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[letter]] is related to [[alphabet]]",
+                            "[[a letter]] is part of [[a word]]",
+                            "[[A letter]] is used for [[communication]]",
+                            "You are likely to find [[a letter]] in [[the post office]]",
+                            "Something that might happen as a consequence of [[typing]] is [[a letter]]"
+                        ]
+                    },
+                    "family": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[home]] is related to [[family]]",
+                            "*Something you find at [[your house]] is [[your family]]",
+                            "[[a person wants]] have [[a family]]",
+                            "[[An aunt]] is part of [[the family]]",
+                            "[[a family]] is [[a group of related people]]",
+                            "[[عائِلَة]] is a translation of [[family]]"
+                        ]
+                    },
+                    "questionnaire": {
+                        "feet": [
+                            {
+                                "attribute": "placement",
+                                "before": "uncentered",
+                                "after": "centered"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Questionnaire]] is a translation of [[questionnaire]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "bottle": {
+                        "bottle": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | dry",
+                                "after": "dirty | wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open | on counter | on table",
+                                "after": "closed with lid | on bottle"
+                            },
+                            {
+                                "attribute": "clarity",
+                                "before": "blank",
+                                "after": "written on"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "refrigerator"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm | room temperature",
+                                "after": "cold"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a bottle]] is for [[storing liquids]]",
+                            "You are likely to find [[water]] in [[a bottle]]",
+                            "[[Garrafa]] is a translation of [[bottle]]",
+                            "[[a bottle]] is a type of [[container]]",
+                            "[[bottle]] can be made of [[plastic]]"
+                        ]
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    },
+                    "ss": {
+                        "main dish": [
+                            {
+                                "attribute": "temperature",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "accompaniment",
+                                "before": "unaccompanied",
+                                "after": "accompanied"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            null
+                        ]
+                    },
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "agent": {
+                        "game character": [
+                            {
+                                "attribute": "location",
+                                "before": "further out",
+                                "after": "in"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "out",
+                                "after": "hidden"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "pulling out pistol",
+                                "after": "investigating"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "investigating routes",
+                                "after": "waiting"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hiding spot",
+                                "after": "now at bomb"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "hiding",
+                                "after": "defusing"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[agent]] is related to [[secret]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 2606,
+                "task": "How to Create a Wedding Memory Book",
+                "step": [
+                    "Choose a website that will help you create your memory book.",
+                    "Upload the pictures to the website.",
+                    "Select a design theme for your online book.",
+                    "Customize each page until you’re satisfied with the results.",
+                    "Order copies of the book, or share it with others."
+                ],
+                "steps_predictions": [
+                    "choose_website npc covering_tracks track",
+                    "upload_pictures npc covering_tracks track",
+                    "select_theme npc covering_tracks track",
+                    "customize_page npc covering_tracks track",
+                    "buy_copy npc book"
+                ],
+                "goal_state": " ((selected npc covering_tracks))",
+                "similar_entity": {
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "book": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[page]] is related to [[book]]",
+                            "[[a book]] is used for [[learning]]",
+                            "[[a book]] is part of [[library]]",
+                            "[[A book]] is created by [[a writer]].",
+                            "You are likely to find [[a book]] in [[a classroom]]",
+                            "[[the bible]] is [[a book]]",
+                            "[[A book]] is made of [[Paper]].",
+                            "[[a book]] contains [[knowledge]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+]

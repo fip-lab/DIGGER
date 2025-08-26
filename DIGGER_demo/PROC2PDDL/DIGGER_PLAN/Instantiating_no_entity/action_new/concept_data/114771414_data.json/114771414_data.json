@@ -1,0 +1,4 @@
+[
+    "(:action hunt ; Hunt and prepare a resource\n    :parameters (?agent - agent ?resource - object ?location - location)\n    :precondition (and\n        (at ?agent ?location)\n        (or\n            (and (not (has_resource ?agent ?resource)) (is_food ?resource))\n            (and (not (prepared ?resource)) (is_tool ?resource))\n        )\n    )\n    :effect (and\n        (or\n            (and (has_resource ?agent ?resource) (is_food ?resource))",
+    "(:action carve ; Transform a material or entity by using a tool\n    :parameters (?agent - entity ?material - object ?tool - instrument)\n    :precondition (and\n        (at ?material ?location)\n        (at ?tool ?location)\n        (not (transformed ?material))\n    )\n    :effect (and\n        (transformed ?material)\n    )"
+]

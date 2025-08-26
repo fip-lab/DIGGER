@@ -1,0 +1,7 @@
+[
+    "(:action choose\n    :parameters (?p - player ?item - object ?loc - location)\n    :precondition (and (at ?p ?loc) (available ?item ?loc) (or (nursery ?loc) (garden_center ?loc)))\n    :effect (and (inventory ?p ?item) (not (available ?item ?loc))",
+    "(:action establish\n  ; Establish a relationship between an entity and a context\n  :parameters (?agent - agent ?entity - object ?context - context)\n  :precondition (and (exists? ?entity ?context) (not (established ?entity ?context)))\n  :effect (and (established ?entity ?context))",
+    "(:action establish_plant\n        :parameters (?p - player ?plant - plant ?container - container)\n        :precondition (and (planted ?plant ?container))\n        :effect (and (established ?plant ?container))",
+    "(:action plant\n  :parameters (?p - player ?plant - plant ?container - container ?soil - soil)\n  :precondition (and (inventory ?p ?plant) (inventory ?p ?container) (inventory ?p ?soil))\n  :effect (and (planted ?plant ?container) (not (inventory ?p ?plant))",
+    "(:action re ; Re-pot a plant and update its state\n  :parameters (?npc - person ?plant - plant ?container - container ?loc - location)\n  :precondition (and \n                  (available ?plant ?loc)\n                  (or (nursery ?loc) (garden_center ?loc))\n                  (broad ?container)\n                  (rounded ?container)\n                  (established ?plant ?container))\n  :effect (and \n            (planted ?plant ?container)\n            (established ?plant ?container)\n            (re_potted ?plant ?container))"
+]

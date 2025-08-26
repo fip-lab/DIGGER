@@ -1,0 +1,7 @@
+[
+    "(:action make\n  ; Make a resource and update its state\n  :parameters (?entity - object ?actor - person)\n  :precondition (and (available ?actor) (not (completed ?entity)) (can_modify ?entity ?actor))\n  :effect (and (completed ?entity) (modified_by ?entity ?actor))",
+    "(:action add\n  :parameters (?actor - person ?item - object ?container - container)\n  :precondition (and (has ?actor ?item) (at ?actor ?container) (is_empty ?container))\n  :effect (and (not (is_empty ?container))",
+    "(:action heat\n  ; Heat a resource using an available heating mechanism\n  :parameters (?entity - object ?heat_source - object ?actor - person)\n  :precondition (and (ingredients_added ?entity) (at ?actor ?heat_source) (connected ?entity ?heat_source))\n  :effect (heating ?entity)\n)",
+    "(:action serve ; Serve an item and update its status\n :parameters (?server - entity ?target - entity ?item - item)\n :precondition (and (ready ?item) (inventory ?server ?item) (at ?server ?target))\n :effect (and (served ?item) (not (empty ?item))",
+    "(:action keep ; Maintain a state or assign a task to maintain state\n    :parameters (?agent - agent ?entity - entity)\n    :precondition (and (valid_state ?entity) (available ?agent) (not (maintained ?entity)))\n    :effect (maintained ?entity)\n)"
+]

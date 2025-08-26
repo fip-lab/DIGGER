@@ -1,0 +1,3 @@
+(liedown npc)
+(swim npc qs)
+; cost = 2 (unit cost)

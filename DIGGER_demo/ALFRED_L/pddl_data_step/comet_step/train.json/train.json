@@ -1,0 +1,324 @@
+[
+    {
+        "task": "move Pen1 to Box2 with more object",
+        "step": [
+            "Agent 1 moves from box 2 to garbage can",
+            "Agent 1 moves from sofa 1 to garbage can",
+            "Agent 1 picks up pen 1 from garbage can",
+            "Agent 1 puts pen 1 in box 2."
+        ],
+        "steps_predictions": [
+            "gotolocation agent1 garbagecan1 box2",
+            "gotolocation agent1 sofa1 garbagecan1",
+            "pickupobjectnoreceptacle agent1 pen1 garbagecan1",
+            "putobjectinreceptacle agent1 pen1 box2"
+        ]
+    },
+    {
+        "task": "move CellPhone1 to Box1 with two object",
+        "step": [
+            "Agent 1 moves from desk 1 to drawer 1",
+            "Agent 1 picks up cellphone 1 from drawer 1",
+            "Agent 1 puts cellphone 1 in box 1.",
+            "Agent 1 moves from drawer 1 to box 1"
+        ],
+        "steps_predictions": [
+            "gotolocation agent1 desk1 drawer1",
+            "pickupobjectnoreceptacle agent1 cellphone1 drawer1",
+            "putobjectinreceptacle agent1 cellphone1 box1",
+            "gotolocation agent1 drawer1 box1"
+        ]
+    },
+    {
+        "task": "move CD1 to Box2 with two object",
+        "step": [
+            "Agent 1 puts CD 1 in box 2.",
+            "Agent 1 moves from box 2 to garbage can",
+            "Agent 1 picks up CD 1 from garbage can",
+            "Agent 1 moves from drawer 1 to garbage can"
+        ],
+        "steps_predictions": [
+            "putobjectinreceptacle agent1 cd1 box2",
+            "gotolocation agent1 garbagecan1 box2",
+            "pickupobjectnoreceptacle agent1 cd1 garbagecan1",
+            "gotolocation agent1 drawer1 garbagecan1"
+        ]
+    },
+    {
+        "task": "move Watch1 to GarbageCan1 with more object",
+        "step": [
+            "Agent 1 moves from desk 1 to drawer 1",
+            "Agent 1 picks up watch 1 from drawer 1",
+            "Agent 1 puts watch 1 in garbage can 1",
+            "Agent 1 moves from drawer 1 to garbage can"
+        ],
+        "steps_predictions": [
+            "gotolocation agent1 desk1 drawer1",
+            "pickupobjectnoreceptacle agent1 watch1 drawer1",
+            "putobjectinreceptacle agent1 watch1 garbagecan1",
+            "gotolocation agent1 drawer1 garbagecan1"
+        ]
+    },
+    {
+        "task": "move KeyChain1 to Box1 with three object",
+        "step": [
+            "Agent 1 picks up keychain 1 from desk",
+            "Agent 1 moves from desk 2 to desk 1",
+            "Agent 1 moves from desk 1 to box 1",
+            "Agent 1 puts keychain 1 in box 1"
+        ],
+        "steps_predictions": [
+            "pickupobjectnoreceptacle agent1 keychain1 desk1",
+            "gotolocation agent1 desk2 desk1",
+            "gotolocation agent1 desk1 box1",
+            "putobjectinreceptacle agent1 keychain1 box1"
+        ]
+    },
+    {
+        "task": "put Pen1 on the Sofa2 Do not put it in Box2",
+        "step": [
+            "Agent 1 picks up pen 1 from drawer 1",
+            "Agent 1 moves from box 1 to garbage can",
+            "Agent 1 puts book 1 in sofa 2.",
+            "Agent 1 puts pen 1 in sofa 2.",
+            "Agent 1 moves from sofa 2 to drawer 1",
+            "Agent 1 moves from drawer 1 to sofa 2",
+            "Agent 1 moves from box 1 to sofa 2",
+            "Agent 1 picks up book 1 from box 1"
+        ],
+        "steps_predictions": [
+            "pickupobjectnoreceptacle agent1 pen1 drawer1",
+            "gotolocation agent1 garbagecan1 box1",
+            "putobjectinreceptacle agent1 book1 sofa2",
+            "putobjectinreceptacle agent1 pen1 sofa2",
+            "gotolocation agent1 sofa2 drawer1",
+            "gotolocation agent1 drawer1 sofa2",
+            "gotolocation agent1 box1 sofa2",
+            "pickupobjectnoreceptacle agent1 book1 box1"
+        ]
+    },
+    {
+        "task": "move CellPhone1 to Box2 with two object",
+        "step": [
+            "Agent 1 puts cellphone 1 in box 2.",
+            "Agent 1 picks up cellphone 1 from sofa 2",
+            "Agent 1 moves from sofa 3 to sofa 2",
+            "Agent 1 moves from sofa 2 to box 2"
+        ],
+        "steps_predictions": [
+            "putobjectinreceptacle agent1 cellphone1 box2",
+            "pickupobjectnoreceptacle agent1 cellphone1 sofa2",
+            "gotolocation agent1 sofa3 sofa2",
+            "gotolocation agent1 sofa2 box2"
+        ]
+    },
+    {
+        "task": "put CellPhone1 on the Sofa1 Do not put it in Box1",
+        "step": [
+            "Agent 1 puts cellphone 1 in sofa 1.",
+            "Agent 1 picks up cellphone 1 from drawer 1",
+            "Agent 1 moves from drawer 2 to drawer 1",
+            "Agent 1 moves from drawer 1 to sofa 1"
+        ],
+        "steps_predictions": [
+            "putobjectinreceptacle agent1 cellphone1 sofa1",
+            "pickupobjectnoreceptacle agent1 cellphone1 drawer1",
+            "gotolocation agent1 drawer2 drawer1",
+            "gotolocation agent1 drawer1 sofa1"
+        ]
+    },
+    {
+        "task": "move Laptop1 to Box1 with more object",
+        "step": [
+            "Agent 1 moves from sofa 1 to box 1",
+            "Agent 1 puts laptop 1 in box 1.",
+            "Agent 1 moves from desk 1 to sofa 1",
+            "Agent 1 picks up laptop 1 from sofa 1"
+        ],
+        "steps_predictions": [
+            "gotolocation agent1 sofa1 box1",
+            "putobjectinreceptacle agent1 laptop1 box1",
+            "gotolocation agent1 desk1 sofa1",
+            "pickupobjectnoreceptacle agent1 laptop1 sofa1"
+        ]
+    },
+    {
+        "task": "move Book1 to Box1 with two object",
+        "step": [
+            "Agent 1 puts book 1 in box 1.",
+            "Agent 1 picks up book 1 from bed 1",
+            "Agent 1 moves from bed 1 to box 1",
+            "Agent 1 moves from sofa 1 to bed 1"
+        ],
+        "steps_predictions": [
+            "putobjectinreceptacle agent1 book1 box1",
+            "pickupobjectnoreceptacle agent1 book1 bed1",
+            "gotolocation agent1 bed1 box1",
+            "gotolocation agent1 sofa1 bed1"
+        ]
+    },
+    {
+        "task": "put Pen1 on the Sofa1 Do not put it in Box1",
+        "step": [
+            "Agent 1 moves from desk 1 to drawer 1",
+            "Agent 1 puts pen 1 in sofa 1.",
+            "Agent 1 picks up pen 1 from drawer 1",
+            "Agent 1 moves from drawer 1 to sofa 1"
+        ],
+        "steps_predictions": [
+            "gotolocation agent1 desk1 drawer1",
+            "putobjectinreceptacle agent1 pen1 sofa1",
+            "pickupobjectnoreceptacle agent1 pen1 drawer1",
+            "gotolocation agent1 drawer1 sofa1"
+        ]
+    },
+    {
+        "task": "move Pen1 to Box2 with two object",
+        "step": [
+            "Agent 1 picks up pen 1 from desk 1",
+            "Agent 1 moves from desk 2 to desk 1",
+            "Agent 1 moves from desk 1 to box 2",
+            "Agent 1 puts pen 1 in box 2."
+        ],
+        "steps_predictions": [
+            "pickupobjectnoreceptacle agent1 pen1 desk1",
+            "gotolocation agent1 desk2 desk1",
+            "gotolocation agent1 desk1 box2",
+            "putobjectinreceptacle agent1 pen1 box2"
+        ]
+    },
+    {
+        "task": "put CellPhone1 on the Sofa2 Do not put it in Box3",
+        "step": [
+            "Agent 1 moves from sofa 2 to box 1",
+            "Agent 1 moves from bed 1 to sofa 2",
+            "Agent 1 puts book 1 in sofa 2.",
+            "Agent 1 picks up cellphone 1 from bed 1",
+            "Agent 1 puts cellphone 1 in sofa 2.",
+            "Agent 1 moves from drawer 1 to bed 1",
+            "Agent 1 moves from box 1 to sofa 2",
+            "Agent 1 picks up book 1 from box 1"
+        ],
+        "steps_predictions": [
+            "gotolocation agent1 sofa2 box1",
+            "gotolocation agent1 bed1 sofa2",
+            "putobjectinreceptacle agent1 book1 sofa2",
+            "pickupobjectnoreceptacle agent1 cellphone1 bed1",
+            "putobjectinreceptacle agent1 cellphone1 sofa2",
+            "gotolocation agent1 drawer1 bed1",
+            "gotolocation agent1 box1 sofa2",
+            "pickupobjectnoreceptacle agent1 book1 box1"
+        ]
+    },
+    {
+        "task": "put Book1 on the Sofa3 Do not put it in Box3",
+        "step": [
+            "Agent 1 puts keychain 1 in sofa 3",
+            "Agent 1 moves from bed 1 to box 1",
+            "Agent 1 moves from sofa 3 to drawer 1",
+            "Agent 1 picks up keychain 1 from box",
+            "Agent 1 puts book 1 in sofa 3.",
+            "Agent 1 moves from box 1 to sofa 3",
+            "Agent 1 moves from drawer 1 to sofa 3",
+            "Agent 1 picks up book 1 from drawer 1"
+        ],
+        "steps_predictions": [
+            "putobjectinreceptacle agent1 keychain1 sofa3",
+            "gotolocation agent1 bed1 box1",
+            "gotolocation agent1 sofa3 drawer1",
+            "pickupobjectnoreceptacle agent1 keychain1 box1",
+            "putobjectinreceptacle agent1 book1 sofa3",
+            "gotolocation agent1 box1 sofa3",
+            "gotolocation agent1 drawer1 sofa3",
+            "pickupobjectnoreceptacle agent1 book1 drawer1"
+        ]
+    },
+    {
+        "task": "move KeyChain2 to Box2 with two object",
+        "step": [
+            "Agent 1 moves from desk 3 to desk 1",
+            "Agent 1 puts keychain 2 in box 2",
+            "Agent 1 picks up keychain 2 from desk",
+            "Agent 1 moves from desk 1 to box 2"
+        ],
+        "steps_predictions": [
+            "gotolocation agent1 desk3 desk1",
+            "putobjectinreceptacle agent1 keychain2 box2",
+            "pickupobjectnoreceptacle agent1 keychain2 desk1",
+            "gotolocation agent1 desk1 box2"
+        ]
+    },
+    {
+        "task": "move CreditCard1 to Box2 with more object",
+        "step": [
+            "Agent 1 moves from desk 2 to drawer 1",
+            "Agent 1 puts credit card 1 in box 2",
+            "Agent 1 moves from drawer 1 to box 2",
+            "Agent 1 picks up credit card 1 from drawer"
+        ],
+        "steps_predictions": [
+            "gotolocation agent1 desk2 drawer1",
+            "putobjectinreceptacle agent1 creditcard1 box2",
+            "gotolocation agent1 drawer1 box2",
+            "pickupobjectnoreceptacle agent1 creditcard1 drawer1"
+        ]
+    },
+    {
+        "task": "move KeyChain1 to Box2 with three object",
+        "step": [
+            "Agent 1 picks up keychain 1 from desk",
+            "Agent 1 moves from desk 2 to desk 1",
+            "Agent 1 puts keychain 1 in box 2",
+            "Agent 1 moves from desk 1 to box 2"
+        ],
+        "steps_predictions": [
+            "pickupobjectnoreceptacle agent1 keychain1 desk1",
+            "gotolocation agent1 desk2 desk1",
+            "putobjectinreceptacle agent1 keychain1 box2",
+            "gotolocation agent1 desk1 box2"
+        ]
+    },
+    {
+        "task": "move Laptop1 to Desk1 with more object",
+        "step": [
+            "Agent 1 picks up laptop 1 from bed 1",
+            "Agent 1 moves from bed 1 to desk 1",
+            "Agent 1 puts laptop 1 in desk 1.",
+            "Agent 1 moves from drawer 1 to bed 1"
+        ],
+        "steps_predictions": [
+            "pickupobjectnoreceptacle agent1 laptop1 bed1",
+            "gotolocation agent1 bed1 desk1",
+            "putobjectinreceptacle agent1 laptop1 desk1",
+            "gotolocation agent1 drawer1 bed1"
+        ]
+    },
+    {
+        "task": "put Pencil1 to Desk1",
+        "step": [
+            "Agent 1 puts pencil 1 in desk 1.",
+            "Agent 1 picks up pencil 1 from drawer 1",
+            "Agent 1 moves from drawer 1 to desk 1"
+        ],
+        "steps_predictions": [
+            "putobjectinreceptacle agent1 pencil1 desk1",
+            "pickupobjectnoreceptacle agent1 pencil1 drawer1",
+            "gotolocation agent1 drawer1 desk1"
+        ]
+    },
+    {
+        "task": "move Pencil1 to Box1 with two object",
+        "step": [
+            "Agent 1 picks up pencil 1 from drawer 1",
+            "Agent 1 puts pencil 1 in box 1.",
+            "Agent 1 moves from bed 1 to drawer 1",
+            "Agent 1 moves from drawer 1 to box 1"
+        ],
+        "steps_predictions": [
+            "pickupobjectnoreceptacle agent1 pencil1 drawer1",
+            "putobjectinreceptacle agent1 pencil1 box1",
+            "gotolocation agent1 bed1 drawer1",
+            "gotolocation agent1 drawer1 box1"
+        ]
+    }
+]

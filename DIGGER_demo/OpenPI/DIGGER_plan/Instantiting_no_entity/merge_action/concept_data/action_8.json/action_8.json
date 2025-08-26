@@ -1,0 +1,15 @@
+{
+    "start": [
+        "(:action start_game\n    :parameters (?g - game)\n    :precondition (not (started ?g))\n    :effect (started ?g)\n)\n\n"
+    ],
+    "select": [
+        "(:action select_character\n    :parameters (?c - character)\n    :precondition (and (started ?g) (in_cantina ?c))\n    :effect (selected ?c)\n)\n\n",
+        "(:action save_name_and_exit\n    :parameters (?c - character)\n    :precondition (and (selected ?c) (named ?c))\n    :effect (and (saved ?c) (not (selected ?c)))\n)\n\n"
+    ],
+    "turn": [
+        "(:action turn_on_free_game\n    :parameters (?g - game)\n    :precondition (and (started ?g) (completed_level ?g))\n    :effect (free_play ?g)\n)\n```\n\nExplanation:\n1. `start_game`: This action starts the game.\n2. `select_character`: This action selects a character when in the cantina.\n3. `customize_character_part`: This action customizes a part of the character by selecting a specific body part and applying a selection.\n4. `save_name_and_exit`: This action saves the character's name and exits the character customization.\n5. `turn_on_free_game`: This action turns on free play mode after entering a completed level.\n\nThese actions encapsulate the steps and descriptions provided for creating a character in Lego Star Wars."
+    ],
+    "customize": [
+        "(:action customize_character_part\n    :parameters (?c - character ?part - bodypart ?selection - selection)\n    :precondition (and (selected ?c) (part_of ?part ?c))\n    :effect (customized ?c ?part ?selection)\n)\n\n"
+    ]
+}

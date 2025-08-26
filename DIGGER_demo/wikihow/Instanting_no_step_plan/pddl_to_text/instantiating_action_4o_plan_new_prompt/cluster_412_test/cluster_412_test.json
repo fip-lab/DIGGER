@@ -1,0 +1,1185 @@
+[
+    {
+        "step": [
+            "Store plants with exposed roots in a water-filled bucket.",
+            "Water the plant an hour before transplanting it.",
+            "Add water once a week to keep the soil moist.",
+            "Use a dripping hose to water trees and large bushes.",
+            "Pour a liquid fertilizer over flowers.",
+            "Use a slow-release fertilizer on larger plants."
+        ],
+        "task": "How to Plant a Plant",
+        "goal_state": "plant_plant fir1 container1",
+        "steps": "```pddl\n1. (choose p fir1)\n2. (prepare_for_task agent soil)\n3. (till_soil p shovel area)\n4. (dig_hole p shovel spot)\n5. (unpack_tree tree container p)\n6. (place p fir1 hole container weather)\n7. (water_area p area)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 412,
+                "task": "How to Graft Plants",
+                "step": [
+                    "Plant the rootstock plants in advance.",
+                    "Prepare to graft the plants in cool weather when the scion plant is budding.",
+                    "Make a T-shaped cut on the rootstock plant.",
+                    "Cut a healthy bud and attached wood from the scion plant.",
+                    "Insert the bud wood into the T cut.",
+                    "Tie the plants together.",
+                    "Wait for it to heal before removing the binding.",
+                    "Cut the rootstock branch some distance above the new bud.",
+                    "Once the bud wood has grown a few new leaves, remove the rest of the rootstock branch."
+                ],
+                "steps_predictions": [
+                    "plant_plant fir1 container1",
+                    "graft_plant npc clifftop fir1",
+                    "make_cut npc rootstock_plant container",
+                    "cut_buds npc nursery",
+                    "insert_bamboo_log npc",
+                    "tie_plant fir1 container1",
+                    "remove_binding npc",
+                    "cut_branch npc path",
+                    "remove_branch npc path"
+                ],
+                "goal_state": " ((planted npc fir1 container1))",
+                "similar_entity": {
+                    "path": {
+                        "routes": [
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "appearance",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "uninvestigated",
+                                "after": "investigated"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[road]] is related to [[path]]"
+                        ]
+                    },
+                    "rootstock plant": {
+                        "roots": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "clifftop": {
+                        "bubble want": [
+                            {
+                                "attribute": "shape",
+                                "before": "straight",
+                                "after": "twisted | shaped like want | bent into loop"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "in its original shape",
+                                "after": "in wand shape"
+                            },
+                            {
+                                "attribute": "use",
+                                "before": "for hanging",
+                                "after": "for blowing bubbles"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "inside",
+                                "after": "outside"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "fir": {
+                        "fir": [
+                            {
+                                "attribute": "location",
+                                "before": "in garden",
+                                "after": "in hand"
+                            },
+                            {
+                                "attribute": "cost",
+                                "before": "owned by garden center",
+                                "after": "purchased from garden center"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "at nursery",
+                                "after": "in possession"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier | lighter",
+                                "after": "lighter | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "in container"
+                            },
+                            {
+                                "attribute": "watered",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "contentment",
+                                "before": "thirsty",
+                                "after": "fed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "watered"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller",
+                                "after": "emptier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on plant",
+                                "after": "in new containers"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "nursery": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 412,
+                "task": "How to Plant",
+                "step": [
+                    "Choose the best location for your tree.",
+                    "Till the soil lightly with a pick or a shovel.",
+                    "Dig a hole in the area that is twice as wide as the root ball of your tree.",
+                    "Loosen the roots in preparation for the transplant.",
+                    "Pull the container away from the root ball until it is completely exposed.",
+                    "Look for roots that are circling.",
+                    "Place the root ball of the tree in your hole.",
+                    "Mix one part compost with three parts soil before you fill the hole around the tree.",
+                    "Fill in the area around the root ball with your mixture of compost and soil.",
+                    "Create a circular berm, or small mounded hill.",
+                    "Cover the area with a layer of mulch.",
+                    "Use stakes to support the tree.",
+                    "Water the area.",
+                    "Enjoy your gift to the earth!."
+                ],
+                "steps_predictions": [
+                    "choose_location fir1",
+                    "treat_soil soil1 garden_center",
+                    "dig_area root_ball area",
+                    "loosen_branch npc root_center",
+                    "pull_container container1 root_ball1",
+                    "get_roots npc root_of_tree",
+                    "place_root_of_tree fir1 garden_center",
+                    "mix_soil npc garden soil",
+                    "fill_area area1 container1",
+                    "create_berm berm1",
+                    "cover_area area1",
+                    "stabilize_tree npc path",
+                    "drink_water area water",
+                    "gather_gems npc garden"
+                ],
+                "goal_state": " ((planted_in fir1 container1))",
+                "similar_entity": {
+                    "root center": {
+                        "roots": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "path": {
+                        "routes": [
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "appearance",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "uninvestigated",
+                                "after": "investigated"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[road]] is related to [[path]]"
+                        ]
+                    },
+                    "soil": {
+                        "soil": [
+                            {
+                                "attribute": "location",
+                                "before": "in bag",
+                                "after": "in container"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Solo]] is a translation of [[soil]]",
+                            "[[ground]] is related to [[soil]]",
+                            "You are likely to find [[a potato]] in [[soil]]"
+                        ]
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "berm": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden": {
+                        "moss": [
+                            {
+                                "attribute": "cost",
+                                "before": "for sale at nursery",
+                                "after": "purchased from nursery"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter"
+                            },
+                            {
+                                "attribute": "position",
+                                "before": "outside of bowl",
+                                "after": "inside of bowl"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "mess",
+                                "after": "pruned"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[flowers]]",
+                            "You are likely to find [[a lizard]] in [[your garden]]",
+                            "[[a garden]] has [[flowers]]"
+                        ]
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "root of tree": {
+                        "roots": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden center": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "area": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[area]]"
+                        ]
+                    },
+                    "fir": {
+                        "fir": [
+                            {
+                                "attribute": "location",
+                                "before": "in garden",
+                                "after": "in hand"
+                            },
+                            {
+                                "attribute": "cost",
+                                "before": "owned by garden center",
+                                "after": "purchased from garden center"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "at nursery",
+                                "after": "in possession"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier | lighter",
+                                "after": "lighter | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "in container"
+                            },
+                            {
+                                "attribute": "watered",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "contentment",
+                                "before": "thirsty",
+                                "after": "fed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "watered"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller",
+                                "after": "emptier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on plant",
+                                "after": "in new containers"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "root ball": {
+                        "wailmer": [
+                            {
+                                "attribute": "action",
+                                "before": "unused",
+                                "after": "used"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "untrained",
+                                "after": "trained"
+                            },
+                            {
+                                "attribute": "going",
+                                "before": "still",
+                                "after": "going"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "untrained",
+                                "after": "trained"
+                            },
+                            {
+                                "attribute": "change",
+                                "before": "unevolved | still wailmer",
+                                "after": "evolved | evolving"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "unattained",
+                                "after": "now attained"
+                            },
+                            {
+                                "attribute": "items",
+                                "before": "uncopied",
+                                "after": "copied"
+                            },
+                            {
+                                "attribute": "full",
+                                "before": "hungry",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "change",
+                                "before": "unevolved",
+                                "after": "evolved"
+                            },
+                            {
+                                "attribute": "action",
+                                "before": "without rare candies",
+                                "after": "now holder of rare candy"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Plant a Plant\n\n**Steps in Natural Language**:\n1. **Select a fir tree** that you want to plant in your garden.\n2. **Gather the necessary tools and materials** to prepare the soil.\n3. **Use a shovel to till the soil** in the area where you plan to plant the tree.\n4. **Dig a hole** in the chosen spot with your shovel, making sure it's deep enough for the tree's roots.\n5. **Carefully unpack the fir tree** from its container.\n6. **Place the fir tree into the hole**, ensuring it is positioned correctly and considering the current weather conditions.\n7. **Water the area around the planted tree** thoroughly to help it establish and grow."
+    },
+    {
+        "step": [
+            "Choose your cultivar and your rootstock.",
+            "Amputate your rootstock.",
+            "Cleave your rootstock.",
+            "Prepare the scions.",
+            "Insert the scions into the rootstock.",
+            "Seal the graft.",
+            "Look after the graft."
+        ],
+        "task": "How to Graft a Tree",
+        "goal_state": "graft_tree npc path",
+        "steps": "```pddl\n; PDDL Planning Steps for Grafting a Tree\n\n; Step 1: Choose the rootstock for grafting\n(choose rootstock)\n\n; Step 2: Prepare the rootstock for grafting\n(prepare_for_task rootstock)\n\n; Step 3: Make a T-shaped cut on the rootstock\n(cut rootstock location T-cut)\n\n; Step 4: Choose the scion for grafting\n(choose scion)\n\n; Step 5: Prepare the scion for grafting\n(prepare_for_task scion)\n\n; Step 6: Insert the scion into the T cut on the rootstock\n(add scion rootstock T-cut)\n\n; Step 7: Tie the grafted tree\n(maintain agent graft)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 412,
+                "task": "How to Plant",
+                "step": [
+                    "Choose the best location for your tree.",
+                    "Till the soil lightly with a pick or a shovel.",
+                    "Dig a hole in the area that is twice as wide as the root ball of your tree.",
+                    "Loosen the roots in preparation for the transplant.",
+                    "Pull the container away from the root ball until it is completely exposed.",
+                    "Look for roots that are circling.",
+                    "Place the root ball of the tree in your hole.",
+                    "Mix one part compost with three parts soil before you fill the hole around the tree.",
+                    "Fill in the area around the root ball with your mixture of compost and soil.",
+                    "Create a circular berm, or small mounded hill.",
+                    "Cover the area with a layer of mulch.",
+                    "Use stakes to support the tree.",
+                    "Water the area.",
+                    "Enjoy your gift to the earth!."
+                ],
+                "steps_predictions": [
+                    "choose_location fir1",
+                    "treat_soil soil1 garden_center",
+                    "dig_area root_ball area",
+                    "loosen_branch npc root_center",
+                    "pull_container container1 root_ball1",
+                    "get_roots npc root_of_tree",
+                    "place_root_of_tree fir1 garden_center",
+                    "mix_soil npc garden soil",
+                    "fill_area area1 container1",
+                    "create_berm berm1",
+                    "cover_area area1",
+                    "stabilize_tree npc path",
+                    "drink_water area water",
+                    "gather_gems npc garden"
+                ],
+                "goal_state": " ((planted_in fir1 container1))",
+                "similar_entity": {
+                    "root center": {
+                        "roots": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "path": {
+                        "routes": [
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "appearance",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "uninvestigated",
+                                "after": "investigated"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[road]] is related to [[path]]"
+                        ]
+                    },
+                    "soil": {
+                        "soil": [
+                            {
+                                "attribute": "location",
+                                "before": "in bag",
+                                "after": "in container"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Solo]] is a translation of [[soil]]",
+                            "[[ground]] is related to [[soil]]",
+                            "You are likely to find [[a potato]] in [[soil]]"
+                        ]
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "berm": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden": {
+                        "moss": [
+                            {
+                                "attribute": "cost",
+                                "before": "for sale at nursery",
+                                "after": "purchased from nursery"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter"
+                            },
+                            {
+                                "attribute": "position",
+                                "before": "outside of bowl",
+                                "after": "inside of bowl"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "mess",
+                                "after": "pruned"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[flowers]]",
+                            "You are likely to find [[a lizard]] in [[your garden]]",
+                            "[[a garden]] has [[flowers]]"
+                        ]
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "root of tree": {
+                        "roots": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden center": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "area": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[area]]"
+                        ]
+                    },
+                    "fir": {
+                        "fir": [
+                            {
+                                "attribute": "location",
+                                "before": "in garden",
+                                "after": "in hand"
+                            },
+                            {
+                                "attribute": "cost",
+                                "before": "owned by garden center",
+                                "after": "purchased from garden center"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "at nursery",
+                                "after": "in possession"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier | lighter",
+                                "after": "lighter | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "in container"
+                            },
+                            {
+                                "attribute": "watered",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "contentment",
+                                "before": "thirsty",
+                                "after": "fed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "watered"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller",
+                                "after": "emptier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on plant",
+                                "after": "in new containers"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "root ball": {
+                        "wailmer": [
+                            {
+                                "attribute": "action",
+                                "before": "unused",
+                                "after": "used"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "untrained",
+                                "after": "trained"
+                            },
+                            {
+                                "attribute": "going",
+                                "before": "still",
+                                "after": "going"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "untrained",
+                                "after": "trained"
+                            },
+                            {
+                                "attribute": "change",
+                                "before": "unevolved | still wailmer",
+                                "after": "evolved | evolving"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "unattained",
+                                "after": "now attained"
+                            },
+                            {
+                                "attribute": "items",
+                                "before": "uncopied",
+                                "after": "copied"
+                            },
+                            {
+                                "attribute": "full",
+                                "before": "hungry",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "change",
+                                "before": "unevolved",
+                                "after": "evolved"
+                            },
+                            {
+                                "attribute": "action",
+                                "before": "without rare candies",
+                                "after": "now holder of rare candy"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 412,
+                "task": "How to Graft Plants",
+                "step": [
+                    "Plant the rootstock plants in advance.",
+                    "Prepare to graft the plants in cool weather when the scion plant is budding.",
+                    "Make a T-shaped cut on the rootstock plant.",
+                    "Cut a healthy bud and attached wood from the scion plant.",
+                    "Insert the bud wood into the T cut.",
+                    "Tie the plants together.",
+                    "Wait for it to heal before removing the binding.",
+                    "Cut the rootstock branch some distance above the new bud.",
+                    "Once the bud wood has grown a few new leaves, remove the rest of the rootstock branch."
+                ],
+                "steps_predictions": [
+                    "plant_plant fir1 container1",
+                    "graft_plant npc clifftop fir1",
+                    "make_cut npc rootstock_plant container",
+                    "cut_buds npc nursery",
+                    "insert_bamboo_log npc",
+                    "tie_plant fir1 container1",
+                    "remove_binding npc",
+                    "cut_branch npc path",
+                    "remove_branch npc path"
+                ],
+                "goal_state": " ((planted npc fir1 container1))",
+                "similar_entity": {
+                    "path": {
+                        "routes": [
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "appearance",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "uninvestigated",
+                                "after": "investigated"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[road]] is related to [[path]]"
+                        ]
+                    },
+                    "rootstock plant": {
+                        "roots": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "clifftop": {
+                        "bubble want": [
+                            {
+                                "attribute": "shape",
+                                "before": "straight",
+                                "after": "twisted | shaped like want | bent into loop"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "in its original shape",
+                                "after": "in wand shape"
+                            },
+                            {
+                                "attribute": "use",
+                                "before": "for hanging",
+                                "after": "for blowing bubbles"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "inside",
+                                "after": "outside"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "fir": {
+                        "fir": [
+                            {
+                                "attribute": "location",
+                                "before": "in garden",
+                                "after": "in hand"
+                            },
+                            {
+                                "attribute": "cost",
+                                "before": "owned by garden center",
+                                "after": "purchased from garden center"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "at nursery",
+                                "after": "in possession"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier | lighter",
+                                "after": "lighter | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "in container"
+                            },
+                            {
+                                "attribute": "watered",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "contentment",
+                                "before": "thirsty",
+                                "after": "fed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "watered"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller",
+                                "after": "emptier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on plant",
+                                "after": "in new containers"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "nursery": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Graft a Tree\n\n**Steps in Natural Language**:\n1. Choose a healthy rootstock to serve as the base for your grafted tree.\n2. Clean and prepare the rootstock to ensure it is free from pests and diseases.\n3. Make a T-shaped cut on the rootstock where you will insert the scion.\n4. Select a compatible scion that matches the rootstock for successful grafting.\n5. Trim and prepare the scion by removing excess leaves and ensuring it has healthy buds.\n6. Insert the prepared scion into the T-shaped cut on the rootstock.\n7. Tie the grafted area securely using grafting tape or string to maintain the connection."
+    }
+]

@@ -1,0 +1,5 @@
+(board_via_platform passenger1 platform1 boat1 dock1)
+(hold_rails passenger1 boat1)
+(secure_legs passenger1 boat1)
+(stabilize_boat passenger1 boat1)
+; cost = 4 (unit cost)

@@ -1,0 +1,6 @@
+[
+    "(:action brown\n      :parameters (?npc - player ?item1 - item ?item2 - item ?tool - item ?location - location) \n      :precondition (and (at ?npc ?location) (inventory ?npc ?item1) (inventory ?npc ?item2) (inventory ?npc ?tool) (is_tool ?tool) (is_location ?location))\n      :effect (and (browned ?item1) (browned ?item2))",
+    "(:action drain ; Drain an excess substance from an item into a specified location\n  :parameters (?npc - entity ?item - object ?location - place)\n  :precondition (and (at ?npc ?location) (inventory ?npc ?item) (contains_excess ?item) (is_drain_location ?location))\n  :effect (not (contains_excess ?item))",
+    "(:action add ; Add an item to a resource and update its status\n  :parameters (?npc - person ?resource - object ?item - object) \n  :precondition (and (available ?npc) (contains ?resource ?item) (not (updated ?resource)))\n  :effect (and (updated ?resource))",
+    "(:action finish\n  ; Complete a multi-step task and update the status\n  :parameters (?npc - player ?location - location ?item - item ?task - task)\n  \n  :precondition (and \n    (at ?npc ?location) \n    (inventory ?npc ?item) \n    (task_step ?task ?step) ; Current step of the task\n    (valid_step ?step ?task) ; Validity of the current step in the task sequence\n  )\n  \n  :effect (and \n    (not (task_step ?task ?step))"
+]

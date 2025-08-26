@@ -1,0 +1,7 @@
+[
+    "(:action boil\n    :parameters (?actor - entity ?resource - resource ?location - location)\n    :precondition (and (at ?actor ?location) (has_stove ?location))\n    :effect (and (boiled ?resource) (not (cold ?resource))",
+    "(:action add\n    :parameters (?p - player ?l - location ?item - object ?container - object ?condition - predicate)\n    :precondition (and (at ?p ?l) (not (added ?item ?container)) ?condition)\n    :effect (and (added ?item ?container))",
+    "(:action drain\n  ; Drain a resource and update its state\n  :parameters (?actor - agent ?entity - resource)\n  :precondition (and (at ?actor ?location) (processed ?entity))\n  :effect (and (drained ?entity) (not (wet ?entity))",
+    "(:action cook ; Cook a food item using a specific tool and update its status\n  :parameters (?p - person ?l - location ?item - object ?tool - tool)\n  :precondition (and (at ?p ?l) (prepared ?tool))\n  :effect (cooked ?item ?tool))",
+    "(:action serve\n    :parameters (?npc - person ?item - object ?location - location ?container - container)\n    :precondition (and (at ?npc ?location) (cooked ?container))\n    :effect (served ?item ?container))"
+]

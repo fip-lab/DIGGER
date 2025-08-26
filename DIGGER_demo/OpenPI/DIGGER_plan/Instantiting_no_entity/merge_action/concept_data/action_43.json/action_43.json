@@ -1,0 +1,18 @@
+{
+    "make": [
+        "(:action make_microphone_connected\n    :parameters (?p - player ?mic - microphone)\n    :precondition (and (not (microphone_connected ?p ?mic)) (has_microphone ?p ?mic))\n    :effect (microphone_connected ?p ?mic)\n)\n\n"
+    ],
+    "find": [
+        "(:action find_panel\n    :parameters (?p - player ?panel - panel)\n    :precondition (and (at ?p ?location) (not (panel_found ?p ?panel)))\n    :effect (panel_found ?p ?panel)\n)\n\n"
+    ],
+    "check": [
+        "(:action check_panel\n    :parameters (?p - player ?panel - panel)\n    :precondition (and (panel_found ?p ?panel) (not (panel_checked ?p ?panel)))\n    :effect (panel_checked ?p ?panel)\n)\n\n"
+    ],
+    "talk": [
+        "(:action talk_using_microphone\n    :parameters (?p - player ?mic - microphone ?voice - voice)\n    :precondition (and (microphone_connected ?p ?mic) (panel_checked ?p voice_panel) (not (talking ?p ?voice)))\n    :effect (talking ?p ?voice)\n)\n\n",
+        "(:action advise_teammates\n    :parameters (?p - player ?advice - advice)\n    :precondition (and (using_microphone ?p ?voice) (not (advising ?p ?advice)))\n    :effect (advising ?p ?advice)\n)\n```\n\nExplanation:\n1. `make_microphone_connected`: Ensures the microphone is connected.\n2. `find_panel`: Finds the relevant panel (e.g., Voice panel).\n3. `check_panel`: Checks the panel to ensure it's the correct one.\n4. `talk_using_microphone`: Starts talking using the microphone.\n5. `use_microphone`: Uses the microphone to communicate.\n6. `advise_teammates`: Advises teammates using the microphone.\n\nEach action follows the format of defining the action name, parameters, preconditions, and effects, ensuring the logical flow of connecting and using the microphone in Team Fortress 2."
+    ],
+    "use": [
+        "(:action use_microphone\n    :parameters (?p - player ?voice - voice)\n    :precondition (and (talking ?p ?voice) (not (using_microphone ?p ?voice)))\n    :effect (using_microphone ?p ?voice)\n)\n\n"
+    ]
+}

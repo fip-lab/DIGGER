@@ -1,0 +1,16 @@
+{
+    "fold": [
+        "(:action make_horizontal_bar\n      :parameters (?npc - player ?tape - duct_tape)\n      :precondition (and (inventory ?npc ?tape) (rolled ?tape))\n      :effect (and (not (rolled ?tape)) (horizontal_bar ?tape))\n)\n\n",
+        "(:action fold_wreath\n      :parameters (?npc - player ?tape - duct_tape ?wreath - wreath)\n      :precondition (and (cut ?tape) (inventory ?npc ?tape))\n      :effect (and (folded ?tape) (status ?wreath in_progress))\n)\n\n",
+        "(:action fold_half_tape\n      :parameters (?npc - player ?tape - duct_tape)\n      :precondition (and (folded ?tape) (inventory ?npc ?tape))\n      :effect (and (half_folded ?tape))\n)\n\n"
+    ],
+    "cut": [
+        "(:action cut_roll\n      :parameters (?npc - player ?tape - duct_tape ?length - length)\n      :precondition (and (inventory ?npc ?tape) (horizontal_bar ?tape))\n      :effect (and (cut ?tape ?length) (not (horizontal_bar ?tape)))\n)\n\n"
+    ],
+    "tape": [
+        "(:action tape_ends\n      :parameters (?npc - player ?tape - duct_tape ?ends - ends)\n      :precondition (and (half_folded ?tape) (inventory ?npc ?tape))\n      :effect (and (ends_taped ?tape ?ends) (organization ?ends touching) (form ?ends joined_together))\n)\n\n"
+    ],
+    "put": [
+        "(:action put_in_machine\n      :parameters (?npc - player ?tape - duct_tape)\n      :precondition (and (ends_taped ?tape))\n      :effect (and (completed ?tape))\n)\n```\n\n### Descriptions and Entity States:\n\n- **make_horizontal_bar**: The action involves taking a roll of duct tape and making a piece a little bigger than the head.\n    - **Precondition**: The player should have the duct tape in their inventory and the tape should be rolled.\n    - **Effect**: The tape is no longer rolled and is in the form of a horizontal bar.\n\n- **cut_roll**: The action involves measuring it around the head and cutting it off the roll.\n    - **Precondition**: The player should have the duct tape in their inventory and it should be in the form of a horizontal bar.\n    - **Effect**: The tape is cut to the required length and no longer in the form of a horizontal bar.\n\n- **fold_wreath**: The action involves folding the tape halfway through the middle.\n    - **Precondition**: The tape should be cut and available in the player's inventory.\n    - **Effect**: The tape is folded and the wreath status is in progress.\n\n- **fold_half_tape**: The action involves folding the other half so no sticky part is showing.\n    - **Precondition**: The tape should be folded and available in the player's inventory.\n    - **Effect**: The tape is half-folded.\n\n- **tape_ends**: The action involves taping the ends together.\n    - **Precondition**: The tape should be half-folded and in the player's inventory.\n    - **Effect**: The ends of the tape are taped together, with the ends touching and joined together.\n\n- **put_in_machine**: The action involves completing the task by putting the taped ends in the machine.\n    - **Precondition**: The ends of the tape should be taped together.\n    - **Effect**: The duct tape necklace is completed.\n\nThese actions capture the steps required to make a duct tape necklace, following the descriptions and entity states provided."
+    ]
+}

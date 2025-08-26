@@ -1,0 +1,38 @@
+[
+    {
+        "task": "How to Boil Corned Beef",
+        "instantiting_action": [
+            "finish(p item)",
+            "finish_cooked_item(p item)",
+            "cook(p item thermometer appliance location)",
+            "cook(p item spatula appliance location)",
+            "cook(p item tool appliance location)",
+            "cook(p item pan appliance location)",
+            "cook(p item skillet appliance location)",
+            "chill(p item location)",
+            "season(agent item seasoning location)",
+            "pull(actor item)",
+            "peek_into_patty(p patty grill)",
+            "peek(actor item location)",
+            "choose(agent item location method)",
+            "add(entity bowl)",
+            "write(p component)",
+            "analyze(agent resource context)",
+            "listen(actor source context)",
+            "light(agent item thermometer loc)",
+            "light(agent item spatula loc)",
+            "light(agent item tool loc)",
+            "light(agent item pan loc)",
+            "light(agent item skillet loc)",
+            "free(entity resource location)",
+            "remove(agent item location)",
+            "eat(p patty freezer grill knob plate)",
+            "serve(entity source destination thermometer)",
+            "serve(entity source destination spatula)",
+            "serve(entity source destination tool)",
+            "serve(entity source destination pan)",
+            "serve(entity source destination skillet)",
+            "layer(p component bowl)"
+        ]
+    }
+]

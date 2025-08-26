@@ -1,0 +1,1576 @@
+[
+    {
+        "cluster_label": 2322,
+        "task": "How to Do a Chain Braid",
+        "step": [
+            "Part your hair down the center.",
+            "Grab a small section of hair from next to the part.",
+            "Divide the section into two thinner strands.",
+            "Tie the strands into a knot, just like tying a pair of shoes.",
+            "Add some hair to each strand, just like French braiding.",
+            "Tie the strands into another knot.",
+            "Continue adding hair to each strand and tying them into knots.",
+            "Tie the braid off with an elastic.",
+            "Braid the other section of hair.",
+            "Gather your hair into a half-up, half-down ponytail or two pigtails.",
+            "Twist the ponytail or pigtails into a bun."
+        ],
+        "steps_predictions": [
+            "part_with_hair npc",
+            "grab_small_area npc scissors",
+            "divide_section section1",
+            "tied_with_completed_ties npc",
+            "add_hair_to_strand npc",
+            "tied_with_spider npc",
+            "add_hair_to_strand npc",
+            "tie_braid npc",
+            "bend_to_shape_others_hair npc",
+            "gather_hair pony1",
+            "twist-ponytail-into-un bun"
+        ],
+        "goal_state": " ((completed npc))",
+        "similar_entity": {
+            "section": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[department]] is related to [[section]]"
+                ],
+                "comet_knowledge": [
+                    "section ObjectUse section of book",
+                    "section MadeUpOf section",
+                    "section HasProperty found in book",
+                    "section CapableOf write in"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "pony": {
+                "tails": [
+                    {
+                        "attribute": "orientation",
+                        "before": "bare",
+                        "after": "adorned | beaded"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open",
+                        "after": "closed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[horse]] is related to [[pony]]"
+                ],
+                "comet_knowledge": [
+                    "pony ObjectUse ride",
+                    "pony MadeUpOf mare",
+                    "pony HasProperty two legs",
+                    "pony CapableOf saddle up"
+                ]
+            },
+            "scissors": {
+                "the clipping": [
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "cut"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "drier | dry",
+                        "after": "wetter | moister | moistened"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "pure",
+                        "after": "dipped into rooting hormone"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[scissors]] are used to [[cut]]",
+                    "[[scissors]] can [[cut that paper]]",
+                    "[[cut]] is related to [[scissors]]",
+                    "*Something you find in [[the desk]] is [[scissors]]",
+                    "[[going to get a haircut]] requires [[scissors]]"
+                ],
+                "comet_knowledge": [
+                    "scissors ObjectUse cut hair",
+                    "scissors MadeUpOf scissors",
+                    "scissors HasProperty scissors",
+                    "scissors CapableOf cut hair"
+                ]
+            },
+            "bun": {
+                "the bung": [
+                    {
+                        "attribute": "location",
+                        "before": "on bike | on",
+                        "after": "removed from bike | removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "attached",
+                        "after": "disattached"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from bike",
+                        "after": "on bike"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "loose",
+                        "after": "attached"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[roll]] is related to [[bun]]"
+                ],
+                "comet_knowledge": [
+                    "bun ObjectUse use as a weapon",
+                    "bun MadeUpOf buns",
+                    "bun HasProperty buns",
+                    "bun CapableOf put on head"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Braid Curly Hair",
+        "step": [
+            "Gather some hair at the crown and start to braid.",
+            "Pull more hair from each side of the head before repeating the pattern.",
+            "Continue the braiding process to the end."
+        ],
+        "steps_predictions": [
+            "gather_hair npc",
+            "pull_hair npc scissors",
+            "bend_to_end npc"
+        ],
+        "goal_state": "bend_to_end npc scissors",
+        "similar_entity": {
+            "scissors": {
+                "the clipping": [
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "cut"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "drier | dry",
+                        "after": "wetter | moister | moistened"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "pure",
+                        "after": "dipped into rooting hormone"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[scissors]] are used to [[cut]]",
+                    "[[scissors]] can [[cut that paper]]",
+                    "[[cut]] is related to [[scissors]]",
+                    "*Something you find in [[the desk]] is [[scissors]]",
+                    "[[going to get a haircut]] requires [[scissors]]"
+                ],
+                "comet_knowledge": [
+                    "scissors ObjectUse cut hair",
+                    "scissors MadeUpOf scissors",
+                    "scissors HasProperty scissors",
+                    "scissors CapableOf cut hair"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Style Your Braids",
+        "step": [
+            "Trim away frizz, dip the braids in hot water, then set them with gel.",
+            "Re-do the braids around your hairline.",
+            "Tame the baby hairs around your hairline with edge control cream.",
+            "Switch up the length and style of your braids.",
+            "Cover unruly hairlines and roots with clever styling or a scarf."
+        ],
+        "steps_predictions": [
+            "dip_braids_in_faucet npc",
+            "re_do_braids npc",
+            "treat_baby_hair npc",
+            "switch_length_and_style_of_braids you",
+            "cover_hair_and_roots npc"
+        ],
+        "goal_state": " ((completed_braids npc))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Braid Hair",
+        "step": [
+            "Learn how to Dutch braid.",
+            "Try a waterfall braid.",
+            "Create a braided headband.",
+            "Make a braided braid.",
+            "Try a rope braid."
+        ],
+        "steps_predictions": [
+            "learn_Dutch_braid npc",
+            "treat_water waterfall braid",
+            "create_braided_headband npc",
+            "make_braided_braid npc",
+            "treat_roof_braid npc"
+        ],
+        "goal_state": " ((learn npc braid))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "waterfall": {
+                "sink": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full of macaroni"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter top",
+                        "after": "under faucet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | cleaner",
+                        "after": "dirty | dirtier"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "drier",
+                        "after": "wetter"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find at [[a waterfall]] is [[water]]",
+                    "[[queda d'\u00e1gua]] is a translation of [[waterfall]]"
+                ],
+                "comet_knowledge": [
+                    "waterfall ObjectUse waterfalls",
+                    "waterfall MadeUpOf water",
+                    "waterfall HasProperty water",
+                    "waterfall CapableOf waterfalls"
+                ]
+            },
+            "braid": {
+                "the piece of yarn": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted and folded"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "braid ObjectUse hold hair in place",
+                    "braid MadeUpOf braid",
+                    "braid HasProperty braid",
+                    "braid CapableOf put on head"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Braid Cornrows",
+        "step": [
+            "Try side-swept cornrows for an elegant look.",
+            "Go with swirl cornrows to try something unique.",
+            "Braid long cornrows into a high ponytail.",
+            "Try cornrows with zig-zag parts for something totally different."
+        ],
+        "steps_predictions": [
+            "sliplargerbeads cornrows",
+            "create_unique_completed cornrows",
+            "braid_cornrows npc",
+            "choose_cornrows npc"
+        ],
+        "goal_state": " ((completed cornrows))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "cornrows": {
+                "the bead": [
+                    {
+                        "attribute": "location",
+                        "before": "off strip | on counter",
+                        "after": "on strip | on band"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "random",
+                        "after": "in order on band"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "loose",
+                        "after": "banded"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "off strip of elastic | in container",
+                        "after": "on strip of elastic | on elastic"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "off strip of elastic | off elastic",
+                        "after": "on strip of elastic | on elastic"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "random",
+                        "after": "in order"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "in straighter line",
+                        "after": "curved"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "cornrows ObjectUse keep hair in place",
+                    "cornrows MadeUpOf cornrows",
+                    "cornrows HasProperty worn on head",
+                    "cornrows CapableOf make hair look nice"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Braid Wire Rope",
+        "step": [
+            "Know how many strands of wire you'll be braiding.",
+            "Separate the strands of wire.",
+            "Pull the wire strands correctly.",
+            "Secure loose ends."
+        ],
+        "steps_predictions": [
+            "braiding_with_wire npc",
+            "separate_weave npc",
+            "pull_twice npc",
+            "secure_ends ends"
+        ],
+        "goal_state": " ((has_shape npc) (width_narrower rope))",
+        "similar_entity": {
+            "ends": {
+                "ends": [
+                    {
+                        "attribute": "organization",
+                        "before": "seperate",
+                        "after": "touching"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "bare",
+                        "after": "joined together"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "ends ObjectUse have a good time",
+                    "ends MadeUpOf ends",
+                    "ends HasProperty none",
+                    "ends CapableOf go to sleep"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Side Braid Hair",
+        "step": [
+            "Sweep all your hair onto 1 side.",
+            "Part hair into 2 sections.",
+            "Begin the braid.",
+            "Secure with a hair elastic."
+        ],
+        "steps_predictions": [
+            "sweep_all_of_hair npc",
+            "part_of_hair npc",
+            "start_braid npc",
+            "secure_with_hair_ elastic1"
+        ],
+        "goal_state": " ((completed npc hair) (joined_ends ends1))",
+        "similar_entity": {
+            "elastic": {
+                "the strip of elastic": [
+                    {
+                        "attribute": "length",
+                        "before": "longer | heavier",
+                        "after": "shorter | lighter"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "uncut",
+                        "after": "cut"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lap"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "less colorful",
+                        "after": "more colorful"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "less colorful",
+                        "after": "more colorful"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "less colorful",
+                        "after": "more colorful"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "rounded"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[stretch]] is related to [[elastic]]"
+                ],
+                "comet_knowledge": [
+                    "elastic ObjectUse make a parachute",
+                    "elastic MadeUpOf elastic",
+                    "elastic HasProperty hard",
+                    "elastic CapableOf wear on clothing"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Plait",
+        "step": [
+            "Start with smooth tangle-free hair.",
+            "Separate the hair to plait.",
+            "Plait as normal.",
+            "Secure the braid over the top of your head like a headband."
+        ],
+        "steps_predictions": [
+            "start_with_smooth_tangle_free hair",
+            "separate_hair npc",
+            "plait as normal",
+            "secure_braid npc"
+        ],
+        "goal_state": " ((completed_plait npc))",
+        "similar_entity": {
+            "hair": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[hair]] in [[someone's head]]",
+                    "[[wool]] is related to [[hair]]",
+                    "[[hair]] can [[fall out]]",
+                    "[[hair]] is part of [[your head]]",
+                    "[[Mammals]] have [[hair]]",
+                    "[[hair]] is used for [[warmth]]",
+                    "[[P\u00ealo]] is a translation of [[hair]]",
+                    "[[having a haircut]] requires [[hair]]"
+                ],
+                "comet_knowledge": [
+                    "hair ObjectUse hair dye",
+                    "hair MadeUpOf hairline",
+                    "hair HasProperty hair",
+                    "hair CapableOf brush"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "as": {
+                "asparagus": [
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "out on table"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "cut up | cut"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "exposed",
+                        "after": "mostly covered"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "longer",
+                        "after": "shorter"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "pointier",
+                        "after": "duller"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw | cold",
+                        "after": "cooked | warm"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "crispy",
+                        "after": "softened"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "cooking",
+                        "after": "cooling"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in oven | in pan",
+                        "after": "on platter | in serving dish"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "as ObjectUse use as a weapon",
+                    "as MadeUpOf as a noun",
+                    "as HasProperty as a noun",
+                    "as CapableOf get out of car"
+                ]
+            },
+            "normal": {
+                "light": [
+                    {
+                        "attribute": "amount",
+                        "before": "bright",
+                        "after": "diffused"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[ordinary]] is related to [[normal]]"
+                ],
+                "comet_knowledge": [
+                    "normal ObjectUse normal",
+                    "normal MadeUpOf normal",
+                    "normal HasProperty normal",
+                    "normal CapableOf normalize"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Do a Basic Hair Braid",
+        "step": [
+            "Part your hair off to the side.",
+            "Gather a small chunk of hair right next to the side part and your hairline.",
+            "Divide the chunk into three even sections.",
+            "Begin with a standard braid.",
+            "Add a thin strand of hair to the section closest to your hairline.",
+            "Cross the hairline section over the middle section.",
+            "Add a thin strand of hair to the section closest to your side part.",
+            "Cross the side part section over the new middle section.",
+            "Continue adding strands and crossing over sections.",
+            "Consider how you want to end the braid.",
+            "Stop braiding when you are 1 inch (2.54 centimeters) away from the nape of your neck.",
+            "Consider adding a decorations to the end of your braid after you tie it off."
+        ],
+        "steps_predictions": [
+            "part_of_hair npc",
+            "gather_hair npc",
+            "divide_chunk npc basement",
+            "start_braid npc",
+            "add_hair_to_section npc",
+            "cross_hairline section",
+            "add_hair_to_sliplargerbeads npc",
+            "cross_panel panel",
+            "cross_over_crosses npc",
+            "end_braid braid1",
+            "stop braiding npc",
+            "attach_completed_braid npc"
+        ],
+        "goal_state": " ((completed_hair npc))",
+        "similar_entity": {
+            "section": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[department]] is related to [[section]]"
+                ],
+                "comet_knowledge": [
+                    "section ObjectUse section of book",
+                    "section MadeUpOf section",
+                    "section HasProperty found in book",
+                    "section CapableOf write in"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            },
+            "braiding": {
+                "webbing": [
+                    {
+                        "attribute": "location",
+                        "before": "in vehicle",
+                        "after": "on ground"
+                    },
+                    {
+                        "attribute": "attention",
+                        "before": "carelessly placed",
+                        "after": "carefully placed"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "braiding ObjectUse make hair look nice",
+                    "braiding MadeUpOf hair",
+                    "braiding HasProperty hair",
+                    "braiding CapableOf cut hair"
+                ]
+            },
+            "panel": {
+                "panel": [
+                    {
+                        "attribute": "selection",
+                        "before": "unadjusted",
+                        "after": "adjusted"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "invisible",
+                        "after": "visible"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "deselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "panel ObjectUse use as a table",
+                    "panel MadeUpOf panel",
+                    "panel HasProperty found on desk",
+                    "panel CapableOf use as paperweight"
+                ]
+            },
+            "braid": {
+                "the piece of yarn": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted and folded"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "braid ObjectUse hold hair in place",
+                    "braid MadeUpOf braid",
+                    "braid HasProperty braid",
+                    "braid CapableOf put on head"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Make a Fishtail Braid",
+        "step": [
+            "Make a side fishtail braid.",
+            "Try making a topsy-turvy ponytail before you start doing the fishtail braid.",
+            "Use a clip or barrette to cover up the hair tie.",
+            "Roll your braid into a bun at the nape of your neck.",
+            "Add some colored hair extensions before you start braiding your hair."
+        ],
+        "steps_predictions": [
+            "make_side_braid fish_tail braid",
+            "make_topsy_turvy ponytail braid",
+            "cover_with_clip alice",
+            "roll_bun npc",
+            "add-color_completed_braiding my_hair extensions"
+        ],
+        "goal_state": " ((completed my_hair braid))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "my hair": {
+                "pedals": [
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in air"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in air | on ground",
+                        "after": "on pedal"
+                    },
+                    {
+                        "attribute": "placement",
+                        "before": "on ground",
+                        "after": "now off ground"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "on pedal"
+                    },
+                    {
+                        "attribute": "motion",
+                        "before": "still",
+                        "after": "moving"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on bike",
+                        "after": "on ground"
+                    },
+                    {
+                        "attribute": "placement",
+                        "before": "on pedal",
+                        "after": "now on ground"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "my hair ObjectUse cut off",
+                    "my hair MadeUpOf hairline",
+                    "my hair HasProperty hair dye",
+                    "my hair CapableOf wash"
+                ]
+            },
+            "ponytail": {
+                "tails": [
+                    {
+                        "attribute": "orientation",
+                        "before": "bare",
+                        "after": "adorned | beaded"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open",
+                        "after": "closed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[queue de cheval]] is a translation of [[ponytail]]"
+                ],
+                "comet_knowledge": [
+                    "ponytail ObjectUse wear as a costume",
+                    "ponytail MadeUpOf ponytail",
+                    "ponytail HasProperty hair",
+                    "ponytail CapableOf wear on head"
+                ]
+            },
+            "extensions": {
+                "sticks": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered",
+                        "after": "bundled"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "all over place",
+                        "after": "collected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "bunched up",
+                        "after": "in formation"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "bundled",
+                        "after": "stacked"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "stand-alone",
+                        "after": "fortified"
+                    },
+                    {
+                        "attribute": "tightness",
+                        "before": "untied",
+                        "after": "tired with bark"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "extensions ObjectUse give to a friend",
+                    "extensions MadeUpOf extension",
+                    "extensions HasProperty extended life",
+                    "extensions CapableOf have more money"
+                ]
+            },
+            "fish tail": {
+                "tails": [
+                    {
+                        "attribute": "orientation",
+                        "before": "bare",
+                        "after": "adorned | beaded"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open",
+                        "after": "closed"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fish tail ObjectUse use as a weapon",
+                    "fish tail MadeUpOf tailbone",
+                    "fish tail HasProperty found in aquarium",
+                    "fish tail CapableOf catch fish"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            },
+            "braid": {
+                "the piece of yarn": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted and folded"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "braid ObjectUse hold hair in place",
+                    "braid MadeUpOf braid",
+                    "braid HasProperty braid",
+                    "braid CapableOf put on head"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Braid Leather",
+        "step": [
+            "Fashion a bracelet from your braided leather.",
+            "Make a necklace using the same end connections as the bracelet.",
+            "Use a tiny braid as a leather ring."
+        ],
+        "steps_predictions": [
+            "fashion_braided_leather velveeta",
+            "make_completed npc",
+            "use_as_leather_ring velveeta"
+        ],
+        "goal_state": " ((completed npc use_as_leather velveeta))",
+        "similar_entity": {
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Make a Clothesline to Use Without Hangers",
+        "step": [
+            "Find the smallest, thinnest surgical tubing you can find.",
+            "If you use rubber bands you will first have to loop the bands together by putting one through another and back through itself before it's pulled tight.",
+            "Once you have the full length you need (about 20 ft.) divide it into 3rds and cut it into separate pieces.",
+            "String one of the hooks along one of the strands until it's next to the knot.",
+            "Begin to braid the three strands in a common overlap pattern.",
+            "Once you're satisfied with the braided strands, Put the second hook in one of the strands.",
+            "It's ready to use almost anywhere, anytime, without hangers, clothespins or hanging things over the line.",
+            "Loop each end around some fixtures so the entire line is slightly stretched.",
+            "When you go to hang anything, pull one of the strands away from the other two and place a small corner of the garment through the gap."
+        ],
+        "steps_predictions": [
+            "find_smallest_tunestick npc",
+            "loop_bands npc",
+            "dividen_length npc",
+            "sliplargerbeads npc",
+            "bend_to_shape_twice npc",
+            "put_hook npc",
+            "hang-hanger hanger-1",
+            "loop-ends ends",
+            "hang-on-rack npc"
+        ],
+        "goal_state": " ((on npc hanger-1))",
+        "similar_entity": {
+            "ends": {
+                "ends": [
+                    {
+                        "attribute": "organization",
+                        "before": "seperate",
+                        "after": "touching"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "bare",
+                        "after": "joined together"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "ends ObjectUse have a good time",
+                    "ends MadeUpOf ends",
+                    "ends HasProperty none",
+                    "ends CapableOf go to sleep"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "hanger-": {
+                "bubble want": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted | shaped like want | bent into loop"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "in its original shape",
+                        "after": "in wand shape"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "for hanging",
+                        "after": "for blowing bubbles"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "inside",
+                        "after": "outside"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "hanger- ObjectUse hang clothes on",
+                    "hanger- MadeUpOf hanger",
+                    "hanger- HasProperty found in closet",
+                    "hanger- CapableOf hang clothes on"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Do Different Braids",
+        "step": [
+            "Wrap 2 regular braids around your head to get milkmaid braids.",
+            "Create box braids on natural hair by doing multiple mini braids.",
+            "Divide your hair into multiple mini Dutch braids to do cornrows.",
+            "Wrap a pair of Dutch braids around your head for a braided crown.",
+            "Try an upside down braid for a twist."
+        ],
+        "steps_predictions": [
+            "wrap_braids npc",
+            "create_braids npc",
+            "drain_braids npc",
+            "wrap_braids npc",
+            "turn_on_oven npc"
+        ],
+        "goal_state": " ((on_oven npc) (in_machine velveeta))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Braid Your Own Hair",
+        "step": [
+            "Brush your hair thoroughly.",
+            "Part your hair into two sections.",
+            "Begin your braid.",
+            "Do the same for the left side.",
+            "Continue braiding your hair following the last step.",
+            "Secure the braid at the end with a hair elastic."
+        ],
+        "steps_predictions": [
+            "brush-with-hair you",
+            "part_of_hair npc",
+            "start_braid npc",
+            "make_sliplargerbeads npc",
+            "braiding_with_hair my_equipment",
+            "secure_braid braid1"
+        ],
+        "goal_state": " ((on_rack npc) (in_order braid1))",
+        "similar_entity": {
+            "my equipment": {
+                "equipment": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered | laying sporadically",
+                        "after": "organized | gathered"
+                    },
+                    {
+                        "attribute": "equipment",
+                        "before": "unorganized",
+                        "after": "laid in pattern"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "my equipment ObjectUse use as a weapon",
+                    "my equipment MadeUpOf my hands",
+                    "my equipment HasProperty used in the military",
+                    "my equipment CapableOf use as a weapon"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "braid": {
+                "the piece of yarn": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted and folded"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "braid ObjectUse hold hair in place",
+                    "braid MadeUpOf braid",
+                    "braid HasProperty braid",
+                    "braid CapableOf put on head"
+                ]
+            }
+        }
+    }
+]

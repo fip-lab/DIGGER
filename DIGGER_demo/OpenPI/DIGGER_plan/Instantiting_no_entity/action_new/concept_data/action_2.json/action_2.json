@@ -1,0 +1,6 @@
+[
+    "(:action choose ; Choose an entity and update its status\n  :parameters (?actor - agent ?entity - object)\n  :precondition (and (not (selected ?actor ?entity)) (available ?entity))\n  :effect (and (selected ?actor ?entity) (not (available ?entity))",
+    "(:action hold ; Hold and stabilize a resource while ensuring central positioning\n  :parameters (?p - passenger ?b - boat)\n  :precondition (and (aboard ?p ?b) (or (has_rails ?b) (in_center_line ?p ?b)))\n  :effect (and\n    (when (has_rails ?b) (holding_rails ?p ?b))",
+    "(:action stabilize ;  Stabilize an entity and ensure its secure condition\n  :parameters (?agent - entity ?object - entity)\n  :precondition (and (interacting ?agent ?object) (not (stable ?object)))\n  :effect (stable ?object))",
+    "(:action remain ; Ensure an entity remains in a specific state or location\n  :parameters (?entity - object ?location - place)\n  :precondition (and (in ?entity ?location) (stabilized ?location))\n  :effect (and (remains ?entity ?location) (secured ?entity))"
+]

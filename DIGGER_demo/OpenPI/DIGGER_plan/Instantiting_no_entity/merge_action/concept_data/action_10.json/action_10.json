@@ -1,0 +1,17 @@
+{
+    "swing": [
+        "(:action swing-leg-over-bike\n      :parameters (?b - bike ?p - person)\n      :precondition (and (not (on-bike ?p)) (standing ?p))\n      :effect (and (on-bike ?p) (not (standing ?p)))\n)\n\n"
+    ],
+    "put": [
+        "(:action put_foot_on_pedal\n      :parameters (?p - person ?pedal - pedal)\n      :precondition (and (on-bike ?p) (not (foot-on-pedal ?p ?pedal)))\n      :effect (foot-on-pedal ?p ?pedal)\n)\n\n"
+    ],
+    "hold": [
+        "(:action hold_handlebars\n      :parameters (?p - person ?b - bike)\n      :precondition (and (on-bike ?p) (not (holding-handlebars ?p ?b)))\n      :effect (holding-handlebars ?p ?b)\n)\n\n"
+    ],
+    "pedal": [
+        "(:action pedal-with-feet\n      :parameters (?p - person)\n      :precondition (and (on-bike ?p) (foot-on-pedal ?p pedal-left) (foot-on-pedal ?p pedal-right) (holding-handlebars ?p bike))\n      :effect (and (moving ?p bike) (not (stationary ?p bike)))\n)\n\n"
+    ],
+    "stop": [
+        "(:action stop\n      :parameters (?p - person ?b - bike)\n      :precondition (and (moving ?p ?b))\n      :effect (and (not (moving ?p ?b)) (stationary ?p ?b))\n)\n\nThese actions capture the sequence of steps required to get on a bike, pedal, and eventually stop. Each action specifies the necessary preconditions and the effects of performing the action."
+    ]
+}

@@ -1,0 +1,808 @@
+[
+    {
+        "goal": "Connect a Wii to HD TV",
+        "steps": [
+            "Plug in your HDMI cord to the cable.",
+            "Plug it into your TV's HDMI input.",
+            "Plug it into your wii's AV Composite Output instead of putting in the Composite cord that comes with the Wii.",
+            "Plug your HDMI cord (assuming you have one) into the converter and your TV."
+        ],
+        "pddl": [
+            "plug_hdmi_to_cable hdmi_cord1",
+            "plug_hdmi_to_tv hdmi_cord1 tv1",
+            "connect_hdmi_to_wii_av hdmi_cord1 wii_av_output1",
+            "plug_hdmi_to_converter hdmi_cord1 converter1 tv1"
+        ],
+        "goal_state": "((connected_to_converter_tv hdmi_cord1) (full_tv tv1) (connected_converter converter1))"
+    },
+    {
+        "goal": "Make Cheese Sauce with Jalapeño Peppers",
+        "steps": [
+            "First cut the Velveeta in to tiny squares and set aside.",
+            "Set the burner on a medium to low setting, before that you begin adding the cheese product.",
+            "Wait until the Velveeta has melted lower the heat somewhat and add in the (Rotel) tomatoes.",
+            "Add in the Jalapeno peppers, and black olives if desired.",
+            "Cheese sauce is at its best if served very warm."
+        ],
+        "pddl": [
+            "cut_velveeta velveeta cutting_board",
+            "set_burner_add_cheese stove_knob velveeta pot",
+            "add_peppers_and_olives olives peppers pot",
+            "serve_cheese_sauce cheese_sauce pot"
+        ],
+        "goal_state": "((at_location cheese_sauce in_bowl) (has_temperature cheese_sauce hot) (at_location olives in_pot))"
+    },
+    {
+        "goal": "Board a Small Boat",
+        "steps": [
+            "Prefer boarding across a solid platform if possible.",
+            "If you are crossing using a platform, hold on to the rails provided.",
+            "Avoid plonking one leg in the boat and leaving one on the jetty - this will cause wobbling and you might fall into the water.",
+            "Once in the boat, always remain in the centre line to move around it and lower yourself to a crouch level so that you reduce your centre of gravity and keep the craft as still as possible.",
+            "Keep the craft steady as others board."
+        ],
+        "pddl": [
+            "board_via_platform passenger1 platform1 boat1 dock1",
+            "hold_rails passenger1 boat1",
+            "secure_legs passenger1 boat1",
+            "stabilize_boat passenger1 boat1"
+        ],
+        "goal_state": "((at passenger1 boat1) (legs-in-boat passenger1) (holding-rail passenger1) (centered boat1) (boat-stable boat1) (crouched passenger1))"
+    },
+    {
+        "goal": "Make Slow Cooker Hot Cocoa",
+        "steps": [
+            "Make the initial cocoa mixture.",
+            "Add all the ingredients in a slow cooker.",
+            "Allow the mixture to heat for 3 hours on a low setting.",
+            "Serve immediately or keep the slow cooker on a \"Keep Warm\" setting."
+        ],
+        "pddl": [
+            "make_initial_mixture mixture",
+            "add_ingredients_to_slow_cooker mixture",
+            "heat_mixture mixture",
+            "serve_cocoa mixture"
+        ],
+        "goal_state": "((cocoa_served mixture))"
+    },
+    {
+        "goal": "Grow Fairy Moss Indoors",
+        "steps": [
+            "Ask for it at a nursery or garden center that specializes in pond plant varieties.",
+            "Find a suitable container.",
+            "Fill the bowl with water.",
+            "Add the fairy moss.",
+            "Place in a suitable position.",
+            "Prune."
+        ],
+        "pddl": [
+            "find-container bowl-container",
+            "ask-for-moss fairy-moss",
+            "fill-bowl water-1 bowl-container",
+            "prune fairy-moss",
+            "add-fairy-moss fairy-moss water-1",
+            "place-suitable-position bowl-container water-1"
+        ],
+        "goal_state": "((purchased fairy-moss) (position-plant fairy-moss inside-bowl) (size fairy-moss smaller) (shape fairy-moss pruned) (loc bowl-container on-table) (comp water-1 now-mixed) (position-water water-1 in-suitable-position))"
+    },
+    {
+        "goal": "Remove Black Skid Marks from Linoleum",
+        "steps": [
+            "Obtain a decent sized eraser that you can hold comfortable in your fingers.",
+            "Kneel down next to the linoleum and use the eraser to rub along the skid mark.",
+            "Continue rubbing until the black mark lifts.",
+            "Wash and dry as usual."
+        ],
+        "pddl": [
+            "obtain_eraser you eraser",
+            "kneel_and_rub you eraser linoleum_floor",
+            "wash_and_dry you linoleum_floor faucet_water"
+        ],
+        "goal_state": "((skid_mark_removed linoleum_floor) (floor_dry linoleum_floor))"
+    },
+    {
+        "goal": "Make a Simple Inside Windshield Cleaner",
+        "steps": [
+            "Purchase a blackboard eraser.",
+            "Keep the blackboard eraser in the glove box or attach it to a spot on or near the car door for easy access.",
+            "Use the eraser to clean the inner side of the windshield.",
+            "Replace after use."
+        ],
+        "pddl": [
+            "purchase_eraser user1 eraser1 store_location car_location",
+            "store_eraser user1 eraser1 car_door_spot1 car_location",
+            "use_eraser_to_clean user1 eraser1 windshield_inner1 car_door_spot1 car_location",
+            "replace_eraser user1 eraser1 glovebox1 car_location"
+        ],
+        "goal_state": "((clean windshield_inner1) (owned user1 eraser1) (in_container eraser1 glovebox1) (clean_tool eraser1) (not (has_money user1)))"
+    },
+    {
+        "goal": "Paint Bare Wood",
+        "steps": [
+            "Acquire oil based paints, which air dry slowly.",
+            "The under-coat should be thin, and smooth, move your paint brush down the wood, don't paint up or horizontally.",
+            "Paint the second coat, but be much more careful this time, make sure there are no paint bubbles appearing and smooth out any drips or pools left over from the under-coat.",
+            "Be the most precise with this.",
+            "Finished."
+        ],
+        "pddl": [
+            "acquire_tool alice paintbrush1",
+            "acquire_paint alice oil_paint1",
+            "apply_under_coat alice paintbrush1 oil_paint1 barewood1",
+            "apply_second_coat alice paintbrush1 oil_paint1 barewood1",
+            "finish_painting alice barewood1"
+        ],
+        "goal_state": "((finished_painting barewood1))"
+    },
+    {
+        "goal": "Create a Character in Lego Star Wars",
+        "steps": [
+            "When you begin the game, you will start as Princess Leia and Captain Antilles in the Star Wars cantina.",
+            "Use the up and down arrows to select the part of the character (hat, head, shirt, arms, hands, weapon, belt, and legs) and the left and right arrows to select through a selection of the body part you are on.",
+            "Press \"triangle\" to name it, and \"O\" to save and exit.",
+            "Now enter a completed level and turn on free play."
+        ],
+        "pddl": [
+            "select_character_parts level",
+            "save_name_and_exit level",
+            "select_character_parts character",
+            "save_name_and_exit character",
+            "complete_level level",
+            "start_game game"
+        ],
+        "goal_state": "((game_played game) (selection_made character) (name_saved character) (level_completed level))"
+    },
+    {
+        "goal": "Spool Knit a Winter Hat",
+        "steps": [
+            "Knit eighty-four inches of flat web.",
+            "Begin five inches from the end of the web, turn and sew into a rectangular form five inches wide and eight inches long.",
+            "Join the five-inch ends, and draw in the top with the needle and a piece of the material from which the cap was made.",
+            "After securing the top, twist and fold the piece of yarn remaining for a cord and fasten a number of strands of yarn through the loop for a tassel."
+        ],
+        "pddl": [
+            "sew_web_into_rectangle web",
+            "join_ends end_points",
+            "knit_web web",
+            "secure_top_and_make_tassel finished_hat yarn_piece"
+        ],
+        "goal_state": "((knitted_together web) (shape_rectangular web) (width_narrower web) (has_weight_heavier finished_hat) (shape_twisted_and_folded yarn_piece) (joined end_points))"
+    },
+    {
+        "goal": "Get on a Bike",
+        "steps": [
+            "To get on the bike, swing your non-dominant leg over the shaft of the bike.",
+            "Put your dominant foot on the pedal.",
+            "Hold on to the handlebars for support and to keep the bike straight.",
+            "Keeping your weight center and even, pedal with your feet.",
+            "Stopping."
+        ],
+        "pddl": [
+            "swing-leg-over-bike you bike",
+            "put-foot-on-pedal you pedals",
+            "pedal-with-feet you",
+            "stop you bike"
+        ],
+        "goal_state": "((has-motion-still you) (motion-stopped-bike bike) (handbrakes-located bike))"
+    },
+    {
+        "goal": "Change the Oil on a Yamaha Virago XV250",
+        "steps": [
+            "Remove the bung to let the oil out to drain.",
+            "Remove the oil cap to let the oil drain fully and let air in to help drain the old oil out.",
+            "Remove the oil filter.",
+            "Screw the bung back on.",
+            "Fill the oil back up.",
+            "Recycle the old oil."
+        ],
+        "pddl": [
+            "remove-bung oil1 bung1 bike1 bottle1",
+            "remove-oil-cap oil_cap1 oil_tank1 bung1 bike1 oil1",
+            "remove-oil-filter oil_filter1 bottle1 bike1 oil1",
+            "screw-bung bung1 bike1 oil1 oil_filter1",
+            "recycle-old-oil old_oil1 funnel1 can1 jug1",
+            "fill-oil new_oil1 bottle1 oil_tank1 bung1 bike1"
+        ],
+        "goal_state": "((open oil_cap1) (out oil_filter1) (in old_oil1 jug1) (dirty funnel1) (in new_oil1 oil_tank1) (full new_oil1) (attached bung1))"
+    },
+    {
+        "goal": "Open a Rusty Bolt",
+        "steps": [
+            "Obtain some fizzy drink.",
+            "Pour the fizzy drink over the bolt.",
+            "Wipe it clean with kitchen towel.",
+            "The fizzy drink should have dissolved the rust build-up causing the bolt to stick.",
+            "Replace the rusty bolt."
+        ],
+        "pddl": [
+            "obtain_fizzy_drink fizzy_drink1",
+            "pour_fizzy_drink fizzy_drink1 old_bolt1",
+            "wipe_clean towel1 fizzy_drink1",
+            "dissolve_rust old_bolt1 fizzy_drink1",
+            "replace_bolt old_bolt1 new_bolt1"
+        ],
+        "goal_state": "((unstuck old_bolt1) (in_machine new_bolt1))"
+    },
+    {
+        "goal": "Evolve Vulpix in Pokémon",
+        "steps": [
+            "######Catch or trade for a Vulpix.",
+            "######Find a fire stone (or Ice Stone in Sun/Moon to evolve Alolan Vulpix).",
+            "Go to your bag and select the stone required.",
+            "######Wait for the evolution animation to pop up."
+        ],
+        "pddl": [
+            "find_fire_stone stone",
+            "select_bag bag",
+            "catch_or_trade_vulpix vulpix",
+            "select_stone stone",
+            "wait_for_evolution vulpix"
+        ],
+        "goal_state": "((vulpix_evolved vulpix))"
+    },
+    {
+        "goal": "Get Under the Stage in Dragonball Z Budokai Tenkaichi 2",
+        "steps": [
+            "Choose VS Duel, 2 players.",
+            "Choose Goku as player one, as well as player two.",
+            "Choose Mountain Road as the stage.",
+            "Move to opposite ends of the street so that you are both against the Wall that keeps you in the stage."
+        ],
+        "pddl": [
+            "select_vs_duel duel1",
+            "select_character player2 goku",
+            "select_character player1 goku",
+            "move_to_wall player1 player2 away_from_wall away_from_wall",
+            "specify_stage stage1",
+            "select_player player2",
+            "select_player player1"
+        ],
+        "goal_state": "((vs_duel_selected duel1) (player_selected player1) (player_selected player2) (character_selected player1 goku) (character_selected player2 goku) (stage_specified stage1) (located player1 against_wall) (located player2 against_wall) (against_wall player1) (against_wall player2) (separated player1 player2))"
+    },
+    {
+        "goal": "Grow a Rose Bush from Rose Bush Cuttings",
+        "steps": [
+            "Prepare the pot or area in your yard where you plan to plant your clipping.",
+            "Take a cutting from the rose bush you would like to grow your new bush from.",
+            "Moisten the part of the clipping that you just scraped and dip it into rooting hormone.",
+            "Immediately plant the cutting."
+        ],
+        "pddl": [
+            "prepare_area clipping",
+            "take_cutting clipping",
+            "moisten_clipping clipping",
+            "plant_cutting clipping"
+        ],
+        "goal_state": "((planted clipping))"
+    },
+    {
+        "goal": "Make a Fairy House in the Woods",
+        "steps": [
+            "Find a small area with slightly damp dirt.",
+            "Collect many twigs and sticks.",
+            "Using the sticks, create either a square formation, circle formation, or a Teepee formation.",
+            "Build your exterior walls.",
+            "You can use either a leaf or a wide strip of bark.",
+            "Decorate."
+        ],
+        "pddl": [
+            "collect_sticks stick3",
+            "bundle_sticks stick3",
+            "collect_sticks stick2",
+            "collect_sticks stick1",
+            "create_formation stick3",
+            "bundle_sticks stick2",
+            "bundle_sticks stick1",
+            "build_walls fairy_house1 stick3",
+            "find_area area1",
+            "use_bark stick3",
+            "create_formation stick2",
+            "use_bark stick2",
+            "create_formation stick1",
+            "use_bark stick1",
+            "decorate_fairy_house fairy_house1"
+        ],
+        "goal_state": "((selected_area area1) (collected stick1) (collected stick2) (collected stick3) (bundled stick1) (bundled stick2) (bundled stick3) (in_formation stick1) (in_formation stick2) (in_formation stick3) (built_walls fairy_house1) (tied_with_bark stick1) (tied_with_bark stick2) (tied_with_bark stick3) (decorated fairy_house1))"
+    },
+    {
+        "goal": "Make a Pinwheel Wreath",
+        "steps": [
+            "Select suitable paper to make the pinwheels.",
+            "Make enough pinwheels to create a wreath.",
+            "Find a suitable base, such as a Styrofoam/cane/cardboard wreath base.",
+            "If the wreath base lacks a hanger, add some twine or ribbon to create one.",
+            "Finished."
+        ],
+        "pddl": [
+            "select-paper p1",
+            "make-pinwheel pw1 p1",
+            "choose-wreath-base w1",
+            "attach-pinwheel pw1 w1",
+            "attach-twine t1 w1"
+        ],
+        "goal_state": "((selected p1) (knowledge p1) (has-shape p1) (made pw1) (attached pw1) (base-chosen w1) (twine-attached t1) (twine-located t1))"
+    },
+    {
+        "goal": "Be a Spy With Friends",
+        "steps": [
+            "Set-up your spy group You will need a trustworthy 2-5 person group.",
+            "It's good to have a place to keep your gear when not in use, hold meetings, and just talk in private without worrying about the nosiness of certain people in public places.",
+            "Get some gear To be a good spy, you and your friends must have gear that will help with missions.",
+            "Find your first \"victim\" The victim is the person you will be watching and spying on."
+        ],
+        "pddl": [
+            "form_spy_group co_conspirator1 co_conspirator1 co_conspirator1",
+            "set_location safehouse",
+            "identify_victim target_victim",
+            "gather_gear you camera",
+            "gather_gear you binoculars",
+            "gather_gear co_conspirator2 camera",
+            "gather_gear co_conspirator2 binoculars",
+            "gather_gear co_conspirator1 camera",
+            "gather_gear co_conspirator1 binoculars"
+        ],
+        "goal_state": "((group-formed) (location-set safehouse) (has-gear you binoculars) (has-gear you camera) (has-gear co_conspirator1 binoculars) (has-gear co_conspirator1 camera) (has-gear co_conspirator2 binoculars) (has-gear co_conspirator2 camera) (victim-identified target_victim))"
+    },
+    {
+        "goal": "Polish a Faucet With a Lemon",
+        "steps": [
+            "######Cut a lemon in half.",
+            "######Squeeze out the juice.",
+            "######Take the squeezed out lemon half and rub vigorously over the faucets.",
+            "######Wash the tap after scouring with the lemon half."
+        ],
+        "pddl": [
+            "cut-lemon water",
+            "squeeze-lemon water faucet",
+            "rub-faucet faucet water faucet"
+        ],
+        "goal_state": "((faucet-clean faucet) (faucet-shiny faucet))"
+    },
+    {
+        "goal": "Make a Wreath with Clothes Hangers",
+        "steps": [
+            "Untwist wire hanger and shape into a circle, using pliers as needed.",
+            "Gently crumple 3\" squares of wax paper or crepe paper and thread hanger through center of each square.",
+            "When you have threaded enough squares to fill length of hanger, gently push squares away from ends and use pliers to twist ends together.",
+            "Gently slide squares of paper back toward the joined ends of wire hanger, scrunching paper more for additional fullness.",
+            "Finished."
+        ],
+        "pddl": [
+            "untwist-and-shape-hanger hanger-1 pliers-1",
+            "crumple-and-thread-paper paper3 hanger-1",
+            "crumple-and-thread-paper paper2 hanger-1",
+            "crumple-and-thread-paper paper1 hanger-1",
+            "push-squares-and-twist-ends hanger-1 pliers-1",
+            "slide-and-scrunch-squares paper3 hanger-1",
+            "slide-and-scrunch-squares paper2 hanger-1",
+            "slide-and-scrunch-squares paper1 hanger-1",
+            "finish-wreath wreath-1 hanger-1"
+        ],
+        "goal_state": "((completed wreath-1))"
+    },
+    {
+        "goal": "Grow Dwarf Balsam Fir",
+        "steps": [
+            "Choose the plant from a nursery or garden center.",
+            "This plant spreads and flattens as it grows, so select a broad sized container, preferably with a rounded shape.",
+            "Choose the potting soil.",
+            "Plant the fir in the container.",
+            "Keep this up until the tree is well established.",
+            "Re-pot occasionally."
+        ],
+        "pddl": [
+            "choose_container container1 garden_center",
+            "choose_soil soil1 garden_center",
+            "choose_plant fir1 nursery",
+            "plant_fir fir1 container1 soil1",
+            "establish_plant fir1 container1",
+            "re_pot fir1 container1 container2"
+        ],
+        "goal_state": "((planted_in fir1 container2) (dirty container1) (clean container2) (watered fir1) (established fir1))"
+    },
+    {
+        "goal": "Fold Bath Towels for Quick Hanging at Home",
+        "steps": [
+            "Fold the towel in thirds lengthwise.",
+            "Fold in half, and then in half again.",
+            "Store the towel in the linen closet.",
+            "To go from the closet for hanging, simply unfold the final fold and hang on the towel rack."
+        ],
+        "pddl": [
+            "fold-lengthwise towel1",
+            "fold-half-twice towel1",
+            "store-in-closet towel1",
+            "hang-on-rack towel1"
+        ],
+        "goal_state": "((on-rack towel1) (openness towel1))"
+    },
+    {
+        "goal": "Make Seasoned Salt",
+        "steps": [
+            "Mix the ingredients together thoroughly.",
+            "Pour into an air-tight container with a lid.",
+            "It goes well in dips, salad dressings, soups and on sandwiches.",
+            "Grind the ingredients together in a mortar and pestle.",
+            "Transfer to a storage container as needed."
+        ],
+        "pddl": [
+            "mix-ingredients celery_salt",
+            "grind-ingredients celery_salt mortar_and_pestle",
+            "season-food celery_salt salads"
+        ],
+        "goal_state": "((flavorful salads) (present mortar_and_pestle) (not (stratified celery_salt)) (not (separate celery_salt)) (empty air_tight_container))"
+    },
+    {
+        "goal": "Make a Pancake Mix Container from a Recycled Ketchup Bottle",
+        "steps": [
+            "Scrub the ketchup bottle thoroughly.",
+            "Place the funnel over the mouth of the bottle.",
+            "Pour pancake batter through the funnel into the empty ketchup bottle.",
+            "Replace the lid and label the bottle.",
+            "Place the bottle in refrigerator.",
+            "Finished."
+        ],
+        "pddl": [
+            "attach_funnel user1 scrubber1 ketchup_bottle1",
+            "pour_batter user1 pancake_batter1 scrubber1 ketchup_bottle1",
+            "replace_lid_and_label user1 ketchup_bottle1 funnel1 funnel1 funnel1",
+            "place_in_fridge user1 ketchup_bottle1 fridge1 store_location"
+        ],
+        "goal_state": "((in_fridge ketchup_bottle1) (sealed ketchup_bottle1) (labeled ketchup_bottle1))"
+    },
+    {
+        "goal": "Make a Banana Strawberry Rum Smoothie",
+        "steps": [
+            "Place the yogurt, bananas, and sorbet in a blender.",
+            "Blend the mixture until it's smooth in texture.",
+            "Pour the rum in and quickly blend again.",
+            "Pour the smoothie into chilled glasses.",
+            "Garnish each glass with a strawberry."
+        ],
+        "pddl": [
+            "place-ingredients bananas sorbet yogurt blender-1",
+            "blend-mixture blender-1",
+            "add-rum-and-blend rum blender-1",
+            "pour-into-glass blender-1 glass-1",
+            "garnish-glass glass-1 strawberry-1"
+        ],
+        "goal_state": "((garnished glass-1))"
+    },
+    {
+        "goal": "Make Your Den Look Like a Home on Animal Jam (Non Members)",
+        "steps": [
+            "Get lots of gems.",
+            "for a family home you will need quite a lot of stuff.",
+            "Try to get room shoji screens so you can section things off into smaller rooms.",
+            "If you can get shoji screens, try making a kids room, a master bedroom, and a living/dining room.",
+            "Make an outside area.",
+            "Keep your family safe."
+        ],
+        "pddl": [
+            "keep-family-safe kids-room",
+            "bring-stuff-home stuff",
+            "bring-stuff-home screens",
+            "create-rooms outside-area",
+            "create-rooms kids-room",
+            "acquire-gems gems"
+        ],
+        "goal_state": "((acquired gems) (in-home screens) (in-home stuff) (created kids-room) (created outside-area) (safe kids-room) ; Assuming family is in the kids-room)"
+    },
+    {
+        "goal": "Make Taco Filling",
+        "steps": [
+            "Brown the meat and the onion in a medium sized frying pan.",
+            "Drain the excess fat.",
+            "Add the remaining ingredients (except for the hot sauce) and simmer for fifteen minutes.",
+            "Finished."
+        ],
+        "pddl": [
+            "brown_meat_and_onion beef1 onion1 pan1 stove1 kitchen_counter",
+            "move_pan_to_counter pan1 kitchen_counter sink_location",
+            "drain_fat pan1",
+            "move_pan_to_counter pan1 sink_location kitchen_counter",
+            "add_ingredients_and_simmer pan1 spice1 tomato1 stove1 kitchen_counter",
+            "finish_preparation pan1 serving_dish1 beef1 kitchen_counter"
+        ],
+        "goal_state": "((cooked beef1) (cooked onion1) (cooked tomato1) (cooked spice1) (in-dish beef1 serving_dish1) (in-dish onion1 serving_dish1) (in-dish tomato1 serving_dish1) (in-dish spice1 serving_dish1) (clean pan1) (not (heated pan1)) (not (simmering pan1)) (drained pan1))"
+    },
+    {
+        "goal": "Make a Bead Ring",
+        "steps": [
+            "Cut a strip of elastic.",
+            "Slip two larger beads at either side of the small bead.",
+            "Slip a small bead on one tail.",
+            "Continue this pattern until you have enough beads to fit around the finger.",
+            "Finish the ring by slipping the loose tails through the first small bead you placed on the elastic.",
+            "Finished."
+        ],
+        "pddl": [
+            "sliplargerbeads bead3",
+            "sliplargerbeads bead2",
+            "sliplargerbeads bead1",
+            "cutelastic elastic1",
+            "finishring elastic1 tail1",
+            "admirering you"
+        ],
+        "goal_state": "((cut elastic1) (on_strip bead1) (in_order bead1) (on_strip bead2) (in_order bead2) (on_strip bead3) (in_order bead3) (curved elastic1) (adorned tail1) (admiring you))"
+    },
+    {
+        "goal": "Make Chocolate Hearts for Valentine&#x27;s Day",
+        "steps": [
+            "Assemble the ingredients needed.",
+            "Melt the chocolate bars in the microwave until you have no lumps left after stirring.",
+            "Pour the melted chocolate into the heart shaped molds.",
+            "Put the chocolate into the freezer until hardened.",
+            "Leave them out for one minute and pop out of molds, Or, cut heart shapes in the tray.",
+            "Enjoy then and there, or box them up and give away!"
+        ],
+        "pddl": [
+            "melt-chocolate chocolate microwave spoon",
+            "freeze-chocolate chocolate chocolate",
+            "release-from-molds chocolate chocolate",
+            "box-chocolates chocolate"
+        ],
+        "goal_state": "((at-texture chocolate in-box))"
+    },
+    {
+        "goal": "Make Chinese Macaroni in Just 20 Minutes",
+        "steps": [
+            "Boil macaroni in hot boiling water with some salt and oil for 10-15 minutes.",
+            "After the macaroni has boiled put under running water for about 15 seconds to prevent over cooking.",
+            "In another pan add some oil and toss in the macaroni.",
+            "Add salt, red chilli powder ,soy sauce,white vinegar and ajino moto.",
+            "Cook for some seconds.",
+            "Serve hot with chilled drinks."
+        ],
+        "pddl": [
+            "boil_macaroni macaroni pan kitchen",
+            "serve_macaroni macaroni plate dining_table pan"
+        ],
+        "goal_state": "((in macaroni plate) (served macaroni))"
+    },
+    {
+        "goal": "Get Wailord in Pokémon Emerald",
+        "steps": [
+            "This is the pre-evolution of Wailord.",
+            "This Wailmer can be pretty annoying to train, so be patient.",
+            "Train it until it evolves.",
+            "Go to battle frontier and copy some rare candies.",
+            "Give the rare candies to a Wailmer and evolve it into a Wailord using them."
+        ],
+        "pddl": [
+            "use-wailmer wailmer",
+            "train-wailmer wailmer",
+            "give-rare-candies wailmer",
+            "attain-battle-frontier wailmer",
+            "evolve-wailmer wailmer",
+            "copy-rare-candies wailmer"
+        ],
+        "goal_state": "((used wailmer) (trained wailmer) (evolved wailmer) (now-attained wailmer) (copied wailmer) (now-holder-of-rare-candy wailmer))"
+    },
+    {
+        "goal": "Clean Your Home Efficiently",
+        "steps": [
+            "######Pick up and put away stray items and throw trash into waste baskets.",
+            "######Dust, again going through the entire house room by room.",
+            "######Take a large trash bag and go through each room emptying the waste baskets and trash cans.",
+            "######Use a spray cleaner and rags or paper towels to clean any glass surfaces, including the TV screens.",
+            "First pick up any throw rugs and inside door mats and shake them outside.",
+            "######Enjoy your clean home!"
+        ],
+        "pddl": [
+            "pickup_items item1 basket1",
+            "clean_surfaces tv cleaner1",
+            "clean_surfaces window1 cleaner1",
+            "clean_surfaces window2 cleaner1",
+            "pickup_items item2 basket1",
+            "shake_rugs rug1",
+            "shake_rugs rug2",
+            "empty_trash basket1 trash_bag1",
+            "empty_trash basket1 trash_bag2",
+            "dust_room living_room",
+            "dust_room kitchen",
+            "dust_room bathroom"
+        ],
+        "goal_state": "((cleaned_room living_room) (cleaned_room kitchen) (cleaned_room bathroom) (cleaned_rug rug1) (cleaned_rug rug2) (cleaned_surface TV) (cleaned_surface window1) (cleaned_surface window2) (trash_disposed trash_bag1) (trash_disposed trash_bag2) (organized item1) (organized item2))"
+    },
+    {
+        "goal": "Learn Photography by Shooting Macro",
+        "steps": [
+            "Create a very small studio.",
+            "Have the appropriate sized reflectors.",
+            "Have a closeup lens.",
+            "Again, they don't need to be that big, but big enough to diffuse light for your small subject.",
+            "Start experimenting."
+        ],
+        "pddl": [
+            "create_small_studio studio",
+            "diffuse_light light",
+            "have_appropriate_reflectors reflector",
+            "have_closeup_lens lens",
+            "start_experimenting experiment"
+        ],
+        "goal_state": "((studio_setup studio) (reflector_appropriate reflector) (lens_closeup lens) (light_diffused light) (experiment_started experiment))"
+    },
+    {
+        "goal": "Recycle Underpants",
+        "steps": [
+            "Turn the underpants into cleaning rags.",
+            "Use the underwear as garden ties.",
+            "Turn quality undies into craft items.",
+            "Use a bundle of old underwear as stuffing.",
+            "Children can wear old underwear on the outside of their pants to play superhero.",
+            "Donate the underpants."
+        ],
+        "pddl": [
+            "make_cleaning_rags underpants6",
+            "make_cleaning_rags underpants5",
+            "make_cleaning_rags underpants4",
+            "donate_underpants underpants6",
+            "child_wears_underpants underpants5",
+            "use_as_stuffing underpants4",
+            "make_craft_item underpants3 scissors1",
+            "make_garden_ties underpants2 scissors1 plant1",
+            "make_cleaning_rags underpants1"
+        ],
+        "goal_state": "((used_as_cleaning_rags underpants1) (used_as_garden_ties underpants2) (tied plant1) (used_as_craft_item underpants3) (used_as_stuffing underpants4) (worn_by_child underpants5) (donated underpants6))"
+    },
+    {
+        "goal": "Make Whole Wheat Pastry With Canola",
+        "steps": [
+            "Place the whole wheat flour and salt into the mixing bowl.",
+            "Pour in the oil.",
+            "Place the pastry onto a sheet of wax paper.",
+            "Remove from the fridge.",
+            "Press the pastry into the pie dish.",
+            "Create an edge with the sides of a fork."
+        ],
+        "pddl": [
+            "add_flour_and_salt canola_oil canola_oil mixing_bowl table",
+            "mix_ingredients canola_oil mixing_bowl canola_oil canola_oil",
+            "prepare_pastry mixing_bowl canola_oil table",
+            "press_into_pie_dish mixing_bowl table",
+            "create_edge canola_oil table"
+        ],
+        "goal_state": "((edge_created))"
+    },
+    {
+        "goal": "Freeze Baked Cookies or Biscuits",
+        "steps": [
+            "Place the biscuits or cookies into a rigid, airtight container.",
+            "Separate the biscuits and cookies using freezer paper, baking paper, or foil.",
+            "Place biscuits in freezer.",
+            "Thaw."
+        ],
+        "pddl": [
+            "place-in-container cookies",
+            "separate-using-paper cookies",
+            "place-in-freezer cookies",
+            "thaw cookies"
+        ],
+        "goal_state": "((thawed cookies))"
+    },
+    {
+        "goal": "Make a Duct Tape Necklace",
+        "steps": [
+            "Take one roll of duct tape and make a piece about a little bigger than your head.",
+            "Measure it around your head, and cut it off the roll.",
+            "Fold it halfway through the middle, like shown.",
+            "Fold the other half so there is no sticky part showing.",
+            "Tape the ends together.",
+            "And you are done!"
+        ],
+        "pddl": [
+            "unroll_tape tape1",
+            "fold_tape tape1",
+            "smooth_tape tape1",
+            "tape_ends_together tape1 ends1"
+        ],
+        "goal_state": "((one_piece tape1) (joined_ends ends1))"
+    },
+    {
+        "goal": "Get a Headshot in Gears of War",
+        "steps": [
+            "Sniper — Simply aim at the head and pull the trigger, unless you're the host, in which case you will need to aim in front of where they're going.",
+            "Shotgun — The aim on the shotgun is almost like a rectangle.",
+            "Pistol — I'm not sure because I haven't played in a while, but it's either six or seven shots to the head with the standard-issue pistol for a headshot.",
+            "BoomShot — BoomShot headshots are possible — don't let anyone tell you they're not but the chance of one happening is about a million to one."
+        ],
+        "pddl": [
+            "sniper_shot weapon1 player1",
+            "shotgun_shot player2",
+            "pistol_shot player3",
+            "boomshot_shot weapon2 player4"
+        ],
+        "goal_state": "((weapon_location weapon1 focused) (knows_where_to_aim player1) (knows_shape_of_shotgun_aim player2) (knows_pistol_shots_needed player3) (weapon_location weapon2 fired) (knows_boomshot_odds player4))"
+    },
+    {
+        "goal": "Prevent a Wick Lamp or Stove from Smoking",
+        "steps": [
+            "Pour some white vinegar into a small container deep enough for dipping.",
+            "Remove the wick from the lamp or stove, or use wicks yet to be inserted.",
+            "Dip each wick into the vinegar.",
+            "Allow to dry thoroughly.",
+            "Use once dry."
+        ],
+        "pddl": [
+            "put_vinegar_in_container vinegar1 container1",
+            "remove_wicks wick1",
+            "dip_wicks_in_vinegar wick1 vinegar1 container1",
+            "dry_wicks wick1",
+            "place_wicks_in_lamp wick1 lamp1"
+        ],
+        "goal_state": "((in_lamp wick1) (dry wick1) (not (wet wick1)))"
+    },
+    {
+        "goal": "Defeat a Thug on Dead Island",
+        "steps": [
+            "There is no chance in hell you will kill a Thug using just your bear hands and feet.",
+            "Incendiary Weapons - Grenades or Molotov Cocktails *WARNING* You may need to use a couple of these, so it is recommended that you only use one when a Thugs' health is below 50%.",
+            "Make sure your guns have enough ammo, and your knives are up to scratch.",
+            "Attack!"
+        ],
+        "pddl": [
+            "acquire-knowledge you",
+            "equip-weapon you grenades",
+            "throw-weapon you grenades thug1"
+        ],
+        "goal_state": "((zombie_attacked thug1))"
+    },
+    {
+        "goal": "Clean Synthetic Hiking Gear",
+        "steps": [
+            "Read all of the instructions first.",
+            "Wash Gore-Tex and other breathable, waterproof synthetic outer shell clothing following the instructions on the label.",
+            "Be careful with synthetic boots.",
+            "Take care cleaning synthetic jackets containing down.",
+            "Wash polar fleece (microfleece or micrafleece) in the washing machine."
+        ],
+        "pddl": [
+            "read_instructions instructions",
+            "clean_polar_fleece polar_fleece washing_machine",
+            "wash_clothing clothing washing_machine"
+        ],
+        "goal_state": "((knowledge instructions) (not (cleanness clothing)) (cleanness polar_fleece))"
+    },
+    {
+        "goal": "Remove Paint from Windows",
+        "steps": [
+            "You will need a bucket of hot water mixed with dish soap, a clean cloth or sponge, a new safety razor blade and some glass cleaner.",
+            "Wet the window with the water and dish soap.",
+            "Position the razor blade.",
+            "Using slow, smooth motions, start scraping the paint from the window.",
+            "Once all of the paint has been scraped away, spritz the window with some glass cleaner and use a clean, dry cloth to buff the windows clean.",
+            "Remove small paint splatters with chemical solvents."
+        ],
+        "pddl": [
+            "mix_soap_and_water bucket01 soap_bottle01",
+            "wet_window window01 bucket01 sponge01",
+            "open_razor_blade_package razor_blade_package01 razor_blade01",
+            "scrape_paint window01 razor_blade01",
+            "buff_window window01 cloth01",
+            "remove_splatters_with_solvent window01 solvent01",
+            "spritz_glass_cleaner window01 glass_cleaner_bottle01"
+        ],
+        "goal_state": "((clean window01) (transparent window01) (dirty_cloth cloth01) (dirty_tool sponge01) (dirty_tool razor_blade01) (not (contains_paint window01)) (not (contains_splatters window01)) (not (has_glass_cleaner glass_cleaner_bottle01)) (not (has_solvent solvent01)))"
+    },
+    {
+        "goal": "Use a Mic in Team Fortress 2",
+        "steps": [
+            "Make sure that your microphone is working and connected first.",
+            "Find various panels at the top like \"Multiplayer\", \"Mouse\", \"Audio\", etc.",
+            "Click on the Voice panel.",
+            "Start talking with other players using your microphone!",
+            "Use the microphone to communicate with your team in a more efficient manner and demand that your voice is heard!",
+            "Advise teammates as well as make game plans to help and support your team."
+        ],
+        "pddl": [
+            "make_microphone_working mic",
+            "adjust_panel_visibility panel",
+            "talk_using_microphone mic voice",
+            "advise_teammates advice",
+            "select_voice_panel panel",
+            "use_microphone_efficiently voice"
+        ],
+        "goal_state": "((connected mic) (plugged-in mic) (functional mic) (tested mic) (visible panel) (open panel) (selected panel) (heard voice) (efficient voice) (possible advice))"
+    }
+]

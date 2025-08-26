@@ -1,0 +1,14 @@
+{
+    "obtain": [
+        "(:action obtain_eraser\n    :parameters (?p - person ?e - eraser ?l - location)\n    :precondition (and (at ?p ?l) (at ?e ?l))\n    :effect (and (inventory ?p ?e) (not (at ?e ?l)))\n)\n\n"
+    ],
+    "kneel": [
+        "(:action kneel_and_rub\n    :parameters (?p - person ?e - eraser ?f - linoleum_floor)\n    :precondition (and (inventory ?p ?e) (at ?p ?f) (skid_marks ?f))\n    :effect (and (kneeling ?p ?f) (rubbing ?p ?e ?f))\n)\n\n"
+    ],
+    "continue": [
+        "(:action continue_rubbing\n    :parameters (?p - person ?e - eraser ?f - linoleum_floor)\n    :precondition (and (kneeling ?p ?f) (rubbing ?p ?e ?f) (skid_marks ?f))\n    :effect (and (not (skid_marks ?f)) (clean ?f))\n)\n\n"
+    ],
+    "wash": [
+        "(:action wash_floor\n    :parameters (?p - person ?f - linoleum_floor)\n    :precondition (and (clean ?f))\n    :effect (and (washed ?f) (dry ?f))\n)\n```\n\nExplanation:\n- `obtain_eraser`: This action involves the person obtaining an eraser from a location.\n- `kneel_and_rub`: This action involves the person kneeling next to the linoleum floor and starting to rub the skid marks with the eraser.\n- `continue_rubbing`: This action involves the person continuing to rub the skid marks until they are removed.\n- `wash_floor`: This action involves the person washing and drying the linoleum floor after the skid marks have been removed."
+    ]
+}

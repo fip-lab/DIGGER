@@ -1,0 +1,1420 @@
+[
+    {
+        "step": [
+            "Choose a steak to grill.",
+            "Find a rub recipe from a cookbook or online.",
+            "Make the rub.",
+            "Apply the rub to the steak.",
+            "Let the steak rest.",
+            "Grill the steak.",
+            "Finished."
+        ],
+        "task": "How to Apply a Steak Rub",
+        "goal_state": "apply_rubber_with_steak_rust velveeta",
+        "steps": "```lisp\n(:action choose_chuck_steak\n  :parameters (?p - player ?s - steak)\n  :precondition (and (available ?s) (not (chosen ?s)))\n  :effect (and (chosen ?s) (not (available ?s)))\n)\n(:action choose\n  :parameters (?agent - agent ?item - item)\n  :precondition (and (available ?item) (not (chosen ?item)) (available ?agent))\n  :effect (and (chosen ?item) (not (available ?item)))\n)\n(:action submerge\n  :parameters (?actor - agent ?entity - item ?medium - substance)\n  :precondition (and (inventory ?actor ?entity) (inventory ?actor ?medium) (not (submerged ?entity)))\n  :effect (and (submerged ?entity) (modified ?entity))\n)\n(:action brush\n  :parameters (?item - object ?src - location ?dest - location ?attr_before - attribute ?attr_after - attribute)\n  :precondition (and (location ?item ?src) (attribute ?item ?attr_before))\n  :effect (and (location ?item ?dest) (attribute ?item ?attr_after) \n               (not (location ?item ?src)))\n)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 635,
+                "task": "How to Make Steak Rub",
+                "step": [
+                    "Place all of the ingredients into a mixing bowl.",
+                    "Mix to combine thoroughly.",
+                    "Sprinkle the rub across the steak.",
+                    "Cook the steak as usual."
+                ],
+                "steps_predictions": [
+                    "place_ingredients mixing_bowl",
+                    "combine-mix mixing_bowl",
+                    "sliplargerbeads steak",
+                    "cook_steak steak"
+                ],
+                "goal_state": " ((combined mixing_bowl mixture) (cooked steak))",
+                "similar_entity": {
+                    "steak": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a plate]] is [[a steak]]",
+                            "[[steak]] is related to [[meat]]",
+                            "[[Steak]] is [[one cut of meat]]",
+                            "[[Steak]] is [[meat]]"
+                        ]
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 635,
+                "task": "How to Grill Steak",
+                "step": [
+                    "Use a dry rub or seasoning instead of straight salt and pepper.",
+                    "Try out a wet marinade for a softer, more-flavorful steak.",
+                    "Slather your steak with a pat of butter for a rich steakhouse meal.",
+                    "Top your steak with something special to make a meal of it."
+                ],
+                "steps_predictions": [
+                    "use_dry_rub alice",
+                    "cook npc",
+                    "slather_with_ingredients steak_house",
+                    "add-ingredients beef steak"
+                ],
+                "goal_state": " ((cooked beef steak))",
+                "similar_entity": {
+                    "steak house": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "beef": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Carne bovina]] is a translation of [[beef]]",
+                            "[[cow]] is related to [[beef]]",
+                            "*Something you find on [[a plate]] is [[beef]]"
+                        ]
+                    },
+                    "steak": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a plate]] is [[a steak]]",
+                            "[[steak]] is related to [[meat]]",
+                            "[[Steak]] is [[one cut of meat]]",
+                            "[[Steak]] is [[meat]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 635,
+                "task": "How to Grill Sirloin Steak",
+                "step": [
+                    "Rub a seasoning over the meat in place of salt and pepper.",
+                    "Soak the sirloin in a wet marinade to get moist, delicious flavor.",
+                    "Brush a pat of butter on top of the sirloin for steakhouse richness.",
+                    "Top your steak."
+                ],
+                "steps_predictions": [
+                    "rub_ingredients_with_salt spice mixture",
+                    "soak_sirloin npc",
+                    "brush_ingredients sirloin_cooked",
+                    "add-cheese beef steak"
+                ],
+                "goal_state": " ((cooked beef steak))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "mixture": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "beef": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Carne bovina]] is a translation of [[beef]]",
+                            "[[cow]] is related to [[beef]]",
+                            "*Something you find on [[a plate]] is [[beef]]"
+                        ]
+                    },
+                    "steak": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a plate]] is [[a steak]]",
+                            "[[steak]] is related to [[meat]]",
+                            "[[Steak]] is [[one cut of meat]]",
+                            "[[Steak]] is [[meat]]"
+                        ]
+                    },
+                    "sirloin cooked": {
+                        "hot sauce": [
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in bowl"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "mild",
+                                "after": "spicy"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "spice": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[pepper]] is [[a spice]]",
+                            "[[salt]] is related to [[spice]]"
+                        ]
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Apply a Steak Rub  \n**Steps in Natural Language**:\n1. Select a chuck steak from the available options.\n2. Choose the steak rub you want to apply.\n3. Submerge the chuck steak in the steak rub to ensure it's fully coated.\n4. Brush the steak to evenly distribute the rub across all surfaces."
+    },
+    {
+        "step": [
+            "Mix the dry ingredients.",
+            "Add the butter.",
+            "Add the milk.",
+            "Prepare to steam.",
+            "Cook the spotted dick.",
+            "Serve."
+        ],
+        "task": "How to Make Spotted Dick",
+        "goal_state": "make_spotted_Dick character",
+        "steps": "```lisp\n(:action choose\n  :parameters (?agent - agent ?item - item)\n  :precondition (and (available ?item) (not (chosen ?item)) (available ?agent))\n  :effect (and (chosen ?item) (not (available ?item)))\n)\n\n(:action prepare_and_cook\n  :parameters (?p - player ?i - ingredient ?l1 - location ?l2 - stove)\n  :precondition (and \n    (available ?i) \n    (at ?p ?l1) \n    (power ?l2 on) \n    (temperature ?l2 hot)\n  )\n  :effect (and \n    (cooked ?i) \n    (temperature ?i hot) \n    (location ?i ?l2) \n    (not (available ?i))\n  )\n)\n\n(:action make\n  :parameters (?npc - npc ?resource - entity ?location - location)\n  :precondition (and\n    (available ?npc)\n    (at ?npc ?location)\n    (not (prepared ?resource))\n    (available ?resource)\n  )\n  :effect (and\n    (prepared ?resource)\n    (used ?resource)\n    (not (available ?resource))\n  )\n)\n```\n",
+        "similar_task": [
+            {
+                "cluster_label": 635,
+                "task": "How to Grill Steak",
+                "step": [
+                    "Use a dry rub or seasoning instead of straight salt and pepper.",
+                    "Try out a wet marinade for a softer, more-flavorful steak.",
+                    "Slather your steak with a pat of butter for a rich steakhouse meal.",
+                    "Top your steak with something special to make a meal of it."
+                ],
+                "steps_predictions": [
+                    "use_dry_rub alice",
+                    "cook npc",
+                    "slather_with_ingredients steak_house",
+                    "add-ingredients beef steak"
+                ],
+                "goal_state": " ((cooked beef steak))",
+                "similar_entity": {
+                    "steak house": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "beef": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Carne bovina]] is a translation of [[beef]]",
+                            "[[cow]] is related to [[beef]]",
+                            "*Something you find on [[a plate]] is [[beef]]"
+                        ]
+                    },
+                    "steak": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a plate]] is [[a steak]]",
+                            "[[steak]] is related to [[meat]]",
+                            "[[Steak]] is [[one cut of meat]]",
+                            "[[Steak]] is [[meat]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 635,
+                "task": "How to Grill Sirloin Steak",
+                "step": [
+                    "Rub a seasoning over the meat in place of salt and pepper.",
+                    "Soak the sirloin in a wet marinade to get moist, delicious flavor.",
+                    "Brush a pat of butter on top of the sirloin for steakhouse richness.",
+                    "Top your steak."
+                ],
+                "steps_predictions": [
+                    "rub_ingredients_with_salt spice mixture",
+                    "soak_sirloin npc",
+                    "brush_ingredients sirloin_cooked",
+                    "add-cheese beef steak"
+                ],
+                "goal_state": " ((cooked beef steak))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "mixture": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "beef": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Carne bovina]] is a translation of [[beef]]",
+                            "[[cow]] is related to [[beef]]",
+                            "*Something you find on [[a plate]] is [[beef]]"
+                        ]
+                    },
+                    "steak": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a plate]] is [[a steak]]",
+                            "[[steak]] is related to [[meat]]",
+                            "[[Steak]] is [[one cut of meat]]",
+                            "[[Steak]] is [[meat]]"
+                        ]
+                    },
+                    "sirloin cooked": {
+                        "hot sauce": [
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in bowl"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "mild",
+                                "after": "spicy"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "spice": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[pepper]] is [[a spice]]",
+                            "[[salt]] is related to [[spice]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 635,
+                "task": "How to Cook Kangaroo Steak",
+                "step": [
+                    "Rub herbs and spices into your steak for taste.",
+                    "Submerge your steak in a flavored liquid.",
+                    "Place your kangaroo steak in a plastic or glass bowl and cover it with plastic wrap.",
+                    "Place your steak in the fridge and let it marinate overnight."
+                ],
+                "steps_predictions": [
+                    "rub_with_ingredients beef_cooked beef",
+                    "submerge_in_flavorful_lemon npc",
+                    "place-in-bowl kangaroo_steak ketchup_bottle",
+                    "place_in_fridge beef_cooked beef"
+                ],
+                "goal_state": " ((cooked beef))",
+                "similar_entity": {
+                    "kangaroo steak": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "beef cooked": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "beef": {
+                        "tomato": [
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "chopped | in pieces"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "cooked | hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "uncooked",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "more wet",
+                                "after": "less wet"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "whole",
+                                "after": "diced"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "cooked or not",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "simmering"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in skillet",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Carne bovina]] is a translation of [[beef]]",
+                            "[[cow]] is related to [[beef]]",
+                            "*Something you find on [[a plate]] is [[beef]]"
+                        ]
+                    },
+                    "ketchup bottle": {
+                        "bottle": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | dry",
+                                "after": "dirty | wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open | on counter | on table",
+                                "after": "closed with lid | on bottle"
+                            },
+                            {
+                                "attribute": "clarity",
+                                "before": "blank",
+                                "after": "written on"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "refrigerator"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm | room temperature",
+                                "after": "cold"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Make Spotted Dick  \n**Steps in Natural Language**:\n1. **Choose the necessary ingredients** needed for the spotted dick recipe, ensuring each ingredient is available and not already selected.\n2. **Prepare and cook the ingredients** by measuring and combining them, then heating them on the stove until they are hot.\n3. **Combine the cooked ingredients** at the designated workspace to assemble and finalize the spotted dick dessert."
+    }
+]

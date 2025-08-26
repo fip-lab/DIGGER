@@ -1,0 +1,60 @@
+(define (problem move_CellPhone1_to_Box2_with_three_object_16)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    KeyChain1 - object
+    AlarmClock1 - object
+    Book1 - object
+    CD1 - object
+    CellPhone3 - object
+    Box1 - receptacle
+    Pencil1 - object
+    CellPhone1 - object
+    CellPhone2 - object
+    Pen1 - object
+    Drawer1 - receptacle
+    Bed1 - receptacle
+    Desk2 - receptacle
+    Sofa1 - receptacle
+    Desk3 - receptacle
+    Desk1 - receptacle
+    Desk4 - receptacle
+    Drawer3 - receptacle
+    Drawer2 - receptacle
+    Book2 - object
+    Book3 - object
+    Book4 - object
+    Book5 - object
+    Book6 - object
+    Laptop1 - object
+    Laptop2 - object
+    Box2 - receptacle
+    Box3 - receptacle
+    Sofa2 - receptacle
+  )
+
+  (:init
+    (atLocation agent1 Drawer2)
+    (objectAtLocation CellPhone1 Drawer1)
+    (objectAtLocation KeyChain1 Drawer2)
+    (objectAtLocation Pen1 Drawer3)
+    (objectAtLocation CellPhone2 Desk2)
+    (objectAtLocation CD1 Desk3)
+    (objectAtLocation CellPhone3 Bed1)
+    (objectAtLocation AlarmClock1 Desk4)
+    (objectAtLocation Laptop1 Box1)
+    (objectAtLocation Laptop2 Sofa1)
+    (objectAtLocation Book4 Box2)
+    (objectAtLocation Book1 Box1)
+    (objectAtLocation Book2 Box3)
+    (objectAtLocation Book3 Box2)
+    (objectAtLocation Book6 Box2)
+    (objectAtLocation Book5 Box1)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation CellPhone1 Box2)
+    )
+  )
+)

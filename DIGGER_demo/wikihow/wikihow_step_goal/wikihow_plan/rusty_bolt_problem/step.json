@@ -1,0 +1,546 @@
+{
+    "goal": "Open a Rusty Bolt",
+    "steps": [
+        "Obtain some fizzy drink.",
+        "Pour the fizzy drink over the bolt.",
+        "Wipe it clean with kitchen towel.",
+        "The fizzy drink should have dissolved the rust build-up causing the bolt to stick.",
+        "Replace the rusty bolt."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/a/a3/Fizzy-drink-Step-1.jpg/aid306122-v4-728px-Fizzy-drink-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/8/88/Pour-Step-2-1.jpg/aid306122-v4-728px-Pour-Step-2-1.jpg",
+        "https://www.wikihow.com/images/thumb/1/13/Wipe-Step-3-1.jpg/aid306122-v4-728px-Wipe-Step-3-1.jpg",
+        "https://www.wikihow.com/images/thumb/3/36/Unscrew-Step-4.jpg/aid306122-v4-728px-Unscrew-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/d/dc/Repleace-Step-5.jpg/aid306122-v4-728px-Repleace-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "towel",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | smooth",
+                        "after": "dirty | sticky",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "cleanness | texture"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "white",
+                        "after": "orange",
+                        "saliency": 0.4089740843863782,
+                        "attribute_annotation": "color"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.28505985102686754,
+                        "attribute_annotation": "wetness | moisture"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.3067323481116585,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "kitchen towel | towel",
+                "towel"
+            ]
+        },
+        {
+            "entity": "fizzy drink",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale in store",
+                        "after": "purchased from store",
+                        "saliency": 0.5270222031841223,
+                        "attribute_annotation": "cost"
+                    },
+                    {
+                        "attribute": "sealing",
+                        "before": "sealed",
+                        "after": "open",
+                        "saliency": 0.3893410437638324,
+                        "attribute_annotation": "sealing"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "unobtained",
+                        "after": "obtained",
+                        "saliency": 0.18816782085147904,
+                        "attribute_annotation": "availability"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "filled",
+                        "saliency": 0.45741415006782327,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.3197329906475334,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.2738392708407701,
+                        "attribute_annotation": "moisture"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.25089241093738845,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "availability",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.18816782085147904,
+                        "attribute_annotation": "availability"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in container",
+                        "after": "on bolt",
+                        "saliency": 0.2358463625330192,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "on bolt",
+                        "after": "on towel",
+                        "saliency": 0.46633825944170776,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "drink",
+                "soda",
+                "cup",
+                "fizzy drink"
+            ]
+        },
+        {
+            "entity": "old bolt",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.5805668594274291,
+                        "attribute_annotation": "wetness | moisture"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "rough",
+                        "after": "sticky",
+                        "saliency": 0.3804169343899479,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry",
+                        "saliency": 0.37352752195330907,
+                        "attribute_annotation": "wetness | moisture"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "sticky",
+                        "after": "rough",
+                        "saliency": 0.3286571000214179,
+                        "attribute_annotation": "texture"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "cleaner | clean",
+                        "saliency": 0.20512362866185954,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "moving",
+                        "saliency": 0.297808238737774,
+                        "attribute_annotation": "movement"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "stuck",
+                        "after": "unstuck | free",
+                        "saliency": 0.23393660312700795,
+                        "attribute_annotation": "age"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "age",
+                        "before": "old",
+                        "after": "new",
+                        "saliency": 0.311576354679803,
+                        "attribute_annotation": "age"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in machine",
+                        "after": "on counter",
+                        "saliency": 0.28862949477642136,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "bolt"
+            ]
+        },
+        {
+            "entity": "assembly",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "texture",
+                        "before": "coated with rust",
+                        "after": "smoother",
+                        "saliency": 0.5020346969372457,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "assembly"
+            ]
+        },
+        {
+            "entity": "new bolt",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in package",
+                        "after": "in machine",
+                        "saliency": 0.5020346969372457,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "placed | removed",
+                        "after": "removed | placed",
+                        "saliency": 0.4449203969443849,
+                        "attribute_annotation": "orientation"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "new bolt | old bolt"
+            ]
+        },
+        {
+            "entity": "rust",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "composition",
+                        "before": "solid | intact",
+                        "after": "dissolved",
+                        "saliency": 0.44045834225744274,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "rust"
+            ]
+        },
+        {
+            "entity": "bottle",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.48418647818947674,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.48418647818947674,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open",
+                        "saliency": 0.30061159896242357,
+                        "attribute_annotation": "openness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "bottle"
+            ]
+        },
+        {
+            "entity": "wrench",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in toolbox",
+                        "after": "in hand",
+                        "saliency": 0.48418647818947674,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "wrench"
+            ]
+        },
+        {
+            "entity": "hands",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.25497251374312846,
+                        "attribute_annotation": "moisture"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "sticky",
+                        "saliency": 0.2457937697817758,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "hands"
+            ]
+        }
+    ],
+    "clusters": {
+        "assembly": {
+            "entity_cluster": [
+                "assembly"
+            ],
+            "attribute_cluster": {
+                "texture": [
+                    "texture"
+                ]
+            }
+        },
+        "rust": {
+            "entity_cluster": [
+                "rust"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ]
+            }
+        },
+        "old bolt": {
+            "entity_cluster": [
+                "old bolt",
+                "bolt"
+            ],
+            "attribute_cluster": {
+                "wetness": [
+                    "moisture",
+                    "wetness"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "movement": [
+                    "movement"
+                ],
+                "age": [
+                    "age"
+                ],
+                "location": [
+                    "location"
+                ],
+                "orientation": [
+                    "orientation"
+                ]
+            }
+        },
+        "new bolt": {
+            "entity_cluster": [
+                "new bolt"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "orientation": [
+                    "orientation"
+                ]
+            }
+        },
+        "wrench": {
+            "entity_cluster": [
+                "wrench"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "hands": {
+            "entity_cluster": [
+                "hands"
+            ],
+            "attribute_cluster": {
+                "moisture": [
+                    "moisture"
+                ],
+                "texture": [
+                    "texture"
+                ]
+            }
+        },
+        "towel": {
+            "entity_cluster": [
+                "kitchen towel",
+                "towel"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "color": [
+                    "color"
+                ],
+                "wetness": [
+                    "moisture",
+                    "wetness"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "fizzy drink": {
+            "entity_cluster": [
+                "cup",
+                "fizzy drink",
+                "soda",
+                "drink"
+            ],
+            "attribute_cluster": {
+                "cost": [
+                    "cost"
+                ],
+                "availability": [
+                    "availability"
+                ],
+                "sealing": [
+                    "sealing"
+                ],
+                "location": [
+                    "location"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "moisture": [
+                    "moisture"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "bottle": {
+            "entity_cluster": [
+                "bottle"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ],
+                "openness": [
+                    "openness"
+                ]
+            }
+        }
+    }
+}

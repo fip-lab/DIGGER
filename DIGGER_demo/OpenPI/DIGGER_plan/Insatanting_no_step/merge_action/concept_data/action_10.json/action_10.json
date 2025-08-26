@@ -1,0 +1,17 @@
+{
+    "swing": [
+        "(:action swing_leg_over_bike\n    :parameters (?p - person ?b - bike)\n    :precondition (and (beside ?p ?b) (not (between_legs ?p ?b)))\n    :effect (and (between_legs ?p ?b) (not (beside ?p ?b)))\n)\n\n"
+    ],
+    "put": [
+        "(:action put_foot_on_pedal\n    :parameters (?p - person ?b - bike ?pedal - pedal)\n    :precondition (and (between_legs ?p ?b) (not (foot_on_pedal ?p ?pedal)))\n    :effect (foot_on_pedal ?p ?pedal)\n)\n\n"
+    ],
+    "hold": [
+        "(:action hold_handlebars\n    :parameters (?p - person ?b - bike)\n    :precondition (and (between_legs ?p ?b) (not (holding_handlebars ?p ?b)))\n    :effect (holding_handlebars ?p ?b)\n)\n\n"
+    ],
+    "pedal": [
+        "(:action pedal_bike\n    :parameters (?p - person ?b - bike ?pedal - pedal)\n    :precondition (and (between_legs ?p ?b) (foot_on_pedal ?p ?pedal) (holding_handlebars ?p ?b) (not (in_motion ?b)))\n    :effect (in_motion ?b)\n)\n\n"
+    ],
+    "stop": [
+        "(:action stop_bike\n    :parameters (?p - person ?b - bike)\n    :precondition (in_motion ?b)\n    :effect (not (in_motion ?b))\n)\n```\n\nThese PDDL actions capture the steps needed to get on a bike and ride it, with appropriate preconditions and effects based on the entity states provided."
+    ]
+}

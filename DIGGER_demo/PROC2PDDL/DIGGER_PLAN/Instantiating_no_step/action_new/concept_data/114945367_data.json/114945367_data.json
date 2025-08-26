@@ -1,0 +1,10 @@
+[
+    "(:action search ; Search a location and update the search status\n  :parameters (?agent - person ?item - object ?location - place)\n  :precondition (and\n    (at ?agent ?location)\n    (not (found ?agent ?item))\n  )\n  :effect (and\n    (found ?agent ?item)\n  )",
+    "(:action search_for_water_source\n     :parameters (?agent - person ?location - place)\n     :precondition (and\n       (at ?agent ?location)\n       (not (found ?agent water_source))\n     )\n     :effect (found ?agent water_source)\n   )",
+    "(:action search_area\n     :parameters (?agent - person ?location - place ?area - area)\n     :precondition (and\n       (at ?agent ?location)\n       (not (found ?agent ?area))\n     )\n     :effect (found ?agent ?area)\n   )",
+    "(:action find_tinder\n       :parameters (?t - tinder)\n       :precondition (not (collected ?t))\n       :effect (collected ?t)\n   )",
+    "(:action gather_kindling\n       :parameters (?k - kindling)\n       :precondition (not (collected ?k))\n       :effect (collected ?k)\n   )",
+    "(:action search_for_area\n       :parameters (?a - area)\n       :precondition (not (searched ?a))\n       :effect (searched ?a)\n   )",
+    "(:action find ; Universal action for finding and collecting items\n    :parameters (?entity - collectible)\n    :precondition (not (collected ?entity))\n    :effect (collected ?entity)\n)",
+    "(:action start\n    :parameters (?actor - person ?resource - object ?location - area)\n    :precondition (and (available ?actor) \n                       (collected ?resource) \n                       (selected ?location)\n                       (not (started ?actor ?resource ?location)))\n    :effect (and (started ?actor ?resource ?location)\n                 (fire_started ?location))"
+]

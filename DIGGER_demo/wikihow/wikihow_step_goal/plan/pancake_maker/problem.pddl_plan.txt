@@ -1,0 +1,5 @@
+(attach_funnel user1 scrubber1 ketchup_bottle1)
+(pour_batter user1 pancake_batter1 scrubber1 ketchup_bottle1)
+(replace_lid_and_label user1 ketchup_bottle1 funnel1 funnel1 funnel1)
+(place_in_fridge user1 ketchup_bottle1 fridge1 store_location)
+; cost = 4 (unit cost)

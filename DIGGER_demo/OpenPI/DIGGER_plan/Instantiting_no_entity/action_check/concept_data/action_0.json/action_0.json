@@ -1,0 +1,3 @@
+[
+    "```lisp\n[\n  (:action plug\n    ; Plug various devices into each other to establish connections\n    :parameters (?device1 - object ?device2 - object ?location - location)\n    \n    :precondition (and \n      (at ?device1 ?location) \n      (at ?device2 ?location) \n      (or\n        (and (has_hdmi_input ?device2) (is_hdmi_converter ?device1))\n        (and (is_hdmi_converter ?device2) (is_hdmi_cable ?device1))\n        (and (has_av_composite_output ?device2) (is_hdmi_converter ?device1))\n      )\n      (not (connected ?device1 ?device2))\n    )\n    \n    :effect (connected ?device1 ?device2)\n  )\n]\n```"
+]

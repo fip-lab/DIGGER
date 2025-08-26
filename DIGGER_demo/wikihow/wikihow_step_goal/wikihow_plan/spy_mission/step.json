@@ -1,0 +1,144 @@
+{
+    "goal": "Be a Spy With Friends",
+    "steps": [
+        "Set-up your spy group You will need a trustworthy 2-5 person group.",
+        "It's good to have a place to keep your gear when not in use, hold meetings, and just talk in private without worrying about the nosiness of certain people in public places.",
+        "Get some gear To be a good spy, you and your friends must have gear that will help with missions.",
+        "Find your first \"victim\" The victim is the person you will be watching and spying on."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/c/c6/Be-a-Spy-With-Friends-Step-1.jpg/aid524518-v4-728px-Be-a-Spy-With-Friends-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/5/5f/Be-a-Spy-With-Friends-Step-2.jpg/aid524518-v4-728px-Be-a-Spy-With-Friends-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/a/ab/Be-a-Spy-With-Friends-Step-3.jpg/aid524518-v4-728px-Be-a-Spy-With-Friends-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/f/fd/Be-a-Spy-With-Friends-Step-4.jpg/aid524518-v4-728px-Be-a-Spy-With-Friends-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "co-conspirators",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unenlisted",
+                        "after": "enlisted",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "knowledge"
+                    },
+                    {
+                        "attribute": "forming",
+                        "before": "unformed",
+                        "after": "now formed",
+                        "saliency": 0.5169082125603865,
+                        "attribute_annotation": "forming"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "co-conspirators",
+                "your spy group"
+            ]
+        },
+        {
+            "entity": "gear",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "availability",
+                        "before": "at store",
+                        "after": "gathered",
+                        "saliency": 0.544020506753426,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "gear"
+            ]
+        },
+        {
+            "entity": "you",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in need of location for spy group",
+                        "after": "now in possession of location for spy group",
+                        "saliency": 0.21162377994676132,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "possession",
+                        "before": "without gear",
+                        "after": "now in possession of gear",
+                        "saliency": 0.14201912649117618,
+                        "attribute_annotation": "possession"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "in need of victim",
+                        "after": "now aware of victim",
+                        "saliency": 0.3714877255249926,
+                        "attribute_annotation": "knowledge"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "you"
+            ]
+        }
+    ],
+    "clusters": {
+        "you": {
+            "entity_cluster": [
+                "you"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "possession": [
+                    "possession"
+                ],
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "co-conspirators": {
+            "entity_cluster": [
+                "co-conspirators",
+                "your spy group"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ],
+                "forming": [
+                    "forming"
+                ]
+            }
+        },
+        "gear": {
+            "entity_cluster": [
+                "gear"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability"
+                ]
+            }
+        }
+    }
+}

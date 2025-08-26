@@ -1,0 +1,6 @@
+[
+    "(:action cut ; Cut an item into specified pieces\n  :parameters (?agent - person ?item - object ?surface - surface)\n  :precondition (and (at ?agent ?surface) (at ?item ?surface) (whole ?item))\n  :effect (and (cut ?item) (not (whole ?item))",
+    "(:action set ; Set a condition or state change for a task\n :parameters (?actor - agent ?resource - object ?location - place ?state - state)\n :precondition (and (at ?actor ?location) (not (in ?resource ?state)) (condition ?resource ?location))\n :effect (and (in ?resource ?state) (not (condition ?resource ?location))",
+    "(:action add\n  ; General action to add an item to a location and update its state\n  :parameters (?actor - agent ?item - object ?container - container ?condition - state)\n  :precondition (and (at ?actor ?container) \n                     (at ?item ?origin) \n                     (state ?item ?condition))\n  :effect (and (in ?item ?container) \n               (updated_state ?item ?condition))",
+    "(:action serve\n  :parameters (?p - person ?item - object ?location - location ?state_change - state ?resource - resource)\n  :precondition (and (at ?p ?location) (not_completed ?resource) (prepared ?resource) (active ?state_change))\n  :effect (and (served ?resource) (not (active ?state_change))"
+]

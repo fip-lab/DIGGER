@@ -1,0 +1,5 @@
+(plug_hdmi_to_cable hdmi_cord1)
+(plug_hdmi_to_tv hdmi_cord1 tv1)
+(connect_hdmi_to_wii_av hdmi_cord1 wii_av_output1)
+(plug_hdmi_to_converter hdmi_cord1 converter1 tv1)
+; cost = 4 (unit cost)

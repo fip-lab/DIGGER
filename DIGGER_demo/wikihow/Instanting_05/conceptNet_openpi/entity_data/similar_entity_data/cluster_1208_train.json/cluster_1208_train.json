@@ -1,0 +1,1745 @@
+[
+    {
+        "cluster_label": 1208,
+        "task": "How to Freeze Mashed Potatoes",
+        "step": [
+            "Use a good mashing variety of potato.",
+            "Use full fat milk and butter when mashing.",
+            "Peel the potatoes.",
+            "Boil to preference.",
+            "Mash.",
+            "Allow the mashed potatoes to cool thoroughly."
+        ],
+        "steps_predictions": [
+            "use_potatoes potato1 mixing_bowl1 pot1",
+            "use_full_of_milk milk_and_butter mixing_bowl",
+            "peel potato peeler",
+            "boil_wicks wick1",
+            "mix_mixture mixing_bowl canola_oil table",
+            "cool_potatoes potato1 oven1"
+        ],
+        "goal_state": " ((thawed potato1 mixing_bowl1))",
+        "similar_entity": {
+            "table": {
+                "table": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clear",
+                        "after": "cluttered"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find on [[a table]] is [[a tablecloth]]",
+                    "[[desk]] is related to [[table]]",
+                    "[[a table]] is for [[Putting things on]]"
+                ],
+                "comet_knowledge": [
+                    "table ObjectUse put the food on",
+                    "table MadeUpOf table cloth",
+                    "table HasProperty found in kitchen",
+                    "table CapableOf sit at"
+                ]
+            },
+            "potato": {
+                "potato": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "cleaner | clean | wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "on counter"
+                    },
+                    {
+                        "attribute": "thickness",
+                        "before": "thicker",
+                        "after": "thinner"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "short",
+                        "after": "long"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "peeled"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on cloth"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | on stove",
+                        "after": "in dish | on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a potato]] in [[kitchen]]",
+                    "[[gnocchi]] is made of [[potato]]."
+                ],
+                "comet_knowledge": [
+                    "potato ObjectUse put in the pot",
+                    "potato MadeUpOf potato",
+                    "potato HasProperty cooked in pot",
+                    "potato CapableOf cook on stove"
+                ]
+            },
+            "oven": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the oven]] is [[food]]",
+                    "[[baking a cake]] requires [[an oven]]",
+                    "[[an oven]] is used for [[cooking]]",
+                    "[[An oven]] is [[very hot]]",
+                    "[[An oven]] can [[brown chicken]]",
+                    "[[oven]] is related to [[stove]]"
+                ],
+                "comet_knowledge": [
+                    "oven ObjectUse heat up food",
+                    "oven MadeUpOf oven",
+                    "oven HasProperty found in kitchen",
+                    "oven CapableOf cook food"
+                ]
+            },
+            "milk and butter": {
+                "the milk": [
+                    {
+                        "attribute": "location",
+                        "before": "in container | in bottle",
+                        "after": "in blender"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "milk and butter ObjectUse put on toast",
+                    "milk and butter MadeUpOf milk",
+                    "milk and butter HasProperty milk",
+                    "milk and butter CapableOf put on toast"
+                ]
+            },
+            "peeler": {
+                "peeler": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "dryness",
+                        "before": "moist",
+                        "after": "drier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hotter | hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "soft",
+                        "after": "crunchy"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cupboard",
+                        "after": "on stove"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on stove | in fryer",
+                        "after": "on table | on serving dish"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "was heavy",
+                        "after": "is light"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "bland",
+                        "after": "seasoned"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "peeler ObjectUse use as a weapon",
+                    "peeler MadeUpOf nail",
+                    "peeler HasProperty used in surgery",
+                    "peeler CapableOf use as weapon"
+                ]
+            },
+            "canola oil": {
+                "funnel": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer | in cupboard | on table",
+                        "after": "on bottle | in bottle | over mouth of bottle"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "canola oil ObjectUse cooking oil",
+                    "canola oil MadeUpOf canola",
+                    "canola oil HasProperty made from corn",
+                    "canola oil CapableOf burn for fuel"
+                ]
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "mixing bowl ObjectUse mix the ingredients",
+                    "mixing bowl MadeUpOf cupboard",
+                    "mixing bowl HasProperty used in kitchen",
+                    "mixing bowl CapableOf mix ingredients"
+                ]
+            },
+            "wick": {
+                "wicks": [
+                    {
+                        "attribute": "cost",
+                        "before": "on sale at store",
+                        "after": "purchased from store"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "on lamp",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "burned"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lamp"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "heated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wick ObjectUse use as a weapon",
+                    "wick MadeUpOf car",
+                    "wick HasProperty found in house",
+                    "wick CapableOf wash dishes"
+                ]
+            },
+            "pot": {
+                "pot": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the cupboard | in the cabinet",
+                        "after": "on the stovetop | on the stove top"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[-gryde]] is a translation of [[pot]]",
+                    "You are likely to find [[a ficus]] in [[a pot]]",
+                    "[[a pot]] can be used to [[make soup]]"
+                ],
+                "comet_knowledge": [
+                    "pot ObjectUse put the food in",
+                    "pot MadeUpOf hot water",
+                    "pot HasProperty boiling water",
+                    "pot CapableOf boil water"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Use Goat Cheese",
+        "step": [
+            "Default to fresh goat cheese for spreading.",
+            "Opt for aged goat cheeses for firmness.",
+            "Use soft-ripened goat cheeses for specific purposes.",
+            "Store goat cheese according to the style."
+        ],
+        "steps_predictions": [
+            "default_to_garnish goat cheese mixing_bowl",
+            "pick_gamel goat_cheese cheese",
+            "use_as_appropriate_purpose goat_cheese",
+            "store-gamel goat cheese mixing_bowl"
+        ],
+        "goal_state": " ((in_container goat_cheese mixing_bowl) (served_garnish goat cheese))",
+        "similar_entity": {
+            "cheese": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Cheese]] is [[a food]]",
+                    "[[cheese]] can [[age well]]",
+                    "*Something you find in [[the refrigerator]] is [[cheese]]",
+                    "[[some cheese]] has [[a strong odor]]",
+                    "[[macaroni]] is related to [[cheese]]"
+                ],
+                "comet_knowledge": [
+                    "cheese ObjectUse make a sandwich",
+                    "cheese MadeUpOf cheese",
+                    "cheese HasProperty eaten with bread",
+                    "cheese CapableOf put on sandwich"
+                ]
+            },
+            "goat": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[sheep]] is related to [[goat]]",
+                    "[[Bode]] is a translation of [[goat]]"
+                ],
+                "comet_knowledge": [
+                    "goat ObjectUse milk cow",
+                    "goat MadeUpOf milk",
+                    "goat HasProperty two legs",
+                    "goat CapableOf milk cow"
+                ]
+            },
+            "goat cheese": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "goat cheese ObjectUse make a sandwich",
+                    "goat cheese MadeUpOf cheese",
+                    "goat cheese HasProperty made from goats",
+                    "goat cheese CapableOf make cheese balls"
+                ]
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "mixing bowl ObjectUse mix the ingredients",
+                    "mixing bowl MadeUpOf cupboard",
+                    "mixing bowl HasProperty used in kitchen",
+                    "mixing bowl CapableOf mix ingredients"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Make Dinosaur Eggs",
+        "step": [
+            "Use coffee grounds instead of dirt.",
+            "Make fizzing dough.",
+            "Shape the eggs using plastic eggs.",
+            "Make frozen dinosaur eggs."
+        ],
+        "steps_predictions": [
+            "use_coffee_ground ground_floor pot",
+            "make_fizzing_dough mixing_bowl",
+            "shape_to_shape npc",
+            "free_dinosaur_egg npc"
+        ],
+        "goal_state": " ((in_container npc) (served_dinosaur_eggs))",
+        "similar_entity": {
+            "ground floor": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "ground floor ObjectUse ground floor",
+                    "ground floor MadeUpOf ground floor",
+                    "ground floor HasProperty ground floor",
+                    "ground floor CapableOf ground floor"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "pot": {
+                "pot": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the cupboard | in the cabinet",
+                        "after": "on the stovetop | on the stove top"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[-gryde]] is a translation of [[pot]]",
+                    "You are likely to find [[a ficus]] in [[a pot]]",
+                    "[[a pot]] can be used to [[make soup]]"
+                ],
+                "comet_knowledge": [
+                    "pot ObjectUse put the food in",
+                    "pot MadeUpOf hot water",
+                    "pot HasProperty boiling water",
+                    "pot CapableOf boil water"
+                ]
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "mixing bowl ObjectUse mix the ingredients",
+                    "mixing bowl MadeUpOf cupboard",
+                    "mixing bowl HasProperty used in kitchen",
+                    "mixing bowl CapableOf mix ingredients"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Use Egg Yolks",
+        "step": [
+            "Put your yolks in an airtight container to save for later.",
+            "Freeze your egg yolks with a simple syrup so they don\u2019t crystalize.",
+            "Cure your egg yolks in salt."
+        ],
+        "steps_predictions": [
+            "save-yolks container",
+            "free_eraser npc",
+            "cure-eraser egg yolks salt"
+        ],
+        "goal_state": " ((in_container egg_yolks container) (served_ingredients container))",
+        "similar_entity": {
+            "salt": {
+                "oil/macaroni": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed into water | mixed in water | mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on stove top"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner | clean",
+                        "after": "dirtier | dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty | emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in containter | in its place | in  its place",
+                        "after": "on macaroni | in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter | warmer"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[salt]] is related to [[white]]",
+                    "You are likely to find [[salt]] in [[ocean]]",
+                    "[[salt]] can be used to [[melt ice]]",
+                    "[[Sal-de-cozinha]] is a translation of [[salt]]",
+                    "[[salt]] is [[a spice]]",
+                    "[[salt]] is not [[pepper]]",
+                    "[[Salt]] can [[season food]]"
+                ],
+                "comet_knowledge": [
+                    "salt ObjectUse add flavor to food",
+                    "salt MadeUpOf salt",
+                    "salt HasProperty salt",
+                    "salt CapableOf salt bread"
+                ]
+            },
+            "yolks": {
+                "yogurt": [
+                    {
+                        "attribute": "location",
+                        "before": "in tub | in container",
+                        "after": "in blender"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "yolks ObjectUse make omelets",
+                    "yolks MadeUpOf eggs",
+                    "yolks HasProperty made from eggs",
+                    "yolks CapableOf make omelets"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "egg": {
+                "the milk": [
+                    {
+                        "attribute": "location",
+                        "before": "in container | in bottle",
+                        "after": "in blender"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[egg]] is related to [[chicken]]",
+                    "You are likely to find [[an egg]] in [[a grocery store]]",
+                    "[[a chicken egg]] is [[a egg]]"
+                ],
+                "comet_knowledge": [
+                    "egg ObjectUse egg yolk",
+                    "egg MadeUpOf eggshell",
+                    "egg HasProperty eggs",
+                    "egg CapableOf lay egg"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Cook Frozen Fish",
+        "step": [
+            "Learn basic fish-cooking techniques.",
+            "Get ideas for your specific type of fish.",
+            "Try new marinades and seasoning.",
+            "Learn unique recipes."
+        ],
+        "steps_predictions": [
+            "learn_fish_cooking techniques",
+            "get_ideas npc spear fish",
+            "treat_new_member_with_salt marshmallow_cream",
+            "learn_new_recipe npc kitchen"
+        ],
+        "goal_state": " ((learned npc sushi) (in sherbet plate))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "spear": {
+                "weapon": [
+                    {
+                        "attribute": "location",
+                        "before": "in vehicle",
+                        "after": "on ground"
+                    },
+                    {
+                        "attribute": "attention",
+                        "before": "carelessly disguised | visible",
+                        "after": "carefully disguised | disguised"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "on weapon"
+                    },
+                    {
+                        "attribute": "decoration",
+                        "before": "bare",
+                        "after": "camouflaged"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A spear]] is [[a weapon]]",
+                    "[[\u0631\u0645\u0652\u062d]] is a translation of [[spear]]"
+                ],
+                "comet_knowledge": [
+                    "spear ObjectUse stab someone with",
+                    "spear MadeUpOf weapon",
+                    "spear HasProperty sharp",
+                    "spear CapableOf use as weapon"
+                ]
+            },
+            "kitchen": {
+                "kitchen counter": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the kitchen]] is [[food]]",
+                    "[[a kitchen]] is used for [[cooking food]]",
+                    "[[table]] is related to [[kitchen]]"
+                ],
+                "comet_knowledge": [
+                    "kitchen ObjectUse cook in",
+                    "kitchen MadeUpOf kitchen",
+                    "kitchen HasProperty kitchen",
+                    "kitchen CapableOf cook food"
+                ]
+            },
+            "marshmallow cream": {
+                "the marshmallow cream": [
+                    {
+                        "attribute": "location",
+                        "before": "in continer",
+                        "after": "in bowl"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "by itself | solid",
+                        "after": "blended with marshmellow cream | blended with cream cheese | blended"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "marshmallow cream ObjectUse put on a cake",
+                    "marshmallow cream MadeUpOf ice cream",
+                    "marshmallow cream HasProperty ice cream",
+                    "marshmallow cream CapableOf melt in mouth"
+                ]
+            },
+            "fish": {
+                "boat": [
+                    {
+                        "attribute": "location",
+                        "before": "in open water | on dock",
+                        "after": "at dock | on boat"
+                    },
+                    {
+                        "attribute": "motion",
+                        "before": "standing",
+                        "after": "walking"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on dock",
+                        "after": "in boat"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "in motion",
+                        "after": "still"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "action",
+                        "before": "still",
+                        "after": "moving"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "standing",
+                        "after": "crouching"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "docked",
+                        "after": "in motion"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "rocking",
+                        "after": "steadied"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "perpendicular to dock",
+                        "after": "parallel to shore"
+                    },
+                    {
+                        "attribute": "motion",
+                        "before": "moving",
+                        "after": "stationary"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[fish]] is related to [[animal]]",
+                    "[[A bass]] is a kind of [[fish]]",
+                    "Something that might happen when you [[fish]] is [[you catch fish]]",
+                    "If you want to [[fish]] then you should [[go to the lake]]",
+                    "[[Fish]] have [[gills]]"
+                ],
+                "comet_knowledge": [
+                    "fish ObjectUse catch and eat",
+                    "fish MadeUpOf fish tail",
+                    "fish HasProperty eaten by humans",
+                    "fish CapableOf catch fish"
+                ]
+            },
+            "techniques": {
+                "instructions": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unread | avalable",
+                        "after": "known | read"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "techniques ObjectUse teach a new skill",
+                    "techniques MadeUpOf art",
+                    "techniques HasProperty taught to students",
+                    "techniques CapableOf teach to others"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Freeze Meatballs",
+        "step": [
+            "Cook the meatballs.",
+            "Allow the meatballs to cool.",
+            "Decide where you'd like to freeze the meatballs.",
+            "Know how to reheat the cooked meatballs."
+        ],
+        "steps_predictions": [
+            "cook_meatballs velveeta",
+            "cool_meatballs velveeta",
+            "free_meatballs velveeta",
+            "cook npc"
+        ],
+        "goal_state": " ((thawed meatballs velveeta))",
+        "similar_entity": {
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Clean Chicken Livers",
+        "step": [
+            "Collect chicken livers from whole chickens.",
+            "Buy the livers from a butcher.",
+            "Clean and freeze the chicken livers.",
+            "Make chopped liver."
+        ],
+        "steps_predictions": [
+            "collect_livers npc",
+            "buy_livers livers",
+            "free_chicken livers freezer",
+            "chopped_lemon npc"
+        ],
+        "goal_state": " ((cleaned_chicken livers) (flattened chicken Livers))",
+        "similar_entity": {
+            "freezer": {
+                "freezer": [
+                    {
+                        "attribute": "volume",
+                        "before": "less full | slightly less full",
+                        "after": "fuller | more full"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the freezer]] is [[ice cream]]",
+                    "[[a freezer]] is for [[making ice cubes]]"
+                ],
+                "comet_knowledge": [
+                    "freezer ObjectUse keep food cold",
+                    "freezer MadeUpOf freezer",
+                    "freezer HasProperty frozen food",
+                    "freezer CapableOf freeze food"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "livers": {
+                "chocolate": [
+                    {
+                        "attribute": "cost",
+                        "before": "in store",
+                        "after": "purchased for use"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "solid | lumpy",
+                        "after": "liquid | smooth | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "colder | room temperature | cooler",
+                        "after": "warmer | warm | hotter"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "packaged",
+                        "after": "out of package"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "in pot",
+                        "after": "in molds"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "liquid",
+                        "after": "frozen"
+                    },
+                    {
+                        "attribute": "hardness",
+                        "before": "liquid",
+                        "after": "solid | hardened"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer",
+                        "after": "colder"
+                    },
+                    {
+                        "attribute": "ease of release",
+                        "before": "hard to release from molds",
+                        "after": "easy to release from molds"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "in molds | in mold",
+                        "after": "on plate | out of molds"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "liquid",
+                        "after": "heart shaped"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "in pile | in molds",
+                        "after": "in box"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "livers ObjectUse livers",
+                    "livers MadeUpOf livers",
+                    "livers HasProperty livers",
+                    "livers CapableOf livers"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Store Egg Yolks",
+        "step": [
+            "Put the egg yolks into a small container.",
+            "Cover the yolks with either water or a small amount of melted butter.",
+            "Put a lid on the container and place the container in the refrigerator."
+        ],
+        "steps_predictions": [
+            "put_ingredients_in_container egg_yolks container",
+            "cover_yolks velveeta",
+            "put_lid_on_container container1 refrigerator1 container2"
+        ],
+        "goal_state": " ((in_container egg_yolks container))",
+        "similar_entity": {
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            },
+            "refrigerator": {
+                "refrigerator": [
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the refrigerator]] is [[food]]",
+                    "[[a refrigerator]] is for [[keeping food cold]]",
+                    "[[Frigor\u00edfico]] is a translation of [[refrigerator]]",
+                    "[[A refrigerator]] is [[a machine]]",
+                    "[[a refrigerator]] can [[cool food]]"
+                ],
+                "comet_knowledge": [
+                    "refrigerator ObjectUse keeping food cold",
+                    "refrigerator MadeUpOf refrigerator",
+                    "refrigerator HasProperty refrigerated",
+                    "refrigerator CapableOf keep food cold"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "egg yolks": {
+                "yogurt": [
+                    {
+                        "attribute": "location",
+                        "before": "in tub | in container",
+                        "after": "in blender"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "egg yolks ObjectUse make egg salad",
+                    "egg yolks MadeUpOf eggs",
+                    "egg yolks HasProperty eggs",
+                    "egg yolks CapableOf make egg salad"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Use up Sour Milk for Hen Food",
+        "step": [
+            "Give chicks and hens sour milk to help them grow and make eggs.",
+            "Mix sour milk into the hen feed as an occasional protein supplement.",
+            "Make sour milk cheese to treat your hens."
+        ],
+        "steps_predictions": [
+            "gather_chicks npc",
+            "mix_sour_milk npc",
+            "make_sliplargerbead npc"
+        ],
+        "goal_state": " ((in_container sour_milk))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Use an Egg Boiler",
+        "step": [
+            "Determine the best way to clean your egg boiler between uses.",
+            "Clean the heating unit with a damp cloth and diluted vinegar mixture.",
+            "Use distilled water to extend the life of your egg boiler."
+        ],
+        "steps_predictions": [
+            "clean_eraser user1 eraser1",
+            "clean_oven npc",
+            "drink_water person water"
+        ],
+        "goal_state": " ((clean_eraser user1 eraser1) (cleaned_machine linoleum_floor))",
+        "similar_entity": {
+            "person": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[person]] is related to [[human]]",
+                    "[[A person]] can [[cross a street]]",
+                    "[[a person]] wants [[a headache]]",
+                    "[[A slave]] is [[a person]]",
+                    "[[a person]] doesn't want to [[be diseased]]",
+                    "[[a person]] is part of [[society]]"
+                ],
+                "comet_knowledge": [
+                    "person ObjectUse have sex with",
+                    "person MadeUpOf person y",
+                    "person HasProperty one's self",
+                    "person CapableOf drink too much"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "user ObjectUse use the computer",
+                    "user MadeUpOf computer",
+                    "user HasProperty found on internet",
+                    "user CapableOf use computer"
+                ]
+            },
+            "eraser": {
+                "eraser": [
+                    {
+                        "attribute": "location",
+                        "before": "in store | absent | at shop/in drawer | owned by store",
+                        "after": "in home | present | in hand | bought by you"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at store",
+                        "after": "purchased fro store"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on linoleum"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "getting smaller"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find at [[a desk]] is [[eraser]]",
+                    "[[Gomme \u00e0 effacer]] is a translation of [[eraser]]"
+                ],
+                "comet_knowledge": [
+                    "eraser ObjectUse make a paper airplane",
+                    "eraser MadeUpOf eraser",
+                    "eraser HasProperty erasing",
+                    "eraser CapableOf clean up mess"
+                ]
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ],
+                "comet_knowledge": [
+                    "water ObjectUse water plants",
+                    "water MadeUpOf water",
+                    "water HasProperty found in ocean",
+                    "water CapableOf water plants"
+                ]
+            }
+        }
+    }
+]

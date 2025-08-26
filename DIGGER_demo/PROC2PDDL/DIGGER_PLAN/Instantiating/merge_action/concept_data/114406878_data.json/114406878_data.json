@@ -1,0 +1,27 @@
+{
+    "cluster": [
+        "(:action cluster_grass\n    :parameters (?n - npc ?g - grass ?gt - grass_tinder)\n    :precondition (and\n                    (not (clustered ?gt))\n                    (found ?g)\n                  )\n    :effect (clustered ?gt)\n)\n```\n\n**Explanation**:\n- **Parameters**: The action involves an NPC, grass, and grass tinder.\n- **Preconditions**: The grass tinder is not yet clustered, and grass is found.\n- **Effects**: The grass tinder becomes clustered.\n\n2. **Action: start_fire**\n\n```lisp\n"
+    ],
+    "get": [
+        "(:action get_water\n    :parameters (?npc - npc ?w - water)\n    :precondition (not (collected ?w))\n    :effect (collected ?w)\n)\n\n;; Action 3: Start Fire\n",
+        "(:action gather_kindling\n    :parameters (?npc - npc ?material - kindling)\n    :precondition (not (collected ?material))\n    :effect (collected ?material)\n)\n\n;; Action: build_teepee_structure\n"
+    ],
+    "start": [
+        "(:action start_fire\n    :parameters (?n - npc ?c - camp ?ts - teepee_structure)\n    :precondition (and\n                    (clustered grass_tinder)\n                    (not (fire_started ?c))\n                  )\n    :effect (fire_started ?c)\n)\n```\n\n**Explanation**:\n- **Parameters**: The action involves an NPC, camp, and teepee structure.\n- **Preconditions**: The grass tinder must be clustered, and the fire is not yet started.\n- **Effects**: The fire is started at the camp.\n\n3. **Action: break_branch**\n\n```lisp\n"
+    ],
+    "break": [
+        "(:action break_branch\n    :parameters (?n - npc ?b - bush ?bp - branch_piece)\n    :precondition (and\n                    (not (broken ?bp))\n                    (intact ?b)\n                  )\n    :effect (and\n              (broken ?bp)\n              (not (intact ?b))\n            )\n)\n```\n\n**Explanation**:\n- **Parameters**: The action involves an NPC, bush, and branch piece.\n- **Preconditions**: The branch piece is not yet broken, and the bush is intact.\n- **Effects**: The branch piece is broken, and the bush is no longer intact.\n\n4. **Action: build_teepee**\n\n```lisp\n"
+    ],
+    "build": [
+        "(:action build_shelter\n    :parameters (?npc - npc ?c - camp ?t - teepee_structure)\n    :precondition (and (broken_branch ?bp) (not (shelter_built ?c)))\n    :effect (shelter_built ?c)\n)\n\n",
+        "(:action build_teepee\n    :parameters (?n - npc ?c - camp ?ts - teepee_structure)\n    :precondition (and\n                    (fire_started ?c)\n                    (broken branch_piece)\n                    (not (built ?ts))\n                  )\n    :effect (built ?ts)\n)\n```\n\n**Explanation**:\n- **Parameters**: The action involves an NPC, camp, and teepee structure.\n- **Preconditions**: The fire must be started, the branch piece is broken, and the teepee structure is not yet built.\n- **Effects**: The teepee structure is built.\n\nThese actions are designed to reflect the steps and entity states provided, ensuring that each action logically follows from the conditions and results in the expected outcomes.",
+        "(:action build_teepee_structure\n    :parameters (?npc - npc ?camp - camp ?structure - teepee_structure)\n    :precondition (and\n                    (collected ?tinder)\n                    (collected ?kindling)\n                    (not (built ?structure))\n                  )\n    :effect (built ?structure)\n)\n\n;; Action: start_fire\n",
+        "(:action cook\n    :parameters (?npc - npc ?c - camp ?t - teepee_structure ?cf - campfire)\n    :precondition (and (fire_started ?c))\n    :effect (cooking ?npc ?cf)\n)\n\n"
+    ],
+    "burn": [
+        "(:action burn_wood\n    :parameters (?p - person ?w - wood)\n    :precondition (not (burned ?w))\n    :effect (burned ?w)\n)\n\n;; Action 8: Build Teepee\n"
+    ],
+    "collect": [
+        "(:action collect_tinder\n    :parameters (?npc - npc ?material - tinder)\n    :precondition (not (collected ?material))\n    :effect (collected ?material)\n)\n\n;; Action: gather_kindling\n"
+    ]
+}

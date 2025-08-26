@@ -1,0 +1,455 @@
+[
+    {
+        "How to Start a Book Club at School": [
+            {
+                "cluster_label": 10,
+                "task": "How to Start a Library Book Club",
+                "step": [
+                    "Pick books that are available at the library.",
+                    "Strike a deal with your library.",
+                    "Choose books that are fairly complex.",
+                    "Ask for opinions.",
+                    "Come with questions prepared.",
+                    "Ask each member to bring in a discussion question."
+                ],
+                "steps_predictions": [
+                    "pick_books npc book",
+                    "strike_deal npc covering_tracks track",
+                    "choose_books npc book",
+                    "ask_for_inreceptacle agent1 advice1",
+                    "prepare_questions npc",
+                    "bring_conversation_question npc"
+                ],
+                "goal_state": " ((not (in anish npc)))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "npcused for use as a paperweight"
+                    },
+                    "advice": {
+                        "advice": [
+                            {
+                                "attribute": "availability",
+                                "before": "impossible",
+                                "after": "possible"
+                            },
+                            {
+                                "attribute": "ownership",
+                                "before": "withheld",
+                                "after": "given"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "adviceused for give to someone"
+                    },
+                    "agent": {
+                        "game character": [
+                            {
+                                "attribute": "location",
+                                "before": "further out",
+                                "after": "in"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "out",
+                                "after": "hidden"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "pulling out pistol",
+                                "after": "investigating"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "investigating routes",
+                                "after": "waiting"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hiding spot",
+                                "after": "now at bomb"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "hiding",
+                                "after": "defusing"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[agent]] is related to [[secret]]"
+                        ],
+                        "comet_knowledge": "agentused for get a job"
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ],
+                        "comet_knowledge": "trackused for run on"
+                    },
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "covering tracksused for cover up a hole"
+                    },
+                    "book": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[page]] is related to [[book]]",
+                            "[[a book]] is used for [[learning]]",
+                            "[[a book]] is part of [[library]]",
+                            "[[A book]] is created by [[a writer]].",
+                            "You are likely to find [[a book]] in [[a classroom]]",
+                            "[[the bible]] is [[a book]]",
+                            "[[A book]] is made of [[Paper]].",
+                            "[[a book]] contains [[knowledge]]"
+                        ],
+                        "comet_knowledge": "bookused for reading"
+                    }
+                }
+            },
+            {
+                "cluster_label": 10,
+                "task": "How to Create Rules for a Book Club",
+                "step": [
+                    "Come up with a member list.",
+                    "Set rules for book acquisition.",
+                    "Decide where and when to meet.",
+                    "Write down the loan policy.",
+                    "Set a return schedule.",
+                    "Assign a member to track the loans."
+                ],
+                "steps_predictions": [
+                    "create_member_list npc ss",
+                    "set_rules npc book_acquired",
+                    "set_meeting_location npc basement",
+                    "write_loans_policy npc home",
+                    "set_return_schedule npc basement",
+                    "listen_to_member_secret adrian liam ss"
+                ],
+                "goal_state": " ((not (in npc Book Club)))",
+                "similar_entity": {
+                    "home": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[nest]] is related to [[home]]",
+                            "You are likely to find [[a ferret]] in [[your home]]",
+                            "[[home]] is [[where the heart is]]",
+                            "[[a home]] is for [[living]]"
+                        ],
+                        "comet_knowledge": "homeused for go to"
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "npcused for use as a paperweight"
+                    },
+                    "liam": {
+                        "leaves": [
+                            {
+                                "attribute": "location",
+                                "before": "elsewhere",
+                                "after": "on rucksaks"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "elsewhere",
+                                "after": "on helmet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "absent",
+                                "after": "on webbing"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "liamused for have sex with"
+                    },
+                    "book acquired": {
+                        "extract": [
+                            {
+                                "attribute": "location",
+                                "before": "in container | outside blender",
+                                "after": "in blender | inside blender"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "book acquiredused for learn new things"
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ],
+                        "comet_knowledge": "basementused for storing things"
+                    },
+                    "adrian": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "adrianused for use as a weapon"
+                    },
+                    "ss": {
+                        "main dish": [
+                            {
+                                "attribute": "temperature",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "accompaniment",
+                                "before": "unaccompanied",
+                                "after": "accompanied"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            null
+                        ],
+                        "comet_knowledge": "ssused for make a paper airplane"
+                    }
+                }
+            },
+            {
+                "cluster_label": 10,
+                "task": "How to Encourage Adults to Read",
+                "step": [
+                    "Start a book club to encourage members to read specific books.",
+                    "Suggest books to friends and family.",
+                    "Create an online reading community through a book forum.",
+                    "Build a little free library."
+                ],
+                "steps_predictions": [
+                    "start_bookclub bookclub",
+                    "initiate_teach npc book",
+                    "create_reading_community npc book_forum",
+                    "build_libraries npc book"
+                ],
+                "goal_state": " ((initiative npc book))",
+                "similar_entity": {
+                    "bookclub": {
+                        "rhubarb": [
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "combined with sugar and water"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "raw | room temperature | cold",
+                                "after": "simmered | warm | hot"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "consistency",
+                                "before": "hard",
+                                "after": "soft"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "hot | on stove | on heat",
+                                "after": "cool | cooler | warm | removed from heat | off heat"
+                            },
+                            {
+                                "attribute": "appearance",
+                                "before": "unadorned | ungarnished",
+                                "after": "adorned with mint leaves | garnished with mint leaves"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "bookclubused for read a book"
+                    },
+                    "book forum": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "book forumused for talk about books"
+                    },
+                    "book": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[page]] is related to [[book]]",
+                            "[[a book]] is used for [[learning]]",
+                            "[[a book]] is part of [[library]]",
+                            "[[A book]] is created by [[a writer]].",
+                            "You are likely to find [[a book]] in [[a classroom]]",
+                            "[[the bible]] is [[a book]]",
+                            "[[A book]] is made of [[Paper]].",
+                            "[[a book]] contains [[knowledge]]"
+                        ],
+                        "comet_knowledge": "bookused for reading"
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": [],
+                        "comet_knowledge": "npcused for use as a paperweight"
+                    }
+                }
+            }
+        ]
+    }
+]

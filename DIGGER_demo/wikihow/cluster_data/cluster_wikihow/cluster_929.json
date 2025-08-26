@@ -1,0 +1,176 @@
+[
+    {
+        "title": "How to Do Technical Analysis",
+        "steps": [
+            "Understand Dow's theories behind technical analysis.",
+            "Look for quick results.",
+            "Read charts to spot price trends.",
+            "Understand the concepts of support and resistance.",
+            "Pay attention to the volume of trades.",
+            "Use moving averages to filter out minor price fluctuations.",
+            "Use indicators and oscillators to support what the price movements are telling you."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Start Day Trading",
+        "steps": [
+            "Select multiple trading markets to invest in.",
+            "Learn about the markets you\u2019re day trading in.",
+            "Follow specific stocks to note idiosyncrasies and market trends.",
+            "Pick a successful trader to learn from as a mentor.",
+            "Analyze your trades to improve your trading plan."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Write a Trading Plan",
+        "steps": [
+            "At the very first place, you have to decide which financial instruments you will trade.",
+            "Determine which stocks, currencies or other financial instruments to trade.",
+            "Identify your market indicators.",
+            "Decide ahead of time how many shares or lots you will purchase.",
+            "Set specific price entry points.",
+            "Write down the process of how you will monitor each trade.",
+            "Decide on the parameters for trade exits.",
+            "Include a section for trading times.",
+            "Evaluate your trading plan."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Arbitrage",
+        "steps": [
+            "Understand the different types of arbitrage.",
+            "Identify arbitrage opportunities.",
+            "Determine the transactions needed to realize your arbitrage profit.",
+            "Evaluate the risk in a risk arbitrage.",
+            "Decide whether the expected annual return is acceptable, by comparing that to your personal discount rate.",
+            "Execute your transactions."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Trade Stocks",
+        "steps": [
+            "Consider using analysis.",
+            "Recognize ups and downs.",
+            "Be consistent with your rules for trading.",
+            "Don't feel obliged to trade every day.",
+            "Practice and learn more.",
+            "Read all the books on trading you can.",
+            "Start small.",
+            "Invest for the long run."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Value Average",
+        "steps": [
+            "Select an asset for value averaging.",
+            "Determine the amount of your initial investment.",
+            "Determine your investment intervals.",
+            "Determine how much you would like the market value of your position to increase every investment period.",
+            "Make your initial investment, and record the value of your initial investment, the market price, and shares bought.",
+            "During the next investment period, determine the value required.",
+            "Look up the current market price of the asset.",
+            "Determine the shares you need to own, by dividing the value required by the current market price.",
+            "Determine the number of shares you need to buy, by subtracting the shares you currently have from the shares you need to own.",
+            "Buy that number of shares at the current market price.",
+            "Repeat the process during subsequent investment periods."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Understand Binary Options",
+        "steps": [
+            "Learn where binary options are traded.",
+            "Check for transaction costs and potential profits.",
+            "Know the transaction costs ahead of time.",
+            "Understand the trading terms for each deal."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Know When to Sell a Stock",
+        "steps": [
+            "Learn about capital gains taxes.",
+            "Understand tax loss harvesting.",
+            "Learn the wash-sale rules before deciding to sell.",
+            "Sell a stock for tax harvesting purposes."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Choose an Investment Website",
+        "steps": [
+            "Follow the financial page of major online newspapers.",
+            "Find free websites to teach yourself about investing.",
+            "Join an investment research website."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Choose Stocks",
+        "steps": [
+            "Decide if Technical Analysis works for you.",
+            "Check out online tools and charts.",
+            "Use a stockbroker.",
+            "Pick stocks."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Exercise an Option",
+        "steps": [
+            "Evaluate the cost in exercising the option.",
+            "Analyze the option's potential.",
+            "Instruct your broker to sell your contracts.",
+            "Check your account balance."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Invest in the Stock Market",
+        "steps": [
+            "Expect to pay a fee for every transaction you make.",
+            "Expect your broker to ask your acceptable level of risk.",
+            "Expect most professional investors to choose margin accounts, not cash accounts.",
+            "Expect the broker to determine your tax status based on your financial needs.",
+            "Expect the meeting to end with a request for your investment money.",
+            "Expect a professional broker often uses algorithm-based trading.",
+            "Expect a professional to invest in things other than stock.",
+            "Expect a broker to invest in \"funds,\" or pre-made collections of stocks."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Determine Undervalued Stocks",
+        "steps": [
+            "Study one sector of the market to learn which stocks are undervalued.",
+            "Buy stocks during market crashes and corrections.",
+            "Check a stock's value after a disappointing quarter.",
+            "Use an online stock screener to locate undervalued stock."
+        ],
+        "cluster_label": 929
+    },
+    {
+        "title": "How to Use \u201cMagic Formula Investing\u201d to Beat The Market",
+        "steps": [
+            "Use value investing.",
+            "Understand how to work with share prices and wild mood swings.",
+            "Screen stocks to beat the market.",
+            "Do it for yourself.",
+            "Screen for stocks with a minimum market capitalization (usually greater than $100 million).",
+            "Exclude any utility and financial stocks.",
+            "Exclude foreign, non US companies (American Depository Receipts).",
+            "Determine the company's Earnings Yield = EBIT / Enterprise Value.",
+            "Determine the company's Return on Capital = EBIT / (Net Working Capital & Net Fixed Assets).",
+            "Rank all companies above the chosen market capitalization by highest Earnings Yield and highest Return on Capital.",
+            "Invest in 20-30 of the highest ranked companies, by acquiring 5 to 7 stocks every 2-3 months over a 12-month period i.e.",
+            "Re-balance portfolio once per year.",
+            "Repeat."
+        ],
+        "cluster_label": 929
+    }
+]

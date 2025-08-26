@@ -1,0 +1,8 @@
+{
+    "stay": [
+        "(:action stay_in_shelter\n    :parameters (?npc - agent)\n    :precondition (and (shelterAvailable ?npc) (stocked ?npc ?food))\n    :effect (and (sheltered ?npc) (not (exposed ?npc)))\n)\n```\n**Explanation**: This action represents the NPC staying in a shelter. The precondition ensures that the NPC has access to a shelter and has already stocked up on food. The effect indicates that the NPC is now sheltered and no longer exposed to outside conditions.\n\nThese actions capture the essence of preparing for a potential nuclear attack by gathering essential food supplies and staying sheltered."
+    ],
+    "get": [
+        "(:action get_food\n    :parameters (?npc - agent ?food - item)\n    :precondition (and (non_perishable ?food) (inStorage ?food) (available ?npc))\n    :effect (and (stocked ?npc ?food) (not (inStorage ?food)))\n)\n```\n**Explanation**: This action represents the NPC stocking up on non-perishable food items. The precondition checks that the food is non-perishable and in storage, and that the NPC is available to collect it. The effect reflects that the food is now stocked by the NPC and no longer in storage.\n\n#### Action 2: stay_in_shelter\n```lisp\n"
+    ]
+}

@@ -1,0 +1,339 @@
+{
+    "goal": "Change the Oil on a Yamaha Virago XV250",
+    "steps": [
+        "Remove the bung to let the oil out to drain.",
+        "Remove the oil cap to let the oil drain fully and let air in to help drain the old oil out.",
+        "Remove the oil filter.",
+        "Screw the bung back on.",
+        "Fill the oil back up.",
+        "Recycle the old oil."
+    ],
+    "topics": "Cars & Other Vehicles",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/7/70/Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-1.jpg/aid1316036-v4-728px-Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/3/31/Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-2.jpg/aid1316036-v4-728px-Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/7/74/Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-3.jpg/aid1316036-v4-728px-Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/d/df/Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-4.jpg/aid1316036-v4-728px-Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/f/fd/Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-5.jpg/aid1316036-v4-728px-Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/b/b4/Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-6.jpg/aid1316036-v4-728px-Change-the-Oil-on-a-Yamaha-Virago-XV250-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "oil",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in bike",
+                        "after": "in can",
+                        "saliency": 0.598100109609061,
+                        "attribute_annotation": "location | fullness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "volume",
+                        "before": "closed",
+                        "after": "open",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "volume | fullness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in oil tank | outside tank | out",
+                        "after": "in can | inside tank | in",
+                        "saliency": 0.546340275240531,
+                        "attribute_annotation": "location | fullness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.6118012422360248,
+                        "attribute_annotation": "volume | fullness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | more full",
+                        "after": "in tank | less full",
+                        "saliency": 0.598100109609061,
+                        "attribute_annotation": "location | fullness"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "volume | fullness"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean",
+                        "saliency": 0.2920849499219978,
+                        "attribute_annotation": "cleanness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "oil tank | oil container | oil can | oil",
+                "oil | air | oil bottle"
+            ]
+        },
+        {
+            "entity": "the bung",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "on bike | on",
+                        "after": "removed from bike | removed",
+                        "saliency": 0.48936096177601474,
+                        "attribute_annotation": "location | position"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "attached",
+                        "after": "disattached",
+                        "saliency": 0.3455904100770743,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.14441718716472096,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "away from bike",
+                        "after": "on bike",
+                        "saliency": 0.5670007133288097,
+                        "attribute_annotation": "location | position"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "loose",
+                        "after": "attached",
+                        "saliency": 0.3455904100770743,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "bung | the bung"
+            ]
+        },
+        {
+            "entity": "oil filter",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "inside oil tank | in oil | unremoved | on",
+                        "after": "outside oil tank | removed",
+                        "saliency": 0.5280720984045792,
+                        "attribute_annotation": "location | position"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "oil filter"
+            ]
+        },
+        {
+            "entity": "old oil",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "location",
+                        "before": "in can",
+                        "after": "in jug",
+                        "saliency": 0.48392400438436245,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "old oil"
+            ]
+        },
+        {
+            "entity": "oil cap",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "on oil tank | on",
+                        "after": "removed from tank | removed",
+                        "saliency": 0.4824016563146998,
+                        "attribute_annotation": "location | position"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "oil cap"
+            ]
+        },
+        {
+            "entity": "funnel",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.4763122640360492,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.23318718791864573,
+                        "attribute_annotation": "volume"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "funnel",
+                "jug"
+            ]
+        }
+    ],
+    "clusters": {
+        "the bung": {
+            "entity_cluster": [
+                "bung",
+                "the bung"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "position",
+                    "location"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "oil filter": {
+            "entity_cluster": [
+                "oil filter"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "position",
+                    "location"
+                ]
+            }
+        },
+        "old oil": {
+            "entity_cluster": [
+                "old oil"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "oil cap": {
+            "entity_cluster": [
+                "air",
+                "oil cap"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "position",
+                    "location"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "funnel": {
+            "entity_cluster": [
+                "oil bottle",
+                "oil can",
+                "jug",
+                "oil container",
+                "funnel"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "oil": {
+            "entity_cluster": [
+                "oil",
+                "oil tank"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        }
+    }
+}

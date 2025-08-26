@@ -1,0 +1,12 @@
+{
+    "obtain": [
+        "(:action obtain_eraser\n    :parameters (?p - person ?e - eraser)\n    :precondition (and (at ?e store) (not (inventory ?p ?e)))\n    :effect (and (inventory ?p ?e) (not (at ?e store)))\n)\n\n"
+    ],
+    "kneel": [
+        "(:action kneel_and_rub\n    :parameters (?p - person ?e - eraser ?f - linoleum_floor)\n    :precondition (and (at ?p linoleum_floor) (inventory ?p ?e) (stained ?f))\n    :effect (and (clean ?f) (not (stained ?f)) (getting_smaller ?e))\n)\n\n"
+    ],
+    "rub": [
+        "(:action rub_with_rubber\n    :parameters (?p - person ?e - eraser ?f - linoleum_floor)\n    :precondition (and (at ?p linoleum_floor) (inventory ?p ?e) (stained ?f))\n    :effect (and (clean ?f) (not (stained ?f)) (getting_smaller ?e))\n)\n\n",
+        "(:action wash_wicks\n    :parameters (?w - wick)\n    :precondition (and (dry ?w))\n    :effect (and (wet ?w) (not (dry ?w)))\n)\n```\n\nNote: The step \"rub_with_rubber\" seems redundant and irrelevant to the task of removing skid marks from the linoleum. It appears to be an error or misplaced step. The action \"kneel_and_rub\" effectively covers the task of using the eraser to clean the linoleum floor. Therefore, it has been included in the actions list but can be considered for removal if deemed unnecessary."
+    ]
+}

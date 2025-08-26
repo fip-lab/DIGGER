@@ -1,0 +1,5 @@
+(place_ingredients cloves rhubarb sugar water pot stove)
+(simmer_pot pot stove cordial)
+(remove_from_heat pot stove)
+(garnish_with_mint cordial mint_leaves pot)
+; cost = 4 (unit cost)

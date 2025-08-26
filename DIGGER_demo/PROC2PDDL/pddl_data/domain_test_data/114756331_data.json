@@ -1,0 +1,55 @@
+[
+    {
+        "task": "get_out_deep",
+        "step": [
+            "liedown npc",
+            "breathe npc",
+            "get stick npc here",
+            "usestick npc stick qsand"
+        ],
+        "desc": [
+            "Lay back. Sit down and lean back if your feet are stuck fast. Creating a larger \"footprint\" should free your feet by removing the pressure they create, allowing them to float. When you feel them start to come free, roll to your side away from the quicksand and free of its grip. You'll get dirty, but its the quickest and safest way to free yourself.",
+            "Breathe deeply. Not only will deep breathing help you remain calm, it will also make you more buoyant. Keep as much air in your lungs as possible. It is impossible to \"go under\" if your lungs are full of air.",
+            "Stay flat on your back with your arms and legs fully touching the quicksand and use the pole as a guide. Inch sideways along the pole to firm ground."
+        ],
+        "action": [
+            "(:action usestick ; player uses the stick to help get out of sand\n      :parameters (?p - player ?s - stick ?q - quicksand)\n      :precondition (and (inventory ?p ?s) (laying ?p) (calm ?p))\n      :effect (and (not (stuck ?p ?q)) (not (inventory ?p ?s)))\n   )",
+            "(:action liedown ; player gets on their back\n      :parameters (?p - player)\n      :precondition (not (laying ?p))\n      :effect (laying ?p)\n   )",
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?i - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?i ?l1))\n      :effect (and (inventory ?p ?i) (not (at ?i ?l1)))\n   )",
+            "(:action breathe ; breathe in to fill your lungs with air\n      :parameters (?p - player)\n      :precondition (not (calm ?p))\n      :effect (calm ?p)\n   )"
+        ],
+        "goal_state": "((not (stuck npc qsand)))"
+    },
+    {
+        "task": "get_feet_out",
+        "step": [
+            "liedown npc",
+            "swim npc qs"
+        ],
+        "desc": [
+            "Get on your back and \"swim.\" If you sink up to your hips or higher, bend backward. The more you spread out your weight, the harder it will be to sink. Float on your back while you slowly and carefully extricate your legs. Once your legs are free you can inch yourself to safety by using your arms to slowly and smoothly propel yourself backward with your arms in a sweeping motion, as if you were swimming. When you get near the edge of the quicksand, you can roll to hard ground.",
+            "Lay back. Sit down and lean back if your feet are stuck fast. Creating a larger \"footprint\" should free your feet by removing the pressure they create, allowing them to float. When you feel them start to come free, roll to your side away from the quicksand and free of its grip. You'll get dirty, but its the quickest and safest way to free yourself."
+        ],
+        "action": [
+            "(:action swim ; player starts to swim through the sand\n      :parameters (?p - player ?q - quicksand)\n      :precondition (and (laying ?p) (not (tired ?p)) (not (deep ?q)))\n      :effect (and (tired ?p) (not (stuck ?p ?q)))\n   )",
+            "(:action liedown ; player gets on their back\n      :parameters (?p - player)\n      :precondition (not (laying ?p))\n      :effect (laying ?p)\n   )"
+        ],
+        "goal_state": "((not (stuck npc qs)))"
+    },
+    {
+        "task": "avoid_quicksand",
+        "step": [
+            "research npc l1",
+            "go north npc home l1",
+            "research npc l2",
+            "go east npc l1 l2",
+            "go east npc l2 l3"
+        ],
+        "desc": [],
+        "action": [
+            "(:action research\n      :parameters (?p - player ?l - location)\n      :precondition (not (at ?p ?l))\n      :effect (aware ?p ?l)\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)) (aware ?p ?l1))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )"
+        ],
+        "goal_state": "((not (stuck npc qsand)) (at npc l3))"
+    }
+]

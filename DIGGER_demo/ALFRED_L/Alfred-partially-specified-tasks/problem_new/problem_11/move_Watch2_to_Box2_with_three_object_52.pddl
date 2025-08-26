@@ -1,0 +1,61 @@
+(define (problem move_Watch2_to_Box2_with_three_object_52)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    KeyChain1 - object
+    AlarmClock1 - object
+    Book1 - object
+    Laptop1 - object
+    AlarmClock2 - object
+    Watch1 - object
+    Box1 - receptacle
+    Pencil1 - object
+    Watch2 - object
+    CellPhone1 - object
+    CellPhone2 - object
+    Pen1 - object
+    Pillow1 - object
+    Sofa2 - receptacle
+    Drawer1 - receptacle
+    Box4 - receptacle
+    Box2 - receptacle
+    Desk2 - receptacle
+    GarbageCan1 - receptacle
+    Sofa1 - receptacle
+    Desk3 - receptacle
+    Desk1 - receptacle
+    Desk4 - receptacle
+    Box3 - receptacle
+    Sofa3 - receptacle
+    Book2 - object
+    Book3 - object
+    Book4 - object
+    Book5 - object
+    Book6 - object
+    Laptop2 - object
+  )
+
+  (:init
+    (atLocation agent1 Desk2)
+    (objectAtLocation Watch2 Desk1)
+    (objectAtLocation Laptop1 Desk2)
+    (objectAtLocation KeyChain1 Sofa1)
+    (objectAtLocation AlarmClock1 Desk4)
+    (objectAtLocation Pencil1 GarbageCan1)
+    (objectAtLocation CellPhone2 Sofa2)
+    (objectAtLocation Pillow1 Sofa3)
+    (objectAtLocation Laptop2 Drawer1)
+    (objectAtLocation Book3 Box1)
+    (objectAtLocation Book1 Box2)
+    (objectAtLocation Book5 Box3)
+    (objectAtLocation Book4 Box2)
+    (objectAtLocation Book2 Box1)
+    (objectAtLocation Book6 Box2)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation Watch2 Box2)
+    )
+  )
+)

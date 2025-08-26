@@ -1,0 +1,14 @@
+{
+    "knit": [
+        "(:action knit_web ; knit a flat web\n      :parameters (?p - player ?web - web)\n      :precondition (and (inventory ?p ?web) (not (knit ?web)))\n      :effect (and (knit ?web))\n   )\n\n"
+    ],
+    "join": [
+        "(:action join_ends ; join the ends of the web\n      :parameters (?p - player ?ends - web)\n      :precondition (and (inventory ?p ?ends) (sewn ?ends) (not (joined ?ends)))\n      :effect (and (joined ?ends))\n   )\n\n"
+    ],
+    "wrap": [
+        "(:action wrap_with_tassel ; wrap the top with a tassel\n      :parameters (?p - player ?hat - hat ?tassel - tassel)\n      :precondition (and (inventory ?p ?hat) (joined ?hat) (not (wrapped ?hat)))\n      :effect (and (wrapped ?hat))\n   )\n```\n\n### Descriptions:\n- Knit eighty-four inches of flat web.\n- Begin five inches from the end of the web, turn and sew into a rectangular form five inches wide and eight inches long.\n- Join the five-inch ends, and draw in the top with the needle and a piece of the material from which the cap was made.\n- After securing the top, twist and fold the piece of yarn remaining for a cord and fasten a number of strands of yarn through the loop for a tassel.\n\n### Entity State:\n- `knit`: indicates that the web has been knitted.\n- `sewn`: indicates that the web has been sewn into a rectangular form.\n- `joined`: indicates that the ends of the web have been joined.\n- `wrapped`: indicates that the top of the hat has been wrapped with a tassel.\n\nThese actions should capture the intent and logic of each step in the task of spool knitting a winter hat."
+    ],
+    "sliplargerbeads": [
+        "(:action sliplargerbeads ; sew the web into a rectangular form\n      :parameters (?p - player ?web - web)\n      :precondition (and (inventory ?p ?web) (knit ?web) (not (sewn ?web)))\n      :effect (and (sewn ?web))\n   )\n\n"
+    ]
+}

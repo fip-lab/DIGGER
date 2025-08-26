@@ -1,0 +1,5 @@
+[
+    "(:action make\n  :parameters (?mixture - mixture ?p - player ?kitchen - location)\n  :precondition (and \n    (inventory ?p ?mixture)\n    (separate ?mixture)\n    (at ?p ?kitchen)\n    (heating_element ?kitchen off)\n    (counter ?kitchen clean)\n    (stove_knob ?kitchen off)\n    (not (cooked ?mixture))\n  )\n  :effect (and\n    (not (separate ?mixture))",
+    "(:action add\n    ; Add an item to a container and update its state\n    :parameters (?actor - agent ?item - object ?container - container ?location - place)\n    :precondition (and \n        (at ?actor ?location) \n        (inventory ?actor ?item) \n        (not (full ?container)) \n        (not (contains ?container ?item))\n    )\n    :effect (and \n        (not (empty ?container))",
+    "(:action heat\n  ; Heat an object using a heating device\n  :parameters (?entity - object ?device - heating_device ?setting - heat ?agent - person ?location - location)\n  :precondition (and (at ?agent ?location) (contains ?device ?entity) (ready ?device) (off ?device))\n  :effect (and (on ?device) (heating ?entity) (temperature ?entity hot))"
+]

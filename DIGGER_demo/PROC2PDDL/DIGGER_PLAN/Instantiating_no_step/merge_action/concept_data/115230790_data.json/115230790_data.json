@@ -1,0 +1,15 @@
+{
+    "listen": [
+        "(:action listen_to_astronomers_predictions\n  :parameters (?a - agent ?s - astronomers)\n  :precondition (and\n                  (available ?a)\n                  (available ?s))\n  :effect (and\n            (aware_of_predictions ?a)\n            (not (available ?a)))\n)\n\n;; Action 2: Move away from coastal areas\n"
+    ],
+    "move": [
+        "(:action move_away_from_coastal_areas\n    :parameters (?coastal_area - coastal_area)\n    :precondition (near ?coastal_area)\n    :effect (far ?coastal_area)\n)\n```\n\nThese actions should accurately represent the task steps based on the provided descriptions and entity states.",
+        "(:action move_into_bunker\n    :parameters (?bunker - bunker ?energy_source - energy_source)\n    :precondition (and\n                    (not (present ?energy_source)))\n    :effect (and\n              (present ?energy_source))\n)\n\n"
+    ],
+    "stock": [
+        "(:action stock_hideout\n    :parameters (?food - food ?water - water ?hideout - hideout)\n    :precondition (and\n                    (empty ?hideout)\n                    (not (stocked ?food))\n                    (not (stocked ?water)))\n    :effect (and\n              (stocked ?food)\n              (stocked ?water)\n              (not (empty ?hideout)))\n)\n\n"
+    ],
+    "buy": [
+        "(:action buy_weapons_ammunition\n    :parameters (?weapons - weapons ?ammunition - ammunition)\n    :precondition (and\n                    (not (stocked ?weapons))\n                    (not (stocked ?ammunition)))\n    :effect (and\n              (stocked ?weapons)\n              (stocked ?ammunition))\n)\n\n"
+    ]
+}

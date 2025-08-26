@@ -1,0 +1,12 @@
+{
+    "establish": [
+        "(:action establish_base\n      :parameters (?p - player ?base - location)\n      :precondition (and (has_group ?p) (not (base_established ?base)))\n      :effect (and (base_established ?base) (secure ?base))\n   )\n   ```\n\n3. **Gather Equipment**\n   ```lisp\n   "
+    ],
+    "gather": [
+        "(:action gather_equipment\n      :parameters (?p - player ?eq - equipment)\n      :precondition (and (has_group ?p) (not (organized ?eq)))\n      :effect (and (organized ?eq) (ready_for_mission ?eq))\n   )\n   ```\n\n4. **Find First Victim**\n   ```lisp\n   ",
+        "(:action find_first_victim\n      :parameters (?p - player ?v - victim)\n      :precondition (and (has_group ?p) (not (target_identified ?v)))\n      :effect (and (target_identified ?v) (target_watched ?v))\n   )\n   ```\n\n### Explanation:\n\n- **Set Up Spy Group**: This action forms a trustworthy spy group. The precondition checks if the group is not already formed, and the effect marks the group as formed and trustworthy.\n\n- **Establish Base**: This action establishes a secure base for the spy group. The precondition ensures the player is part of a group and the base is not yet established. The effect secures the base.\n\n- **Gather Equipment**: This action organizes and prepares the equipment for use. The precondition checks if the player has a group and the equipment is not yet organized. The effect organizes the equipment and makes it ready for missions.\n\n- **Find First Victim**: This action identifies the first target to be watched. The precondition ensures the player has a group and the target is not yet identified. The effect marks the target as identified and watched.\n\nThese actions align with the task and descriptions provided, ensuring each step is logically translated into PDDL."
+    ],
+    "setup": [
+        "(:action setup_spy_group\n      :parameters (?p - player ?group - spy_group)\n      :precondition (and (not (group_formed ?group)))\n      :effect (and (group_formed ?group) (trustworthy ?group))\n   )\n   ```\n\n2. **Establish Base**\n   ```lisp\n   "
+    ]
+}

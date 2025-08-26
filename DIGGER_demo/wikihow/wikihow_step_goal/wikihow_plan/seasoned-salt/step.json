@@ -1,0 +1,536 @@
+{
+    "goal": "Make Seasoned Salt",
+    "steps": [
+        "Mix the ingredients together thoroughly.",
+        "Pour into an air-tight container with a lid.",
+        "It goes well in dips, salad dressings, soups and on sandwiches.",
+        "Grind the ingredients together in a mortar and pestle.",
+        "Transfer to a storage container as needed."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/9/96/Make-Seasoned-Salt-Step-1.jpg/aid374764-v4-728px-Make-Seasoned-Salt-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/2/23/Make-Seasoned-Salt-Step-2.jpg/aid374764-v4-728px-Make-Seasoned-Salt-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/3/35/Make-Seasoned-Salt-Step-3.jpg/aid374764-v4-728px-Make-Seasoned-Salt-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/b/b3/Make-Seasoned-Salt-Step-4.jpg/aid374764-v4-728px-Make-Seasoned-Salt-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/e/ed/Make-Seasoned-Salt-Step-5.jpg/aid374764-v4-728px-Make-Seasoned-Salt-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "celery salt",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "composition",
+                        "before": "stratified | separate",
+                        "after": "thoroughly mixed | mixed",
+                        "saliency": 0.5811064567384082,
+                        "attribute_annotation": "composition | cohesiveness"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "separate",
+                        "after": "mixed together",
+                        "saliency": 0.3909111335804966,
+                        "attribute_annotation": "organization"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in containers",
+                        "after": "in bowl",
+                        "saliency": 0.3778227165487024,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "complexity",
+                        "before": "plain",
+                        "after": "mixed with spice",
+                        "saliency": 0.454716163512928,
+                        "attribute_annotation": "complexity"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in bowl | in mixing bowl",
+                        "after": "in container | air-tight container",
+                        "saliency": 0.3778227165487024,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "unmixed",
+                        "after": "mixed",
+                        "saliency": 0.11209815911534819,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "taste",
+                        "before": "untasted",
+                        "after": "tasted",
+                        "saliency": 0.3536039289325437,
+                        "attribute_annotation": "taste"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in container",
+                        "after": "on food",
+                        "saliency": 0.30018296499590735,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "composition",
+                        "before": "coarse",
+                        "after": "ground finely",
+                        "saliency": 0.6587462082912032,
+                        "attribute_annotation": "composition | cohesiveness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in container",
+                        "after": "in mortar",
+                        "saliency": 0.3778227165487024,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "wholeness",
+                        "before": "whole",
+                        "after": "ground",
+                        "saliency": 0.1744400040658888,
+                        "attribute_annotation": "wholeness"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "in larger pieces",
+                        "after": "ground fine",
+                        "saliency": 0.5329577736048919,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in mortar",
+                        "after": "in storage container | storage container",
+                        "saliency": 0.3778227165487024,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "ingredients | seasoned salt",
+                "ingredient mixture",
+                "mixture particles",
+                "salt | celery salt",
+                "black pepper | pepper mill",
+                "mixture",
+                "dry mustard"
+            ]
+        },
+        {
+            "entity": "container",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.6376811594202899,
+                        "attribute_annotation": "fullness | contents"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cupboard",
+                        "after": "on counter",
+                        "saliency": 0.4247676826038808,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "strength",
+                        "before": "loose",
+                        "after": "tight",
+                        "saliency": 0.36564109971592273,
+                        "attribute_annotation": "strength"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "fullness | contents"
+                    },
+                    {
+                        "attribute": "contents",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.37767827049930186,
+                        "attribute_annotation": "contents"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "air-tight container | container",
+                "storage container",
+                "container cover",
+                "cover"
+            ]
+        },
+        {
+            "entity": "dips",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "flavor",
+                        "before": "plain",
+                        "after": "flavorful",
+                        "saliency": 0.5684674274158602,
+                        "attribute_annotation": "flavor"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.27550676488998027,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "seasoning",
+                        "before": "bland",
+                        "after": "tasty",
+                        "saliency": 0.11586178118028471,
+                        "attribute_annotation": "seasoning"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "sandwiches",
+                "salads",
+                "soups",
+                "dips",
+                "salad dressings",
+                "food"
+            ]
+        },
+        {
+            "entity": "mortar and pestle",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.5443930858491021,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.4494438827098079,
+                        "attribute_annotation": "cleanness | cleaness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.2055387035164588,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "status",
+                        "before": "idle | on table | absent",
+                        "after": "used | in mortar | present",
+                        "saliency": 0.4950406856372478,
+                        "attribute_annotation": "status | location"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "mortar | mortar and pestle",
+                "pestle"
+            ]
+        },
+        {
+            "entity": "measuring cup",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "missing",
+                        "after": "present",
+                        "saliency": 0.3536039289325437,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.3230535894843276,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.30545524579902744,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "measuring cup",
+                "spoon"
+            ]
+        },
+        {
+            "entity": "pepper mill",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.34156675814916465,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "salt shaker"
+            ]
+        },
+        {
+            "entity": "bowl",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.2815253502816698,
+                        "attribute_annotation": "fullness | contents"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.3591651018344649,
+                        "attribute_annotation": "fullness | contents"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "bowl"
+            ]
+        },
+        {
+            "entity": "lid",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "accessibility",
+                        "before": "off container",
+                        "after": "on container",
+                        "saliency": 0.2333766671481535,
+                        "attribute_annotation": "accessibility"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "lid"
+            ]
+        }
+    ],
+    "clusters": {
+        "celery salt": {
+            "entity_cluster": [
+                "ingredient mixture",
+                "seasoned salt",
+                "salt",
+                "mixture particles",
+                "ingredients",
+                "mixture",
+                "dry mustard",
+                "celery salt",
+                "black pepper"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "cohesiveness": [
+                    "cohesiveness"
+                ],
+                "taste": [
+                    "taste"
+                ],
+                "wholeness": [
+                    "wholeness"
+                ],
+                "organization": [
+                    "organization"
+                ],
+                "location": [
+                    "location"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "complexity": [
+                    "complexity"
+                ]
+            }
+        },
+        "mortar and pestle": {
+            "entity_cluster": [
+                "pestle",
+                "mortar",
+                "mortar and pestle"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleaness",
+                    "cleanness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "status": [
+                    "location",
+                    "status"
+                ]
+            }
+        },
+        "pepper mill": {
+            "entity_cluster": [
+                "salt shaker",
+                "pepper mill"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "lid": {
+            "entity_cluster": [
+                "lid"
+            ],
+            "attribute_cluster": {
+                "accessibility": [
+                    "accessibility"
+                ]
+            }
+        },
+        "measuring cup": {
+            "entity_cluster": [
+                "spoon",
+                "measuring cup"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "container": {
+            "entity_cluster": [
+                "container cover",
+                "air-tight container",
+                "storage container",
+                "cover",
+                "container"
+            ],
+            "attribute_cluster": {
+                "fullness": [
+                    "fullness"
+                ],
+                "contents": [
+                    "contents"
+                ],
+                "location": [
+                    "location"
+                ],
+                "strength": [
+                    "strength"
+                ]
+            }
+        },
+        "dips": {
+            "entity_cluster": [
+                "salads",
+                "food",
+                "soups",
+                "dips",
+                "sandwiches",
+                "salad dressings"
+            ],
+            "attribute_cluster": {
+                "flavor": [
+                    "flavor"
+                ],
+                "location": [
+                    "location"
+                ],
+                "seasoning": [
+                    "seasoning"
+                ]
+            }
+        },
+        "bowl": {
+            "entity_cluster": [
+                "bowl"
+            ],
+            "attribute_cluster": {
+                "fullness": [
+                    "fullness",
+                    "contents"
+                ]
+            }
+        }
+    }
+}

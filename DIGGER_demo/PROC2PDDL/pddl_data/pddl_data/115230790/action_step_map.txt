@@ -1,0 +1,11 @@
+(:action listen_to_astronomers_predictions ; 1
+(:action move_away ; 6
+(:action go ; 
+(:action buy_supplies ; 4
+(:action check_supplies ; 5
+(:action buy_weapons ; 8
+(:action check_weapons ; 19
+(:action check_bunker ; 20
+(:action outfit_bunker_with_energy_source ;7
+(:action enjoylife ; 13
+(:action connect_through_social_media_with_family ;11

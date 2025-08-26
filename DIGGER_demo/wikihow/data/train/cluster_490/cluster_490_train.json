@@ -1,0 +1,260 @@
+[
+    {
+        "cluster_label": 490,
+        "task": "How to Solar Bleach Cloth Diapers",
+        "step": [
+            "Wash the diapers.",
+            "Lay the diapers out flat, with the stains facing up.",
+            "Alternatively, line-dry the diapers or drape them over a drying rack.",
+            "Choose a sunny day to achieve the best, most potent results.",
+            "Spray lemon juice onto the worst stains.",
+            "Bring the cloth diapers in after a few hours pass.",
+            "Repeat the process for stubborn stains that do not come out after the first round of bleaching.",
+            "Throw the diapers into the dryer for a few minutes."
+        ],
+        "steps_predictions": [
+            "wash_papyrus npc",
+            "lay_add_stick npc",
+            "line-dry-papyrus npc",
+            "choose_amazing npc",
+            "slipluster_lemon_juice velveeta",
+            "bring-closest-to-bed cloth_diapers",
+            "blend_with_cloth npc",
+            "throw-in-dryer diapers"
+        ],
+        "goal_state": " ((on_rack npc cloth_diapers))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Cotton",
+        "step": [
+            "Set your washer to the highest heat possible.",
+            "Add detergent and bleach if your machine has a bleach dispenser.",
+            "Add water first if your machine doesn\u2019t have a bleach dispenser.",
+            "Add bleach 5 minutes into the cycle.",
+            "Add the clothing to the washer.",
+            "Allow the washer to run normally.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "set_washer_to_highest_heat washer1 heat1",
+            "add_dew_and_blend_machine machine",
+            "add-water water",
+            "add_blend_to_cycle alice",
+            "add-clothing clothing",
+            "run_washer_with_machine washer1 bike1 oil1",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((on_rack clothing))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach a Shirt",
+        "step": [
+            "Bring all necessary materials to your work area.",
+            "Lay the shirt flat on the floor or another surface.",
+            "Slide the rags or cardboard into the shirt to protect the back from being bleached.",
+            "Choose the design that you want to bleach into the shirt.",
+            "Apply the design to the shirt.",
+            "Pour bleach into a glass container or measuring cup.",
+            "Dip a folded-up rag or sponge into the bleach.",
+            "Blot the shirt all around the design.",
+            "Wait for the bleach to take effect.",
+            "Peel the stencil or design off of the shirt.",
+            "Remove the rags or cardboard and rinse the shirt in cold water.",
+            "Dry the shirt accordingly."
+        ],
+        "steps_predictions": [
+            "bring-materials work_area",
+            "lay_on_floor shirt1",
+            "slide-and-burn you rags",
+            "choose_design npc work_station",
+            "apply_designer npc work_station shirt",
+            "pour_blend_into_glass_container alice",
+            "dip_gap_in_blend user1 cloth1 sponge1",
+            "blot_shirt npc work_station",
+            "wait_for_blend user1 bleach1 bottle1",
+            "peel_strips npc",
+            "clean_tape npc",
+            "dry_shirt npc"
+        ],
+        "goal_state": " ((selected npc work_station))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Use Bleach when Doing Your Laundry",
+        "step": [
+            "Fill a bucket or sink with 1 gallon (3.8 L) of hot water.",
+            "Mix 1 tablespoon (15 mL) of oxygen or chlorine bleach into the water.",
+            "Add your usual washing detergent to treat stained items.",
+            "Soak your laundry for up to 1 hour.",
+            "Rinse the items under cold water."
+        ],
+        "steps_predictions": [
+            "fill-bucket water",
+            "mix_ingredients alice",
+            "add-dish washing_machine_treated items",
+            "soak_laundry npc",
+            "clean_items items water"
+        ],
+        "goal_state": " ((clean_items items) (in_laundry items))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Linen",
+        "step": [
+            "Let the sun do the work.",
+            "Use non-bleach alternatives in your laundry.",
+            "Heat and soak on the stove with salt and baking soda."
+        ],
+        "steps_predictions": [
+            "let_sun_set npc beach",
+            "use_as_cleaning_machine npc",
+            "add_salt_and_ingredients canola_oil stove_knob velveeta"
+        ],
+        "goal_state": " ((not (bleed_lens npc)))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Your Hair",
+        "step": [
+            "Start with unprocessed hair.",
+            "Pre-condition your hair with a deep conditioner.",
+            "Juice several lemons.",
+            "Dilute the lemon juice.",
+            "Pour the solution into a spray bottle.",
+            "Spray your hair with lemon juice solution.",
+            "Sit outside in bright sunshine.",
+            "Wash your hair."
+        ],
+        "steps_predictions": [
+            "start_with_unprocessed_hair npc",
+            "check_conditioner my_hair conditioner",
+            "juice-lemon water faucet",
+            "dilute_lemon_juice pitcher",
+            "pour_soap_into_fridge user1 bottle1",
+            "spray_with_lemon_juice alice",
+            "sliplargerbend npc",
+            "wash_wicks npc"
+        ],
+        "goal_state": " ((clean_wicks npc) (flattened wicks))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Lighten Clothing with Bleach",
+        "step": [
+            "Read the tag to determine if the fabric is safe to bleach.",
+            "Spread the garment on an old towel in a well-ventilated space.",
+            "Fill a spray bottle with bleach and water.",
+            "Spritz the garment until it's as lightened as you like.",
+            "Machine wash the clothes according to the care label."
+        ],
+        "steps_predictions": [
+            "read_tag npc",
+            "gather_garments npc",
+            "fill_spice_bottle user1 bottle1",
+            "spritz_with_garnish npc",
+            "wash_clothes npc"
+        ],
+        "goal_state": " ((inventory npc clothing))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Towels",
+        "step": [
+            "Never mix bleach with other cleaning products.",
+            "Wear rubber gloves to protect your hands when handling bleach.",
+            "Mix bleach solutions outdoors or in a well-ventilated room.",
+            "Choose a bleach product recommended for use in the laundry."
+        ],
+        "steps_predictions": [
+            "mix_blend_with_cleaning_products alice",
+            "wear_rubber_gens velveeta",
+            "mix_soap alice",
+            "choose_blend_product alice"
+        ],
+        "goal_state": " ((on_rack alice))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Neutralize Bleach",
+        "step": [
+            "Determine what neutralizing agent you need.",
+            "Bleach your wood.",
+            "Rinse the wood.",
+            "Mix your neutralizer.",
+            "Apply your neutralizing agent."
+        ],
+        "steps_predictions": [
+            "determine_agent neutralizing agent",
+            "blend_wood wood",
+            "clean_wood fir1 log1",
+            "mix_neutralizer neutralizer mixing_bowl",
+            "apply_neutralizing agent apply_agent agent"
+        ],
+        "goal_state": " ((not (bleed_wicks)) (clean_wood fir1))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Skin with Peroxide",
+        "step": [
+            "Grate 2 tbsp (30 g) of mild bar soap into a plastic container.",
+            "Add 2 US tbsp (30 mL) of 3% hydrogen peroxide to the container.",
+            "Use a plastic spoon or wooden spatula to create a paste.",
+            "Apply the paste to your dark skin patch using the spoon or spatula.",
+            "Allow the paste to sit for 10 minutes.",
+            "Rinse off the paste using warm water.",
+            "Use the treatment as often as once a week until your skin lightens."
+        ],
+        "steps_predictions": [
+            "garnish-soap bar soap1 container1",
+            "add_hydrogen_peroxide container1",
+            "create_paste_and_spapyrus velveeta",
+            "apply_ingredients_to_masking agent1 razor1",
+            "sliplargerbeads alice",
+            "clean_paste_with_water alice",
+            "lighten_skin npc"
+        ],
+        "goal_state": " ((clean_masking npc))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Paper",
+        "step": [
+            "Prepare an acetone wash in a glass casserole pan.",
+            "Put on a pair of rubber gloves or prepare a set of metal tongs.",
+            "Hold the ink-stained paper under the acetone for 3 minutes.",
+            "Place the washed paper on a bed of paper towels.",
+            "Let the paper completely air dry."
+        ],
+        "steps_predictions": [
+            "prepare_acetone_wicks alice",
+            "put_gens_in_machine npc",
+            "hold_ink_stained_paper npc",
+            "wash_paper npc work_station",
+            "let_paper_wicks_open wick1"
+        ],
+        "goal_state": " ((clean wick1) (transparent npc))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Do a Bleach Bath",
+        "step": [
+            "Fill a bathtub with 40 US gal (150 L) of water.",
+            "Mix in \u20444\u2013\u20442  c (59\u2013118 ml) of chlorine bleach.",
+            "Soak in the tub for up to 10 minutes.",
+            "Rinse off in warm water.",
+            "Moisturize your body with lotion after your bath.",
+            "Take bleach baths up to 3 times a week."
+        ],
+        "steps_predictions": [
+            "fill bathtub water",
+            " ((in_container chlorine_blend) (sealed container))",
+            "soak_wicks npc",
+            "clean_wicks npc",
+            "Moisturize_body bath",
+            "blend_bath npc bathroom"
+        ],
+        "goal_state": " ((in_bath npc) (sealed container))"
+    }
+]

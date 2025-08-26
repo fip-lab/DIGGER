@@ -1,0 +1,167 @@
+{
+    "goal": "Fold Bath Towels for Quick Hanging at Home",
+    "steps": [
+        "Fold the towel in thirds lengthwise.",
+        "Fold in half, and then in half again.",
+        "Store the towel in the linen closet.",
+        "To go from the closet for hanging, simply unfold the final fold and hang on the towel rack."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/8/8b/Fold-Bath-Towels-for-Quick-Hanging-at-Home-Step-1.jpg/aid1403023-v4-728px-Fold-Bath-Towels-for-Quick-Hanging-at-Home-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/3/39/Fold-Bath-Towels-for-Quick-Hanging-at-Home-Step-2.jpg/aid1403023-v4-728px-Fold-Bath-Towels-for-Quick-Hanging-at-Home-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/3/3d/Fold-Bath-Towels-for-Quick-Hanging-at-Home-Step-3.jpg/aid1403023-v4-728px-Fold-Bath-Towels-for-Quick-Hanging-at-Home-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/b/bd/Fold-Bath-Towels-for-Quick-Hanging-at-Home-Step-4.jpg/aid1403023-v4-728px-Fold-Bath-Towels-for-Quick-Hanging-at-Home-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "the towels",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "size",
+                        "before": "larger | wider",
+                        "after": "smaller | narrower",
+                        "saliency": 0.5839305621914318,
+                        "attribute_annotation": "size | width"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straight | flat",
+                        "after": "folded | now folded",
+                        "saliency": 0.45410628019323673,
+                        "attribute_annotation": "shape | stated"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "relaxed",
+                        "after": "being used",
+                        "saliency": 0.5500875935658545,
+                        "attribute_annotation": "power"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "holding towel",
+                        "saliency": 0.2868821999256782,
+                        "attribute_annotation": "emptiness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "size",
+                        "before": "thinner | longer",
+                        "after": "thicker | shorter",
+                        "saliency": 0.32564898869246695,
+                        "attribute_annotation": "thickness | length"
+                    },
+                    {
+                        "attribute": "height",
+                        "before": "low",
+                        "after": "higher",
+                        "saliency": 0.5799490364707756,
+                        "attribute_annotation": "height"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "laundry room | outside | out",
+                        "after": "in linen closet | in closet",
+                        "saliency": 0.5580506450071667,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.5421245421245421,
+                        "attribute_annotation": "emptiness"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in closet",
+                        "after": "on rack | on towel rack",
+                        "saliency": 0.5321707278229018,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "folded",
+                        "after": "hanging | unfolded",
+                        "saliency": 0.4799861973775017,
+                        "attribute_annotation": "shape | stated"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "opened",
+                        "saliency": 0.5301799649625737,
+                        "attribute_annotation": "openness"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.5301799649625737,
+                        "attribute_annotation": "emptiness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "towel | the towels",
+                "closet",
+                "height of towel",
+                "hand muscles",
+                "final fold",
+                "towel rack",
+                "hand"
+            ]
+        }
+    ],
+    "clusters": {
+        "the towels": {
+            "entity_cluster": [
+                "hand muscles",
+                "height of towel",
+                "towel",
+                "hand",
+                "closet",
+                "towel rack",
+                "final fold",
+                "the towels"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "size": [
+                    "length",
+                    "thickness",
+                    "width",
+                    "size"
+                ],
+                "stated": [
+                    "stated"
+                ],
+                "emptiness": [
+                    "emptiness"
+                ],
+                "height": [
+                    "height"
+                ],
+                "power": [
+                    "power"
+                ],
+                "openness": [
+                    "openness"
+                ]
+            }
+        }
+    }
+}

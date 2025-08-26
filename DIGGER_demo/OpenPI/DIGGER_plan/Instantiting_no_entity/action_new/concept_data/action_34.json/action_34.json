@@ -1,0 +1,7 @@
+[
+    "(:action clean\n    ; Clean an item and update its status\n    :parameters (?item - object ?user - person)\n    :precondition (and (dirty ?item) (available ?user))\n    :effect (and (clean ?item) (not (dirty ?item))",
+    "(:action wear\n    ; Wear an item if it's clean and update its status\n    :parameters (?item - object ?user - person)\n    :precondition (and (clean ?item) (not (damaged ?item)) (person ?user))\n    :effect (and (wearing ?user ?item) (not (clean ?item))",
+    "(:action use ; Use an item for a specific purpose\n    :parameters (?npc - person ?item - object ?purpose - purpose)\n    :precondition (and (available ?npc) (not (used_for ?item ?purpose)) (suitable_for ?item ?purpose))\n    :effect (and (used_for ?item ?purpose) (not (suitable_for ?item ?purpose))",
+    "(:action make ; Create or transform an item using a tool\n    :parameters (?user - entity ?tool - object ?item - object)\n    :precondition (and (available ?user) (usable ?tool) (quality ?item))\n    :effect (and (created ?user ?item) (not (quality ?item))",
+    "(:action donate ; Donate a resource and update its status\n  :parameters (?entity - object)\n  :precondition (and (clean ?entity) (not (damaged ?entity)))\n  :effect (and (donated ?entity) (not (clean ?entity))"
+]

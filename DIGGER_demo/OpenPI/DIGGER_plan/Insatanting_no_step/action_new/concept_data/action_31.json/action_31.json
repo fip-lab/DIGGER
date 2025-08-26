@@ -1,0 +1,7 @@
+[
+    "(:action catch ; Catch an entity and update its status\n    :parameters (?p - player ?e - entity ?loc - location ?item - object)\n    :precondition (and \n        (at ?p ?loc)\n        (at ?e ?loc)\n        (not (inventory ?p ?e))\n        (or (not (inventory ?p ?item)) (inventory ?p ?item))\n    )\n    :effect (and\n        (inventory ?p ?e)\n        (not (at ?e ?loc))",
+    "(:action train ; Train an entity and update its status\n  :parameters (?trainer - agent ?entity - entity)\n  :precondition (and (inventory ?trainer ?entity) (untrained ?entity))\n  :effect (and (trained ?entity))",
+    "(:action go ; Move an entity from one location to another\n:parameters (?entity - thing ?from - location ?to - location)\n:precondition (and (at ?entity ?from) (connected ?from ?to))\n:effect (and (at ?entity ?to) (not (at ?entity ?from))",
+    "(:action copy ; Copy a resource and update inventory status\n  :parameters (?actor - agent ?resource - object ?location - place)\n  :precondition (and (at ?actor ?location) (not (has ?actor ?resource)))\n  :effect (has ?actor ?resource)\n)",
+    "(:action evolve ; Evolve an entity and update state\n:parameters (?entity - object ?evolved_form - object)\n:precondition (and (evolved ?entity) (not (inventory ?evolved_form)))\n:effect (and (not (inventory ?entity))"
+]

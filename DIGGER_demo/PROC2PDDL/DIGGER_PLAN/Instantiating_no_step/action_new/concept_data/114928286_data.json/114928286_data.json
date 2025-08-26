@@ -1,0 +1,5 @@
+[
+    "(:action collect ; Collect a resource and update its state\n  :parameters (?a - agent ?r - resource ?l - location)\n  :precondition (and\n    (at ?r ?l)\n    (in ?a main_area)\n    (not (collected ?r))\n  )\n  :effect (and\n    (collected ?r)\n    (not (at ?r ?l))",
+    "(:action gather\n  :parameters (?a - agent ?i - item ?l - location)\n  :precondition (and\n    (at ?i ?l)\n    (in ?a main_area)\n  )\n  :effect (and\n    (collected ?i)\n    (not (at ?i ?l))",
+    "(:action lay ; Lay a resource and update its state\n    :parameters (?resource - object ?agent - player)\n    :precondition (and (prepared ?resource) (ready ?agent))\n    :effect (and (utilized ?resource) (not (prepared ?resource))"
+]

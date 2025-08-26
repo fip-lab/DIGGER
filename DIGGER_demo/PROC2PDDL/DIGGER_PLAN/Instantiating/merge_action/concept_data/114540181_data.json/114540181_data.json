@@ -1,0 +1,11 @@
+{
+    "drink": [
+        "(:action drink_water\n    :parameters (?npc - person ?water_source - water)\n    :precondition (and (thirsty ?npc) (contains_drinkable_water ?water_source))\n    :effect (and (not (thirsty ?npc)) (consumed ?water_source))\n  )\n\n"
+    ],
+    "collect": [
+        "(:action collect_rain_water\n    :parameters (?npc - person ?leaf - leaf ?bamboo - bamboo ?container - container)\n    :precondition (and (rain ?jungle) (large_leaf ?leaf) (bamboo_stalk ?bamboo) (empty ?container))\n    :effect (and (contains_water ?container) (not (empty ?container)))\n  )\n\n"
+    ],
+    "create": [
+        "(:action create_fire\n    :parameters (?npc - person ?jungle - jungle)\n    :precondition (and (has_materials_for_fire ?npc) (in_jungle ?jungle))\n    :effect (and (fire_created ?npc) (ready_to_boil_water ?npc))\n  )\n```\n\n### Descriptions:\n1. **drink_water**: The action of drinking water to alleviate thirst.\n   - **Parameters**: A person (`?npc`) and a water source (`?water_source`).\n   - **Preconditions**: The person is thirsty and the water source contains drinkable water.\n   - **Effects**: The person is no longer thirsty, and the water source is consumed.\n\n2. **collect_rain_water**: The action of collecting rainwater using leaves and bamboo.\n   - **Parameters**: A person (`?npc`), a large leaf (`?leaf`), a bamboo stalk (`?bamboo`), and a container (`?container`).\n   - **Preconditions**: It is raining in the jungle, there is a large leaf and bamboo stalk available, and the container is empty.\n   - **Effects**: The container now contains water.\n\n3. **create_fire**: The action of creating a fire to boil water.\n   - **Parameters**: A person (`?npc`) and the jungle (`?jungle`).\n   - **Preconditions**: The person has materials for making a fire and is in the jungle.\n   - **Effects**: A fire is created, making the person ready to boil water.\n\nThese actions capture the steps needed to address dehydration in a jungle environment, including collecting and purifying water."
+    ]
+}

@@ -1,0 +1,843 @@
+[
+    {
+        "cluster_label": 722,
+        "task": "How to Treat Breast Cysts",
+        "step": [
+            "Drain the cysts.",
+            "Take antibiotics for infection, if necessary.",
+            "Ask your doctor about hormonal treatments.",
+            "Surgically remove the cysts."
+        ],
+        "steps_predictions": [
+            "drink_water npc",
+            "take_inflip npc",
+            "get_hormonal_treat npc",
+            "remove_cysts npc"
+        ],
+        "goal_state": " ((not (is_injured npc)))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Drain a Cyst",
+        "step": [
+            "Apply a warm compress.",
+            "Keep the area clean.",
+            "Place a bandage over the cyst if it starts to drain.",
+            "Leave it alone."
+        ],
+        "steps_predictions": [
+            "apply_warm_compress alice",
+            "clean_area area1",
+            "place_bandage_over_cyst user1 bike1 oil1",
+            "be_in_loot npc"
+        ],
+        "goal_state": " ((thrown_away alice))",
+        "similar_entity": {
+            "bike": {
+                "bike": [
+                    {
+                        "attribute": "location",
+                        "before": "beside person's body | absent",
+                        "after": "now between person's legs | present"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unstable",
+                        "after": "stable"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unbalanced",
+                        "after": "balanced"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "crooked",
+                        "after": "straight"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "moving"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "stationary",
+                        "after": "in motion"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "in motion | moving",
+                        "after": "stopped | stationary"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[riding a bike]] requires [[a bike]]",
+                    "[[a bike]] has [[two wheels]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "oil": {
+                "oil": [
+                    {
+                        "attribute": "location",
+                        "before": "in pantry | in its place",
+                        "after": "in water | in boiling water"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in its place",
+                        "after": "in pan"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[oil]] is related to [[liquid]]",
+                    "You are likely to find [[oil]] in [[the ground]]"
+                ]
+            },
+            "area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[area]]"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Treat Ovarian Cysts",
+        "step": [
+            "Monitor pelvic pain.",
+            "Look for other symptoms of ovarian cysts.",
+            "Be aware of the risk factors.",
+            "Schedule a doctor\u2019s appointment."
+        ],
+        "steps_predictions": [
+            "monitor_painter npc",
+            "check_symptoms ovarian_customies",
+            "be_informed npc",
+            "schedule_check npc"
+        ],
+        "goal_state": " ((not (is_injured npc)))",
+        "similar_entity": {
+            "ovarian customies": {
+                "asparagus": [
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "out on table"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "cut up | cut"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "exposed",
+                        "after": "mostly covered"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "longer",
+                        "after": "shorter"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "pointier",
+                        "after": "duller"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw | cold",
+                        "after": "cooked | warm"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "crispy",
+                        "after": "softened"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "cooking",
+                        "after": "cooling"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in oven | in pan",
+                        "after": "on platter | in serving dish"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Prevent Cysts",
+        "step": [
+            "Use heat to treat small skin cysts.",
+            "Visit your doctor if you have a lump on your hand or wrist.",
+            "Check for a Baker\u2019s cyst if your knee hurts."
+        ],
+        "steps_predictions": [
+            "reat_small_scysts person_treated",
+            "visibility agent1 lump1 wrist1",
+            "check_knee_is_injured you"
+        ],
+        "goal_state": " ((not (injured you)))",
+        "similar_entity": {
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ]
+            },
+            "lump": {
+                "pieces": [
+                    {
+                        "attribute": "location",
+                        "before": "around asparagus",
+                        "after": "discarded"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "unwrapped",
+                        "after": "wrapped"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "person treated": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "agent": {
+                "game character": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[agent]] is related to [[secret]]"
+                ]
+            },
+            "wrist": {
+                "the towels": [
+                    {
+                        "attribute": "size",
+                        "before": "larger | wider",
+                        "after": "smaller | narrower"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straight | flat",
+                        "after": "folded | now folded"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "relaxed",
+                        "after": "being used"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "holding towel"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "thinner | longer",
+                        "after": "thicker | shorter"
+                    },
+                    {
+                        "attribute": "height",
+                        "before": "low",
+                        "after": "higher"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "laundry room | outside | out",
+                        "after": "in linen closet | in closet"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in closet",
+                        "after": "on rack | on towel rack"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "folded",
+                        "after": "hanging | unfolded"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "opened"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[watch]] is related to [[wrist]]",
+                    "[[Punho]] is a translation of [[wrist]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Shrink Fibroids Naturally",
+        "step": [
+            "Get immediate care for severe vaginal bleeding or sharp abdominal pain.",
+            "See your doctor for persistent pain, trouble emptying your bladder, or heavy periods.",
+            "Ask your doctor if medication can help you deal with painful fibroids.",
+            "Discuss hormonal contraceptives as a way to reduce vaginal bleeding.",
+            "Ask about MRI-guided focused ultrasound surgery (FUS) to shrink your fibroids.",
+            "Consider minimally-invasive procedures to shrink painful fibroids.",
+            "Consider surgery if your fibroids are interfering with your life."
+        ],
+        "steps_predictions": [
+            "get_vaginal_bleed npc",
+            "fill_bottle npc bathroom",
+            "get_medicare npc",
+            "listen_to_converter npc",
+            "shrink_fibroids you",
+            "shrink_fibroids npc",
+            "listen_to_fibroids npc"
+        ],
+        "goal_state": " ((listen_to_converter npc))",
+        "similar_entity": {
+            "bathroom": {
+                "sink": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full of macaroni"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter top",
+                        "after": "under faucet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | cleaner",
+                        "after": "dirty | dirtier"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "drier",
+                        "after": "wetter"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a toilet]] in [[a bathroom]]",
+                    "[[a bathroom]] is [[room]]",
+                    "[[a bathroom]] is used for [[taking a bath]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Treat a Cyst",
+        "step": [
+            "Know when to call a doctor.",
+            "Ask your doctor about removal.",
+            "Evaluate your surgical options.",
+            "Determine if removal of a skin cyst is necessary.",
+            "Determine if removal of a cyst on the breast is necessary.",
+            "Consult with a dermatologist for treatment of cystic acne.",
+            "Seek treatment for a ganglion cyst.",
+            "Treat a Bartholin gland cyst.",
+            "Understand treatment of a testicular cyst."
+        ],
+        "steps_predictions": [
+            "call_doctor npc philly",
+            "ask_doctor_about_removation you",
+            "listen_to_shelter npc",
+            "determine if removal_of_skin_cyst npc",
+            "remov_of_cyst npc",
+            "get_eraser npc",
+            "get_treatment_for_gangs_cage npc",
+            "treat_gastro_stratified person_treated",
+            "understand_treatment_of_testicular_surstick npc"
+        ],
+        "goal_state": " ((not (injured npc)))",
+        "similar_entity": {
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ]
+            },
+            "removal of skin cyst": {
+                "peeler": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "dryness",
+                        "before": "moist",
+                        "after": "drier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hotter | hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "soft",
+                        "after": "crunchy"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cupboard",
+                        "after": "on stove"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on stove | in fryer",
+                        "after": "on table | on serving dish"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "was heavy",
+                        "after": "is light"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "bland",
+                        "after": "seasoned"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "if": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[if]] is related to [[conditional]]"
+                ]
+            },
+            "philly": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "person treated": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Shrink Hemorrhoids",
+        "step": [
+            "Seek medical attention for severe hemorrhoids.",
+            "Discuss non-surgical treatment options with your doctor.",
+            "Consider having a hemorrhoidectomy."
+        ],
+        "steps_predictions": [
+            "get_medical_attached_with_lemon npc",
+            "listen_to_doctor you doctor",
+            "be_injured person bathroom npc"
+        ],
+        "goal_state": " ((not (hrink Hemorrhoids)))",
+        "similar_entity": {
+            "bathroom": {
+                "sink": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full of macaroni"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter top",
+                        "after": "under faucet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | cleaner",
+                        "after": "dirty | dirtier"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "drier",
+                        "after": "wetter"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a toilet]] in [[a bathroom]]",
+                    "[[a bathroom]] is [[room]]",
+                    "[[a bathroom]] is used for [[taking a bath]]"
+                ]
+            },
+            "person": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[person]] is related to [[human]]",
+                    "[[A person]] can [[cross a street]]",
+                    "[[a person]] wants [[a headache]]",
+                    "[[A slave]] is [[a person]]",
+                    "[[a person]] doesn't want to [[be diseased]]",
+                    "[[a person]] is part of [[society]]"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "doctor": {
+                "tv": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in"
+                    },
+                    {
+                        "attribute": "attachment",
+                        "before": "unattached",
+                        "after": "connected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[doctor]] is related to [[medical]]",
+                    "*Something you find at [[the doctor]] is [[a stethoscope]]",
+                    "[[a veterinarian]] is [[a doctor]]",
+                    "[[A doctor]] can [[help a sick person]]",
+                    "[[having a physical exam]] requires [[a doctor]]",
+                    "[[Dott.]] is a translation of [[doctor]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Shrink Ovarian Cysts",
+        "step": [
+            "See your doctor if you have symptoms of an ovarian cyst.",
+            "Discuss surgery to remove large, painful, or complicated cysts.",
+            "Ask about using hormone treatments to prevent future cysts."
+        ],
+        "steps_predictions": [
+            "check_symptoms npc",
+            "remov_surgery npc",
+            "ask_about_hormonal_treat npc"
+        ],
+        "goal_state": " ((not (vulnerable npc)))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    }
+]

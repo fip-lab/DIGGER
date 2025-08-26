@@ -1,0 +1,12 @@
+[
+    "(:action breathe\n  :parameters (?entity - agent)\n  :precondition (and (calm ?entity) (lungs-empty ?entity))\n  :effect (and (lungs-full ?entity) (buoyant ?entity) (not (lungs-empty ?entity))",
+    "(:action lay ; Relax or position oneself in a comfortable state\n    :parameters (?entity - person ?surface - object)\n    :precondition (and (stuck ?entity ?surface) (buoyant ?entity))\n    :effect (and (floating ?entity) (not (stuck ?entity ?surface))",
+    "(:action use\n  ; Use a resource to achieve a goal and update the entity's state\n  :parameters (?p - person ?resource - object ?context - context)\n  :precondition (and \n    (available ?p)\n    (has ?p ?resource)\n    (in-context ?p ?context)\n  )\n  :effect (and \n    (goal-achieved ?p ?context)\n    (not (in-context ?p ?context))",
+    "(:action identify ; Identify a characteristic of an entity and update its status\n  :parameters (?entity - object ?feature - feature)\n  :precondition (and (unobserved ?entity) (canIdentify ?feature ?entity))\n  :effect (and (observed ?entity) (identified ?feature ?entity))",
+    "(:action mark\n    :parameters (?entity - object ?marker - marker)\n    :precondition (and (identifiable ?entity) (available ?marker))\n    :effect (and (marked ?entity) (not (available ?marker))",
+    "(:action plan-alternative-path\n    :parameters (?p - path ?g - ground)\n    :precondition (and (blocked ?p) (marked ?g))\n    :effect (and (alternativePlanned ?p) (not (blocked ?p))",
+    "(:action plan_resource_allocation\n    :parameters (?r - resource ?t - task)\n    :precondition (and (available ?r) (not (allocated ?r ?t)))\n    :effect (and (allocated ?r ?t) (not (available ?r))",
+    "(:action plan_event_schedule\n    :parameters (?e - event ?d - date)\n    :precondition (and (not (scheduled ?e ?d)) (available_date ?d))\n    :effect (and (scheduled ?e ?d) (not (available_date ?d))",
+    "(:action plan ; Plan a task and update its status\n    :parameters (?entity - object ?target - object)\n    :precondition (and (available ?entity) (not (planned ?entity ?target)))\n    :effect (and (planned ?entity ?target) (not (available ?entity))",
+    "(:action navigate\n  :parameters (?agent - agent ?location - place ?destination - place)\n  :precondition (and (not (at ?agent ?destination)) (known_path ?location ?destination))\n  :effect (and (at ?agent ?destination) (not (known_path ?location ?destination))"
+]

@@ -1,0 +1,307 @@
+[
+    {
+        "cluster_label": 793,
+        "task": "How to Prepare a Sea Salt Soak",
+        "step": [
+            "Pour 453 g (1.9 cups) of fine grain sea salt into a bowl.",
+            "Consider adding 15 to 30 drops of scented or essential oil to the sea salt.",
+            "Mix the salts and oils thoroughly then store the mix in a glass container.",
+            "Add 120 g (1/2 cup) of the salt soak to a warm bath and let it dissolve.",
+            "Take a bath with the sea salt soak when you need to relax and unwind."
+        ],
+        "steps_predictions": [
+            "put_ingredients_in_bowl user1 bowl1",
+            "add-salt-to-leaves alice",
+            "mix_salt_and_oil mixture1 glass_container1",
+            "dissolve-salt water faucet",
+            "take_bath npc"
+        ],
+        "goal_state": " ((in_bowl mixture1) (served_wicks alice))",
+        "similar_entity": {
+            "faucet": "faucet",
+            "bowl": "bowl",
+            "npc": "hat",
+            "user": "player",
+            "glass container": "glass",
+            "mixture": "mixture",
+            "water": "water",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make a Salt Dough Name Banner",
+        "step": [
+            "Gather the ingredients for salt dough.",
+            "Make the dough.",
+            "Knead the dough.",
+            "Divide the dough into pieces based on the letters in your name.",
+            "Shape the dough into the letters of your name.",
+            "Poke holes in the top of each letter.",
+            "Decorate!.",
+            "Bake the beads at 350 degrees for 30 minutes to an hour.",
+            "Paint the letters and add any more decorations.",
+            "String together all the letters."
+        ],
+        "steps_predictions": [
+            "gather_ingredients salt_dough mixing_bowl",
+            "make_dough npc",
+            "knead-dough dough1",
+            "dissolve_name npc",
+            "shape-dough dough1",
+            "poke_hole letter",
+            "decorate-room livingroom",
+            "cook npc",
+            "create_signal npc",
+            "string_letters npc covering_tracks track"
+        ],
+        "goal_state": " ((name_sliplargerbeads) (flattened dough1))",
+        "similar_entity": {
+            "letter": "character",
+            "npc": "hat",
+            "livingroom": "living room",
+            "salt dough": "dough",
+            "track": "movement",
+            "dough": "dough",
+            "mixing bowl": "mixing bowl",
+            "covering tracks": "cover"
+        }
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Do a Dead Sea Salt Wrap",
+        "step": [
+            "Begin drinking water about an hour before your body wrap.",
+            "Turn up the temperature in your bathroom, or another room you plan to sit while the wrap is on.",
+            "Dissolve 2 to 3 tbsp.",
+            "Consider adding the following ingredients to the wrap.",
+            "Brush your skin with a natural bristled brush.",
+            "Take a warm shower to open up your pores.",
+            "Stir your ingredients again.",
+            "Wring out the towels.",
+            "Wrap a layer of cellophane over the towels.",
+            "Cover your body with a thick blanket or robe to keep the wraps warm.",
+            "Rinse off the salt wrap with cool or lukewarm water.",
+            "Cover yourself with a layer of non-comedogenic moisturizer."
+        ],
+        "steps_predictions": [
+            "drink_water npc",
+            "turn_up_temperature npc hallway",
+            "dissolve_gems npc kitchen",
+            "add-ingredients-to-wrapped marshmallow_cream",
+            "brush_skin npc",
+            "open_gap_of_papyrus npc bathroom",
+            "mix_ingredients mixture1 mixing_bowl1 bowl1",
+            "wring-tape towel1",
+            "wrap-wicks towel1",
+            "wrap_body npc",
+            "clean_salt_wrapped salt_wrap water",
+            "cover_with_not_comedian moisturizer"
+        ],
+        "goal_state": " ((in_container npc mixing_bowl1) (served_drink water1))",
+        "similar_entity": {
+            "bathroom": "sink",
+            "bowl": "bowl",
+            "npc": "hat",
+            "mixture": "mixture",
+            "kitchen": "kitchen counter",
+            "marshmallow cream": "marshmallow cream",
+            "hallway": "rooms",
+            "salt wrap": "salt",
+            "mixing bowl": "mixing bowl",
+            "moisturizer": "marshmallow cream",
+            "towel": "towel",
+            "water": "water"
+        }
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make Sandalwood Bath Salts",
+        "step": [
+            "Assemble ingredients.",
+            "Mix together dry ingredients in a ceramic bowl.",
+            "Add the essential oils.",
+            "Stir as you add the drops.",
+            "Place mixture into a small jar and screw on the lid.",
+            "Keep in a dry spot out of direct sunlight for 2 - 3 days to allow the oils to blend.",
+            "Use bath salts."
+        ],
+        "steps_predictions": [
+            "assemble_ingredients mixture",
+            "mix_dry_ingredients mixing_bowl pot",
+            "add-ingredients essential_oil oil1 bottle1",
+            "add-drops-to-drink mixture",
+            "place_mixture_in_lid user1 screw1 container1",
+            "blend_oil npc",
+            "use_bath_salt alice"
+        ],
+        "goal_state": " ((combined mixture mixing_bowl pot))",
+        "similar_entity": {
+            "npc": "hat",
+            "user": "player",
+            "oil": "oil",
+            "mixture": "mixture",
+            "bottle": "bottle",
+            "screw": "wrench",
+            "essential oil": "oil",
+            "mixing bowl": "mixing bowl",
+            "container": "container",
+            "pot": "pot",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make a Water Colour Salt Painting",
+        "step": [
+            "Set up your painting area.",
+            "Wet your paper.",
+            "Paint with watercolors.",
+            "Sprinkle some salt over the still-wet painting.",
+            "Let the painting dry.",
+            "When the painting is dry, tip the paper up gently and shake the excess salt off.",
+            "Finished!."
+        ],
+        "steps_predictions": [
+            "set_area area",
+            "wet_paper npc papyrus",
+            "create_painting watercolors",
+            "sprinkle-salt painting",
+            "dry_painting painting",
+            "tip_paper_add_salt npc",
+            "finish-wreath wreath-1"
+        ],
+        "goal_state": " ((area area wet_paper npc))",
+        "similar_entity": {
+            "papyrus": "sponge",
+            "watercolors": "paint",
+            "npc": "hat",
+            "painting": "paint",
+            "wreath-": "wreath",
+            "area": "area"
+        }
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Use Himalayan Salt Lamps",
+        "step": [
+            "Purchase high quality Himalayan salt lamps.",
+            "Get a big enough salt lamp.",
+            "Watch out for copious sweating.",
+            "Clean your lamp and check for build up.",
+            "Use a Himalayan salt candle holder."
+        ],
+        "steps_predictions": [
+            "purchase_lamp npc",
+            "get_salt_lamp user1 salt_light1 lamp1",
+            "watch_for_copious_sweating person water",
+            "clean_lamp lamp",
+            "use_as_salt_candle_holder alice"
+        ],
+        "goal_state": " ((lamp npc))",
+        "similar_entity": {
+            "person": "person",
+            "lamp": "lamp",
+            "npc": "hat",
+            "user": "player",
+            "water": "water",
+            "alice": "character",
+            "salt light": "salt"
+        }
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make Flavored Salt",
+        "step": [
+            "Select a flavored liquid for your salt.",
+            "Bring the liquid to a boil.",
+            "Heat the liquid until it forms a reduction.",
+            "Add the salt and dry the mixture."
+        ],
+        "steps_predictions": [
+            "select_flavorful_liquid alice",
+            "boil_water npc boil water",
+            "heat_loot npc",
+            "add_salt_and_dry mixture1"
+        ],
+        "goal_state": " ((flavorful alice))",
+        "similar_entity": {
+            "boil": "boiling pot",
+            "npc": "hat",
+            "mixture": "mixture",
+            "water": "water",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Color Sand",
+        "step": [
+            "Purchase a bag of Epsom salt.",
+            "Divide the salt into several zippered bags.",
+            "Add 5 to 10 drops of liquid food coloring into each bag.",
+            "Zip the bags close, then shake them.",
+            "Add more food coloring, if desired.",
+            "Open the bags and let the salt dry.",
+            "Play with the sand, but don't let it get wet."
+        ],
+        "steps_predictions": [
+            "purchase_salt bag",
+            "dissolve_salt salt_bag bag",
+            "add-ingredient food_colors bag",
+            "zip-bag bag",
+            "add-ingredient food_colors alice",
+            "open_bag bag",
+            "play_with_sand npc beach"
+        ],
+        "goal_state": " ((inventory bag))",
+        "similar_entity": {
+            "beach": "outside area",
+            "bag": "bag",
+            "npc": "hat",
+            "food colors": "food",
+            "salt bag": "salt",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make Lemon Salt",
+        "step": [
+            "Measure 1 cup of lemon juice, and 2 tablespoons of salt together in a small bowl.",
+            "Place the lemon juice and salt in a pan and boil.",
+            "Scrape off the crust with a spoon.",
+            "Place the crust in a clean bowl.",
+            "Continue to boil.",
+            "Keep the process going.",
+            "Drain all of the juice from the crust.",
+            "Put the crust, now dry, in a small container.",
+            "Eat little by little, or save to put on top of flavorless crackers."
+        ],
+        "steps_predictions": [
+            "mix_lemon_juice lemon_salt mixing_bowl",
+            "place-lemon-juice lemon-salt stove-knob",
+            "scrape-off-crust crust",
+            "place-in-bowl crust",
+            "boiled_water pot water",
+            "keep_process going process",
+            "drain_lemon npc",
+            "put_rusting_in_container velveeta",
+            "eat_cheese npc"
+        ],
+        "goal_state": " ((in_container mixing_bowl) (thawed lemon_salt))",
+        "similar_entity": {
+            "crust": "pastry",
+            "lemon-salt": "lemon",
+            "velveeta": "velveeta",
+            "stove-knob": "stove knob",
+            "npc": "hat",
+            "water": "water",
+            "process": "task",
+            "lemon salt": "lemon",
+            "mixing bowl": "mixing bowl",
+            "going": "route",
+            "pot": "pot"
+        }
+    }
+]

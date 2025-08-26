@@ -1,0 +1,473 @@
+{
+    "goal": "Make Slow Cooker Hot Cocoa",
+    "steps": [
+        "Make the initial cocoa mixture.",
+        "Add all the ingredients in a slow cooker.",
+        "Allow the mixture to heat for 3 hours on a low setting.",
+        "Serve immediately or keep the slow cooker on a \"Keep Warm\" setting."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/4/40/Make-Slow-Cooker-Hot-Cocoa-Step-1.jpg/aid4294773-v4-728px-Make-Slow-Cooker-Hot-Cocoa-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/c/cf/Make-Slow-Cooker-Hot-Cocoa-Step-2.jpg/aid4294773-v4-728px-Make-Slow-Cooker-Hot-Cocoa-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/8/81/Make-Slow-Cooker-Hot-Cocoa-Step-3.jpg/aid4294773-v4-728px-Make-Slow-Cooker-Hot-Cocoa-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/9/97/Make-Slow-Cooker-Hot-Cocoa-Step-4.jpg/aid4294773-v4-728px-Make-Slow-Cooker-Hot-Cocoa-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "mixture ingredients",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "composition",
+                        "before": "separated | uncombined",
+                        "after": "mixed together | combined",
+                        "saliency": 0.5756897298858875,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "container",
+                        "before": "bowl | in bowl | outside cooker | outside of slow cooker",
+                        "after": "in slow cooker | inside cooker | inside slow cooker",
+                        "saliency": 0.4484989648033126,
+                        "attribute_annotation": "container | location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot",
+                        "saliency": 0.2903245221243199,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "mixture ingredients | the ingredients | ingredients",
+                "ingredients"
+            ]
+        },
+        {
+            "entity": "cooker",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full | full of ingredients",
+                        "saliency": 0.5034667051856132,
+                        "attribute_annotation": "volume | container"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | cleaner",
+                        "after": "wet | dirtier",
+                        "saliency": 0.38985988733208143,
+                        "attribute_annotation": "wetness | cleanness"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "warmer",
+                        "saliency": 0.33629447734604456,
+                        "attribute_annotation": "temperature | pressure"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.31327138202770155,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.36564109971592273,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler | less pressurized",
+                        "after": "warmer | more pressurized",
+                        "saliency": 0.33629447734604456,
+                        "attribute_annotation": "temperature | pressure"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.3122201357792864,
+                        "attribute_annotation": "wetness | cleanness"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.2903245221243199,
+                        "attribute_annotation": "power"
+                    },
+                    {
+                        "attribute": "thermal conductivity",
+                        "before": "cooler",
+                        "after": "warmer",
+                        "saliency": 0.4559198805912658,
+                        "attribute_annotation": "thermal conductivity"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "off slow cooker",
+                        "after": "on slow cooker",
+                        "saliency": 0.44869757812123834,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "volume",
+                        "before": "more full",
+                        "after": "more empty",
+                        "saliency": 0.5811064567384082,
+                        "attribute_annotation": "volume | container"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.36564109971592273,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "direction",
+                        "before": "pointing at different setting",
+                        "after": "pointing at keep warm setting",
+                        "saliency": 0.323511001974096,
+                        "attribute_annotation": "direction"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "slow cooker | the slow cooker",
+                "cooker",
+                "the outside of the slow cooker",
+                "lid",
+                "the slow cooker",
+                "the knob"
+            ]
+        },
+        {
+            "entity": "cocoa mixture",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in package",
+                        "after": "in bowl",
+                        "saliency": 0.5028648466464442,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "unmade",
+                        "after": "made",
+                        "saliency": 0.3536039289325437,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "warmer",
+                        "saliency": 0.26407145264577014,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler | room temperature",
+                        "after": "warmer | wamer | heated in cooker",
+                        "saliency": 0.3934710385670952,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "quiet",
+                        "after": "loud",
+                        "saliency": 0.46675333429630705,
+                        "attribute_annotation": "sound"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "container",
+                        "before": "in slow cooker",
+                        "after": "in mug",
+                        "saliency": 0.34938289437783876,
+                        "attribute_annotation": "container | location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "mixture | the mixture",
+                "cocoa powder",
+                "liquid",
+                "water",
+                "cocoa mixture"
+            ]
+        },
+        {
+            "entity": "bowl",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.4607347489046174,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.454716163512928,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry",
+                        "saliency": 0.2711412842858748,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on counter",
+                        "saliency": 0.3230535894843276,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.454716163512928,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "whisk",
+                "bowl"
+            ]
+        },
+        {
+            "entity": "smell",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "odor",
+                        "before": "neutral",
+                        "after": "fragrant",
+                        "saliency": 0.4607347489046174,
+                        "attribute_annotation": "odor"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "smell"
+            ]
+        },
+        {
+            "entity": "mug",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.44869757812123834,
+                        "attribute_annotation": "wetness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.31101641870094854,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter",
+                        "saliency": 0.26512269889418527,
+                        "attribute_annotation": "temperature"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "mug"
+            ]
+        }
+    ],
+    "clusters": {
+        "smell": {
+            "entity_cluster": [
+                "smell"
+            ],
+            "attribute_cluster": {
+                "odor": [
+                    "odor"
+                ]
+            }
+        },
+        "mixture ingredients": {
+            "entity_cluster": [
+                "the ingredients",
+                "ingredients",
+                "mixture ingredients"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "container": [
+                    "container"
+                ],
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "cocoa mixture": {
+            "entity_cluster": [
+                "liquid",
+                "mixture",
+                "the mixture",
+                "water",
+                "cocoa mixture",
+                "cocoa powder"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ],
+                "container": [
+                    "container"
+                ],
+                "location": [
+                    "location"
+                ],
+                "sound": [
+                    "sound"
+                ],
+                "availability": [
+                    "availability"
+                ]
+            }
+        },
+        "mug": {
+            "entity_cluster": [
+                "mug"
+            ],
+            "attribute_cluster": {
+                "wetness": [
+                    "wetness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "bowl": {
+            "entity_cluster": [
+                "whisk",
+                "bowl"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "wetness": [
+                    "wetness"
+                ]
+            }
+        },
+        "cooker": {
+            "entity_cluster": [
+                "the outside of the slow cooker",
+                "the knob",
+                "lid",
+                "slow cooker",
+                "the slow cooker",
+                "cooker"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "container": [
+                    "container"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "pressure": [
+                    "pressure"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "power": [
+                    "power"
+                ],
+                "thermal conductivity": [
+                    "thermal conductivity"
+                ],
+                "location": [
+                    "location"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "direction": [
+                    "direction"
+                ]
+            }
+        }
+    }
+}

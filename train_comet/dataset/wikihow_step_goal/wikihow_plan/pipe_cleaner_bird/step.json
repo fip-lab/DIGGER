@@ -1,0 +1,176 @@
+{
+    "goal": "Make a Pipe Cleaner Bird",
+    "steps": [
+        "Bend one pipe cleaner in half to form the legs.",
+        "Shape another pipe cleaner to form the body.",
+        "Move 1.5 inches (3.8 cm) from the tip of where the beak should be.",
+        "Use 2 pipe cleaners to enlarge the torso."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/9/97/Make-a-Pipe-Cleaner-Bird-Step-1.jpg/aid198256-v4-728px-Make-a-Pipe-Cleaner-Bird-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/9/9b/Make-a-Pipe-Cleaner-Bird-Step-2.jpg/aid198256-v4-728px-Make-a-Pipe-Cleaner-Bird-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/c/c9/Make-a-Pipe-Cleaner-Bird-Step-3.jpg/aid198256-v4-728px-Make-a-Pipe-Cleaner-Bird-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/7/71/Make-a-Pipe-Cleaner-Bird-Step-4.jpg/aid198256-v4-728px-Make-a-Pipe-Cleaner-Bird-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "tip of pipe cleaner",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "shaped to form beak",
+                        "saliency": 0.544994944388271,
+                        "attribute_annotation": "shape"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "closer to tip",
+                        "after": "now away from tip",
+                        "saliency": 0.34758534354085413,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "tip of pipe cleaner",
+                "your fingers"
+            ]
+        },
+        {
+            "entity": "pipe cleaner",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "position",
+                        "before": "straight",
+                        "after": "bent",
+                        "saliency": 0.6376811594202899,
+                        "attribute_annotation": "position | shape"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "completely on ground",
+                        "after": "partially in air",
+                        "saliency": 0.46148105349318697,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "position",
+                        "before": "straight",
+                        "after": "bent | now body",
+                        "saliency": 0.6376811594202899,
+                        "attribute_annotation": "position | shape"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "on pipe cleaner",
+                        "saliency": 0.46148105349318697,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "position",
+                        "before": "straight",
+                        "after": "bent",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "position | shape"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "on pipe cleaner",
+                        "saliency": 0.46148105349318697,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "pipe cleaner | pipe cleaners"
+            ]
+        },
+        {
+            "entity": "the torso",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "width",
+                        "before": "thinner",
+                        "after": "now wider",
+                        "saliency": 0.3295295873657856,
+                        "attribute_annotation": "width"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.1918484279454957,
+                        "attribute_annotation": "weight"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "the torso"
+            ]
+        }
+    ],
+    "clusters": {
+        "pipe cleaner": {
+            "entity_cluster": [
+                "pipe cleaner",
+                "pipe cleaners"
+            ],
+            "attribute_cluster": {
+                "position": [
+                    "position"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "tip of pipe cleaner": {
+            "entity_cluster": [
+                "your fingers",
+                "tip of pipe cleaner"
+            ],
+            "attribute_cluster": {
+                "shape": [
+                    "shape"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "the torso": {
+            "entity_cluster": [
+                "the torso"
+            ],
+            "attribute_cluster": {
+                "width": [
+                    "width"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+{
+    "?c": [
+        "disguise",
+        "costume"
+    ],
+    "?s": [
+        "supply"
+    ],
+    "?p": [
+        "character"
+    ],
+    "?item": [
+        "part"
+    ],
+    "?action": [
+        "purchase",
+        "purchase",
+        "step",
+        "process",
+        "purchase",
+        "purchase",
+        "move_to_bunker",
+        "purchase"
+    ],
+    "?container": [
+        "jar",
+        "saucepan",
+        "jar",
+        "saucepan",
+        "jar",
+        "saucepan",
+        "jar",
+        "saucepan",
+        "basement",
+        "building",
+        "shelter",
+        "jar",
+        "saucepan"
+    ],
+    "?location": [
+        "socket",
+        "stove",
+        "socket",
+        "stove",
+        "socket",
+        "stove",
+        "socket",
+        "stove",
+        "place",
+        "area",
+        "kilometer",
+        "place",
+        "home",
+        "mile",
+        "socket",
+        "stove"
+    ],
+    "?object": [
+        "candles",
+        "water",
+        "candles",
+        "water",
+        "piece",
+        "ridge",
+        "paper",
+        "candles",
+        "water",
+        "candles",
+        "water",
+        "candles",
+        "water"
+    ],
+    "?state": [
+        "amount",
+        "amount",
+        "day",
+        "hour",
+        "one",
+        "type",
+        "amount",
+        "amount",
+        "hiding",
+        "damage",
+        "protection",
+        "sight",
+        "type",
+        "amount"
+    ],
+    "?papyrus": [
+        "finishing_papyrus",
+        "papyrus"
+    ],
+    "?sheet": [
+        "sheet"
+    ],
+    "?stone": [
+        "slab",
+        "stone"
+    ],
+    "?ivory": [
+        "ivory"
+    ],
+    "?shell": [
+        "shell"
+    ],
+    "?tool": [
+        "board"
+    ],
+    "?linen": [
+        "linen"
+    ],
+    "?resource": [
+        "brick",
+        "electricity"
+    ],
+    "?context": [
+        "confusion",
+        "shortage",
+        "chaos",
+        "day",
+        "minute",
+        "loss",
+        "danger",
+        "ready_sc",
+        "society",
+        "odd",
+        "help",
+        "lot"
+    ],
+    "?food": [
+        "food"
+    ],
+    "?storage": [
+        "shelter",
+        "fridge"
+    ],
+    "?entity": [
+        "stuff",
+        "electronic"
+    ]
+}

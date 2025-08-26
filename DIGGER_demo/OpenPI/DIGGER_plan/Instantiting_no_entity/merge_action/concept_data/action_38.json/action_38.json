@@ -1,0 +1,18 @@
+{
+    "attempt": [
+        "(:action attempt_headshot\n      :parameters (?p1 - player ?p2 - player ?w - weapon)\n      :precondition (and (at ?p1 ?loc1) (at ?p2 ?loc2) (has_weapon ?p1 ?w))\n      :effect (and (headshot ?p1 ?p2 ?w))\n   )\n```\n\nIn this set of actions:\n- `shotgun_shot` represents shooting another player with a shotgun.\n- `shotgun_shot_self` represents shooting oneself with a shotgun.\n- `pistol_shot` represents shooting another player with a pistol.\n- `boomshot_shot` represents shooting oneself with a BoomShot.\n- `sniper_shot` represents shooting another player with a sniper rifle.\n- `attempt_headshot` is a generic action for attempting a headshot with any weapon.\n\nThe `precondition` ensures that the player has the weapon and is at a location, while the `effect` represents the attempt to get a headshot."
+    ],
+    "shotgun": [
+        "(:action shotgun_shot\n      :parameters (?p1 - player ?p2 - player)\n      :precondition (and (at ?p1 ?loc1) (at ?p2 ?loc2) (has_weapon ?p1 shotgun))\n      :effect (and (attempt_headshot ?p1 ?p2 shotgun))\n   )\n\n",
+        "(:action shotgun_shot_self\n      :parameters (?p1 - player)\n      :precondition (and (at ?p1 ?loc1) (has_weapon ?p1 shotgun))\n      :effect (and (attempt_headshot ?p1 ?p1 shotgun))\n   )\n\n"
+    ],
+    "pistol": [
+        "(:action pistol_shot\n      :parameters (?p1 - player ?p2 - player)\n      :precondition (and (at ?p1 ?loc1) (at ?p2 ?loc2) (has_weapon ?p1 pistol))\n      :effect (and (attempt_headshot ?p1 ?p2 pistol))\n   )\n\n"
+    ],
+    "boomshot": [
+        "(:action boomshot_shot\n      :parameters (?w1 - weapon ?p1 - player)\n      :precondition (and (at ?p1 ?loc1) (has_weapon ?p1 boomshot))\n      :effect (and (attempt_headshot ?p1 ?p1 boomshot))\n   )\n\n"
+    ],
+    "sniper": [
+        "(:action sniper_shot\n      :parameters (?p1 - player ?p2 - player)\n      :precondition (and (at ?p1 ?loc1) (at ?p2 ?loc2) (has_weapon ?p1 sniper))\n      :effect (and (attempt_headshot ?p1 ?p2 sniper))\n   )\n\n"
+    ]
+}

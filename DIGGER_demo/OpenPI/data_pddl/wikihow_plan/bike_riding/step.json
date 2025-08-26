@@ -1,0 +1,628 @@
+{
+    "goal": "Get on a Bike",
+    "steps": [
+        "To get on the bike, swing your non-dominant leg over the shaft of the bike.",
+        "Put your dominant foot on the pedal.",
+        "Hold on to the handlebars for support and to keep the bike straight.",
+        "Keeping your weight center and even, pedal with your feet.",
+        "Stopping."
+    ],
+    "topics": "Sports and Fitness",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/b/ba/Get-on-a-Bike-Step-1.jpg/aid160804-v4-728px-Get-on-a-Bike-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/5/5b/Get-on-a-Bike-Step-2.jpg/aid160804-v4-728px-Get-on-a-Bike-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/5/5e/Get-on-a-Bike-Step-3.jpg/aid160804-v4-728px-Get-on-a-Bike-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/e/ed/Get-on-a-Bike-Step-4.jpg/aid160804-v4-728px-Get-on-a-Bike-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/b/b3/Get-on-a-Bike-Step-5.jpg/aid160804-v4-637px-Get-on-a-Bike-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "center of gravity",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "mainly on both feet",
+                        "after": "mainly on least dominant foot",
+                        "saliency": 0.5097193466758685,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "forward",
+                        "after": "centered",
+                        "saliency": 0.3975730388773867,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "weight",
+                        "before": "placed on seat and pedals",
+                        "after": "now placed on seat and ground",
+                        "saliency": 0.5097193466758685,
+                        "attribute_annotation": "weight"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "your weight",
+                "center of gravity"
+            ]
+        },
+        {
+            "entity": "ability to identify bike shaft",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.5125948930296755,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "ability to identify non-dominant leg",
+                "ability to identify dominant foot",
+                "ability to identify bike shaft"
+            ]
+        },
+        {
+            "entity": "feet",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "placement",
+                        "before": "uncentered",
+                        "after": "centered",
+                        "saliency": 0.5125948930296755,
+                        "attribute_annotation": "placement"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "weight"
+            ]
+        },
+        {
+            "entity": "pedals",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in air",
+                        "saliency": 0.4694616977225673,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in air | on ground",
+                        "after": "on pedal",
+                        "saliency": 0.5082815734989649,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "placement",
+                        "before": "on ground",
+                        "after": "now off ground",
+                        "saliency": 0.4953416149068323,
+                        "attribute_annotation": "placement"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "on pedal",
+                        "saliency": 0.3975730388773867,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "motion",
+                        "before": "still",
+                        "after": "moving",
+                        "saliency": 0.35731538992408557,
+                        "attribute_annotation": "motion"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "on bike",
+                        "after": "on ground",
+                        "saliency": 0.4694616977225673,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "placement",
+                        "before": "on pedal",
+                        "after": "now on ground",
+                        "saliency": 0.4953416149068323,
+                        "attribute_annotation": "placement"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "foot | dominant foot | feet",
+                "your foot",
+                "both feet",
+                "non-dominant foot",
+                "pedals"
+            ]
+        },
+        {
+            "entity": "the chain",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "movement",
+                        "before": "at rest",
+                        "after": "now moving",
+                        "saliency": 0.4953416149068323,
+                        "attribute_annotation": "movement"
+                    },
+                    {
+                        "attribute": "mechanical movement",
+                        "before": "at rest on sprocket",
+                        "after": "now moving tire",
+                        "saliency": 0.4953416149068323,
+                        "attribute_annotation": "mechanical movement"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "movement",
+                        "before": "rolling",
+                        "after": "now stopped",
+                        "saliency": 0.4953416149068323,
+                        "attribute_annotation": "movement"
+                    },
+                    {
+                        "attribute": "mechanical movement",
+                        "before": "moving",
+                        "after": "now at rest on sprocket",
+                        "saliency": 0.4953416149068323,
+                        "attribute_annotation": "mechanical movement"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "the tires",
+                "the chain"
+            ]
+        },
+        {
+            "entity": "ability to identify handlebars",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.4910282953761215,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "ability to identify handlebars"
+            ]
+        },
+        {
+            "entity": "ability to ride a bike",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "skill",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.433517368299977,
+                        "attribute_annotation": "skill"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "speed",
+                        "before": "constant",
+                        "after": "slowing",
+                        "saliency": 0.31130664826317,
+                        "attribute_annotation": "speed"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "ability to ride a bike",
+                "speed"
+            ]
+        },
+        {
+            "entity": "you",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "position",
+                        "before": "off bike",
+                        "after": "now on bike | on bike",
+                        "saliency": 0.22995744191396364,
+                        "attribute_annotation": "position | location"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "motion",
+                        "before": "resting on bike",
+                        "after": "now using handle bars for support",
+                        "saliency": 0.2686335403726708,
+                        "attribute_annotation": "motion"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "in air | off handlebars",
+                        "after": "on handlebars",
+                        "saliency": 0.1134978145847711,
+                        "attribute_annotation": "position | location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "motion",
+                        "before": "sitting still on bike",
+                        "after": "now moving",
+                        "saliency": 0.3462732919254658,
+                        "attribute_annotation": "motion"
+                    },
+                    {
+                        "attribute": "balance",
+                        "before": "using foot to maintain balance",
+                        "after": "now using body weight to maintain balance",
+                        "saliency": 0.2820220841959972,
+                        "attribute_annotation": "balance"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "motion",
+                        "before": "moving",
+                        "after": "now still",
+                        "saliency": 0.2686335403726708,
+                        "attribute_annotation": "motion"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "you | hands"
+            ]
+        },
+        {
+            "entity": "bike",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "beside person's body | absent",
+                        "after": "now between person's legs | present",
+                        "saliency": 0.4033241315850012,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "stability",
+                        "before": "unstable",
+                        "after": "stable",
+                        "saliency": 0.30411778237865195,
+                        "attribute_annotation": "stability"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.34328272371750634,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "stability",
+                        "before": "unbalanced",
+                        "after": "balanced",
+                        "saliency": 0.23125143777317692,
+                        "attribute_annotation": "balance | movement"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "crooked",
+                        "after": "straight",
+                        "saliency": 0.2052564987347596,
+                        "attribute_annotation": "orientation"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "moving",
+                        "saliency": 0.22555785599263858,
+                        "attribute_annotation": "movement | motion"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "stationary",
+                        "after": "in motion",
+                        "saliency": 0.1924315619967794,
+                        "attribute_annotation": "balance | movement"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "stability",
+                        "before": "in motion | moving",
+                        "after": "stopped | stationary",
+                        "saliency": 0.24419139636530943,
+                        "attribute_annotation": "balance | movement"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "bike | bicycle",
+                "bicycle"
+            ]
+        },
+        {
+            "entity": "grip on bike",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "strength",
+                        "before": "loose",
+                        "after": "tight",
+                        "saliency": 0.3616287094547964,
+                        "attribute_annotation": "strength"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "grip on bike"
+            ]
+        },
+        {
+            "entity": "handbrakes",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unlocated",
+                        "after": "located",
+                        "saliency": 0.3472509776857603,
+                        "attribute_annotation": "knowledge"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "handbrakes"
+            ]
+        }
+    ],
+    "clusters": {
+        "you": {
+            "entity_cluster": [
+                "you"
+            ],
+            "attribute_cluster": {
+                "position": [
+                    "position",
+                    "location"
+                ],
+                "motion": [
+                    "action",
+                    "motion"
+                ],
+                "balance": [
+                    "balance"
+                ]
+            }
+        },
+        "ability to ride a bike": {
+            "entity_cluster": [
+                "speed",
+                "ability to ride a bike"
+            ],
+            "attribute_cluster": {
+                "skill": [
+                    "skill"
+                ],
+                "speed": [
+                    "speed"
+                ]
+            }
+        },
+        "center of gravity": {
+            "entity_cluster": [
+                "center of gravity",
+                "your weight"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "handbrakes": {
+            "entity_cluster": [
+                "handbrakes"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "ability to identify handlebars": {
+            "entity_cluster": [
+                "hands",
+                "ability to identify handlebars"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ],
+                "position": [
+                    "position",
+                    "location"
+                ],
+                "motion": [
+                    "action",
+                    "motion"
+                ],
+                "balance": [
+                    "balance"
+                ]
+            }
+        },
+        "grip on bike": {
+            "entity_cluster": [
+                "grip on bike"
+            ],
+            "attribute_cluster": {
+                "strength": [
+                    "strength"
+                ]
+            }
+        },
+        "bike": {
+            "entity_cluster": [
+                "bicycle",
+                "bike"
+            ],
+            "attribute_cluster": {
+                "stability": [
+                    "stability",
+                    "balance"
+                ],
+                "movement": [
+                    "movement",
+                    "motion"
+                ],
+                "orientation": [
+                    "orientation"
+                ],
+                "location": [
+                    "location"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "pedals": {
+            "entity_cluster": [
+                "your foot",
+                "non-dominant foot",
+                "both feet",
+                "dominant foot",
+                "pedals",
+                "foot"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "placement": [
+                    "placement"
+                ],
+                "motion": [
+                    "motion"
+                ]
+            }
+        },
+        "ability to identify bike shaft": {
+            "entity_cluster": [
+                "ability to identify bike shaft",
+                "ability to identify non-dominant leg",
+                "ability to identify dominant foot"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "the chain": {
+            "entity_cluster": [
+                "the tires",
+                "the chain"
+            ],
+            "attribute_cluster": {
+                "movement": [
+                    "movement"
+                ],
+                "mechanical movement": [
+                    "mechanical movement"
+                ]
+            }
+        },
+        "feet": {
+            "entity_cluster": [
+                "feet",
+                "weight"
+            ],
+            "attribute_cluster": {
+                "placement": [
+                    "placement"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        }
+    }
+}

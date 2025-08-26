@@ -1,0 +1,5 @@
+[
+    "(:action cut ;  Cut an item and update its state\n  :parameters (?actor - person ?item - object)\n  :precondition (and (at ?actor ?item) (shape ?item uncut))\n  :effect (and (shape ?item cut) (length ?item shorter))",
+    "(:action slip ; Slip a bead onto an elastic strip and organize it\n  :parameters (?p - player ?bead - bead ?elastic_strip - elastic)\n  :precondition (and (at ?p ?bead) (at ?p ?elastic_strip) (location ?bead off_strip))\n  :effect (and (location ?bead on_strip) (organization ?bead in_order))",
+    "(:action finish\n    :parameters (?p - player ?item - object)\n    :precondition (and (at ?p ?item) (or (location ?item off_strip) (status ?item completed)))\n    :effect (and (or (location ?item on_strip) (organization ?item in_order) (status ?item completed) (wreath ?item completed))"
+]

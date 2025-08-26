@@ -1,0 +1,16 @@
+{
+    "go": [
+        "(:action go_to_storage_room\n    :parameters (?a - agent ?sr - location)\n    :precondition (and\n      (at ?a workstation)\n    )\n    :effect (and\n      (at ?a ?sr)\n      (not (at ?a workstation))\n    )\n)\n\n;; Action 2: Find the required materials\n"
+    ],
+    "find": [
+        "(:action find_materials\n    :parameters (?a - agent ?sr - location ?m - material)\n    :precondition (and\n      (at ?a ?sr)\n      (stored ?m ?sr)\n    )\n    :effect (and\n      (found ?m)\n    )\n)\n\n;; Action 3: Pick up the materials\n",
+        "(:action return_to_workstation\n    :parameters (?a - agent ?ws - location)\n    :precondition (and\n      (at ?a storage_room)\n      (carrying ?a material1)\n      (carrying ?a material2)\n      (carrying ?a material3)\n    )\n    :effect (and\n      (at ?a ?ws)\n      (not (at ?a storage_room))\n    )\n)\n```\n\nThis set of PDDL actions captures the steps and logic required to complete the task \"get-materials\". Each action is defined with appropriate parameters, preconditions, and effects to ensure the task can be executed in sequence.",
+        "(:action choose_food\n    :parameters (?npc - npc ?food - food)\n    :precondition (and (not (chosen ?food)) (long ?food) (thin ?food) (hard ?food) (straight ?food) (stiff ?food) (between_length ?food 15 20))\n    :effect (and (chosen ?food) (chosen_by ?npc ?food))\n)\n\n"
+    ],
+    "pick": [
+        "(:action pick_up_materials\n    :parameters (?a - agent ?m - material)\n    :precondition (and\n      (at ?a storage_room)\n      (found ?m)\n    )\n    :effect (and\n      (carrying ?a ?m)\n      (not (stored ?m storage_room))\n    )\n)\n\n;; Action 4: Return to the workstation\n"
+    ],
+    "lay": [
+        "(:action lay_masking_tape\n    :parameters (?player - player ?tape - masking_tape)\n    :precondition (and (rolled ?tape) (on_roll ?tape))\n    :effect (and (unrolled ?tape) (in_pieces ?tape) (parallel_strips ?tape) (perpendicular_to_throw ?tape))\n)\n```\n\nExplanation:\n- The `choose_food` action allows an NPC to select a food item based on the given criteria (long, thin, hard, straight, stiff, and a specific length range).\n- The `lay_masking_tape` action involves a player laying down masking tape in parallel strips, ensuring it is unrolled and set perpendicular to the throwing direction.\n\nThese actions follow the format and structure shown in the example, capturing the intent and logic of each step based on the provided descriptions and entity states."
+    ]
+}

@@ -1,0 +1,5 @@
+[
+    "(:action place ; Place an item into a container and update inventory status\n  :parameters (?agent - person ?item - object ?container - object)\n  :precondition (and (inventory ?agent ?item) (inventory ?agent ?container) (airtight ?container))\n  :effect (and (in ?item ?container) (not (inventory ?agent ?item))",
+    "(:action separate ; Separate items using a specified medium\n  :parameters (?entity - agent ?item - object ?medium - material)\n  :precondition (and (inventory ?entity ?medium) (contains ?container ?item) (or (type ?medium type1) (type ?medium type2) (type ?medium type3)))\n  :effect (separated ?item ?medium)\n)",
+    "(:action freeze\n  ; Universal action to either freeze or thaw items based on their state\n  :parameters (?p - person ?item - object ?container - container ?location - location)\n  :precondition (and \n    (in ?item ?container)\n    (location ?container ?location)\n    (or (and (not (frozen ?item)) (separated ?item ?paper)) ; Preconditions for freezing\n        (frozen ?item))                                      ; Preconditions for thawing\n  )\n  :effect (and \n    (or (and (not (frozen ?item))"
+]

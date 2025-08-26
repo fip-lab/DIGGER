@@ -1,0 +1,17 @@
+{
+    "swing": [
+        "(:action swing-leg-over-bike\n    :parameters (?p - person ?b - bike)\n    :precondition (and (beside ?b ?p) (not (between-legs ?b ?p)))\n    :effect (and (between-legs ?b ?p) (not (beside ?b ?p)))\n)\n\n"
+    ],
+    "put": [
+        "(:action put_foot_on_pedal\n    :parameters (?p - person ?pedal - pedal)\n    :precondition (and (between-legs ?b ?p) (on-ground ?pedal))\n    :effect (and (on-pedal ?pedal ?p) (not (on-ground ?pedal)))\n)\n\n"
+    ],
+    "hold": [
+        "(:action hold_handbrakes\n    :parameters (?p - person ?b - bike)\n    :precondition (and (between-legs ?b ?p) (not (holding-handbrakes ?p ?b)))\n    :effect (holding-handbrakes ?p ?b)\n)\n\n"
+    ],
+    "pedal": [
+        "(:action pedal-with-feet\n    :parameters (?p - person ?b - bike)\n    :precondition (and (between-legs ?b ?p) (holding-handbrakes ?p ?b) (on-pedal ?pedal ?p))\n    :effect (and (moving ?b) (not (stationary ?b)))\n)\n\n"
+    ],
+    "stop": [
+        "(:action stop\n    :parameters (?p - person ?b - bike)\n    :precondition (moving ?b)\n    :effect (and (stopped ?b) (not (moving ?b)))\n)\n```\n\nExplanation:\n1. **swing-leg-over-bike**: The person swings their leg over the bike, changing the bike's location from beside the person to between their legs.\n2. **put_foot_on_pedal**: The person places their foot on the pedal, changing the pedal's location from on the ground to on the pedal.\n3. **hold_handbrakes**: The person holds the handbrakes for support, ensuring the bike remains stable.\n4. **pedal-with-feet**: The person starts pedaling, causing the bike to move.\n5. **stop**: The person stops the bike, changing its state from moving to stopped.\n\nThese actions capture the logical steps and conditions needed for each part of the task \"Get on a Bike\"."
+    ]
+}

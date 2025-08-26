@@ -1,0 +1,7 @@
+(remove-bung oil1 bung1 bike1 bottle1)
+(remove-oil-cap oil_cap1 oil_tank1 bung1 bike1 oil1)
+(remove-oil-filter oil_filter1 bottle1 bike1 oil1)
+(screw-bung bung1 bike1 oil1 oil_filter1)
+(recycle-old-oil old_oil1 funnel1 can1 jug1)
+(fill-oil new_oil1 bottle1 oil_tank1 bung1 bike1)
+; cost = 6 (unit cost)

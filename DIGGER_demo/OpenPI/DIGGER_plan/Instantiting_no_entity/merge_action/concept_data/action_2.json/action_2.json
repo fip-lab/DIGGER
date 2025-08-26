@@ -1,0 +1,15 @@
+{
+    "choose": [
+        "(:action choose_boat\n    :parameters (?p - passenger ?b - boat)\n    :precondition (and (not (aboard ?p ?b)) (available ?b))\n    :effect (and (aboard ?p ?b) (not (available ?b)))\n)\n\n"
+    ],
+    "hold": [
+        "(:action hold_rails\n    :parameters (?p - passenger ?b - boat)\n    :precondition (and (aboard ?p ?b) (has_rails ?b))\n    :effect (holding_rails ?p ?b)\n)\n\n",
+        "(:action keep_craft_steady\n    :parameters (?p - passenger ?b - boat)\n    :precondition (and (aboard ?p ?b) (in_center_line ?p ?b))\n    :effect (craft_steady ?b)\n)\n```\n\nExplanation:\n1. `choose_boat`: The passenger chooses an available boat to board.\n   - Preconditions: The boat must be available and the passenger must not already be aboard.\n   - Effects: The passenger is now aboard the boat and the boat is no longer available.\n\n2. `hold_rails`: The passenger holds onto the rails of the boat.\n   - Preconditions: The passenger must be aboard the boat and the boat must have rails.\n   - Effects: The passenger is holding onto the rails.\n\n3. `stabilize_boat`: The passenger stabilizes the boat by holding onto the rails.\n   - Preconditions: The passenger must be aboard the boat and holding onto the rails.\n   - Effects: The boat is stabilized.\n\n4. `remain_center_line`: The passenger remains in the center line of the boat to keep it stable.\n   - Preconditions: The passenger must be aboard the boat and the boat must be stabilized.\n   - Effects: The passenger remains in the center line and lowers their center of gravity.\n\n5. `keep_craft_steady`: The passenger keeps the craft steady while others board.\n   - Preconditions: The passenger must be aboard the boat and in the center line.\n   - Effects: The craft remains steady.\n\nThese actions should capture the intent and logic of the steps and descriptions provided."
+    ],
+    "stabilize": [
+        "(:action stabilize_boat\n    :parameters (?p - passenger ?b - boat)\n    :precondition (and (aboard ?p ?b) (holding_rails ?p ?b))\n    :effect (stabilized ?b)\n)\n\n"
+    ],
+    "remain": [
+        "(:action remain_center_line\n    :parameters (?p - passenger ?b - boat)\n    :precondition (and (aboard ?p ?b) (stabilized ?b))\n    :effect (and (in_center_line ?p ?b) (low_center_of_gravity ?p))\n)\n\n"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "read": [
+        "(:action read_instructions\n    :parameters (?instr - instructions)\n    :precondition (and (available ?instr) (unread ?instr))\n    :effect (and (read ?instr) (known ?instr))\n)\n\n"
+    ],
+    "wash": [
+        "(:action wash_gore_Tex\n    :parameters (?clothing - clothing ?instr - instructions)\n    :precondition (and (dirty ?clothing) (read ?instr) (known ?instr))\n    :effect (and (clean ?clothing) (not (dirty ?clothing)))\n)\n\n",
+        "(:action wash_polar_fleece\n    :parameters (?fleece - polar_fleece ?wm - washing_machine)\n    :precondition (and (empty ?wm) (dirty ?fleece))\n    :effect (and (full_with ?wm ?fleece) (clean ?fleece) (not (dirty ?fleece)) (on ?wm))\n)\n```\n\nThese actions capture the necessary steps and their corresponding preconditions and effects based on the provided task and descriptions."
+    ],
+    "check": [
+        "(:action check_boots\n    :parameters (?npc - npc ?boots - boots)\n    :precondition (and (worn ?boots ?npc) (synthetic ?boots))\n    :effect (and (checked ?boots) (careful ?npc ?boots))\n)\n\n"
+    ],
+    "clean": [
+        "(:action clean_jacket_down\n    :parameters (?npc - npc ?jacket - jacket)\n    :precondition (and (worn ?jacket ?npc) (contains_down ?jacket))\n    :effect (and (clean ?jacket) (not (dirty ?jacket)))\n)\n\n"
+    ]
+}

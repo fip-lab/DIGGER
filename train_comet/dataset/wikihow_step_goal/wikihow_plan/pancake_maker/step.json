@@ -1,0 +1,503 @@
+{
+    "goal": "Make a Pancake Mix Container from a Recycled Ketchup Bottle",
+    "steps": [
+        "Scrub the ketchup bottle thoroughly.",
+        "Place the funnel over the mouth of the bottle.",
+        "Pour pancake batter through the funnel into the empty ketchup bottle.",
+        "Replace the lid and label the bottle.",
+        "Place the bottle in refrigerator.",
+        "Finished."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/f/fa/Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-1.jpg/aid3625046-v4-728px-Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/a/af/Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-2.jpg/aid3625046-v4-728px-Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/3/3e/Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-3.jpg/aid3625046-v4-728px-Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/f/fd/Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-4.jpg/aid3625046-v4-728px-Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/6/61/Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-5.jpg/aid3625046-v4-728px-Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/8/89/Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Intro.jpg/aid3625046-v4-728px-Make-a-Pancake-Mix-Container-from-Recycled-Ketchup-Bottle-Intro.jpg"
+    ],
+    "states": [
+        {
+            "entity": "batter",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "container",
+                        "before": "in bowl",
+                        "after": "in bottle | bottle | in ketchup bottle",
+                        "saliency": 0.6687370600414079,
+                        "attribute_annotation": "container | location"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.22782428661445675,
+                        "attribute_annotation": "emptiness"
+                    }
+                ],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "temperature",
+                        "before": "warm",
+                        "after": "colder | cold",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "container",
+                        "before": "in bottle",
+                        "after": "in pan",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "container | location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "batter | pancake batter",
+                "bowl"
+            ]
+        },
+        {
+            "entity": "bottle",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean",
+                        "saliency": 0.5881717526330004,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.45049059321271046,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet",
+                        "saliency": 0.42395805202988573,
+                        "attribute_annotation": "cleanness | wetness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.3739310468989108,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.3089206949320371,
+                        "attribute_annotation": "emptiness"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle",
+                        "saliency": 0.3154949440393675,
+                        "attribute_annotation": "orientation | location"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on",
+                        "saliency": 0.1379062021784139,
+                        "attribute_annotation": "clarity"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator",
+                        "saliency": 0.28444404436843,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold",
+                        "saliency": 0.21062876946619857,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "ketchup bottle",
+                "bottle | lid"
+            ]
+        },
+        {
+            "entity": "funnel",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer | in cupboard | on table",
+                        "after": "on bottle | in bottle | over mouth of bottle",
+                        "saliency": 0.339769556215681,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.5292105500045009,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.19035616767185767,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "funnel"
+            ]
+        },
+        {
+            "entity": "scrubber",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.4756503735709785,
+                        "attribute_annotation": "wetness"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.36537942209019714,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "sink",
+                "scrubber"
+            ]
+        },
+        {
+            "entity": "pen",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in hand",
+                        "saliency": 0.46439823566477634,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "pen"
+            ]
+        },
+        {
+            "entity": "pan",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.46439823566477634,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "holding batter",
+                        "saliency": 0.21963173002870545,
+                        "attribute_annotation": "emptiness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "pan"
+            ]
+        },
+        {
+            "entity": "fridge",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "filled",
+                        "saliency": 0.3428751462777928,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "fridge"
+            ]
+        },
+        {
+            "entity": "faucet",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.3145797701563297,
+                        "attribute_annotation": "power"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "faucet"
+            ]
+        },
+        {
+            "entity": "hands",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.24596048249167338,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "hands"
+            ]
+        }
+    ],
+    "clusters": {
+        "bottle": {
+            "entity_cluster": [
+                "ketchup bottle",
+                "bottle"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "emptiness": [
+                    "emptiness"
+                ],
+                "orientation": [
+                    "orientation"
+                ],
+                "clarity": [
+                    "clarity"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "funnel": {
+            "entity_cluster": [
+                "funnel"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wetness": [
+                    "wetness"
+                ]
+            }
+        },
+        "lid": {
+            "entity_cluster": [
+                "lid"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "emptiness": [
+                    "emptiness"
+                ],
+                "orientation": [
+                    "orientation"
+                ],
+                "clarity": [
+                    "clarity"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "fridge": {
+            "entity_cluster": [
+                "fridge"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "pen": {
+            "entity_cluster": [
+                "pen"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "batter": {
+            "entity_cluster": [
+                "pancake batter",
+                "bowl",
+                "batter"
+            ],
+            "attribute_cluster": {
+                "container": [
+                    "container"
+                ],
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "emptiness": [
+                    "emptiness"
+                ]
+            }
+        },
+        "pan": {
+            "entity_cluster": [
+                "pan"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "emptiness": [
+                    "emptiness"
+                ]
+            }
+        },
+        "hands": {
+            "entity_cluster": [
+                "hands"
+            ],
+            "attribute_cluster": {
+                "wetness": [
+                    "wetness"
+                ]
+            }
+        },
+        "scrubber": {
+            "entity_cluster": [
+                "sink",
+                "scrubber"
+            ],
+            "attribute_cluster": {
+                "wetness": [
+                    "wetness"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "faucet": {
+            "entity_cluster": [
+                "faucet"
+            ],
+            "attribute_cluster": {
+                "power": [
+                    "power"
+                ]
+            }
+        }
+    }
+}

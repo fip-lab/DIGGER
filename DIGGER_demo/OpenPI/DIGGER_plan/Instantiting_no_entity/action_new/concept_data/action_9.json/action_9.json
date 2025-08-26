@@ -1,0 +1,7 @@
+[
+    "(:action knit_web ; knit a flat web\n      :parameters (?p - player ?web - web)\n      :precondition (and (inventory ?p ?web) (not (knit ?web)))\n      :effect (and (knit ?web))",
+    "(:action knit ;  Knit an item and update its status\n  :parameters (?entity - agent ?item - object)\n  :precondition (and (inventory ?entity ?item) (not (knit ?item)))\n  :effect (knit ?item)\n)",
+    "(:action join ; Join elements and update their status\n  :parameters (?entity - entity ?item1 - object ?item2 - object)\n  :precondition (and (possesses ?entity ?item1) (possesses ?entity ?item2) (not (joined ?item1 ?item2)))\n  :effect (joined ?item1 ?item2)\n)",
+    "(:action wrap ; Wrap the top of an item and update its state\n  :parameters (?p - player ?item - object ?material - material)\n  :precondition (and (inventory ?p ?item) (joined ?item) (not (wrapped ?item)))\n  :effect (and (wrapped ?item))",
+    "(:action sliplargerbeads ; Sew a web or larger item into a rectangular form\n   :parameters (?p - player ?item - object)\n   :precondition (and (inventory ?p ?item) (knit ?item) (not (sewn ?item)))\n   :effect (sewn ?item))"
+]

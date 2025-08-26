@@ -1,0 +1,235 @@
+{
+    "goal": "Grow Fairy Moss Indoors",
+    "steps": [
+        "Ask for it at a nursery or garden center that specializes in pond plant varieties.",
+        "Find a suitable container.",
+        "Fill the bowl with water.",
+        "Add the fairy moss.",
+        "Place in a suitable position.",
+        "Prune."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/0/0e/Grow-Fairy-Moss-Indoors-Step-1.jpg/aid3716229-v4-728px-Grow-Fairy-Moss-Indoors-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/b/b0/Grow-Fairy-Moss-Indoors-Step-2.jpg/aid3716229-v4-728px-Grow-Fairy-Moss-Indoors-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/8/86/Grow-Fairy-Moss-Indoors-Step-3.jpg/aid3716229-v4-728px-Grow-Fairy-Moss-Indoors-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/c/c0/Grow-Fairy-Moss-Indoors-Step-4.jpg/aid3716229-v4-728px-Grow-Fairy-Moss-Indoors-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/f/f6/Grow-Fairy-Moss-Indoors-Step-5.jpg/aid3716229-v4-728px-Grow-Fairy-Moss-Indoors-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/a/aa/Grow-Fairy-Moss-Indoors-Step-6.jpg/aid3716229-v4-728px-Grow-Fairy-Moss-Indoors-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "moss",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery",
+                        "saliency": 0.6854594680681637,
+                        "attribute_annotation": "cost"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter",
+                        "saliency": 0.6297181079789775,
+                        "attribute_annotation": "wetness"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl",
+                        "saliency": 0.33675744545309766,
+                        "attribute_annotation": "position"
+                    }
+                ],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller",
+                        "saliency": 0.5102723363592929,
+                        "attribute_annotation": "size"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned",
+                        "saliency": 0.2908637256463344,
+                        "attribute_annotation": "shape"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "plant",
+                "moss",
+                "fairy moss"
+            ]
+        },
+        {
+            "entity": "container",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop",
+                        "saliency": 0.627408823060997,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller",
+                        "saliency": 0.589902850772416,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table",
+                        "saliency": 0.4721293199554069,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "container",
+                "continer",
+                "containter"
+            ]
+        },
+        {
+            "entity": "water",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "outside bowl",
+                        "after": "inside bowl",
+                        "saliency": 0.5301799649625737,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.32669745713223974,
+                        "attribute_annotation": "wetness"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full | filled",
+                        "saliency": 0.2693303073737856,
+                        "attribute_annotation": "container"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "composition",
+                        "before": "just water",
+                        "after": "now mixed with fairy moss",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "position",
+                        "before": "in unsuitable position",
+                        "after": "in suitable position",
+                        "saliency": 0.26550583072322204,
+                        "attribute_annotation": "position"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "bowl contents",
+                "water",
+                "bowl"
+            ]
+        }
+    ],
+    "clusters": {
+        "moss": {
+            "entity_cluster": [
+                "moss",
+                "plant",
+                "fairy moss"
+            ],
+            "attribute_cluster": {
+                "cost": [
+                    "cost"
+                ],
+                "size": [
+                    "size"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "position": [
+                    "position"
+                ],
+                "shape": [
+                    "shape"
+                ]
+            }
+        },
+        "container": {
+            "entity_cluster": [
+                "container",
+                "continer",
+                "containter"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "water": {
+            "entity_cluster": [
+                "water",
+                "bowl contents",
+                "bowl"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "location": [
+                    "location"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "container": [
+                    "container"
+                ],
+                "position": [
+                    "position"
+                ]
+            }
+        }
+    }
+}

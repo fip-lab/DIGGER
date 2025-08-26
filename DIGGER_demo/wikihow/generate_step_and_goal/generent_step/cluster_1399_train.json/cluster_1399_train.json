@@ -1,0 +1,162 @@
+[
+    {
+        "cluster_label": 1399,
+        "task": "How to Make Butter in a Sealed Container",
+        "step": [
+            "Gather your ingredients (below).",
+            "Pour the cream into your container and seal the lid.",
+            "Start shaking at a steady pace - about one shake per second.",
+            "When the cream thickens to a paste, add a pinch of salt.",
+            "Keep shaking, but do not open the container.",
+            "When a liquid is formed, you should keep shaking steadily, about 100 more times.",
+            "Place paper towel/cheesecloth over cup, and make a well.",
+            "Slowly pour the liquid into the paper towel, and let the liquid drain into the cup below.",
+            "Remove the butter from the cheesecloth or paper towel.",
+            "Gently knead the butter, while running under very cold water to wash the butter, work the butter with your hand or utensil until all the milk is washed out and any liquid is clear,any milk left in will spoil the butter.",
+            "Add salt to taste.",
+            "Let cool and set overnight.",
+            "Enjoy on crackers, toast, etc."
+        ],
+        "steps_predictions": [
+            "gather_ingredients you ingredients (inventory into mixing_bowl) (garnished marshmallow",
+            "put_ingredients_in_container cream_filled container",
+            "start_shank npc",
+            "add-ingredients cream_flavorful cream blender",
+            "open_container container1",
+            "wet_wicks wick1",
+            "place-in-container paper towel1 cup1",
+            "drain_liquid npc",
+            "remove-ingredients cheesecloth or paper towel1",
+            "knead-ingredients butter mixing_bowl",
+            "add-salt-to-treat mixture",
+            "set_oven npc",
+            "cook npc"
+        ]
+    },
+    {
+        "cluster_label": 1399,
+        "task": "How to Measure Butter",
+        "step": [
+            "Slice your butter into cubes.",
+            "Fill a measuring cup up to the 1 cup line with cold water.",
+            "Calculate the amount of butter cups you need.",
+            "Put the butter pieces in the measuring cup.",
+            "Push the butter down if it starts piling up.",
+            "Stop adding butter when the water reaches the point you need.",
+            "Drain the water."
+        ],
+        "steps_predictions": [
+            "slice_ingredients butter_into_balls blender",
+            "fill-cup measuring_cup",
+            "calculate_amounts butter_cup mixing_bowl",
+            "put_ingredients_in_measuring_cup alice",
+            "push_ingredients_into_machine canola_oil stove_knob velveeta",
+            "stop adding_ingredients_to_water water",
+            "drain_water npc water"
+        ]
+    },
+    {
+        "cluster_label": 1399,
+        "task": "How to Soften Butter",
+        "step": [
+            "Cut the butter into \u20442 inch (1.3 cm) squares.",
+            "Put the butter in your microwave for 5 seconds.",
+            "Use 5 seconds increments until the butter is soft but not melted."
+        ],
+        "steps_predictions": [
+            "cut_ingredients alice",
+            "put_ingredients_in_machine alice",
+            "set_burner_add_ingredients stove_knob velveeta"
+        ]
+    },
+    {
+        "cluster_label": 1399,
+        "task": "How to Melt Butter",
+        "step": [
+            "Know how to tell when butter is soft.",
+            "Cut butter into pieces before softening.",
+            "Leave butter on the counter near the oven.",
+            "Soften butter more quickly by mashing or beating it.",
+            "Place a container of butter in a warm water bath.",
+            "Rapidly soften frozen butter by grating it."
+        ],
+        "steps_predictions": [
+            "know_when_to_know you",
+            "cut_ingredients alice",
+            "put_ingredients_in_oven stove_knob velveeta",
+            "soften_ingredients butter mixing_bowl",
+            "place-ingredients container-container water-bath",
+            "break_potatoes potato1 stove1"
+        ]
+    },
+    {
+        "cluster_label": 1399,
+        "task": "How to Melt Glue Sticks",
+        "step": [
+            "Obtain a glue gun at least as big as the glue sticks.",
+            "Plug in the glue gun over cardboard or newspaper.",
+            "Squeeze the trigger of the glue gun to feed the sticks.",
+            "Insert another stick once the first no longer feeds through."
+        ],
+        "steps_predictions": [
+            "obtain_glue_gun npc",
+            "plug_in_glue_gun user1 velveeta",
+            "squeeze_trigger user1 glue1",
+            "insert_stick npc stick"
+        ]
+    },
+    {
+        "cluster_label": 1399,
+        "task": "How to Cut in Butter",
+        "step": [
+            "Cut chilled or frozen butter into \u00bd-inch (1.3 cm) cubes.",
+            "Pulse all ingredients about 8 times in a processor.",
+            "Mix the butter in by hand or continue mixing in the food processor."
+        ],
+        "steps_predictions": [
+            "cut_ingredients alice",
+            "pulse_ingredients blender mixture",
+            "mix_ingredients canola_oil blender"
+        ]
+    },
+    {
+        "cluster_label": 1399,
+        "task": "How to Melt Peanut Butter",
+        "step": [
+            "Measure your peanut butter.",
+            "Scoop peanut butter into the blender or food processor.",
+            "Blend on low speed for 30 seconds."
+        ],
+        "steps_predictions": [
+            "measure-peanut-butter blender-1",
+            "scoop_peanut_butter blender",
+            "blend_on_low_speed blender"
+        ]
+    },
+    {
+        "cluster_label": 1399,
+        "task": "How to Make Butter With a Food Processor",
+        "step": [
+            "Warm the heavy cream to room temperature.",
+            "Prepare the food processor.",
+            "Place the cream in the bowl of the food processor.",
+            "If you like your butter salty, add salt to taste.",
+            "Turn on the food processor to churn the butter, preferably at low speed.",
+            "Drain the buttermilk.",
+            "Squeeze any remaining buttermilk from the butter.",
+            "Place the butter into a container.",
+            "Cool in the refrigerator."
+        ],
+        "steps_predictions": [
+            "warm_cream cream_machine stove_knob velveeta",
+            "prepare-food-processor food_processor blender",
+            "place-ingredients cream_machine mixing_bowl",
+            "add_salt_to_ingredients canola_oil stove_knob alice",
+            "chop_ingredients canola_oil stove_knob blender",
+            "drain_buttermilk canola_oil",
+            "squeeze-lemon water",
+            "place-ingredients butter_container container",
+            "cool-mixture mixture1 refrigerator1"
+        ]
+    }
+]

@@ -1,0 +1,867 @@
+[
+    {
+        "step": [
+            "Expect the compost to heat up.",
+            "Decide whether to add slow-rotting items.",
+            "Be cautious about adding weeds to your compost pile.",
+            "Keep animal waste out of your compost bin.",
+            "Don't add compostable containers to your home compost bin."
+        ],
+        "task": "How to Compost",
+        "goal_state": "compost_materials container",
+        "steps": "```pddl\n0: (add(actor scrap container kitchen touch))\n1: (add(actor grass container garden touch))\n2: (tumble_composter(composter))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 2652,
+                "task": "How to Use Your Home Built Tumble Composter to Create Rich Compost",
+                "step": [
+                    "Choose a warm sunny spot to put the tumbler.",
+                    "Save your vegetable kitchen scraps to add to the tumbler, avoid adding the seeds of vegetables (see tips).",
+                    "Adding grass clippings and other non-woody garden waste is essential (see tips).",
+                    "The contents of the composter need to be moist but not wet.",
+                    "When adding water, use well water or water that has allowed to sit overnight so chlorine can evaporate.",
+                    "Tumble your composter at least once a week.",
+                    "In a composter that is working well, the contents should feel warm to the touch.",
+                    "If your composter is smelly, add a handful of garden lime or dolomite.",
+                    "Don't overfill the tumbler - try to only fill 2/3's to 3/4's full at anytime.",
+                    "Depending on how well you balance the moisture level in the tumbler, you will get 2 or 3 loads of rich compost a season."
+                ],
+                "steps_predictions": [
+                    "choose_spot tumblers",
+                    "save_shelter npc",
+                    "add-edge grass clippings and other non-woody garden waste",
+                    "get_wicks_used npc",
+                    "add_water npc water",
+                    "tumble-and-stabilize-composter you container",
+                    "initiate_composter npc",
+                    "add-lemon water npc",
+                    "fill_tumblers user1 tumbler1",
+                    "balance_water npc water pot"
+                ],
+                "goal_state": " ((selected_area area1) (knowledge npc))",
+                "similar_entity": {
+                    "and": {
+                        "stuff": [
+                            {
+                                "attribute": "location",
+                                "before": "in store",
+                                "after": "in home"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[and]] is related to [[conjunction]]"
+                        ]
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "pot": {
+                        "pot": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the cupboard | in the cabinet",
+                                "after": "on the stovetop | on the stove top"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[-gryde]] is a translation of [[pot]]",
+                            "You are likely to find [[a ficus]] in [[a pot]]",
+                            "[[a pot]] can be used to [[make soup]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "clippings": {
+                        "the clipping": [
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "cut"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "drier | dry",
+                                "after": "wetter | moister | moistened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "pure",
+                                "after": "dipped into rooting hormone"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "tumblers": {
+                        "straw items": [
+                            {
+                                "attribute": "location",
+                                "before": "around house",
+                                "after": "in waste basket"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "disorganized",
+                                "after": "organized"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden": {
+                        "moss": [
+                            {
+                                "attribute": "cost",
+                                "before": "for sale at nursery",
+                                "after": "purchased from nursery"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter"
+                            },
+                            {
+                                "attribute": "position",
+                                "before": "outside of bowl",
+                                "after": "inside of bowl"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "mess",
+                                "after": "pruned"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[flowers]]",
+                            "You are likely to find [[a lizard]] in [[your garden]]",
+                            "[[a garden]] has [[flowers]]"
+                        ]
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "grass": {
+                        "dirt": [
+                            {
+                                "attribute": "location",
+                                "before": "on clothes",
+                                "after": "in drain"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find at [[the park]] is [[grass]]",
+                            "[[grass]] is related to [[lawn]]",
+                            "[[grass]] is a kind of [[plant]].",
+                            "[[grass]] can [[stain your clothes]]"
+                        ]
+                    },
+                    "tumbler": {
+                        "mug": [
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "other": {
+                        "passenger": [
+                            {
+                                "attribute": "speed",
+                                "before": "moving quickly",
+                                "after": "moving slowly"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from boat",
+                                "after": "near boat"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[foreign]] is related to [[other]]"
+                        ]
+                    },
+                    "waste": {
+                        "trash bags": [
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on floor | laying around",
+                                "after": "in waste baskets | in waste baskts | in trashcan"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in waste baskets",
+                                "after": "in trash bag"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "flat",
+                                "after": "rounder"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[waste]] is related to [[garbage]]",
+                            "[[Resíduos]] is a translation of [[waste]]"
+                        ]
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "non-woody": {
+                        "fir": [
+                            {
+                                "attribute": "location",
+                                "before": "in garden",
+                                "after": "in hand"
+                            },
+                            {
+                                "attribute": "cost",
+                                "before": "owned by garden center",
+                                "after": "purchased from garden center"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "at nursery",
+                                "after": "in possession"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier | lighter",
+                                "after": "lighter | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "in container"
+                            },
+                            {
+                                "attribute": "watered",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "contentment",
+                                "before": "thirsty",
+                                "after": "fed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "watered"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller",
+                                "after": "emptier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on plant",
+                                "after": "in new containers"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Compost\n\n**Steps in Natural Language**:\n1. Add your kitchen scraps to the compost container.\n2. Add grass clippings and other garden waste to the compost container.\n3. Tumble the composter to mix the materials."
+    },
+    {
+        "step": [
+            "Use aerated compost tea quickly, preferably within 4 to 6 hours of removing it from the brewer, because it contains living organisms.",
+            "Keep the compost tea cool, away from sunlight, and in an open container to prolong the useful life of the tea.",
+            "Spray compost tea onto plants covering the leaves thoroughly with a fine mist.",
+            "Pour compost tea directly into the soil.",
+            "Use compost tea either full strength or in a 1:1 mix with equal amounts of tea and water for indoor and garden plants.",
+            "Mix compost tea in a 1:3 part tea to water mixture to cover large areas including lawns.",
+            "Use a soil drench and foliar spray application to minimize transplant shock immediately before and after moving plants.",
+            "Spray compost tea on foliage at the first sign of symptoms of foliar diseases, such as black spot or powdery mildew."
+        ],
+        "task": "How to Use Aerated Compost Tea",
+        "goal_state": "get_teepee npc",
+        "steps": "```pddl\n1. (check(agent spot moisture))\n2. (add(actor item container garden aerated))\n3. (apply(actor item spot))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 2652,
+                "task": "How to Use Your Home Built Tumble Composter to Create Rich Compost",
+                "step": [
+                    "Choose a warm sunny spot to put the tumbler.",
+                    "Save your vegetable kitchen scraps to add to the tumbler, avoid adding the seeds of vegetables (see tips).",
+                    "Adding grass clippings and other non-woody garden waste is essential (see tips).",
+                    "The contents of the composter need to be moist but not wet.",
+                    "When adding water, use well water or water that has allowed to sit overnight so chlorine can evaporate.",
+                    "Tumble your composter at least once a week.",
+                    "In a composter that is working well, the contents should feel warm to the touch.",
+                    "If your composter is smelly, add a handful of garden lime or dolomite.",
+                    "Don't overfill the tumbler - try to only fill 2/3's to 3/4's full at anytime.",
+                    "Depending on how well you balance the moisture level in the tumbler, you will get 2 or 3 loads of rich compost a season."
+                ],
+                "steps_predictions": [
+                    "choose_spot tumblers",
+                    "save_shelter npc",
+                    "add-edge grass clippings and other non-woody garden waste",
+                    "get_wicks_used npc",
+                    "add_water npc water",
+                    "tumble-and-stabilize-composter you container",
+                    "initiate_composter npc",
+                    "add-lemon water npc",
+                    "fill_tumblers user1 tumbler1",
+                    "balance_water npc water pot"
+                ],
+                "goal_state": " ((selected_area area1) (knowledge npc))",
+                "similar_entity": {
+                    "and": {
+                        "stuff": [
+                            {
+                                "attribute": "location",
+                                "before": "in store",
+                                "after": "in home"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[and]] is related to [[conjunction]]"
+                        ]
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "pot": {
+                        "pot": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the cupboard | in the cabinet",
+                                "after": "on the stovetop | on the stove top"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[-gryde]] is a translation of [[pot]]",
+                            "You are likely to find [[a ficus]] in [[a pot]]",
+                            "[[a pot]] can be used to [[make soup]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "clippings": {
+                        "the clipping": [
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "cut"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "drier | dry",
+                                "after": "wetter | moister | moistened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "pure",
+                                "after": "dipped into rooting hormone"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "tumblers": {
+                        "straw items": [
+                            {
+                                "attribute": "location",
+                                "before": "around house",
+                                "after": "in waste basket"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "disorganized",
+                                "after": "organized"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden": {
+                        "moss": [
+                            {
+                                "attribute": "cost",
+                                "before": "for sale at nursery",
+                                "after": "purchased from nursery"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter"
+                            },
+                            {
+                                "attribute": "position",
+                                "before": "outside of bowl",
+                                "after": "inside of bowl"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "mess",
+                                "after": "pruned"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[flowers]]",
+                            "You are likely to find [[a lizard]] in [[your garden]]",
+                            "[[a garden]] has [[flowers]]"
+                        ]
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "grass": {
+                        "dirt": [
+                            {
+                                "attribute": "location",
+                                "before": "on clothes",
+                                "after": "in drain"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find at [[the park]] is [[grass]]",
+                            "[[grass]] is related to [[lawn]]",
+                            "[[grass]] is a kind of [[plant]].",
+                            "[[grass]] can [[stain your clothes]]"
+                        ]
+                    },
+                    "tumbler": {
+                        "mug": [
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "other": {
+                        "passenger": [
+                            {
+                                "attribute": "speed",
+                                "before": "moving quickly",
+                                "after": "moving slowly"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from boat",
+                                "after": "near boat"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[foreign]] is related to [[other]]"
+                        ]
+                    },
+                    "waste": {
+                        "trash bags": [
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on floor | laying around",
+                                "after": "in waste baskets | in waste baskts | in trashcan"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in waste baskets",
+                                "after": "in trash bag"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "flat",
+                                "after": "rounder"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[waste]] is related to [[garbage]]",
+                            "[[Resíduos]] is a translation of [[waste]]"
+                        ]
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "non-woody": {
+                        "fir": [
+                            {
+                                "attribute": "location",
+                                "before": "in garden",
+                                "after": "in hand"
+                            },
+                            {
+                                "attribute": "cost",
+                                "before": "owned by garden center",
+                                "after": "purchased from garden center"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "at nursery",
+                                "after": "in possession"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier | lighter",
+                                "after": "lighter | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "in container"
+                            },
+                            {
+                                "attribute": "watered",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "contentment",
+                                "before": "thirsty",
+                                "after": "fed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "watered"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller",
+                                "after": "emptier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on plant",
+                                "after": "in new containers"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Use Aerated Compost Tea\n\n**Steps in Natural Language**:\n1. Check the moisture level in the area of your garden where you plan to use the aerated compost tea.\n2. Add the aerated compost tea from its container to the designated spot in your garden.\n3. Apply the aerated compost tea evenly to the garden area to nourish your plants."
+    }
+]

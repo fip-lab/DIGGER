@@ -1,0 +1,9 @@
+[
+    "(:action turn ; Transform an item into another state or type\n  :parameters (?p - player ?item - object ?tool - tool ?new_type - type ?condition - condition ?new_condition - condition)\n  :precondition (and (at ?p ?item) (has ?p ?tool) (condition ?item ?condition))\n  :effect (and (not (condition ?item ?condition))",
+    "(:action use ; Use an item and transform its type\n  :parameters (?p - player ?item - object ?tool - object)\n  :precondition (and (at ?p ?item) (has ?p ?tool) (type ?item ?old_type))\n  :effect (and (not (type ?item ?old_type))",
+    "(:action use\n    :parameters (?p - player ?up - underpants ?sc - scissors)\n    :precondition (and (at ?p ?up) (has ?p ?sc) (type ?up underpants))\n    :effect (and (not (type ?up underpants))",
+    "(:action use\n    :parameters (?p - player ?up - underpants)\n    :precondition (and (at ?p ?up) (type ?up old_underwear))\n    :effect (and (not (type ?up old_underwear))",
+    "(:action wear_as_superhero_costume\n    :parameters (?c - child ?up - underpants)\n    :precondition (and (at ?c ?up) (type ?up old_underwear))\n    :effect (and (wearing ?c ?up) (playing_superhero ?c))",
+    "(:action wear ; General action for wearing an item\n    :parameters (?actor - person ?item - object ?role - activity)\n    :precondition (and (at ?actor ?item) (type ?item wearable))\n    :effect (and (wearing ?actor ?item) (performing ?actor ?role))",
+    "(:action donate\n    ; Donate an item and update the status\n    :parameters (?p - person ?item - object)\n    :precondition (and (at ?p ?item) (type ?item object))\n    :effect (and (not (has ?p ?item))"
+]

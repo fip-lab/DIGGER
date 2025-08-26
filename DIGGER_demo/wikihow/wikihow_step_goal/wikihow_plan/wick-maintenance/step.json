@@ -1,0 +1,260 @@
+{
+    "goal": "Prevent a Wick Lamp or Stove from Smoking",
+    "steps": [
+        "Pour some white vinegar into a small container deep enough for dipping.",
+        "Remove the wick from the lamp or stove, or use wicks yet to be inserted.",
+        "Dip each wick into the vinegar.",
+        "Allow to dry thoroughly.",
+        "Use once dry."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/8/8b/Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-1.jpg/aid494170-v4-728px-Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/9/93/Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-2.jpg/aid494170-v4-728px-Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/a/a6/Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-3.jpg/aid494170-v4-728px-Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/0/01/Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-4.jpg/aid494170-v4-728px-Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/f/f4/Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-5.jpg/aid494170-v4-728px-Prevent-a-Wick-Lamp-or-Stove-from-Smoking-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "wicks",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "cost",
+                        "before": "on sale at store",
+                        "after": "purchased from store",
+                        "saliency": 0.6060501495284104,
+                        "attribute_annotation": "cost"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "on lamp",
+                        "after": "removed",
+                        "saliency": 0.4363929146537842,
+                        "attribute_annotation": "orientation"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "composition",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "composition | wetness | moisture"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "composition",
+                        "before": "wet",
+                        "after": "dry",
+                        "saliency": 0.44824016563146996,
+                        "attribute_annotation": "composition | wetness | moisture"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry",
+                        "saliency": 0.3045778697952611,
+                        "attribute_annotation": "dryness"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "burned",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "composition | wetness | moisture"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lamp",
+                        "saliency": 0.28163100989187945,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "heated",
+                        "saliency": 0.11258339084426042,
+                        "attribute_annotation": "temperature"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "wicks",
+                "wick"
+            ]
+        },
+        {
+            "entity": "vinegar",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle",
+                        "after": "cup | in container | in smaller container",
+                        "saliency": 0.47952610996089257,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in container",
+                        "after": "in wick",
+                        "saliency": 0.4277662755923626,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "vinegar"
+            ]
+        },
+        {
+            "entity": "bottle",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.4565217391304348,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.27294685990338163,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.22705314009661837,
+                        "attribute_annotation": "moisture"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "container",
+                "bottle"
+            ]
+        },
+        {
+            "entity": "lamp",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.33609385783298823,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "composition",
+                        "before": "wicked",
+                        "after": "wickless",
+                        "saliency": 0.38463308028525417,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "lamp",
+                "pot"
+            ]
+        }
+    ],
+    "clusters": {
+        "bottle": {
+            "entity_cluster": [
+                "bottle",
+                "container"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "moisture": [
+                    "moisture"
+                ]
+            }
+        },
+        "wicks": {
+            "entity_cluster": [
+                "wicks",
+                "wick"
+            ],
+            "attribute_cluster": {
+                "cost": [
+                    "cost"
+                ],
+                "wetness": [
+                    "moisture",
+                    "dryness",
+                    "wetness"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "orientation": [
+                    "orientation"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "vinegar": {
+            "entity_cluster": [
+                "vinegar"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "lamp": {
+            "entity_cluster": [
+                "lamp",
+                "pot"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "volume": [
+                    "volume"
+                ]
+            }
+        }
+    }
+}

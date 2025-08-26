@@ -1,0 +1,44 @@
+[
+    {
+        "cluster_label": 2606,
+        "task": "How to Create a Time Capsule",
+        "step": [
+            "Mark the container with the current date and the intended opening date.",
+            "Do something to remind yourself or others about the time capsule.",
+            "Make extra arrangements for a time capsule that will outlive you.",
+            "Seal the time capsule and store it.",
+            "Place a marker of some kind on the exact site of a buried capsule."
+        ],
+        "steps_predictions": [
+            "mark_container container1",
+            "remind_you_about_time_commissioner time_cocoa",
+            "make_add_extra_amplifications npc time capsule",
+            "store_time_commissioner npc basement",
+            "place_marker npc ground_surface"
+        ],
+        "goal_state": " ((not (in npc time_cocoa)))"
+    },
+    {
+        "cluster_label": 2606,
+        "task": "How to Create a Memory Cookbook",
+        "step": [
+            "Decide on who the memory cookbook will focus.",
+            "Set about gathering together the memorabilia.",
+            "Find photographs, anecdotes, quotes, and other relevant snippets to place into the memory cookbook.",
+            "Consider asking other members of your family or circle of friends for recipes and ideas.",
+            "Decide on the need for illustrations.",
+            "Choose your method of preparing and printing the cookbook.",
+            "Distribute the memory cookbook."
+        ],
+        "steps_predictions": [
+            "determine_focus memory_cookbook",
+            "gather_memebers npc",
+            "place_in_memory_cookbook npc kitchen",
+            "get_know npc kitchen",
+            "determine_need_for_illustrator npc covering_tracks track",
+            "choose_method_of_prepare cookbook",
+            "create_memebers_know npc memory_cookbook"
+        ],
+        "goal_state": " ((knowledge npc memory_cookbook))"
+    }
+]

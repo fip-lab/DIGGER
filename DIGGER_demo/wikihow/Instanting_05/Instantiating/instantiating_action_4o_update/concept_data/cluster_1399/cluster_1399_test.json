@@ -1,0 +1,38 @@
+[
+    {
+        "task": "How to Melt Butter",
+        "instantiting_action": [
+            "move(hand target)",
+            "melt(item hand place device)",
+            "melt(item hand refrigerator device)",
+            "add(entity bowl ingredient1 ingredient2 actor)",
+            "add(entity container ingredient1 ingredient2 actor)",
+            "cut(item p device)",
+            "obtain(actor resource)",
+            "put(actor item place second)",
+            "put(actor item place time)",
+            "put(actor item place well)",
+            "put(actor item place pinch)",
+            "put(actor item place pace)",
+            "put(actor item place speed)",
+            "put(actor item refrigerator second)",
+            "put(actor item refrigerator time)",
+            "put(actor item refrigerator well)",
+            "put(actor item refrigerator pinch)",
+            "put(actor item refrigerator pace)",
+            "put(actor item refrigerator speed)",
+            "measure(hand resource)",
+            "push(hand item destination)",
+            "stop(actor entity)",
+            "drain(entity hand)",
+            "warm(entity source target initial_temp final_temp)",
+            "open(entity)",
+            "pulse(device entity operator)",
+            "manage_resource(entity resource place bowl)",
+            "manage_resource(entity resource place container)",
+            "manage_resource(entity resource refrigerator bowl)",
+            "manage_resource(entity resource refrigerator container)",
+            "calculate(entity resource)"
+        ]
+    }
+]

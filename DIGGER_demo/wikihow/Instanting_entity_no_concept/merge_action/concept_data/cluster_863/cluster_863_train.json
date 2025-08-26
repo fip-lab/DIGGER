@@ -1,0 +1,178 @@
+{
+    "freeze": [
+        "(:action freeze_wicks; freeze the dripped wax to make it easier to remove\n    :parameters (?p - player ?wick - wick)\n    :precondition (and (inventory ?p ?wick) (composition ?wick wet))\n    :effect (and (composition ?wick frozen))\n)\n\n",
+        "(:action freeze_mixture\n    :parameters (?m - mixture)\n    :precondition (not (frozen ?m))\n    :effect (frozen ?m)\n)\n\n;; Action to make the gum harden using ice\n"
+    ],
+    "wash": [
+        "(:action scrape_wicks; use a dull knife or fingernail to scrape off the frozen wax\n    :parameters (?p - player ?wick - wick ?knife - knife)\n    :precondition (and (inventory ?p ?wick) (composition ?wick frozen) (inventory ?p ?knife))\n    :effect (and (composition ?wick scraped))\n)\n\n",
+        "(:action wash_and_dry_skin\n    :parameters (?s - skin)\n    :precondition (and\n      (clean ?s)\n      (wet ?s)\n    )\n    :effect (and\n      (dry ?s)\n      (not (wet ?s))\n    )\n)\n```\n\n#### Action 2: Grow Hair\n```lisp\n",
+        "(:action wash_all\n  :parameters (?npc - agent)\n  :precondition (and (at ?npc bathroom) (test_patch ?npc))\n  :effect (and (not (nair_applied ?npc)) (clean ?npc))\n)\n\n",
+        "(:action wash_hand\n    :parameters (?npc - npc ?soap - soap ?water - water)\n    :precondition (and (inventory ?npc ?soap) (inventory ?npc ?water))\n    :effect (and (clean_hands ?npc))\n)\n\n",
+        "(:action wash_hand_again\n    :parameters (?npc - npc ?soap - soap ?water - water)\n    :precondition (and (inventory ?npc ?soap) (inventory ?npc ?water))\n    :effect (and (clean_hands ?npc))\n)\n```\n\n### Explanation:\n\n- **remove_wicks**: This action removes wicks from the npc's inventory.\n- **wash_hand**: This action washes the npc's hands with soap and water.\n- **take_ganda_beroza**: This action allows the npc to take ganda beroza.\n- **take_pinch**: This action allows the npc to take a pinch of ganda beroza.\n- **apply_gandas_painting**: This action applies the pinch of ganda beroza to the user's body hair.\n- **apply_ganda_beroza**: This action applies the pinch of ganda beroza to the npc's body hair.\n- **remove_wailmer**: This action removes unwanted hair from the npc's body where ganda beroza was applied.\n- **clean_skin**: This action cleans the npc's skin after hair removal.\n- **remove_ganda_beroza**: This action removes ganda beroza from the npc's fingers.\n- **wash_hand_again**: This action washes the npc's hands again with soap and water.\n\nEach action's preconditions and effects are designed to reflect the changes in the entity states as described in the task steps.",
+        "(:action wash_and_condition_hair\n    :parameters (?u - user ?h - hair)\n    :precondition (and (has_in_hand ?u ?shampoo) (has_in_hand ?u ?conditioner))\n    :effect (and (clean ?h) (conditioned ?h) (not (dirty ?h)) (not (unconditioned ?h)))\n)\n```\n\n### Descriptions and State Changes:\n\n1. **pour_oil_into_hand**:\n   - **Parameters**: The user (`user1`), the bottle (`bottle1`), the oil (`oil1`), and the container (`container1`).\n   - **Preconditions**: The user is holding the bottle, the bottle contains oil, and the bottle is in the container.\n   - **Effect**: The user has oil in their hand, and the bottle no longer contains oil.\n\n2. **massage_oil**:\n   - **Parameters**: The oil (`oil1`) and the wax (`w1`).\n   - **Preconditions**: The user has oil in their hand, and the wax is in the hair.\n   - **Effect**: The wax is loosened, and it is no longer stuck in the hair.\n\n3. **pull_wicks_free**:\n   - **Parameters**: The wax (`w1`).\n   - **Preconditions**: The wax is loosened.\n   - **Effect**: The wax is removed from the hair.\n\n4. **wash_and_condition_hair**:\n   - **Parameters**: The user (`user1`) and the hair (`hair`).\n   - **Preconditions**: The user has shampoo and conditioner in their hand.\n   - **Effect**: The hair is clean and conditioned, and it is no longer dirty and unconditioned.\n\nThese actions reflect the detailed steps and state changes required to complete the task of getting wax out of hair.",
+        "(:action trim_hair\n  :parameters (?npc - agent)\n  :precondition (and (at ?npc bathroom) (not (trimmed ?npc)))\n  :effect (trimmed ?npc)\n)\n\n",
+        "(:action trim_butt_hair\n    :parameters (?npc - npc ?tool - tool)\n    :precondition (and (cream_applied ?npc))\n    :effect (hair_trimmed ?npc)\n  )\n\n  ;; Action 4: Consider laser hair removal for a permanent fix\n  ",
+        "(:action put_goggles_on_person\n    :parameters (?p - person ?g - goggles)\n    :precondition (and (goggles_available ?g) (not (goggles_on ?p)))\n    :effect (and (goggles_on ?p) (not (goggles_available ?g)))\n  )\n\n",
+        "(:action rub_with_vinegar\n    :parameters (?p - person ?v - vinegar ?w - water)\n    :precondition (and (vinegar_in_container ?v) (water_in_container ?w) (goggles_on ?p))\n    :effect (and (vinegar_used ?v) (water_used ?w) (slime_loosened ?p))\n  )\n\n",
+        "(:action pour_oil_into_hand\n    :parameters (?u - user ?b - bottle ?o - oil ?c - container)\n    :precondition (and (holding ?u ?b) (contains ?b ?o) (in ?b ?c))\n    :effect (and (has_in_hand ?u ?o) (not (contains ?b ?o)))\n)\n\n",
+        "(:action squirt_lemon_water\n    :parameters (?w - water)\n    :precondition (and (wet ?w))\n    :effect (and (squirted ?w) (not (dry ?w)))\n)\n\n"
+    ],
+    "remove": [
+        "(:action remove_wicks\n    :parameters (?npc - npc)\n    :precondition (and (npc ?npc))\n    :effect (and (not (npc ?npc)))\n)\n\n",
+        "(:action remove_excess_wax\n    :parameters (?w - wax ?o - oil ?a - armpit)\n    :precondition (and (excess_wax ?a) (available ?o))\n    :effect (and (removed_wax ?a) (not (excess_wax ?a)))\n)\n\n",
+        "(:action remove_wailmer\n    :parameters (?npc - npc)\n    :precondition (and (applied ?npc))\n    :effect (and (removed_hair ?npc))\n)\n\n",
+        "(:action remove_ganda_beroza\n    :parameters (?npc - npc ?ganda - ganda ?beroza - beroza)\n    :precondition (and (applied ?npc ?ganda ?beroza))\n    :effect (and (not (applied ?npc ?ganda ?beroza)))\n)\n\n",
+        "(:action remove_slime\n    :parameters (?p - person)\n    :precondition (and (has_slime ?p))\n    :effect (and (slime_removed ?p) (not (has_slime ?p)))\n  )\n\n",
+        "(:action remove_lock\n    :parameters (?npc - npc ?tool - tool)\n    :precondition (and (hair_trimmed ?npc))\n    :effect (laser_removed ?npc)\n  )\n)\n```\n\nExplanation of actions:\n\n1. **pull_hairs**:\n   - **Parameters**: `?npc` (the person whose hair is being removed), `?tool` (the epilator).\n   - **Preconditions**: The NPC must have hair (`has_hair ?npc`).\n   - **Effects**: The hair is pulled (`hair_pulled ?npc`), and the NPC no longer has hair (`not (has_hair ?npc)`).\n\n2. **apply_depilatory_cream**:\n   - **Parameters**: `?npc` (the person whose hair is being removed), `?tool` (the depilatory cream).\n   - **Preconditions**: The hair must be pulled (`hair_pulled ?npc`).\n   - **Effects**: The cream is applied (`cream_applied ?npc`).\n\n3. **trim_butt_hair**:\n   - **Parameters**: `?npc` (the person whose hair is being removed), `?tool` (the electric clipper).\n   - **Preconditions**: The cream must be applied (`cream_applied ?npc`).\n   - **Effects**: The hair is trimmed (`hair_trimmed ?npc`).\n\n4. **remove_lock**:\n   - **Parameters**: `?npc` (the person whose hair is being removed), `?tool` (the laser removal tool).\n   - **Preconditions**: The hair must be trimmed (`hair_trimmed ?npc`).\n   - **Effects**: The hair is permanently removed (`laser_removed ?npc`).\n\nThese actions reflect the steps and state changes necessary for the task of removing butt hair.",
+        "(:action clean_area\n    :parameters (?a - armpit)\n    :precondition (and (removed_wax ?a))\n    :effect (and (clean ?a) (not (removed_wax ?a)))\n)\n```\n\n### Entity States:\n- **Person (you)**:\n  - `focused_on_waxing` (before: true, after: false)\n  - `examined_armpits` (before: false, after: true)\n\n- **Mirror**:\n  - `clean` (before: true, after: true) - Assume the mirror remains clean for simplicity.\n\n- **Wax**:\n  - `excess_wax` (before: true, after: false)\n  - `removed_wax` (before: false, after: true)\n\n- **Oil**:\n  - `available` (before: true, after: true) - Assume oil remains available for simplicity.\n\n- **Armpit (area)**:\n  - `clean` (before: false, after: true)\n  - `removed_wax` (before: false, after: true)\n\n### Summary:\n1. **Examine your armpits in the mirror**:\n   - Preconditions: You are focused on waxing and the mirror is clean.\n   - Effects: You have examined your armpits and are no longer focused on waxing.\n\n2. **Remove excess wax with oil**:\n   - Preconditions: There is excess wax on your armpits and oil is available.\n   - Effects: Excess wax is removed from your armpits.\n\n3. **Clean the area**:\n   - Preconditions: Wax has been removed from your armpits.\n   - Effects: Your armpits are clean.\n\nThese PDDL actions accurately reflect the state changes required for each step of the task \"How to Wax Your Armpits.\"",
+        "(:action clean_shelter\n  :parameters (?npc - agent)\n  :precondition (and (at ?npc shelter) (visibility ?npc visible))\n  :effect (and (visibility ?npc invisible) (not (visibility ?npc visible)))\n)\n\n",
+        "(:action clean_skin\n    :parameters (?npc - npc)\n    :precondition (and (removed_hair ?npc))\n    :effect (and (clean_skin ?npc))\n)\n\n"
+    ],
+    "examine": [
+        "(:action examine_armpits_in_mirror\n    :parameters (?p - person ?m - mirror)\n    :precondition (and (focused_on_waxing ?p) (clean ?m))\n    :effect (and (examined_armpits ?p) (not (focused_on_waxing ?p)))\n)\n\n"
+    ],
+    "make": [
+        "(:action grow_hair\n    :parameters (?n - npc)\n    :precondition (and\n      (bare ?n)\n    )\n    :effect (and\n      (hair_grown ?n)\n      (not (bare ?n))\n    )\n)\n```\n\n#### Action 3: Plan Wax\n```lisp\n",
+        "(:action make_gum_harden\n    :parameters (?a - person ?g - gum ?i - ice)\n    :precondition (and\n      (in_hair ?g ?a)\n      (frozen ?i)\n    )\n    :effect (hardened ?g)\n)\n\n;; Action to chip the hardened gum out of hair\n",
+        "(:action make_smooth_legs\n    :parameters (?p - you ?l - lotion)\n    :precondition (and (dry ?p) (not (smooth ?p)))\n    :effect (and (smooth ?p) (used ?l))\n)\n```\n\n### Descriptions and State Changes:\n1. **drink_water**:\n    - **Parameters**: `?npc - npc`, `?w - water`\n    - **Preconditions**: The NPC is not hydrated and water is available.\n    - **Effects**: The NPC becomes hydrated.\n\n2. **add_stick_deodorant**:\n    - **Parameters**: `?stick - stick1`, `?d - deodorant`\n    - **Preconditions**: Stick deodorant is available and not used.\n    - **Effects**: Deodorant is used.\n\n3. **squirt_lemon_water**:\n    - **Parameters**: `?w - water`\n    - **Preconditions**: Water is wet.\n    - **Effects**: Water is squirted and no longer dry.\n\n4. **shave_legs**:\n    - **Parameters**: `?p - you`, `?t - towel1`\n    - **Preconditions**: The person is wet and not shaved.\n    - **Effects**: The person is shaved and the towel becomes dirty.\n\n5. **dry_legs**:\n    - **Parameters**: `?p - you`, `?t - towel`\n    - **Preconditions**: The person is shaved and wet.\n    - **Effects**: The person becomes dry and the towel becomes wet.\n\n6. **make_smooth_legs**:\n    - **Parameters**: `?p - you`, `?l - lotion`\n    - **Preconditions**: The person is dry and not smooth.\n    - **Effects**: The person becomes smooth and the lotion is used.\n\nThese actions accurately reflect the steps involved in shaving your legs out of water, capturing the relevant state changes for each entity involved."
+    ],
+    "plan": [
+        "(:action plan_wax\n    :parameters (?w - wick)\n    :precondition (and\n      (on_sale ?w)\n    )\n    :effect (and\n      (purchased ?w)\n      (not (on_sale ?w))\n    )\n)\n```\n\n### Explanation:\n1. **wash_and_dry_skin**: This action represents washing and drying the skin. The preconditions ensure the skin is clean and wet before washing. The effect makes the skin dry and not wet.\n2. **grow_hair**: This action represents growing hair. The precondition ensures the NPC's hair is bare before growing. The effect makes the NPC's hair grown and not bare.\n3. **plan_wax**: This action represents planning to wax, which in this context is interpreted as purchasing a wick. The precondition ensures the wick is on sale before purchasing. The effect makes the wick purchased and not on sale.\n\nThese actions capture the state changes of the entities involved in the task of waxing with honey."
+    ],
+    "wet": [
+        "(:action wet_skin\n  :parameters (?npc - agent)\n  :precondition (and (at ?npc bathroom) (not (wet ?npc)))\n  :effect (wet ?npc)\n)\n\n",
+        "(:action dry_legs\n    :parameters (?p - you ?t - towel)\n    :precondition (and (shaved ?p) (wet ?p))\n    :effect (and (dry ?p) (wet ?t))\n)\n\n"
+    ],
+    "gather": [
+        "(:action gather_time\n  :parameters (?npc - agent)\n  :precondition (and (at ?npc bathroom) (nair_applied ?npc))\n  :effect (waiting ?npc)\n)\n\n"
+    ],
+    "wait": [
+        "(:action wait_for_loot\n  :parameters (?npc - agent)\n  :precondition (and (at ?npc bathroom) (clean ?npc))\n  :effect (and (moisturized ?npc) (not (waiting ?npc)))\n)\n\n"
+    ],
+    "maintain": [
+        "(:action maintain_bikini\n  :parameters (?npc - agent)\n  :precondition (and (at ?npc bathroom) (moisturized ?npc))\n  :effect (maintained ?npc)\n)\n```\n\n### Explanation of Actions:\n\n1. **remove_wailmer**: This action represents the NPC camouflaging their shelter.\n   - **Parameters**: `?npc` - agent\n   - **Preconditions**: NPC is at the shelter and the decoration is bare.\n   - **Effects**: The decoration becomes camouflaged.\n\n2. **clean_shelter**: This action represents the NPC cleaning the shelter.\n   - **Parameters**: `?npc` - agent\n   - **Preconditions**: NPC is at the shelter and is visible.\n   - **Effects**: The NPC becomes invisible.\n\n3. **trim_hair**: This action represents the NPC trimming their hair.\n   - **Parameters**: `?npc` - agent\n   - **Preconditions**: NPC is in the bathroom and hair is not trimmed.\n   - **Effects**: Hair is trimmed.\n\n4. **wet_skin**: This action represents the NPC wetting their skin.\n   - **Parameters**: `?npc` - agent\n   - **Preconditions**: NPC is in the bathroom and skin is not wet.\n   - **Effects**: Skin becomes wet.\n\n5. **apply_nair**: This action represents the NPC applying Nair to their skin.\n   - **Parameters**: `?npc` - agent, `?nair` - item\n   - **Preconditions**: NPC is in the bathroom, has Nair in inventory, skin is wet, and Nair is not yet applied.\n   - **Effects**: Nair is applied to the NPC.\n\n6. **gather_time**: This action represents the NPC waiting for the Nair to work.\n   - **Parameters**: `?npc` - agent\n   - **Preconditions**: NPC is in the bathroom and Nair is applied.\n   - **Effects**: NPC is waiting.\n\n7. **in_test_patch**: This action represents the NPC testing a patch of skin to see if the Nair has worked.\n   - **Parameters**: `?npc` - agent\n   - **Preconditions**: NPC is in the bathroom and waiting.\n   - **Effects**: Test patch is performed.\n\n8. **wash_all**: This action represents the NPC washing off all the Nair.\n   - **Parameters**: `?npc` - agent\n   - **Preconditions**: NPC is in the bathroom and has performed a test patch.\n   - **Effects**: Nair is washed off and the NPC is clean.\n\n9. **wait_for_loot**: This action represents the NPC waiting for 24 hours to moisturize their skin.\n   - **Parameters**: `?npc` - agent\n   - **Preconditions**: NPC is in the bathroom and clean.\n   - **Effects**: NPC is moisturized and no longer waiting.\n\n10. **maintain_bikini**: This action represents the NPC maintaining their bikini area.\n    - **Parameters**: `?npc` - agent\n    - **Preconditions**: NPC is in the bathroom and moisturized.\n    - **Effects**: Bikini area is maintained.\n\nThese actions capture the state transitions and logic required to complete the task of removing hair from the bikini area using Nair."
+    ],
+    "take": [
+        "(:action take_ganda_beroza\n    :parameters (?npc - npc ?ganda - ganda)\n    :precondition (and (inventory ?npc))\n    :effect (and (inventory ?npc ?ganda))\n)\n\n",
+        "(:action take_pinch\n    :parameters (?npc - npc ?ganda - ganda)\n    :precondition (and (inventory ?npc ?ganda))\n    :effect (and (pinch_taken ?npc ?ganda))\n)\n\n",
+        "(:action pull_wicks_free\n    :parameters (?w - wax)\n    :precondition (and (loosened ?w))\n    :effect (and (removed ?w) (not (loosened ?w)))\n)\n\n",
+        "(:action pull_hairs\n    :parameters (?npc - npc ?tool - tool)\n    :precondition (and (has_hair ?npc))\n    :effect (and\n              (hair_pulled ?npc)\n              (not (has_hair ?npc)))\n  )\n\n  ;; Action 2: Apply a depilatory cream to get rid of hairs at the surface\n  "
+    ],
+    "use": [
+        "(:action use_conditioner\n    :parameters (?p - person ?c - conditioner)\n    :precondition (and (slime_loosened ?p) (conditioner_available ?c))\n    :effect (and (hair_clean ?p) (not (slime_loosened ?p)) (not (conditioner_available ?c)))\n  )\n```\n\n### Task Description and Entity State Analysis\n\n1. **remove_slime alice**\n    - **Action Name**: `remove_slime`\n    - **Parameters**: `?p - person`\n    - **Preconditions**: `has_slime ?p`\n    - **Effects**: `slime_removed ?p`, `not (has_slime ?p)`\n\n2. **put_goggles_on_person person**\n    - **Action Name**: `put_goggles_on_person`\n    - **Parameters**: `?p - person`, `?g - goggles`\n    - **Preconditions**: `goggles_available ?g`, `not (goggles_on ?p)`\n    - **Effects**: `goggles_on ?p`, `not (goggles_available ?g)`\n\n3. **rub_with_vinegar alice vinegar1 water1**\n    - **Action Name**: `rub_with_vinegar`\n    - **Parameters**: `?p - person`, `?v - vinegar`, `?w - water`\n    - **Preconditions**: `vinegar_in_container ?v`, `water_in_container ?w`, `goggles_on ?p`\n    - **Effects**: `vinegar_used ?v`, `water_used ?w`, `slime_loosened ?p`\n\n4. **use_conditioner**\n    - **Action Name**: `use_conditioner`\n    - **Parameters**: `?p - person`, `?c - conditioner`\n    - **Preconditions**: `slime_loosened ?p`, `conditioner_available ?c`\n    - **Effects**: `hair_clean ?p`, `not (slime_loosened ?p)`, `not (conditioner_available ?c)`\n\n### Notes:\n- The action `drain_sliplargerbeads npc` seems irrelevant to the task of removing slime from hair and has been omitted.\n- The action `use_conditioner` was added to reflect the final step of rinsing out the remaining slime with conditioner, which was implied in the task description but not explicitly listed in the steps provided."
+    ],
+    "chip": [
+        "(:action chip_gum\n    :parameters (?a - person ?g - gum ?tool - tool)\n    :precondition (and\n      (in_hair ?g ?a)\n      (hardened ?g)\n    )\n    :effect (and\n      (not (in_hair ?g ?a))\n      (removed ?g)\n    )\n)\n```\n\n### Task Description and Entity State Transitions\n\n#### Task: How to Get Gum Out of Your Hair\n\n1. **Freeze Mixture**:\n   - **Action Name**: `freeze_mixture`\n   - **Parameters**: ?m - mixture\n   - **Preconditions**: The mixture is not already frozen.\n   - **Effect**: The mixture becomes frozen.\n\n2. **Make Gum Harden**:\n   - **Action Name**: `make_gum_harden`\n   - **Parameters**: ?a - person (Alice), ?g - gum, ?i - ice\n   - **Preconditions**: The gum is in the person's hair, and the ice is frozen.\n   - **Effect**: The gum becomes hardened.\n\n3. **Chip Hardened Gum**:\n   - **Action Name**: `chip_gum`\n   - **Parameters**: ?a - person (Alice), ?g - gum, ?tool - tool\n   - **Preconditions**: The gum is in the person's hair, and the gum is hardened.\n   - **Effect**: The gum is removed from the hair."
+    ],
+    "drink": [
+        "(:action drink_water\n    :parameters (?npc - npc ?w - water)\n    :precondition (and (not (hydrated ?npc)) (available ?w))\n    :effect (hydrated ?npc)\n)\n\n"
+    ],
+    "add": [
+        "(:action add_stick_deodorant\n    :parameters (?stick - stick1 ?d - deodorant)\n    :precondition (and (available ?stick) (not (used ?d)))\n    :effect (used ?d)\n)\n\n"
+    ],
+    "shave": [
+        "(:action shave_legs\n    :parameters (?p - you ?t - towel1)\n    :precondition (and (wet ?p) (not (shaved ?p)))\n    :effect (and (shaved ?p) (dirty ?t))\n)\n\n"
+    ],
+    "CombHairWithDryWicks": [
+        "(:action CombHairWithDryWicks\n    :parameters (?p - person ?h - hair)\n    :precondition (not (combed ?h))\n    :effect (combed ?h)\n  )\n\n  "
+    ],
+    "WarmPeaSizedWax": [
+        "(:action WarmPeaSizedWax\n    :parameters (?p - person ?w - wax)\n    :precondition (not (wax_warmed ?w))\n    :effect (wax_warmed ?w)\n  )\n\n  "
+    ],
+    "RunFingersThroughHair": [
+        "(:action RunFingersThroughHair\n    :parameters (?p - person ?h - hair)\n    :precondition (and (combed ?h) (wax_warmed ?w) (not (tousled ?h)))\n    :effect (tousled ?h)\n  )\n\n  "
+    ],
+    "CreateAddPeaSizeToVolume": [
+        "(:action CreateAddPeaSizeToVolume\n    :parameters (?p - person ?h - hair)\n    :precondition (and (tousled ?h) (wax_warmed ?w) (not (volume_added ?h)))\n    :effect (volume_added ?h)\n  )\n\n  "
+    ],
+    "AddTextureToPiece": [
+        "(:action AddTextureToPiece\n    :parameters (?p - person ?h - hair ?ws - workstation)\n    :precondition (and (volume_added ?h) (wax_warmed ?w) (not (texture_added ?h)))\n    :effect (texture_added ?h)\n  )\n)\n```\n\n### Explanation of PDDL Actions:\n\n1. **CombHairWithDryWicks**\n   - **Parameters**: `?p - person`, `?h - hair`\n   - **Preconditions**: Hair is not combed.\n   - **Effect**: Hair is combed.\n\n2. **WarmPeaSizedWax**\n   - **Parameters**: `?p - person`, `?w - wax`\n   - **Preconditions**: Wax is not warmed.\n   - **Effect**: Wax is warmed.\n\n3. **RunFingersThroughHair**\n   - **Parameters**: `?p - person`, `?h - hair`\n   - **Preconditions**: Hair is combed, wax is warmed, and hair is not tousled.\n   - **Effect**: Hair is tousled.\n\n4. **CreateAddPeaSizeToVolume**\n   - **Parameters**: `?p - person`, `?h - hair`\n   - **Preconditions**: Hair is tousled, wax is warmed, and volume is not added.\n   - **Effect**: Volume is added to hair.\n\n5. **AddTextureToPiece**\n   - **Parameters**: `?p - person`, `?h - hair`, `?ws - workstation`\n   - **Preconditions**: Volume is added to hair, wax is warmed, and texture is not added.\n   - **Effect**: Texture is added to hair.\n\nThese actions capture the sequence of steps required to use wax on your hair, including the necessary state changes for each step."
+    ],
+    "PurchaseHairWax": [
+        "(:action PurchaseHairWax\n    :parameters (?p - person ?w - wand)\n    :precondition (and (not (has ?p ?w)) (location ?w store))\n    :effect (and (has ?p ?w) (not (location ?w store)) (location ?w home))\n)\n\n"
+    ],
+    "AddWicksToHairMachine": [
+        "(:action AddWicksToHairMachine\n    :parameters (?p - person ?w - wand)\n    :precondition (and (has ?p ?w) (not (in_hair_machine ?w)))\n    :effect (in_hair_machine ?w)\n)\n\n"
+    ],
+    "ApplyWax": [
+        "(:action ApplyWax\n    :parameters (?npc - person ?w - wax ?l - leg)\n    :precondition (and (melted ?w) (not (applied ?w ?l)))\n    :effect (applied ?w ?l)\n)\n\n"
+    ],
+    "ScoopWax": [
+        "(:action ScoopWax\n    :parameters (?npc - npc)\n    :precondition (not (wax_on_fingers ?npc))\n    :effect (wax_on_fingers ?npc)\n)\n\n"
+    ],
+    "RubWax": [
+        "(:action RubWax\n    :parameters (?npc - npc)\n    :precondition (wax_on_fingers ?npc)\n    :effect (wax_rubbed ?npc)\n)\n\n"
+    ],
+    "RestyleWax": [
+        "(:action RestyleWax\n    :parameters (?p - person ?w - wand)\n    :precondition (and (has ?p ?w) (not (restyled ?w)))\n    :effect (restyled ?w)\n)\n\n"
+    ],
+    "WashWax": [
+        "(:action WashWax\n    :parameters (?npc - npc)\n    :precondition (wax_rubbed ?npc)\n    :effect (not (wax_rubbed ?npc))\n)\n```\n\n### Explanation of Entity States and Actions:\n\n1. **PurchaseHairWax**\n   - **Parameters**: `?p` (person), `?w` (wand)\n   - **Preconditions**: The person does not have the wand, and the wand is at the store.\n   - **Effect**: The person has the wand, the wand is no longer at the store, and the wand is now at home.\n\n2. **AddWicksToHairMachine**\n   - **Parameters**: `?p` (person), `?w` (wand)\n   - **Preconditions**: The person has the wand, and the wand is not yet in the hair machine.\n   - **Effect**: The wand is now in the hair machine.\n\n3. **ApplyWax**\n   - **Parameters**: `?npc` (npc), `?ct` (covering_tracks)\n   - **Preconditions**: The npc does not have wax, and the covering tracks are on the countertop.\n   - **Effect**: The npc now has wax.\n\n4. **ScoopWax**\n   - **Parameters**: `?npc` (npc)\n   - **Preconditions**: The npc does not have wax on their fingers.\n   - **Effect**: The npc has wax on their fingers.\n\n5. **RubWax**\n   - **Parameters**: `?npc` (npc)\n   - **Preconditions**: The npc has wax on their fingers.\n   - **Effect**: The wax is rubbed between the npc's fingers.\n\n6. **RestyleWax**\n   - **Parameters**: `?p` (person), `?w` (wand)\n   - **Preconditions**: The person has the wand, and the wand is not restyled.\n   - **Effect**: The wand is restyled.\n\n7. **WashWax**\n   - **Parameters**: `?npc` (npc)\n   - **Preconditions**: The wax is rubbed on the npc's fingers.\n   - **Effect**: The wax is no longer rubbed on the npc's fingers.\n\nThese PDDL actions cover the steps and necessary state changes for the task of applying hair wax."
+    ],
+    "apply": [
+        "(:action apply_nair\n  :parameters (?npc - agent ?nair - item)\n  :precondition (and (at ?npc bathroom) (inventory ?npc ?nair) (wet ?npc) (not (nair_applied ?npc)))\n  :effect (nair_applied ?npc)\n)\n\n",
+        "(:action apply_gandas_painting\n    :parameters (?user - user ?ganda - ganda ?beroza - beroza)\n    :precondition (and (pinch_taken ?user ?ganda) (inventory ?user ?beroza))\n    :effect (and (applied ?user ?ganda ?beroza))\n)\n\n",
+        "(:action apply_ganda_beroza\n    :parameters (?npc - npc ?ganda - ganda ?beroza - beroza)\n    :precondition (and (pinch_taken ?npc ?ganda) (inventory ?npc ?beroza))\n    :effect (and (applied ?npc ?ganda ?beroza))\n)\n\n",
+        "(:action apply_depilatory_cream\n    :parameters (?npc - npc ?tool - tool)\n    :precondition (and (hair_pulled ?npc))\n    :effect (cream_applied ?npc)\n  )\n\n  ;; Action 3: Trim your butt hair using an electric clipper\n  "
+    ],
+    "in": [
+        "(:action in_test_patch\n  :parameters (?npc - agent)\n  :precondition (and (at ?npc bathroom) (waiting ?npc))\n  :effect (test_patch ?npc)\n)\n\n"
+    ],
+    "massage": [
+        "(:action massage_oil\n    :parameters (?o - oil ?w - wax)\n    :precondition (and (has_in_hand ?u ?o) (on_hair ?w))\n    :effect (and (loosened ?w) (not (on_hair ?w)))\n)\n\n"
+    ],
+    "SearchForWax": [
+        "(:action SearchForWax\n    :parameters (?npc - person ?location - place)\n    :precondition (not (has_wax ?npc))\n    :effect (has_wax ?npc)\n)\n\n"
+    ],
+    "HeatWax": [
+        "(:action HeatWax\n    :parameters (?npc - person ?w - wax)\n    :precondition (and (has_wax ?npc) (not (melted ?w)))\n    :effect (melted ?w)\n)\n\n"
+    ],
+    "PlaceClothStrip": [
+        "(:action PlaceClothStrip\n    :parameters (?npc - person ?c - cloth_strip ?l - leg)\n    :precondition (and (not (on_leg ?c)) (applied ?w ?l))\n    :effect (on_leg ?c)\n)\n\n"
+    ],
+    "PullClothStrip": [
+        "(:action PullClothStrip\n    :parameters (?npc - person ?c - cloth_strip ?l - leg)\n    :precondition (on_leg ?c)\n    :effect (and (not (on_leg ?c)) (waxed ?l))\n)\n\n"
+    ],
+    "SootheSkin": [
+        "(:action SootheSkin\n    :parameters (?npc - person ?l - leg)\n    :precondition (waxed ?l)\n    :effect (soothed ?l)\n)\n```\n\nThese actions capture the essential steps and state transitions involved in waxing legs. The entity states and transitions are focused on the availability and application of wax, the use of cloth strips, and the condition of the legs before and after waxing."
+    ],
+    "LayOutTowel": [
+        "(:action LayOutTowel\n    :parameters (?t - towel)\n    :precondition (and (not (laid_out ?t)) (clean ?t) (dry ?t))\n    :effect (and (laid_out ?t) (location ?t on_floor))\n)\n\n"
+    ],
+    "SitComfortably": [
+        "(:action SitComfortably\n    :parameters (?npc - person)\n    :precondition (and (not (sitting ?npc)) (comfortable ?npc))\n    :effect (sitting ?npc)\n)\n\n"
+    ],
+    "RubWaxStrip": [
+        "(:action RubWaxStrip\n    :parameters (?s - strip)\n    :precondition (and (not (warmed ?s)) (cold ?s))\n    :effect (and (warmed ?s) (not (cold ?s)))\n)\n\n"
+    ],
+    "PeelStrips": [
+        "(:action PeelStrips\n    :parameters (?npc - person ?s - strip)\n    :precondition (and (not (peeled ?s)) (warmed ?s))\n    :effect (and (peeled ?s) (location ?s on_towel))\n)\n\n"
+    ],
+    "ApplyStripToSkin": [
+        "(:action ApplyStripToSkin\n    :parameters (?npc - person ?s - strip)\n    :precondition (and (peeled ?s) (not (applied ?s)))\n    :effect (applied ?s)\n)\n\n"
+    ],
+    "RubStripOnSkin": [
+        "(:action RubStripOnSkin\n    :parameters (?npc - person ?s - strip)\n    :precondition (and (applied ?s) (not (rubbed ?s)))\n    :effect (rubbed ?s)\n)\n\n"
+    ],
+    "PullStripOff": [
+        "(:action PullStripOff\n    :parameters (?npc - person ?s - strip)\n    :precondition (and (rubbed ?s) (not (pulled ?s)))\n    :effect (pulled ?s)\n)\n\n"
+    ],
+    "GraspEndStrip": [
+        "(:action GraspEndStrip\n    :parameters (?npc - person ?s - strip)\n    :precondition (and (pulled ?s) (not (grasped ?s)))\n    :effect (grasped ?s)\n)\n\n"
+    ],
+    "ApplyWaxStrips": [
+        "(:action ApplyWaxStrips\n    :parameters (?a - person)\n    :precondition (and (not (wax_applied ?a)))\n    :effect (wax_applied ?a)\n)\n\n"
+    ],
+    "WipeExcessWax": [
+        "(:action WipeExcessWax\n    :parameters (?npc - person)\n    :precondition (and (wax_applied ?npc) (not (wiped ?npc)))\n    :effect (wiped ?npc)\n)\n```\n\n### Descriptions and Adjustments:\n- `LayOutTowel`: Lays out the towel on the floor.\n- `SitComfortably`: Ensures the person is sitting comfortably.\n- `RubWaxStrip`: Rubs the wax strip to warm it up.\n- `PeelStrips`: Peels the wax strips apart and places them on the towel.\n- `ApplyStripToSkin`: Applies the wax strip to the skin.\n- `RubStripOnSkin`: Rubs the wax strip on the skin to adhere it.\n- `PullStripOff`: Pulls the wax strip off the skin.\n- `GraspEndStrip`: Grasps the end of the wax strip.\n- `ApplyWaxStrips`: Applies wax strips to the entire bikini area.\n- `WipeExcessWax`: Wipes off the excess wax from the skin.\n\nThese actions reflect the state changes as described in the task steps."
+    ],
+    "WarmWicks": [
+        "(:action WarmWicks\n    :parameters (?w - wick)\n    :precondition (not (heated ?w))\n    :effect (heated ?w)\n  )\n\n"
+    ],
+    "DipInWicks": [
+        "(:action DipInWicks\n    :parameters (?u - user ?w - wick)\n    :precondition (and (heated ?w) (not (dipped ?u ?w)))\n    :effect (dipped ?u ?w)\n  )\n\n"
+    ],
+    "ApplyFabric": [
+        "(:action ApplyFabric\n    :parameters (?n - npc ?s - strip)\n    :precondition (and (dipped ?n ?w) (not (applied ?s)))\n    :effect (applied ?s)\n  )\n)\n```\n\n### Entity State Transitions:\n- **Wick**: The relevant state is its temperature, changing from \"cool\" to \"heated\".\n- **User**: The relevant state is their interaction with the wick, specifically whether they have dipped the applicator into the wax.\n- **Strip**: The relevant state is its application status, changing from \"not applied\" to \"applied\".\n\n### Task Steps:\n1. **WarmWicks**: Warm the wax.\n   - Preconditions: The wick is not heated.\n   - Effects: The wick becomes heated.\n\n2. **DipInWicks**: Dip the applicator into the warm wax.\n   - Preconditions: The wick is heated, and the user has not dipped the applicator into the wax.\n   - Effects: The user has dipped the applicator into the wax.\n\n3. **ApplyFabric**: Apply the fabric over the wax in the direction of hair growth.\n   - Preconditions: The user has dipped the applicator into the wax, and the strip is not applied.\n   - Effects: The strip is applied over the wax.\n\nThese actions capture the essential steps and state changes involved in using hair removing wax."
+    ]
+}

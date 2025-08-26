@@ -1,0 +1,5 @@
+[
+    "(:action place ; Place an item in a specific location or container\n    :parameters (?p - player ?item - object ?location - location)\n    :precondition (and\n        (inventory ?p ?item)\n        (or (container ?location) (freezer ?location) (shelf ?location))\n        (not (in_location ?item ?location))\n    )\n    :effect (and\n        (in_location ?item ?location)\n        (when (container ?location) (airtight ?location))",
+    "(:action separate ; Separate items using a specified method\n  :parameters (?actor - agent ?items - object ?method - method)\n  :precondition (and (in_container ?items ?container) (not (separated ?items)))\n  :effect (separated ?items)\n)",
+    "(:action thaw\n  :parameters (?p - player ?item - object ?location1 - location ?location2 - location)\n  :precondition (and (in ?item ?location1) (frozen ?item))\n  :effect (and (not (in ?item ?location1))"
+]

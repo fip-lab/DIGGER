@@ -1,0 +1,155 @@
+[
+    {
+        "task": "fill_the_glass",
+        "step": [
+            "get screwdriver",
+            "get coconut",
+            "poke coconut screwdriver",
+            "get glass",
+            "flip coconut glass glass_filled"
+        ],
+        "desc": [
+            "Turn the coconut upside down over a glass and allow it to drain. Let the coconut sit for several minutes or until all of the liquid drains out. You may need to shake the coconut a few times to get the last bit of water out of it.",
+            "Poke a hole in the \u201ceye\u201d of the coconut with a screwdriver and a mallet. Position the pointed end of a screwdriver on one of the 3 holes or \u201ceyes\u201d at the top of the coconut. Then, use a mallet or hammer to carefully but forcefully bore a hole through an eye. Once the screwdriver gives (indicating it\u2019s bored through the shell), remove it by wiggling it out, widening the new hole in the process."
+        ],
+        "action": [
+            "(:action get ; pick up a item and put it in the inventory\n      :parameters (?item - item) \n      :precondition (and (not (is_item_container_with_water ?item)) (not (is_item_wrapped_coconut ?item)) (not (is_item_broken_coconut ?item)) (not (is_item_coconut_meat_peeled ?item)) (not (is_item_coconut_meat ?item)) (not (inventory ?item)))\n      :effect (and (inventory ?item))\n   )",
+            "(:action poke ; poke a hole in the top of the coconut\n      :parameters (?c - coconut ?tool - tool) \n      :precondition (and (inventory ?tool) (inventory ?c) (not (has_eyes_poked ?c)))\n      :effect (and (has_eyes_poked ?c))\n   )",
+            "(:action flip ; turn the coconut upside down\n      :parameters (?c - coconut ?co - container_without_water ?cow - container_with_water) \n      :precondition (and (inventory ?co) (inventory ?c) (has_eyes_poked ?c))\n      :effect (and (not (inventory ?co)) (inventory ?cow))\n   )"
+        ],
+        "goal_state": "((inventory glass_filled))"
+    },
+    {
+        "task": "remove_fibre_from_coconut_meat",
+        "step": [
+            "get screwdriver",
+            "get coconut",
+            "poke coconut screwdriver",
+            "get glass",
+            "get towel",
+            "flip coconut glass glass_filled",
+            "wrap coconut glass_filled coconut_wrapped towel",
+            "get mallet",
+            "hit coconut_wrapped mallet coconut_broken",
+            "free coconut_meat screwdriver coconut_broken",
+            "get peeler",
+            "remove_fiber coconut_meat peeler coconut_meat_peeled"
+        ],
+        "desc": [
+            "Whack the wrapped coconut with a hammer, or bash it against a hard surface. With the coconut still wrapped in the towel, use a hammer or a mallet to repeatedly and forcefully whack the coconut. Turn the coconut as you hammer it, in order to strike it from multiple angles. Hammer it until you feel it break open beneath the towel.",
+            "Alternatively, strike the coconut against a concrete surface. If you don\u2019t have a hammer or mallet, you can use a solid surface like a porch or possibly a concrete countertop. Try to strike the coconut\u2019s equator against the corner of this surface, using it as a makeshift wedge. Repeatedly strike the coconut all around its equator until the coconut breaks apart.",
+            "Remove the coconut and wrap it in a towel to cool. Use oven mitts to retrieve the coconut from the oven or microwave, and allow it to cool for about 5 minutes while wrapped in a towel. Doing this ensures you don\u2019t have hot coconut bits flying everywhere when you go to smash it in the next step.",
+            "Turn the coconut upside down over a glass and allow it to drain. Let the coconut sit for several minutes or until all of the liquid drains out. You may need to shake the coconut a few times to get the last bit of water out of it.",
+            "Poke a hole in the \u201ceye\u201d of the coconut with a screwdriver and a mallet. Position the pointed end of a screwdriver on one of the 3 holes or \u201ceyes\u201d at the top of the coconut. Then, use a mallet or hammer to carefully but forcefully bore a hole through an eye. Once the screwdriver gives (indicating it\u2019s bored through the shell), remove it by wiggling it out, widening the new hole in the process."
+        ],
+        "action": [
+            "(:action free ; run a knife between the shell and the meat to free it\n      :parameters (?cm - coconut_meat ?t - tool ?cb - coconut_broken) \n      :precondition (and (inventory ?t) (inventory ?cb))\n      :effect (and (not (inventory ?cb)) (inventory ?cm))\n   )",
+            "(:action hit ; hit the wrapped coconut with a mallet\n      :parameters (?cw - coconut_wrapped ?m - mallet ?cb - coconut_broken) \n      :precondition (and (inventory ?m) (inventory ?cw))\n      :effect (and (not (inventory ?cw)) (inventory ?cb))\n   )",
+            "(:action get ; pick up a item and put it in the inventory\n      :parameters (?item - item) \n      :precondition (and (not (is_item_container_with_water ?item)) (not (is_item_wrapped_coconut ?item)) (not (is_item_broken_coconut ?item)) (not (is_item_coconut_meat_peeled ?item)) (not (is_item_coconut_meat ?item)) (not (inventory ?item)))\n      :effect (and (inventory ?item))\n   )",
+            "(:action remove_fiber ; remove the fiber from the meat\n      :parameters (?cm - coconut_meat ?p - peeler ?cp - coconut_meat_peeled) \n      :precondition (and (inventory ?p) (inventory ?cm))\n      :effect (and (not (inventory ?cm)) (inventory ?cp))\n   )\n)",
+            "(:action wrap ; wrap the coconut\n      :parameters (?c - coconut ?cow - container_with_water ?cw - coconut_wrapped ?t - towel) \n      :precondition (and (inventory ?c) (inventory ?t) (inventory ?cow))\n      :effect (and (not (inventory ?c)) (inventory ?cw))\n   )",
+            "(:action poke ; poke a hole in the top of the coconut\n      :parameters (?c - coconut ?tool - tool) \n      :precondition (and (inventory ?tool) (inventory ?c) (not (has_eyes_poked ?c)))\n      :effect (and (has_eyes_poked ?c))\n   )",
+            "(:action flip ; turn the coconut upside down\n      :parameters (?c - coconut ?co - container_without_water ?cow - container_with_water) \n      :precondition (and (inventory ?co) (inventory ?c) (has_eyes_poked ?c))\n      :effect (and (not (inventory ?co)) (inventory ?cow))\n   )"
+        ],
+        "goal_state": "((inventory coconut_meat_peeled))"
+    },
+    {
+        "task": "free_the_meat_from_coconut",
+        "step": [
+            "get screwdriver",
+            "get coconut",
+            "poke coconut screwdriver",
+            "get glass",
+            "get towel",
+            "flip coconut glass glass_filled",
+            "wrap coconut glass_filled coconut_wrapped towel",
+            "get mallet",
+            "hit coconut_wrapped mallet coconut_broken",
+            "free coconut_meat screwdriver coconut_broken"
+        ],
+        "desc": [
+            "Alternatively, strike the coconut against a concrete surface. If you don\u2019t have a hammer or mallet, you can use a solid surface like a porch or possibly a concrete countertop. Try to strike the coconut\u2019s equator against the corner of this surface, using it as a makeshift wedge. Repeatedly strike the coconut all around its equator until the coconut breaks apart.",
+            "Remove the coconut and wrap it in a towel to cool. Use oven mitts to retrieve the coconut from the oven or microwave, and allow it to cool for about 5 minutes while wrapped in a towel. Doing this ensures you don\u2019t have hot coconut bits flying everywhere when you go to smash it in the next step.",
+            "Turn the coconut upside down over a glass and allow it to drain. Let the coconut sit for several minutes or until all of the liquid drains out. You may need to shake the coconut a few times to get the last bit of water out of it.",
+            "Poke a hole in the \u201ceye\u201d of the coconut with a screwdriver and a mallet. Position the pointed end of a screwdriver on one of the 3 holes or \u201ceyes\u201d at the top of the coconut. Then, use a mallet or hammer to carefully but forcefully bore a hole through an eye. Once the screwdriver gives (indicating it\u2019s bored through the shell), remove it by wiggling it out, widening the new hole in the process."
+        ],
+        "action": [
+            "(:action free ; run a knife between the shell and the meat to free it\n      :parameters (?cm - coconut_meat ?t - tool ?cb - coconut_broken) \n      :precondition (and (inventory ?t) (inventory ?cb))\n      :effect (and (not (inventory ?cb)) (inventory ?cm))\n   )",
+            "(:action hit ; hit the wrapped coconut with a mallet\n      :parameters (?cw - coconut_wrapped ?m - mallet ?cb - coconut_broken) \n      :precondition (and (inventory ?m) (inventory ?cw))\n      :effect (and (not (inventory ?cw)) (inventory ?cb))\n   )",
+            "(:action get ; pick up a item and put it in the inventory\n      :parameters (?item - item) \n      :precondition (and (not (is_item_container_with_water ?item)) (not (is_item_wrapped_coconut ?item)) (not (is_item_broken_coconut ?item)) (not (is_item_coconut_meat_peeled ?item)) (not (is_item_coconut_meat ?item)) (not (inventory ?item)))\n      :effect (and (inventory ?item))\n   )",
+            "(:action wrap ; wrap the coconut\n      :parameters (?c - coconut ?cow - container_with_water ?cw - coconut_wrapped ?t - towel) \n      :precondition (and (inventory ?c) (inventory ?t) (inventory ?cow))\n      :effect (and (not (inventory ?c)) (inventory ?cw))\n   )",
+            "(:action poke ; poke a hole in the top of the coconut\n      :parameters (?c - coconut ?tool - tool) \n      :precondition (and (inventory ?tool) (inventory ?c) (not (has_eyes_poked ?c)))\n      :effect (and (has_eyes_poked ?c))\n   )",
+            "(:action flip ; turn the coconut upside down\n      :parameters (?c - coconut ?co - container_without_water ?cow - container_with_water) \n      :precondition (and (inventory ?co) (inventory ?c) (has_eyes_poked ?c))\n      :effect (and (not (inventory ?co)) (inventory ?cow))\n   )"
+        ],
+        "goal_state": "((inventory coconut_meat))"
+    },
+    {
+        "task": "wrap_the_coconut_in_towel",
+        "step": [
+            "get screwdriver",
+            "get coconut",
+            "poke coconut screwdriver",
+            "get glass",
+            "get towel",
+            "flip coconut glass glass_filled",
+            "wrap coconut glass_filled coconut_wrapped towel"
+        ],
+        "desc": [
+            "Remove the coconut and wrap it in a towel to cool. Use oven mitts to retrieve the coconut from the oven or microwave, and allow it to cool for about 5 minutes while wrapped in a towel. Doing this ensures you don\u2019t have hot coconut bits flying everywhere when you go to smash it in the next step.",
+            "Turn the coconut upside down over a glass and allow it to drain. Let the coconut sit for several minutes or until all of the liquid drains out. You may need to shake the coconut a few times to get the last bit of water out of it.",
+            "Poke a hole in the \u201ceye\u201d of the coconut with a screwdriver and a mallet. Position the pointed end of a screwdriver on one of the 3 holes or \u201ceyes\u201d at the top of the coconut. Then, use a mallet or hammer to carefully but forcefully bore a hole through an eye. Once the screwdriver gives (indicating it\u2019s bored through the shell), remove it by wiggling it out, widening the new hole in the process."
+        ],
+        "action": [
+            "(:action hit ; hit the wrapped coconut with a mallet\n      :parameters (?cw - coconut_wrapped ?m - mallet ?cb - coconut_broken) \n      :precondition (and (inventory ?m) (inventory ?cw))\n      :effect (and (not (inventory ?cw)) (inventory ?cb))\n   )",
+            "(:action get ; pick up a item and put it in the inventory\n      :parameters (?item - item) \n      :precondition (and (not (is_item_container_with_water ?item)) (not (is_item_wrapped_coconut ?item)) (not (is_item_broken_coconut ?item)) (not (is_item_coconut_meat_peeled ?item)) (not (is_item_coconut_meat ?item)) (not (inventory ?item)))\n      :effect (and (inventory ?item))\n   )",
+            "(:action wrap ; wrap the coconut\n      :parameters (?c - coconut ?cow - container_with_water ?cw - coconut_wrapped ?t - towel) \n      :precondition (and (inventory ?c) (inventory ?t) (inventory ?cow))\n      :effect (and (not (inventory ?c)) (inventory ?cw))\n   )",
+            "(:action poke ; poke a hole in the top of the coconut\n      :parameters (?c - coconut ?tool - tool) \n      :precondition (and (inventory ?tool) (inventory ?c) (not (has_eyes_poked ?c)))\n      :effect (and (has_eyes_poked ?c))\n   )",
+            "(:action flip ; turn the coconut upside down\n      :parameters (?c - coconut ?co - container_without_water ?cow - container_with_water) \n      :precondition (and (inventory ?co) (inventory ?c) (has_eyes_poked ?c))\n      :effect (and (not (inventory ?co)) (inventory ?cow))\n   )"
+        ],
+        "goal_state": "((inventory coconut_wrapped))"
+    },
+    {
+        "task": "poke_eyes",
+        "step": [
+            "get screwdriver",
+            "get coconut",
+            "poke coconut screwdriver"
+        ],
+        "desc": [
+            "Poke a hole in the \u201ceye\u201d of the coconut with a screwdriver and a mallet. Position the pointed end of a screwdriver on one of the 3 holes or \u201ceyes\u201d at the top of the coconut. Then, use a mallet or hammer to carefully but forcefully bore a hole through an eye. Once the screwdriver gives (indicating it\u2019s bored through the shell), remove it by wiggling it out, widening the new hole in the process."
+        ],
+        "action": [
+            "(:action get ; pick up a item and put it in the inventory\n      :parameters (?item - item) \n      :precondition (and (not (is_item_container_with_water ?item)) (not (is_item_wrapped_coconut ?item)) (not (is_item_broken_coconut ?item)) (not (is_item_coconut_meat_peeled ?item)) (not (is_item_coconut_meat ?item)) (not (inventory ?item)))\n      :effect (and (inventory ?item))\n   )",
+            "(:action poke ; poke a hole in the top of the coconut\n      :parameters (?c - coconut ?tool - tool) \n      :precondition (and (inventory ?tool) (inventory ?c) (not (has_eyes_poked ?c)))\n      :effect (and (has_eyes_poked ?c))\n   )",
+            "(:action flip ; turn the coconut upside down\n      :parameters (?c - coconut ?co - container_without_water ?cow - container_with_water) \n      :precondition (and (inventory ?co) (inventory ?c) (has_eyes_poked ?c))\n      :effect (and (not (inventory ?co)) (inventory ?cow))\n   )"
+        ],
+        "goal_state": "((has_eyes_poked coconut))"
+    },
+    {
+        "task": "hit_coconut_with_mallet",
+        "step": [
+            "get screwdriver",
+            "get coconut",
+            "poke coconut screwdriver",
+            "get glass",
+            "get towel",
+            "flip coconut glass glass_filled",
+            "wrap coconut glass_filled coconut_wrapped towel",
+            "get mallet",
+            "hit coconut_wrapped mallet coconut_broken"
+        ],
+        "desc": [
+            "Remove the coconut and wrap it in a towel to cool. Use oven mitts to retrieve the coconut from the oven or microwave, and allow it to cool for about 5 minutes while wrapped in a towel. Doing this ensures you don\u2019t have hot coconut bits flying everywhere when you go to smash it in the next step.",
+            "Turn the coconut upside down over a glass and allow it to drain. Let the coconut sit for several minutes or until all of the liquid drains out. You may need to shake the coconut a few times to get the last bit of water out of it.",
+            "Poke a hole in the \u201ceye\u201d of the coconut with a screwdriver and a mallet. Position the pointed end of a screwdriver on one of the 3 holes or \u201ceyes\u201d at the top of the coconut. Then, use a mallet or hammer to carefully but forcefully bore a hole through an eye. Once the screwdriver gives (indicating it\u2019s bored through the shell), remove it by wiggling it out, widening the new hole in the process."
+        ],
+        "action": [
+            "(:action hit ; hit the wrapped coconut with a mallet\n      :parameters (?cw - coconut_wrapped ?m - mallet ?cb - coconut_broken) \n      :precondition (and (inventory ?m) (inventory ?cw))\n      :effect (and (not (inventory ?cw)) (inventory ?cb))\n   )",
+            "(:action get ; pick up a item and put it in the inventory\n      :parameters (?item - item) \n      :precondition (and (not (is_item_container_with_water ?item)) (not (is_item_wrapped_coconut ?item)) (not (is_item_broken_coconut ?item)) (not (is_item_coconut_meat_peeled ?item)) (not (is_item_coconut_meat ?item)) (not (inventory ?item)))\n      :effect (and (inventory ?item))\n   )",
+            "(:action wrap ; wrap the coconut\n      :parameters (?c - coconut ?cow - container_with_water ?cw - coconut_wrapped ?t - towel) \n      :precondition (and (inventory ?c) (inventory ?t) (inventory ?cow))\n      :effect (and (not (inventory ?c)) (inventory ?cw))\n   )",
+            "(:action poke ; poke a hole in the top of the coconut\n      :parameters (?c - coconut ?tool - tool) \n      :precondition (and (inventory ?tool) (inventory ?c) (not (has_eyes_poked ?c)))\n      :effect (and (has_eyes_poked ?c))\n   )",
+            "(:action flip ; turn the coconut upside down\n      :parameters (?c - coconut ?co - container_without_water ?cow - container_with_water) \n      :precondition (and (inventory ?co) (inventory ?c) (has_eyes_poked ?c))\n      :effect (and (not (inventory ?co)) (inventory ?cow))\n   )"
+        ],
+        "goal_state": "((inventory coconut_broken))"
+    }
+]

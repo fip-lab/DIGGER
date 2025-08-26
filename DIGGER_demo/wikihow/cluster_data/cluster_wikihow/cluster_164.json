@@ -1,0 +1,134 @@
+[
+    {
+        "title": "How to Find Out Which Planes Are Flying Overhead",
+        "steps": [
+            "Launch Plane Finder.",
+            "View your location.",
+            "Zoom into your location.",
+            "View information of the plane(s) flying overhead."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Wish on a Star",
+        "steps": [
+            "Look for a shooting star.",
+            "Close your eyes while wishing.",
+            "Don\u2019t tell anyone your wish.",
+            "Look for a bright star if you can\u2019t find a shooting star.",
+            "Believe in your wish."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Know Your Local Weather",
+        "steps": [
+            "Find your weather channel by looking at your TV guide.",
+            "Tune into a local news channel.",
+            "Look for Weather scan if available in your TV guide."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Read Wind Barbs",
+        "steps": [
+            "Find wind barbs for your area.",
+            "Overlay wind barbs onto a compass or another orientating guide.",
+            "Convert wind speed from knots.",
+            "Use wind barbs to evaluate wind safety."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to See the Green Flash",
+        "steps": [
+            "Understand the phenomenon of the green flash.",
+            "Choose your location.",
+            "Choose the right time.",
+            "Locate the place where the sun will set or rise.",
+            "Wait until the last part of the sun appears to be touching the horizon.",
+            "Watch for a flash, flicker, or brief glow of bright green light.",
+            "Relish it; it really is there only for the blink of an eye.",
+            "Keep looking until it becomes easier to find the green flash."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Track Your Sodium Intake",
+        "steps": [
+            "Look at the nutrition label of a food product.",
+            "If you are eating out, ask the restaurant waiter how much sodium is in the dish you are ordering.",
+            "Look at the nutrition information in fast food before you order at a fast food restaurant.",
+            "Know how much salt is in your homemade dishes.",
+            "Use an app to track your sodium."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Find Net Carbs",
+        "steps": [
+            "Try out an online carb counter.",
+            "Download an app to look up net carbs on the go.",
+            "Keep track of the net carbs in all the foods you regularly eat."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Identify the Stars",
+        "steps": [
+            "Use a star chart to locate other stars and constellations.",
+            "Read star atlases to get more familiar with the night sky.",
+            "Download stargazing apps to get interactive views of your night sky.",
+            "Visit a star mapping website to plan your stargazing."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Use Orion to Find Other Constellations",
+        "steps": [
+            "Know where Orion is.",
+            "Memorize the \"corner\" stars in Orion.",
+            "Time to start navigating!.",
+            "Continue following Saiph and Bellatrix and you will encounter Perseus, the hero from Greek mythology.",
+            "Follow Rigel and Betelgeuse, the two brightest stars in Orion, up to enter Gemini and view its two brightest stars, Castor and Pollux.",
+            "Tracing from Bellatrix to Betelgeuse leads to Canis Minor, shining with the bright stars Procyon and Gomeisa.",
+            "Draw an imaginary line from Rigel to Bellatrix and you will crash into Capella, the brightest star in the constellation Auriga.",
+            "After you have found these stars, use them to find more constellations."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Use a Color Filter for a Telescope",
+        "steps": [
+            "Know about Moon Filters.",
+            "Learn about yellow filters.",
+            "Learn about orange filters.",
+            "Learn about what red filters can do.",
+            "Learn how to use darker filters.",
+            "Know how to use green filters.",
+            "Learn about blue filters."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Find the Hercules Constellation",
+        "steps": [
+            "Consult a map or picture of the Hercules constellation for help.",
+            "Use a telescope to make spotting the stars easier.",
+            "Download a star-finding app to help you locate the constellation."
+        ],
+        "cluster_label": 164
+    },
+    {
+        "title": "How to Identify Bird Calls",
+        "steps": [
+            "Use a field guide for the area to determine what bird is making a call.",
+            "Record a bird call that you hear and match it to another recording.",
+            "Download a bird song recognition app to help you identify bird calls.",
+            "Listen to recordings of birds you see often so you can identify them.",
+            "Watch a bird singing to form a mental connection for future reference.",
+            "Go birding with an expert to learn bird calls in the wild."
+        ],
+        "cluster_label": 164
+    }
+]

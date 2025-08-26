@@ -1,0 +1,5 @@
+[
+    "(:action obtain ; Obtain an item and update its state\n  :parameters (?agent - person ?item - object ?location - place)\n  :precondition (and (at ?agent ?location) (at ?item ?location) (for_sale ?item))\n  :effect (and (inventory ?agent ?item) (not (at ?item ?location))",
+    "(:action kneel ; Assume a kneeling position in a specified location\n  :parameters (?p - person ?loc - location)\n  :precondition (and (at ?p ?loc) (not (kneeling ?p)))\n  :effect (kneeling ?p)\n)",
+    "(:action rub_and_wash\n    :parameters (?p - player ?item - object ?linoleum - location)\n    :precondition (and\n        (at ?p ?linoleum)\n        (or (and (kneeling ?p) (inventory ?p ?item) (stained ?linoleum))\n            (and (clean ?linoleum) (not (wet ?linoleum))))\n    )\n    :effect (and\n        (or (and (clean ?linoleum) (not (stained ?linoleum))"
+]

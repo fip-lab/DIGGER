@@ -1,0 +1,6 @@
+(select-paper p1)
+(make-pinwheel pw1 p1)
+(choose-wreath-base w1)
+(attach-pinwheel pw1 w1)
+(attach-twine t1 w1)
+; cost = 5 (unit cost)

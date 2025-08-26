@@ -1,0 +1,20 @@
+{
+    "boil": [
+        "(:action boil_water\n    :parameters (?p - player ?l - location ?w - water)\n    :precondition (and (at ?p ?l) (has_stove ?l))\n    :effect (and (boiled ?w) (not (cold ?w)))\n)\n\n"
+    ],
+    "add": [
+        "(:action add_macaroni\n    :parameters (?p - player ?l - location ?m - macaroni ?w - water)\n    :precondition (and (at ?p ?l) (boiled ?w) (not (cooked ?m)))\n    :effect (cooked ?m)\n)\n\n",
+        "(:action add_oil\n    :parameters (?p - player ?l - location ?pan - pan ?oil - oil)\n    :precondition (and (at ?p ?l) (has_pan ?pan ?l))\n    :effect (oiled ?pan)\n)\n\n",
+        "(:action add_macaroni_to_pan\n    :parameters (?p - player ?l - location ?m - macaroni ?pan - pan)\n    :precondition (and (at ?p ?l) (drained ?m) (oiled ?pan))\n    :effect (in_pan ?m ?pan)\n)\n\n",
+        "(:action add_sauce_and_spices\n    :parameters (?p - player ?l - location ?pan - pan ?s - sauce ?sp - spices)\n    :precondition (and (at ?p ?l) (in_pan ?m ?pan))\n    :effect (seasoned ?pan)\n)\n\n"
+    ],
+    "drain": [
+        "(:action drain_macaroni\n    :parameters (?p - player ?l - location ?m - macaroni)\n    :precondition (and (at ?p ?l) (cooked ?m))\n    :effect (and (drained ?m) (not (wet ?m)))\n)\n\n"
+    ],
+    "cook": [
+        "(:action cook_macaroni\n    :parameters (?p - player ?l - location ?pan - pan)\n    :precondition (and (at ?p ?l) (seasoned ?pan))\n    :effect (cooked ?pan)\n)\n\n"
+    ],
+    "serve": [
+        "(:action serve_macaroni\n    :parameters (?p - player ?l - location ?pan - pan ?plate - plate)\n    :precondition (and (at ?p ?l) (cooked ?pan))\n    :effect (served ?plate)\n)\n```\n\nThis set of PDDL actions should capture the steps and the logic required to make Chinese macaroni in 20 minutes based on the provided descriptions."
+    ]
+}

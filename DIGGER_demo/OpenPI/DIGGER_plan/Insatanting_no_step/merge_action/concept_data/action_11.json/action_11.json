@@ -1,0 +1,16 @@
+{
+    "remove": [
+        "(:action remove_bung\n    :parameters (?p - person ?b - bung ?bt - bike)\n    :precondition (and (at ?p ?bt) (attached ?b ?bt))\n    :effect (and (not (attached ?b ?bt)) (removed ?b ?bt) (draining ?bt))\n)\n```\n\n#### Step 2: Remove the oil cap to let the oil drain fully and let air in to help drain the old oil out.\n```lisp\n",
+        "(:action remove_oil_cap\n    :parameters (?p - person ?oc - oil_cap ?ot - oil_tank)\n    :precondition (and (at ?p ?ot) (attached ?oc ?ot))\n    :effect (and (not (attached ?oc ?ot)) (removed ?oc ?ot) (air_in ?ot))\n)\n```\n\n#### Step 3: Remove the oil filter.\n```lisp\n",
+        "(:action remove_oil_filter\n    :parameters (?p - person ?of - oil_filter ?ot - oil_tank)\n    :precondition (and (at ?p ?ot) (attached ?of ?ot))\n    :effect (and (not (attached ?of ?ot)) (removed ?of ?ot))\n)\n```\n\n#### Step 4: Screw the bung back on.\n```lisp\n"
+    ],
+    "screw": [
+        "(:action screw_bung_back_on\n    :parameters (?p - person ?b - bung ?bt - bike)\n    :precondition (and (at ?p ?bt) (removed ?b ?bt))\n    :effect (and (attached ?b ?bt) (not (removed ?b ?bt)) (not (draining ?bt)))\n)\n```\n\n#### Step 5: Fill the oil back up.\n```lisp\n"
+    ],
+    "fill": [
+        "(:action fill_oil_back_up\n    :parameters (?p - person ?ot - oil_tank ?ob - oil_bottle)\n    :precondition (and (at ?p ?ot) (has_oil ?ob))\n    :effect (and (filled ?ot) (not (has_oil ?ob)))\n)\n```\n\n#### Step 6: Recycle the old oil.\n```lisp\n"
+    ],
+    "recycle": [
+        "(:action recycle_old_oil\n    :parameters (?p - person ?oo - old_oil)\n    :precondition (and (has_old_oil ?oo))\n    :effect (and (recycled ?oo) (not (has_old_oil ?oo)))\n)\n```\n\n### Descriptions and Entity States Considered:\n- The actions are designed to follow the logical sequence of changing the oil on a Yamaha Virago XV250.\n- Preconditions ensure that the person is at the correct location and the necessary components are in the required state before performing the action.\n- Effects describe the resulting state changes after the action is performed, such as components being removed or attached, and oil being filled or recycled.\n\n### Notes:\n- The action names are concise and descriptive, reflecting the task steps.\n- Parameters include the person performing the action, the objects involved (bung, oil cap, oil filter, oil tank, oil bottle, old oil), and the bike.\n- Preconditions and effects are derived based on the entity states provided, ensuring accurate representation of the task."
+    ]
+}

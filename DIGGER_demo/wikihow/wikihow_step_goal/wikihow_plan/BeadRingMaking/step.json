@@ -1,0 +1,310 @@
+{
+    "goal": "Make a Bead Ring",
+    "steps": [
+        "Cut a strip of elastic.",
+        "Slip two larger beads at either side of the small bead.",
+        "Slip a small bead on one tail.",
+        "Continue this pattern until you have enough beads to fit around the finger.",
+        "Finish the ring by slipping the loose tails through the first small bead you placed on the elastic.",
+        "Finished."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/c/c8/Make-a-Bead-Ring-Step-1-Version-2.jpg/aid63973-v4-728px-Make-a-Bead-Ring-Step-1-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/0/05/Make-a-Bead-Ring-Step-2-Version-2.jpg/aid63973-v4-728px-Make-a-Bead-Ring-Step-2-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/3/39/Make-a-Bead-Ring-Step-3-Version-2.jpg/aid63973-v4-728px-Make-a-Bead-Ring-Step-3-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/b/b3/Make-a-Bead-Ring-Step-4-Version-2.jpg/aid63973-v4-728px-Make-a-Bead-Ring-Step-4-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/e/ee/Make-a-Bead-Ring-Step-5-Version-2.jpg/aid63973-v4-728px-Make-a-Bead-Ring-Step-5-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/f/f6/Make-a-Bead-Ring-Step-6.jpg/aid63973-v4-728px-Make-a-Bead-Ring-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "the bead",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "off strip | on counter",
+                        "after": "on strip | on band",
+                        "saliency": 0.6257643603447446,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "random",
+                        "after": "in order on band",
+                        "saliency": 0.2298858876209736,
+                        "attribute_annotation": "organization"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "loose",
+                        "after": "banded",
+                        "saliency": 0.1839921678142103,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "off strip of elastic | in container",
+                        "after": "on strip of elastic | on elastic",
+                        "saliency": 0.6723482112764216,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "off strip of elastic | off elastic",
+                        "after": "on strip of elastic | on elastic",
+                        "saliency": 0.5947084597236265,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "random",
+                        "after": "in order",
+                        "saliency": 0.12998940728971065,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "shape",
+                        "before": "in straighter line",
+                        "after": "curved",
+                        "saliency": 0.4848090904713756,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "the beads | beads | the bead | bead",
+                "small bead"
+            ]
+        },
+        {
+            "entity": "the strip of elastic",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "length",
+                        "before": "longer | heavier",
+                        "after": "shorter | lighter",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "length | weight"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "uncut",
+                        "after": "cut",
+                        "saliency": 0.5510135297799605,
+                        "attribute_annotation": "shape"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lap",
+                        "saliency": 0.16497343797647135,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "length",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "length | weight"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "less colorful",
+                        "after": "more colorful",
+                        "saliency": 0.3674386505529074,
+                        "attribute_annotation": "color"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.2662501805575617,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "length",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "length | weight"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "less colorful",
+                        "after": "more colorful",
+                        "saliency": 0.3674386505529074,
+                        "attribute_annotation": "color"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "length",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "length | weight"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "less colorful",
+                        "after": "more colorful",
+                        "saliency": 0.3674386505529074,
+                        "attribute_annotation": "color"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "rounded",
+                        "saliency": 0.25248206461553274,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "the strip of elastic",
+                "elastic"
+            ]
+        },
+        {
+            "entity": "tails",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "orientation",
+                        "before": "bare",
+                        "after": "adorned | beaded",
+                        "saliency": 0.37864124416197215,
+                        "attribute_annotation": "orientation"
+                    }
+                ],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "orientation",
+                        "before": "open",
+                        "after": "closed",
+                        "saliency": 0.5028648466464442,
+                        "attribute_annotation": "orientation"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "elastic ends",
+                "tail | tails"
+            ]
+        },
+        {
+            "entity": "you",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet",
+                        "saliency": 0.24217583899080358,
+                        "attribute_annotation": "focus"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "you"
+            ]
+        }
+    ],
+    "clusters": {
+        "the bead": {
+            "entity_cluster": [
+                "the beads",
+                "bead",
+                "the bead",
+                "small bead",
+                "beads"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "organization": [
+                    "organization"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "composition": [
+                    "composition"
+                ]
+            }
+        },
+        "the strip of elastic": {
+            "entity_cluster": [
+                "elastic",
+                "the strip of elastic"
+            ],
+            "attribute_cluster": {
+                "length": [
+                    "length",
+                    "size"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "color": [
+                    "color"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "you": {
+            "entity_cluster": [
+                "you"
+            ],
+            "attribute_cluster": {
+                "focus": [
+                    "focus"
+                ]
+            }
+        },
+        "tails": {
+            "entity_cluster": [
+                "elastic ends",
+                "tail",
+                "tails"
+            ],
+            "attribute_cluster": {
+                "orientation": [
+                    "orientation"
+                ]
+            }
+        }
+    }
+}

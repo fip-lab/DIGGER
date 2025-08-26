@@ -1,0 +1,4 @@
+[
+    "(:action stock\n  ; Universal action for stocking and preparing items\n  :parameters (?agent - agent ?item - object)\n  :precondition (and (available ?agent) (separate ?item) (not (ready ?item)))\n  :effect (and (stored ?item) (ready ?item) (processed ?item))",
+    "(:action make ; Create a plan or prepare an entity\n    :parameters (?entity - object)\n    :precondition (and (not (prepared ?entity)))\n    :effect (and (prepared ?entity) (state-at-ease ?entity))"
+]

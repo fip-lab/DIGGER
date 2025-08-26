@@ -1,0 +1,7 @@
+[
+    "(:action cut ; Cut an item and update its state\n    :parameters (?p - person ?item - object ?surface - surface ?tool - tool)\n    :precondition (and (at ?p ?surface) (at ?item ?surface) (has ?p ?tool) (whole ?item))\n    :effect (and (cut ?item) (not (whole ?item))",
+    "(:action set ; Set an entity's state\n    :parameters (?p - person ?entity - object ?state - state)\n    :precondition (and (at ?p ?entity) (not (in_state ?entity ?state)))\n    :effect (and (in_state ?entity ?state))",
+    "(:action melt ; Melt a generic item, updating its state and temperature\n  :parameters (?p - person ?item - object ?container - container ?heat_source - heat_source)\n  :precondition (and (at ?p ?container) (in ?item ?container) (on ?heat_source) (temperature ?heat_source medium-low) (state ?item solid))\n  :effect (and (melted ?item) (temperature ?item hot) (state ?item liquid))",
+    "(:action add\n    :parameters (?p - person ?item - ingredient ?sauce_pan - sauce_pan)\n    :precondition (and (at ?p ?sauce_pan) \n                       (or (in ?item ?can) (chopped ?item) (desirable ?item)) \n                       (melted ?velveeta))\n    :effect (and (in ?item ?sauce_pan) \n                 (not (in ?item ?can))",
+    "(:action serve\n    :parameters (?p - person ?item - consumable ?container - container ?location_from - location ?location_to - location)\n    :precondition (and (at ?p ?location_from) (in ?item ?location_from) (prepared ?item))\n    :effect (and (in ?item ?container) (served ?item) (at ?p ?location_to))"
+]

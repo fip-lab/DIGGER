@@ -1,0 +1,8 @@
+[
+    "(:action create ; Create a resource and update its status\n:parameters (?creator - person ?resource - object)\n:precondition (and (not (created ?creator ?resource)))\n:effect (created ?creator ?resource))",
+    "(:action diffuse ; Diffuse a resource and update its status\n  :parameters (?p - person ?item - object ?context - context)\n  :precondition (and (has_context ?p ?context) (has_tool ?p ?tool) (not (diffused ?p ?item ?context)))\n  :effect (diffused ?p ?item ?context)\n)",
+    "(:action start_experimenting\n  :parameters (?p - person ?e - experiment)\n  :precondition (and (has_studio ?p ?s) (has_reflector ?p ?r) (has_closeup_lens ?p ?l) (has_diffused_light ?p ?l))\n  :effect (and (is_experimenting ?p ?e))",
+    "(:action start ; Start a task or experiment\n  :parameters (?person - person ?task - task ?requirements - requirements)\n  :precondition (and (has_requirements ?person ?requirements))\n  :effect (and (is_started ?person ?task))",
+    "(:action have ; Ensure the availability of necessary items\n  :parameters (?npc - person ?item - object)\n  :precondition (and (available ?npc) (not (has ?npc ?item)))\n  :effect (has ?npc ?item))",
+    "(:action closeup ; Ensure a closeup resource is available for specific tasks\n  :parameters (?p - person ?item - object)\n  :precondition (and (has_studio ?p ?s) (not (has_closeup ?p ?item)))\n  :effect (has_closeup ?p ?item)\n)"
+]

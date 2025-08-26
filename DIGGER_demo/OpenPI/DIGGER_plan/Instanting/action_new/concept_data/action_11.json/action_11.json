@@ -1,0 +1,7 @@
+[
+    "(:action remove ;  Remove a component and update the state of the container and its contents\n  :parameters (?component - object ?container - object ?content - object)\n  :precondition (and (at ?component ?container) (attached ?component ?container))\n  :effect (and (not (attached ?component ?container))",
+    "(:action screw ;  Attach an object and update its state\n  :parameters (?entity - object)\n  :precondition (and (removed ?entity))\n  :effect (and (attached ?entity) (not (removed ?entity))",
+    "(:action fill_oil\n       :parameters (?ob - oil_bottle ?f - faucet)\n       :precondition (and (contains ?ob) (off ?f))\n       :effect (and (filled ?ob) (on ?f))",
+    "(:action fill ; Fill a container with a resource\n  :parameters (?container - container ?resource - resource ?source - source)\n  :precondition (and (contains ?container) (off ?source))\n  :effect (and (filled ?container) (on ?source))",
+    "(:action get ; Obtain a resource or update its state\n  :parameters (?agent - agent ?resource - entity ?container - container ?location - location)\n  :precondition (and \n    (at ?agent ?location) \n    (available ?resource ?location)\n    (contains ?container ?resource ?location)\n    (not (possesses ?agent ?resource))\n  )\n  :effect (and \n    (possesses ?agent ?resource)\n    (empty ?container ?resource ?location)\n  )"
+]

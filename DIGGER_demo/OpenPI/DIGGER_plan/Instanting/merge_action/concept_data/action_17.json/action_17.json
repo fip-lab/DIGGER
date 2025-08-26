@@ -1,0 +1,14 @@
+{
+    "select": [
+        "(:action select_paper; select suitable paper to make the pinwheels\n    :parameters (?p - player ?paper - paper)\n    :precondition (and (inventory ?p ?paper))\n    :effect (selected ?paper)\n  )\n\n",
+        "(:action find_wreath_base; find a suitable base for the wreath\n    :parameters (?p - player ?wreath_base - wreath_base)\n    :precondition (inventory ?p ?wreath_base)\n    :effect (found ?wreath_base)\n  )\n\n"
+    ],
+    "create": [
+        "(:action create_pinwheels; make enough pinwheels to create a wreath\n    :parameters (?p - player ?paper - paper ?pinwheels - pinwheels)\n    :precondition (and (selected ?paper) (inventory ?p ?paper))\n    :effect (and (inventory ?p ?pinwheels) (not (inventory ?p ?paper)))\n  )\n\n",
+        "(:action create_wreath_base; add hanger to the wreath base if necessary\n    :parameters (?p - player ?wreath_base - wreath_base ?hanger - hanger)\n    :precondition (and (found ?wreath_base) (inventory ?p ?hanger))\n    :effect (and (ready ?wreath_base) (not (inventory ?p ?hanger)))\n  )\n\n",
+        "(:action assemble_wreath; assemble the pinwheels onto the wreath base\n    :parameters (?p - player ?pinwheels - pinwheels ?wreath_base - wreath_base ?wreath - wreath)\n    :precondition (and (inventory ?p ?pinwheels) (ready ?wreath_base))\n    :effect (and (inventory ?p ?wreath) (not (inventory ?p ?pinwheels)) (not (inventory ?p ?wreath_base)))\n  )\n\n"
+    ],
+    "finish": [
+        "(:action finish_wreath; complete the wreath\n    :parameters (?p - player ?wreath - wreath)\n    :precondition (inventory ?p ?wreath)\n    :effect (and (completed ?wreath) (not (inventory ?p ?wreath)))\n  )\n```\n\nThese actions follow the structure and format outlined in the example, capturing the intent and logic of each step in the process of making a pinwheel wreath."
+    ]
+}

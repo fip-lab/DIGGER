@@ -1,0 +1,6 @@
+[
+    "(:action fold\n    ; Fold a resource and update task status\n    :parameters (?npc - npc ?loc - location ?input - object ?output - object)\n    :precondition (and (at ?npc ?loc) (inventory ?npc ?input) (foldable ?input ?output))\n    :effect (and (inventory ?npc ?output) (not (inventory ?npc ?input))",
+    "(:action cut ; Cut an item and update inventory status\n  :parameters (?npc - person ?item - object ?cut_piece - object ?loc - location)\n  :precondition (and (at ?npc ?loc) (inventory ?npc ?item) (measured_to_cut ?item))\n  :effect (and (inventory ?npc ?cut_piece) (not (inventory ?npc ?item))",
+    "(:action tape ; Tape an item and update the state\n  :parameters (?npc - person ?item1 - object ?item2 - object)\n  :precondition (and (at ?npc ?loc) (inventory ?npc ?item1) (ready_for_taping ?item1))\n  :effect (and (inventory ?npc ?item2) (not (inventory ?npc ?item1))",
+    "(:action put\n    :parameters (?npc - npc ?loc - location ?item - object ?container - container)\n    :precondition (and (at ?npc ?loc) (inventory ?npc ?item) (at ?container ?loc))\n    :effect (and (in ?item ?container) (not (inventory ?npc ?item))"
+]

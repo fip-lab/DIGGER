@@ -1,0 +1,7 @@
+(use-wailmer wailmer)
+(train-wailmer wailmer)
+(give-rare-candies wailmer)
+(attain-battle-frontier wailmer)
+(evolve-wailmer wailmer)
+(copy-rare-candies wailmer)
+; cost = 6 (unit cost)

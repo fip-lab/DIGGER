@@ -1,0 +1,53 @@
+(define (problem move_CreditCard1_to_Box1_with_more_object_37)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    CellPhone1 - object
+    Watch1 - object
+    Pillow1 - object
+    KeyChain1 - object
+    Pencil1 - object
+    CellPhone2 - object
+    CD1 - object
+    AlarmClock1 - object
+    CellPhone3 - object
+    Book1 - object
+    CreditCard1 - object
+    Drawer1 - receptacle
+    Bed1 - receptacle
+    Box1 - receptacle
+    Box2 - receptacle
+    Box3 - receptacle
+    Drawer4 - receptacle
+    Bed2 - receptacle
+    Sofa1 - receptacle
+    GarbageCan1 - receptacle
+    Drawer3 - receptacle
+    Drawer2 - receptacle
+    KeyChain2 - object
+    KeyChain3 - object
+    Book2 - object
+    Sofa2 - receptacle
+  )
+
+  (:init
+    (atLocation agent1 Drawer2)
+    (objectAtLocation CreditCard1 Drawer1)
+    (objectAtLocation CellPhone1 Drawer2)
+    (objectAtLocation Pencil1 GarbageCan1)
+    (objectAtLocation CellPhone2 Bed1)
+    (objectAtLocation Pillow1 Bed2)
+    (objectAtLocation CellPhone3 Sofa1)
+    (objectAtLocation Book1 Drawer4)
+    (objectAtLocation Book2 Box3)
+    (objectAtLocation KeyChain3 Box2)
+    (objectAtLocation KeyChain2 Box1)
+    (objectAtLocation KeyChain1 Box1)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation CreditCard1 Box1)
+    )
+  )
+)

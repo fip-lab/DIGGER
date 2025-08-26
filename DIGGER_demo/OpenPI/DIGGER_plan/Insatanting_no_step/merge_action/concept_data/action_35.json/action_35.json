@@ -1,0 +1,16 @@
+{
+    "place": [
+        "(:action place_flour_and_salt\n    :parameters (?p - player ?flour - whole_wheat_flour ?salt - salt ?bowl - mixing_bowl)\n    :precondition (and (inventory ?p ?flour) (inventory ?p ?salt) (empty ?bowl))\n    :effect (and (in ?flour ?bowl) (in ?salt ?bowl) (not (empty ?bowl)) (holding_flour_and_salt ?bowl))\n)\n\n",
+        "(:action place_pastry_on_wax_paper\n    :parameters (?p - player ?pastry - dough ?paper - wax_paper)\n    :precondition (and (inventory ?p ?pastry) (inventory ?p ?paper))\n    :effect (and (on ?pastry ?paper) (flattened ?pastry))\n)\n\n",
+        "(:action pour_oil\n    :parameters (?p - player ?oil - canola_oil ?bowl - mixing_bowl)\n    :precondition (and (inventory ?p ?oil) (holding_flour_and_salt ?bowl))\n    :effect (and (in ?oil ?bowl) (mixed ?bowl))\n)\n\n"
+    ],
+    "remove": [
+        "(:action remove_from_fridge\n    :parameters (?p - player ?pastry - dough)\n    :precondition (and (in_fridge ?pastry))\n    :effect (and (removed_from_fridge ?pastry) (at_room_temperature ?pastry))\n)\n\n"
+    ],
+    "press": [
+        "(:action press_pastry_into_pie_dish\n    :parameters (?p - player ?pastry - dough ?dish - pie_dish)\n    :precondition (and (flattened ?pastry) (inventory ?p ?dish))\n    :effect (and (in ?pastry ?dish) (pressed ?pastry))\n)\n\n"
+    ],
+    "create": [
+        "(:action create_edge_with_fork\n    :parameters (?p - player ?pastry - dough ?fork - fork)\n    :precondition (and (pressed ?pastry) (inventory ?p ?fork))\n    :effect (and (edge_created ?pastry) (rigid ?pastry))\n)\n```\n\n### Explanation:\n1. **place_flour_and_salt**: This action places the whole wheat flour and salt into the mixing bowl.\n   - Preconditions: The player has the flour and salt in their inventory, and the mixing bowl is empty.\n   - Effects: The flour and salt are in the bowl, and the bowl is now holding flour and salt.\n\n2. **pour_oil**: This action pours the canola oil into the mixing bowl.\n   - Preconditions: The player has the oil in their inventory, and the bowl is holding flour and salt.\n   - Effects: The oil is in the bowl, and the contents of the bowl are mixed.\n\n3. **place_pastry_on_wax_paper**: This action places the pastry dough onto a sheet of wax paper.\n   - Preconditions: The player has the pastry dough and the wax paper in their inventory.\n   - Effects: The pastry is on the wax paper and is flattened.\n\n4. **remove_from_fridge**: This action removes the pastry from the fridge.\n   - Preconditions: The pastry is in the fridge.\n   - Effects: The pastry is removed from the fridge and is now at room temperature.\n\n5. **press_pastry_into_pie_dish**: This action presses the pastry into the pie dish.\n   - Preconditions: The pastry is flattened, and the player has the pie dish in their inventory.\n   - Effects: The pastry is in the pie dish and is pressed.\n\n6. **create_edge_with_fork**: This action creates an edge on the pastry using a fork.\n   - Preconditions: The pastry is pressed into the pie dish, and the player has a fork in their inventory.\n   - Effects: The pastry has an edge created with a fork and is now rigid."
+    ]
+}

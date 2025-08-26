@@ -1,0 +1,44 @@
+task,nl_step
+3-decorate,"**Task**: 3-decorate
+
+**Steps in Natural Language**:
+1. Use the scissors to decorate your project."
+prepare_meat,"**Task**: prepare_meat  
+**Steps in Natural Language**:
+1. Use a suitable kitchen tool to handle and prepare the meat.
+2. Cook the meat thoroughly using your chosen cooking utensil."
+pick_hard_lock,"**Task**: pick_hard_lock
+
+**Steps in Natural Language**:
+1. Insert the credit card into the side of the door.
+2. Slide the credit card along the door frame and apply pressure to the locking mechanism to open the door."
+finishing_papyrus,"**Task**: Finishing Papyrus
+
+**Steps in Natural Language**:
+1. **Cut the papyrus stalks.** Use a sharp knife or scissors to carefully trim the stems of the papyrus plant. Ensure each stalk is cut evenly to prepare them for the next steps.
+2. **Peel the papyrus into strips.** Gently remove the outer layers of the stalks, creating long, thin strips. This process helps in forming the base layers of the finished papyrus.
+3. **Flatten the papyrus.** Lay the peeled strips out on a flat workspace and press them down using a smooth surface. Apply even pressure to ensure the papyrus becomes smooth and ready for writing or further processing."
+gather_kindling,"**Task**: gather_kindling  
+**Steps in Natural Language**:
+1. **Collect dry grass or other tinder materials** from the ground to use as a base for your fire.
+2. **Search the surrounding area** to find additional materials that can help sustain the fire.
+3. **Gather small twigs** from the ground or nearby bushes to build the initial structure of the fire.
+4. **Collect larger branches** to add to the kindling, ensuring they are dry and free from moisture.
+5. **Arrange the collected sticks** in a formation, such as a teepee or log cabin style, to facilitate effective burning."
+make_papyrus,"**Task**: make_papyrus
+
+**Steps in Natural Language**:
+1. Buy papyrus. You can purchase papyrus paper from a local store or an online supplier.
+2. Create papyrus from river materials. Collect reeds or other plants from the river and process them to make papyrus paper."
+move_to_bunker,"**Task**: move_to_bunker  
+**Steps in Natural Language**:
+1. Move into the basement of the second bunker to take shelter. This location provides enhanced protection and a safe space to stay during emergencies."
+ready_sc,"**Task**: ready_sc
+
+**Steps in Natural Language**:
+1. **Check that the electricity is properly set up and ready to use**.
+2. **Find and secure a power socket for your device**."
+heal-old-man,"**Task**: heal-old-man
+**Steps in Natural Language**:
+1. Use a papyrus supply wrapper to carefully wrap the necessary medical supplies.
+2. Apply a finishing papyrus supply wrapper to securely seal the wrapped supplies."

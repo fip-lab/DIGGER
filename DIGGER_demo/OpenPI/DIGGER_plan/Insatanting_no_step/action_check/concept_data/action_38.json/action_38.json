@@ -1,0 +1,3 @@
+[
+    "[\n  '(:action aim ; Aim a weapon at an enemy\\n :parameters (?p - player ?w - weapon ?e - enemy)\\n :precondition (and (has_weapon ?p ?w) (in_line_of_sight ?p ?e))\\n :effect (aiming_at_head ?p ?w ?e))',\n  '(:action shoot ; Shoot at an enemy\\'s head with a weapon\\n  :parameters (?p - player ?w - weapon ?e - enemy)\\n  :precondition (and \\n    (aiming_at_head ?p ?w ?e)\\n    (or (weapon_type ?w sniper)\\n        (weapon_type ?w shotgun)\\n        (and (weapon_type ?w pistol) (shots_fired ?p ?w 6))\\n        (and (weapon_type ?w boomshot) (chance_headshot ?p ?w 0.000001))\\n    )\\n  )\\n  :effect (headshot ?e)\\n)'\n]"
+]

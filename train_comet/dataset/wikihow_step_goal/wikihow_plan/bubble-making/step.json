@@ -1,0 +1,286 @@
+{
+    "goal": "Make Soap Bubbles for Your Children",
+    "steps": [
+        "Mix soap and water.",
+        "Enhance your bubble solution.",
+        "Make a little bubble wand.",
+        "Make a giant bubble wand.",
+        "First go outside, since bubbles look most beautiful when the sun shines through their iridescent swirls.",
+        "Make giant bubbles."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/b/b5/Make-Soap-Bubbles-for-Your-Children-Step-1-Version-2.jpg/aid1054059-v4-728px-Make-Soap-Bubbles-for-Your-Children-Step-1-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/4/4a/Make-Soap-Bubbles-for-Your-Children-Step-2-Version-2.jpg/aid1054059-v4-728px-Make-Soap-Bubbles-for-Your-Children-Step-2-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/c/c0/Make-Soap-Bubbles-for-Your-Children-Step-3-Version-2.jpg/aid1054059-v4-728px-Make-Soap-Bubbles-for-Your-Children-Step-3-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/0/0a/Make-Soap-Bubbles-for-Your-Children-Step-4-Version-2.jpg/aid1054059-v4-728px-Make-Soap-Bubbles-for-Your-Children-Step-4-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/0/02/Make-Soap-Bubbles-for-Your-Children-Step-5-Version-2.jpg/aid1054059-v4-728px-Make-Soap-Bubbles-for-Your-Children-Step-5-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/8/89/Make-Soap-Bubbles-for-Your-Children-Step-6-Version-2.jpg/aid1054059-v4-728px-Make-Soap-Bubbles-for-Your-Children-Step-6-Version-2.jpg"
+    ],
+    "states": [
+        {
+            "entity": "bubbles",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "inside | indoors",
+                        "after": "outside",
+                        "saliency": 0.505175983436853,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "in air",
+                        "saliency": 0.4275362318840579,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "bubbles | bubble solution"
+            ]
+        },
+        {
+            "entity": "bubble want",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted | shaped like want | bent into loop",
+                        "saliency": 0.19999999999999998,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "shape",
+                        "before": "in its original shape",
+                        "after": "in wand shape",
+                        "saliency": 0.5445134575569358,
+                        "attribute_annotation": "shape"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "for hanging",
+                        "after": "for blowing bubbles",
+                        "saliency": 0.30917874396135264,
+                        "attribute_annotation": "use"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "inside",
+                        "after": "outside",
+                        "saliency": 0.3892339544513458,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.25155279503105593,
+                        "attribute_annotation": "wetness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "coat hanger",
+                "bubble want",
+                "hanger",
+                "wire"
+            ]
+        },
+        {
+            "entity": "mixture",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "moisture",
+                        "before": "empty | dry",
+                        "after": "holding contents | wet",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "moisture"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.39648033126293997,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in container | in bottle | in tap",
+                        "after": "in mixing jar | in water | in mixing container",
+                        "saliency": 0.5082815734989649,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "pure",
+                        "after": "soapy",
+                        "saliency": 0.13788819875776398,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.17908902691511386,
+                        "attribute_annotation": "fullness"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "mixing jar",
+                "soap | water",
+                "mixture",
+                "bowl"
+            ]
+        },
+        {
+            "entity": "person",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "inside",
+                        "after": "outside",
+                        "saliency": 0.49275362318840576,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "person"
+            ]
+        },
+        {
+            "entity": "water surface",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "composition",
+                        "before": "smooth",
+                        "after": "bubbly",
+                        "saliency": 0.40993788819875776,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "water surface"
+            ]
+        }
+    ],
+    "clusters": {
+        "person": {
+            "entity_cluster": [
+                "person"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "bubbles": {
+            "entity_cluster": [
+                "bubbles"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "water surface": {
+            "entity_cluster": [
+                "water surface"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ]
+            }
+        },
+        "mixture": {
+            "entity_cluster": [
+                "soap",
+                "mixture",
+                "water",
+                "mixing jar",
+                "bubble solution",
+                "bowl"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "moisture": [
+                    "moisture"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "fullness": [
+                    "fullness"
+                ]
+            }
+        },
+        "bubble want": {
+            "entity_cluster": [
+                "wire",
+                "hanger",
+                "bubble want",
+                "coat hanger"
+            ],
+            "attribute_cluster": {
+                "shape": [
+                    "shape"
+                ],
+                "location": [
+                    "location"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "use": [
+                    "use"
+                ]
+            }
+        }
+    }
+}

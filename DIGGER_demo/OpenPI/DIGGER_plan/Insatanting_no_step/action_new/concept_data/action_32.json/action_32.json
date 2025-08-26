@@ -1,0 +1,7 @@
+[
+    "(:action pick ; Pick up an item and place it in a specified location\n    :parameters (?item - item ?p - player ?loc1 - location ?loc2 - location)\n    :precondition (and (at ?item ?loc1) (at ?p ?loc1))\n    :effect (and (not (at ?item ?loc1))",
+    "(:action throw ; Throw an item into a container\n :parameters (?item - object ?actor - agent ?start_loc - location ?end_loc - location ?container - container)\n :precondition (and (at ?item ?start_loc) (at ?actor ?start_loc) (at ?container ?end_loc))\n :effect (and (not (at ?item ?start_loc))",
+    "(:action dust ; Perform cleaning tasks in a location\n  :parameters (?p - player ?item - object ?room - location ?container - container)\n  :precondition (and (at ?p ?room) (or (full ?container) (and (at ?item ?room) (contains ?item))))\n  :effect (and (or (clean ?room) (clean ?item))",
+    "(:action shake ; Shake an item to transform its state\n  :parameters (?actor - agent ?item - object ?location - place)\n  :precondition (and (at ?actor ?location) (at ?item ?location) (not (clean ?item)))\n  :effect (clean ?item)\n)",
+    "(:action enjoy\n  ; Enjoy a resource or state and update personal satisfaction\n  :parameters (?p - person ?resource - object)\n  :precondition (at ?p ?resource)\n  :effect (happy ?p)\n)"
+]

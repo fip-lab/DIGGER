@@ -1,0 +1,176 @@
+[
+    {
+        "cluster_label": 10,
+        "task": "How to Start a Book Club at School",
+        "step": [
+            "Really think about if anyone at your school would join.",
+            "Contact a school administrator for permission, preferably the principal.",
+            "Find a teacher or parent to supervise.",
+            "Compose a list of books that you want to read.",
+            "Think of a time to meet.",
+            "Do you know what you'll actually be doing?.",
+            "Get some members!.",
+            "Establish some rules.",
+            "After the meeting, make sure that they know when the next one is."
+        ],
+        "steps_predictions": [
+            "join_new_member npc ss",
+            "putobjectinreceptacle agent1 npc",
+            "find_teach npc school",
+            "compose_list npc book",
+            "set_meeting_time npc",
+            "know_what_you_wanted_to_actually_be_amazed you",
+            "get_member npc ss",
+            "set_rules ground_surface",
+            "know_when_next_meeting_is next meeting"
+        ]
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Start a Romance Book Club",
+        "step": [
+            "Set the \"heat level.\".",
+            "Stick with one sub-genre.",
+            "Pick books from multiple sub-genres.",
+            "Venture into nonfiction.",
+            "Read a classic romance.",
+            "Select a current bestseller.",
+            "Ask for suggestions.",
+            "Read different books and compare."
+        ],
+        "steps_predictions": [
+            "set_heat_level stove_knob velveeta",
+            "stick_with_subgenre character",
+            "pick_books npc book",
+            "venture_into_nonfiction npc",
+            "read_romance npc",
+            "select_new_member_of_family npc",
+            "ask_for_suggestions user1 pen1",
+            "read_books npc book"
+        ]
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Create Rules for a Book Club",
+        "step": [
+            "Come up with a member list.",
+            "Set rules for book acquisition.",
+            "Decide where and when to meet.",
+            "Write down the loan policy.",
+            "Set a return schedule.",
+            "Assign a member to track the loans."
+        ],
+        "steps_predictions": [
+            "create_member_list npc ss",
+            "set_rules npc book_acquired",
+            "set_meeting_location npc basement",
+            "write_loans_policy npc home",
+            "set_return_schedule npc basement",
+            "listen_to_member_secret adrian liam ss"
+        ]
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Host a Book Club",
+        "step": [
+            "Select a theme for the book club.",
+            "Find out what sort of snacks your group wants.",
+            "Include some general book-themed decor."
+        ],
+        "steps_predictions": [
+            "select_theme book_club",
+            "get_snack npc",
+            "build_wall npc book_themed"
+        ]
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Start an Online Book Group",
+        "step": [
+            "Don\u2019t try to reinvent the wheel.",
+            "Think about how you would like the discussions to flow.",
+            "Make your website inviting.",
+            "Start with what you know.",
+            "Offer more to your readers than a book discussion.",
+            "Keep it fresh.",
+            "Market your new online group.",
+            "Make people feel welcome."
+        ],
+        "steps_predictions": [
+            "create_new_wheel_reinvention_system npc",
+            "create_conversation npc covering_tracks track",
+            "make_commission npc covering_tracks track",
+            "start_with_knowledge you",
+            "initiate_conversation npc book_panel",
+            "keep_fresh npc",
+            "market_new_member_group npc adrian ss",
+            "make_welcome npc"
+        ]
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Start a Women's Book Club",
+        "step": [
+            "Look for books that cover women\u2019s issues.",
+            "Search out books with strong female protagonists.",
+            "Study the works of female authors.",
+            "Start with books you\u2019ve been dying to read.",
+            "Allow other members to make suggestions.",
+            "Come with discussion questions.",
+            "Ask the other members to come with questions.",
+            "Nudge the group back on track if the discussion gets derailed."
+        ],
+        "steps_predictions": [
+            "check_books npc book",
+            "search_for_book npc book",
+            "study_female_authors npc book",
+            "start_reading npc book",
+            "make_suggestions npc ss",
+            "listen_to_conversation_question",
+            "ask_others_with_questions npc ss",
+            "nudge_group_back_on_tracks npc"
+        ]
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Start a Library Book Club",
+        "step": [
+            "Pick books that are available at the library.",
+            "Strike a deal with your library.",
+            "Choose books that are fairly complex.",
+            "Ask for opinions.",
+            "Come with questions prepared.",
+            "Ask each member to bring in a discussion question."
+        ],
+        "steps_predictions": [
+            "pick_books npc book",
+            "strike_deal npc covering_tracks track",
+            "choose_books npc book",
+            "ask_for_inreceptacle agent1 advice1",
+            "prepare_questions npc",
+            "bring_conversation_question npc"
+        ]
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Choose a Book for a Book Club",
+        "step": [
+            "Look at a bestseller list.",
+            "Ask for a recommendation.",
+            "Visit a few expert websites dealing with book clubs and book reviews.",
+            "Find out what other book clubs are reading.",
+            "Pick a book you have already read and enjoyed.",
+            "Pick a book that goes with the theme of your book club.",
+            "Most importantly, don't stress yourself."
+        ],
+        "steps_predictions": [
+            "check_list npc book",
+            "ask_for_recommendation npc",
+            "visibility npc book_club",
+            "read_bookclub npc bookclub",
+            "pick_book npc book",
+            "pick_book npc book club",
+            "stress_you npc basement"
+        ]
+    }
+]

@@ -1,0 +1,233 @@
+{
+    "goal": "Ninja Defuse in Call of Duty",
+    "steps": [
+        "Move in and cover your route to the bomb site.",
+        "Find a hiding spot and pull out your pistol.",
+        "Investigate your enemy's routes.",
+        "Wait until enemy does start to plant the bomb.",
+        "Start defusing once the bomb has been planted."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/7/78/Ninja-Defuse-in-Call-of-Duty-Step-1.jpg/aid816694-v4-728px-Ninja-Defuse-in-Call-of-Duty-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/0/05/Ninja-Defuse-in-Call-of-Duty-Step-2.jpg/aid816694-v4-728px-Ninja-Defuse-in-Call-of-Duty-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/9/9c/Ninja-Defuse-in-Call-of-Duty-Step-3.jpg/aid816694-v4-728px-Ninja-Defuse-in-Call-of-Duty-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/2/2d/Ninja-Defuse-in-Call-of-Duty-Step-4.jpg/aid816694-v4-728px-Ninja-Defuse-in-Call-of-Duty-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/a/ab/Ninja-Defuse-in-Call-of-Duty-Step-5.jpg/aid816694-v4-728px-Ninja-Defuse-in-Call-of-Duty-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "game character",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in",
+                        "saliency": 0.40017746228926354,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating",
+                        "saliency": 0.3313368825791186,
+                        "attribute_annotation": "focus"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting",
+                        "saliency": 0.2795770482105886,
+                        "attribute_annotation": "focus"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb",
+                        "saliency": 0.3484176279207335,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing",
+                        "saliency": 0.2795770482105886,
+                        "attribute_annotation": "focus"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "game character",
+                "you"
+            ]
+        },
+        {
+            "entity": "routes",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered",
+                        "saliency": 0.5970127181307306,
+                        "attribute_annotation": "coverage"
+                    },
+                    {
+                        "attribute": "appearance",
+                        "before": "uncovered",
+                        "after": "covered",
+                        "saliency": 0.5748299319727892,
+                        "attribute_annotation": "appearance"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "uninvestigated",
+                        "after": "investigated",
+                        "saliency": 0.4380360839988169,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "the route",
+                "route",
+                "routes"
+            ]
+        },
+        {
+            "entity": "bomb",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "skill",
+                        "before": "absent | unplanted",
+                        "after": "planted",
+                        "saliency": 0.4010647737355812,
+                        "attribute_annotation": "skill"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "skill",
+                        "before": "active | ticking",
+                        "after": "deactivated | defused | being defused",
+                        "saliency": 0.45282460810411124,
+                        "attribute_annotation": "skill"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "bomb"
+            ]
+        },
+        {
+            "entity": "pistol",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "hidden | concealed",
+                        "after": "out | exposed",
+                        "saliency": 0.5156758355516119,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "in inventory",
+                        "after": "equipped",
+                        "saliency": 0.300354924578527,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "pistol"
+            ]
+        }
+    ],
+    "clusters": {
+        "pistol": {
+            "entity_cluster": [
+                "pistol"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "availability": [
+                    "availability"
+                ]
+            }
+        },
+        "routes": {
+            "entity_cluster": [
+                "route",
+                "the route",
+                "routes"
+            ],
+            "attribute_cluster": {
+                "coverage": [
+                    "coverage"
+                ],
+                "appearance": [
+                    "appearance"
+                ],
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "bomb": {
+            "entity_cluster": [
+                "bomb"
+            ],
+            "attribute_cluster": {
+                "skill": [
+                    "skill"
+                ]
+            }
+        },
+        "game character": {
+            "entity_cluster": [
+                "game character",
+                "you"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "focus": [
+                    "focus"
+                ]
+            }
+        }
+    }
+}

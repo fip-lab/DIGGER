@@ -1,0 +1,9 @@
+[
+    "(:action place\n    :parameters (?p - player ?item1 - object ?item2 - object ?container - object)\n    :precondition (and (inventory ?p ?item1) (at ?p ?container) (or (empty ?container) (holding_flour_and_salt ?container)) (or (not (flattened ?item1)) (inventory ?p ?item2)))\n    :effect (and \n        (or (holding_flour_and_salt ?container) (flattened ?item1) (mixed_with_oil ?container) (on_wax_paper ?item1))",
+    "(:action remove\n    :parameters (?agent - entity ?item - object ?container - location)\n    :precondition (and (at ?agent ?container) (in_container ?item ?container))\n    :effect (and (not (in_container ?item ?container))",
+    "(:action press ; Press an item into a container or surface\n    :parameters (?p - agent ?item - object ?surface - surface)\n    :precondition (and (at ?p ?item) (prepared ?item) (at ?p ?surface))\n    :effect (and (pressed ?item ?surface) (not (prepared ?item))",
+    "(:action create_edge_with_fork\n       :parameters (?p - player ?pastry - dough ?fork - utensil)\n       :precondition (and (in_pie_dish ?pastry) (inventory ?p ?fork) (at ?p ?pastry))\n       :effect (edged_with_fork ?pastry)\n   )",
+    "(:action create\n  :parameters (?actor - person ?item - object ?tool - object)\n  :precondition (and (inventory ?actor ?tool) (at ?actor ?item) (not (created ?item)))\n  :effect (created ?item)\n)",
+    "(:action create\n    :parameters (?p - player ?pastry - dough ?fork - utensil)\n    :precondition (and (inventory ?p ?fork) (at ?p ?pastry) (not (created ?pastry)))\n    :effect (created ?pastry)\n  )",
+    "(:action create\n    :parameters (?p - person ?bookshelf - furniture ?screwdriver - tool)\n    :precondition (and (inventory ?p ?screwdriver) (at ?p ?bookshelf) (not (created ?bookshelf)))\n    :effect (created ?bookshelf)\n  )"
+]

@@ -1,0 +1,23 @@
+{
+    "breathe": [
+        "(:action breathe\n    :parameters (?npc - person)\n    :precondition (and (inQuicksand ?npc) (calm ?npc))\n    :effect (and (buoyant ?npc) (not (sinking ?npc)))\n)\n\n"
+    ],
+    "free": [
+        "(:action free\n    :parameters (?npc - person ?qsand - quicksand)\n    :precondition (and (inQuicksand ?npc) (buoyant ?npc) (stuck ?npc ?qsand))\n    :effect (and (free ?npc ?qsand) (not (stuck ?npc ?qsand)))\n)\n\n"
+    ],
+    "stay": [
+        "(:action stay_flat\n    :parameters (?npc - person ?stick - tool ?qsand - quicksand)\n    :precondition (and (inQuicksand ?npc) (free ?npc ?qsand) (hasStick ?npc ?stick))\n    :effect (and (onFirmGround ?npc) (not (inQuicksand ?npc)))\n)\n```\n\nExplanation:\n- **breathe**: This action involves the NPC (non-player character) breathing deeply to stay calm and become buoyant. The precondition is that the NPC must be in quicksand and calm. The effect is that the NPC becomes buoyant and stops sinking.\n- **free**: This action involves freeing the NPC from the quicksand. The precondition is that the NPC must be in quicksand, buoyant, and stuck. The effect is that the NPC becomes free from the quicksand.\n- **stay_flat**: This action involves the NPC staying flat on their back and using a stick to guide themselves to firm ground. The precondition is that the NPC must be in quicksand, free from the quicksand, and have a stick. The effect is that the NPC reaches firm ground and is no longer in quicksand."
+    ],
+    "identify": [
+        "(:action identify-quicksand\n    :parameters (?q - quicksand ?l - location)\n    :precondition (and (at ?q ?l) (not (identified ?q)))\n    :effect (and (identified ?q) (not (unidentified ?q)))\n)\n\n"
+    ],
+    "mark": [
+        "(:action mark-quicksand\n    :parameters (?q - quicksand ?s - sign)\n    :precondition (and (identified ?q) (at ?s ?q))\n    :effect (and (marked ?q) (visible ?s) (not (unmarked ?q)))\n)\n\n"
+    ],
+    "create": [
+        "(:action create-safe-path\n    :parameters (?q - quicksand ?p - path)\n    :precondition (and (identified ?q) (not (safe ?p)))\n    :effect (and (safe ?p) (created ?p) (bypasses ?p ?q))\n)\n\n"
+    ],
+    "inform": [
+        "(:action inform-others\n    :parameters (?q - quicksand ?p - people)\n    :precondition (and (identified ?q) (marked ?q) (safe ?p))\n    :effect (and (informed ?p) (aware ?p ?q))\n)\n```"
+    ]
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "cluster_label": 722,
+        "task": "How to Treat a Ruptured Ovarian Cyst",
+        "step": [
+            "Go to your doctor or the emergency room.",
+            "Get a physical exam.",
+            "Test for a ruptured cyst."
+        ],
+        "steps_predictions": [
+            "go_to_emergency_room npc",
+            "get_physical_examination you",
+            "test_cyst npc"
+        ],
+        "goal_state": " ((not (is_injured npc)))"
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Know if You Have a Baker's Cyst",
+        "step": [
+            "Understand that some health conditions can lead to the create of baker\u2019s cysts.",
+            "Know that some knee injuries can increase your chances of developing these cysts.",
+            "Be aware that previous surgeries can predispose you to getting these cysts."
+        ],
+        "steps_predictions": [
+            "learn npc",
+            "know_you_are_where_to_aim you",
+            "be_injured npc"
+        ],
+        "goal_state": " ((not (injured npc)))"
+    }
+]

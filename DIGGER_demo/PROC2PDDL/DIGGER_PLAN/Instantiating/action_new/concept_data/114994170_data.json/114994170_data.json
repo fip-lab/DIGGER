@@ -1,0 +1,5 @@
+[
+    "(:action fill ;  Fill an entity and update its status\n    :parameters (?entity - object ?npc - person ?location - place)\n    :precondition (and\n                    (at_location ?entity ?location)\n                    (not (filled ?entity))\n                    (available ?npc))\n    :effect (and\n              (filled ?entity)\n              (not (empty ?entity))",
+    "(:action get ; Obtain a resource and update possession status\n  :parameters (?agent - entity ?resource - object ?location - place)\n  :precondition (and (at_location ?agent ?location) (available ?resource ?location))\n  :effect (and (possess ?agent ?resource) (not (available ?resource ?location))",
+    "(:action check\n    :parameters (?agent - entity ?resource - resource ?context - context)\n    :precondition (and\n                    (available ?agent)\n                    (not (checked ?agent ?resource))\n                    (in_context ?agent ?context)\n                   )\n    :effect (and\n             (checked ?agent ?resource)\n             (updated_status ?resource)\n             (learned_functionality ?agent ?resource)\n            )"
+]

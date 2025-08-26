@@ -1,0 +1,6 @@
+[
+    "(:action cut_strips\n  :parameters (?npc - npc ?elastic - elastic)\n  :precondition (and (at ?npc ?loc) (at ?elastic ?loc) (shape ?elastic uncut))\n  :effect (and (shape ?elastic cut) (location ?elastic in_lap) (length ?elastic shorter))",
+    "(:action cut ; Cut an item and update its state\n  :parameters (?agent - agent ?item - object ?loc - location)\n  :precondition (and (at ?agent ?loc) (at ?item ?loc) (shape ?item uncut))\n  :effect (and (shape ?item cut) (location ?item in_lap) (length ?item shorter))",
+    "(:action slip ; Slip beads onto an elastic band\n  :parameters (?npc - npc ?bead - bead ?elastic - elastic ?loc - location)\n  :precondition (and (at ?npc ?loc) (at ?bead ?loc) (at ?elastic ?loc) (location ?bead off_strip))\n  :effect (and (location ?bead on_strip) (organization ?bead in_order_on_band) (shape ?bead banded))",
+    "(:action finish ; Finish a task and update its status\n  :parameters (?npc - npc ?item - object)\n  :precondition (and (at ?npc ?loc) (status ?item in_progress))\n  :effect (and (status ?item completed))"
+]

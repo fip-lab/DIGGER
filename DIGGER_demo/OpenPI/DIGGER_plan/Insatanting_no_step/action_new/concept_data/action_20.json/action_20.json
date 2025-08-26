@@ -1,0 +1,10 @@
+[
+    "(:action crumple\n    :parameters (?agent - person ?item - object)\n    :precondition (and (at ?agent ?item) (state ?item flat))\n    :effect (and (state ?item crumpled) (not (state ?item flat))",
+    "(:action thread ; Thread an item through a medium and update its location\n    :parameters (?p - person ?item - object ?medium - object)\n    :precondition (and (at ?p ?item) (at ?p ?medium) (state ?item crumpled))\n    :effect (and (location ?item threaded_on_medium) (not (location ?item previous_location))",
+    "(:action twist ; Twist an object to change its shape\n    :parameters (?p - person ?obj - object ?tool - tool)\n    :precondition (and (at ?p ?obj) (at ?tool ?p) (shape ?obj ?initial_shape))\n    :effect (and (shape ?obj twisted) (not (shape ?obj ?initial_shape))",
+    "(:action complete ; Complete a task and update its status\n  :parameters (?p - person ?task - object)\n  :precondition (and (status ?task in_progress))\n  :effect (and (status ?task completed) (not (status ?task in_progress))",
+    "(:action untwist ; Transform the shape of an item using a tool\n  :parameters (?p - person ?item - object ?tool - tool)\n  :precondition (and (at ?p ?item) (at ?item ?p) (at ?tool ?p) (shape ?item initial_shape))\n  :effect (and (shape ?item new_shape) (use ?item for_new_purpose) (not (shape ?item initial_shape))",
+    "(:action adjust\n    :parameters (?entity - object ?item - object ?state_from - state ?state_to - state)\n    :precondition (and (at ?entity ?item) (state ?item ?state_from))\n    :effect (and (state ?item ?state_to) (not (state ?item ?state_from))",
+    "(:action adjust_paper\n      :parameters (?p - person ?hanger - hanger ?paper - paper)\n      :precondition (and (at ?p ?hanger) (state ?paper threaded_on_hanger))\n      :effect (and (state ?paper scrunched) (not (state ?paper crumpled))",
+    "(:action adjust\n      :parameters (?p - person ?hanger - hanger ?paper - paper ?state_from - state ?state_to - state)\n      :precondition (and (at ?p ?hanger) (state ?paper threaded_on_hanger))\n      :effect (and (state ?paper scrunched) (not (state ?paper crumpled))"
+]

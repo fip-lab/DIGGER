@@ -1,0 +1,58 @@
+[
+    {
+        "task": "How to Apply a Steak Rub",
+        "instantiting_action": [
+            "choose_chuck_steak(p s)",
+            "store_chuck_steak(p s)",
+            "choose(agent item)",
+            "store(agent item place)",
+            "cut(item tool)",
+            "check(agent entity socket)",
+            "check(agent entity stove)",
+            "make(npc resource socket)",
+            "make(npc resource stove)",
+            "use(agent item resource)",
+            "place_and_transform(agent entity jar modifier)",
+            "place_and_transform(agent entity saucepan modifier)",
+            "add(entity1 entity2 target)",
+            "submerge(actor entity medium)",
+            "serve(main side)",
+            "brush(item src dest attr_before attr_after)",
+            "prepare_and_cook(p i l1 l2)",
+            "chopped(agent item)",
+            "marinate(entity substance)"
+        ]
+    },
+    {
+        "task": "How to Make Spotted Dick",
+        "instantiting_action": [
+            "choose_chuck_steak(p s)",
+            "store_chuck_steak(p s)",
+            "choose(agent item)",
+            "store(agent item place)",
+            "cut(item sponge)",
+            "check(agent entity location)",
+            "make(npc syrup location)",
+            "make(npc milk location)",
+            "make(npc butter location)",
+            "make(npc egg location)",
+            "use(agent item syrup)",
+            "use(agent item milk)",
+            "use(agent item butter)",
+            "use(agent item egg)",
+            "place_and_transform(agent entity bowl modifier)",
+            "place_and_transform(agent entity cup modifier)",
+            "place_and_transform(agent entity pan modifier)",
+            "place_and_transform(agent entity pot modifier)",
+            "place_and_transform(agent entity saucepan modifier)",
+            "add(entity1 entity2 target)",
+            "submerge(actor entity medium)",
+            "serve(main side)",
+            "brush(item src dest attr_before attr_after)",
+            "prepare_and_cook(p i l1 l2)",
+            "chopped(agent item)",
+            "marinate(entity water)",
+            "marinate(entity salt)"
+        ]
+    }
+]

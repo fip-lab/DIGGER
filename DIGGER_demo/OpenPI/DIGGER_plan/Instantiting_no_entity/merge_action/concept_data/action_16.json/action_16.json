@@ -1,0 +1,16 @@
+{
+    "find": [
+        "(:action find_area\n      :parameters (?p - player ?loc - location ?area - area)\n      :precondition (and (at ?p ?loc) (has_slightly_damp_dirt ?area))\n      :effect (and (at ?p ?area))\n)\n\n"
+    ],
+    "collect": [
+        "(:action collect_sticks\n      :parameters (?p - player ?loc - location ?stick - stick)\n      :precondition (and (at ?p ?loc) (has_twigs_and_sticks ?loc))\n      :effect (and (inventory ?p ?stick))\n)\n\n"
+    ],
+    "create": [
+        "(:action create_formation\n      :parameters (?p - player ?loc - location ?stick - stick ?formation - formation)\n      :precondition (and (at ?p ?loc) (inventory ?p ?stick))\n      :effect (and (at ?formation ?loc) (not (inventory ?p ?stick)))\n)\n\n",
+        "(:action create_decorations\n      :parameters (?p - player ?loc - location ?moss - moss ?decoration - decoration)\n      :precondition (and (at ?p ?loc) (at ?moss ?loc))\n      :effect (and (at ?decoration ?loc))\n)\n```\n\nIn these actions, we have:\n1. `find_area`: Finding a small area with slightly damp dirt.\n2. `collect_sticks`: Collecting twigs and sticks.\n3. `create_formation`: Creating a formation using the sticks.\n4. `build_walls`: Building the exterior walls using leaves or bark.\n5. `use_as_leaves`: Using leaves to decorate the walls.\n6. `create_decorations`: Creating decorations using fairy moss.\n\nThese actions should cover the steps and descriptions provided for making a fairy house in the woods.",
+        "(:action build_walls\n      :parameters (?p - player ?loc - location ?formation - formation ?wall - wall)\n      :precondition (and (at ?p ?loc) (at ?formation ?loc) (has_leaves_or_bark ?loc))\n      :effect (and (at ?wall ?loc))\n)\n\n"
+    ],
+    "use": [
+        "(:action use_as_leaves\n      :parameters (?p - player ?loc - location ?leaf - leaf ?wall - wall)\n      :precondition (and (at ?p ?loc) (at ?wall ?loc) (inventory ?p ?leaf))\n      :effect (and (at ?wall_with_leaf ?loc) (not (inventory ?p ?leaf)))\n)\n\n"
+    ]
+}

@@ -1,0 +1,6 @@
+[
+    "(:action prepare ; Prepare an area or setup for a task\n  :parameters (?agent - agent ?target - target)\n  :precondition (and (at ?agent ?target) (not (prepared ?target)))\n  :effect (prepared ?target))",
+    "(:action take ; Take an item and update its status\n  :parameters (?agent - agent ?source - entity ?item - object)\n  :precondition (and (at ?agent ?source) (attached ?item ?source))\n  :effect (and (not (attached ?item ?source))",
+    "(:action moisten ; Moisten an item and apply a substance\n :parameters (?p - player ?item - object ?substance - substance)\n :precondition (and (cut ?item) (drier ?item) (inventory ?p ?substance))\n :effect (and (moistened ?item) (dipped ?item ?substance))",
+    "(:action plant\n    :parameters (?actor - entity ?resource - object ?location - place)\n    :precondition (and (prepared ?location) (treated ?resource) (not (in ?resource ?location)))\n    :effect (and (in ?resource ?location) (not (treated ?resource))"
+]

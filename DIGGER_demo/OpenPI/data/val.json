@@ -1,0 +1,101 @@
+[
+    {
+        "goal": "Ninja Defuse in Call of Duty",
+        "steps": [
+            "Move in and cover your route to the bomb site.",
+            "Find a hiding spot and pull out your pistol.",
+            "Investigate your enemy's routes.",
+            "Wait until enemy does start to plant the bomb.",
+            "Start defusing once the bomb has been planted."
+        ],
+        "pddl": [
+            "find_hiding_spot character player_pistol further_out",
+            "investigate_routes character current_routes",
+            "wait_until_planting character game_bomb",
+            "start_defusing character game_bomb"
+        ],
+        "goal_state": "((location character now_at_bomb) (focus character defusing) (skill game_bomb defused))"
+    },
+    {
+        "goal": "Make Asparagus in Serrano Ham",
+        "steps": [
+            "Preheat your oven beforehand to 400°F (200°C or Gas Mark 6).",
+            "Add your olive oil into a baking or roasting tin large enough to hold all of your asparagus spears.",
+            "Cut off the ends of the asparagus spears and wrap enough Serrano ham around each asparagus spear until it is mostly covered but with top jagged part still open.",
+            "Roast the asparagus in the oven for 8-10 minutes.",
+            "Serve immediately with a main dish so your asparagus acts as a side order."
+        ],
+        "pddl": [
+            "prepare_asparagus asparagus1 cutting_board1",
+            "add_oil_to_tin olive_oil1 tin1",
+            "wrap_asparagus_with_ham asparagus1 asparagus1",
+            "place_asparagus_in_tin asparagus1 tin1",
+            "preheat_oven oven1",
+            "put_tin_in_oven tin1 oven1 asparagus1",
+            "roast_asparagus asparagus1 oven1",
+            "serve_asparagus asparagus1 dish1"
+        ],
+        "goal_state": "((served_asparagus asparagus1))"
+    },
+    {
+        "goal": "Make Pineapple Sherbet",
+        "steps": [
+            "Blend the pineapple if it's fresh.",
+            "Pour in the milk, oil, sugar or syrup and extract.",
+            "Blend all of the ingredients together until smooth.",
+            "Pour into a baking dish with decent sides.",
+            "Place in the freezer.",
+            "To serve: Simply scoop or cut out pieces of the sherbet."
+        ],
+        "pddl": [
+            "add-ingredient sugar blender",
+            "add-ingredient pineapple blender",
+            "add-ingredient oil blender",
+            "add-ingredient milk blender",
+            "add-ingredient extract blender",
+            "blend-all blender mixture",
+            "pour-into-dish mixture blender plate",
+            "freeze-mixture mixture plate freezer sherbet"
+        ],
+        "goal_state": "((in sherbet plate))"
+    },
+    {
+        "goal": "Make Potato Ribbons",
+        "steps": [
+            "Wash especially well if you intend to keep the peel intact.",
+            "Cut round and round, keeping the peel as thin as possible as you go.",
+            "Drain the potatoes dry on a clean cloth.",
+            "Fry the ribbons in deep, hot fat.",
+            "Serve."
+        ],
+        "pddl": [
+            "wash_potatoes potato1 sink1 cloth1",
+            "wash_potatoes potato2 sink1 cloth1",
+            "cut_potatoes potato2 cloth1",
+            "cut_potatoes potato1 cloth1",
+            "drain_potatoes potato2 cloth1",
+            "drain_potatoes potato1 cloth1",
+            "fry_potatoes potato2 pan1 stove1",
+            "fry_potatoes potato1 pan1 stove1",
+            "serve_potatoes potato2 dish1",
+            "serve_potatoes potato1 dish1"
+        ],
+        "goal_state": "((in_dish potato1 dish1) (in_dish potato2 dish1))"
+    },
+    {
+        "goal": "Make Carob Fruit Balls",
+        "steps": [
+            "Mix all of the ingredients together.",
+            "Roll into small balls.",
+            "Place in the freezer for half an hour.",
+            "Serve."
+        ],
+        "pddl": [
+            "mix_ingredients user1 mixing_bowl1 spoon1 carob1 carob1 carob1 carob1",
+            "roll_into_balls user1 mixing_bowl1 spoon1",
+            "freeze_balls user1 mixing_bowl1 freezer1",
+            "serve_balls user1 mixing_bowl1 plate1"
+        ],
+        "goal_state": "((served mixing_bowl1) (at mixing_bowl1 dining_table1))"
+    }
+]

@@ -1,0 +1,5 @@
+[
+    "(:action find\n  ; Find and acquire an item or entity, updating the player's inventory\n  :parameters (?p - player ?item - object ?loc - location)\n  :precondition (and (at ?p ?loc) (at ?item ?loc))\n  :effect (and (inventory ?p ?item) (not (at ?item ?loc))",
+    "(:action use\n  :parameters (?p - player ?v - pokemon ?stone - evolution_stone)\n  :precondition (and (inventory ?p ?v) (inventory ?p ?stone) (bag_selected ?p ?bag))\n  :effect (and (evolved ?v) (not (inventory ?p ?stone))",
+    "(:action wait ; Wait for an event or state change\n:parameters (?agent - entity ?object - entity)\n:precondition (and (evolved ?object))\n:effect (event_occurred ?object))"
+]

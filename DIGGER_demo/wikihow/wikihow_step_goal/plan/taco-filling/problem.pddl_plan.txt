@@ -1,0 +1,7 @@
+(brown_meat_and_onion beef1 onion1 pan1 stove1 kitchen_counter)
+(move_pan_to_counter pan1 kitchen_counter sink_location)
+(drain_fat pan1)
+(move_pan_to_counter pan1 sink_location kitchen_counter)
+(add_ingredients_and_simmer pan1 spice1 tomato1 stove1 kitchen_counter)
+(finish_preparation pan1 serving_dish1 beef1 kitchen_counter)
+; cost = 6 (unit cost)

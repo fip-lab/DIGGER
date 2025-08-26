@@ -1,0 +1,13 @@
+{
+    "select": [
+        "(:action select_paper\n    :parameters (?p - player ?paper - paper)\n    :precondition (and (inventory ?p ?paper))\n    :effect (selected ?paper)\n)\n\n",
+        "(:action find_wreath_base\n    :parameters (?p - player ?wreath_base - wreath_base)\n    :precondition (and (inventory ?p ?wreath_base))\n    :effect (found ?wreath_base)\n)\n\n"
+    ],
+    "create": [
+        "(:action create_pinwheels\n    :parameters (?p - player ?paper - paper ?pinwheels - pinwheels)\n    :precondition (and (selected ?paper))\n    :effect (and (inventory ?p ?pinwheels) (not (selected ?paper)))\n)\n\n",
+        "(:action create_wreath_base\n    :parameters (?p - player ?wreath_base - wreath_base ?twine_ribbon - twine_ribbon)\n    :precondition (and (found ?wreath_base) (inventory ?p ?twine_ribbon))\n    :effect (and (prepared ?wreath_base) (not (found ?wreath_base)))\n)\n\n"
+    ],
+    "finish": [
+        "(:action finish_wreath\n    :parameters (?p - player ?pinwheels - pinwheels ?wreath_base - wreath_base ?wreath - wreath)\n    :precondition (and (inventory ?p ?pinwheels) (prepared ?wreath_base))\n    :effect (and (inventory ?p ?wreath) (not (inventory ?p ?pinwheels)) (not (prepared ?wreath_base)))\n)\n```\n\nExplanation:\n1. `select_paper` action selects the suitable paper for making pinwheels.\n2. `create_pinwheels` action creates pinwheels from the selected paper.\n3. `find_wreath_base` action finds a suitable base for the wreath.\n4. `create_wreath_base` action prepares the wreath base by adding a hanger if needed.\n5. `finish_wreath` action combines the pinwheels and the prepared wreath base to finish the wreath.\n\nThese actions follow the structure and format provided in the example and align with the task's steps and descriptions."
+    ]
+}

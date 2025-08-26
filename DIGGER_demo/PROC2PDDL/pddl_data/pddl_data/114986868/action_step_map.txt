@@ -1,0 +1,17 @@
+(:action go ; 
+(:action get ; 
+(:action drop ; 
+(:action collect_water ; 1,2
+(:action filter_water ; 4
+(:action boil_water ; 4
+(:action drink_water ; 3
+(:action get_wood ; 2
+(:action make_drill ;19
+(:action make_fire ; 3
+(:action make_spear ; 7
+(:action catch_fish ; 6
+(:action cook_fish ; 6
+(:action eat_fish ; 6
+(:action get_foliage ; 10
+(:action build_shelter ; 7,8,9
+(:action survive ; 16,17,18

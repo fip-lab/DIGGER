@@ -1,0 +1,4 @@
+[
+    "(:action create\n  :parameters (?n - npc ?b - location ?i - item)\n  :precondition (and\n                  (at ?n ?b)\n                  (or (raft_draft_available ?i)\n                      (not (raft_draft_available ?i))))\n  :effect (and\n            (or (and (raft_created ?i)\n                     (not (raft_draft_available ?i))",
+    "(:action put\n    :parameters (?agent - agent ?item - object ?from - location ?to - location)\n    :precondition (and \n                    (location ?item ?from)\n                    (can_access ?agent ?from)\n                    (not (location ?item ?to))\n                    (not (location ?agent ?to))\n                  )\n    :effect (and\n             (location ?item ?to)\n             (agent_moved ?agent ?to)\n             (not (location ?item ?from))"
+]

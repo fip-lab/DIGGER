@@ -1,0 +1,46 @@
+[
+    {
+        "cluster_label": 2652,
+        "task": "How to Use Aerated Compost Tea",
+        "step": [
+            "Use aerated compost tea quickly, preferably within 4 to 6 hours of removing it from the brewer, because it contains living organisms.",
+            "Keep the compost tea cool, away from sunlight, and in an open container to prolong the useful life of the tea.",
+            "Spray compost tea onto plants covering the leaves thoroughly with a fine mist.",
+            "Pour compost tea directly into the soil.",
+            "Use compost tea either full strength or in a 1:1 mix with equal amounts of tea and water for indoor and garden plants.",
+            "Mix compost tea in a 1:3 part tea to water mixture to cover large areas including lawns.",
+            "Use a soil drench and foliar spray application to minimize transplant shock immediately before and after moving plants.",
+            "Spray compost tea on foliage at the first sign of symptoms of foliar diseases, such as black spot or powdery mildew."
+        ],
+        "steps_predictions": [
+            "remove_teepee npc",
+            "keep_teepee npc",
+            "sliplargerbamboo_container leaves",
+            "mix_teepee npc pot",
+            "composter_teepee npc",
+            "mix_teepee npc",
+            "plant_plant fir1 soil1 garden_center",
+            "drink_teepee npc"
+        ],
+        "goal_state": " ((in npc container))"
+    },
+    {
+        "cluster_label": 2652,
+        "task": "How to Compost",
+        "step": [
+            "Expect the compost to heat up.",
+            "Decide whether to add slow-rotting items.",
+            "Be cautious about adding weeds to your compost pile.",
+            "Keep animal waste out of your compost bin.",
+            "Don't add compostable containers to your home compost bin."
+        ],
+        "steps_predictions": [
+            "heat_potatoes potato1 stove1",
+            "add_slow_rotating_items items",
+            "add_weeds_to_compost_purchaser grass_tinder",
+            "keep_animal_wicks_out_of_compost_bin npc",
+            "add_compostable_container container1 garden_center"
+        ],
+        "goal_state": " ((inventory potato1 container1))"
+    }
+]

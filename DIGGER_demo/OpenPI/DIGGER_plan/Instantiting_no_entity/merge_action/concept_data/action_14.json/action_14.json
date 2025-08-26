@@ -1,0 +1,10 @@
+{
+    "choose": [
+        "(:action choose_vs_duel\n    :parameters (?d - duel)\n    :precondition (and (available ?d))\n    :effect (and (chosen ?d) (not (available ?d)))\n)\n\n",
+        "(:action choose_goku\n    :parameters (?p - player)\n    :precondition (and (available goku))\n    :effect (and (chosen ?p goku) (not (available goku)))\n)\n\n",
+        "(:action choose_stage\n    :parameters (?s - stage)\n    :precondition (and (available mountain_road))\n    :effect (and (chosen ?s mountain_road) (not (available mountain_road)))\n)\n\n"
+    ],
+    "move": [
+        "(:action move_to_wall\n    :parameters (?p1 - player ?p2 - player ?p3 - player)\n    :precondition (and (at ?p1 street) (at ?p2 street) (at ?p3 street) (chosen ?p1 goku) (chosen ?p2 goku) (chosen ?p3 goku))\n    :effect (and (at ?p1 wall) (at ?p2 wall) (at ?p3 wall) (not (at ?p1 street)) (not (at ?p2 street)) (not (at ?p3 street)))\n)\n```\n\nThese actions encapsulate the steps and descriptions provided for the task of getting under the stage in Dragonball Z Budokai Tenkaichi 2."
+    ]
+}

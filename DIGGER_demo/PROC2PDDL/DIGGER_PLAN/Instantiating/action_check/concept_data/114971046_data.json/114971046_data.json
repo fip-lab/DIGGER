@@ -1,0 +1,3 @@
+[
+    "```lisp\n[\n(:action stay\n    :parameters (?npc - npc ?food - object)\n    :precondition (and (separate ?food) (bare ?npc))\n    :effect (and (mixed ?food) (camouflaged ?npc) (safe ?npc) (not (venturing ?npc)))\n),\n(:action get\n    :parameters (?agent - agent ?item - object)\n    :precondition (and (available ?agent) (accessible ?item))\n    :effect (and (possessed ?agent ?item) (not (accessible ?item)))\n)\n]\n```"
+]

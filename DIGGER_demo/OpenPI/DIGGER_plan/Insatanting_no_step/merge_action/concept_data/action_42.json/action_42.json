@@ -1,0 +1,13 @@
+{
+    "wet": [
+        "(:action wet_window\n    :parameters (?p - person ?w - window ?b - bucket ?water - water ?soap - soap)\n    :precondition (and (at ?p ?w) (in ?water ?b) (in ?soap ?b) (holding ?p ?b))\n    :effect (and (wet ?w) (clean ?w))\n)\n```\n\n#### Action 2: Position Razor Blade\n```pddl\n"
+    ],
+    "position": [
+        "(:action position_razor_blade\n    :parameters (?p - person ?w - window ?r - razor_blade)\n    :precondition (and (at ?p ?w) (holding ?p ?r) (sharp ?r))\n    :effect (and (in_contact ?r ?w))\n)\n```\n\n#### Action 3: Scrape Paint\n```pddl\n",
+        "(:action scrape_paint\n    :parameters (?p - person ?w - window ?r - razor_blade ?paint - paint_splatters)\n    :precondition (and (at ?p ?w) (in_contact ?r ?w) (sharp ?r) (on ?paint ?w))\n    :effect (and (removed ?paint ?w) (duller ?r) (dirty ?r))\n)\n```\n\n#### Action 4: Clean Window with Glass Cleaner\n```pddl\n"
+    ],
+    "clean": [
+        "(:action clean_window_with_glass_cleaner\n    :parameters (?p - person ?w - window ?gc - glass_cleaner ?c - cloth)\n    :precondition (and (at ?p ?w) (holding ?p ?gc) (holding ?p ?c))\n    :effect (and (clean ?w) (spritzed ?w ?gc) (buffed ?w ?c))\n)\n```\n\n#### Action 5: Remove Small Paint Splatters\n```pddl\n",
+        "(:action remove_small_paint_splatters\n    :parameters (?p - person ?w - window ?cs - chemical_solvent ?paint - paint_splatters)\n    :precondition (and (at ?p ?w) (holding ?p ?cs) (on ?paint ?w))\n    :effect (and (removed ?paint ?w) (used ?cs))\n)\n```\n\nThese actions capture the steps and their descriptions, reflecting the necessary conditions and effects based on the entity states provided."
+    ]
+}

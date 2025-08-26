@@ -1,0 +1,8 @@
+[
+    "(:action read_instructions :parameters (?ins - instructions ?p - person) :precondition (and (at ?ins ?p)) :effect (and (read ?ins))",
+    "(:action read ; Read a resource and update status\n :parameters (?entity - entity ?resource - resource)\n :precondition (and (at ?resource ?entity) (not (read ?resource)))\n :effect (read ?resource))",
+    "(:action wash ;  Wash an item of clothing and update its cleanliness status\n  :parameters (?item - clothing ?p - person ?wm - washing_machine)\n  :precondition (and (read ?ins) (at ?item ?p) (at ?wm ?p))\n  :effect (clean ?item)\n)",
+    "(:action check_boots\n  :parameters (?b - boots ?p - person)\n  :precondition (and (at ?b ?p) (is_synthetic ?b))\n  :effect (and (checked ?b))",
+    "(:action check ; Check an item and update its status\n  :parameters (?entity - entity ?checker - person)\n  :precondition (and (available ?checker) (at ?entity ?checker) (not (checked ?entity)) (condition ?entity))\n  :effect (and (checked ?entity))",
+    "(:action clean ; Clean an item and update its state\n  :parameters (?person - person ?item - object)\n  :precondition (and (at ?item ?person) (not (clean ?item)))\n  :effect (clean ?item)\n)"
+]

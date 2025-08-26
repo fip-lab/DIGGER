@@ -1,0 +1,130 @@
+[
+    {
+        "title": "How to Wash an Electric Blanket",
+        "steps": [
+            "Do not dry clean your electric blanket.",
+            "Do not iron an electric blanket.",
+            "Inspect the blanket after washing and drying.",
+            "Take care at the laundromat."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Clean a Clothes Dryer Vent",
+        "steps": [
+            "Learn the signs your vent needs cleaning.",
+            "Keep the floor around the dryer clean.",
+            "Limit the use of dryer sheets.",
+            "Stick to brief dry cycles."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Clean Toddler's Teeth",
+        "steps": [
+            "Start in infancy.",
+            "Use toddler tooth care products.",
+            "Floss.",
+            "Start brushing your toddler's teeth!.",
+            "Go to the dentist.",
+            "Give your child drinking water that is fluoridated.",
+            "Make sure your toddler is getting a well-balanced diet."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Free Your Child from Lice",
+        "steps": [
+            "Avoid sharing.",
+            "Ensure hair hygiene.",
+            "Teach your children steps to avoid lice.",
+            "Make sure your child's school or organization checks for lice.",
+            "Look for the telltale signs of a louse.",
+            "Check your child\u2019s hair."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Teach Your Kid to Use a Zipper",
+        "steps": [
+            "Model zipper use.",
+            "Have your child practice zipping with your help.",
+            "Remove any unnecessary challenges.",
+            "Give your child opportunities to practice zipping.",
+            "Give positive reinforcement.",
+            "Reward your child for a job well done."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Teach Your Children to Do Laundry",
+        "steps": [
+            "Make the laundry area child-friendly.",
+            "Have young children participate with safe tasks.",
+            "Make laundry fun for older kids.",
+            "Encourage teenagers to be more independent."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Clean a Toddler's Ears",
+        "steps": [
+            "Look into your child's ears to check for foreign objects.",
+            "Never insert a cotton swab or other item into your child's ear.",
+            "Watch for signs that your child may be having ear pain."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Teach Your Child to Wash Dishes",
+        "steps": [
+            "Load the dishwasher with pre-rinsed plates.",
+            "Instruct your child how to put soap in the dishwasher and how to begin the wash cycle.",
+            "Complete the wash cycle."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Get a Toddler to Wear Winter Clothes",
+        "steps": [
+            "Choose clothes that are easy to pull on.",
+            "Get your toddler to practice wearing their winter clothes.",
+            "Pack their summer clothes.",
+            "Make getting dressed a familiar routine.",
+            "Avoid forcing your toddler to wear the winter clothes."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Wash a Toddler's Clothes",
+        "steps": [
+            "Determine what temperature of water you will use.",
+            "Choose a detergent.",
+            "Figure out how you should dry the clothes.",
+            "Add dryer sheets if so desired."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Change Your Toddler's Clothes Without a Tantrum",
+        "steps": [
+            "Lay out any items and clothing that you need ahead of time.",
+            "Dress your child first thing in the morning.",
+            "Leave plenty of time to change your child.",
+            "Pick clothes that are comfortable and easy."
+        ],
+        "cluster_label": 339
+    },
+    {
+        "title": "How to Do Baby's Laundry",
+        "steps": [
+            "Remove all tags from new clothes, blankets, and sheets.",
+            "Sort through hand-me-downs thoroughly.",
+            "Wash baby's clothes as you would any other clothes.",
+            "Put the clothes in the dryer.",
+            "Fold laundry and put away.",
+            "Keep baby's dirty clothes in a separate basket."
+        ],
+        "cluster_label": 339
+    }
+]

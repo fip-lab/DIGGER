@@ -1,0 +1,3 @@
+[
+    "```pddl\n[\n  '(:action purchase\n    :parameters (?user - user ?item - object ?location - location)\n    :precondition (and (at ?user ?location) (for_sale ?item ?location))\n    :effect (and (purchased ?item ?user) (not (for_sale ?item ?location)))',\n  \n  '(:action attach\n    :parameters (?agent - agent ?item - object ?target - location)\n    :precondition (and (possessed ?item ?agent) (at ?agent ?target))\n    :effect (and (attached ?item ?target) (not (possessed ?item ?agent)))',\n  \n  '(:action clean\n    :parameters (?agent - agent ?tool - object ?target - object)\n    :precondition (and (available ?agent) (attached ?tool ?agent) (dirty ?target))\n    :effect (and (clean ?target) (not (dirty ?target)))'\n]\n```"
+]

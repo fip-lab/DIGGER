@@ -1,0 +1,6 @@
+[
+    "(:action find ; Find a resource and update the state of a group\n  :parameters (?p - player ?g - group ?t - target ?l - location ?e - equipment)\n  :precondition (and\n    (or (group_formed ?g) (not (group_formed ?g)))\n    (or (not (has_meeting_place ?g)) (not (gear_gathered ?g)) (not (has_victim ?g)))\n    (or (not (secured ?l)) (not (organized ?e)) (not (target ?t)))\n  )\n  :effect (and\n    (or (has_meeting_place ?g) (gear_gathered ?g) (has_victim ?g))",
+    "(:action setup ; Set up a resource/task and update its status\n  :parameters (?entity - agent ?target - target ?context - context)\n  :precondition (and (not (setup_done ?target ?context)) (eligible ?entity ?target ?context))\n  :effect (and (setup_done ?target ?context) (assigned ?entity ?target ?context))",
+    "(:action setup\n     :parameters (?p - player ?g - group ?c - context)\n     :precondition (and (not (setup_done ?g ?c)) (trustworthy ?p ?g ?c))\n     :effect (and (setup_done ?g ?c) (assigned ?p ?g ?c))",
+    "(:action setup\n     :parameters (?employee - person ?team - team ?project - project)\n     :precondition (and (not (setup_done ?team ?project)) (eligible ?employee ?team ?project))\n     :effect (and (setup_done ?team ?project) (assigned ?employee ?team ?project))"
+]

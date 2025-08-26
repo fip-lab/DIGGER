@@ -1,0 +1,4 @@
+[
+    "(:action attach ; Attach an item to a location and update state\n  :parameters (?agent - agent ?item - object ?location - location)\n  :precondition (and (inventory ?agent ?item) (available ?location))\n  :effect (and (attached ?item ?location) (not (inventory ?agent ?item))",
+    "(:action clean ;  Clean a part of an object and update its status\n  :parameters (?cleaner - tool ?part - object ?object - object)\n  :precondition (and (attached ?cleaner ?part) (in_object ?part ?object) (part_of ?part ?object))\n  :effect (clean ?part)\n)"
+]

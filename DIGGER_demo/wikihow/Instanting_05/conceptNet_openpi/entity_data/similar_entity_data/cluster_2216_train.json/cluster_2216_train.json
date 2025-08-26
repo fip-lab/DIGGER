@@ -1,0 +1,3077 @@
+[
+    {
+        "cluster_label": 2216,
+        "task": "How to Choose a Combo Alarm System for a Truck",
+        "step": [
+            "Call your truck dealer to ask his advice.",
+            "Evaluate your own anti-theft needs for your truck combo alarm system.",
+            "Establish your budget for your truck combo alarm system.",
+            "Research truck combo alarm systems online or in truck magazines.",
+            "Make a short list of the alarm systems that interest you.",
+            "Go online.",
+            "Decide whether you want to install a DIY combo alarm yourself or have a professional do it for you.",
+            "Choose a combo alarm system for a truck that fits all your needs and matches your budget.",
+            "Purchase your truck combo alarm system."
+        ],
+        "steps_predictions": [
+            "put_in_cage npc basement",
+            "listen_to_alarm_system my_equipment",
+            "set_budget_for_equipment alarm_system",
+            "check_equipment alarm_system npc",
+            "listen_to_alarm_system npc",
+            "go_online npc covering_tracks track",
+            "install_combined_alarm_system npc home",
+            "choose_combuster alarm_system my_equipment",
+            "purchase_equipment alarm_system npc"
+        ],
+        "goal_state": " ((alarm_system npc))",
+        "similar_entity": {
+            "my equipment": {
+                "equipment": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered | laying sporadically",
+                        "after": "organized | gathered"
+                    },
+                    {
+                        "attribute": "equipment",
+                        "before": "unorganized",
+                        "after": "laid in pattern"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "my equipment ObjectUse use as a weapon",
+                    "my equipment MadeUpOf my hands",
+                    "my equipment HasProperty used in the military",
+                    "my equipment CapableOf use as a weapon"
+                ]
+            },
+            "home": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[nest]] is related to [[home]]",
+                    "You are likely to find [[a ferret]] in [[your home]]",
+                    "[[home]] is [[where the heart is]]",
+                    "[[a home]] is for [[living]]"
+                ],
+                "comet_knowledge": [
+                    "home ObjectUse go to",
+                    "home MadeUpOf home",
+                    "home HasProperty home",
+                    "home CapableOf go to"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "alarm system": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alarm system ObjectUse use as a weapon",
+                    "alarm system MadeUpOf alarm",
+                    "alarm system HasProperty alarm",
+                    "alarm system CapableOf warn of danger"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Find the Best Gas Prices",
+        "step": [
+            "Take a mental note daily of the gas prices as you drive throughout your local area.",
+            "Call and talk to your friends who drive past other fuel stations in the area.",
+            "Fill up in the morning or late at night since gas will condense in the tank with the cooler temperatures.",
+            "Pay attention to local news and radio reports to learn about any gas or fuel promotions in your area.",
+            "Use the Internet to locate the best gas prices in your area.",
+            "Fill up the tank before you hit empty."
+        ],
+        "steps_predictions": [
+            "take_mental_note npc",
+            "talk_to_faucet npc",
+            "fill_tinder npc",
+            "listen_to_broadcast npc",
+            "get_internet npc gas_station",
+            "fill_tank npc basement"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            },
+            "gas station": {
+                "oil": [
+                    {
+                        "attribute": "location",
+                        "before": "in pantry | in its place",
+                        "after": "in water | in boiling water"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in its place",
+                        "after": "in pan"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "gas station ObjectUse filling up car",
+                    "gas station MadeUpOf gas station",
+                    "gas station HasProperty gas station",
+                    "gas station CapableOf buy gas"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Bluetooth Car Kit",
+        "step": [
+            "Research the different options available through Internet sites.",
+            "Visit local stores that carry the model you are considering.",
+            "Choose the type of Bluetooth car kit that best suits your needs.",
+            "Talk to friends or relatives for recommendations.",
+            "Install your Bluetooth car kit per manufacturer's instructions."
+        ],
+        "steps_predictions": [
+            "get_info npc covering_tracks track",
+            "pick_model npc car",
+            "choose_car_kit my_equipment",
+            "talk_to_family npc",
+            "install_in_car npc car"
+        ],
+        "goal_state": " ((knowledge npc covering_tracks))",
+        "similar_entity": {
+            "my equipment": {
+                "equipment": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered | laying sporadically",
+                        "after": "organized | gathered"
+                    },
+                    {
+                        "attribute": "equipment",
+                        "before": "unorganized",
+                        "after": "laid in pattern"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "my equipment ObjectUse use as a weapon",
+                    "my equipment MadeUpOf my hands",
+                    "my equipment HasProperty used in the military",
+                    "my equipment CapableOf use as a weapon"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "car": {
+                "vehicle": [
+                    {
+                        "attribute": "location",
+                        "before": "in garage",
+                        "after": "in forest"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    },
+                    {
+                        "attribute": "vehicle",
+                        "before": "uncovered",
+                        "after": "netted with camouflage"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[drive]] is related to [[car]]",
+                    "You are likely to find [[a car]] in [[the city]]",
+                    "[[A car]] can [[go fast]]",
+                    "[[a car]] has [[seats]]",
+                    "[[A tire]] is part of [[a car]]",
+                    "[[A volvo]] is a type of [[car]]",
+                    "[[my car]] is [[red]]"
+                ],
+                "comet_knowledge": [
+                    "car ObjectUse drive to the store",
+                    "car MadeUpOf engine",
+                    "car HasProperty found in car dealership",
+                    "car CapableOf drive to destination"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Select a Wireless Driveway Alarm",
+        "step": [
+            "Determine the minimum transmission distance you will need.",
+            "Decide why you want it.",
+            "Determine if the alarm will be part your home automation system or a standalone alert.",
+            "Seek out possible interference.",
+            "Figure out how many sensors and receivers you need.",
+            "Ask yourself the following questions: Can you make a different recording for every transmitter if you get a multiple wireless driveway alarm system?."
+        ],
+        "steps_predictions": [
+            "determine_minimum_distance you will need",
+            "choose_objectinreceptacle agent1",
+            "determine_alarm_system npc basement",
+            "seek_in_interference npc covering_tracks track",
+            "choose_sensor_and_receptacle agent1 camera1 lens1",
+            "make_record npc home"
+        ],
+        "goal_state": " ((selected_location npc covering_tracks))",
+        "similar_entity": {
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "will": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "will ObjectUse use as a weapon",
+                    "will MadeUpOf will",
+                    "will HasProperty very important",
+                    "will CapableOf decide what to do"
+                ]
+            },
+            "need": {
+                "items needed": [
+                    {
+                        "attribute": "location",
+                        "before": "in places",
+                        "after": "ready for use"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[need]] is related to [[want]]",
+                    "[[need]] would make you want to [[buy something]]",
+                    "You would [[buy products]] because [[you need them]]",
+                    null
+                ],
+                "comet_knowledge": [
+                    "need ObjectUse get a job",
+                    "need MadeUpOf need",
+                    "need HasProperty need",
+                    "need CapableOf need to buy"
+                ]
+            },
+            "home": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[nest]] is related to [[home]]",
+                    "You are likely to find [[a ferret]] in [[your home]]",
+                    "[[home]] is [[where the heart is]]",
+                    "[[a home]] is for [[living]]"
+                ],
+                "comet_knowledge": [
+                    "home ObjectUse go to",
+                    "home MadeUpOf home",
+                    "home HasProperty home",
+                    "home CapableOf go to"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            },
+            "lens": {
+                "glasses": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "ungarnished",
+                        "after": "garnished"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "decoration",
+                        "before": "undecorated",
+                        "after": "decorated"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a lens]] in [[the camera]]",
+                    "[[THe lens]] is part of [[the eye]]",
+                    "[[Lentille]] is a translation of [[Lens]]",
+                    "[[Most cameras]] have [[a lens]]",
+                    "[[A lens]] is used to [[magnify something]]",
+                    "[[A lens]] is made of [[glass]].",
+                    "[[eye]] is related to [[lens]]"
+                ],
+                "comet_knowledge": [
+                    "lens ObjectUse use as a flashlight",
+                    "lens MadeUpOf lens cap",
+                    "lens HasProperty found in microscope",
+                    "lens CapableOf take picture"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "agent": {
+                "game character": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[agent]] is related to [[secret]]"
+                ],
+                "comet_knowledge": [
+                    "agent ObjectUse get a job",
+                    "agent MadeUpOf agent",
+                    "agent HasProperty found in office",
+                    "agent CapableOf sign contract"
+                ]
+            },
+            "camera": {
+                "hdmi cord": [
+                    {
+                        "attribute": "organization",
+                        "before": "unplugged",
+                        "after": "plugged in | plugged into cable"
+                    },
+                    {
+                        "attribute": "connection",
+                        "before": "loose",
+                        "after": "attached"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unplugged | unpligged",
+                        "after": "plugged in | connected to tv's hdmi input"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unattached",
+                        "after": "plugged in"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "unplugged",
+                        "after": "plugged into converter and tv"
+                    },
+                    {
+                        "attribute": "attachment",
+                        "before": "loose",
+                        "after": "plugged in"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You can use [[a camera]] to [[take pictures]]",
+                    "You are likely to find [[a lens]] in [[the camera]]",
+                    "[[picture]] is related to [[camera]]",
+                    "[[Camera]] has [[a flash]]"
+                ],
+                "comet_knowledge": [
+                    "camera ObjectUse take pictures",
+                    "camera MadeUpOf camera lens",
+                    "camera HasProperty found in car",
+                    "camera CapableOf take picture"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Directional Compass for Your Car",
+        "step": [
+            "Decide between a bubble compass or a digital compass.",
+            "Learn about the features of car compasses before choosing a compass.",
+            "Determine your compass lighting needs.",
+            "Check the battery needs of the compass.",
+            "Confirm that the compass has a calibration feature.",
+            "Choose the type of digital display to be used.",
+            "Pick a compass that has a readable display location.",
+            "Find the car compass that meets your needs."
+        ],
+        "steps_predictions": [
+            "choose_compensating alice",
+            "choose_compasses car_location",
+            "determine_light_diffuse light",
+            "check_batteries npc",
+            "confirm_commissioner_knowledge user1 compass1 calibrating_feature",
+            "choose_type_of_display npc",
+            "pick_compensate npc",
+            "find_car_compad compass car_location"
+        ],
+        "goal_state": " ((knowledge npc) (has_compensating alice))",
+        "similar_entity": {
+            "calibrating feature": {
+                "precision": [
+                    {
+                        "attribute": "magnitude",
+                        "before": "medium",
+                        "after": "high"
+                    },
+                    {
+                        "attribute": "skill",
+                        "before": "absent",
+                        "after": "present"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "calibrating feature ObjectUse keep track of things",
+                    "calibrating feature MadeUpOf computer",
+                    "calibrating feature HasProperty found in computer",
+                    "calibrating feature CapableOf make sure everything is correct"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "user ObjectUse use the computer",
+                    "user MadeUpOf computer",
+                    "user HasProperty found on internet",
+                    "user CapableOf use computer"
+                ]
+            },
+            "light": {
+                "light": [
+                    {
+                        "attribute": "amount",
+                        "before": "bright",
+                        "after": "diffused"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[mist]] is related to [[light]]",
+                    "[[light]] is [[energy]]",
+                    "[[the sun]] is for [[light]]",
+                    "*Something you find on [[a desk]] is [[light]]",
+                    "[[reading the newspaper]] requires [[light]]",
+                    "[[dark]] is not [[light]]"
+                ],
+                "comet_knowledge": [
+                    "light ObjectUse see in the dark",
+                    "light MadeUpOf light bulb",
+                    "light HasProperty very bright",
+                    "light CapableOf turn on"
+                ]
+            },
+            "compass": {
+                "handrail": [
+                    {
+                        "attribute": "placement",
+                        "before": "unheld",
+                        "after": "held"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[a backpack]] is [[a compass]]",
+                    "[[east]] is related to [[compass]]"
+                ],
+                "comet_knowledge": [
+                    "compass ObjectUse use as a weapon",
+                    "compass MadeUpOf compass point",
+                    "compass HasProperty navigational device",
+                    "compass CapableOf use as compass"
+                ]
+            },
+            "car location": {
+                "vehicle": [
+                    {
+                        "attribute": "location",
+                        "before": "in garage",
+                        "after": "in forest"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    },
+                    {
+                        "attribute": "vehicle",
+                        "before": "uncovered",
+                        "after": "netted with camouflage"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "car location ObjectUse get to the store",
+                    "car location MadeUpOf car",
+                    "car location HasProperty found in car",
+                    "car location CapableOf drive to"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Pick Hearing Assistive Technology",
+        "step": [
+            "Consider installing a hearing loop in your home.",
+            "Compare hearing assistive phones.",
+            "Determine if you need alarms in your home.",
+            "Consider getting a hearing dog if you live alone."
+        ],
+        "steps_predictions": [
+            "install_hearing_loop in your home",
+            "compare-phone hearing assistive phones",
+            "determine if you need alarms in your home",
+            "get_hearing_dog npc"
+        ],
+        "goal_state": "pick_hearing_system npc",
+        "similar_entity": {
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "home": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[nest]] is related to [[home]]",
+                    "You are likely to find [[a ferret]] in [[your home]]",
+                    "[[home]] is [[where the heart is]]",
+                    "[[a home]] is for [[living]]"
+                ],
+                "comet_knowledge": [
+                    "home ObjectUse go to",
+                    "home MadeUpOf home",
+                    "home HasProperty home",
+                    "home CapableOf go to"
+                ]
+            },
+            "need": {
+                "items needed": [
+                    {
+                        "attribute": "location",
+                        "before": "in places",
+                        "after": "ready for use"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[need]] is related to [[want]]",
+                    "[[need]] would make you want to [[buy something]]",
+                    "You would [[buy products]] because [[you need them]]",
+                    null
+                ],
+                "comet_knowledge": [
+                    "need ObjectUse get a job",
+                    "need MadeUpOf need",
+                    "need HasProperty need",
+                    "need CapableOf need to buy"
+                ]
+            },
+            "your": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "your ObjectUse use as a weapon",
+                    "your MadeUpOf carpal",
+                    "your HasProperty made up of many parts",
+                    "your CapableOf use as a weapon"
+                ]
+            },
+            "alarms": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alarms ObjectUse warn of danger",
+                    "alarms MadeUpOf alarm",
+                    "alarms HasProperty alarm",
+                    "alarms CapableOf warn of danger"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "if": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[if]] is related to [[conditional]]"
+                ],
+                "comet_knowledge": [
+                    "if ObjectUse make a decision",
+                    "if MadeUpOf if",
+                    "if HasProperty none",
+                    "if CapableOf ask for help"
+                ]
+            },
+            "hearing": {
+                "voice": [
+                    {
+                        "attribute": "availability",
+                        "before": "unavailable",
+                        "after": "available"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "unheard",
+                        "after": "heard"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "inefficient",
+                        "after": "efficient"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "unheard",
+                        "after": "heard"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[ear]] is related to [[hearing]]",
+                    "Something that might happen as a consequence of [[listening]] is [[hearing]]"
+                ],
+                "comet_knowledge": [
+                    "hearing ObjectUse listen to",
+                    "hearing MadeUpOf hearing aids",
+                    "hearing HasProperty heard",
+                    "hearing CapableOf hear sound"
+                ]
+            },
+            "assistive": {
+                "task": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "assistive ObjectUse help with a problem",
+                    "assistive MadeUpOf helpful",
+                    "assistive HasProperty helpful",
+                    "assistive CapableOf help out"
+                ]
+            },
+            "in": {
+                "room": [
+                    {
+                        "attribute": "sound",
+                        "before": "quiet",
+                        "after": "noisier"
+                    }
+                ],
+                "concept_knowledge": [
+                    null,
+                    "[[in]] is the opposite of [[out]]",
+                    "[[in]] is related to [[preposition]]",
+                    "[[out]] is not [[in]]"
+                ],
+                "comet_knowledge": [
+                    "in ObjectUse use as a paperweight",
+                    "in MadeUpOf body",
+                    "in HasProperty found in many places",
+                    "in CapableOf put on shoes"
+                ]
+            },
+            "phones": {
+                "the cord": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in"
+                    }
+                ],
+                "concept_knowledge": [
+                    "An activity [[phones]] can do is [[ring]]",
+                    "[[call]] is related to [[phones]]"
+                ],
+                "comet_knowledge": [
+                    "phones ObjectUse call for help",
+                    "phones MadeUpOf dialer",
+                    "phones HasProperty connected to internet",
+                    "phones CapableOf call for help"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Choose Between a Car with Automatic or Manual Transmission",
+        "step": [
+            "Understand the basics.",
+            "Consider power.",
+            "Consider semi-automatic transmission.",
+            "Determine if fuel economy is an issue.",
+            "Think about maintenance/repair costs.",
+            "Identify your needs.",
+            "Decide if you are willing to own a vehicle with a manual transmission.",
+            "Notice if you are a multitasker."
+        ],
+        "steps_predictions": [
+            "understand npc",
+            "listen_to_broadcast npc",
+            "check_transmission semi-automatic transmission",
+            "determine if fuel_efficiency is an issue",
+            "make_maintenance_costume npc basement",
+            "identify_needs you need",
+            "buy_vehicle npc car",
+            "listen_to_broadcast npc"
+        ],
+        "goal_state": " ((knowledge npc car) (not (car car)))",
+        "similar_entity": {
+            "an": {
+                "task": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "an ObjectUse use as a weapon",
+                    "an MadeUpOf an artery",
+                    "an HasProperty two legs",
+                    "an CapableOf get out of car"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "issue": {
+                "task": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[problem]] is related to [[issue]]"
+                ],
+                "comet_knowledge": [
+                    "issue ObjectUse use as a weapon",
+                    "issue MadeUpOf issue number",
+                    "issue HasProperty printed on paper",
+                    "issue CapableOf issue letter"
+                ]
+            },
+            "need": {
+                "items needed": [
+                    {
+                        "attribute": "location",
+                        "before": "in places",
+                        "after": "ready for use"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[need]] is related to [[want]]",
+                    "[[need]] would make you want to [[buy something]]",
+                    "You would [[buy products]] because [[you need them]]",
+                    null
+                ],
+                "comet_knowledge": [
+                    "need ObjectUse get a job",
+                    "need MadeUpOf need",
+                    "need HasProperty need",
+                    "need CapableOf need to buy"
+                ]
+            },
+            "semi-automatic": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "semi-automatic ObjectUse shoot a gun",
+                    "semi-automatic MadeUpOf gun",
+                    "semi-automatic HasProperty automatic",
+                    "semi-automatic CapableOf shoot bullets"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "if": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[if]] is related to [[conditional]]"
+                ],
+                "comet_knowledge": [
+                    "if ObjectUse make a decision",
+                    "if MadeUpOf if",
+                    "if HasProperty none",
+                    "if CapableOf ask for help"
+                ]
+            },
+            "is": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "is ObjectUse get a new job",
+                    "is MadeUpOf water",
+                    "is HasProperty found in many places",
+                    "is CapableOf get into trouble"
+                ]
+            },
+            "transmission": {
+                "ability to ride a bike": [
+                    {
+                        "attribute": "skill",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "speed",
+                        "before": "constant",
+                        "after": "slowing"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "transmission ObjectUse get to the destination",
+                    "transmission MadeUpOf power",
+                    "transmission HasProperty found in car",
+                    "transmission CapableOf send message"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            },
+            "fuel efficiency": {
+                "ability to ride a bike": [
+                    {
+                        "attribute": "skill",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "speed",
+                        "before": "constant",
+                        "after": "slowing"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fuel efficiency ObjectUse fuel the car",
+                    "fuel efficiency MadeUpOf fuel cell",
+                    "fuel efficiency HasProperty fuel efficiency",
+                    "fuel efficiency CapableOf fuel car"
+                ]
+            },
+            "car": {
+                "vehicle": [
+                    {
+                        "attribute": "location",
+                        "before": "in garage",
+                        "after": "in forest"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    },
+                    {
+                        "attribute": "vehicle",
+                        "before": "uncovered",
+                        "after": "netted with camouflage"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[drive]] is related to [[car]]",
+                    "You are likely to find [[a car]] in [[the city]]",
+                    "[[A car]] can [[go fast]]",
+                    "[[a car]] has [[seats]]",
+                    "[[A tire]] is part of [[a car]]",
+                    "[[A volvo]] is a type of [[car]]",
+                    "[[my car]] is [[red]]"
+                ],
+                "comet_knowledge": [
+                    "car ObjectUse drive to the store",
+                    "car MadeUpOf engine",
+                    "car HasProperty found in car dealership",
+                    "car CapableOf drive to destination"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Shop for a Car Alarm System",
+        "step": [
+            "Determine how much money you can spend.",
+            "Consider which features you want in your alarm system.",
+            "Talk to your insurance provider regarding alarm system subsidies.",
+            "Evaluate the quality of the car alarm systems you are considering.",
+            "Shop around before making a purchase to find the best price.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "determine_amounts you can_spend npc",
+            "listen_to_alarm_system alarm system",
+            "talk_to_injured npc",
+            " Evaluate_quality_of_car alarm systems you are considering",
+            "buy_shelter npc",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((inventory npc car_alarm_system) (in_container wreath))",
+        "similar_entity": {
+            "considering": {
+                "advice": [
+                    {
+                        "attribute": "availability",
+                        "before": "impossible",
+                        "after": "possible"
+                    },
+                    {
+                        "attribute": "ownership",
+                        "before": "withheld",
+                        "after": "given"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "considering ObjectUse make a decision",
+                    "considering MadeUpOf considerate",
+                    "considering HasProperty considerate",
+                    "considering CapableOf consider all options"
+                ]
+            },
+            "are": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "are ObjectUse use as a weapon",
+                    "are MadeUpOf use as a weapon",
+                    "are HasProperty none",
+                    "are CapableOf get into trouble"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "wreath": {
+                "wreath": [
+                    {
+                        "attribute": "status",
+                        "before": "in progress",
+                        "after": "completed"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wreath ObjectUse decorate a room",
+                    "wreath MadeUpOf wreath",
+                    "wreath HasProperty worn on head",
+                    "wreath CapableOf put on tree"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "system": {
+                "task": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Unix]] is [[a system]]"
+                ],
+                "comet_knowledge": [
+                    "system ObjectUse keep track of things",
+                    "system MadeUpOf computer",
+                    "system HasProperty computer",
+                    "system CapableOf use computer"
+                ]
+            },
+            "systems": {
+                "equipment": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered | laying sporadically",
+                        "after": "organized | gathered"
+                    },
+                    {
+                        "attribute": "equipment",
+                        "before": "unorganized",
+                        "after": "laid in pattern"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "systems ObjectUse keep track of things",
+                    "systems MadeUpOf computer",
+                    "systems HasProperty computer",
+                    "systems CapableOf work on"
+                ]
+            },
+            "alarm": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alarm ObjectUse alarm clock",
+                    "alarm MadeUpOf alarm",
+                    "alarm HasProperty alarm",
+                    "alarm CapableOf alarm clock"
+                ]
+            },
+            "can spend": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "can spend ObjectUse spend money",
+                    "can spend MadeUpOf money",
+                    "can spend HasProperty have money",
+                    "can spend CapableOf spend money"
+                ]
+            },
+            "Evaluate quality of car": {
+                "vehicle": [
+                    {
+                        "attribute": "location",
+                        "before": "in garage",
+                        "after": "in forest"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    },
+                    {
+                        "attribute": "vehicle",
+                        "before": "uncovered",
+                        "after": "netted with camouflage"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "Evaluate quality of car ObjectUse buy a new car",
+                    "Evaluate quality of car MadeUpOf test drive",
+                    "Evaluate quality of car HasProperty buy a new car",
+                    "Evaluate quality of car CapableOf buy new car"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Remote Starter for a Truck",
+        "step": [
+            "Determine what kind of remote starter you need for your particular type of truck.",
+            "Make a list of the features you want.",
+            "Search the Internet for reputable remote starter system manufacturers.",
+            "Contact manufacturers and ask them to send you all of their remote starter product brochures.",
+            "Read over the brochures and decide which systems have all of the features you need and want.",
+            "Research the remote starter systems that apply to your specific needs online.",
+            "Find retailers that sell the remote starter you are interested in and shop around for the best price."
+        ],
+        "steps_predictions": [
+            "determine_remote_starter you remote_start you car",
+            "listen_to_instructions npc covering_tracks track",
+            "search_internet npc home",
+            "initiate_new_member_secret adrian liam ss",
+            "choose_system npc covering_tracks track",
+            "get_remote_system npc home",
+            "get_remote_starter npc tv"
+        ],
+        "goal_state": " ((knowledge npc covering_tracks))",
+        "similar_entity": {
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "home": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[nest]] is related to [[home]]",
+                    "You are likely to find [[a ferret]] in [[your home]]",
+                    "[[home]] is [[where the heart is]]",
+                    "[[a home]] is for [[living]]"
+                ],
+                "comet_knowledge": [
+                    "home ObjectUse go to",
+                    "home MadeUpOf home",
+                    "home HasProperty home",
+                    "home CapableOf go to"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "remote start": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "remote start ObjectUse start the car",
+                    "remote start MadeUpOf remote control",
+                    "remote start HasProperty remote control",
+                    "remote start CapableOf start the car"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "liam": {
+                "leaves": [
+                    {
+                        "attribute": "location",
+                        "before": "elsewhere",
+                        "after": "on rucksaks"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "elsewhere",
+                        "after": "on helmet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "on webbing"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "liam ObjectUse have sex with",
+                    "liam MadeUpOf london",
+                    "liam HasProperty found in house",
+                    "liam CapableOf sit on chair"
+                ]
+            },
+            "adrian": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "adrian ObjectUse use as a weapon",
+                    "adrian MadeUpOf adenine",
+                    "adrian HasProperty adrian",
+                    "adrian CapableOf take shower"
+                ]
+            },
+            "ss": {
+                "main dish": [
+                    {
+                        "attribute": "temperature",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "accompaniment",
+                        "before": "unaccompanied",
+                        "after": "accompanied"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    null
+                ],
+                "comet_knowledge": [
+                    "ss ObjectUse make a paper airplane",
+                    "ss MadeUpOf sss",
+                    "ss HasProperty found in car",
+                    "ss CapableOf write down address"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "tv": {
+                "tv": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in"
+                    },
+                    {
+                        "attribute": "attachment",
+                        "before": "unattached",
+                        "after": "connected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[TV]] is [[an abbreviation for television]]",
+                    "*Something you find at [[your house]] is [[a tv]]",
+                    "[[using a VCR]] requires [[A TV]]",
+                    "[[tv]] is [[short for television]]",
+                    "[[a tv]] is used for [[entertainment]]",
+                    "[[news]] is related to [[tv]]"
+                ],
+                "comet_knowledge": [
+                    "tv ObjectUse watch the news",
+                    "tv MadeUpOf television",
+                    "tv HasProperty found on tv",
+                    "tv CapableOf turn on"
+                ]
+            },
+            "car": {
+                "vehicle": [
+                    {
+                        "attribute": "location",
+                        "before": "in garage",
+                        "after": "in forest"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    },
+                    {
+                        "attribute": "vehicle",
+                        "before": "uncovered",
+                        "after": "netted with camouflage"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[drive]] is related to [[car]]",
+                    "You are likely to find [[a car]] in [[the city]]",
+                    "[[A car]] can [[go fast]]",
+                    "[[a car]] has [[seats]]",
+                    "[[A tire]] is part of [[a car]]",
+                    "[[A volvo]] is a type of [[car]]",
+                    "[[my car]] is [[red]]"
+                ],
+                "comet_knowledge": [
+                    "car ObjectUse drive to the store",
+                    "car MadeUpOf engine",
+                    "car HasProperty found in car dealership",
+                    "car CapableOf drive to destination"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Choose a Car Alarm",
+        "step": [
+            "Choose which type of car alarm you want.",
+            "Choose what features are right for you and your needs.",
+            "Start shopping around at local stores."
+        ],
+        "steps_predictions": [
+            "choose_car alarm you want",
+            "choose_features my_equipment",
+            "start_shopping npc brickhouse"
+        ],
+        "goal_state": "choose_car alarm you want choose_features my_equipment start_shopping npc car",
+        "similar_entity": {
+            "my equipment": {
+                "equipment": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered | laying sporadically",
+                        "after": "organized | gathered"
+                    },
+                    {
+                        "attribute": "equipment",
+                        "before": "unorganized",
+                        "after": "laid in pattern"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "my equipment ObjectUse use as a weapon",
+                    "my equipment MadeUpOf my hands",
+                    "my equipment HasProperty used in the military",
+                    "my equipment CapableOf use as a weapon"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "brickhouse": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "brickhouse ObjectUse living in",
+                    "brickhouse MadeUpOf house",
+                    "brickhouse HasProperty two stories",
+                    "brickhouse CapableOf live in"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "alarm": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alarm ObjectUse alarm clock",
+                    "alarm MadeUpOf alarm",
+                    "alarm HasProperty alarm",
+                    "alarm CapableOf alarm clock"
+                ]
+            },
+            "want": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[need]] is related to [[want]]",
+                    null
+                ],
+                "comet_knowledge": [
+                    "want ObjectUse want to do",
+                    "want MadeUpOf want",
+                    "want HasProperty want",
+                    "want CapableOf want to do"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Custom Fit Car Cover",
+        "step": [
+            "Make sure you know the exact year, make, model, body type, and trim of the vehicle you are purchasing a custom car cover for.",
+            "Decide what you want to protect your vehicle from.",
+            "Decide on a budget.",
+            "Find and compare multiple retailers.",
+            "If you have any questions or doubts about the product you're ordering, contact the retailer."
+        ],
+        "steps_predictions": [
+            "buy_car_cover npc car_coathanger",
+            "make_defending_vehicle npc basement",
+            "decide_on_budget npc basement",
+            "find_store npc brickhouse",
+            "pickupobjectnoreceptacle agent npc store"
+        ],
+        "goal_state": " ((in_cage npc car_coathanger))",
+        "similar_entity": {
+            "brickhouse": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "brickhouse ObjectUse living in",
+                    "brickhouse MadeUpOf house",
+                    "brickhouse HasProperty two stories",
+                    "brickhouse CapableOf live in"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "store": {
+                "bank account": [
+                    {
+                        "attribute": "fullness",
+                        "before": "more full",
+                        "after": "more empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in customer's hand",
+                        "after": "in cashier's hand"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[department]] is related to [[store]]",
+                    "*Something you find at [[a store]] is [[clothes]]",
+                    "[[\u062e\u064e\u0632\u064e\u0646]] is a translation of [[store]]",
+                    "[[a store]] is for [[buying things]]"
+                ],
+                "comet_knowledge": [
+                    "store ObjectUse buying things",
+                    "store MadeUpOf shopping mall",
+                    "store HasProperty found in",
+                    "store CapableOf shop for goods"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            },
+            "car coathanger": {
+                "bubble want": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted | shaped like want | bent into loop"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "in its original shape",
+                        "after": "in wand shape"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "for hanging",
+                        "after": "for blowing bubbles"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "inside",
+                        "after": "outside"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "car coathanger ObjectUse use as a doorstop",
+                    "car coathanger MadeUpOf car seat",
+                    "car coathanger HasProperty found in car",
+                    "car coathanger CapableOf hang clothes on"
+                ]
+            },
+            "agent": {
+                "game character": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[agent]] is related to [[secret]]"
+                ],
+                "comet_knowledge": [
+                    "agent ObjectUse get a job",
+                    "agent MadeUpOf agent",
+                    "agent HasProperty found in office",
+                    "agent CapableOf sign contract"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Car Battery",
+        "step": [
+            "Buy a car battery proactively.",
+            "Test your battery annually.",
+            "Recycle your old battery."
+        ],
+        "steps_predictions": [
+            "buy_car_batteries npc car",
+            "test_batteries npc",
+            "recycle_batteries old_bike battery1 bike1"
+        ],
+        "goal_state": " ((in_cage npc car) (used_as_cleaned_batteries old_bike battery1 bike1))",
+        "similar_entity": {
+            "bike": {
+                "bike": [
+                    {
+                        "attribute": "location",
+                        "before": "beside person's body | absent",
+                        "after": "now between person's legs | present"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unstable",
+                        "after": "stable"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unbalanced",
+                        "after": "balanced"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "crooked",
+                        "after": "straight"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "moving"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "stationary",
+                        "after": "in motion"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "in motion | moving",
+                        "after": "stopped | stationary"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[riding a bike]] requires [[a bike]]",
+                    "[[a bike]] has [[two wheels]]"
+                ],
+                "comet_knowledge": [
+                    "bike ObjectUse ride to work",
+                    "bike MadeUpOf bike chain",
+                    "bike HasProperty two wheels",
+                    "bike CapableOf ride to work"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "battery": {
+                "batter": [
+                    {
+                        "attribute": "container",
+                        "before": "in bowl",
+                        "after": "in bottle | bottle | in ketchup bottle"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm",
+                        "after": "colder | cold"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "in bottle",
+                        "after": "in pan"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a battery]] can [[power a flashlight]]"
+                ],
+                "comet_knowledge": [
+                    "battery ObjectUse power the computer",
+                    "battery MadeUpOf power supply",
+                    "battery HasProperty found in car",
+                    "battery CapableOf power device"
+                ]
+            },
+            "old bike": {
+                "bike": [
+                    {
+                        "attribute": "location",
+                        "before": "beside person's body | absent",
+                        "after": "now between person's legs | present"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unstable",
+                        "after": "stable"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unbalanced",
+                        "after": "balanced"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "crooked",
+                        "after": "straight"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "moving"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "stationary",
+                        "after": "in motion"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "in motion | moving",
+                        "after": "stopped | stationary"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "old bike ObjectUse ride to work",
+                    "old bike MadeUpOf bike chain",
+                    "old bike HasProperty found in garage",
+                    "old bike CapableOf ride to work"
+                ]
+            },
+            "car": {
+                "vehicle": [
+                    {
+                        "attribute": "location",
+                        "before": "in garage",
+                        "after": "in forest"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    },
+                    {
+                        "attribute": "vehicle",
+                        "before": "uncovered",
+                        "after": "netted with camouflage"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[drive]] is related to [[car]]",
+                    "You are likely to find [[a car]] in [[the city]]",
+                    "[[A car]] can [[go fast]]",
+                    "[[a car]] has [[seats]]",
+                    "[[A tire]] is part of [[a car]]",
+                    "[[A volvo]] is a type of [[car]]",
+                    "[[my car]] is [[red]]"
+                ],
+                "comet_knowledge": [
+                    "car ObjectUse drive to the store",
+                    "car MadeUpOf engine",
+                    "car HasProperty found in car dealership",
+                    "car CapableOf drive to destination"
+                ]
+            }
+        }
+    }
+]

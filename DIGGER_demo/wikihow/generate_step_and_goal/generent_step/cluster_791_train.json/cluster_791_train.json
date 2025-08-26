@@ -1,0 +1,398 @@
+[
+    {
+        "cluster_label": 791,
+        "task": "How to Make a Candle out of an Orange",
+        "step": [
+            "Prepare your orange.",
+            "Cut the orange on the cutting board.",
+            "Peel the orange.",
+            "Locate the \"wick\".",
+            "Add oil.",
+            "Create a design.",
+            "Light the candle.",
+            "Place the top half (with its pre-designed hole) onto the bottom half with the wick.",
+            "Enjoy!."
+        ],
+        "steps_predictions": [
+            "prepare_orange orange",
+            "cut_orange npc cutting_board",
+            "peel_orange peeler",
+            "locate_wicks user1 wick1",
+            "add_oil_to_fridge oil_tank npc",
+            "create_design npc work_station",
+            "light_candle npc",
+            "place_wicks_in_hole wick1",
+            "make_sliplargerbeads npc"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Clean a Candle Jar",
+        "step": [
+            "Place the jar or candle holder in the freezer overnight.",
+            "Take the jar or candle holder out of the freezer the following day.",
+            "Use a knife to pop the wax out in one piece.",
+            "Wash the jar or candle holder in the dishwasher to complete the clean."
+        ],
+        "steps_predictions": [
+            "free_candle_holder user1 jar1 candle1",
+            "free_candle_holder user1 jar1 candle1",
+            "pop_wax npc",
+            "wash_mixture canola_oil glass_filled"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Make the Most from Your Old Candles",
+        "step": [
+            "Obtain some old candles.",
+            "Find an old saucepan or something similar that can get wax on it.",
+            "Break up the old wax and stick a few pieces in the saucepan over low heat.",
+            "Stir the candles until they have melted.",
+            "Prepare the container for the wax while you are waiting for the candles to melt.",
+            "Pour.",
+            "Take the little bit of wax that you left in the saucepan and make sure that it is completely melted.",
+            "Pour the extra wax into the dip to make the dip fill in.",
+            "Let this little bit of wax completely harden.",
+            "Remember depending on what type of container you used, either light the candle directly in the container or you can slip it right out of the container.",
+            "Keep in mind that if you are having a hard time getting the candle out of the container, stick the container in the freezer for about five to ten minutes.",
+            "Decorate your new candle with glitter, sand, flowers or any other idea you might have to make your candle pretty.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "obtain_candle npc",
+            "find_saupan stove_knob velveeta",
+            "break_wicks wick1",
+            "stirf_candle npc",
+            "prepare_candle npc",
+            "pour-into-glass water faucet",
+            "burn_wicks wick1",
+            "pour_wicks_into_dip wick1",
+            "make_wicks_harden wick1",
+            "light_candle npc",
+            "free_candle npc",
+            "decorate_candle npc",
+            "finish-wreath wreath"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Add Scent to a Candle",
+        "step": [
+            "Gather materials.",
+            "Set the wick.",
+            "Measure your wax flakes.",
+            "Melt the wax.",
+            "Add scent.",
+            "Pour the wax into the container.",
+            "Burn the candle."
+        ],
+        "steps_predictions": [
+            "gather_materials materials",
+            "set_wick wick1",
+            "measure_wailmer wick1",
+            "melt_wand alice wand1",
+            "add-scenting_sauce alice",
+            "pour_wax_into_container alice container1",
+            "burn_candle user1 candle1"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Reuse an Old Candle",
+        "step": [
+            "Take out the candle you'd like to reuse.",
+            "Plug the candle warmer in the socket and turn it on.",
+            "Place the candle in a jar, if it's  not already in one.",
+            "Put the candle on the candle warmer hot plate.",
+            "Allow time for the old candle to completely melt.",
+            "Dip the new wick into the melted wax.",
+            "Give it a few minutes to dry.",
+            "Dip the wick again in the melted wax.",
+            "Let it dry for a few minutes.",
+            "Place the wick into the empty jar.",
+            "Pour the wax into the jar with the wick.",
+            "Take the wick out of the jar carefully.",
+            "Allow to dry and harden.",
+            "Place it in a safe area.",
+            "Take a lighter, light the candle, and enjoy its fragrance."
+        ],
+        "steps_predictions": [
+            "take_out_of_candle npc",
+            "plug_candle_wicks_into_socket npc",
+            "place_candle_in_jar user1 candle1 jar1",
+            "put_candle_on_table candle1 hot_plate1",
+            "set_burner_add_candle npc",
+            "dip_wick wick1",
+            "dry_wicks wick1",
+            "dip_wick wick1",
+            "dry_wicks wick1",
+            "place_wick_in_empty_jar wick1",
+            "pour_wicks_into_machine wick1",
+            "take_wick_out_of_jar wick1 jar1",
+            "dry_wicks wick1",
+            "place_safe_area npc basement",
+            "light_candle npc"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Create a Secret Candle Stash",
+        "step": [
+            "Find a tall, thick candle, a sharp steak knife, or other medium sized knife, and drill with a thick bit, a lighter of any sort, and a sponge or other squishy item in a color relatively close to your candle, and of course, something to hide.",
+            "Use the drill to make some holes as far into the candle as possible, while staying far enough away from the edge of the candle to leave a strong outside wall.",
+            "Cut out the rest of the inside with the knife, using the holes from the drill to get the it inside.",
+            "Spark the lighter and hover the flame below the hole in the candle to melt the wax.",
+            "Cut the squishy object into a circle about one half inch bigger than the hole in the candle.",
+            "Use the hole to store whatever you want.",
+            "Close off the stash by stuffing the squishy item in the candle.",
+            "Place somewhere inconspicuous.",
+            "Enjoy your privacy!."
+        ],
+        "steps_predictions": [
+            "drink_water npc",
+            "drink_water npc",
+            "cut_papyrus npc papyrus",
+            "start_lighter npc",
+            "cut_squishy_object npc",
+            "store_stuff npc basement",
+            "close_stuffing item in_candle alice",
+            "place-in-close-cage npc basement",
+            "get_privileges npc home"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Put Out a Candle with Your Fingers",
+        "step": [
+            "Light your candle.",
+            "Lick your fingers.",
+            "Place your hand about 1 inch (2.5 cm) away from the flame/wick.",
+            "Quickly grab the wick and then let go.",
+            "Practice."
+        ],
+        "steps_predictions": [
+            "light_candle user1 candle1",
+            "lick_fingestick npc",
+            "place-in-hand npc",
+            "grab_wick wick1",
+            "practice_with_equipment npc"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Make Candle Wall Art with Reclaimed Wood",
+        "step": [
+            "Select and prepare your reclaimed wood plank.",
+            "Prepare spoons.",
+            "Attach spoons to wood.",
+            "Mount on the wall and add candles."
+        ],
+        "steps_predictions": [
+            "select_wood_papyrus npc wood_floor",
+            "prepare_spoons mixing_bowl",
+            "attach_spoons_to_wood spoon1 wood1",
+            "mount_candle npc hallway"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Make a Chocolate Candle",
+        "step": [
+            "Get the old candles and place them on a table that is not used for eating.",
+            "Add water to your saucepan about a quarter way up and turn on the hob.",
+            "While it is heating, add your chopped-up candle pieces into the the bowl not intended for eating purposes.",
+            "Add a spoon full or more of chocolate spread in the bowl.",
+            "Place the bowl in the saucepan most likely when it is not boiling.",
+            "While the wax and the chocolate spread is melting, prepare the container for the candle.",
+            "Quickly check to see if the wax had melted.",
+            "Just wait until it sets.",
+            "Enjoy your lovely chocolate candle!."
+        ],
+        "steps_predictions": [
+            "place_candle_on_table table",
+            "add_water_to_hob stove water",
+            "cook npc kitchen",
+            "add-chocolate-sauce mixing_bowl chocolate",
+            "place_bowl_in_saupan bowl",
+            "prepare_container chocolate_comb container",
+            "check_wicks wick1",
+            "wait until it sets",
+            "get_chocolates chocolate candle1"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Make a Lace Candleholder",
+        "step": [
+            "Wipe down a glass candleholder with rubbing alcohol.",
+            "Cut a strip of lace long enough to wrap around your candleholder.",
+            "Wrap the lace tightly around the candleholder and secure it with tape.",
+            "Take the candleholder to a well-ventilated area.",
+            "Coat the candleholder with spray paint.",
+            "Allow the paint to dry before removing the lace.",
+            "Use the candleholder."
+        ],
+        "steps_predictions": [
+            "wipe_glass_with_rubbing_alcohol glass_filled",
+            "wrap_strips npc",
+            "wrap_lace velveeta",
+            "take_candle_holder_to_well_ventilated area",
+            "coat_candle_with_painting velveeta",
+            "dry_painting velveeta",
+            "use_candle_holder user1 candle1 lamp1"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Make a Candle in a Cup",
+        "step": [
+            "Visit any thrift store, charity shop or bric-a-brac shop, to find old tea cups, eggs cups or coffee cups.",
+            "Go to the craft store to buy wax, wicks that you can cut to the right size and candle dyes or scents.",
+            "Clean your cups thoroughly.",
+            "Plug in your hot glue gun.",
+            "Secure your metal sustainer to your wick by squeezing it together with the metal, if it is not already attached.",
+            "Place a dab of hot glue in the center of your cup and press the metal sustainer and wick on top of it.",
+            "Cut the wick so that it is 2 inches (5 cm) above the top of the cup.",
+            "Place the microwaveable wax in a microwaveable container, like a plastic measuring cup, and heat it according to the package directions.",
+            "Add dye or scent if you choose.",
+            "Carefully pour the wax in the cup until it is 1/2 inch (1.27 cm) below the cups rim.",
+            "Straighten the wick immediately after pouring the wax.",
+            "Clean your receptacles of glass while they are still hot.",
+            "Wait for about an hour for the wax to dry.",
+            "Trim the wick to about 1/2 inch (1.27 cm) above the rim."
+        ],
+        "steps_predictions": [
+            "get_teepee npc",
+            "buy_wicks wick1",
+            "cleaned_cup user1",
+            "plug_in_hot_glue_gun user1 hot_tool user2",
+            "secure_wick wick1",
+            "place_dip_in_hot_glue user1 hot_gems1",
+            "cut_wick wick1",
+            "place-wicks-in-container wax1 container1",
+            "add-scenting_sauce alice",
+            "pour_wand npc",
+            "straighten_wick wick1",
+            "clean_glass glass_filled",
+            "wait_for_wicks wick1",
+            "cut_wick wick1"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Make a Tye Dye Candle",
+        "step": [
+            "Prepare your entire work area, set out all materials beforehand.",
+            "Melt a small amount of wax in a double boiler or wax melter, to at least 160\u00baF.",
+            "Pour wax into cube trays, wax button molds, or pour a thin layer into a pan.",
+            "When the cubes have hardened, remove them from the mold.",
+            "Wick the mold and place the white wax chunks into the mold,  Make sure the wick is centered.",
+            "Melt a smaller amount of wax than you normally would to fill the mold.",
+            "Add any additives at this time.",
+            "Add scent if you wish.",
+            "Pour the liquid wax into the mold.",
+            "Take your liquid dye, or melted dye, and drop a small amount around the edges of the mold, so the dye travels down the sides of the candle.",
+            "Place the candle in the freezer.",
+            "Top off the well that forms, if one does.",
+            "Remove your candle from the mold when it is completely hard, and enjoy the unique swirled patterns on your candle."
+        ],
+        "steps_predictions": [
+            "prepare_area work area",
+            "burn_wicks npc",
+            "pour_wax_into_pan velveeta",
+            "remove-from-mixture cubes",
+            " ((in_machine wick1) (center_of_mixture w1))",
+            "melt_wailmer wick1",
+            "add-ingredients additives to alice mixture1",
+            "add-scenting_sauce alice",
+            "pour-wand wick-1",
+            "dip_candle_in_dye npc",
+            "free_candle npc",
+            "make_drill npc wood drill",
+            "remove_candle_from_mixture velveeta"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Make Candle Tarts",
+        "step": [
+            "Break up paraffin.",
+            "Set the double boiler over medium heat.",
+            "Watch the pot as the wax melts; do not leave it unattended, even for a second.",
+            "Add a piece of a crayon or commercial candle dye when the wax has melted.",
+            "Stir it with a wooden spoon to spread the color throughout the melted wax.",
+            "Mix in fragrance with the melted wax.",
+            "Spray tart pans or muffin tins with cooking spray.",
+            "Cut a piece of wick about 1 \u20442 inches (3.8 cm) longer than the depth of your mold, if you choose to add a wick.",
+            "Insert it into a wick holder, and wrap the other end around a pencil.",
+            "Pour the wax into the mold slowly to avoid spills and burns and to prevent air bubbles from forming in your wax tart.",
+            "Allow the wax to cool and set completely.",
+            "Turn the tart pans upside down over your hand, and tap them lightly to release the wax tarts.",
+            "Enjoy!."
+        ],
+        "steps_predictions": [
+            "break_paraffin npc",
+            "set_double_boiled_with_heat user1 stove1 heat1",
+            "set_burner_add_wicks npc",
+            "add-ingredient wax1 crayon1 candle1",
+            "stirf_wand npc",
+            "mix_ingredients alice wand1",
+            "free tart_papyrus mixing_bowl tins",
+            "cut_wick wick1",
+            "wrap_wick_with_ink wick1 pencil1",
+            "pour_wax_into_mixture wick1 container1",
+            "set_wicks_to_cool wick1",
+            "tape-papyrus tarts",
+            "make_sliplargerbeads npc"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Make Shot Glass Candles",
+        "step": [
+            "Break up all your old, half burned candles into a measuring cup.",
+            "Place the measuring cup into a pan of boiling water until the wax melts.",
+            "Watch to see when the wax has almost completely melted.",
+            "Place the wicks inside the shot glasses.",
+            "When the wax has melted down, pour the wax into each shot glass.",
+            "When the wax is almost completely set, move the wick into the center of the glass and then leave it to fully set.",
+            "Finished!."
+        ],
+        "steps_predictions": [
+            "break_candle_into_measuring_cup npc",
+            "place_measuring_cup_into_pan stove pot water",
+            "set_burner_add_wicks_to_oven npc",
+            "place_wicks_in_shot_glass wick1",
+            "pour_wax_into_shot glass_filled",
+            "set_wick wick1 glass1",
+            "finish-wreath wreath-1"
+        ]
+    },
+    {
+        "cluster_label": 791,
+        "task": "How to Recycle Candles",
+        "step": [
+            "Collect partially used candles.",
+            "Purchase needed supplies and containers.",
+            "Find a large saucepan that will accommodate the amount of wax you will use.",
+            "Place the saucepan on the stove on low heat.",
+            "Prepare the candle holders while you are waiting for the wax to melt.",
+            "Check the wax and stir until any remaining chunks are dissolved.",
+            "Use a mesh strainer and pour the hot wax through into another pan.",
+            "Pour the hot wax into your candle holders.",
+            "Place the full candle holders or molds on a flat surface out of the way of foot traffic so the wax can harden evenly."
+        ],
+        "steps_predictions": [
+            "collect_candle npc",
+            "purchase_supplies npc store",
+            "find_saupan stove_knob velveeta",
+            "place_saupan stove_knob velveeta",
+            "prepare_candle_holders user1 wick1",
+            "check_wax wick1",
+            "pour_wicks_into_pan wick1 pan1",
+            "pour_wand npc",
+            "place_full_candle_holders npc hallway"
+        ]
+    }
+]

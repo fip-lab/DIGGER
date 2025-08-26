@@ -1,0 +1,33 @@
+{
+    "conduct": [
+        "(:action conduct_initiation\n    :parameters (?p1 - person ?p2 - person)\n    :precondition (and\n                    (not (initiated ?p1))\n                    (not (initiated ?p2)))\n    :effect (and\n              (initiated ?p1)\n              (initiated ?p2))\n)\n\n;; Action 2: Meet in Secret\n"
+    ],
+    "meet": [
+        "(:action meet_in_secret\n    :parameters (?p - person ?l - location)\n    :precondition (and\n                    (initiated ?p)\n                    (not (meeting_location ?l)))\n    :effect (meeting_location ?l)\n)\n\n;; Action 3: Remove Player\n"
+    ],
+    "remove": [
+        "(:action remove_player\n    :parameters (?p - person)\n    :precondition (and\n                    (member ?p)\n                    (bad_for_group ?p))\n    :effect (not (member ?p))\n)\n\n;; Action 4: Set Dress Code\n"
+    ],
+    "set": [
+        "(:action set_dress_code\n    :parameters (?c - dress_code)\n    :precondition (not (dress_code_set))\n    :effect (dress_code_set ?c)\n)\n\n;; Action 5: Initiate New Member\n",
+        "(:action set_meeting_place\n    :parameters (?p - place ?c - cult)\n    :precondition (and\n                    (founders-initiated ?c)\n                    (not (meeting-place-set ?p ?c)))\n    :effect (meeting-place-set ?p ?c)\n)\n```\n\n#### Action 3: Establish_dress_code\n```lisp\n"
+    ],
+    "initiate": [
+        "(:action initiate_new_member\n    :parameters (?p - person)\n    :precondition (and\n                    (initiated ?p1)\n                    (initiated ?p2)\n                    (not (member ?p))\n                    (brilliant ?p)\n                    (enthusiastic ?p))\n    :effect (member ?p)\n)\n\n;; Action 6: Think of a Name\n",
+        "(:action initiate_founders\n    :parameters (?p1 - person ?p2 - person ?c - cult)\n    :precondition (and\n                    (not (founders-initiated ?c))\n                    (not (in-cult ?p1 ?c))\n                    (not (in-cult ?p2 ?c)))\n    :effect (and\n              (founders-initiated ?c)\n              (in-cult ?p1 ?c)\n              (in-cult ?p2 ?c))\n)\n```\n\n#### Action 2: Set_meeting_place\n```lisp\n",
+        "(:action initiate_new_members\n    :parameters (?p - person ?c - cult)\n    :precondition (and\n                    (founders-initiated ?c)\n                    (meeting-place-set ?p ?c)\n                    (not (in-cult ?p ?c))\n                    (member-count ?c ?n)\n                    (< ?n 10))\n    :effect (and\n              (in-cult ?p ?c)\n              (increase-member-count ?c))\n)\n```\n\n#### Action 5: Name_the_cult\n```lisp\n"
+    ],
+    "think": [
+        "(:action think_of_name\n    :parameters (?p1 - person ?p2 - person ?n - name)\n    :precondition (and\n                    (initiated ?p1)\n                    (initiated ?p2)\n                    (not (society_named)))\n    :effect (society_named ?n)\n)\n\n;; Action 7: Create Secret Mission\n",
+        "(:action name_the_cult\n    :parameters (?c - cult ?n - name)\n    :precondition (and\n                    (founders-initiated ?c)\n                    (not (cult-named ?c)))\n    :effect (cult-named ?c ?n)\n)\n```\n\n#### Action 6: Create_secret_mission\n```lisp\n"
+    ],
+    "create": [
+        "(:action create_secret_mission\n    :parameters (?c - cult ?m - mission)\n    :precondition (and\n                    (founders-initiated ?c)\n                    (not (secret-mission-set ?c)))\n    :effect (secret-mission-set ?c ?m)\n)\n```\n\nThese actions capture the primary steps of establishing a secret society or cult as described in the task. Each action is designed with preconditions and effects that reflect the logical sequence and requirements of the task."
+    ],
+    "read": [
+        "(:action read_background_information\n    :parameters (?p - person ?b - book)\n    :precondition (and\n                    (initiated ?p)\n                    (not (read ?p ?b)))\n    :effect (read ?p ?b)\n)\n```\n\nThese actions represent the steps and descriptions provided, ensuring that the conditions and effects align with the goal of removing players if necessary and maintaining the integrity of the secret society."
+    ],
+    "establish": [
+        "(:action establish_dress_code\n    :parameters (?c - cult ?d - dress_code)\n    :precondition (and\n                    (founders-initiated ?c)\n                    (not (dress-code-set ?c)))\n    :effect (dress-code-set ?c ?d)\n)\n```\n\n#### Action 4: Initiate_new_members\n```lisp\n"
+    ]
+}

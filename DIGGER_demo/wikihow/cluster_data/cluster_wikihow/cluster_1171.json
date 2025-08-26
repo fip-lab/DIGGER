@@ -1,0 +1,114 @@
+[
+    {
+        "title": "How to Treat Low Blood Pressure",
+        "steps": [
+            "Sit down when you feel faint.",
+            "Move around slowly.",
+            "Keep the blood circulating in your legs.",
+            "Increase the amount of time you are upright.",
+            "Stay cool.",
+            "Exercise regularly."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Treat Low Blood Pressure Naturally",
+        "steps": [
+            "See your doctor if you have low blood pressure symptoms.",
+            "Get emergency medical care for signs of shock.",
+            "Work with your doctor to treat any underlying problems."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Prevent Low Blood Pressure",
+        "steps": [
+            "Monitor your blood pressure regularly as you age.",
+            "Keep an eye on your blood pressure if you are pregnant.",
+            "Tell your doctor if you suffer from an illness or pre-existing condition.",
+            "Take care when using medication."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Reduce High Blood Pressure After Surgery",
+        "steps": [
+            "Call your doctor if you think you are developing high blood pressure.",
+            "Control your blood pressure with medications if your doctor feels it is needed.",
+            "Talk to your doctor about other medications you are on."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Raise Low Blood Pressure",
+        "steps": [
+            "Seek medical attention if you are experiencing a sudden change in blood pressure.",
+            "Request a change in your medications or dosages.",
+            "Get tested for underlying medical conditions.",
+            "Inquire about medications that raise blood pressure.",
+            "Recognize warning symptoms."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Control High Blood Pressure",
+        "steps": [
+            "Reduce your stress.",
+            "Make regular doctor appointments and monitor your blood pressure at home.",
+            "Take a supplement or other blood pressure medication.",
+            "Get support."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Raise Blood Pressure",
+        "steps": [
+            "Contact the patient's physician if the blood pressure reading was dangerously low.",
+            "Take blood pressure readings, if possible, when the crisis is over.",
+            "Reassess the patient and the readings after an hour to determine if the patient is out of the woods."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Lower Diastolic Blood Pressure",
+        "steps": [
+            "Understand your blood pressure numbers.",
+            "Track your diastolic blood pressure regularly.",
+            "Consult your doctor.",
+            "Take prescription medications for blood pressure.",
+            "Follow your treatment plan as recommended by your healthcare provider."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Lower Blood Pressure",
+        "steps": [
+            "Call emergency medical responders if you think you might be having a heart attack or stroke.",
+            "Go to the emergency room if you have symptoms of high blood pressure.",
+            "Take medications if your doctor feels it is needed."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Use a Stethoscope",
+        "steps": [
+            "Wrap the blood pressure cuff around your patient\u2019s arm, right above the elbow.",
+            "Press the diaphragm of the stethoscope over the brachial artery just below the cuff's edge.",
+            "Inflate the cuff to 180mmHg or 30mm above your expected systolic blood pressure.",
+            "Listen for Korotkoff sounds.",
+            "Release and remove the cuff.",
+            "Wait a few minutes if you want to check the patient\u2019s blood pressure again."
+        ],
+        "cluster_label": 1171
+    },
+    {
+        "title": "How to Naturally Reduce Blood Pressure",
+        "steps": [
+            "See your doctor to get your blood pressure checked as directed.",
+            "Consult your doctor if medication may be causing your hypertension.",
+            "Work with your doctor to create a treatment plan for you.",
+            "Ask about medication if your blood pressure remains high."
+        ],
+        "cluster_label": 1171
+    }
+]

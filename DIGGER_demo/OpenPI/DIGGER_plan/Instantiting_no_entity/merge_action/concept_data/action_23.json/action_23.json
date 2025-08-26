@@ -1,0 +1,14 @@
+{
+    "mix": [
+        "(:action mix_ingredients\n  :parameters (?p - person ?mixture - mixture ?ingredients - ingredient)\n  :precondition (and (at ?p kitchen) (has ?p ?ingredients))\n  :effect (and (mixed ?mixture) (not (has ?p ?ingredients)))\n)\n\n"
+    ],
+    "pour": [
+        "(:action pour_into_container\n  :parameters (?p - person ?mixture - mixture ?container - container)\n  :precondition (and (at ?p kitchen) (mixed ?mixture) (has ?p ?mixture) (is_container ?container))\n  :effect (and (in ?mixture ?container) (not (has ?p ?mixture)))\n)\n\n"
+    ],
+    "grind": [
+        "(:action grind_ingredients\n  :parameters (?p - person ?ingredients - ingredient ?mortar_and_pestle - tool)\n  :precondition (and (at ?p kitchen) (has ?p ?ingredients) (is_mortar_and_pestle ?mortar_and_pestle))\n  :effect (and (ground ?ingredients) (not (has ?p ?ingredients)))\n)\n\n"
+    ],
+    "gotolocation": [
+        "(:action gotolocation\n  :parameters (?agent - person ?location - location)\n  :precondition (and (at ?agent ?current_location) (connected ?current_location ?location))\n  :effect (and (at ?agent ?location) (not (at ?agent ?current_location)))\n)\n```\n\nExplanation:\n- `mix_ingredients`: This action captures the step of mixing ingredients together.\n- `pour_into_container`: This action represents pouring the mixed ingredients into a container.\n- `grind_ingredients`: This action involves grinding the ingredients using a mortar and pestle.\n- `gotolocation`: This action is a general movement action for the agent to move to a specified location.\n\nThese actions follow the format and structure shown in the example and are tailored to the task of making seasoned salt."
+    ]
+}

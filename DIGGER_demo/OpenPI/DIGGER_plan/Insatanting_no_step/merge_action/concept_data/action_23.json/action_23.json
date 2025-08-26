@@ -1,0 +1,14 @@
+{
+    "grind": [
+        "(:action grind_ingredients\n  :parameters (?p - player ?m - mortar_pestle)\n  :precondition (and (at ?p kitchen) (at ?m kitchen) (clean ?m) (empty ?m))\n  :effect (and (full ?m) (dirty ?m) (used ?m))\n)\n\n"
+    ],
+    "mix": [
+        "(:action mix_ingredients\n  :parameters (?p - player ?m - mortar_pestle)\n  :precondition (and (at ?p kitchen) (full ?m) (used ?m))\n  :effect (and (mixed ?m))\n)\n\n"
+    ],
+    "transfer": [
+        "(:action transfer_to_storage\n  :parameters (?p - player ?m - mortar_pestle ?c - container)\n  :precondition (and (at ?p kitchen) (mixed ?m) (at ?c kitchen) (empty ?c))\n  :effect (and (full ?c) (empty ?m))\n)\n\n"
+    ],
+    "pour": [
+        "(:action pour_into_container\n  :parameters (?p - player ?c - container ?airtight_c - container)\n  :precondition (and (at ?p kitchen) (full ?c) (empty ?airtight_c))\n  :effect (and (full ?airtight_c) (empty ?c) (airtight ?airtight_c))\n)\n```\n\nThese actions represent the steps to make seasoned salt, considering the descriptions and entity states provided."
+    ]
+}

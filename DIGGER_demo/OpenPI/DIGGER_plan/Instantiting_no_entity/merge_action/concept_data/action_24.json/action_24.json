@@ -1,0 +1,16 @@
+{
+    "scrub": [
+        "(:action scrub_ketchup_bottle\n    :parameters (?b - bottle)\n    :precondition (and (is_empty ?b) (not (is_clean ?b)))\n    :effect (is_clean ?b)\n)\n\n"
+    ],
+    "place": [
+        "(:action place_funnel\n    :parameters (?u - user ?f - funnel ?b - bottle)\n    :precondition (and (is_clean ?b) (not (has_funnel ?b)))\n    :effect (has_funnel ?b)\n)\n\n",
+        "(:action place_in_fridge\n    :parameters (?b - bottle ?r - refrigerator)\n    :precondition (and (has_lid ?b) (is_labeled ?b))\n    :effect (in_fridge ?b ?r)\n)\n\n",
+        "(:action pour_pancake_batter\n    :parameters (?u - user ?b - bottle ?f - funnel ?bat - batter)\n    :precondition (and (has_funnel ?b) (is_clean ?b) (has_batter ?u ?bat))\n    :effect (and (has_batter ?b ?bat) (not (has_batter ?u ?bat)))\n)\n\n"
+    ],
+    "replace": [
+        "(:action replace_lid_and_label\n    :parameters (?u - user ?b - bottle)\n    :precondition (and (has_batter ?b ?bat) (not (has_lid ?b)))\n    :effect (and (has_lid ?b) (is_labeled ?b))\n)\n\n"
+    ],
+    "finish": [
+        "(:action finish_task\n    :parameters (?u - user ?w - wreath)\n    :precondition (and (task_completed ?u))\n    :effect (is_finished ?w)\n)\n```\n\nExplanation:\n1. **scrub_ketchup_bottle**: This action represents scrubbing the ketchup bottle to make it clean.\n2. **place_funnel**: This action represents placing the funnel over the mouth of the bottle.\n3. **pour_pancake_batter**: This action represents pouring pancake batter into the bottle through the funnel.\n4. **replace_lid_and_label**: This action represents replacing the lid and labeling the bottle.\n5. **place_in_fridge**: This action represents placing the bottle in the refrigerator.\n6. **finish_task**: This action represents the completion of the task.\n\nNote: The step \"finish-wreath wreath\" seems irrelevant to the given task, so it was modified to a generic task completion action."
+    ]
+}

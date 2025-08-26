@@ -1,0 +1,1031 @@
+[
+    {
+        "step": [
+            "Make a base coat with glue and water.",
+            "Apply and dry the glue base coat before putting on polish.",
+            "Apply nail polish.",
+            "Soak your nails when you're ready to remove your polish.",
+            "Peel off your old nail polish."
+        ],
+        "task": "How to Remove Nail Polish Without Using Remover",
+        "goal_state": "remove-nail Polish npc",
+        "steps": "```pddl\n(chip(p uv wipe))\n(clean(agent target buff))\n(clean(agent target brush))\n(wipe(cleaner surface brush))\n(wipe(cleaner surface buff))\n(wipe(cleaner surface wipe))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 1703,
+                "task": "How to Remove Gel Nail Polish",
+                "step": [
+                    "Wait until the nails are mostly chipped away.",
+                    "Insert a cuticle stick under the surface of a gel.",
+                    "Peel off the gel.",
+                    "Condition your nails."
+                ],
+                "steps_predictions": [
+                    "chip_nail npc",
+                    "insert_cuticle_stick npc",
+                    "peel-gel alice",
+                    "Condition_nail npc"
+                ],
+                "goal_state": " ((clean npc razor) (in_order razor))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1703,
+                "task": "How to Use Both Regular and UV Gel Nail Polish Together",
+                "step": [
+                    "Buff your nails to remove any shine.",
+                    "Use an alcohol wipe to clean off the dust.",
+                    "Brush on a layer of gel polish foundation.",
+                    "Cure the foundation under an LED or UV lamp.",
+                    "Wipe the surface of each nail with alcohol to remove the tacky layer.",
+                    "Apply 1 or 2 thin coats of regular nail polish.",
+                    "Allow the polish to dry completely.",
+                    "Add a layer of gel topcoat.",
+                    "Cure the topcoat under the lamp for the recommended time.",
+                    "Wipe off the tacky layer with an alcohol wipe."
+                ],
+                "steps_predictions": [
+                    "remove-shine-from-nail you",
+                    "clean_room rug1 cloth1",
+                    "brush-and-flatten-gel_polish alice velveeta",
+                    "cure_foundation user1 eraser1 lamp1",
+                    "remove_tape npc",
+                    "apply_nail_polish npc",
+                    "dry_polish alice velveeta",
+                    "add_gel_coathanger alice velveeta",
+                    "cure-wound wick1 lamp1",
+                    "wipe_tape_with_alcohol_clean npc"
+                ],
+                "goal_state": " ((polished_room rug1) (flattened wick1))",
+                "similar_entity": {
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "cloth": {
+                        "sponge": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on ground",
+                                "after": "in bucket"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "wet | dirty | dirtier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You can use [[cloth]] to [[clean]]",
+                            "[[napkin]] is related to [[cloth]]",
+                            "You are likely to find [[a cloth]] in [[a fabric store]]",
+                            "[[A linen]] is [[a cloth]]",
+                            "[[a cloth]] can [[become wet]]"
+                        ]
+                    },
+                    "lamp": {
+                        "lamp": [
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wicked",
+                                "after": "wickless"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find at [[your house]] is [[a lamp]]",
+                            "[[lantern]] is related to [[lamp]]",
+                            "[[سِرَاج]] is a translation of [[lamp]]",
+                            "[[A lamp]] is for [[illuminating an area]]",
+                            "[[A lamp]] can [[illuminate]]."
+                        ]
+                    },
+                    "rug": {
+                        "throw rugs and inside door mats": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean | cleaner"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a rug]] is for [[floor covering]]",
+                            "*Something you find on [[the rug]] is [[a stain]]",
+                            "[[Tapete]] is a translation of [[rug]]",
+                            "[[carpet]] is related to [[rug]]"
+                        ]
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "eraser": {
+                        "eraser": [
+                            {
+                                "attribute": "location",
+                                "before": "in store | absent | at shop/in drawer | owned by store",
+                                "after": "in home | present | in hand | bought by you"
+                            },
+                            {
+                                "attribute": "cost",
+                                "before": "for sale at store",
+                                "after": "purchased fro store"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "on linoleum"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "whole",
+                                "after": "getting smaller"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find at [[a desk]] is [[eraser]]",
+                            "[[Gomme à effacer]] is a translation of [[eraser]]"
+                        ]
+                    },
+                    "velveeta": {
+                        "velveeta": [
+                            {
+                                "attribute": "granularity",
+                                "before": "whole | a block",
+                                "after": "cubed | cut into cubes | cut into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the fridge | in package | in front of me",
+                                "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "room temperature"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "large | whole",
+                                "after": "small | cut up"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on the cutting board",
+                                "after": "in the sauce pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | room temperature",
+                                "after": "hot | warming"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "thick",
+                                "after": "runny"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1703,
+                "task": "How to Remove Nail Polish from Around the Nails",
+                "step": [
+                    "Gather your materials.",
+                    "Paint the glue around your nails.",
+                    "Let the glue dry.",
+                    "Paint your nails.",
+                    "Let your nails dry.",
+                    "Peel away the glue."
+                ],
+                "steps_predictions": [
+                    "gather_materials you materials",
+                    "paint_with_glue npc",
+                    "dry_wicks wick1",
+                    "paint_nail_with_polish npc",
+                    "dry_nail npc",
+                    "peel-and-flatten-gremixture glue1 container1"
+                ],
+                "goal_state": " ((clean_wicks wick1) (transparent npc))",
+                "similar_entity": {
+                    "glue": {
+                        "duct tape": [
+                            {
+                                "attribute": "length",
+                                "before": "rolled",
+                                "after": "unrolled | in pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on roll",
+                                "after": "in pieces"
+                            },
+                            {
+                                "attribute": "length",
+                                "before": "longer | rolled | whole",
+                                "after": "shorter | extended | cut | in pieces"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "elongated",
+                                "after": "folded"
+                            },
+                            {
+                                "attribute": "length",
+                                "before": "larger",
+                                "after": "smalle"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "elongated | long",
+                                "after": "folded"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "sticky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "length",
+                                "before": "shorter",
+                                "after": "longer"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate pieces",
+                                "after": "one piece"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[paste]] is related to [[glue]]",
+                            "[[Glue]] is [[sticky]]",
+                            "[[glue]] is [[a substance]]",
+                            "[[glue]] can [[hold things together]]",
+                            "You are likely to find [[a glue]] in [[school]]",
+                            "You can use [[glue]] to [[stick thing together]]"
+                        ]
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "materials": {
+                        "clothing": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Choose a nail polish you don't like very much.",
+            "Paint polish over one of your nails.",
+            "Use a paper towel to wipe it off after five seconds.",
+            "Repeat with remaining nails."
+        ],
+        "task": "How to Remove Old Nail Polish",
+        "goal_state": "remove_old_nail Polish old_painted",
+        "steps": "```pddl\n(use(user band target))\n(wipe(cleaner surface stick))\n(chip(p polish stick))\n(transform_state(entity1 entity2 stick old))\n(clean(agent target stick))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 1703,
+                "task": "How to Remove Gel Nail Polish",
+                "step": [
+                    "Wait until the nails are mostly chipped away.",
+                    "Insert a cuticle stick under the surface of a gel.",
+                    "Peel off the gel.",
+                    "Condition your nails."
+                ],
+                "steps_predictions": [
+                    "chip_nail npc",
+                    "insert_cuticle_stick npc",
+                    "peel-gel alice",
+                    "Condition_nail npc"
+                ],
+                "goal_state": " ((clean npc razor) (in_order razor))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1703,
+                "task": "How to Remove Nail Polish from Around the Nails",
+                "step": [
+                    "Gather your materials.",
+                    "Paint the glue around your nails.",
+                    "Let the glue dry.",
+                    "Paint your nails.",
+                    "Let your nails dry.",
+                    "Peel away the glue."
+                ],
+                "steps_predictions": [
+                    "gather_materials you materials",
+                    "paint_with_glue npc",
+                    "dry_wicks wick1",
+                    "paint_nail_with_polish npc",
+                    "dry_nail npc",
+                    "peel-and-flatten-gremixture glue1 container1"
+                ],
+                "goal_state": " ((clean_wicks wick1) (transparent npc))",
+                "similar_entity": {
+                    "glue": {
+                        "duct tape": [
+                            {
+                                "attribute": "length",
+                                "before": "rolled",
+                                "after": "unrolled | in pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on roll",
+                                "after": "in pieces"
+                            },
+                            {
+                                "attribute": "length",
+                                "before": "longer | rolled | whole",
+                                "after": "shorter | extended | cut | in pieces"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "elongated",
+                                "after": "folded"
+                            },
+                            {
+                                "attribute": "length",
+                                "before": "larger",
+                                "after": "smalle"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "elongated | long",
+                                "after": "folded"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "sticky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "length",
+                                "before": "shorter",
+                                "after": "longer"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate pieces",
+                                "after": "one piece"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[paste]] is related to [[glue]]",
+                            "[[Glue]] is [[sticky]]",
+                            "[[glue]] is [[a substance]]",
+                            "[[glue]] can [[hold things together]]",
+                            "You are likely to find [[a glue]] in [[school]]",
+                            "You can use [[glue]] to [[stick thing together]]"
+                        ]
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "materials": {
+                        "clothing": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1703,
+                "task": "How to Open Nail Polish",
+                "step": [
+                    "Avoid using force to open a stuck bottle.",
+                    "Don't hit the cap against the counter.",
+                    "Wrap a rubber band around a cap.",
+                    "Use nail polish thinner to dissolve hardened polish.",
+                    "Use hot water to soften stuck nail polish."
+                ],
+                "steps_predictions": [
+                    "open_bottle user1 bottle1",
+                    "set_cap_on_counter user1 ketchup_bottle1",
+                    "wrap_rubber_band user1 velveeta",
+                    "dissolve_polish npc",
+                    "soften_stick npc"
+                ],
+                "goal_state": " ((open_cap1) (in_container ketchup_bottle1))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "ketchup bottle": {
+                        "bottle": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | dry",
+                                "after": "dirty | wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open | on counter | on table",
+                                "after": "closed with lid | on bottle"
+                            },
+                            {
+                                "attribute": "clarity",
+                                "before": "blank",
+                                "after": "written on"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "refrigerator"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm | room temperature",
+                                "after": "cold"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "bottle": {
+                        "bottle": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | dry",
+                                "after": "dirty | wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open | on counter | on table",
+                                "after": "closed with lid | on bottle"
+                            },
+                            {
+                                "attribute": "clarity",
+                                "before": "blank",
+                                "after": "written on"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "refrigerator"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm | room temperature",
+                                "after": "cold"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a bottle]] is for [[storing liquids]]",
+                            "You are likely to find [[water]] in [[a bottle]]",
+                            "[[Garrafa]] is a translation of [[bottle]]",
+                            "[[a bottle]] is a type of [[container]]",
+                            "[[bottle]] can be made of [[plastic]]"
+                        ]
+                    },
+                    "velveeta": {
+                        "velveeta": [
+                            {
+                                "attribute": "granularity",
+                                "before": "whole | a block",
+                                "after": "cubed | cut into cubes | cut into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the fridge | in package | in front of me",
+                                "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "room temperature"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "large | whole",
+                                "after": "small | cut up"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on the cutting board",
+                                "after": "in the sauce pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | room temperature",
+                                "after": "hot | warming"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "thick",
+                                "after": "runny"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    }
+]

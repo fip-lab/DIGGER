@@ -1,0 +1,173 @@
+[
+    {
+        "cluster_label": 339,
+        "task": "How to Clean Toddler's Teeth",
+        "step": [
+            "Start in infancy.",
+            "Use toddler tooth care products.",
+            "Floss.",
+            "Start brushing your toddler's teeth!.",
+            "Go to the dentist.",
+            "Give your child drinking water that is fluoridated.",
+            "Make sure your toddler is getting a well-balanced diet."
+        ],
+        "steps_predictions": [
+            "start_in infancy npc",
+            "use_others_as_gerbix npc",
+            "floss_with_faucet fairy_moss",
+            "brush-tied toddler's teeth",
+            "go_to_dentist npc",
+            "drink_water npc",
+            "get_tinder npc"
+        ],
+        "goal_state": " ((clean_teeth npc))"
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Do Baby's Laundry",
+        "step": [
+            "Remove all tags from new clothes, blankets, and sheets.",
+            "Sort through hand-me-downs thoroughly.",
+            "Wash baby's clothes as you would any other clothes.",
+            "Put the clothes in the dryer.",
+            "Fold laundry and put away.",
+            "Keep baby's dirty clothes in a separate basket."
+        ],
+        "steps_predictions": [
+            "remove_tags npc",
+            "sort_hand-me-downs kids-room",
+            "wash_baby npc",
+            "put_clothes_in_dryer clothes",
+            "fold-and-put-away laundry",
+            "keep-dirty-wicks-in-basket npc"
+        ],
+        "goal_state": " ((on npc clothing) (in_laundry basket))"
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Teach Your Kid to Use a Zipper",
+        "step": [
+            "Model zipper use.",
+            "Have your child practice zipping with your help.",
+            "Remove any unnecessary challenges.",
+            "Give your child opportunities to practice zipping.",
+            "Give positive reinforcement.",
+            "Reward your child for a job well done."
+        ],
+        "steps_predictions": [
+            "put_zipper_in_machine velveeta",
+            "teach-child zipping",
+            "remove_add_unnecessary_challenges npc",
+            "teach-child zipping",
+            "gather_reinforced person npc",
+            "receptacle agent child npc"
+        ],
+        "goal_state": " ((teach_kid_new_member npc))"
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Get a Toddler to Wear Winter Clothes",
+        "step": [
+            "Choose clothes that are easy to pull on.",
+            "Get your toddler to practice wearing their winter clothes.",
+            "Pack their summer clothes.",
+            "Make getting dressed a familiar routine.",
+            "Avoid forcing your toddler to wear the winter clothes."
+        ],
+        "steps_predictions": [
+            "choose_clothes npc",
+            "practice wearing_winter_clothes npc",
+            "pack_clothes npc",
+            "make_comamiliar_routes npc",
+            "break_child npc basement"
+        ],
+        "goal_state": " ((not (at npc basement)))"
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Clean a Clothes Dryer Vent",
+        "step": [
+            "Learn the signs your vent needs cleaning.",
+            "Keep the floor around the dryer clean.",
+            "Limit the use of dryer sheets.",
+            "Stick to brief dry cycles."
+        ],
+        "steps_predictions": [
+            "learn_signal npc",
+            "clean_floor rug rug1",
+            "check_sheets dryer_sheet1",
+            "stick_to_dry_cycles npc"
+        ],
+        "goal_state": " ((knowledge npc) (not (cleanness cloth1)))"
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Wash a Toddler's Clothes",
+        "step": [
+            "Determine what temperature of water you will use.",
+            "Choose a detergent.",
+            "Figure out how you should dry the clothes.",
+            "Add dryer sheets if so desired."
+        ],
+        "steps_predictions": [
+            "determine_temperature water",
+            "choose_detergent detergent",
+            "dry_clothes npc work_station",
+            "add-dryer-sheets dryer_sheets"
+        ],
+        "goal_state": " ((on_rack npc cloth))"
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Teach Your Children to Do Laundry",
+        "step": [
+            "Make the laundry area child-friendly.",
+            "Have young children participate with safe tasks.",
+            "Make laundry fun for older kids.",
+            "Encourage teenagers to be more independent."
+        ],
+        "steps_predictions": [
+            "make_child_friendly area",
+            "participate_with_children npc",
+            "make_fun kids laundry",
+            "encourage_teenagers npc"
+        ],
+        "goal_state": " ((teach_new_member_secret npc) (in_home laundry))"
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Free Your Child from Lice",
+        "step": [
+            "Avoid sharing.",
+            "Ensure hair hygiene.",
+            "Teach your children steps to avoid lice.",
+            "Make sure your child's school or organization checks for lice.",
+            "Look for the telltale signs of a louse.",
+            "Check your child\u2019s hair."
+        ],
+        "steps_predictions": [
+            "break_family_memebers_trust npc basement",
+            "make_hair_hygiene my_equipment",
+            "teach-child lice",
+            "check_lice npc",
+            "check_louse louse",
+            "check_child npc"
+        ],
+        "goal_state": " ((not (in anish npc)))"
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Clean a Toddler's Ears",
+        "step": [
+            "Look into your child's ears to check for foreign objects.",
+            "Never insert a cotton swab or other item into your child's ear.",
+            "Watch for signs that your child may be having ear pain."
+        ],
+        "steps_predictions": [
+            "check_child_ears npc",
+            "insert_cotton_swab npc",
+            "watch_child npc"
+        ],
+        "goal_state": " ((clean_ears npc))"
+    }
+]

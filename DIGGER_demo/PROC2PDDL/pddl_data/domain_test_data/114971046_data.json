@@ -1,0 +1,108 @@
+[
+    {
+        "task": "reinforce_basement",
+        "step": [
+            "walk north npc home garage",
+            "get car npc garage",
+            "get_in_car npc garage car",
+            "drive east npc garage highway",
+            "drive down npc highway mall",
+            "drive east npc mall homedepot",
+            "get concrete npc homedepot",
+            "walk west npc homedepot mall",
+            "drive up npc mall highway",
+            "drive west npc highway garage",
+            "drive south npc garage home",
+            "make_plan npc home",
+            "drive in npc home basement",
+            "reinforce npc basement concrete"
+        ],
+        "desc": [
+            "Make a plan. If a nuclear attack does happen, it won't be safe to venture outside for food \u2014 you should stay sheltered for at least 48 hours, preferably longer. Having food and medical supplies on-hand can put your mind at-ease, and allow you to focus on other aspects of survival."
+        ],
+        "action": [
+            "(:action make_plan\n      :parameters (?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (is_home ?l1))\n      :effect (and (has_plan ?p))\n   )",
+            "(:action get\n      :parameters (?obj - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?obj ?l1) (not (is_supermarket ?l1)))\n      :effect (and (inventory ?p ?obj))\n   )",
+            "(:action stay_in_shelter\n      :parameters (?p - player ?l1 - location ?obj1 - item ) \n      :precondition (and (at ?p ?l1) (has_plan ?p) (inventory ?p ?obj1) (is_nonperishable ?obj1) (reinforced ?l1) (is_underground ?l1))\n      :effect (and (sheltered ?p) )\n  )",
+            "(:action walk\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)) )\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_in_car\n      :parameters (?p - player ?l1 - location ?obj - item)\n      :precondition (and (at ?p ?l1) (inventory ?p ?obj) (is_car ?obj))\n      :effect (and (driving ?p) (inventory ?p ?obj))\n  )\n\n)",
+            "(:action get_food\n      :parameters (?obj - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?obj ?l1) (is_supermarket ?l1) (is_nonperishable ?obj) (has_plan ?p))\n      :effect (and (inventory ?p ?obj))\n   )",
+            "(:action drive\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (driving ?p) )\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_medicine\n      :parameters (?obj -item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (is_pharmacy ?l1) (has_plan ?p))\n      :effect (and (inventory ?p ?obj))\n  )",
+            "(:action reinforce\n      :parameters (?p - player ?l1 - location ?obj - item) \n      :precondition (and (at ?p ?l1) (has_plan ?p) (inventory ?p ?obj) (is_construction_material ?obj))\n      :effect (and (reinforced ?l1) )\n  )"
+        ],
+        "goal_state": "((reinforced basement))"
+    },
+    {
+        "task": "get_essential_items",
+        "step": [
+            "make_plan npc home",
+            "walk north npc home garage",
+            "get car npc garage",
+            "get_in_car npc garage car",
+            "drive east npc garage highway",
+            "drive down npc highway mall",
+            "drive east npc mall homedepot",
+            "get wood npc homedepot",
+            "walk west npc homedepot mall",
+            "drive north npc mall wholefoods",
+            "get_food canned_food npc wholefoods",
+            "walk south npc wholefoods mall",
+            "drive south npc mall pharmacy",
+            "get medical_supplies npc pharmacy"
+        ],
+        "desc": [
+            "Stock up on non-perishable food. Non-perishables can last several years, whether it's in storage or in sustaining you after an attack. Choose items that contain a lot of carbohydrates, so you get more caloric bang for your buck, and store them in a cool, dry place.",
+            "Make a plan. If a nuclear attack does happen, it won't be safe to venture outside for food \u2014 you should stay sheltered for at least 48 hours, preferably longer. Having food and medical supplies on-hand can put your mind at-ease, and allow you to focus on other aspects of survival."
+        ],
+        "action": [
+            "(:action make_plan\n      :parameters (?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (is_home ?l1))\n      :effect (and (has_plan ?p))\n   )",
+            "(:action get\n      :parameters (?obj - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?obj ?l1) (not (is_supermarket ?l1)))\n      :effect (and (inventory ?p ?obj))\n   )",
+            "(:action walk\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)) )\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_in_car\n      :parameters (?p - player ?l1 - location ?obj - item)\n      :precondition (and (at ?p ?l1) (inventory ?p ?obj) (is_car ?obj))\n      :effect (and (driving ?p) (inventory ?p ?obj))\n  )\n\n)",
+            "(:action get_food\n      :parameters (?obj - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?obj ?l1) (is_supermarket ?l1) (is_nonperishable ?obj) (has_plan ?p))\n      :effect (and (inventory ?p ?obj))\n   )",
+            "(:action drive\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (driving ?p) )\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_medicine\n      :parameters (?obj -item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (is_pharmacy ?l1) (has_plan ?p))\n      :effect (and (inventory ?p ?obj))\n  )"
+        ],
+        "goal_state": "((inventory npc medical_supplies) (inventory npc wood) (inventory npc canned_food))"
+    },
+    {
+        "task": "stay_sheltered_with_food",
+        "step": [
+            "make_plan npc home",
+            "walk north npc home garage",
+            "get car npc garage",
+            "get_in_car npc garage car",
+            "drive east npc garage highway",
+            "drive down npc highway mall",
+            "drive east npc mall homedepot",
+            "get concrete npc homedepot",
+            "walk west npc homedepot mall",
+            "drive north npc mall wholefoods",
+            "get_food canned_food npc wholefoods",
+            "walk south npc wholefoods mall",
+            "drive up npc mall highway",
+            "drive west npc highway garage",
+            "drive south npc garage home",
+            "drive in npc home basement",
+            "reinforce npc basement concrete",
+            "stay_in_shelter npc basement canned_food"
+        ],
+        "desc": [
+            "Stock up on non-perishable food. Non-perishables can last several years, whether it's in storage or in sustaining you after an attack. Choose items that contain a lot of carbohydrates, so you get more caloric bang for your buck, and store them in a cool, dry place.",
+            "Make a plan. If a nuclear attack does happen, it won't be safe to venture outside for food \u2014 you should stay sheltered for at least 48 hours, preferably longer. Having food and medical supplies on-hand can put your mind at-ease, and allow you to focus on other aspects of survival."
+        ],
+        "action": [
+            "(:action make_plan\n      :parameters (?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (is_home ?l1))\n      :effect (and (has_plan ?p))\n   )",
+            "(:action get\n      :parameters (?obj - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?obj ?l1) (not (is_supermarket ?l1)))\n      :effect (and (inventory ?p ?obj))\n   )",
+            "(:action stay_in_shelter\n      :parameters (?p - player ?l1 - location ?obj1 - item ) \n      :precondition (and (at ?p ?l1) (has_plan ?p) (inventory ?p ?obj1) (is_nonperishable ?obj1) (reinforced ?l1) (is_underground ?l1))\n      :effect (and (sheltered ?p) )\n  )",
+            "(:action walk\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)) )\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_in_car\n      :parameters (?p - player ?l1 - location ?obj - item)\n      :precondition (and (at ?p ?l1) (inventory ?p ?obj) (is_car ?obj))\n      :effect (and (driving ?p) (inventory ?p ?obj))\n  )\n\n)",
+            "(:action get_food\n      :parameters (?obj - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?obj ?l1) (is_supermarket ?l1) (is_nonperishable ?obj) (has_plan ?p))\n      :effect (and (inventory ?p ?obj))\n   )",
+            "(:action drive\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (driving ?p) )\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_medicine\n      :parameters (?obj -item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (is_pharmacy ?l1) (has_plan ?p))\n      :effect (and (inventory ?p ?obj))\n  )",
+            "(:action reinforce\n      :parameters (?p - player ?l1 - location ?obj - item) \n      :precondition (and (at ?p ?l1) (has_plan ?p) (inventory ?p ?obj) (is_construction_material ?obj))\n      :effect (and (reinforced ?l1) )\n  )"
+        ],
+        "goal_state": "((sheltered npc))"
+    }
+]

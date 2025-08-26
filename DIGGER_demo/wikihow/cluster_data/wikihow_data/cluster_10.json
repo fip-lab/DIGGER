@@ -1,0 +1,127 @@
+[
+    {
+        "title": "How to Encourage Adults to Read",
+        "steps": [
+            "Start a book club to encourage members to read specific books.",
+            "Suggest books to friends and family.",
+            "Create an online reading community through a book forum.",
+            "Build a little free library."
+        ],
+        "cluster_label": 10
+    },
+    {
+        "title": "How to Start a Book Club at School",
+        "steps": [
+            "Really think about if anyone at your school would join.",
+            "Contact a school administrator for permission, preferably the principal.",
+            "Find a teacher or parent to supervise.",
+            "Compose a list of books that you want to read.",
+            "Think of a time to meet.",
+            "Do you know what you'll actually be doing?.",
+            "Get some members!.",
+            "Establish some rules.",
+            "After the meeting, make sure that they know when the next one is."
+        ],
+        "cluster_label": 10
+    },
+    {
+        "title": "How to Start an Online Book Group",
+        "steps": [
+            "Don\u2019t try to reinvent the wheel.",
+            "Think about how you would like the discussions to flow.",
+            "Make your website inviting.",
+            "Start with what you know.",
+            "Offer more to your readers than a book discussion.",
+            "Keep it fresh.",
+            "Market your new online group.",
+            "Make people feel welcome."
+        ],
+        "cluster_label": 10
+    },
+    {
+        "title": "How to Host a Book Club",
+        "steps": [
+            "Select a theme for the book club.",
+            "Find out what sort of snacks your group wants.",
+            "Include some general book-themed decor."
+        ],
+        "cluster_label": 10
+    },
+    {
+        "title": "How to Start a Romance Book Club",
+        "steps": [
+            "Set the \"heat level.\".",
+            "Stick with one sub-genre.",
+            "Pick books from multiple sub-genres.",
+            "Venture into nonfiction.",
+            "Read a classic romance.",
+            "Select a current bestseller.",
+            "Ask for suggestions.",
+            "Read different books and compare."
+        ],
+        "cluster_label": 10
+    },
+    {
+        "title": "How to Start a Business Book Club",
+        "steps": [
+            "Decide what type of business books your club will focus on.",
+            "Take requests.",
+            "Peruse bestseller lists and business blogs.",
+            "Pick out books in advance.",
+            "Share your thoughts and ask questions.",
+            "Encourage others to ask questions."
+        ],
+        "cluster_label": 10
+    },
+    {
+        "title": "How to Start a Women's Book Club",
+        "steps": [
+            "Look for books that cover women\u2019s issues.",
+            "Search out books with strong female protagonists.",
+            "Study the works of female authors.",
+            "Start with books you\u2019ve been dying to read.",
+            "Allow other members to make suggestions.",
+            "Come with discussion questions.",
+            "Ask the other members to come with questions.",
+            "Nudge the group back on track if the discussion gets derailed."
+        ],
+        "cluster_label": 10
+    },
+    {
+        "title": "How to Choose a Book for a Book Club",
+        "steps": [
+            "Look at a bestseller list.",
+            "Ask for a recommendation.",
+            "Visit a few expert websites dealing with book clubs and book reviews.",
+            "Find out what other book clubs are reading.",
+            "Pick a book you have already read and enjoyed.",
+            "Pick a book that goes with the theme of your book club.",
+            "Most importantly, don't stress yourself."
+        ],
+        "cluster_label": 10
+    },
+    {
+        "title": "How to Create Rules for a Book Club",
+        "steps": [
+            "Come up with a member list.",
+            "Set rules for book acquisition.",
+            "Decide where and when to meet.",
+            "Write down the loan policy.",
+            "Set a return schedule.",
+            "Assign a member to track the loans."
+        ],
+        "cluster_label": 10
+    },
+    {
+        "title": "How to Start a Library Book Club",
+        "steps": [
+            "Pick books that are available at the library.",
+            "Strike a deal with your library.",
+            "Choose books that are fairly complex.",
+            "Ask for opinions.",
+            "Come with questions prepared.",
+            "Ask each member to bring in a discussion question."
+        ],
+        "cluster_label": 10
+    }
+]

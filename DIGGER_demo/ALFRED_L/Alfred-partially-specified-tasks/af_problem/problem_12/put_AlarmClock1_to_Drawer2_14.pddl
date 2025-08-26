@@ -1,0 +1,50 @@
+(define (problem put_AlarmClock1_to_Drawer2_14)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    CellPhone1 - object
+    Box1 - receptacle
+    Pencil1 - object
+    CreditCard2 - object
+    CellPhone2 - object
+    CD1 - object
+    CD2 - object
+    AlarmClock1 - object
+    Book1 - object
+    CreditCard1 - object
+    Drawer1 - receptacle
+    Box2 - receptacle
+    Box3 - receptacle
+    Desk1 - receptacle
+    Box4 - receptacle
+    Sofa1 - receptacle
+    Drawer3 - receptacle
+    Drawer2 - receptacle
+    Desk2 - receptacle
+    KeyChain1 - object
+    KeyChain2 - object
+    KeyChain3 - object
+    Book2 - object
+    Sofa2 - receptacle
+  )
+
+  (:init
+    (atLocation agent1 Drawer1)
+    (objectAtLocation AlarmClock1 Desk1)
+    (objectAtLocation CellPhone1 Drawer1)
+    (objectAtLocation CreditCard1 Drawer2)
+    (objectAtLocation CreditCard2 Desk2)
+    (objectAtLocation CD2 Drawer3)
+    (objectAtLocation Book1 Drawer2)
+    (objectAtLocation Book2 Sofa1)
+    (objectAtLocation KeyChain2 Box1)
+    (objectAtLocation KeyChain1 Box2)
+    (objectAtLocation KeyChain3 Box1)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation AlarmClock1 Drawer2)
+    )
+  )
+)

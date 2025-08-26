@@ -1,0 +1,477 @@
+{
+    "goal": "Camouflage Equipment",
+    "steps": [
+        "Firstly, lay out all the equipment you are going to use-whatever pattern it is.",
+        "Start with your rucksack, this is the biggest piece of your personal kit so needs the most camouflage.",
+        "Next, move on to the helmet.",
+        "Be careful with webbing.",
+        "Be extremely cautious when disguising your weapon.",
+        "Vehicles really need a vehicle camouflage net."
+    ],
+    "topics": "Sports and Fitness",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/5/57/Camouflage-Equipment-Step-1-Version-2.jpg/aid571246-v4-728px-Camouflage-Equipment-Step-1-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/1/13/Camouflage-Equipment-Step-2-Version-2.jpg/aid571246-v4-728px-Camouflage-Equipment-Step-2-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/f/f0/Camouflage-Equipment-Step-3-Version-2.jpg/aid571246-v4-728px-Camouflage-Equipment-Step-3-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/5/5b/Camouflage-Equipment-Step-4-Version-2.jpg/aid571246-v4-728px-Camouflage-Equipment-Step-4-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/0/0b/Camouflage-Equipment-Step-5-Version-2.jpg/aid571246-v4-728px-Camouflage-Equipment-Step-5-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/a/a6/Camouflage-Equipment-Step-6-Version-2.jpg/aid571246-v4-728px-Camouflage-Equipment-Step-6-Version-2.jpg"
+    ],
+    "states": [
+        {
+            "entity": "camouflage net",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "coverage",
+                        "before": "off vehicle | elsewhere",
+                        "after": "over vehicle | on vehicle",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "coverage | location"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in box",
+                        "after": "on vehicle",
+                        "saliency": 0.6143057503506312,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "camouflage net",
+                "vehicle camouflage net"
+            ]
+        },
+        {
+            "entity": "leaves",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "elsewhere",
+                        "after": "on rucksaks",
+                        "saliency": 0.5917651773191746,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "elsewhere",
+                        "after": "on helmet",
+                        "saliency": 0.5141254257663795,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "on webbing",
+                        "saliency": 0.48073198423829566,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "camouflage",
+                "leaves"
+            ]
+        },
+        {
+            "entity": "weapon",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in vehicle",
+                        "after": "on ground",
+                        "saliency": 0.5809123088225472,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "attention",
+                        "before": "carelessly disguised | visible",
+                        "after": "carefully disguised | disguised",
+                        "saliency": 0.6335069792292795,
+                        "attribute_annotation": "attention | visibility"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "on weapon",
+                        "saliency": 0.5809123088225472,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "decoration",
+                        "before": "bare",
+                        "after": "camouflaged",
+                        "saliency": 0.4206905763708008,
+                        "attribute_annotation": "decoration"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "weapon | hat | hay"
+            ]
+        },
+        {
+            "entity": "equipment",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered | laying sporadically",
+                        "after": "organized | gathered",
+                        "saliency": 0.6059573899686101,
+                        "attribute_annotation": "organization | location"
+                    },
+                    {
+                        "attribute": "equipment",
+                        "before": "unorganized",
+                        "after": "laid in pattern",
+                        "saliency": 0.36809590596406866,
+                        "attribute_annotation": "equipment"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "equipment"
+            ]
+        },
+        {
+            "entity": "rucksack",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in vehicle",
+                        "after": "on ground",
+                        "saliency": 0.4974287050023375,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible",
+                        "saliency": 0.39149357732807943,
+                        "attribute_annotation": "visibility"
+                    },
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged",
+                        "saliency": 0.3597475455820477,
+                        "attribute_annotation": "decoration"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "rucksack"
+            ]
+        },
+        {
+            "entity": "vehicle",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in garage",
+                        "after": "in forest",
+                        "saliency": 0.4890803446203166,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible",
+                        "saliency": 0.42903893675282173,
+                        "attribute_annotation": "visibility"
+                    },
+                    {
+                        "attribute": "vehicle",
+                        "before": "uncovered",
+                        "after": "netted with camouflage",
+                        "saliency": 0.3055054653932634,
+                        "attribute_annotation": "vehicle"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "vehicle"
+            ]
+        },
+        {
+            "entity": "webbing",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in vehicle",
+                        "after": "on ground",
+                        "saliency": 0.4890803446203166,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "attention",
+                        "before": "carelessly placed",
+                        "after": "carefully placed",
+                        "saliency": 0.42903893675282173,
+                        "attribute_annotation": "attention"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible",
+                        "saliency": 0.38314521694605846,
+                        "attribute_annotation": "visibility"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "webbing"
+            ]
+        },
+        {
+            "entity": "surface",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty of equipment",
+                        "after": "full of equipment",
+                        "saliency": 0.4890803446203166,
+                        "attribute_annotation": "fullness"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "surface"
+            ]
+        },
+        {
+            "entity": "helmet",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged",
+                        "saliency": 0.48073198423829566,
+                        "attribute_annotation": "decoration"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible",
+                        "saliency": 0.4206905763708008,
+                        "attribute_annotation": "visibility"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "helmet"
+            ]
+        }
+    ],
+    "clusters": {
+        "camouflage net": {
+            "entity_cluster": [
+                "vehicle camouflage net",
+                "camouflage net"
+            ],
+            "attribute_cluster": {
+                "coverage": [
+                    "coverage",
+                    "location"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "vehicle": {
+            "entity_cluster": [
+                "vehicle"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "visibility": [
+                    "visibility"
+                ],
+                "vehicle": [
+                    "vehicle"
+                ]
+            }
+        },
+        "webbing": {
+            "entity_cluster": [
+                "webbing"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "attention": [
+                    "attention"
+                ],
+                "visibility": [
+                    "visibility"
+                ]
+            }
+        },
+        "weapon": {
+            "entity_cluster": [
+                "weapon"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "attention": [
+                    "attention"
+                ],
+                "visibility": [
+                    "visibility"
+                ],
+                "decoration": [
+                    "decoration"
+                ]
+            }
+        },
+        "surface": {
+            "entity_cluster": [
+                "surface"
+            ],
+            "attribute_cluster": {
+                "fullness": [
+                    "fullness"
+                ]
+            }
+        },
+        "helmet": {
+            "entity_cluster": [
+                "helmet",
+                "hat"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "attention": [
+                    "attention"
+                ],
+                "visibility": [
+                    "visibility"
+                ],
+                "decoration": [
+                    "decoration"
+                ]
+            }
+        },
+        "leaves": {
+            "entity_cluster": [
+                "camouflage",
+                "leaves",
+                "hay"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "attention": [
+                    "attention"
+                ],
+                "visibility": [
+                    "visibility"
+                ],
+                "decoration": [
+                    "decoration"
+                ]
+            }
+        },
+        "rucksack": {
+            "entity_cluster": [
+                "rucksack"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "visibility": [
+                    "visibility"
+                ],
+                "decoration": [
+                    "decoration"
+                ]
+            }
+        },
+        "equipment": {
+            "entity_cluster": [
+                "equipment"
+            ],
+            "attribute_cluster": {
+                "organization": [
+                    "organization"
+                ],
+                "location": [
+                    "location"
+                ],
+                "equipment": [
+                    "equipment"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+[
+    "(:action cook\n  :parameters (?agent - entity ?location - place)\n  :precondition (and (at ?agent ?location) (not (task_completed ?agent ?location)))\n  :effect (task_completed ?agent ?location)\n)"
+]

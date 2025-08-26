@@ -1,0 +1,8 @@
+[
+    "(:action ask ; Ask for a resource and update task status\n  :parameters (?p - person ?item - object ?location - location)\n  :precondition (and (at ?p ?location) (for_sale ?item ?location) (not (purchased ?item)))\n  :effect (and (purchased ?item) (inventory ?p ?item))",
+    "(:action find_container\n  :parameters (?p - person ?container - container ?loc - location)\n  :precondition (and (at ?p ?loc) (available ?container ?loc))\n  :effect (and (found ?container) (inventory ?p ?container))",
+    "(:action fill_bowl_with_water\n  :parameters (?p - person ?bowl - bowl ?source - water_source)\n  :precondition (and (at ?p ?source) (empty ?bowl))\n  :effect (and (full ?bowl))",
+    "(:action find\n  ; Find a resource and update its status or properties\n  :parameters (?p - person ?item - object ?loc - location ?source - resource)\n  ; Preconditions must ensure the person is at the location and the item or source is in the expected state\n  :precondition (and (at ?p ?loc) \n                     (or (and (available ?item ?loc))\n                         (and (empty ?item) (at ?p ?source))))\n  ; Effects update the state of the item or resource\n  :effect (and (or (and (found ?item) (inventory ?p ?item))",
+    "(:action fill\n  :parameters (?p - person ?bowl - container ?item - object ?location - location)\n  :precondition (and (inventory ?p ?bowl) (at ?p ?location))\n  :effect (and (filled ?bowl ?item) (not (empty ?bowl))",
+    "(:action prune\n  :parameters (?person - person ?item - object ?container - container)\n  :precondition (and (in ?item ?container) (growing ?item))\n  :effect (and (pruned ?item) (smaller ?item))"
+]

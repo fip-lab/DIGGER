@@ -1,0 +1,158 @@
+{
+    "?npc": [
+        "character"
+    ],
+    "?entity": [
+        "part"
+    ],
+    "?item": [
+        "supply"
+    ],
+    "?clothing": [
+        "costume",
+        "disguise"
+    ],
+    "?action": [
+        "purchase",
+        "purchase",
+        "make_papyrus",
+        "move_to_bunker",
+        "purchase"
+    ],
+    "?container": [
+        "jar",
+        "saucepan",
+        "jar",
+        "saucepan",
+        "jar",
+        "saucepan"
+    ],
+    "?location": [
+        "socket",
+        "stove",
+        "socket",
+        "stove",
+        "nursery",
+        "river",
+        "place",
+        "area",
+        "place",
+        "home",
+        "shelter",
+        "socket",
+        "stove"
+    ],
+    "?object": [
+        "candles",
+        "water",
+        "candles",
+        "water",
+        "board",
+        "ivory",
+        "shell",
+        "ridge",
+        "sheet",
+        "piece",
+        "linen",
+        "stone",
+        "slab",
+        "paper",
+        "bark",
+        "energy",
+        "tree",
+        "foot",
+        "flame",
+        "split",
+        "m",
+        "kindling",
+        "needle",
+        "leave",
+        "thing",
+        "branch",
+        "fire",
+        "tinder",
+        "water",
+        "trunk",
+        "building",
+        "wood",
+        "food",
+        "twig",
+        "material",
+        "shelter",
+        "grass",
+        "bet",
+        "cyperus",
+        "plant",
+        "reed",
+        "grass",
+        "paper",
+        "damage",
+        "fridge",
+        "electronic",
+        "stuff",
+        "candles",
+        "water"
+    ],
+    "?state": [
+        "amount",
+        "amount",
+        "day",
+        "step",
+        "process",
+        "type",
+        "one",
+        "hour",
+        "hiding",
+        "protection",
+        "sight",
+        "type",
+        "amount"
+    ],
+    "?p": [
+        "finishing_papyrus",
+        "papyrus",
+        "papyrus"
+    ],
+    "?task": [
+        "help"
+    ],
+    "?area": [
+        "area"
+    ],
+    "?stick": [
+        "stick"
+    ],
+    "?place": [
+        "ground"
+    ],
+    "?building": [
+        "building",
+        "shelter"
+    ],
+    "?material": [
+        "brick"
+    ],
+    "?basement": [
+        "basement"
+    ],
+    "?context": [
+        "day",
+        "help",
+        "minute",
+        "society",
+        "loss",
+        "chaos",
+        "lot",
+        "kilometer",
+        "ready_sc",
+        "mile",
+        "danger",
+        "confusion",
+        "odd",
+        "shortage"
+    ],
+    "?resource": [
+        "electricity",
+        "food"
+    ]
+}

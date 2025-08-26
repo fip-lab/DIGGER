@@ -1,0 +1,8 @@
+{
+    "stay": [
+        "(:action stay_in_shelter\n    :parameters (?npc - npc)\n    :precondition (and (camouflaged ?npc) (mixed ?food))\n    :effect (and (safe ?npc) (not (venturing ?npc)))\n  )\n```\n\n### Explanation of PDDL Actions:\n\n1. **get_food**:\n   - **Action Name**: get_food\n   - **Parameters**: ?npc (an NPC character), ?food (food item)\n   - **Preconditions**: The food must be in a separate state and the NPC must be bare.\n   - **Effects**: The food will be mixed, and the NPC will be camouflaged.\n\n2. **stay_in_shelter**:\n   - **Action Name**: stay_in_shelter\n   - **Parameters**: ?npc (an NPC character)\n   - **Preconditions**: The NPC must be camouflaged and the food must be mixed.\n   - **Effects**: The NPC will be safe and will not venture outside."
+    ],
+    "get": [
+        "(:action get_food\n    :parameters (?npc - npc ?food - food)\n    :precondition (and (separate ?food) (bare ?npc))\n    :effect (and (mixed ?food) (not (separate ?food)) (camouflaged ?npc) (not (bare ?npc)))\n  )\n\n"
+    ]
+}

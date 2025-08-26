@@ -1,0 +1,48 @@
+[
+    {
+        "task": "finishing_papyrus",
+        "step": [
+            "go north npc kitchen cabinet",
+            "get roller npc cabinet",
+            "go south npc cabinet kitchen",
+            "get scissors npc kitchen",
+            "get papyrus npc kitchen",
+            "go south npc kitchen living_room",
+            "get smooth_stone npc living_room",
+            "polish_papyrus npc papyrus",
+            "cut_paprus npc papyrus scissors",
+            "flatten_papyrus npc papyrus roller"
+        ],
+        "desc": [
+            "Flatten the sheet. The paper may not be completely flat after you remove it from the wooden boards. Put the paper under a stone slab for up to 6 days to make it completely flat.",
+            "Polish the papyrus. This step isn't absolutely necessary, but it will make the papyrus look nicer and more finished. Use a shell or smooth piece of ivory. Any type of shell that is smooth and without ridges will do. Rub the shell or ivory over the sheet of paper until it appears to be shinier than it was.",
+            "Replace the wet linen sheets with dry ones. You should do this every few hours. Be careful when removing the wet linen. Peel it off of the papyrus gently. The drying process should take approximately 72 hours."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action flatten_papyrus ; Use a roller to make the papyrus flat.\n      :parameters (?p - player ?pap - papyrus ?r - roller) \n      :precondition (and (inventory ?p ?pap) (inventory ?p ?r))\n      :effect  (flattened ?pap)\n   )",
+            "(:action polish_papyrus ; Use a stone to polish the papyrus.\n      :parameters (?p - player ?pap - papyrus) \n      :precondition (and (inventory ?p ?pap) (inventory ?p smooth_stone))\n      :effect  (polished ?pap)\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )"
+        ],
+        "goal_state": "((cut papyrus) (polished papyrus) (flattened papyrus))"
+    },
+    {
+        "task": "preparing_papyrus",
+        "step": [
+            "get scissors npc kitchen",
+            "cut_stalks npc papyrus_tree kitchen papyrus_stalks",
+            "papyrus_strips npc papyrus_tree kitchen papyrus_stalks papyrus_strips"
+        ],
+        "desc": [
+            "Peel away the outer layer of the papyrus plant. Only the inner part of the plant is used for the paper. You will need to remove the outer green part of the plant. Use a sharp knife and slice down the length of the plant until the entire outer layer is removed. The inside of the plant should be a white or slightly greenish color.",
+            "Obtain a papyrus plant. Papyrus paper is created from the Cyperus papyrus plant, which is a light but strong reed. You can buy them online or in nurseries. A nursery that specializes in papyrus would be your best bet, however."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action papyrus_strips ; cut strips from stalks\n      :parameters (?p - player ?tree - papyrus_tree ?l1 - location ?pst - papyrus_stalks ?strip - papyrus_strips) \n      :precondition (and  (at ?p ?l1) (at ?tree ?l1) (inventory ?p scissors) (inventory ?p ?pst))\n      :effect (and (inventory ?p ?strip) (not (inventory ?p ?pst)))\n   )",
+            "(:action cut_stalks ; cut stalks\n      :parameters (?p - player ?tree - papyrus_tree ?l1 - location ?s - papyrus_stalks) \n      :precondition (and  (at ?p ?l1) (at ?tree ?l1) (inventory ?p scissors))\n      :effect (and (inventory ?p ?s))\n   )",
+            "(:action place_strips_between_boards ; place papyrus strips between two wooden boards\n      :parameters (?p - player) \n      :precondition (and (inventory ?p wooden_boards) (inventory ?p papyrus_strips) (strips_woven))\n      :effect (and (strips_between_boards ?item))\n   )"
+        ],
+        "goal_state": "((inventory npc papyrus_strips))"
+    }
+]

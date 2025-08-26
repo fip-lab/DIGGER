@@ -1,0 +1,185 @@
+{
+    "goal": "Evolve Vulpix in Pok\u00e9mon",
+    "steps": [
+        "######Catch or trade for a Vulpix.",
+        "######Find a fire stone (or Ice Stone in Sun/Moon to evolve Alolan Vulpix).",
+        "Go to your bag and select the stone required.",
+        "######Wait for the evolution animation to pop up."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/3/3d/IMG_20170505_191000861.jpeg/728px-IMG_20170505_191000861.jpeg",
+        "https://www.wikihow.com/images/b/bd/WIN_20170505_18_47_45_Pro.jpg",
+        "https://www.wikihow.com/images/thumb/a/ac/IMG_20170505_191141513.jpeg/420px-IMG_20170505_191141513.jpeg",
+        "https://www.wikihow.com/images/thumb/c/ce/IMG_20170505_19123444.jpeg/420px-IMG_20170505_19123444.jpeg"
+    ],
+    "states": [
+        {
+            "entity": "stone",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "choice",
+                        "before": "unchosen | unselected",
+                        "after": "selected",
+                        "saliency": 0.602667153818049,
+                        "attribute_annotation": "choice | knowledge"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected",
+                        "saliency": 0.567653148215808,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "stone",
+                "the stone"
+            ]
+        },
+        {
+            "entity": "fire stone",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "step",
+                        "before": "unfound",
+                        "after": "found",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "step"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "on ground",
+                        "after": "in inventory",
+                        "saliency": 0.4275971258068445,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "fire or ice stone",
+                "fire stone"
+            ]
+        },
+        {
+            "entity": "bag",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected",
+                        "saliency": 0.5280720984045792,
+                        "attribute_annotation": "step"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "bag"
+            ]
+        },
+        {
+            "entity": "vulpix",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "step",
+                        "before": "unhad",
+                        "after": "had",
+                        "saliency": 0.5219827061259287,
+                        "attribute_annotation": "step"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "in wild",
+                        "after": "caught",
+                        "saliency": 0.2290220436000487,
+                        "attribute_annotation": "availability"
+                    },
+                    {
+                        "attribute": "ownership",
+                        "before": "owned",
+                        "after": "traded",
+                        "saliency": 0.18312832379328542,
+                        "attribute_annotation": "ownership"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "vulpix"
+            ]
+        }
+    ],
+    "clusters": {
+        "fire stone": {
+            "entity_cluster": [
+                "fire or ice stone",
+                "fire stone"
+            ],
+            "attribute_cluster": {
+                "step": [
+                    "step"
+                ],
+                "availability": [
+                    "availability"
+                ]
+            }
+        },
+        "vulpix": {
+            "entity_cluster": [
+                "vulpix"
+            ],
+            "attribute_cluster": {
+                "step": [
+                    "step"
+                ],
+                "availability": [
+                    "availability"
+                ],
+                "ownership": [
+                    "ownership"
+                ]
+            }
+        },
+        "stone": {
+            "entity_cluster": [
+                "the stone",
+                "stone"
+            ],
+            "attribute_cluster": {
+                "choice": [
+                    "knowledge",
+                    "choice"
+                ],
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "bag": {
+            "entity_cluster": [
+                "bag"
+            ],
+            "attribute_cluster": {
+                "step": [
+                    "step"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+[
+    "(:action move\n    :parameters (?entity - entity ?from - location ?to - location ?context - context)\n    :precondition (and \n        (at ?entity ?from) \n        (connected ?from ?context ?to) \n        (not (blocked ?from ?context ?to))\n    )\n    :effect (and \n        (at ?entity ?to) \n        (not (at ?entity ?from))",
+    "(:action board ; Board an entity and update state\n  :parameters (?agent - entity ?platform - location ?vehicle - vehicle)\n  :precondition (and (at ?agent ?platform) (at ?vehicle ?platform) (solid_platform ?platform) (not (in ?agent ?vehicle)))\n  :effect (and (in ?agent ?vehicle) (not (at ?agent ?platform))",
+    "(:action hold\n    :parameters (?p - passenger ?b - boat ?r - rail ?d - dock ?other_passenger - passenger)\n    :precondition (and \n        (at ?p ?d) \n        (in ?p ?b) \n        (has_rails ?b) \n        (boarding ?other_passenger ?b)\n        (not (holding ?p ?r))\n    )\n    :effect (and \n        (holding ?p ?r) \n        (steady ?b) \n        (not (rocking ?b))"
+]

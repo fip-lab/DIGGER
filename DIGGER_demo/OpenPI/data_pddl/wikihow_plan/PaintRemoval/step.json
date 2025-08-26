@@ -1,0 +1,761 @@
+{
+    "goal": "Remove Paint from Windows",
+    "steps": [
+        "You will need a bucket of hot water mixed with dish soap, a clean cloth or sponge, a new safety razor blade and some glass cleaner.",
+        "Wet the window with the water and dish soap.",
+        "Position the razor blade.",
+        "Using slow, smooth motions, start scraping the paint from the window.",
+        "Once all of the paint has been scraped away, spritz the window with some glass cleaner and use a clean, dry cloth to buff the windows clean.",
+        "Remove small paint splatters with chemical solvents."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/c/c6/Remove-Paint-from-Windows-Step-1.jpg/aid17292-v4-728px-Remove-Paint-from-Windows-Step-1.jpg",
+        "https://www.wikihow.com/video/a/ae/Remove Paint from Windows Step 2.360p.mp4",
+        "https://www.wikihow.com/images/thumb/1/17/Remove-Paint-from-Windows-Step-3.jpg/aid17292-v4-728px-Remove-Paint-from-Windows-Step-3.jpg",
+        "https://www.wikihow.com/video/0/06/Remove Paint from Windows Step 4.360p.mp4",
+        "https://www.wikihow.com/video/e/e1/Remove Paint from Windows Step 5.360p.mp4",
+        "https://www.wikihow.com/video/8/8a/Remove Paint from Windows Step 6.360p.mp4"
+    ],
+    "states": [
+        {
+            "entity": "window",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.616315181279792,
+                        "attribute_annotation": "wetness | moisture | composition | compostion"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler | warmer",
+                        "after": "warmer | cooler",
+                        "saliency": 0.5040685637247821,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean",
+                        "saliency": 0.3678920506524147,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "transparency",
+                        "before": "more opaque | more covered",
+                        "after": "more transparent | more bare",
+                        "saliency": 0.22088609626526712,
+                        "attribute_annotation": "transparency | covering"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.14377196783667967,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "wetness",
+                        "before": "wet | dry",
+                        "after": "dry | wet",
+                        "saliency": 0.6292551398719245,
+                        "attribute_annotation": "wetness | moisture | composition | compostion"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean",
+                        "saliency": 0.25143242332322213,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "transparency",
+                        "before": "more opaque | more covered",
+                        "after": "more transparent | more bare",
+                        "saliency": 0.18206622048886964,
+                        "attribute_annotation": "transparency | covering"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirtier",
+                        "after": "cleaner",
+                        "saliency": 0.17379267177042707,
+                        "attribute_annotation": "cleanness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "window | water and dish soap on window"
+            ]
+        },
+        {
+            "entity": "glass cleaner bottle",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | more full",
+                        "after": "lighter | less full",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "weight | fullness"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "glass cleaner bottle"
+            ]
+        },
+        {
+            "entity": "razor blade package",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "openness",
+                        "before": "closed | whole",
+                        "after": "open | cut open",
+                        "saliency": 0.6774038230054408,
+                        "attribute_annotation": "openness | composition"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "razor blade package"
+            ]
+        },
+        {
+            "entity": "solvent container",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "fullness",
+                        "before": "more full | heavier",
+                        "after": "less full | lighter",
+                        "saliency": 0.6533294814386826,
+                        "attribute_annotation": "fullness | weight"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "solvent container"
+            ]
+        },
+        {
+            "entity": "soap bottle",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "fullness",
+                        "before": "more full | heavier",
+                        "after": "less full | lighter",
+                        "saliency": 0.5811064567384082,
+                        "attribute_annotation": "fullness | weight"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle",
+                        "after": "in bucket",
+                        "saliency": 0.4935360392893255,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed together",
+                        "saliency": 0.38971544128268093,
+                        "attribute_annotation": "mixture"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in bucket",
+                        "after": "on window",
+                        "saliency": 0.2520342818623911,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "soap bottle",
+                "soap",
+                "water and dish soap"
+            ]
+        },
+        {
+            "entity": "paint",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.4607347489046174,
+                        "attribute_annotation": "moisture"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "power",
+                        "before": "stuck on",
+                        "after": "peeling off",
+                        "saliency": 0.31597974545396185,
+                        "attribute_annotation": "power"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on window",
+                        "after": "on blade | scraped off window | removed",
+                        "saliency": 0.30650247965718136,
+                        "attribute_annotation": "location | cleanness"
+                    },
+                    {
+                        "attribute": "wholeness",
+                        "before": "more whole",
+                        "after": "scarped into pieces",
+                        "saliency": 0.10825027685492801,
+                        "attribute_annotation": "wholeness"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "on window",
+                        "after": "in trash",
+                        "saliency": 0.4100221483942414,
+                        "attribute_annotation": "location | cleanness"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "paint"
+            ]
+        },
+        {
+            "entity": "razor blade",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in box",
+                        "after": "in hand",
+                        "saliency": 0.49955462468101497,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "contact",
+                        "before": "in contact with box",
+                        "after": "in contact with window",
+                        "saliency": 0.31327138202770155,
+                        "attribute_annotation": "contact"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "sharpness",
+                        "before": "sharper",
+                        "after": "more dull",
+                        "saliency": 0.3230535894843276,
+                        "attribute_annotation": "sharpness"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty | dirtier",
+                        "saliency": 0.2126847705715249,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "blade",
+                "razor blade"
+            ]
+        },
+        {
+            "entity": "solvent",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in  its container",
+                        "after": "on window | out of its container",
+                        "saliency": 0.4312436804853388,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottles",
+                        "after": "on floor",
+                        "saliency": 0.5236289662477731,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "chemicals",
+                "solvent | chemical solvents",
+                "glass cleaner"
+            ]
+        },
+        {
+            "entity": "splatters",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "on window",
+                        "after": "scraped away from window",
+                        "saliency": 0.3716596851076123,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "wholeness",
+                        "before": "more whole",
+                        "after": "scraped into pieces",
+                        "saliency": 0.23397852568732244,
+                        "attribute_annotation": "wholeness"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "color",
+                        "before": "dark",
+                        "after": "light",
+                        "saliency": 0.5236289662477731,
+                        "attribute_annotation": "color"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on window",
+                        "after": "removed",
+                        "saliency": 0.40175261206606,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "solid",
+                        "after": "liquid",
+                        "saliency": 0.35962251432423326,
+                        "attribute_annotation": "texture"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "splatters",
+                "small paint splatters",
+                "all of the paint",
+                "paint splatter"
+            ]
+        },
+        {
+            "entity": "sponge",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.46675333429630705,
+                        "attribute_annotation": "moisture"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in bucket",
+                        "saliency": 0.32907217487601714,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "wet | dirty | dirtier",
+                        "saliency": 0.28942173431556645,
+                        "attribute_annotation": "wetness | cleanness"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.2831784550692538,
+                        "attribute_annotation": "cleanness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "sponge",
+                "cloth"
+            ]
+        },
+        {
+            "entity": "bucket",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold | cooler",
+                        "after": "hot | warmer",
+                        "saliency": 0.42793345851990955,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.34441956762482545,
+                        "attribute_annotation": "moisture | wetness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.3219983308456513,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full | fuller",
+                        "saliency": 0.22141171938947468,
+                        "attribute_annotation": "fullness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.2831784550692538,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "more full | fuller",
+                        "after": "less full | emptier",
+                        "saliency": 0.18259184361307718,
+                        "attribute_annotation": "fullness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "bucket"
+            ]
+        },
+        {
+            "entity": "items needed",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in places",
+                        "after": "ready for use",
+                        "saliency": 0.34758534354085413,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "items needed"
+            ]
+        }
+    ],
+    "clusters": {
+        "window": {
+            "entity_cluster": [
+                "window"
+            ],
+            "attribute_cluster": {
+                "wetness": [
+                    "moisture",
+                    "wetness"
+                ],
+                "composition": [
+                    "composition",
+                    "compostion"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "transparency": [
+                    "transparency"
+                ],
+                "covering": [
+                    "covering"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "bucket": {
+            "entity_cluster": [
+                "bucket"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ],
+                "moisture": [
+                    "moisture",
+                    "wetness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "fullness": [
+                    "fullness"
+                ]
+            }
+        },
+        "items needed": {
+            "entity_cluster": [
+                "items needed"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "sponge": {
+            "entity_cluster": [
+                "sponge",
+                "cloth"
+            ],
+            "attribute_cluster": {
+                "moisture": [
+                    "moisture"
+                ],
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wetness": [
+                    "wetness",
+                    "cleanness"
+                ]
+            }
+        },
+        "soap bottle": {
+            "entity_cluster": [
+                "soap bottle",
+                "soap",
+                "water and dish soap on window",
+                "water and dish soap"
+            ],
+            "attribute_cluster": {
+                "wetness": [
+                    "moisture",
+                    "wetness"
+                ],
+                "composition": [
+                    "composition",
+                    "compostion"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "transparency": [
+                    "transparency"
+                ],
+                "covering": [
+                    "covering"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "fullness": [
+                    "fullness",
+                    "weight"
+                ],
+                "location": [
+                    "location"
+                ],
+                "mixture": [
+                    "mixture"
+                ]
+            }
+        },
+        "razor blade package": {
+            "entity_cluster": [
+                "razor blade package"
+            ],
+            "attribute_cluster": {
+                "openness": [
+                    "openness",
+                    "composition"
+                ]
+            }
+        },
+        "paint": {
+            "entity_cluster": [
+                "paint"
+            ],
+            "attribute_cluster": {
+                "moisture": [
+                    "moisture"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wholeness": [
+                    "wholeness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "power": [
+                    "power"
+                ]
+            }
+        },
+        "razor blade": {
+            "entity_cluster": [
+                "razor blade",
+                "blade"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "position",
+                    "location"
+                ],
+                "sharpness": [
+                    "sharpness"
+                ],
+                "contact": [
+                    "contact"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "splatters": {
+            "entity_cluster": [
+                "paint splatter",
+                "small paint splatters",
+                "all of the paint",
+                "splatters"
+            ],
+            "attribute_cluster": {
+                "color": [
+                    "color"
+                ],
+                "location": [
+                    "location"
+                ],
+                "wholeness": [
+                    "wholeness"
+                ],
+                "texture": [
+                    "texture"
+                ]
+            }
+        },
+        "solvent": {
+            "entity_cluster": [
+                "solvent",
+                "glass cleaner",
+                "chemicals",
+                "chemical solvents"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "solvent container": {
+            "entity_cluster": [
+                "solvent container"
+            ],
+            "attribute_cluster": {
+                "fullness": [
+                    "fullness",
+                    "weight"
+                ]
+            }
+        },
+        "glass cleaner bottle": {
+            "entity_cluster": [
+                "glass cleaner bottle"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "fullness",
+                    "weight"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "make": [
+        "(:action make_cocoa_mixture\n    :parameters (?mixture - mixture ?p - player)\n    :precondition (and (inventory ?p ?mixture) (separate ?mixture))\n    :effect (and (not (separate ?mixture)) (mixed ?mixture))\n)\n```\n\n#### Action 2: Add Ingredients to Slow Cooker\n```pddl\n",
+        "(:action cook\n    :parameters (?p - player ?kitchen - location)\n    :precondition (and (at ?p ?kitchen) (heating ?mixture) (on ?stove))\n    :effect (and (cooked ?mixture) (temperature ?mixture warm))\n)\n```\n\n### Descriptions and Entity States:\n\n- **Descriptions**:\n  - Make the initial cocoa mixture.\n  - Add all the ingredients in a slow cooker.\n  - Allow the mixture to heat for 3 hours on a low setting.\n  - Serve immediately or keep the slow cooker on a \"Keep Warm\" setting.\n\n- **Entity States**:\n  - Heating element changes from black to red, cold to hot, off to on.\n  - Kitchen counter changes from clean to messy.\n  - Mixture changes from separate to mixed, empty to full, cooler to hotter.\n  - Stove knob changes from off to on, cold to hot.\n\nBy following the structure and format provided in the example, the generated PDDL actions encapsulate the logic and intent of the task \"Make Slow Cooker Hot Cocoa\" while adhering to the provided states and conditions."
+    ],
+    "add": [
+        "(:action add_ingredients_to_slow_cooker\n    :parameters (?mixture - mixture ?slow_cooker - slow_cooker ?p - player ?kitchen - location)\n    :precondition (and (at ?p ?kitchen) (inventory ?p ?mixture) (mixed ?mixture) (empty ?slow_cooker))\n    :effect (and (not (empty ?slow_cooker)) (full ?slow_cooker) (contains ?slow_cooker ?mixture))\n)\n```\n\n#### Action 3: Heat Mixture\n```pddl\n"
+    ],
+    "heat": [
+        "(:action heat_mixture\n    :parameters (?mixture - mixture ?stove - stove ?heat_setting - heat ?p - player ?kitchen - location)\n    :precondition (and (at ?p ?kitchen) (contains ?slow_cooker ?mixture) (full ?slow_cooker) (off ?stove))\n    :effect (and (on ?stove) (heating ?mixture) (temperature ?mixture hot))\n)\n```\n\n#### Action 4: Cook\n```pddl\n"
+    ]
+}

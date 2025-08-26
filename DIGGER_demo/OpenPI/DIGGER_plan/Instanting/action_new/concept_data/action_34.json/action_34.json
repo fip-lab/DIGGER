@@ -1,0 +1,6 @@
+[
+    "(:action manage_underpants\n  :parameters (?u - underpants ?c - person)\n  :precondition (and \n    (or (dirty ?u) (clean ?u) (wearing ?c ?u) (available ?c))\n  )\n  :effect (and \n    (when (dirty ?u) (and (clean ?u) (not (dirty ?u))",
+    "(:action use ; Use an item for a specific purpose and update its state\n  :parameters (?u - underpants ?purpose - usage)\n  :precondition (and (clean ?u) (appropriate ?purpose ?u))\n  :effect (and (used_for ?u ?purpose) (not (clean ?u))",
+    "(:action make\n  :parameters (?actor - agent ?resource - object ?tool - object)\n  :precondition (and (available ?actor) (available ?tool) (not (processed ?resource)))\n  :effect (and (processed ?resource) (used ?tool))",
+    "(:action donate ;  Donate an item and update its status\n:parameters (?donor - agent ?item - object)\n:precondition (and (clean ?item) (possessed ?donor ?item))\n:effect (and (donated ?item) (not (clean ?item))"
+]

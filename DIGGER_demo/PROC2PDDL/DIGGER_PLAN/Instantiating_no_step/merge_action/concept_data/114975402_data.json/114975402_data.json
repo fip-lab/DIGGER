@@ -1,0 +1,14 @@
+{
+    "find": [
+        "(:action find_supplies\n    :parameters (?p - person ?s - supply)\n    :precondition (and\n                    (not (has-supply ?p ?s)))\n    :effect (has-supply ?p ?s)\n)\n\n;; Action 2: Clean clothing\n"
+    ],
+    "clean": [
+        "(:action clean_clothing\n    :parameters (?p - person ?c - clothing)\n    :precondition (and\n                    (has-supply ?p ?c)\n                    (clothing-dirty ?c))\n    :effect (and\n             (not (clothing-dirty ?c))\n             (clothing-clean ?c))\n)\n\n;; Action 3: Camouflage helmet\n"
+    ],
+    "camouflage": [
+        "(:action camouflage_helmet\n    :parameters (?p - person ?h - helmet)\n    :precondition (and\n                    (has-supply ?p ?h)\n                    (helmet-bare ?h))\n    :effect (and\n             (not (helmet-bare ?h))\n             (helmet-camouflaged ?h))\n)\n\n;; Action 4: Make helmet invisible\n"
+    ],
+    "make": [
+        "(:action make_helmet_invisible\n    :parameters (?p - person ?h - helmet)\n    :precondition (and\n                    (has-supply ?p ?h)\n                    (helmet-visible ?h))\n    :effect (and\n             (not (helmet-visible ?h))\n             (helmet-invisible ?h))\n)\n```\n\nExplanation:\n1. **find_supplies**: This action allows a person to acquire a supply needed for the disguise.\n2. **clean_clothing**: This action cleans dirty clothing, making it suitable for use in a disguise.\n3. **camouflage_helmet**: This action camouflages a bare helmet, making it part of the disguise.\n4. **make_helmet_invisible**: This action makes a visible helmet invisible, enhancing the disguise.\n\nThese actions follow the format and structure shown in the example and are relevant to the task of assembling disguises."
+    ]
+}

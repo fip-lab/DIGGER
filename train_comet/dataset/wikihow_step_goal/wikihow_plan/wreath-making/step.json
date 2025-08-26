@@ -1,0 +1,520 @@
+{
+    "goal": "Make a Wreath with Clothes Hangers",
+    "steps": [
+        "Untwist wire hanger and shape into a circle, using pliers as needed.",
+        "Gently crumple 3\" squares of wax paper or crepe paper and thread hanger through center of each square.",
+        "When you have threaded enough squares to fill length of hanger, gently push squares away from ends and use pliers to twist ends together.",
+        "Gently slide squares of paper back toward the joined ends of wire hanger, scrunching paper more for additional fullness.",
+        "Finished."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/8/8d/Make-a-Wreath-with-Clothes-Hangers-Step-1.jpg/aid178960-v4-728px-Make-a-Wreath-with-Clothes-Hangers-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/b/b6/Make-a-Wreath-with-Clothes-Hangers-Step-2.jpg/aid178960-v4-728px-Make-a-Wreath-with-Clothes-Hangers-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/2/23/Make-a-Wreath-with-Clothes-Hangers-Step-3.jpg/aid178960-v4-728px-Make-a-Wreath-with-Clothes-Hangers-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/e/e0/Make-a-Wreath-with-Clothes-Hangers-Step-4.jpg/aid178960-v4-728px-Make-a-Wreath-with-Clothes-Hangers-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/3/3f/Make-a-Wreath-with-Clothes-Hangers-Intro.jpg/aid178960-v4-728px-Make-a-Wreath-with-Clothes-Hangers-Intro.jpg"
+    ],
+    "states": [
+        {
+            "entity": "ends",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted",
+                        "saliency": 0.5593019816622301,
+                        "attribute_annotation": "shape"
+                    },
+                    {
+                        "attribute": "proximity",
+                        "before": "separate",
+                        "after": "together",
+                        "saliency": 0.5662032929113674,
+                        "attribute_annotation": "proximity"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "shape",
+                        "before": "disconnected",
+                        "after": "joined",
+                        "saliency": 0.5282460810411121,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "ends | square ends",
+                "hanger ends"
+            ]
+        },
+        {
+            "entity": "paper",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "texture",
+                        "before": "flat | straight",
+                        "after": "crumpled",
+                        "saliency": 0.5859213250517599,
+                        "attribute_annotation": "texture | shape"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "whole",
+                        "after": "pierced with hanger",
+                        "saliency": 0.5662032929113674,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "orientation",
+                        "before": "bunched on hanger",
+                        "after": "spread out on hanger",
+                        "saliency": 0.37079759440007887,
+                        "attribute_annotation": "orientation"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straighter",
+                        "after": "scruched",
+                        "saliency": 0.19257123139110718,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "wax paper",
+                "crepe paper",
+                "paper"
+            ]
+        },
+        {
+            "entity": "hanger",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "shape",
+                        "before": "in hanger shape | normal | twisted | straight",
+                        "after": "in circle shape | bent into circle | is rounder",
+                        "saliency": 0.5753228827762988,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "on table",
+                        "after": "through paper",
+                        "saliency": 0.38036083998816916,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full of squares",
+                        "saliency": 0.24267968056787934,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.3422557428768609,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.24267968056787934,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "on table",
+                        "after": "being held up in air",
+                        "saliency": 0.38036083998816916,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "bare",
+                        "after": "covered with paper",
+                        "saliency": 0.3274179236912156,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "emptier",
+                        "after": "fuller",
+                        "saliency": 0.24267968056787934,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in closet",
+                        "after": "on door",
+                        "saliency": 0.273415163166716,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "hanger | wire",
+                "wire hanger"
+            ]
+        },
+        {
+            "entity": "squares",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "shape",
+                        "before": "untouched",
+                        "after": "pierced",
+                        "saliency": 0.42374051069703245,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "near ends",
+                        "after": "away from ends",
+                        "saliency": 0.2860593512767426,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "away from ends",
+                        "after": "closer to ends",
+                        "saliency": 0.2550034506556246,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "apart",
+                        "after": "folded back",
+                        "saliency": 0.43557132998126785,
+                        "attribute_annotation": "position"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "squares",
+                "paper squares"
+            ]
+        },
+        {
+            "entity": "pliers",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer | on table",
+                        "after": "on table | in hand",
+                        "saliency": 0.45800059154096423,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed",
+                        "saliency": 0.3246573991915607,
+                        "attribute_annotation": "openness"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "on table",
+                        "after": "in hand",
+                        "saliency": 0.38036083998816916,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "open",
+                        "after": "gripped",
+                        "saliency": 0.18697623977127084,
+                        "attribute_annotation": "position"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "pliers",
+                "tool"
+            ]
+        },
+        {
+            "entity": "fingers",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "pressure",
+                        "before": "relaxed",
+                        "after": "gripped",
+                        "saliency": 0.3616287094547964,
+                        "attribute_annotation": "pressure"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.1534062900522528,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "motion",
+                        "before": "still",
+                        "after": "moving",
+                        "saliency": 0.13045943014887115,
+                        "attribute_annotation": "motion"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "pressure",
+                        "before": "relaxed",
+                        "after": "pushing",
+                        "saliency": 0.3616287094547964,
+                        "attribute_annotation": "pressure"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding squares",
+                        "saliency": 0.1534062900522528,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "fingers",
+                "hands"
+            ]
+        },
+        {
+            "entity": "wreath",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "status",
+                        "before": "in progress",
+                        "after": "completed",
+                        "saliency": 0.3493049393670512,
+                        "attribute_annotation": "status"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "wreath"
+            ]
+        },
+        {
+            "entity": "table",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clear",
+                        "after": "cluttered",
+                        "saliency": 0.33698116927930594,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "table"
+            ]
+        }
+    ],
+    "clusters": {
+        "wreath": {
+            "entity_cluster": [
+                "wreath"
+            ],
+            "attribute_cluster": {
+                "status": [
+                    "status"
+                ]
+            }
+        },
+        "ends": {
+            "entity_cluster": [
+                "square ends",
+                "ends",
+                "hanger ends"
+            ],
+            "attribute_cluster": {
+                "shape": [
+                    "shape"
+                ],
+                "proximity": [
+                    "proximity"
+                ]
+            }
+        },
+        "pliers": {
+            "entity_cluster": [
+                "tool",
+                "pliers"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "openness": [
+                    "openness"
+                ],
+                "position": [
+                    "position"
+                ]
+            }
+        },
+        "hanger": {
+            "entity_cluster": [
+                "hanger",
+                "wire hanger"
+            ],
+            "attribute_cluster": {
+                "shape": [
+                    "shape"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "fingers": {
+            "entity_cluster": [
+                "fingers",
+                "hands"
+            ],
+            "attribute_cluster": {
+                "pressure": [
+                    "pressure"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "motion": [
+                    "motion"
+                ]
+            }
+        },
+        "table": {
+            "entity_cluster": [
+                "table"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "squares": {
+            "entity_cluster": [
+                "paper squares",
+                "squares"
+            ],
+            "attribute_cluster": {
+                "shape": [
+                    "shape"
+                ],
+                "location": [
+                    "location"
+                ],
+                "position": [
+                    "position"
+                ]
+            }
+        },
+        "paper": {
+            "entity_cluster": [
+                "paper",
+                "wax paper",
+                "crepe paper"
+            ],
+            "attribute_cluster": {
+                "texture": [
+                    "texture",
+                    "shape"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "orientation": [
+                    "orientation"
+                ]
+            }
+        },
+        "wire": {
+            "entity_cluster": [
+                "wire"
+            ],
+            "attribute_cluster": {
+                "shape": [
+                    "shape"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        }
+    }
+}

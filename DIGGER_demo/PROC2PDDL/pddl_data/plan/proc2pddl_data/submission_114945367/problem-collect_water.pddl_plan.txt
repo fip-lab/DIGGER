@@ -1,0 +1,5 @@
+(go west npc camp path)
+(go west npc path cliff)
+(go up npc cliff waterfall)
+(get_water npc waterfall water)
+; cost = 4 (unit cost)

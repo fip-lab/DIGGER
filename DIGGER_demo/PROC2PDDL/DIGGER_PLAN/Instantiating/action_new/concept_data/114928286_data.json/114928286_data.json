@@ -1,0 +1,7 @@
+[
+    "(:action go ; Move an agent from one location to another\n    :parameters (?a - agent ?from - location ?to - location)\n    :precondition (and\n        (at ?a ?from)\n        (not (at ?a ?to))\n    )\n    :effect (and\n        (at ?a ?to)\n        (not (at ?a ?from))",
+    "(:action find ; Find a resource and update its status\n    :parameters (?agent - entity ?location - place ?item - object)\n    :precondition (and \n        (at ?agent ?location)\n        (stored ?item ?location)\n        (not (found ?item))\n    )\n    :effect (and\n        (found ?item)\n        (located_at ?agent ?location)\n        (not (stored ?item ?location))",
+    "(:action pick ; Pick up an item and update the carrying status\n  :parameters (?agent - agent ?item - object)\n  :precondition (and\n    (at ?agent storage_room)\n    (found ?item)\n    (not (carrying ?agent ?item))\n  )\n  :effect (and\n    (carrying ?agent ?item)\n    (not (stored ?item storage_room))",
+    "(:action lay_masking_tape\n    :parameters (?player - person ?tape - object)\n    :precondition (and (rolled ?tape) (on_roll ?tape))\n    :effect (and (unrolled ?tape) (in_pieces ?tape) (parallel_strips ?tape) (perpendicular_to_throw ?tape))",
+    "(:action lay ; Universal action for laying any object\n  :parameters (?actor - person ?item - object)\n  :precondition (and (prepared ?item) (available ?actor))\n  :effect (and (laid_out ?item) (in_position ?item) (ready_to_use ?item))"
+]

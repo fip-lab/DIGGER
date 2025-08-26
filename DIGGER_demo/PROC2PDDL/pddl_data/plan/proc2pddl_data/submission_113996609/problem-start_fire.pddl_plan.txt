@@ -1,0 +1,9 @@
+(go east person beach jungle)
+(chop_wood person jungle wood)    8,9,14
+(go west person jungle beach)
+(get tinder person beach)
+(go west person beach ocean)
+(get rock person ocean)
+(carve_groove person wood rock)   9
+(light_fire person wood beach tinder fire)   9,12,3
+; cost = 8 (unit cost)

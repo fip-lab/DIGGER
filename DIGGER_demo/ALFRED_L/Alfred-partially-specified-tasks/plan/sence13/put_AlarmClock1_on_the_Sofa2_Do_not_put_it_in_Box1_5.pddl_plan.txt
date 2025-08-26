@@ -1,0 +1,5 @@
+(gotolocation agent1 desk2 desk1)
+(pickupobjectnoreceptacle agent1 alarmclock1 desk1)
+(gotolocation agent1 desk1 sofa2)
+(putobjectinreceptacle agent1 alarmclock1 sofa2)
+; cost = 4 (unit cost)

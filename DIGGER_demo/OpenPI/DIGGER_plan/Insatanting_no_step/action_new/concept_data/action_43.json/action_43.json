@@ -1,0 +1,8 @@
+[
+    "(:action find ;  Find a resource and update its visibility status\n  :parameters (?actor - agent ?resource - object)\n  :precondition (and (at ?actor ?resource) (not (visible ?resource)))\n  :effect (visible ?resource))",
+    "(:action click ; Click an item and update its status\n :parameters (?actor - person ?item - object)\n :precondition (and (at ?actor ?item) (visible ?item) (not (selected ?item)))\n :effect (selected ?item))",
+    "(:action start ; Initiate an action or process with an entity and update its status\n    :parameters (?actor - agent ?resource - object)\n    :precondition (and (available ?actor) (connected ?resource) (functional ?resource) (tested ?resource))\n    :effect (and (active ?resource) (efficient ?resource))",
+    "(:action communicate ; Communicate with an entity and update communication status\n    :parameters (?entity - agent ?medium - communication_medium ?message - message)\n    :precondition (and (available ?medium) (not (communicated ?entity ?message)))\n    :effect (communicated ?entity ?message)\n)",
+    "(:action advise ; Provide advice to a teammate and update the status\n :parameters (?advisor - person ?advice - suggestion ?receiver - person)\n :precondition (and (available ?advisor) (receptive ?receiver) (efficient ?advisor))\n :effect (and (advised ?advisor ?advice ?receiver) (received ?advice ?receiver))",
+    "(:action ensure\n    ; Ensure a resource is in the desired state\n    :parameters (?p - person ?item - object)\n    :precondition (and (at ?p ?item) (not (ensured ?item)))\n    :effect (and (ensured ?item) (tested ?item) (functional ?item))"
+]

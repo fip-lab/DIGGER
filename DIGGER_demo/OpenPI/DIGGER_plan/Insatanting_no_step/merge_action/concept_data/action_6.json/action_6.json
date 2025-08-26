@@ -1,0 +1,12 @@
+{
+    "purchase": [
+        "(:action purchase_eraser\n    :parameters (?p - player ?eraser - item ?store - location)\n    :precondition (and (at ?p ?store) (at ?eraser ?store) (for_sale ?eraser ?store))\n    :effect (and (inventory ?p ?eraser) (not (at ?eraser ?store)) (purchased ?eraser))\n)\n\n",
+        "(:action replace_eraser\n    :parameters (?p - player ?eraser - item ?glove_box - location)\n    :precondition (and (inventory ?p ?eraser) (at ?p ?glove_box))\n    :effect (and (at ?eraser ?glove_box) (not (inventory ?p ?eraser)))\n)\n```\n\nThese actions should capture the necessary steps to complete the task \"Make a Simple Inside Windshield Cleaner\" based on the provided steps and descriptions."
+    ],
+    "store": [
+        "(:action store_eraser\n    :parameters (?p - player ?eraser - item ?glove_box - location)\n    :precondition (and (inventory ?p ?eraser))\n    :effect (and (at ?eraser ?glove_box) (not (inventory ?p ?eraser)))\n)\n\n"
+    ],
+    "clean": [
+        "(:action clean_windshield\n    :parameters (?p - player ?eraser - item ?windshield - location)\n    :precondition (and (at ?p ?windshield) (at ?eraser ?windshield) (dirty ?windshield) (inventory ?p ?eraser))\n    :effect (and (clean ?windshield) (not (dirty ?windshield)))\n)\n\n"
+    ]
+}

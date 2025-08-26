@@ -1,0 +1,6 @@
+(place-ingredients bananas sorbet yogurt blender-1)
+(blend-mixture blender-1)
+(add-rum-and-blend rum blender-1)
+(pour-into-glass blender-1 glass-1)
+(garnish-glass glass-1 strawberry-1)
+; cost = 5 (unit cost)

@@ -1,0 +1,2181 @@
+[
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate Galentine's Day",
+        "step": [
+            "Invite your friends over for a cozy brunch at home.",
+            "Go to dinner, lunch, or tea if brunch isn\u2019t your thing.",
+            "Throw a themed party to celebrate your common interests.",
+            "Organize a fun outing or day trip to get a change of scene."
+        ],
+        "steps_predictions": [
+            "invite-friend brunch",
+            "go-to-mixture npc",
+            "cook npc kitchen",
+            "organize_outfit npc"
+        ],
+        "goal_state": " ((in npc Salt_Lake))",
+        "similar_entity": {
+            "kitchen": {
+                "kitchen counter": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the kitchen]] is [[food]]",
+                    "[[a kitchen]] is used for [[cooking food]]",
+                    "[[table]] is related to [[kitchen]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "brunch": {
+                "the cookies": [
+                    {
+                        "attribute": "location",
+                        "before": "on plate | on tray",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "placement",
+                        "before": "in different container",
+                        "after": "now in airtight container"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on sheet",
+                        "after": "in lined tin"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "unlined",
+                        "after": "lined"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "touching | together",
+                        "after": "seperated | separated"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on table | on counter",
+                        "after": "in freezer"
+                    },
+                    {
+                        "attribute": "flexibility",
+                        "before": "pliable",
+                        "after": "hard"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm",
+                        "after": "frozen | cold | freezing"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "soft",
+                        "after": "hard"
+                    },
+                    {
+                        "attribute": "placement",
+                        "before": "in freezer",
+                        "after": "now outside freezer"
+                    },
+                    {
+                        "attribute": "flexibility",
+                        "before": "hard",
+                        "after": "chewy"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "frozen | cold",
+                        "after": "warm | thawed"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "hard",
+                        "after": "soft"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate Flag Day",
+        "step": [
+            "Attend a local Flag Day parade to celebrate as a community.",
+            "Host a dinner at your home for close friends and family.",
+            "Throw a block party to enjoy the holiday with your neighbors."
+        ],
+        "steps_predictions": [
+            "set_fire npc flag_parade",
+            "cook npc kitchen",
+            "throw_block_party npc basement"
+        ],
+        "goal_state": " ((completed npc flag_parade))",
+        "similar_entity": {
+            "kitchen": {
+                "kitchen counter": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the kitchen]] is [[food]]",
+                    "[[a kitchen]] is used for [[cooking food]]",
+                    "[[table]] is related to [[kitchen]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ]
+            },
+            "flag parade": {
+                "wreath": [
+                    {
+                        "attribute": "status",
+                        "before": "in progress",
+                        "after": "completed"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate Your Husband's Birthday",
+        "step": [
+            "Host a birthday party.",
+            "Get together with a few close friends.",
+            "Go on a group outing.",
+            "Plan a mini-roadtrip or getaway.",
+            "Celebrate his past with a throwback party."
+        ],
+        "steps_predictions": [
+            "cook npc kitchen",
+            "get_together npc basement",
+            "go_on_group_outfit_with_shelter npc",
+            "plan_mini_roadtrip mini_veaway",
+            "celebrate_past_with_family throwback party"
+        ],
+        "goal_state": " ((in npc Salt_Lake) (enjoylife nintendo_family throwback))",
+        "similar_entity": {
+            "throwback": {
+                "trash bags": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on floor | laying around",
+                        "after": "in waste baskets | in waste baskts | in trashcan"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in waste baskets",
+                        "after": "in trash bag"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "flat",
+                        "after": "rounder"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "kitchen": {
+                "kitchen counter": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the kitchen]] is [[food]]",
+                    "[[a kitchen]] is used for [[cooking food]]",
+                    "[[table]] is related to [[kitchen]]"
+                ]
+            },
+            "mini veaway": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ]
+            },
+            "party": {
+                "drinking glass": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet | in fridge",
+                        "after": "on table | in drinking glass"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[party]] is related to [[celebration]]",
+                    "[[Partido Pol\u00edtico]] is a translation of [[party]]",
+                    "Something you might do while [[celebrating]] is [[party]]",
+                    "You are likely to find [[a cake]] in [[a party]]",
+                    "[[a party]] is for [[meeting people]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Commemorate Your Graduation from High School",
+        "step": [
+            "Plan a vacation.",
+            "Throw a party!.",
+            "Buy yourself something you've always wanted.",
+            "Have a \"thank you\" dinner and invite your parents.",
+            "Construct a \"memory book\" for high school.",
+            "Show your appreciation to your high school teachers."
+        ],
+        "steps_predictions": [
+            "plan_vacation npc",
+            "throw_party npc basement",
+            "buy_item npc store",
+            "invite-parent dinner",
+            "construct_memory_book npc basement",
+            "gather_amazed npc"
+        ],
+        "goal_state": " ((amazed npc))",
+        "similar_entity": {
+            "dinner": {
+                "ingredients": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed in pan"
+                    },
+                    {
+                        "attribute": "mixture",
+                        "before": "less stirred | less cooked",
+                        "after": "more stirred | more cooked"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | ready to be served",
+                        "after": "served"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unready",
+                        "after": "ready"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[plate]] is related to [[dinner]]",
+                    "[[dinner]] is a kind of [[meal]]",
+                    "Sometimes [[following a recipe]] causes [[dinner]]",
+                    "*Something you find at [[dinner]] is [[bread]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "store": {
+                "bank account": [
+                    {
+                        "attribute": "fullness",
+                        "before": "more full",
+                        "after": "more empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in customer's hand",
+                        "after": "in cashier's hand"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[department]] is related to [[store]]",
+                    "*Something you find at [[a store]] is [[clothes]]",
+                    "[[\u062e\u064e\u0632\u064e\u0646]] is a translation of [[store]]",
+                    "[[a store]] is for [[buying things]]"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate National Punctuation Day",
+        "step": [
+            "Show punctuation some love.",
+            "Review your use of punctuation.",
+            "Find out some quirky facts about punctuation.",
+            "Make wearable punctuation.",
+            "Spot punctuation in unusual places during the day.",
+            "Bake a cake or some cookies that feature punctuation.",
+            "Throw a punctuation party."
+        ],
+        "steps_predictions": [
+            "punctuation_with_love love",
+            "review_punctuation you punctuation",
+            "get_knowledge npc",
+            "make_compelling_signal npc",
+            "spot_location character",
+            "cook npc kitchen",
+            "throw_punctuation_party party"
+        ],
+        "goal_state": " ((in npc Salt_Lake))",
+        "similar_entity": {
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ]
+            },
+            "party": {
+                "drinking glass": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet | in fridge",
+                        "after": "on table | in drinking glass"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[party]] is related to [[celebration]]",
+                    "[[Partido Pol\u00edtico]] is a translation of [[party]]",
+                    "Something you might do while [[celebrating]] is [[party]]",
+                    "You are likely to find [[a cake]] in [[a party]]",
+                    "[[a party]] is for [[meeting people]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "love": {
+                "stuff": [
+                    {
+                        "attribute": "location",
+                        "before": "in store",
+                        "after": "in home"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Love]] would make you want to [[kiss someone]]",
+                    "[[love]] is [[a feeling]]",
+                    "You would [[propose to a woman]] because [[you love her]]",
+                    "You are likely to find [[a human]] in [[love]]",
+                    "Something that might happen as a consequence of [[love]] is [[having sex]]",
+                    "[[love]] is related to [[emotion]]",
+                    "[[love]] can [[hurt]]",
+                    "[[kissing someone]] is for [[love]]",
+                    "One of the things you do when you [[love someone]] is [[kiss them]]"
+                ]
+            },
+            "kitchen": {
+                "kitchen counter": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the kitchen]] is [[food]]",
+                    "[[a kitchen]] is used for [[cooking food]]",
+                    "[[table]] is related to [[kitchen]]"
+                ]
+            },
+            "character": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[character]] is related to [[person]]",
+                    "You are likely to find [[a character]] in [[a play in a theater]]"
+                ]
+            },
+            "punctuation": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Pontua\u00e7\u00e3o]] is a translation of [[punctuation]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Capture a Special Moment Forever",
+        "step": [
+            "Have skilled photos taken of the event.",
+            "Use a guest book to assist you recollect it.",
+            "Keep a souvenir from the occasion.",
+            "Recreate the instant many years down the road.",
+            "Make an album concerning the special moment.",
+            "Have somebody record a video for you."
+        ],
+        "steps_predictions": [
+            "take_skill_shot you camera",
+            "gather_memebers_know npc covering_tracks track",
+            "keep_sos_visibility npc",
+            "reinjoylife game",
+            "make_album npc studio",
+            "record_video npc studio"
+        ],
+        "goal_state": " ((shot you camera) (focus npc on_scene))",
+        "similar_entity": {
+            "game": {
+                "game": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unplayed",
+                        "after": "played"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Polo]] is [[a game]]",
+                    "[[game]] is related to [[play]]",
+                    "[[game]] can be [[played]]"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ]
+            },
+            "studio": {
+                "studio": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent | considered | non-existent",
+                        "after": "set up | created"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a microphone boom]] in [[a studio]]"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "camera": {
+                "hdmi cord": [
+                    {
+                        "attribute": "organization",
+                        "before": "unplugged",
+                        "after": "plugged in | plugged into cable"
+                    },
+                    {
+                        "attribute": "connection",
+                        "before": "loose",
+                        "after": "attached"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unplugged | unpligged",
+                        "after": "plugged in | connected to tv's hdmi input"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unattached",
+                        "after": "plugged in"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "unplugged",
+                        "after": "plugged into converter and tv"
+                    },
+                    {
+                        "attribute": "attachment",
+                        "before": "loose",
+                        "after": "plugged in"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You can use [[a camera]] to [[take pictures]]",
+                    "You are likely to find [[a lens]] in [[the camera]]",
+                    "[[picture]] is related to [[camera]]",
+                    "[[Camera]] has [[a flash]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate National Umbrella Day",
+        "step": [
+            "Study the origins of the word.",
+            "Learn about umbrella superstition.",
+            "Consider the many styles and sizes of umbrellas.",
+            "Count how many umbrellas you own.",
+            "Learn how to care for umbrellas.",
+            "See what other uses can be made of an umbrella.",
+            "Transform your umbrella.",
+            "Take your umbrella out with you today."
+        ],
+        "steps_predictions": [
+            "study_word npc root_of_tree",
+            "learn_superstition npc",
+            "listen_to_converter_of_water npc",
+            "count_un umbrellas you own",
+            "learn_unice npc",
+            "make_rain_water npc",
+            "transparent_unumum umbrella1",
+            "take_unice umbrella_out_with_you today"
+        ],
+        "goal_state": " ((knowledge npc))",
+        "similar_entity": {
+            "umbrellas": {
+                "the towels": [
+                    {
+                        "attribute": "size",
+                        "before": "larger | wider",
+                        "after": "smaller | narrower"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straight | flat",
+                        "after": "folded | now folded"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "relaxed",
+                        "after": "being used"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "holding towel"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "thinner | longer",
+                        "after": "thicker | shorter"
+                    },
+                    {
+                        "attribute": "height",
+                        "before": "low",
+                        "after": "higher"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "laundry room | outside | out",
+                        "after": "in linen closet | in closet"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in closet",
+                        "after": "on rack | on towel rack"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "folded",
+                        "after": "hanging | unfolded"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "opened"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ]
+            },
+            "today": {
+                "game": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unplayed",
+                        "after": "played"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "umbrella out with you": {
+                "towel": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | smooth",
+                        "after": "dirty | sticky"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "white",
+                        "after": "orange"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "root of tree": {
+                "roots": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "own": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[possess]] is related to [[own]]",
+                    "You would [[buy something]] because you want to [[own it]]"
+                ]
+            },
+            "umbrella": {
+                "inside windshield": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[an umbrella]] is for [[protection from the rain]]",
+                    "*Something you find in [[a closet]] is [[an umbrella]]",
+                    "[[Guarda chuva]] is a translation of [[umbrella]]",
+                    "[[An umbrella]] is [[a device to protect something]]",
+                    "[[shade]] is related to [[umbrella]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate Your Daughter's First Period",
+        "step": [
+            "Spread out talks about puberty over multiple years.",
+            "Be prepared with the right supplies.",
+            "Talk about periods as positive experiences.",
+            "Answer your daughter\u2019s questions directly and honestly.",
+            "Read a book or watch a video together.",
+            "Reassure your daughter with personal stories."
+        ],
+        "steps_predictions": [
+            "talk_about_unice npc",
+            "prepare_supplies food npc",
+            "talk_about_amazing periods",
+            "fill bottles bathroom npc",
+            "read_book npc book",
+            "reassure your daughter with personal stories"
+        ],
+        "goal_state": " ((amazing npc) (family_memebers_know_you_are_",
+        "similar_entity": {
+            "bathroom": {
+                "sink": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full of macaroni"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter top",
+                        "after": "under faucet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | cleaner",
+                        "after": "dirty | dirtier"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "drier",
+                        "after": "wetter"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a toilet]] in [[a bathroom]]",
+                    "[[a bathroom]] is [[room]]",
+                    "[[a bathroom]] is used for [[taking a bath]]"
+                ]
+            },
+            "bottles": {
+                "bottle": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Some bottles]] have [[bottle caps]]"
+                ]
+            },
+            "daughter": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[daughter]] is related to [[female]]",
+                    "[[daughter]] is not [[son]]",
+                    "[[daughter]] is the opposite of [[son]]"
+                ]
+            },
+            "periods": {
+                "pools": [
+                    {
+                        "attribute": "coverage",
+                        "before": "on wood",
+                        "after": "rubbed even"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "your": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "with": {
+                "task": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[against]] is the opposite of [[with]]"
+                ]
+            },
+            "food": {
+                "ingredients": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed in pan"
+                    },
+                    {
+                        "attribute": "mixture",
+                        "before": "less stirred | less cooked",
+                        "after": "more stirred | more cooked"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | ready to be served",
+                        "after": "served"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unready",
+                        "after": "ready"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[cake]] is related to [[food]]",
+                    "*Something you find in [[the refrigerator]] is [[food]]",
+                    "[[butter]] is [[a food]]",
+                    "[[Food]] can be [[eaten]]"
+                ]
+            },
+            "stories": {
+                "advice": [
+                    {
+                        "attribute": "availability",
+                        "before": "impossible",
+                        "after": "possible"
+                    },
+                    {
+                        "attribute": "ownership",
+                        "before": "withheld",
+                        "after": "given"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "book": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[page]] is related to [[book]]",
+                    "[[a book]] is used for [[learning]]",
+                    "[[a book]] is part of [[library]]",
+                    "[[A book]] is created by [[a writer]].",
+                    "You are likely to find [[a book]] in [[a classroom]]",
+                    "[[the bible]] is [[a book]]",
+                    "[[A book]] is made of [[Paper]].",
+                    "[[a book]] contains [[knowledge]]"
+                ]
+            },
+            "personal": {
+                "stuff": [
+                    {
+                        "attribute": "location",
+                        "before": "in store",
+                        "after": "in home"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[birthday]] is related to [[personal]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Host a Presidential Debate Watch Party",
+        "step": [
+            "Find out when the next presidential debate is scheduled to occur.",
+            "Send out themed invitations.",
+            "Prepare for the debate party.",
+            "Watch the debate.",
+            "Keep your guests entertained with games related to the debate."
+        ],
+        "steps_predictions": [
+            "get_info npc",
+            "create_themed_invite npc covering_tracks track",
+            "prepare_for_debate_party npc",
+            "watch_debate npc",
+            "keep-guests-in-game game"
+        ],
+        "goal_state": " ((knowledge npc) (not (in anish ss)))",
+        "similar_entity": {
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "game": {
+                "game": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unplayed",
+                        "after": "played"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Polo]] is [[a game]]",
+                    "[[game]] is related to [[play]]",
+                    "[[game]] can be [[played]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate Black History Month",
+        "step": [
+            "Head to a museum or gallery exhibit about African American history.",
+            "Attend lectures on Black culture if you can.",
+            "Look for local events to celebrate the month with others.",
+            "Organize your own event if your area doesn\u2019t have one.",
+            "Participate in Black History Month activities at school."
+        ],
+        "steps_predictions": [
+            "go_visibility npc",
+            "listen_to_loot npc",
+            "create_memebers_know npc",
+            "organize_event my_area",
+            "train_new_member_secret adrian liam ss"
+        ],
+        "goal_state": " ((in npc Salt_Lake))",
+        "similar_entity": {
+            "my area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "liam": {
+                "leaves": [
+                    {
+                        "attribute": "location",
+                        "before": "elsewhere",
+                        "after": "on rucksaks"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "elsewhere",
+                        "after": "on helmet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "on webbing"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "adrian": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "ss": {
+                "main dish": [
+                    {
+                        "attribute": "temperature",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "accompaniment",
+                        "before": "unaccompanied",
+                        "after": "accompanied"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    null
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate Your Dad's Birthday",
+        "step": [
+            "Make him a card.",
+            "Film a birthday video for your dad.",
+            "Listen to your dad for gift ideas.",
+            "Buy him a gift based on his hobbies.",
+            "Take your dad to a sporting event or concert."
+        ],
+        "steps_predictions": [
+            "make_card npc",
+            "make_birthday_video my_dads_tv",
+            "listen_to_daddies advice",
+            "buy_gifts npc",
+            "take_dad_to_shelter npc"
+        ],
+        "goal_state": " ((in npc Salt_Lake) (enjoylife nintendo_",
+        "similar_entity": {
+            "my dads tv": {
+                "tv": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in"
+                    },
+                    {
+                        "attribute": "attachment",
+                        "before": "unattached",
+                        "after": "connected"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "advice": {
+                "advice": [
+                    {
+                        "attribute": "availability",
+                        "before": "impossible",
+                        "after": "possible"
+                    },
+                    {
+                        "attribute": "ownership",
+                        "before": "withheld",
+                        "after": "given"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate the Autumn Equinox",
+        "step": [
+            "Understand the meanings associated with the autumnal equinox.",
+            "Consider staying up during the night to welcome autumn.",
+            "Build or set up a monument to autumn.",
+            "Be creative.",
+            "Make a list of your inner harvest.",
+            "Express your fall awe.",
+            "Contemplate.",
+            "Seek to improve your health.",
+            "Turn your home into a haven.",
+            "Honor your ancestors.",
+            "Get into your garden."
+        ],
+        "steps_predictions": [
+            "understand npc",
+            "stay_up npc",
+            "set_monument_to_object npc stonehouse",
+            "create_commissioner npc",
+            "make_list npc garden",
+            "express_amazed you",
+            "contemplate npc",
+            "injured person bathroom npc",
+            "turn_home_into_haven npc basement",
+            "honor_family npc family",
+            "get_into_garden garden"
+        ],
+        "goal_state": " ((amazed npc))",
+        "similar_entity": {
+            "bathroom": {
+                "sink": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full of macaroni"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter top",
+                        "after": "under faucet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | cleaner",
+                        "after": "dirty | dirtier"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "drier",
+                        "after": "wetter"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a toilet]] in [[a bathroom]]",
+                    "[[a bathroom]] is [[room]]",
+                    "[[a bathroom]] is used for [[taking a bath]]"
+                ]
+            },
+            "person": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[person]] is related to [[human]]",
+                    "[[A person]] can [[cross a street]]",
+                    "[[a person]] wants [[a headache]]",
+                    "[[A slave]] is [[a person]]",
+                    "[[a person]] doesn't want to [[be diseased]]",
+                    "[[a person]] is part of [[society]]"
+                ]
+            },
+            "family": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[home]] is related to [[family]]",
+                    "*Something you find at [[your house]] is [[your family]]",
+                    "[[a person wants]] have [[a family]]",
+                    "[[An aunt]] is part of [[the family]]",
+                    "[[a family]] is [[a group of related people]]",
+                    "[[\u0639\u0627\u0626\u0650\u0644\u064e\u0629]] is a translation of [[family]]"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "garden": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[flowers]]",
+                    "You are likely to find [[a lizard]] in [[your garden]]",
+                    "[[a garden]] has [[flowers]]"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ]
+            },
+            "stonehouse": {
+                "stone": [
+                    {
+                        "attribute": "choice",
+                        "before": "unchosen | unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate Hobbit Day",
+        "step": [
+            "Plan a Long-Expected Party with fellow hobbit fans!.",
+            "Decide where to hold the party.",
+            "Make sure that your festivities include a good amount of food \u2013 either a large meal or various snack foods.",
+            "Choose a passage or more about hobbits from one of Tolkien's books to read aloud together.",
+            "Play games.",
+            "Have a special cake.",
+            "Give away lovely things to everyone who comes to the party.",
+            "If you do not think your friends would be very interested in a Hobbit Day celebration, celebrate the day in your own way."
+        ],
+        "steps_predictions": [
+            "plan_party npc",
+            "choose_where_to_hold_party party",
+            "cook npc kitchen",
+            "choose_through_vizibility npc",
+            "play_game game",
+            "create_special_cake mixing_bowl table",
+            "gather-chocolates npc",
+            "celebrate_with_family npc"
+        ],
+        "goal_state": " ((in npc dining_table))",
+        "similar_entity": {
+            "table": {
+                "table": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clear",
+                        "after": "cluttered"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find on [[a table]] is [[a tablecloth]]",
+                    "[[desk]] is related to [[table]]",
+                    "[[a table]] is for [[Putting things on]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "kitchen": {
+                "kitchen counter": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the kitchen]] is [[food]]",
+                    "[[a kitchen]] is used for [[cooking food]]",
+                    "[[table]] is related to [[kitchen]]"
+                ]
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "game": {
+                "game": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unplayed",
+                        "after": "played"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Polo]] is [[a game]]",
+                    "[[game]] is related to [[play]]",
+                    "[[game]] can be [[played]]"
+                ]
+            },
+            "party": {
+                "drinking glass": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet | in fridge",
+                        "after": "on table | in drinking glass"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[party]] is related to [[celebration]]",
+                    "[[Partido Pol\u00edtico]] is a translation of [[party]]",
+                    "Something you might do while [[celebrating]] is [[party]]",
+                    "You are likely to find [[a cake]] in [[a party]]",
+                    "[[a party]] is for [[meeting people]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate the 100th Day of School",
+        "step": [
+            "Decorate your classroom for the occasion.",
+            "Assign a special homework assignment or project that's due on that day.",
+            "Theme your lesson plans towards the number 100.",
+            "Have some fun activities for your students to do.",
+            "Show your students things from the last 100 days of school.",
+            "Throw a party."
+        ],
+        "steps_predictions": [
+            "decorate_room classroom",
+            "assign_objectinreceptacle agent1 homework assignment1 project1",
+            "theme_plan my_equipment",
+            "have-fun-activities kids",
+            "show_students_stuff npc hallway",
+            "throw_party npc basement"
+        ],
+        "goal_state": " ((game_played game) (in npc basement))",
+        "similar_entity": {
+            "my equipment": {
+                "equipment": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered | laying sporadically",
+                        "after": "organized | gathered"
+                    },
+                    {
+                        "attribute": "equipment",
+                        "before": "unorganized",
+                        "after": "laid in pattern"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "project": {
+                "task": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "kids": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[children]] is related to [[kids]]",
+                    "[[Kids]] like to [[play with them]]"
+                ]
+            },
+            "assignment": {
+                "task": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "hallway": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[a building]] is [[a hallway]]"
+                ]
+            },
+            "homework": {
+                "task": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Trabalho Escolar]] is a translation of [[homework]]",
+                    "An activity [[any student]] can do is [[homework]]"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ]
+            },
+            "agent": {
+                "game character": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[agent]] is related to [[secret]]"
+                ]
+            },
+            "classroom": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[a classroom]] is [[a teacher]]",
+                    "[[a classroom]] is for [[teaching]]"
+                ]
+            }
+        }
+    }
+]

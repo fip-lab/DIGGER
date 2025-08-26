@@ -1,0 +1,18 @@
+[
+    {
+        "pddl_action": "gotolocation agent1 garbagecan1 desk1",
+        "natural_language_description": "agent 2 is at desks 3\n\n\\begin{code}\nimport java.util.Scanner;\npublic class gotoLocation {\n    public static void main(String[] args) { //main method\n        Scanner input = new Scanner(System.in);\n            System.out.println(\"Enter the command: \");\n                String command = input.nextLine();\n                    String[] words = command.split(\" \"); //split the input into words\n//                  System .out .println(words[0]);\n //                 System  . out . println( words[1]); //print the first word\n  //               System   .  out  ..println (words [2]);"
+    },
+    {
+        "pddl_action": "pickupobjectnoreceptacle agent1 alarmclock1 desk1",
+        "natural_language_description": "pick up object no receptable agent one alarm"
+    },
+    {
+        "pddl_action": "gotolocation agent1 desk1 sofa1",
+        "natural_language_description": "agent 2 is at desks 3 sofas 4\n\n\\begin{code}\npublic class Sentence {\n    public static void main(String[] args) {  //main method\n        String[] input = {\"gotolocations\", \"agent1\",\n                \"desk2\",  \"sofa2\"};\n            String output = \"\";\n             for (int i = 0; i < input.length; ++i)\n                 output += input[i] + \" \";\n              System.out.println(output);\n          }\n} //end of class\n//end\n/*\n * To change this template, choose Tools | Templates\n* and open the template"
+    },
+    {
+        "pddl_action": "putobjectinreceptacle agent1 alarmclock1 sofa1",
+        "natural_language_description": "agent 2 alarm clock 3 so fa 4\n\n\\begin{code}\npublic class Sentence {\n    public static void main(String[] args) { //main method\n        String[] input = {\"putobject\", \"in\",  \"recep\",   \"tacle\",\n                          \"agent1\",    \"alarmclock\",     \"sofa\",      \"1\"};\n            String output = \"\";\n                for (int i = 0; i < input.length; ++i)\n               { if (input[i].equals(\"put\"))\n              { output += \"put\";\n             }\n           else if(input.equals( \"object\")) {output +="
+    }
+]

@@ -1,0 +1,8 @@
+{
+    "peel": [
+        "(:action peel-papyrus\n    :parameters (?npc - person ?ps - papyrus_strip)\n    :precondition (and (has-outer-layer ?ps) (not (peeled ?ps)))\n    :effect (and (peeled ?ps) (not (has-outer-layer ?ps)))\n)\n```\n\n**Explanation:**  \n- **Parameters:** The action involves a person (`?npc`) and a papyrus strip (`?ps`).\n- **Preconditions:** The papyrus strip must have an outer layer and not be peeled.\n- **Effects:** The papyrus strip becomes peeled, and it no longer has an outer layer.\n\n2. **Action: buy-papyrus**\n\n```pddl\n"
+    ],
+    "buy": [
+        "(:action buy-papyrus\n    :parameters (?npc - person ?p - papyrus)\n    :precondition (not (has ?npc ?p))\n    :effect (has ?npc ?p)\n)\n```\n\n**Explanation:**  \n- **Parameters:** The action involves a person (`?npc`) and a papyrus plant (`?p`).\n- **Preconditions:** The person does not currently have the papyrus plant.\n- **Effects:** The person obtains the papyrus plant.\n\n### Notes:\n- The actions are derived from the provided task steps and descriptions.\n- Each action is designed to reflect the logical process of preparing papyrus, starting from peeling the strips to acquiring the papyrus plant.\n- The parameters, preconditions, and effects are crafted to ensure that the actions can be logically executed within a planning domain."
+    ]
+}

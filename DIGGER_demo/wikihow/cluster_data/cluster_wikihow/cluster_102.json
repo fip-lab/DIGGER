@@ -1,0 +1,162 @@
+[
+    {
+        "title": "How to Induce a Period",
+        "steps": [
+            "Determine if you're pregnant.",
+            "Know the other natural reasons for missing a period.",
+            "See if your medication causes missed periods.",
+            "Find out if you have a medical condition."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Increase Amniotic Fluid",
+        "steps": [
+            "Understand what amniotic fluid\u2019s purpose is.",
+            "Be aware of the symptoms of oligohydramnios.",
+            "Be aware of the risk factors that could lead you to having low amounts of amniotic fluid.",
+            "Understand that low levels of amniotic fluid can generally only be diagnosed by ultrasound."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Time Contractions",
+        "steps": [
+            "Recognize the signs of labor contractions.",
+            "Know the other signs that labor is occurring.",
+            "Know when to prepare for the birth."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Choose a Birth Hospital",
+        "steps": [
+            "Think about logistics.",
+            "Ask about medical staffing.",
+            "Determine how labor is handled at the hospital.",
+            "Learn about rates of pregnancy-related medical procedures.",
+            "Ask about pain management procedures and birthing options.",
+            "Determine what procedures are in place for complications after birth.",
+            "Find out about the more personal side of the process."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Deal with Fibroids During Pregnancy",
+        "steps": [
+            "Talk to your doctor about how fibroids may affect your pregnancy.",
+            "Recognize the increased risk of miscarriage with fibroids.",
+            "Ask your doctor if you\u2019re at risk for preterm labor.",
+            "Discuss the potential for complications during delivery."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Choose a Birth Control Method",
+        "steps": [
+            "Consider what's important to you in regards to birth control.",
+            "Research these types of birth control and think about their benefits and disadvantages.",
+            "Choose a method of birth control.",
+            "Visit your physician and get a prescription if needed."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Avoid Selenium Deficiency During Pregnancy",
+        "steps": [
+            "Consider how selenium contributes to pregnancy.",
+            "Recognize the risks of selenium deficiency.",
+            "Have your selenium tested."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Get Rid of Sore Muscles During Pregnancy",
+        "steps": [
+            "Understand the source of sore muscles during pregnancy.",
+            "Recognize the source of sore muscles in the back.",
+            "Be aware of the source of sore abdominal muscles.",
+            "Realize the source of sore thigh muscles."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Increase Oxygen Flow During Pregnancy",
+        "steps": [
+            "Notice how increased oxygen can help.",
+            "Recognize the benefits of increased blood flow.",
+            "Talk to your doctor."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Control Cramps During Pregnancy",
+        "steps": [
+            "Understand what constitutes a cramp.",
+            "Learn about the main causes of cramps during pregnancy.",
+            "Know when to call your doctor."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Manage Palpitations",
+        "steps": [
+            "Consider psychiatric causes of palpitations.",
+            "Think about whether your palpitations may be caused by a non cardiac medical condition.",
+            "Understand that palpitations during strenuous exercise are generally normal.",
+            "Be aware that palpitations caused by substances are generally normal.",
+            "Understand that most palpitations during pregnancy are normal.",
+            "Understand that palpitations caused by medical conditions are not considered normal.",
+            "Understand that some palpitations can be dangerous."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Talk to Your Daughter About Her Period",
+        "steps": [
+            "Be calm and comforting.",
+            "Describe why a period occurs.",
+            "Discuss the options for hygiene during a period.",
+            "Describe the physical symptoms that may accompany a period.",
+            "Explain the link between menstruation and pregnancy.",
+            "Celebrate with your daughter."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Know when to See a Fertility Doctor",
+        "steps": [
+            "Let your doctor lead you in the right direction.",
+            "Figure out the costs of fertility treatments to help lead you to the right specialist.",
+            "Research."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Take Licorice Root",
+        "steps": [
+            "Do not assume licorice root will cure you.",
+            "Notify your doctor when taking herbal supplements.",
+            "Don\u2019t take licorice root while pregnant."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Use a Breast Feeding Pillow",
+        "steps": [
+            "Use a breastfeeding pillow during pregnancy.",
+            "Add a breastfeeding pillow to tummy time.",
+            "Understand the pillow is not for everyone."
+        ],
+        "cluster_label": 102
+    },
+    {
+        "title": "How to Check a Mare for Pregnancy",
+        "steps": [
+            "Have a blood test performed on your mare.",
+            "Give your breeding mare a urine test.",
+            "Confirm pregnancy test results."
+        ],
+        "cluster_label": 102
+    }
+]

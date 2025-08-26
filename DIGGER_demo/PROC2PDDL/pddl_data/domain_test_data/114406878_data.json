@@ -1,0 +1,230 @@
+[
+    {
+        "task": "boil_water",
+        "step": [
+            "get pot npc camp",
+            "go west npc camp path",
+            "go south npc path oaks",
+            "log_oak npc oaks pot oak_log",
+            "get flat_wood npc oaks",
+            "get oak_log npc oaks",
+            "go north npc oaks path",
+            "go north npc path grassland",
+            "go north npc grassland bush",
+            "break_branch npc bush branch_piece",
+            "get_branch npc bush branch",
+            "get branch_piece npc bush",
+            "go south npc bush grassland",
+            "get_water npc grassland water pot",
+            "get grass npc grassland",
+            "go south npc grassland path",
+            "go east npc path camp",
+            "cluster_grass npc grass grass_tinder",
+            "stack_log npc oak_log log_stack",
+            "build_teepee npc camp grass_tinder branch_piece log_stack teepee_structure",
+            "ignite_wood npc camp flat_wood branch teepee_structure",
+            "ignite_teepee npc camp flat_wood teepee_structure",
+            "boil_water npc camp teepee_structure water"
+        ],
+        "desc": [
+            "Find a branch 10 feet (3.0 m) long and 3\u20136 inches (7.6\u201315.2 cm) thick. To form your shelter you need a support beam, so look for a sturdy tree branch that isn't rotting. The straighter the branch, the better it will be for forming the structure of your shelter.",
+            "Search for a source of fresh water.",
+            "Use dry sticks, branches, or tree bark to serve as your kindling.",
+            "Avoid hunting large animals. If you're trying to survive in the woods, you need to be as healthy as you can be. While deer and wild pigs do have nutritious meat, they can injure you if you do not have the right gun to get the animals down humanely. Even if you can kill a deer or pig, you may not have the tools necessary to preserve the massive amount of meat that has come from the once-living animal. Small game and insects are much safer to hunt and gather and can provide you with adequate nutrition to survive in the woods.",
+            "Find small, dry material to use as tinder. Look for dry grass, leaves, tree bark, pine needles, or any other small flammable materials you can find in the area. Tinder needs to be material that is easy to light and will produce a large flame so you can start your fire.",
+            "Build a snare if you have string or wire. A snare is a safe and relatively easy way to catch small game like rabbits and squirrels. Take a piece of wire or string about 2.5 feet (0.76 m) long, make a loop at one end and tie a slip knot. Then push the opposite end of the string or wire through the slip knot to form a large circle. Hang the circle of the snare over a footpath or a trail in the woods.",
+            "Melt snow or ice if you can find some. If you find ice or snow on the ground in the woods, collect it so you can melt it down for fresh drinking water. You can place the ice or snow in a container and place it next to a fire to melt it or you can hold the container to use your body heat to melt it.",
+            "Gather small twigs and branches to use for kindling. Kindling needs to be material that will catch easily when you light your tinder."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action get_wood ; gather a flat piece of solid wood to start fire\n      :parameters (?p - player ?loc - location ?wood - wood)\n      :precondition (and (at ?p ?loc) (at ?wood ?loc))\n      :effect (and (inventory ?p ?wood))\n   )",
+            "(:action cluster_grass ; cluster gatherd dry grass to make tinder\n      :parameters (?p - player ?dry_grass - grass ?grass_tinder - tinder) \n      :precondition (and (inventory ?p ?dry_grass))\n      :effect (and (inventory ?p ?grass_tinder) (not (inventory ?p ?dry_grass)))\n   )",
+            "(:action boil_water ; boil water using a started fire pit\n      :parameters (?p - player ?loc - location ?teepee - teepee ?water - water)\n      :precondition (and (at ?p ?loc) (at ?teepee ?loc) (ignited ?teepee) (inventory ?p ?water))\n      :effect (and (boiled ?water))\n   )\n)",
+            "(:action build_teepee ; build a teepee structure with tinder, kindling, and fuel logs\n      :parameters (?p - player ?loc - location ?tinder - tinder ?kindling - kindling ?fuel_logs - fuel ?teepee - teepee)\n      :precondition (and (inventory ?p ?tinder) (inventory ?p ?kindling) (inventory ?p ?fuel_logs) (has_dry_even_area ?loc) (at ?p ?loc))\n      :effect (and (at ?teepee ?loc) (not (inventory ?p ?tinder)) (not (inventory ?p ?kindling)) (not (inventory ?p ?fuel_logs)))\n   )",
+            "(:action get_water ; retrieve some natural but possibly contaminated water\n      :parameters (?p - player ?loc - location ?water - water ?pot - pot)\n      :precondition (and (at ?p ?loc) (has_pond ?loc) (inventory ?p ?pot))\n      :effect (and (inventory ?p ?water))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_grass ; gather grass that is not dry at the first time\n      :parameters (?p - player ?loc - location ?grass - grass)\n      :precondition (and (at ?p ?loc) (at ?grass ?loc))\n      :effect (and (inventory ?p ?grass) (not (dry ?grass)))\n   )",
+            "(:action ignite_wood ; ignite wood by plough it to create heat via friction\n      :parameters (?p - player ?loc - location ?wood - wood ?branch - branch ?teepee - teepee)\n      :precondition (and (at ?p ?loc) (at ?teepee ?loc) (inventory ?p ?wood) (inventory ?p ?branch))\n      :effect (and (ignited ?wood))\n   )",
+            "(:action get_log ; log oak trees\n      :parameters (?p - player ?loc - location ?oak_log - log) \n      :precondition (and (at ?p ?loc) (at ?oak_log ?loc) (dry ?oak_log))\n      :effect (and (inventory ?p ?oak_log))\n   )",
+            "(:action stack_log ; stack dry logs to make enough fuel \n      :parameters (?p - player ?oak_log - log ?log_stack - fuel) \n      :precondition (and (inventory ?p ?oak_log))\n      :effect (and (inventory ?p ?log_stack) (not (inventory ?p ?oak_log)))\n   )",
+            "(:action ignite_teepee ; ignite teepe with ignited wood to start fire\n      :parameters (?p - player ?loc - location ?wood - wood ?teepee - teepee)\n      :precondition (and (at ?p ?loc) (at ?teepee ?loc) (inventory ?p ?wood) (ignited ?wood))\n      :effect (and (ignited ?teepee))\n   )",
+            "(:action break_branch ; break larger branches into smaller pieces\n      :parameters (?p - player ?loc - location ?branch_piece - kindling) \n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (at ?branch_piece ?loc))\n   )",
+            "(:action get_branch ; gather a solid branch to start fire\n      :parameters (?p - player ?loc - location ?branch - branch)\n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (inventory ?p ?branch))\n   )",
+            "(:action log_oak ; log oak trees\n      :parameters (?p - player ?loc - location ?axe - item ?oak_log - log) \n      :precondition (and (at ?p ?loc) (has_dry_oak ?loc) (inventory ?p ?axe))\n      :effect (and (at ?oak_log ?loc) (dry ?oak_log))\n   )",
+            "(:action get_pot ; retrieve a pot to hold water\n      :parameters (?p - player ?loc - location ?pot - pot)\n      :precondition (and (at ?p ?loc) (at ?pot ?loc))\n      :effect (and (inventory ?p ?pot))\n   )"
+        ],
+        "goal_state": "((inventory npc water) (boiled water))"
+    },
+    {
+        "task": "gather_kindling",
+        "step": [
+            "go west npc camp path",
+            "go north npc path grassland",
+            "go north npc grassland bush",
+            "break_branch npc bush branch_piece",
+            "get branch_piece npc bush"
+        ],
+        "desc": [
+            "Avoid hunting large animals. If you're trying to survive in the woods, you need to be as healthy as you can be. While deer and wild pigs do have nutritious meat, they can injure you if you do not have the right gun to get the animals down humanely. Even if you can kill a deer or pig, you may not have the tools necessary to preserve the massive amount of meat that has come from the once-living animal. Small game and insects are much safer to hunt and gather and can provide you with adequate nutrition to survive in the woods."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action get_wood ; gather a flat piece of solid wood to start fire\n      :parameters (?p - player ?loc - location ?wood - wood)\n      :precondition (and (at ?p ?loc) (at ?wood ?loc))\n      :effect (and (inventory ?p ?wood))\n   )",
+            "(:action get_water ; retrieve some natural but possibly contaminated water\n      :parameters (?p - player ?loc - location ?water - water ?pot - pot)\n      :precondition (and (at ?p ?loc) (has_pond ?loc) (inventory ?p ?pot))\n      :effect (and (inventory ?p ?water))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_grass ; gather grass that is not dry at the first time\n      :parameters (?p - player ?loc - location ?grass - grass)\n      :precondition (and (at ?p ?loc) (at ?grass ?loc))\n      :effect (and (inventory ?p ?grass) (not (dry ?grass)))\n   )",
+            "(:action get_log ; log oak trees\n      :parameters (?p - player ?loc - location ?oak_log - log) \n      :precondition (and (at ?p ?loc) (at ?oak_log ?loc) (dry ?oak_log))\n      :effect (and (inventory ?p ?oak_log))\n   )",
+            "(:action get_pot ; retrieve a pot to hold water\n      :parameters (?p - player ?loc - location ?pot - pot)\n      :precondition (and (at ?p ?loc) (at ?pot ?loc))\n      :effect (and (inventory ?p ?pot))\n   )",
+            "(:action break_branch ; break larger branches into smaller pieces\n      :parameters (?p - player ?loc - location ?branch_piece - kindling) \n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (at ?branch_piece ?loc))\n   )",
+            "(:action get_branch ; gather a solid branch to start fire\n      :parameters (?p - player ?loc - location ?branch - branch)\n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (inventory ?p ?branch))\n   )"
+        ],
+        "goal_state": "((inventory npc branch_piece))"
+    },
+    {
+        "task": "collect_fuel",
+        "step": [
+            "get axe npc camp",
+            "go west npc camp path",
+            "go south npc path oaks",
+            "log_oak npc oaks axe oak_log",
+            "get oak_log npc oaks",
+            "stack_log npc oak_log log_stack"
+        ],
+        "desc": [
+            "Find small, dry material to use as tinder. Look for dry grass, leaves, tree bark, pine needles, or any other small flammable materials you can find in the area. Tinder needs to be material that is easy to light and will produce a large flame so you can start your fire.",
+            "Gather small twigs and branches to use for kindling. Kindling needs to be material that will catch easily when you light your tinder."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action get_wood ; gather a flat piece of solid wood to start fire\n      :parameters (?p - player ?loc - location ?wood - wood)\n      :precondition (and (at ?p ?loc) (at ?wood ?loc))\n      :effect (and (inventory ?p ?wood))\n   )",
+            "(:action get_water ; retrieve some natural but possibly contaminated water\n      :parameters (?p - player ?loc - location ?water - water ?pot - pot)\n      :precondition (and (at ?p ?loc) (has_pond ?loc) (inventory ?p ?pot))\n      :effect (and (inventory ?p ?water))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_grass ; gather grass that is not dry at the first time\n      :parameters (?p - player ?loc - location ?grass - grass)\n      :precondition (and (at ?p ?loc) (at ?grass ?loc))\n      :effect (and (inventory ?p ?grass) (not (dry ?grass)))\n   )",
+            "(:action get_log ; log oak trees\n      :parameters (?p - player ?loc - location ?oak_log - log) \n      :precondition (and (at ?p ?loc) (at ?oak_log ?loc) (dry ?oak_log))\n      :effect (and (inventory ?p ?oak_log))\n   )",
+            "(:action stack_log ; stack dry logs to make enough fuel \n      :parameters (?p - player ?oak_log - log ?log_stack - fuel) \n      :precondition (and (inventory ?p ?oak_log))\n      :effect (and (inventory ?p ?log_stack) (not (inventory ?p ?oak_log)))\n   )",
+            "(:action get_pot ; retrieve a pot to hold water\n      :parameters (?p - player ?loc - location ?pot - pot)\n      :precondition (and (at ?p ?loc) (at ?pot ?loc))\n      :effect (and (inventory ?p ?pot))\n   )",
+            "(:action get_branch ; gather a solid branch to start fire\n      :parameters (?p - player ?loc - location ?branch - branch)\n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (inventory ?p ?branch))\n   )",
+            "(:action log_oak ; log oak trees\n      :parameters (?p - player ?loc - location ?axe - item ?oak_log - log) \n      :precondition (and (at ?p ?loc) (has_dry_oak ?loc) (inventory ?p ?axe))\n      :effect (and (at ?oak_log ?loc) (dry ?oak_log))\n   )"
+        ],
+        "goal_state": "((inventory npc log_stack))"
+    },
+    {
+        "task": "find_tinder",
+        "step": [
+            "go west npc camp path",
+            "go north npc path grassland",
+            "get grass npc grassland",
+            "cluster_grass npc grass grass_tinder"
+        ],
+        "desc": [
+            "Build a snare if you have string or wire. A snare is a safe and relatively easy way to catch small game like rabbits and squirrels. Take a piece of wire or string about 2.5 feet (0.76 m) long, make a loop at one end and tie a slip knot. Then push the opposite end of the string or wire through the slip knot to form a large circle. Hang the circle of the snare over a footpath or a trail in the woods."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action get_wood ; gather a flat piece of solid wood to start fire\n      :parameters (?p - player ?loc - location ?wood - wood)\n      :precondition (and (at ?p ?loc) (at ?wood ?loc))\n      :effect (and (inventory ?p ?wood))\n   )",
+            "(:action cluster_grass ; cluster gatherd dry grass to make tinder\n      :parameters (?p - player ?dry_grass - grass ?grass_tinder - tinder) \n      :precondition (and (inventory ?p ?dry_grass))\n      :effect (and (inventory ?p ?grass_tinder) (not (inventory ?p ?dry_grass)))\n   )",
+            "(:action get_water ; retrieve some natural but possibly contaminated water\n      :parameters (?p - player ?loc - location ?water - water ?pot - pot)\n      :precondition (and (at ?p ?loc) (has_pond ?loc) (inventory ?p ?pot))\n      :effect (and (inventory ?p ?water))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_grass ; gather grass that is not dry at the first time\n      :parameters (?p - player ?loc - location ?grass - grass)\n      :precondition (and (at ?p ?loc) (at ?grass ?loc))\n      :effect (and (inventory ?p ?grass) (not (dry ?grass)))\n   )",
+            "(:action get_log ; log oak trees\n      :parameters (?p - player ?loc - location ?oak_log - log) \n      :precondition (and (at ?p ?loc) (at ?oak_log ?loc) (dry ?oak_log))\n      :effect (and (inventory ?p ?oak_log))\n   )",
+            "(:action get_pot ; retrieve a pot to hold water\n      :parameters (?p - player ?loc - location ?pot - pot)\n      :precondition (and (at ?p ?loc) (at ?pot ?loc))\n      :effect (and (inventory ?p ?pot))\n   )",
+            "(:action get_branch ; gather a solid branch to start fire\n      :parameters (?p - player ?loc - location ?branch - branch)\n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (inventory ?p ?branch))\n   )"
+        ],
+        "goal_state": "((inventory npc grass_tinder))"
+    },
+    {
+        "task": "start_fire",
+        "step": [
+            "go west npc camp path",
+            "go north npc path grassland",
+            "go north npc grassland bush",
+            "break_branch npc bush branch_piece",
+            "get_branch npc bush branch",
+            "get branch_piece npc bush",
+            "go south npc bush grassland",
+            "get grass npc grassland",
+            "go south npc grassland path",
+            "go south npc path oaks",
+            "log_oak npc oaks branch oak_log",
+            "get flat_wood npc oaks",
+            "get oak_log npc oaks",
+            "go north npc oaks path",
+            "go east npc path camp",
+            "cluster_grass npc grass grass_tinder",
+            "stack_log npc oak_log log_stack",
+            "build_teepee npc camp grass_tinder branch_piece log_stack teepee_structure",
+            "ignite_wood npc camp flat_wood branch teepee_structure",
+            "ignite_teepee npc camp flat_wood teepee_structure"
+        ],
+        "desc": [
+            "Find a branch 10 feet (3.0 m) long and 3\u20136 inches (7.6\u201315.2 cm) thick. To form your shelter you need a support beam, so look for a sturdy tree branch that isn't rotting. The straighter the branch, the better it will be for forming the structure of your shelter.",
+            "Use dry sticks, branches, or tree bark to serve as your kindling.",
+            "Avoid hunting large animals. If you're trying to survive in the woods, you need to be as healthy as you can be. While deer and wild pigs do have nutritious meat, they can injure you if you do not have the right gun to get the animals down humanely. Even if you can kill a deer or pig, you may not have the tools necessary to preserve the massive amount of meat that has come from the once-living animal. Small game and insects are much safer to hunt and gather and can provide you with adequate nutrition to survive in the woods.",
+            "Find small, dry material to use as tinder. Look for dry grass, leaves, tree bark, pine needles, or any other small flammable materials you can find in the area. Tinder needs to be material that is easy to light and will produce a large flame so you can start your fire.",
+            "Build a snare if you have string or wire. A snare is a safe and relatively easy way to catch small game like rabbits and squirrels. Take a piece of wire or string about 2.5 feet (0.76 m) long, make a loop at one end and tie a slip knot. Then push the opposite end of the string or wire through the slip knot to form a large circle. Hang the circle of the snare over a footpath or a trail in the woods.",
+            "Gather small twigs and branches to use for kindling. Kindling needs to be material that will catch easily when you light your tinder."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action get_wood ; gather a flat piece of solid wood to start fire\n      :parameters (?p - player ?loc - location ?wood - wood)\n      :precondition (and (at ?p ?loc) (at ?wood ?loc))\n      :effect (and (inventory ?p ?wood))\n   )",
+            "(:action cluster_grass ; cluster gatherd dry grass to make tinder\n      :parameters (?p - player ?dry_grass - grass ?grass_tinder - tinder) \n      :precondition (and (inventory ?p ?dry_grass))\n      :effect (and (inventory ?p ?grass_tinder) (not (inventory ?p ?dry_grass)))\n   )",
+            "(:action build_teepee ; build a teepee structure with tinder, kindling, and fuel logs\n      :parameters (?p - player ?loc - location ?tinder - tinder ?kindling - kindling ?fuel_logs - fuel ?teepee - teepee)\n      :precondition (and (inventory ?p ?tinder) (inventory ?p ?kindling) (inventory ?p ?fuel_logs) (has_dry_even_area ?loc) (at ?p ?loc))\n      :effect (and (at ?teepee ?loc) (not (inventory ?p ?tinder)) (not (inventory ?p ?kindling)) (not (inventory ?p ?fuel_logs)))\n   )",
+            "(:action get_water ; retrieve some natural but possibly contaminated water\n      :parameters (?p - player ?loc - location ?water - water ?pot - pot)\n      :precondition (and (at ?p ?loc) (has_pond ?loc) (inventory ?p ?pot))\n      :effect (and (inventory ?p ?water))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_grass ; gather grass that is not dry at the first time\n      :parameters (?p - player ?loc - location ?grass - grass)\n      :precondition (and (at ?p ?loc) (at ?grass ?loc))\n      :effect (and (inventory ?p ?grass) (not (dry ?grass)))\n   )",
+            "(:action ignite_wood ; ignite wood by plough it to create heat via friction\n      :parameters (?p - player ?loc - location ?wood - wood ?branch - branch ?teepee - teepee)\n      :precondition (and (at ?p ?loc) (at ?teepee ?loc) (inventory ?p ?wood) (inventory ?p ?branch))\n      :effect (and (ignited ?wood))\n   )",
+            "(:action get_log ; log oak trees\n      :parameters (?p - player ?loc - location ?oak_log - log) \n      :precondition (and (at ?p ?loc) (at ?oak_log ?loc) (dry ?oak_log))\n      :effect (and (inventory ?p ?oak_log))\n   )",
+            "(:action stack_log ; stack dry logs to make enough fuel \n      :parameters (?p - player ?oak_log - log ?log_stack - fuel) \n      :precondition (and (inventory ?p ?oak_log))\n      :effect (and (inventory ?p ?log_stack) (not (inventory ?p ?oak_log)))\n   )",
+            "(:action ignite_teepee ; ignite teepe with ignited wood to start fire\n      :parameters (?p - player ?loc - location ?wood - wood ?teepee - teepee)\n      :precondition (and (at ?p ?loc) (at ?teepee ?loc) (inventory ?p ?wood) (ignited ?wood))\n      :effect (and (ignited ?teepee))\n   )",
+            "(:action break_branch ; break larger branches into smaller pieces\n      :parameters (?p - player ?loc - location ?branch_piece - kindling) \n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (at ?branch_piece ?loc))\n   )",
+            "(:action get_branch ; gather a solid branch to start fire\n      :parameters (?p - player ?loc - location ?branch - branch)\n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (inventory ?p ?branch))\n   )",
+            "(:action log_oak ; log oak trees\n      :parameters (?p - player ?loc - location ?axe - item ?oak_log - log) \n      :precondition (and (at ?p ?loc) (has_dry_oak ?loc) (inventory ?p ?axe))\n      :effect (and (at ?oak_log ?loc) (dry ?oak_log))\n   )",
+            "(:action get_pot ; retrieve a pot to hold water\n      :parameters (?p - player ?loc - location ?pot - pot)\n      :precondition (and (at ?p ?loc) (at ?pot ?loc))\n      :effect (and (inventory ?p ?pot))\n   )"
+        ],
+        "goal_state": "((ignited teepee_structure))"
+    },
+    {
+        "task": "build_teepee",
+        "step": [
+            "go west npc camp path",
+            "go north npc path grassland",
+            "go north npc grassland bush",
+            "break_branch npc bush branch_piece",
+            "get branch_piece npc bush",
+            "go south npc bush grassland",
+            "get grass npc grassland",
+            "go south npc grassland path",
+            "go south npc path oaks",
+            "log_oak npc oaks grass oak_log",
+            "get oak_log npc oaks",
+            "go north npc oaks path",
+            "go east npc path camp",
+            "cluster_grass npc grass grass_tinder",
+            "stack_log npc oak_log log_stack",
+            "build_teepee npc camp grass_tinder branch_piece log_stack teepee_structure"
+        ],
+        "desc": [
+            "Build a snare if you have string or wire. A snare is a safe and relatively easy way to catch small game like rabbits and squirrels. Take a piece of wire or string about 2.5 feet (0.76 m) long, make a loop at one end and tie a slip knot. Then push the opposite end of the string or wire through the slip knot to form a large circle. Hang the circle of the snare over a footpath or a trail in the woods.",
+            "Avoid hunting large animals. If you're trying to survive in the woods, you need to be as healthy as you can be. While deer and wild pigs do have nutritious meat, they can injure you if you do not have the right gun to get the animals down humanely. Even if you can kill a deer or pig, you may not have the tools necessary to preserve the massive amount of meat that has come from the once-living animal. Small game and insects are much safer to hunt and gather and can provide you with adequate nutrition to survive in the woods.",
+            "Find small, dry material to use as tinder. Look for dry grass, leaves, tree bark, pine needles, or any other small flammable materials you can find in the area. Tinder needs to be material that is easy to light and will produce a large flame so you can start your fire.",
+            "Gather small twigs and branches to use for kindling. Kindling needs to be material that will catch easily when you light your tinder."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action get_wood ; gather a flat piece of solid wood to start fire\n      :parameters (?p - player ?loc - location ?wood - wood)\n      :precondition (and (at ?p ?loc) (at ?wood ?loc))\n      :effect (and (inventory ?p ?wood))\n   )",
+            "(:action cluster_grass ; cluster gatherd dry grass to make tinder\n      :parameters (?p - player ?dry_grass - grass ?grass_tinder - tinder) \n      :precondition (and (inventory ?p ?dry_grass))\n      :effect (and (inventory ?p ?grass_tinder) (not (inventory ?p ?dry_grass)))\n   )",
+            "(:action build_teepee ; build a teepee structure with tinder, kindling, and fuel logs\n      :parameters (?p - player ?loc - location ?tinder - tinder ?kindling - kindling ?fuel_logs - fuel ?teepee - teepee)\n      :precondition (and (inventory ?p ?tinder) (inventory ?p ?kindling) (inventory ?p ?fuel_logs) (has_dry_even_area ?loc) (at ?p ?loc))\n      :effect (and (at ?teepee ?loc) (not (inventory ?p ?tinder)) (not (inventory ?p ?kindling)) (not (inventory ?p ?fuel_logs)))\n   )",
+            "(:action get_water ; retrieve some natural but possibly contaminated water\n      :parameters (?p - player ?loc - location ?water - water ?pot - pot)\n      :precondition (and (at ?p ?loc) (has_pond ?loc) (inventory ?p ?pot))\n      :effect (and (inventory ?p ?water))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_grass ; gather grass that is not dry at the first time\n      :parameters (?p - player ?loc - location ?grass - grass)\n      :precondition (and (at ?p ?loc) (at ?grass ?loc))\n      :effect (and (inventory ?p ?grass) (not (dry ?grass)))\n   )",
+            "(:action get_log ; log oak trees\n      :parameters (?p - player ?loc - location ?oak_log - log) \n      :precondition (and (at ?p ?loc) (at ?oak_log ?loc) (dry ?oak_log))\n      :effect (and (inventory ?p ?oak_log))\n   )",
+            "(:action stack_log ; stack dry logs to make enough fuel \n      :parameters (?p - player ?oak_log - log ?log_stack - fuel) \n      :precondition (and (inventory ?p ?oak_log))\n      :effect (and (inventory ?p ?log_stack) (not (inventory ?p ?oak_log)))\n   )",
+            "(:action get_pot ; retrieve a pot to hold water\n      :parameters (?p - player ?loc - location ?pot - pot)\n      :precondition (and (at ?p ?loc) (at ?pot ?loc))\n      :effect (and (inventory ?p ?pot))\n   )",
+            "(:action break_branch ; break larger branches into smaller pieces\n      :parameters (?p - player ?loc - location ?branch_piece - kindling) \n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (at ?branch_piece ?loc))\n   )",
+            "(:action get_branch ; gather a solid branch to start fire\n      :parameters (?p - player ?loc - location ?branch - branch)\n      :precondition (and (at ?p ?loc) (has_large_dry_branch ?loc))\n      :effect (and (inventory ?p ?branch))\n   )",
+            "(:action log_oak ; log oak trees\n      :parameters (?p - player ?loc - location ?axe - item ?oak_log - log) \n      :precondition (and (at ?p ?loc) (has_dry_oak ?loc) (inventory ?p ?axe))\n      :effect (and (at ?oak_log ?loc) (dry ?oak_log))\n   )"
+        ],
+        "goal_state": "((at teepee_structure camp))"
+    }
+]

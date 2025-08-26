@@ -1,0 +1,14 @@
+{
+    "prepare": [
+        "(:action prepare_planting_area\n :parameters (?area - location ?p - player)\n :precondition (at ?p ?area)\n :effect (prepared ?area))\n\n"
+    ],
+    "take": [
+        "(:action take_cutting\n :parameters (?rosebush - plant ?clipping - cutting ?p - player)\n :precondition (and (attached ?clipping ?rosebush) (has_tool ?p scissors))\n :effect (and (not (attached ?clipping ?rosebush)) (cut ?clipping)))\n\n"
+    ],
+    "moisten": [
+        "(:action moisten_and_dip\n :parameters (?clipping - cutting ?p - player ?hormone - substance)\n :precondition (and (cut ?clipping) (has_tool ?p water) (has_tool ?p ?hormone))\n :effect (and (moistened ?clipping) (dipped_in_rooting_hormone ?clipping)))\n\n"
+    ],
+    "plant": [
+        "(:action plant_cutting\n :parameters (?clipping - cutting ?area - location ?p - player)\n :precondition (and (prepared ?area) (moistened ?clipping) (dipped_in_rooting_hormone ?clipping))\n :effect (planted ?clipping ?area))\n```\n\nExplanation:\n1. **prepare_planting_area**: This action prepares the pot or area where the clipping will be planted.\n   - Preconditions: The player must be at the area.\n   - Effects: The area is marked as prepared.\n\n2. **take_cutting**: This action involves taking a cutting from the rose bush.\n   - Preconditions: The clipping must be attached to the rosebush, and the player must have scissors.\n   - Effects: The clipping is no longer attached and is marked as cut.\n\n3. **moisten_and_dip**: This action moistens the part of the clipping and dips it into rooting hormone.\n   - Preconditions: The clipping must be cut, and the player must have water and rooting hormone.\n   - Effects: The clipping is moistened and dipped in rooting hormone.\n\n4. **plant_cutting**: This action plants the prepared clipping in the prepared area.\n   - Preconditions: The area must be prepared, and the clipping must be moistened and dipped in rooting hormone.\n   - Effects: The clipping is planted in the area.\n\nThese actions follow the structure provided in the example and capture the necessary steps and conditions to grow a rose bush from cuttings."
+    ]
+}

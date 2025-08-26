@@ -1,0 +1,35 @@
+[
+    {
+        "cluster_label": 2606,
+        "task": "How to Create a Pregnancy Memory Album",
+        "step": [
+            "Choose your preferred booking making application (e.g.",
+            "Keep a camera and film on hand at all times.",
+            "Put together your baby memory book as the pregnancy progresses, or assemble your different stories in a notebook and make it all at once.",
+            "Collect memorabilia.",
+            "Don't forget to include an account of how mom told dad she was pregnant, a photo of parents assembling the crib, and photos of when you were decorating the nursery.",
+            "Document food cravings.",
+            "Document expanding sizes, new developments and changing name choices.",
+            "Make a family tree.",
+            "Tape interviews with family members for ideas about what will change, what the baby will be like and what their hopes are for the future.",
+            "Be sure that both mom and dad write a special section full of their individual hopes and dreams for the new baby.",
+            "Don't forget to include space for sonogram photos, hospital photos and items, and birth pictures.",
+            "Also jot down moods and dreams."
+        ],
+        "steps_predictions": [
+            "choose_application npc covering_tracks track",
+            "keep_camera_and_film camera",
+            "collect_memebers npc",
+            "collect_memebers npc",
+            "create_account npc",
+            "document_cravings food cravings",
+            "document_new_name npc covering_tracks track",
+            "make_family_tree npc family tree",
+            "teach_new_member_secret npc",
+            "create_memebers_know npc",
+            "be_amazed npc",
+            "create_mixture_and_dreams character"
+        ],
+        "goal_state": " ((not (in npc family)))"
+    }
+]

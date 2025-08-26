@@ -1,0 +1,8 @@
+(select_vs_duel duel1)
+(select_character player2 goku)
+(select_character player1 goku)
+(move_to_wall player1 player2 away_from_wall away_from_wall)
+(specify_stage stage1)
+(select_player player2)
+(select_player player1)
+; cost = 7 (unit cost)

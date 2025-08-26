@@ -1,0 +1,13 @@
+{
+    "catch": [
+        "(:action catch_or_trade_vulpix\n    :parameters (?p - player ?v - vulpix)\n    :precondition (and (in_wild ?v))\n    :effect (and (caught ?v) (owned ?v) (not (in_wild ?v)))\n)\n\n",
+        "(:action find_stone\n    :parameters (?p - player ?s - stone ?loc - location)\n    :precondition (and (at ?p ?loc) (not (in_bag ?s)))\n    :effect (and (in_bag ?s) (not (at ?s ?loc)))\n)\n\n",
+        "(:action select_bag\n    :parameters (?p - player ?b - bag)\n    :precondition (and (owned ?p) (have_bag ?b))\n    :effect (and (bag_selected ?b))\n)\n\n"
+    ],
+    "use": [
+        "(:action use_stone\n    :parameters (?p - player ?v - vulpix ?s - stone)\n    :precondition (and (owned ?v) (in_bag ?s) (bag_selected ?b))\n    :effect (and (evolving ?v) (not (in_bag ?s)))\n)\n\n"
+    ],
+    "wait": [
+        "(:action wait_for_evolution\n    :parameters (?v - vulpix)\n    :precondition (and (evolving ?v))\n    :effect (and (evolved ?v) (not (evolving ?v)))\n)\n```\n\nThese actions capture the intent and logic of each step required to evolve a Vulpix in Pok\u00e9mon, based on the provided descriptions and entity states."
+    ]
+}

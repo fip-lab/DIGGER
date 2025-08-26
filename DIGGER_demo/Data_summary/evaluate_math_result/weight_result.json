@@ -1,0 +1,137 @@
+[
+    {
+        "DIGGER_plan": {
+            "BERTScore_P": 0.415,
+            "BERTScore_F1": 0.393,
+            "BLEU-4": 0.201,
+            "METEOR": 0.348,
+            "BLEU-2": 0.298,
+            "BLEU-3": 0.241,
+            "ROUGE-2-F1": 0.332,
+            "BLEU-1": 0.395,
+            "ROUGE-L-F1": 0.512,
+            "BERTScore_R": 0.371,
+            "ROUGE-1-F1": 0.52
+        }
+    },
+    {
+        "gpt-4o": {
+            "BERTScore_P": -0.313,
+            "BERTScore_F1": -0.136,
+            "BLEU-4": 0.005,
+            "METEOR": 0.173,
+            "BLEU-2": 0.027,
+            "BLEU-3": 0.011,
+            "ROUGE-2-F1": 0.015,
+            "BLEU-1": 0.068,
+            "ROUGE-L-F1": 0.109,
+            "BERTScore_R": 0.052,
+            "ROUGE-1-F1": 0.115
+        }
+    },
+    {
+        "deepseek_v3": {
+            "BERTScore_P": -0.259,
+            "BERTScore_F1": -0.082,
+            "BLEU-4": 0.006,
+            "METEOR": 0.177,
+            "BLEU-2": 0.029,
+            "BLEU-3": 0.013,
+            "ROUGE-2-F1": 0.018,
+            "BLEU-1": 0.072,
+            "ROUGE-L-F1": 0.124,
+            "BERTScore_R": 0.108,
+            "ROUGE-1-F1": 0.129
+        }
+    },
+    {
+        "no_step": {
+            "BERTScore_P": 0.399,
+            "BERTScore_F1": 0.38,
+            "BLEU-4": 0.151,
+            "METEOR": 0.304,
+            "BLEU-2": 0.261,
+            "BLEU-3": 0.199,
+            "ROUGE-2-F1": 0.243,
+            "BLEU-1": 0.365,
+            "ROUGE-L-F1": 0.465,
+            "BERTScore_R": 0.362,
+            "ROUGE-1-F1": 0.471
+        }
+    },
+    {
+        "no_entity": {
+            "BERTScore_P": 0.413,
+            "BERTScore_F1": 0.39,
+            "BLEU-4": 0.172,
+            "METEOR": 0.338,
+            "BLEU-2": 0.271,
+            "BLEU-3": 0.212,
+            "ROUGE-2-F1": 0.287,
+            "BLEU-1": 0.374,
+            "ROUGE-L-F1": 0.493,
+            "BERTScore_R": 0.366,
+            "ROUGE-1-F1": 0.501
+        }
+    },
+    {
+        "gpt-4": {
+            "BERTScore_P": -0.111,
+            "BERTScore_F1": 0.001,
+            "BLEU-4": 0.007,
+            "METEOR": 0.188,
+            "BLEU-2": 0.037,
+            "BLEU-3": 0.015,
+            "ROUGE-2-F1": 0.018,
+            "BLEU-1": 0.089,
+            "ROUGE-L-F1": 0.135,
+            "BERTScore_R": 0.118,
+            "ROUGE-1-F1": 0.141
+        }
+    },
+    {
+        "no_Instanting": {
+            "BERTScore_P": 0.4,
+            "BERTScore_F1": 0.383,
+            "BLEU-4": 0.189,
+            "METEOR": 0.343,
+            "BLEU-2": 0.289,
+            "BLEU-3": 0.231,
+            "ROUGE-2-F1": 0.315,
+            "BLEU-1": 0.387,
+            "ROUGE-L-F1": 0.512,
+            "BERTScore_R": 0.365,
+            "ROUGE-1-F1": 0.519
+        }
+    },
+    {
+        "clap": {
+            "BLEU-1": 0.02,
+            "BLEU-2": 0.005,
+            "BLEU-3": 0.003,
+            "BLEU-4": 0.002,
+            "METEOR": 0.043,
+            "ROUGE-1-F1": 0.035,
+            "ROUGE-2-F1": 0.002,
+            "ROUGE-L-F1": 0.033,
+            "BERTScore_P": -0.036,
+            "BERTScore_R": 0.047,
+            "BERTScore_F1": 0.005
+        }
+    },
+    {
+        "org_step": {
+            "BLEU-1": 0.385,
+            "BLEU-2": 0.293,
+            "BLEU-3": 0.252,
+            "BLEU-4": 0.23,
+            "METEOR": 0.395,
+            "ROUGE-1-F1": 0.427,
+            "ROUGE-2-F1": 0.274,
+            "ROUGE-L-F1": 0.418,
+            "BERTScore_P": 0.414,
+            "BERTScore_R": 0.388,
+            "BERTScore_F1": 0.401
+        }
+    }
+]

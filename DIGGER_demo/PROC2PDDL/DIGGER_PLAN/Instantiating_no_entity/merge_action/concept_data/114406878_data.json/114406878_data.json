@@ -1,0 +1,24 @@
+{
+    "cluster": [
+        "(:action cluster_grass\n    :parameters (?n - npc ?g - grass ?t - grass_tinder)\n    :precondition (and \n                    (not (clustered ?g))\n                    (not (clustered ?t))\n                  )\n    :effect (and \n              (clustered ?g)\n              (clustered ?t)\n            )\n)\n\n;; Action 2: Start Fire\n"
+    ],
+    "get": [
+        "(:action get_water\n    :parameters (?n - npc ?w - water)\n    :precondition (and\n                    (not (collected ?w))\n                    (source_of_water ?w)\n                  )\n    :effect (collected ?w)\n)\n\n;; Action 3: Start Fire\n",
+        "(:action find_tinder\n    :parameters (?t - tinder)\n    :precondition (not (collected ?t))\n    :effect (collected ?t)\n)\n\n;; Action 2: Gather Kindling\n",
+        "(:action gather_kindling\n    :parameters (?k - kindling)\n    :precondition (not (collected ?k))\n    :effect (collected ?k)\n)\n\n;; Action 3: Build Teepee Structure\n"
+    ],
+    "start": [
+        "(:action start_fire\n    :parameters (?n - npc ?c - camp ?t - teepee_structure)\n    :precondition (and \n                    (clustered ?g) \n                    (clustered ?t)\n                    (not (fire_started ?c))\n                  )\n    :effect (fire_started ?c)\n)\n\n;; Action 3: Break Branch\n"
+    ],
+    "break": [
+        "(:action break_branch\n    :parameters (?n - npc ?b - bush ?bp - branch_piece)\n    :precondition (and \n                    (not (broken ?bp))\n                  )\n    :effect (broken ?bp)\n)\n\n;; Action 4: Build Teepee\n"
+    ],
+    "build": [
+        "(:action build_shelter\n    :parameters (?npc - agent ?c - camp ?t - teepee_structure)\n    :precondition (and\n                    (not (built_shelter ?c))\n                    (available ?t)\n                  )\n    :effect (built_shelter ?c)\n  )\n\n;; Action 5: Cook on Campfire\n",
+        "(:action build_teepee\n    :parameters (?n - npc ?c - camp ?t - teepee_structure)\n    :precondition (and\n                    (fire_started ?c)\n                    (broken ?bp)\n                    (not (built_teepee ?t))\n                  )\n    :effect (built_teepee ?t)\n)\n```\n\n### Explanation:\n\n- **Action 1: Cluster Grass**\n  - **Parameters**: Involves an NPC, grass, and grass tinder.\n  - **Preconditions**: Grass and grass tinder are not yet clustered.\n  - **Effects**: Grass and grass tinder become clustered.\n\n- **Action 2: Start Fire**\n  - **Parameters**: Involves an NPC, camp, and teepee structure.\n  - **Preconditions**: Grass and grass tinder are clustered, and the fire is not started.\n  - **Effects**: The fire is started in the camp.\n\n- **Action 3: Break Branch**\n  - **Parameters**: Involves an NPC, bush, and branch piece.\n  - **Preconditions**: The branch piece is not broken.\n  - **Effects**: The branch piece is broken.\n\n- **Action 4: Build Teepee**\n  - **Parameters**: Involves an NPC, camp, and teepee structure.\n  - **Preconditions**: The fire is started, a branch piece is broken, and the teepee is not built.\n  - **Effects**: The teepee structure is built. \n\nThese actions capture the steps required to build a teepee by utilizing the gathered materials and starting a fire as described in the task steps.",
+        "(:action cook\n    :parameters (?npc - agent ?c - camp ?t - teepee_structure ?f - campfire)\n    :precondition (and\n                    (fire_started ?f)\n                    (built_teepee ?t)\n                  )\n    :effect (cooked_meal ?npc)\n  )\n\n;; Action 6: Build Teepee Structure\n"
+    ],
+    "burn": [
+        "(:action burn_wood\n    :parameters (?p - person ?w - wood)\n    :precondition (and\n                    (not (burned ?w))\n                    (fire_started ?c)\n                  )\n    :effect (burned ?w)\n)\n\n;; Action 8: Build Teepee\n"
+    ]
+}

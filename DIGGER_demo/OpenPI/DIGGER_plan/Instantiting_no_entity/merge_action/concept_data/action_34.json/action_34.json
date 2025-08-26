@@ -1,0 +1,16 @@
+{
+    "clean": [
+        "(:action clean_underpants\n    :parameters (?u - underpants)\n    :precondition (and (dirty ?u))\n    :effect (and (clean ?u) (not (dirty ?u)))\n)\n\n",
+        "(:action wear_underpants\n    :parameters (?u - underpants ?c - child)\n    :precondition (and (clean ?u) (not (damaged ?u)) (child ?c))\n    :effect (and (wearing ?c ?u) (not (clean ?u)))\n)\n\n"
+    ],
+    "use": [
+        "(:action use_as_garden_ties\n    :parameters (?u - underpants)\n    :precondition (and (clean ?u) (not (damaged ?u)))\n    :effect (and (used_as_garden_ties ?u) (not (clean ?u)))\n)\n\n",
+        "(:action use_as_stuffing\n    :parameters (?u - underpants)\n    :precondition (and (bundle ?u) (old ?u))\n    :effect (and (used_as_stuffing ?u) (not (bundle ?u)))\n)\n\n"
+    ],
+    "make": [
+        "(:action make_craft_item\n    :parameters (?u - underpants ?s - scissors)\n    :precondition (and (clean ?u) (quality ?u) (has_tool ?s))\n    :effect (and (craft_item ?u) (not (quality ?u)))\n)\n\n"
+    ],
+    "donate": [
+        "(:action donate_underpants\n    :parameters (?u - underpants)\n    :precondition (and (clean ?u) (not (damaged ?u)))\n    :effect (and (donated ?u) (not (clean ?u)))\n)\n\nThese actions capture the intent and logic of each step described in the task of recycling underpants."
+    ]
+}

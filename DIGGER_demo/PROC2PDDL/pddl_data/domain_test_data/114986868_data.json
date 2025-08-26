@@ -1,0 +1,131 @@
+[
+    {
+        "task": "drink_water",
+        "step": [
+            "get container npc camp",
+            "go east npc camp path",
+            "go east npc path riverside",
+            "collect_water npc container water riverside",
+            "go north npc riverside rainforest",
+            "get_wood npc wood rainforest",
+            "make_drill npc wood drill",
+            "make_fire npc drill rainforest",
+            "filter_water npc water",
+            "boil_water npc water rainforest",
+            "drink_water npc water"
+        ],
+        "desc": [
+            "Boil water from streams to kill any bacteria. Look for running streams to find fresh water. Filter out any particles through a sock, shirt, or other fabric, then start a fire and boil the water to kill bacteria that can make you sick.",
+            "The plastic sheet will accumulate condensation that will drip down the underside of the sheet and into the container. This water is distilled and safe to drink.",
+            "Make a solar water still with a container and a plastic sheet. Dig a hole in an area that receives at least some direct sunlight and put a container, such as a water bottle or can, in the middle of the hole. Fill the space between the sides of the hole and the container with wet leaves. Place a plastic sheet over the top of the hole and put rocks or other heavy objects around the edges to hold it in place. Put a small stone in the middle of the sheet above the container.",
+            "If you don\u2019t have a water bottle or other container to collect water, try to find other natural containers in the jungle such as a coconut shell or piece of wood shaped like a bowl. You can also leave these items out when it rains to collect the fresh water."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action make_fire ; make fire at a location\n      :parameters (?p - player ?drill - drill ?loc - location) \n      :precondition (and (inventory ?p ?drill) (at ?p ?loc) (not (has_fire ?loc)))\n      :effect (and (has_fire ?loc))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action boil_water ; boil water to kill any bacteria\n      :parameters (?p - player ?water - water ?loc - location) \n      :precondition (and (inventory ?p ?water) (at ?p ?loc) (filtered ?water) (not (boiled ?water)) (has_fire ?loc))\n      :effect (and (boiled ?water))\n   )",
+            "(:action drink_water ; drink boiled water \n      :parameters (?p - player ?water - water) \n      :precondition (and (inventory ?p ?water) (boiled ?water))\n      :effect (and (not (thirsty ?p)))\n   )",
+            "(:action make_drill ; make a drill using wood to create fire\n      :parameters (?p - player ?wood - wood ?drill - drill) \n      :precondition (and (inventory ?p ?wood) (not (inventory ?p ?drill)))\n      :effect (and (inventory ?p ?drill))\n   )",
+            "(:action filter_water ; filter water to remove any particles\n      :parameters (?p - player ?water - water) \n      :precondition (and (inventory ?p ?water) (not (filtered ?water)))\n      :effect (and (filtered ?water))\n   )",
+            "(:action get_wood ; get wood from a location that has trees\n      :parameters (?p - player ?wood - wood ?loc - location) \n      :precondition (and (at ?p ?loc) (has_tree ?loc) (not (inventory ?p ?wood)))\n      :effect (and (inventory ?p ?wood))\n   )",
+            "(:action get_foliage ; get foliage from a location that has trees\n      :parameters (?p - player ?foliage - foliage ?loc - location) \n      :precondition (and (at ?p ?loc) (has_tree ?loc) (not (inventory ?p ?foliage)))\n      :effect (and (inventory ?p ?foliage))\n   )",
+            "(:action collect_water ; use container to collect water from a location that has water\n      :parameters (?p - player ?container - container ?water - water ?loc - location) \n      :precondition (and (at ?p ?loc) (has_water ?loc) (inventory ?p ?container) (not (inventory ?p ?water)))\n      :effect (and (inventory ?p ?water) (not (filtered ?water)) (not (boiled ?water)))\n   )"
+        ],
+        "goal_state": "((not (thirsty npc)))"
+    },
+    {
+        "task": "safe_in_cave",
+        "step": [
+            "go east npc camp path",
+            "go east npc path riverside",
+            "go north npc riverside rainforest",
+            "get_wood npc wood rainforest",
+            "get_foliage npc foliage rainforest",
+            "go east npc rainforest cave",
+            "make_drill npc wood drill",
+            "build_shelter npc wood foliage cave",
+            "make_fire npc drill cave",
+            "make_spear npc spear wood",
+            "survive npc spear cave"
+        ],
+        "desc": [
+            "The plastic sheet will accumulate condensation that will drip down the underside of the sheet and into the container. This water is distilled and safe to drink.",
+            "Place shorter sticks and branches against the sides of the center pole. Line the length of the middle stick with branches going outward towards the ground at a 45-degree angle. The more sticks you can find to place along the sides, the easier it will be to cover your shelter.",
+            "Make a 4-pronged bamboo spear to fish with. Find a 6-ft (1.8 m) stalk of bamboo and cut 4- 6 in (15.24 cm) slits into 1 end of it with a knife or sharp rock. Weave a piece of vine into the slits to separate the tip of the bamboo into 4 prongs and sharpen them with a knife or a sharp rock.",
+            "If you don\u2019t have a water bottle or other container to collect water, try to find other natural containers in the jungle such as a coconut shell or piece of wood shaped like a bowl. You can also leave these items out when it rains to collect the fresh water.",
+            "Think about where you came from if you got lost on foot. Orient yourself using any landmarks you remember, such as a hill in the distance or a river. Get back to a point you remember to find the trail again or head back in the direction of a village that you came from.",
+            "Boil water from streams to kill any bacteria. Look for running streams to find fresh water. Filter out any particles through a sock, shirt, or other fabric, then start a fire and boil the water to kill bacteria that can make you sick.",
+            "Cover the sides with leaves and foliage to cover the lean-to shelter. Find large leaves and lay them over top of the frame you built. Cover the shelter as well as you can to protect you from the elements and keep animals out."
+        ],
+        "action": [
+            "(:action make_fire ; make fire at a location\n      :parameters (?p - player ?drill - drill ?loc - location) \n      :precondition (and (inventory ?p ?drill) (at ?p ?loc) (not (has_fire ?loc)))\n      :effect (and (has_fire ?loc))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action make_spear ; make a spear using wood to catch fish or defend against predators\n      :parameters (?p - player ?spear - spear ?wood - wood) \n      :precondition (and (inventory ?p ?wood) (not (inventory ?p ?spear)))\n      :effect (and (inventory ?p ?spear))\n   )",
+            "(:action survive ; live safely in the shelter with weapon and fire on\n      :parameters (?p - player ?spear - spear ?loc - location) \n      :precondition (and (at ?p ?loc) (has_shelter ?loc) (has_fire ?loc) (inventory ?p ?spear) (not (safe ?p ?loc)))\n      :effect (and (safe ?p ?loc))\n   )\n)",
+            "(:action make_drill ; make a drill using wood to create fire\n      :parameters (?p - player ?wood - wood ?drill - drill) \n      :precondition (and (inventory ?p ?wood) (not (inventory ?p ?drill)))\n      :effect (and (inventory ?p ?drill))\n   )",
+            "(:action build_shelter ; build a shelter using wood and foliage\n      :parameters (?p - player ?wood - wood ?foliage - foliage ?loc - location) \n      :precondition (and (at ?p ?loc) (inventory ?p ?wood) (inventory ?p ?foliage) (not (has_shelter ?loc)))\n      :effect (and (has_shelter ?loc))\n   )",
+            "(:action get_wood ; get wood from a location that has trees\n      :parameters (?p - player ?wood - wood ?loc - location) \n      :precondition (and (at ?p ?loc) (has_tree ?loc) (not (inventory ?p ?wood)))\n      :effect (and (inventory ?p ?wood))\n   )",
+            "(:action get_foliage ; get foliage from a location that has trees\n      :parameters (?p - player ?foliage - foliage ?loc - location) \n      :precondition (and (at ?p ?loc) (has_tree ?loc) (not (inventory ?p ?foliage)))\n      :effect (and (inventory ?p ?foliage))\n   )"
+        ],
+        "goal_state": "((safe npc cave))"
+    },
+    {
+        "task": "eat_fish",
+        "step": [
+            "go east npc camp path",
+            "go east npc path riverside",
+            "go north npc riverside rainforest",
+            "get_wood npc wood rainforest",
+            "go south npc rainforest riverside",
+            "make_spear npc spear wood",
+            "make_drill npc wood drill",
+            "catch_fish npc spear fish riverside",
+            "make_fire npc drill riverside",
+            "cook_fish npc fish riverside",
+            "eat_fish npc fish"
+        ],
+        "desc": [
+            "The plastic sheet will accumulate condensation that will drip down the underside of the sheet and into the container. This water is distilled and safe to drink.",
+            "Make a 4-pronged bamboo spear to fish with. Find a 6-ft (1.8 m) stalk of bamboo and cut 4- 6 in (15.24 cm) slits into 1 end of it with a knife or sharp rock. Weave a piece of vine into the slits to separate the tip of the bamboo into 4 prongs and sharpen them with a knife or a sharp rock.",
+            "If you don\u2019t have a water bottle or other container to collect water, try to find other natural containers in the jungle such as a coconut shell or piece of wood shaped like a bowl. You can also leave these items out when it rains to collect the fresh water.",
+            "Build simple hole-in-the-ground traps to catch animals. Dig a hole in the ground and cover it with something like a large leaf. Put a piece of fruit in the middle as bait. When an animal comes to take the fruit, they will fall in the hole and you can kill it, skin it, and cook it to eat it.",
+            "Boil water from streams to kill any bacteria. Look for running streams to find fresh water. Filter out any particles through a sock, shirt, or other fabric, then start a fire and boil the water to kill bacteria that can make you sick."
+        ],
+        "action": [
+            "(:action eat_fish ; eat cooked fish \n      :parameters (?p - player ?fish - fish) \n      :precondition (and (inventory ?p ?fish) (cooked ?fish))\n      :effect (and (not (hungry ?p)))\n   )",
+            "(:action make_fire ; make fire at a location\n      :parameters (?p - player ?drill - drill ?loc - location) \n      :precondition (and (inventory ?p ?drill) (at ?p ?loc) (not (has_fire ?loc)))\n      :effect (and (has_fire ?loc))\n   )",
+            "(:action cook_fish ; grill fish using fire\n      :parameters (?p - player ?fish - fish ?loc - location) \n      :precondition (and (inventory ?p ?fish) (at ?p ?loc) (has_fire ?loc) (not (cooked ?fish)))\n      :effect (and (cooked ?fish))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action make_spear ; make a spear using wood to catch fish or defend against predators\n      :parameters (?p - player ?spear - spear ?wood - wood) \n      :precondition (and (inventory ?p ?wood) (not (inventory ?p ?spear)))\n      :effect (and (inventory ?p ?spear))\n   )",
+            "(:action catch_fish ; catch a fish using spear\n      :parameters (?p - player ?spear - spear ?fish - fish ?loc - location) \n      :precondition (and (at ?p ?loc) (inventory ?p ?spear) (has_fish ?loc) (not (inventory ?p ?fish)))\n      :effect (and (inventory ?p ?fish))\n   )",
+            "(:action make_drill ; make a drill using wood to create fire\n      :parameters (?p - player ?wood - wood ?drill - drill) \n      :precondition (and (inventory ?p ?wood) (not (inventory ?p ?drill)))\n      :effect (and (inventory ?p ?drill))\n   )",
+            "(:action get_wood ; get wood from a location that has trees\n      :parameters (?p - player ?wood - wood ?loc - location) \n      :precondition (and (at ?p ?loc) (has_tree ?loc) (not (inventory ?p ?wood)))\n      :effect (and (inventory ?p ?wood))\n   )"
+        ],
+        "goal_state": "((not (hungry npc)))"
+    },
+    {
+        "task": "make_fire",
+        "step": [
+            "go east npc camp path",
+            "go east npc path riverside",
+            "go north npc riverside rainforest",
+            "get_wood npc wood rainforest",
+            "go south npc rainforest riverside",
+            "make_drill npc wood drill",
+            "make_fire npc drill riverside"
+        ],
+        "desc": [
+            "Boil water from streams to kill any bacteria. Look for running streams to find fresh water. Filter out any particles through a sock, shirt, or other fabric, then start a fire and boil the water to kill bacteria that can make you sick.",
+            "The plastic sheet will accumulate condensation that will drip down the underside of the sheet and into the container. This water is distilled and safe to drink.",
+            "If you don\u2019t have a water bottle or other container to collect water, try to find other natural containers in the jungle such as a coconut shell or piece of wood shaped like a bowl. You can also leave these items out when it rains to collect the fresh water."
+        ],
+        "action": [
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action make_fire ; make fire at a location\n      :parameters (?p - player ?drill - drill ?loc - location) \n      :precondition (and (inventory ?p ?drill) (at ?p ?loc) (not (has_fire ?loc)))\n      :effect (and (has_fire ?loc))\n   )",
+            "(:action get_wood ; get wood from a location that has trees\n      :parameters (?p - player ?wood - wood ?loc - location) \n      :precondition (and (at ?p ?loc) (has_tree ?loc) (not (inventory ?p ?wood)))\n      :effect (and (inventory ?p ?wood))\n   )",
+            "(:action make_drill ; make a drill using wood to create fire\n      :parameters (?p - player ?wood - wood ?drill - drill) \n      :precondition (and (inventory ?p ?wood) (not (inventory ?p ?drill)))\n      :effect (and (inventory ?p ?drill))\n   )"
+        ],
+        "goal_state": "((has_fire riverside))"
+    }
+]

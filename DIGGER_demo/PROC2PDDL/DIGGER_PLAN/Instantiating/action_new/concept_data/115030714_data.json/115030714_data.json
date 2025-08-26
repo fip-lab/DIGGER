@@ -1,0 +1,3 @@
+[
+    "(:action cook\n  ; Cook a meal in a location and update the state of the location and the agent\n  :parameters (?agent - person ?location - place ?meal - food)\n  :precondition (and\n    (at ?agent ?location)\n    (clean ?location)\n    (not (cooked ?agent ?meal))\n  )\n  :effect (and\n    (cooked ?agent ?meal)\n    (messy ?location)\n  )"
+]

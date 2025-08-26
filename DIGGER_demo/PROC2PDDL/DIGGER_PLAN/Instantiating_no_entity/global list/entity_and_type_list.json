@@ -1,0 +1,170 @@
+[
+    {
+        "3-decorate": {
+            "disguise": "?object",
+            "part": "?object",
+            "supply": "?object",
+            "character": "?entity",
+            "costume": "?object"
+        }
+    },
+    {
+        "prepare_meat": {
+            "pathogen": "?item",
+            "nutrient": "?item",
+            "crab": "?animal",
+            "clam": "?animal",
+            "muscle": "?item",
+            "meat": "?item",
+            "protein": "?item",
+            "minute": "?item",
+            "c": "?item",
+            "f": "?item",
+            "animal": "?animal",
+            "insect": "?animal",
+            "prepare_meat": "?task",
+            "fish": "?animal",
+            "energy": "?resource",
+            "water": "?liquid",
+            "island": "?location",
+            "mollusks": "?animal",
+            "food": "?resource",
+            "thing": "?item",
+            "oyster": "?animal"
+        }
+    },
+    {
+        "pick_hard_lock": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "finishing_papyrus": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "gather_kindling": {
+            "wood": "?resource",
+            "leave": "?resource",
+            "ground": "?place",
+            "tinder": "?resource",
+            "split": "?process",
+            "bark": "?resource",
+            "fire": "?object",
+            "help": "?process",
+            "area": "?place",
+            "needle": "?object",
+            "energy": "?resource",
+            "m": "?object",
+            "water": "?resource",
+            "foot": "?object",
+            "shelter": "?object",
+            "grass": "?resource",
+            "tree": "?object",
+            "building": "?object",
+            "twig": "?resource",
+            "flame": "?object",
+            "stick": "?resource",
+            "branch": "?resource",
+            "kindling": "?resource",
+            "food": "?resource",
+            "thing": "?object",
+            "trunk": "?resource",
+            "material": "?resource"
+        }
+    },
+    {
+        "make_papyrus": {
+            "papyrus": "?object",
+            "nursery": "?location",
+            "cyperus": "?object",
+            "grass": "?object",
+            "reed": "?object",
+            "bet": "?object",
+            "paper": "?object",
+            "make_papyrus": "?action",
+            "river": "?location",
+            "plant": "?object"
+        }
+    },
+    {
+        "move_to_bunker": {
+            "sight": "?skill",
+            "protection": "?resource",
+            "area": "?location",
+            "shelter": "?location",
+            "basement": "?location",
+            "brick": "?resource",
+            "hiding": "?method",
+            "type": "?object",
+            "damage": "?state",
+            "move_to_bunker": "?method",
+            "building": "?location",
+            "place": "?location"
+        }
+    },
+    {
+        "ready_sc": {
+            "lot": "?object",
+            "kilometer": "?object",
+            "electronic": "?object",
+            "confusion": "?object",
+            "chaos": "?object",
+            "odd": "?object",
+            "help": "?object",
+            "minute": "?object",
+            "fridge": "?object",
+            "shortage": "?object",
+            "danger": "?object",
+            "loss": "?object",
+            "shelter": "?place",
+            "home": "?place",
+            "society": "?place",
+            "day": "?object",
+            "mile": "?object",
+            "stuff": "?object",
+            "electricity": "?resource",
+            "ready_sc": "?object",
+            "food": "?object",
+            "place": "?place"
+        }
+    },
+    {
+        "heal-old-man": {
+            "cleaver": "?tool",
+            "skin": "?cover",
+            "board": "?object",
+            "casing": "?cover",
+            "liquid": "?object",
+            "glass": "?container",
+            "minute": "?state",
+            "apple": "?object",
+            "knife": "?tool",
+            "water": "?object",
+            "chef": "?actor",
+            "shell": "?cover",
+            "man": "?npc",
+            "angle": "?state",
+            "bit": "?state",
+            "cutting": "?action",
+            "carve": "?action",
+            "time": "?state",
+            "coconut": "?coconut"
+        }
+    }
+]

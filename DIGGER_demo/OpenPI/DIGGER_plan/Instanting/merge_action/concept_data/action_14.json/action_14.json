@@ -1,0 +1,10 @@
+{
+    "choose": [
+        "(:action choose_vs_duel\n    :parameters (?d - duel)\n    :precondition (and (option ?d deselected))\n    :effect (and (option ?d selected) (population ?d two_player))\n)\n\n",
+        "(:action choose_goku\n    :parameters (?p - player ?d - duel)\n    :precondition (and (knowledge ?p unselected) (population ?d two_player))\n    :effect (and (knowledge ?p selected))\n)\n\n",
+        "(:action choose_stage\n    :parameters (?s - stage ?d - duel)\n    :precondition (and (location ?s unspecified) (option ?d selected))\n    :effect (and (location ?s specified))\n)\n\n"
+    ],
+    "move": [
+        "(:action move_to_wall\n    :parameters (?p1 - player ?p2 - player ?p3 - player)\n    :precondition (and (location ?p1 away_from_wall) (location ?p2 away_from_wall) (location ?p3 away_from_wall))\n    :effect (and (location ?p1 against_wall) (location ?p2 against_wall) (location ?p3 against_wall) (division ?p1 ?p2 ?p3 separated))\n)\n```\n\n### Explanation of Actions:\n\n1. **Action Name: choose_vs_duel**\n   - **Parameters:** `?d - duel`\n   - **Preconditions:** The duel option must be deselected.\n   - **Effects:** The duel option is selected, and the population is set to two players.\n\n2. **Action Name: choose_goku**\n   - **Parameters:** `?p - player ?d - duel`\n   - **Preconditions:** The player has not been selected, and the duel population is two players.\n   - **Effects:** The player is selected.\n\n3. **Action Name: choose_stage**\n   - **Parameters:** `?s - stage ?d - duel`\n   - **Preconditions:** The stage location is unspecified, and the duel option is selected.\n   - **Effects:** The stage location is specified.\n\n4. **Action Name: move_to_wall**\n   - **Parameters:** `?p1 - player ?p2 - player ?p3 - player`\n   - **Preconditions:** All players are away from the wall.\n   - **Effects:** All players move against the wall, and they are separated.\n\nThese actions capture the necessary steps and entity states to achieve the task of getting under the stage in Dragonball Z Budokai Tenkaichi 2."
+    ]
+}

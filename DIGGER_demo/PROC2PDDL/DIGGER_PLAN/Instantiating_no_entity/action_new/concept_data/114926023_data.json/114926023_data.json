@@ -1,0 +1,4 @@
+[
+    "(:action create\n    :parameters (?npc - agent ?location - place ?creation - object ?materials - object)\n    :precondition (and\n                    (at ?npc ?location)\n                    (has-materials ?npc ?materials)\n                    (location-type ?location beach))\n    :effect (and\n              (created ?creation)\n              (not (has-materials ?npc ?materials))",
+    "(:action put ; Place an item into a container\n  :parameters (?a - agent ?i - item ?c - container)\n  \n  :precondition (and \n                  (holding ?a ?i)\n                  (available ?c)\n                  (not (in ?i ?c))\n                )\n  \n  :effect (and \n            (not (holding ?a ?i))"
+]

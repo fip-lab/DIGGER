@@ -1,0 +1,168 @@
+{
+    "goal": "Defeat a Thug on Dead Island",
+    "steps": [
+        "There is no chance in hell you will kill a Thug using just your bear hands and feet.",
+        "Incendiary Weapons - Grenades or Molotov Cocktails *WARNING* You may need to use a couple of these, so it is recommended that you only use one when a Thugs' health is below 50%.",
+        "Make sure your guns have enough ammo, and your knives are up to scratch.",
+        "Attack!"
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/9/9d/Defeat-a-Thug-on-Dead-Island-Step-1-Version-2.jpg/aid2146883-v4-728px-Defeat-a-Thug-on-Dead-Island-Step-1-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/2/2f/Defeat-a-Thug-on-Dead-Island-Step-2-Version-2.jpg/aid2146883-v4-728px-Defeat-a-Thug-on-Dead-Island-Step-2-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/3/38/Defeat-a-Thug-on-Dead-Island-Step-3-Version-2.jpg/aid2146883-v4-728px-Defeat-a-Thug-on-Dead-Island-Step-3-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/0/04/Defeat-a-Thug-on-Dead-Island-Step-4.jpg/aid2146883-v4-728px-Defeat-a-Thug-on-Dead-Island-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "you",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unaware",
+                        "after": "aware",
+                        "saliency": 0.5280720984045792,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unaware",
+                        "after": "aware",
+                        "saliency": 0.5280720984045792,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unaware",
+                        "after": "aware",
+                        "saliency": 0.5280720984045792,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "you"
+            ]
+        },
+        {
+            "entity": "enough ammo",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "count",
+                        "before": "unassured",
+                        "after": "assured",
+                        "saliency": 0.598100109609061,
+                        "attribute_annotation": "count"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "enough ammo"
+            ]
+        },
+        {
+            "entity": "zombies",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "step",
+                        "before": "unattacked",
+                        "after": "attacked",
+                        "saliency": 0.537206186822555,
+                        "attribute_annotation": "step"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "zombies"
+            ]
+        },
+        {
+            "entity": "weapons",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in characters hand",
+                        "after": "thrown at target",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "on character",
+                        "after": "thrown at enemy",
+                        "saliency": 0.38192668371696503,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "molotov cocktails",
+                "grenades",
+                "weapons"
+            ]
+        }
+    ],
+    "clusters": {
+        "you": {
+            "entity_cluster": [
+                "you"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "weapons": {
+            "entity_cluster": [
+                "weapons",
+                "molotov cocktails",
+                "grenades"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "zombies": {
+            "entity_cluster": [
+                "zombies"
+            ],
+            "attribute_cluster": {
+                "step": [
+                    "step"
+                ]
+            }
+        },
+        "enough ammo": {
+            "entity_cluster": [
+                "enough ammo"
+            ],
+            "attribute_cluster": {
+                "count": [
+                    "count"
+                ]
+            }
+        }
+    }
+}

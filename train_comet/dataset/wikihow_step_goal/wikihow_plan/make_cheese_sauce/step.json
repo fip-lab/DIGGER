@@ -1,0 +1,563 @@
+{
+    "goal": "Make Cheese Sauce with Jalape\u00f1o Peppers",
+    "steps": [
+        "First cut the Velveeta in to tiny squares and set aside.",
+        "Set the burner on a medium to low setting, before that you begin adding the cheese product.",
+        "Wait until the Velveeta has melted lower the heat somewhat and add in the (Rotel) tomatoes.",
+        "Add in the Jalapeno peppers, and black olives if desired.",
+        "Cheese sauce is at its best if served very warm."
+    ],
+    "topics": "",
+    "image_urls": [
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+    "states": [
+        {
+            "entity": "velveeta",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces",
+                        "saliency": 0.5225601484971799,
+                        "attribute_annotation": "granularity | shape"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me",
+                        "saliency": 0.2867137859641608,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature",
+                        "saliency": 0.2408200661573975,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up",
+                        "saliency": 0.21787320625401585,
+                        "attribute_annotation": "size"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open",
+                        "saliency": 0.3378310844577711,
+                        "attribute_annotation": "openness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid",
+                        "saliency": 0.4449203969443849,
+                        "attribute_annotation": "granularity | shape"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan",
+                        "saliency": 0.20907403441136577,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming",
+                        "saliency": 0.16318031460460247,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted",
+                        "saliency": 0.5225601484971799,
+                        "attribute_annotation": "granularity | shape"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot",
+                        "saliency": 0.2408200661573975,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny",
+                        "saliency": 0.20410509031198687,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "velveeta",
+                "package"
+            ]
+        },
+        {
+            "entity": "stove knob",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.40029985007496255,
+                        "attribute_annotation": "power"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on",
+                        "saliency": 0.1823017062897123,
+                        "attribute_annotation": "electric conductivity"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "in the off position",
+                        "after": "in the on position",
+                        "saliency": 0.3646034125794246,
+                        "attribute_annotation": "orientation"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "temperature",
+                        "before": "medium-low",
+                        "after": "low",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "stove burner | burner | stove",
+                "stove top burner",
+                "stove knob"
+            ]
+        },
+        {
+            "entity": "olives",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in can | to the side | in a jar",
+                        "after": "in pan | in the cheese dip | in the pot",
+                        "saliency": 0.504711929749411,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold | cool",
+                        "after": "hot",
+                        "saliency": 0.4065467266366817,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "chopped",
+                        "saliency": 0.38245163132719356,
+                        "attribute_annotation": "size"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "olives | jalapeno",
+                "black olives"
+            ]
+        },
+        {
+            "entity": "cheese",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot",
+                        "saliency": 0.4065467266366817,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open",
+                        "saliency": 0.3021346469622332,
+                        "attribute_annotation": "openness"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "cheese",
+                "can"
+            ]
+        },
+        {
+            "entity": "cutting board",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.4627686156921539,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.1823017062897123,
+                        "attribute_annotation": "moisture"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the knife block | in the drawer",
+                        "after": "on the cutting board | cutting the velveeta",
+                        "saliency": 0.13640798648294902,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "knife | cutting board"
+            ]
+        },
+        {
+            "entity": "rotel can",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "whole | on the cutting board | in can | in the fridge",
+                        "after": "chopped | in the pot | in pan | in the sauce pan",
+                        "saliency": 0.4243949453844507,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot | warming",
+                        "saliency": 0.2867137859641608,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open",
+                        "saliency": 0.3556793032055401,
+                        "attribute_annotation": "openness"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "tomatoes",
+                "rotel can",
+                "rotel"
+            ]
+        },
+        {
+            "entity": "peppers",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "whole | in can | on the cutting board",
+                        "after": "chopped | in pan | in the pot | in the sauce pan",
+                        "saliency": 0.4154708360105662,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold | cool",
+                        "after": "hot",
+                        "saliency": 0.2777896765902763,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "peppers"
+            ]
+        },
+        {
+            "entity": "cheese sauce",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "taste",
+                        "before": "mild",
+                        "after": "spicy",
+                        "saliency": 0.3646034125794246,
+                        "attribute_annotation": "taste"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in the pot | in the sauce pan",
+                        "after": "in a bowl",
+                        "saliency": 0.38245163132719356,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "cheese sauce",
+                "cheese dip"
+            ]
+        },
+        {
+            "entity": "pot",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.3556793032055401,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the cupboard | in the cabinet",
+                        "after": "on the stovetop | on the stove top",
+                        "saliency": 0.22564908022179386,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot",
+                        "saliency": 0.1491575640751053,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "sauce pan | pot | pan"
+            ]
+        }
+    ],
+    "clusters": {
+        "peppers": {
+            "entity_cluster": [
+                "jalapeno",
+                "peppers"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "olives": {
+            "entity_cluster": [
+                "olives",
+                "black olives"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "size": [
+                    "size"
+                ]
+            }
+        },
+        "rotel can": {
+            "entity_cluster": [
+                "tomatoes",
+                "rotel",
+                "rotel can"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "openness": [
+                    "openness"
+                ]
+            }
+        },
+        "cutting board": {
+            "entity_cluster": [
+                "cutting board",
+                "knife"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "moisture": [
+                    "moisture"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "pot": {
+            "entity_cluster": [
+                "sauce pan",
+                "pan",
+                "pot"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "cheese sauce": {
+            "entity_cluster": [
+                "cheese sauce",
+                "cheese dip"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "taste": [
+                    "taste"
+                ]
+            }
+        },
+        "stove knob": {
+            "entity_cluster": [
+                "stove top burner",
+                "stove knob",
+                "stove",
+                "stove burner",
+                "burner"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ],
+                "power": [
+                    "power"
+                ],
+                "electric conductivity": [
+                    "electric conductivity"
+                ],
+                "orientation": [
+                    "orientation"
+                ]
+            }
+        },
+        "velveeta": {
+            "entity_cluster": [
+                "velveeta",
+                "package"
+            ],
+            "attribute_cluster": {
+                "granularity": [
+                    "granularity"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "size": [
+                    "size"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "openness": [
+                    "openness"
+                ]
+            }
+        },
+        "cheese": {
+            "entity_cluster": [
+                "can",
+                "cheese"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "openness": [
+                    "openness"
+                ]
+            }
+        }
+    }
+}

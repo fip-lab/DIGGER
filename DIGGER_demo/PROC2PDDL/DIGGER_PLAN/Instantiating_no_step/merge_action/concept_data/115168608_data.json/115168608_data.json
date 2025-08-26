@@ -1,0 +1,24 @@
+{
+    "move": [
+        "(:action move_to_storage_room\n    :parameters (?a - agent ?r - room)\n    :precondition (and\n      (at ?a ?current_location)\n      (is_storage_room ?r)\n    )\n    :effect (and\n      (not (at ?a ?current_location))\n      (at ?a ?r)\n    )\n)\n\n;; Action 2: Locate the required material\n"
+    ],
+    "pick": [
+        "(:action pick_up_material\n    :parameters (?a - agent ?m - material ?r - room)\n    :precondition (and\n      (at ?a ?r)\n      (located ?a ?m)\n      (in ?m ?r)\n      (not (carrying ?a ?m))\n    )\n    :effect (and\n      (carrying ?a ?m)\n      (not (in ?m ?r))\n    )\n)\n\n;; Action 4: Bring the material to the work area\n"
+    ],
+    "bring": [
+        "(:action bring_material_to_work_area\n    :parameters (?a - agent ?m - material ?w - work_area)\n    :precondition (and\n      (carrying ?a ?m)\n      (at ?a ?current_location)\n    )\n    :effect (and\n      (not (at ?a ?current_location))\n      (at ?a ?w)\n      (in ?m ?w)\n      (not (carrying ?a ?m))\n    )\n)\n```\n\nExplanation:\n- `move_to_storage_room`: This action moves the agent from its current location to the storage room.\n- `locate_material`: This action allows the agent to locate the required material in the storage room.\n- `pick_up_material`: This action enables the agent to pick up the material from the storage room.\n- `bring_material_to_work_area`: This action involves the agent carrying the material to the work area and placing it there.\n\nThe preconditions and effects are based on the described steps and the assumed entity states. Adjust the parameters, preconditions, and effects as necessary to fit the specific details of your task and environment."
+    ],
+    "select": [
+        "(:action select-riverside-area\n    :parameters (?a - area)\n    :precondition (and (not (selected ?a)))\n    :effect (selected ?a)\n)\n```\n\n**Explanation**: This action represents selecting a suitable riverside area where papyrus can be found. The precondition checks that the area is not already selected, and the effect marks it as selected.\n\n2. **Wet Sponge for Papyrus**\n\n```lisp\n",
+        "(:action gather-papyrus\n    :parameters (?p - papyrus ?a - area)\n    :precondition (and (selected ?a) (not (gathered ?p)))\n    :effect (gathered ?p)\n)\n```\n\n**Explanation**: This action represents gathering the papyrus plant from the selected area. The precondition ensures the area is selected and the papyrus is not yet gathered, and the effect marks the papyrus as gathered.\n\n4. **Camouflage NPC Helmet**\n\n```lisp\n"
+    ],
+    "wet": [
+        "(:action wet-sponge\n    :parameters (?s - sponge)\n    :precondition (and (dry ?s) (on-ground ?s))\n    :effect (and (wet ?s) (in-bucket ?s))\n)\n```\n\n**Explanation**: This action is for wetting a sponge, which might be used in the process of obtaining or handling papyrus. The precondition checks that the sponge is dry and on the ground, and the effect makes it wet and places it in a bucket.\n\n3. **Gather Papyrus Plant**\n\n```lisp\n"
+    ],
+    "camouflage": [
+        "(:action camouflage-helmet\n    :parameters (?h - helmet ?n - npc)\n    :precondition (and (plain ?h) (visible ?n))\n    :effect (and (camouflaged ?h) (invisible ?n))\n)\n```\n\n**Explanation**: This action is about camouflaging an NPC's helmet, potentially for stealth or blending into the environment. The precondition checks that the helmet is plain and the NPC is visible, and the effect camouflages the helmet and makes the NPC invisible.\n\nThese actions are inferred from the entity states and descriptions provided, focusing on the task of obtaining a papyrus plant and related actions."
+    ],
+    "locate": [
+        "(:action locate_material\n    :parameters (?a - agent ?m - material ?r - room)\n    :precondition (and\n      (at ?a ?r)\n      (is_storage_room ?r)\n      (in ?m ?r)\n    )\n    :effect (and\n      (located ?a ?m)\n    )\n)\n\n;; Action 3: Pick up the material\n"
+    ]
+}

@@ -1,0 +1,124 @@
+[
+    {
+        "wikihow": [
+            {
+                "deepseekv3.json": {
+                    "win_per": 0.35714285714285715,
+                    "length": 42
+                },
+                "digger_opg.json": {
+                    "win_per": 0.47619047619047616,
+                    "length": 42
+                },
+                "digger_clap.json": {
+                    "win_per": 1.0,
+                    "length": 42
+                },
+                "no_entity.json": {
+                    "win_per": 0.38095238095238093,
+                    "length": 42
+                },
+                "no_Instanting.json": {
+                    "win_per": 0.4523809523809524,
+                    "length": 42
+                },
+                "gpt4.json": {
+                    "win_per": 0.30952380952380953,
+                    "length": 42
+                },
+                "no_step.json": {
+                    "win_per": 0.42857142857142855,
+                    "length": 42
+                },
+                "digger_4o.json": {
+                    "win_per": 0.047619047619047616,
+                    "length": 42
+                }
+            }
+        ],
+        "ALFRED-L": [
+            {
+                "deepseekv3.json": {
+                    "win_per": 1.0,
+                    "length": 69
+                },
+                "no_entity.json": {
+                    "win_per": 0.5652173913043478,
+                    "length": 69
+                },
+                "gpt4.json": {
+                    "win_per": 0.9855072463768116,
+                    "length": 69
+                },
+                "no_Instanting.json": {
+                    "win_per": 0.37681159420289856,
+                    "length": 69
+                },
+                "digger_4o.json": {
+                    "win_per": 1.0,
+                    "length": 69
+                },
+                "no_step.json": {
+                    "win_per": 0.4782608695652174,
+                    "length": 69
+                }
+            }
+        ],
+        "openpi": [
+            {
+                "deepseekv3.json": {
+                    "win_per": 0.5,
+                    "length": 6
+                },
+                "no_entity.json": {
+                    "win_per": 0.6666666666666666,
+                    "length": 6
+                },
+                "gpt4.json": {
+                    "win_per": 0.3333333333333333,
+                    "length": 6
+                },
+                "no_Instanting.json": {
+                    "win_per": 0.6666666666666666,
+                    "length": 6
+                },
+                "no_step.json": {
+                    "win_per": 0.5,
+                    "length": 6
+                },
+                "digger_4o.json": {
+                    "win_per": 0.0,
+                    "length": 6
+                }
+            }
+        ],
+        "proc2pddl": [
+            {
+                "deepseekv3.json": {
+                    "win_per": 0.4444444444444444,
+                    "length": 9
+                },
+                "no_entity.json": {
+                    "win_per": 0.5555555555555556,
+                    "length": 9
+                },
+                "no_Instanting.json": {
+                    "win_per": 0.2222222222222222,
+                    "length": 9
+                },
+                "gpt4.json": {
+                    "win_per": 0.7777777777777778,
+                    "length": 9
+                },
+                "no_step.json": {
+                    "win_per": 0.2222222222222222,
+                    "length": 9
+                },
+                "digger_4o.json": {
+                    "win_per": 0.3333333333333333,
+                    "length": 9
+                }
+            }
+        ]
+    }
+]

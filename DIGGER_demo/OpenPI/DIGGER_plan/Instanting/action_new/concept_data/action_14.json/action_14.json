@@ -1,0 +1,4 @@
+[
+    "(:action choose ; Choose an option and update its status\n    :parameters (?agent - entity ?option - object ?context - context)\n    :precondition (and (not (selected ?option)) (context_applicable ?context ?option))\n    :effect (and (selected ?option) (context_updated ?context))",
+    "(:action move\n    :parameters (?entity - agent ?destination - location)\n    :precondition (and (location ?entity ?current_location) (not (location ?entity ?destination)))\n    :effect (and (not (location ?entity ?current_location))"
+]

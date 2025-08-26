@@ -1,0 +1,6 @@
+(put_vinegar_in_container vinegar1 container1)
+(remove_wicks wick1)
+(dip_wicks_in_vinegar wick1 vinegar1 container1)
+(dry_wicks wick1)
+(place_wicks_in_lamp wick1 lamp1)
+; cost = 5 (unit cost)

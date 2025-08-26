@@ -1,0 +1,10 @@
+{
+    "deepseekv3.json": 0.714,
+    "digger_opg.json": 0.381,
+    "digger_clap.json": 0.833,
+    "no_entity.json": 0.508,
+    "no_Instanting.json": 0.365,
+    "gpt4.json": 0.754,
+    "no_step.json": 0.508,
+    "digger_4o.json": 0.571
+}

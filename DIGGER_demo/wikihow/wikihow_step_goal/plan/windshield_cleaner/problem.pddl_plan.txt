@@ -1,0 +1,5 @@
+(purchase_eraser user1 eraser1 store_location car_location)
+(store_eraser user1 eraser1 car_door_spot1 car_location)
+(use_eraser_to_clean user1 eraser1 windshield_inner1 car_door_spot1 car_location)
+(replace_eraser user1 eraser1 glovebox1 car_location)
+; cost = 4 (unit cost)

@@ -1,0 +1,108 @@
+[
+    {
+        "task": "move_to_bunker",
+        "step": [
+            "go west npc home market",
+            "buy_supplies food npc market",
+            "buy_supplies medicine npc market",
+            "buy_supplies water npc market",
+            "check_supplies food water medicine",
+            "go west npc market weapon_market",
+            "buy_weapons ammunition npc weapon_market",
+            "buy_weapons pistol npc weapon_market",
+            "go east npc weapon_market market",
+            "buy_supplies heat npc market",
+            "go east npc market home",
+            "go north npc home bunker1",
+            "go north npc bunker1 bunker2",
+            "check_weapons pistol ammunition",
+            "check_bunker bunker2 npc",
+            "outfit_bunker_with_energy_source bunker2 npc heat"
+        ],
+        "desc": [
+            "Move into a bunker or fortified structure and outfit it with an energy source. An underground bunker isn\u2019t only the best for the time of impact; it will also protect you from environmental hazards after the comet has hit. When the comet hits, dust, soot, and water will shoot up into our atmosphere, making it cold for months to years.",
+            "Limit your generator usage and only use it if necessary. Your generator will be a lifesaver for many things while you are in your bunker. You can use it to produce heat, cook food, and power lights. However, because most generators run on fuel, it\u2019s important that you limit its usage because you will likely have a limited amount of fuel in your bunker. If you aren't in a bunker, a generator may still work, but there's a good chance that the main power grid will be down.",
+            "A semi-automatic rifle and a pistol with enough ammunition should be more than enough firepower.",
+            "Purchase enough food, water, medicine, and other supplies. If the comet does hit on land, dust and rock particles flying into our atmosphere will make it too dangerous to go outside for months to years.",
+            "Buy weapons and ammunition for after the impact. You may be more concerned with withstanding the destruction of the comet impact itself, but you also need to be conscious of the possible dangers of other people after the dust settles.",
+            "Make sure to stock your hide-out with canned food, dried goods, non-perishable foods, and bottled water."
+        ],
+        "action": [
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action buy_weapons ; buy weapons and put it in the inventory (after buy_supplies)\n      :parameters (?wp - weapon ?p - player ?l1 - weapon_market) \n      :precondition (and (at ?p ?l1) (at ?wp ?l1) (enough_supplies))\n      :effect (and (inventory ?wp))\n   )",
+            "(:action check_weapons ; check enough supplies in the inventory\n      :parameters (?ps - pistol ?am - ammunition) \n      :precondition (and (inventory ?ps) (inventory ?am))\n      :effect (and (enough_weapons))\n   )",
+            "(:action check_supplies ; check enough supplies in the inventory\n      :parameters (?fd - food ?wt - water ?md - medicine) \n      :precondition (and (inventory ?fd) (inventory ?wt) (inventory ?md))\n      :effect (and (enough_supplies))\n   )",
+            "(:action buy_supplies ; buy supplies and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - market) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?item))\n   )",
+            "(:action outfit_bunker_with_energy_source ; outfit your bunker with an energy source for heat\n      :parameters (?bk - bunker ?p - player ?es - energy_source) \n      :precondition (and (at ?p ?bk) (find_good_bunker ?bk) (inventory ?es))\n      :effect (and (outfit_bunker_with_heat ?bk))\n   )",
+            "(:action check_bunker ; check if the bunker is good for sheiding\n      :parameters (?bk - bunker ?p - player) \n      :precondition (and (at ?p ?bk) (enough_supplies) (enough_weapons) (has_air_filtration_system ?bk) (has_strong_material ?bk))\n      :effect (and (find_good_bunker ?bk))\n   )"
+        ],
+        "goal_state": "((outfit_bunker_with_heat bunker2) (enough_weapons) (enough_supplies))"
+    },
+    {
+        "task": "listen_to_astronomers_predictions_and_move",
+        "step": [
+            "listen_to_astronomers_predictions npc home",
+            "move_away npc philly salt_lake home"
+        ],
+        "desc": [
+            "Move away from coastal areas. Because the earth is made up of 71% water, there\u2019s a greater likelihood that the comet will hit a body of water. If this does happen, it could mean that giant tsunamis would be created by the initial impact and they would likely destroy our coastal cities. Additionally, there would be an increase in water vapor entering our atmosphere which would cause heavy rain, which could cause landslides and flooding.",
+            "Pay attention to astronomers\u2019 predictions on any possible collisions with earth. NASA currently has astronomers that track comets that are flying in our solar system. As a result, there\u2019s a very good chance they will know if there is a large object about to collide with us. By listening to their predictions, you can develop a real sense of how much time you have to prepare."
+        ],
+        "action": [
+            "(:action move_away ; flight from coastal area to inland area \n      :parameters (?p - player ?c1 - city ?c2 - city ?l1 - location) \n      :precondition (and (in ?p ?c1) (coastal ?c1) (inland ?c2) (listen_to_broadcast ?p ?l1))\n      :effect (and (in ?p ?c2) (not (in ?p ?c1)))\n   )",
+            "(:action listen_to_astronomers_predictions ; listen to astronomers predictions on collision with earth\n      :parameters (?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (has_pc ?p))\n      :effect (and (listen_to_broadcast ?p ?l1))\n   )"
+        ],
+        "goal_state": "((listen_to_broadcast npc home) (in npc Salt_Lake))"
+    },
+    {
+        "task": "final",
+        "step": [
+            "go west npc home market",
+            "buy_supplies food npc market",
+            "buy_supplies medicine npc market",
+            "buy_supplies water npc market",
+            "check_supplies food water medicine",
+            "go west npc market weapon_market",
+            "buy_weapons ammunition npc weapon_market",
+            "buy_weapons pistol npc weapon_market",
+            "go east npc weapon_market market",
+            "buy_supplies heat npc market",
+            "go east npc market home",
+            "go north npc home bunker1",
+            "go north npc bunker1 bunker2",
+            "check_weapons pistol ammunition",
+            "check_bunker bunker2 npc",
+            "outfit_bunker_with_energy_source bunker2 npc heat",
+            "listen_to_astronomers_predictions npc bunker2",
+            "enjoylife bunker2 npc",
+            "connect_through_social_media_with_family bunker2 npc family philly",
+            "move_away npc philly salt_lake bunker2"
+        ],
+        "desc": [
+            "Move into a bunker or fortified structure and outfit it with an energy source. An underground bunker isn\u2019t only the best for the time of impact; it will also protect you from environmental hazards after the comet has hit. When the comet hits, dust, soot, and water will shoot up into our atmosphere, making it cold for months to years.",
+            "Pay attention to astronomers\u2019 predictions on any possible collisions with earth. NASA currently has astronomers that track comets that are flying in our solar system. As a result, there\u2019s a very good chance they will know if there is a large object about to collide with us. By listening to their predictions, you can develop a real sense of how much time you have to prepare.",
+            "Limit your generator usage and only use it if necessary. Your generator will be a lifesaver for many things while you are in your bunker. You can use it to produce heat, cook food, and power lights. However, because most generators run on fuel, it\u2019s important that you limit its usage because you will likely have a limited amount of fuel in your bunker. If you aren't in a bunker, a generator may still work, but there's a good chance that the main power grid will be down.",
+            "Isolation has multiple negative effects on your mental health, so having people with you is a good idea if you want to stay mentally healthy.",
+            "A semi-automatic rifle and a pistol with enough ammunition should be more than enough firepower.",
+            "Move away from coastal areas. Because the earth is made up of 71% water, there\u2019s a greater likelihood that the comet will hit a body of water. If this does happen, it could mean that giant tsunamis would be created by the initial impact and they would likely destroy our coastal cities. Additionally, there would be an increase in water vapor entering our atmosphere which would cause heavy rain, which could cause landslides and flooding.",
+            "Purchase enough food, water, medicine, and other supplies. If the comet does hit on land, dust and rock particles flying into our atmosphere will make it too dangerous to go outside for months to years.",
+            "Don\u2019t believe everything you hear. Early reporting is notoriously inaccurate at times, so wait it out until you hear unified reports.",
+            "Buy weapons and ammunition for after the impact. You may be more concerned with withstanding the destruction of the comet impact itself, but you also need to be conscious of the possible dangers of other people after the dust settles.",
+            "Make sure to stock your hide-out with canned food, dried goods, non-perishable foods, and bottled water."
+        ],
+        "action": [
+            "(:action enjoylife ; after all preparation, enjoy life in a bunker\n      :parameters (?bk - bunker ?p - player ) \n      :precondition (and (at ?p ?bk) (outfit_bunker_with_heat ?bk))\n      :effect (and (enjoylife ?p ?bk))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action outfit_bunker_with_energy_source ; outfit your bunker with an energy source for heat\n      :parameters (?bk - bunker ?p - player ?es - energy_source) \n      :precondition (and (at ?p ?bk) (find_good_bunker ?bk) (inventory ?es))\n      :effect (and (outfit_bunker_with_heat ?bk))\n   )",
+            "(:action buy_weapons ; buy weapons and put it in the inventory (after buy_supplies)\n      :parameters (?wp - weapon ?p - player ?l1 - weapon_market) \n      :precondition (and (at ?p ?l1) (at ?wp ?l1) (enough_supplies))\n      :effect (and (inventory ?wp))\n   )",
+            "(:action check_weapons ; check enough supplies in the inventory\n      :parameters (?ps - pistol ?am - ammunition) \n      :precondition (and (inventory ?ps) (inventory ?am))\n      :effect (and (enough_weapons))\n   )",
+            "(:action check_supplies ; check enough supplies in the inventory\n      :parameters (?fd - food ?wt - water ?md - medicine) \n      :precondition (and (inventory ?fd) (inventory ?wt) (inventory ?md))\n      :effect (and (enough_supplies))\n   )",
+            "(:action connect_through_social_media_with_family ; let other family members know you are safe\n      :parameters (?bk - bunker ?p - player ?f - player ?c - city) \n      :precondition (and (at ?p ?bk) (has_pc ?p) (enjoylife ?p ?bk) (not(at ?f ?bk)) (in ?p ?c) (not (in ?f ?c)) )\n      :effect (and (family_memebers_know_you_are_safe))\n   )\n   \n\n)",
+            "(:action buy_supplies ; buy supplies and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - market) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?item))\n   )",
+            "(:action move_away ; flight from coastal area to inland area \n      :parameters (?p - player ?c1 - city ?c2 - city ?l1 - location) \n      :precondition (and (in ?p ?c1) (coastal ?c1) (inland ?c2) (listen_to_broadcast ?p ?l1))\n      :effect (and (in ?p ?c2) (not (in ?p ?c1)))\n   )",
+            "(:action listen_to_astronomers_predictions ; listen to astronomers predictions on collision with earth\n      :parameters (?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (has_pc ?p))\n      :effect (and (listen_to_broadcast ?p ?l1))\n   )",
+            "(:action check_bunker ; check if the bunker is good for sheiding\n      :parameters (?bk - bunker ?p - player) \n      :precondition (and (at ?p ?bk) (enough_supplies) (enough_weapons) (has_air_filtration_system ?bk) (has_strong_material ?bk))\n      :effect (and (find_good_bunker ?bk))\n   )"
+        ],
+        "goal_state": "((in npc Salt_Lake) (enjoylife npc bunker2) (family_memebers_know_you_are_safe))"
+    }
+]

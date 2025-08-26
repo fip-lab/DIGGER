@@ -1,0 +1,46 @@
+[
+    {
+        "cluster_label": 635,
+        "task": "How to Make Spotted Dick",
+        "step": [
+            "Mix the dry ingredients.",
+            "Add the butter.",
+            "Add the milk.",
+            "Prepare to steam.",
+            "Cook the spotted dick.",
+            "Serve."
+        ],
+        "steps_predictions": [
+            "mix_dry_ingredients mixing_bowl mixture",
+            "add-ingredients-lemon water alice",
+            "add-ingredients-into-glass milk",
+            "prepare_to_steam stove_knob velveeta",
+            "cook_dick npc",
+            "cook npc kitchen"
+        ],
+        "goal_state": " ((in_container mixing_bowl mixture))"
+    },
+    {
+        "cluster_label": 635,
+        "task": "How to Apply a Steak Rub",
+        "step": [
+            "Choose a steak to grill.",
+            "Find a rub recipe from a cookbook or online.",
+            "Make the rub.",
+            "Apply the rub to the steak.",
+            "Let the steak rest.",
+            "Grill the steak.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "choose_steak steak",
+            "find_rub_recips cookbook",
+            "make_rub alice",
+            "apply_rub_to_steak steak",
+            "rest_stuck steak",
+            "garnish-with-cheese steak",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((in_fridge steak) (served_rug steak))"
+    }
+]

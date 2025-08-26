@@ -1,0 +1,1061 @@
+[
+    {
+        "cluster_label": 339,
+        "task": "How to Teach Your Kid to Use a Zipper",
+        "step": [
+            "Model zipper use.",
+            "Have your child practice zipping with your help.",
+            "Remove any unnecessary challenges.",
+            "Give your child opportunities to practice zipping.",
+            "Give positive reinforcement.",
+            "Reward your child for a job well done."
+        ],
+        "steps_predictions": [
+            "put_zipper_in_machine velveeta",
+            "teach-child zipping",
+            "remove_add_unnecessary_challenges npc",
+            "teach-child zipping",
+            "gather_reinforced person npc",
+            "receptacle agent child npc"
+        ],
+        "goal_state": " ((teach_kid_new_member npc))",
+        "similar_entity": {
+            "zipping": {
+                "money": [
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register"
+                    },
+                    {
+                        "attribute": "value",
+                        "before": "more",
+                        "after": "less"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in possession",
+                        "after": "in center's possesion"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "greater",
+                        "after": "less"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "more",
+                        "after": "less"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "zipping ObjectUse use as a belt",
+                    "zipping MadeUpOf zipper",
+                    "zipping HasProperty zippers",
+                    "zipping CapableOf use zipper"
+                ]
+            },
+            "person": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[person]] is related to [[human]]",
+                    "[[A person]] can [[cross a street]]",
+                    "[[a person]] wants [[a headache]]",
+                    "[[A slave]] is [[a person]]",
+                    "[[a person]] doesn't want to [[be diseased]]",
+                    "[[a person]] is part of [[society]]"
+                ],
+                "comet_knowledge": [
+                    "person ObjectUse have sex with",
+                    "person MadeUpOf person y",
+                    "person HasProperty one's self",
+                    "person CapableOf drink too much"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "agent": {
+                "game character": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[agent]] is related to [[secret]]"
+                ],
+                "comet_knowledge": [
+                    "agent ObjectUse get a job",
+                    "agent MadeUpOf agent",
+                    "agent HasProperty found in office",
+                    "agent CapableOf sign contract"
+                ]
+            },
+            "child": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[daughter]] is related to [[child]]",
+                    "*Something you find at [[a school]] is [[a child]]",
+                    "[[a child]] can [[become an adult]]",
+                    "[[A child]] wants to [[learn]]"
+                ],
+                "comet_knowledge": [
+                    "child ObjectUse play with",
+                    "child MadeUpOf child's hand",
+                    "child HasProperty grown up",
+                    "child CapableOf learn to read"
+                ]
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Teach Your Children to Do Laundry",
+        "step": [
+            "Make the laundry area child-friendly.",
+            "Have young children participate with safe tasks.",
+            "Make laundry fun for older kids.",
+            "Encourage teenagers to be more independent."
+        ],
+        "steps_predictions": [
+            "make_child_friendly area",
+            "participate_with_children npc",
+            "make_fun kids laundry",
+            "encourage_teenagers npc"
+        ],
+        "goal_state": " ((teach_new_member_secret npc) (in_home laundry))",
+        "similar_entity": {
+            "laundry": {
+                "washing machine": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full with polar fleece"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "off",
+                        "after": "on"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[wash]] is related to [[laundry]]"
+                ],
+                "comet_knowledge": [
+                    "laundry ObjectUse put clothes in",
+                    "laundry MadeUpOf laundry basket",
+                    "laundry HasProperty dirty clothes",
+                    "laundry CapableOf wash clothes"
+                ]
+            },
+            "area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[area]]"
+                ],
+                "comet_knowledge": [
+                    "area ObjectUse place to live",
+                    "area MadeUpOf surface of earth",
+                    "area HasProperty surface of earth",
+                    "area CapableOf travel to"
+                ]
+            },
+            "kids": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[children]] is related to [[kids]]",
+                    "[[Kids]] like to [[play with them]]"
+                ],
+                "comet_knowledge": [
+                    "kids ObjectUse play video games",
+                    "kids MadeUpOf kids",
+                    "kids HasProperty kids",
+                    "kids CapableOf play video games"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Teach Your Child to Wash Dishes",
+        "step": [
+            "Load the dishwasher with pre-rinsed plates.",
+            "Instruct your child how to put soap in the dishwasher and how to begin the wash cycle.",
+            "Complete the wash cycle."
+        ],
+        "steps_predictions": [
+            "load-dishwasher-with-pre-rinsed plates",
+            "initiate_child npc",
+            "clean_machine npc washing_cycle"
+        ],
+        "goal_state": " ((instructions npc washing_cycle))",
+        "similar_entity": {
+            "plates": {
+                "plate": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the cupboard]] is [[plates]]"
+                ],
+                "comet_knowledge": [
+                    "plates ObjectUse put on the table",
+                    "plates MadeUpOf plates",
+                    "plates HasProperty plates",
+                    "plates CapableOf put on table"
+                ]
+            },
+            "washing cycle": {
+                "washing machine": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full with polar fleece"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "off",
+                        "after": "on"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "washing cycle ObjectUse wash clothes",
+                    "washing cycle MadeUpOf washing machine",
+                    "washing cycle HasProperty washing clothes",
+                    "washing cycle CapableOf wash clothes"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Clean a Clothes Dryer Vent",
+        "step": [
+            "Learn the signs your vent needs cleaning.",
+            "Keep the floor around the dryer clean.",
+            "Limit the use of dryer sheets.",
+            "Stick to brief dry cycles."
+        ],
+        "steps_predictions": [
+            "learn_signal npc",
+            "clean_floor rug rug1",
+            "check_sheets dryer_sheet1",
+            "stick_to_dry_cycles npc"
+        ],
+        "goal_state": " ((knowledge npc) (not (cleanness cloth1)))",
+        "similar_entity": {
+            "dryer sheet": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "dryer sheet ObjectUse dry clothes",
+                    "dryer sheet MadeUpOf dryer",
+                    "dryer sheet HasProperty dryer",
+                    "dryer sheet CapableOf dry clothes"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "rug": {
+                "throw rugs and inside door mats": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean | cleaner"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a rug]] is for [[floor covering]]",
+                    "*Something you find on [[the rug]] is [[a stain]]",
+                    "[[Tapete]] is a translation of [[rug]]",
+                    "[[carpet]] is related to [[rug]]"
+                ],
+                "comet_knowledge": [
+                    "rug ObjectUse use as a blanket",
+                    "rug MadeUpOf bedding",
+                    "rug HasProperty found in house",
+                    "rug CapableOf put on bed"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Get a Toddler to Wear Winter Clothes",
+        "step": [
+            "Choose clothes that are easy to pull on.",
+            "Get your toddler to practice wearing their winter clothes.",
+            "Pack their summer clothes.",
+            "Make getting dressed a familiar routine.",
+            "Avoid forcing your toddler to wear the winter clothes."
+        ],
+        "steps_predictions": [
+            "choose_clothes npc",
+            "practice wearing_winter_clothes npc",
+            "pack_clothes npc",
+            "make_comamiliar_routes npc",
+            "break_child npc basement"
+        ],
+        "goal_state": " ((not (at npc basement)))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "wearing winter clothes": {
+                "clothing": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wearing winter clothes ObjectUse wear in the winter",
+                    "wearing winter clothes MadeUpOf warm",
+                    "wearing winter clothes HasProperty warm",
+                    "wearing winter clothes CapableOf wear to work"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Clean Toddler's Teeth",
+        "step": [
+            "Start in infancy.",
+            "Use toddler tooth care products.",
+            "Floss.",
+            "Start brushing your toddler's teeth!.",
+            "Go to the dentist.",
+            "Give your child drinking water that is fluoridated.",
+            "Make sure your toddler is getting a well-balanced diet."
+        ],
+        "steps_predictions": [
+            "start_in infancy npc",
+            "use_others_as_gerbix npc",
+            "floss_with_faucet fairy_moss",
+            "brush-tied toddler's teeth",
+            "go_to_dentist npc",
+            "drink_water npc",
+            "get_tinder npc"
+        ],
+        "goal_state": " ((clean_teeth npc))",
+        "similar_entity": {
+            "infancy": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "infancy ObjectUse have a baby",
+                    "infancy MadeUpOf infancy",
+                    "infancy HasProperty very young",
+                    "infancy CapableOf grow up"
+                ]
+            },
+            "teeth": {
+                "cloves": [
+                    {
+                        "attribute": "temperature",
+                        "before": "room temperature | cold",
+                        "after": "warm | hot"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "hot",
+                        "after": "cooler"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on heat",
+                        "after": "off heat"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[your mouth]] is [[teeth]]",
+                    "[[mouth]] is related to [[teeth]]",
+                    "[[chewing your food]] requires [[teeth]]",
+                    "[[A dog]] has [[teeth]]"
+                ],
+                "comet_knowledge": [
+                    "teeth ObjectUse chew food",
+                    "teeth MadeUpOf teeth",
+                    "teeth HasProperty teeth",
+                    "teeth CapableOf chew food"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "fairy moss": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fairy moss ObjectUse use as a weapon",
+                    "fairy moss MadeUpOf water",
+                    "fairy moss HasProperty found in forest",
+                    "fairy moss CapableOf plant in garden"
+                ]
+            },
+            "toddler's": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "toddler's ObjectUse wear as a costume",
+                    "toddler's MadeUpOf toy",
+                    "toddler's HasProperty worn on head",
+                    "toddler's CapableOf play with"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Clean a Toddler's Ears",
+        "step": [
+            "Look into your child's ears to check for foreign objects.",
+            "Never insert a cotton swab or other item into your child's ear.",
+            "Watch for signs that your child may be having ear pain."
+        ],
+        "steps_predictions": [
+            "check_child_ears npc",
+            "insert_cotton_swab npc",
+            "watch_child npc"
+        ],
+        "goal_state": " ((clean_ears npc))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Wash an Electric Blanket",
+        "step": [
+            "Do not dry clean your electric blanket.",
+            "Do not iron an electric blanket.",
+            "Inspect the blanket after washing and drying.",
+            "Take care at the laundromat."
+        ],
+        "steps_predictions": [
+            "dry_blanket npc",
+            "make_oven npc cordial",
+            "inspect_blanket npc",
+            "take_care npc"
+        ],
+        "goal_state": " ((cleanness npc) (flattened nintendo))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "cordial": {
+                "cordial": [
+                    {
+                        "attribute": "composition",
+                        "before": "bare",
+                        "after": "decorated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "cordial ObjectUse make friends",
+                    "cordial MadeUpOf cuddle",
+                    "cordial HasProperty warm",
+                    "cordial CapableOf make friends"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Wash a Toddler's Clothes",
+        "step": [
+            "Determine what temperature of water you will use.",
+            "Choose a detergent.",
+            "Figure out how you should dry the clothes.",
+            "Add dryer sheets if so desired."
+        ],
+        "steps_predictions": [
+            "determine_temperature water",
+            "choose_detergent detergent",
+            "dry_clothes npc work_station",
+            "add-dryer-sheets dryer_sheets"
+        ],
+        "goal_state": " ((on_rack npc cloth))",
+        "similar_entity": {
+            "work station": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "work station ObjectUse work at",
+                    "work station MadeUpOf desk",
+                    "work station HasProperty found in office",
+                    "work station CapableOf work on computer"
+                ]
+            },
+            "dryer sheets": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "dryer sheets ObjectUse dry clothes",
+                    "dryer sheets MadeUpOf dryer",
+                    "dryer sheets HasProperty dryer",
+                    "dryer sheets CapableOf dry clothes"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "detergent": {
+                "detergent": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle",
+                        "after": "in drain"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[cleaning your clothes]] requires [[some detergent]]",
+                    "[[soap]] is related to [[detergent]]"
+                ],
+                "comet_knowledge": [
+                    "detergent ObjectUse clean up a spill",
+                    "detergent MadeUpOf detergent",
+                    "detergent HasProperty detergent",
+                    "detergent CapableOf use as lubricant"
+                ]
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ],
+                "comet_knowledge": [
+                    "water ObjectUse water plants",
+                    "water MadeUpOf water",
+                    "water HasProperty found in ocean",
+                    "water CapableOf water plants"
+                ]
+            }
+        }
+    }
+]

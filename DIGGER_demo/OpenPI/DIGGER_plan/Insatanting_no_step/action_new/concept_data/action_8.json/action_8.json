@@ -1,0 +1,6 @@
+[
+    "(:action select\n    ; Select a resource and update its state\n    :parameters (?entity - agent ?resource - object ?subresource - sub_object)\n    :precondition (and (at ?entity ?location) (unselected ?resource) (or (unselected ?subresource) (selected ?resource)))\n    :effect (and \n        (selected ?entity ?resource) \n        (not (unselected ?resource))",
+    "(:action name_character\n    :parameters (?p - player ?name - character_name)\n    :precondition (and (selected ?p ?part) (nameless ?p))\n    :effect (and (named ?p ?name) (not (nameless ?p))",
+    "(:action name ;  Name an entity and update its status\n    :parameters (?entity - object ?identifier - identifier)\n    :precondition (and (selected ?entity ?selection_criteria) (nameless ?entity))\n    :effect (and (named ?entity ?identifier) (not (nameless ?entity))",
+    "(:action enter\n    :parameters (?p - player ?entity - object ?state - state)\n    :precondition (and (saved ?p) (not (in_state ?p ?state)))\n    :effect (and (in_state ?p ?state) (state_changed ?entity))"
+]

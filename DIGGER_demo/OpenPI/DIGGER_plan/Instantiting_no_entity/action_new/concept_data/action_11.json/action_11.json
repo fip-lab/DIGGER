@@ -1,0 +1,9 @@
+[
+    "(:action remove ; Remove an attachment and update the state of the involved entities\n  :parameters (?att - attachment ?container - container ?res - resource)\n  :precondition (and (attached ?att ?container) (contains ?container ?res))\n  :effect (and \n            (not (attached ?att ?container))",
+    "(:action screw ;  Screw an item to another item\n  :parameters (?item1 - object ?item2 - object ?condition - condition)\n  :precondition (and (not (attached ?item1 ?item2)) (?condition ?item2))\n  :effect (and (attached ?item1 ?item2))",
+    "(:action fill\n    ; Fill a container with a resource\n    :parameters (?container - object ?resource - object ?source - object)\n    :precondition (and (contains ?container ?resource) (attached ?source ?container) (not (filled ?container ?resource)))\n    :effect (filled ?container ?resource)\n)",
+    "(:action fill_oil\n    :parameters (?ob - oil_bottle ?fc - faucet)\n    :precondition (and (contains ?ob ?o) (attached ?fc ?ob))\n    :effect (and (filled ?ob ?o))",
+    "(:action fill\n    :parameters (?container - oil_bottle ?resource - oil ?source - faucet)\n    :precondition (and (contains ?container ?resource) (attached ?source ?container) (not (filled ?container ?resource)))\n    :effect (filled ?container ?resource)\n)",
+    "(:action get\n    :parameters (?npc - person ?item - object)\n    :precondition (and (not (has ?npc ?item)))\n    :effect (and (has ?npc ?item))",
+    "(:action handle_oil\n    :parameters (?npc - person ?storage - location ?tank - container)\n    \n    :precondition (and \n        (at ?npc ?storage) \n        (not (open ?storage))\n        (not (empty ?tank))\n        (has ?npc ?oil_cap)\n        (has ?npc ?oil_filter)\n        (not (filled ?tank))\n    )\n    \n    :effect (and \n        (open ?storage)\n        (not (filled ?tank))"
+]

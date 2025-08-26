@@ -1,0 +1,13 @@
+(:action go ; 
+(:action get ; 
+(:action pick_lock_with_card ; 3,5,6
+(:action file_key_into_wrench ; 8
+(:action bend_paperclip_into_pick  ; 7
+(:action insert_wrench ; 7
+(:action insert_pick ; 9,10
+(:action push_pins_out_of_tumblers ;10,11
+(:action straighten_coathanger ; 12
+(:action lift_weatherstripping ; 4
+(:action insert_hanger ; 4
+(:action hook_latch ; 13
+(:action pull_coathanger ; 12,13

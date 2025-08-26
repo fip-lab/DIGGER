@@ -1,0 +1,23 @@
+[
+    {
+        "cluster_label": 339,
+        "task": "How to Do Baby's Laundry",
+        "step": [
+            "Remove all tags from new clothes, blankets, and sheets.",
+            "Sort through hand-me-downs thoroughly.",
+            "Wash baby's clothes as you would any other clothes.",
+            "Put the clothes in the dryer.",
+            "Fold laundry and put away.",
+            "Keep baby's dirty clothes in a separate basket."
+        ],
+        "steps_predictions": [
+            "remove_tags npc",
+            "sort_hand-me-downs kids-room",
+            "wash_baby npc",
+            "put_clothes_in_dryer clothes",
+            "fold-and-put-away laundry",
+            "keep-dirty-wicks-in-basket npc"
+        ],
+        "goal_state": " ((on npc clothing) (in_laundry basket))"
+    }
+]

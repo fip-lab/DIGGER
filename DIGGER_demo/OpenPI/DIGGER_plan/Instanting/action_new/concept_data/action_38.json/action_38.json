@@ -1,0 +1,6 @@
+[
+    "(:action shotgun ; Perform a shotgun shot and update the state\n  :parameters (?shooter - player ?target - player)\n  :precondition (and \n    (has_shotgun ?shooter)\n    (or \n      (and (enemy ?target ?shooter) (in_range ?shooter ?target))\n      (self ?target ?shooter)\n    )\n  )\n  :effect (or \n    (headshot ?shooter ?target)\n    (self_shot ?shooter)\n  )",
+    "(:action pistol_shot\n      :parameters (?p1 - player ?p2 - player)\n      :precondition (and (has_pistol ?p1) (enemy ?p2 ?p1) (in_range ?p1 ?p2))\n      :effect (and (headshot ?p1 ?p2))",
+    "(:action use_pistol\n   :parameters (?shooter - player ?target - player ?pistol - object)\n   :precondition (and (has_weapon ?shooter ?pistol) (enemy ?target ?shooter) (in_range ?shooter ?target) (type ?pistol pistol))\n   :effect (and (neutralized ?shooter ?target))",
+    "(:action shoot ; Shoot a target with a specified weapon\n  :parameters (?player - player ?weapon - weapon ?target - target)\n  :precondition (and (has_weapon ?player ?weapon)\n                     (loaded ?weapon)\n                     (in_range ?player ?target))\n  :effect (and (shot ?target ?player))"
+]

@@ -1,0 +1,785 @@
+{
+    "goal": "Make Asparagus in Serrano Ham",
+    "steps": [
+        "Preheat your oven beforehand to 400\u00b0F (200\u00b0C or Gas Mark 6).",
+        "Add your olive oil into a baking or roasting tin large enough to hold all of your asparagus spears.",
+        "Cut off the ends of the asparagus spears and wrap enough Serrano ham around each asparagus spear until it is mostly covered but with top jagged part still open.",
+        "Roast the asparagus in the oven for 8-10 minutes.",
+        "Serve immediately with a main dish so your asparagus acts as a side order."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/d/d3/Kitchen.jpg",
+        "https://www.wikihow.com/images/thumb/8/81/Natural_Interaction_Olive_Oil.jpg/728px-Natural_Interaction_Olive_Oil.jpg",
+        "https://www.wikihow.com/images/thumb/9/97/Asparagus-Bundle-1.jpg/220px-Asparagus-Bundle-1.jpg",
+        "https://www.wikihow.com/images/thumb/7/70/Bacon-in-the-Oven.jpg/704px-Bacon-in-the-Oven.jpg",
+        "https://www.wikihow.com/images/thumb/2/2d/Jamoneva.jpg/728px-Jamoneva.jpg"
+    ],
+    "states": [
+        {
+            "entity": "asparagus",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "out on table",
+                        "saliency": 0.3867352038266581,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "cut up | cut",
+                        "saliency": 0.5424787606196901,
+                        "attribute_annotation": "composition | temperature"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "exposed",
+                        "after": "mostly covered",
+                        "saliency": 0.3894957283263131,
+                        "attribute_annotation": "coverage"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "longer",
+                        "after": "shorter",
+                        "saliency": 0.31835867780395516,
+                        "attribute_annotation": "size | length"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "pointier",
+                        "after": "duller",
+                        "saliency": 0.39101877632612264,
+                        "attribute_annotation": "shape"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "uncovered",
+                        "after": "covered",
+                        "saliency": 0.3646034125794246,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "composition",
+                        "before": "raw | cold",
+                        "after": "cooked | warm",
+                        "saliency": 0.45966302563004213,
+                        "attribute_annotation": "composition | temperature"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.3217248518597844,
+                        "attribute_annotation": "moisture"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "crispy",
+                        "after": "softened",
+                        "saliency": 0.31254610789843174,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "composition",
+                        "before": "cooking",
+                        "after": "cooling",
+                        "saliency": 0.5114228599985722,
+                        "attribute_annotation": "composition | temperature"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in oven | in pan",
+                        "after": "on platter | in serving dish",
+                        "saliency": 0.46437495537945306,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "asparagus",
+                "spears",
+                "vegetables"
+            ]
+        },
+        {
+            "entity": "heating element",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red",
+                        "saliency": 0.5645034625544371,
+                        "attribute_annotation": "color"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm",
+                        "saliency": 0.520703933747412,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.4973941600628257,
+                        "attribute_annotation": "power"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed",
+                        "saliency": 0.3556793032055401,
+                        "attribute_annotation": "openness"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active",
+                        "saliency": 0.3199828657100021,
+                        "attribute_annotation": "electric conductivity"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating",
+                        "saliency": 0.39648033126293997,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.15853977773018255,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off",
+                        "saliency": 0.38869850788891275,
+                        "attribute_annotation": "power"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.25981652031127295,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands",
+                        "saliency": 0.3646034125794246,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open",
+                        "saliency": 0.3556793032055401,
+                        "attribute_annotation": "openness"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet",
+                        "saliency": 0.1823017062897123,
+                        "attribute_annotation": "sound"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "heating element",
+                "oven | oven racks | oven rock",
+                "temperature",
+                "oven mitts",
+                "oven door",
+                "timer"
+            ]
+        },
+        {
+            "entity": "stove buttons",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "pressure",
+                        "before": "unpressed",
+                        "after": "pressed",
+                        "saliency": 0.5466552438066681,
+                        "attribute_annotation": "pressure"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "stove buttons"
+            ]
+        },
+        {
+            "entity": "oil",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.5466552438066681,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in container",
+                        "after": "in tin",
+                        "saliency": 0.3556793032055401,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot",
+                        "saliency": 0.45741415006782327,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "oil container",
+                "oil",
+                "olive oil"
+            ]
+        },
+        {
+            "entity": "cutting board",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.5466552438066681,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on table",
+                        "saliency": 0.13640798648294902,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "cutting board",
+                "knife | blade"
+            ]
+        },
+        {
+            "entity": "tin",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavier",
+                        "saliency": 0.5377311344327836,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.4884700506889412,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in pantry",
+                        "after": "on pan | on table",
+                        "saliency": 0.32669379595916326,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.45741415006782327,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "dry",
+                        "after": "oiled",
+                        "saliency": 0.3646034125794246,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in oven",
+                        "after": "on stove",
+                        "saliency": 0.21799814378525026,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "roasting pan",
+                "tin | oil",
+                "pan",
+                "baking tray",
+                "baking tin",
+                "container"
+            ]
+        },
+        {
+            "entity": "pieces",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "around asparagus",
+                        "after": "discarded",
+                        "saliency": 0.5288070250588991,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "unwrapped",
+                        "after": "wrapped",
+                        "saliency": 0.3289069750838866,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "rubber band",
+                "pieces"
+            ]
+        },
+        {
+            "entity": "main dish",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "temperature",
+                        "before": "raw",
+                        "after": "cooked",
+                        "saliency": 0.1733775969158278,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "accompaniment",
+                        "before": "unaccompanied",
+                        "after": "accompanied",
+                        "saliency": 0.5109588063111302,
+                        "attribute_annotation": "accompaniment"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on table",
+                        "saliency": 0.3421146569572357,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "main dish",
+                "dish",
+                "food"
+            ]
+        },
+        {
+            "entity": "display",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.49311058756336124,
+                        "attribute_annotation": "power"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "display"
+            ]
+        },
+        {
+            "entity": "ham",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "slippery",
+                        "saliency": 0.27493396159063327,
+                        "attribute_annotation": "texture"
+                    },
+                    {
+                        "attribute": "appearance",
+                        "before": "dull",
+                        "after": "shiny",
+                        "saliency": 0.21647212108231595,
+                        "attribute_annotation": "appearance"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in package",
+                        "after": "around asparagus",
+                        "saliency": 0.4884700506889412,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot",
+                        "saliency": 0.30443706718069535,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "wet",
+                        "after": "dry",
+                        "saliency": 0.11965445848504319,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "temperature",
+                        "before": "heating",
+                        "after": "cooling",
+                        "saliency": 0.30443706718069535,
+                        "attribute_annotation": "temperature"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "ham | pan"
+            ]
+        },
+        {
+            "entity": "room",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "sound",
+                        "before": "quiet",
+                        "after": "noisier",
+                        "saliency": 0.3110587563361177,
+                        "attribute_annotation": "sound"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "room"
+            ]
+        }
+    ],
+    "clusters": {
+        "cutting board": {
+            "entity_cluster": [
+                "cutting board",
+                "knife",
+                "blade"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "oil": {
+            "entity_cluster": [
+                "olive oil",
+                "oil",
+                "oil container"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "ham": {
+            "entity_cluster": [
+                "ham"
+            ],
+            "attribute_cluster": {
+                "texture": [
+                    "texture"
+                ],
+                "appearance": [
+                    "appearance"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "main dish": {
+            "entity_cluster": [
+                "main dish",
+                "dish",
+                "food"
+            ],
+            "attribute_cluster": {
+                "accompaniment": [
+                    "accompaniment"
+                ],
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "asparagus": {
+            "entity_cluster": [
+                "asparagus",
+                "spears",
+                "vegetables"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "moisture": [
+                    "moisture"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "coverage": [
+                    "coverage"
+                ],
+                "size": [
+                    "length",
+                    "size"
+                ],
+                "shape": [
+                    "shape"
+                ]
+            }
+        },
+        "room": {
+            "entity_cluster": [
+                "room"
+            ],
+            "attribute_cluster": {
+                "sound": [
+                    "sound"
+                ]
+            }
+        },
+        "pieces": {
+            "entity_cluster": [
+                "pieces",
+                "rubber band"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "texture": [
+                    "texture"
+                ]
+            }
+        },
+        "heating element": {
+            "entity_cluster": [
+                "temperature",
+                "oven",
+                "timer",
+                "oven racks",
+                "oven door",
+                "oven mitts",
+                "heating element"
+            ],
+            "attribute_cluster": {
+                "color": [
+                    "color"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "power": [
+                    "power"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "location": [
+                    "location"
+                ],
+                "openness": [
+                    "openness"
+                ],
+                "electric conductivity": [
+                    "electric conductivity"
+                ],
+                "sound": [
+                    "sound"
+                ]
+            }
+        },
+        "tin": {
+            "entity_cluster": [
+                "pan",
+                "baking tray",
+                "container",
+                "baking tin",
+                "roasting pan",
+                "tin"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "location": [
+                    "location"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "appearance": [
+                    "appearance"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "display": {
+            "entity_cluster": [
+                "display"
+            ],
+            "attribute_cluster": {
+                "power": [
+                    "power"
+                ]
+            }
+        },
+        "stove buttons": {
+            "entity_cluster": [
+                "stove buttons"
+            ],
+            "attribute_cluster": {
+                "pressure": [
+                    "pressure"
+                ]
+            }
+        },
+        "oven rock": {
+            "entity_cluster": [
+                "oven rock"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ],
+                "power": [
+                    "power"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "volume": [
+                    "volume"
+                ]
+            }
+        }
+    }
+}

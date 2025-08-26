@@ -1,0 +1,7 @@
+[
+    "(:action catch ; Catch an entity and update possession status\n  :parameters (?actor - agent ?loc - location ?entity - object)\n  :precondition (and (at ?actor ?loc) (available ?loc ?entity) (not (possesses ?actor ?entity)))\n  :effect (and (possesses ?actor ?entity) (not (available ?loc ?entity))",
+    "(:action train ; Train an entity to enhance its capabilities\n    :parameters (?npc - person ?entity - object)\n    :precondition (and (has ?npc ?entity) (not (trained ?entity)))\n    :effect (trained ?entity)\n)",
+    "(:action evolve ; Evolve an entity to its next state\n:parameters (?npc - npc ?entity - entity ?next_state - entity ?item - object)\n:precondition (and (has ?npc ?entity) (or (trained ?entity) (inventory ?npc ?item)) (not (evolved ?entity)))\n:effect (and (has ?npc ?next_state) (not (has ?npc ?entity))",
+    "(:action copy ; Copy an item to an entity's inventory\n  :parameters (?npc - npc ?loc - location ?item - object)\n  :precondition (and (at ?npc ?loc) (has_item ?loc ?item))\n  :effect (inventory ?npc ?item))",
+    "(:action use ; Use an item on a target entity and update the state\n  :parameters (?user - agent ?target - entity ?item - object)\n  :precondition (and (has ?user ?target) (inventory ?user ?item) (not (used ?target ?item)))\n  :effect (and (used ?target ?item) (not (inventory ?user ?item))"
+]

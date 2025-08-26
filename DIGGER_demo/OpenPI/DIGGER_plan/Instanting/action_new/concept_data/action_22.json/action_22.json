@@ -1,0 +1,5 @@
+[
+    "(:action fold\n    :parameters (?entity - object)\n    :precondition (and (not (completely-folded ?entity)))\n    :effect (and (completely-folded ?entity))",
+    "(:action store ; Store an item in a specified location\n    :parameters (?item - object ?location - place)\n    :precondition (and (prepared ?item) (storage_area ?location))\n    :effect (and (stored ?item ?location) (not (prepared ?item))",
+    "(:action hang\n    :parameters (?item - object ?destination - location ?intermediate - location)\n    :precondition (and (stored ?item ?intermediate) (suitable ?destination))\n    :effect (and (hung ?item ?destination) (not (stored ?item ?intermediate))"
+]

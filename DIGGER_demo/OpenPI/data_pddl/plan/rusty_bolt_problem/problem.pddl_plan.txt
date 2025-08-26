@@ -1,0 +1,6 @@
+(obtain_fizzy_drink fizzy_drink1)
+(pour_fizzy_drink fizzy_drink1 old_bolt1)
+(wipe_clean towel1 fizzy_drink1)
+(dissolve_rust old_bolt1 fizzy_drink1)
+(replace_bolt old_bolt1 new_bolt1)
+; cost = 5 (unit cost)

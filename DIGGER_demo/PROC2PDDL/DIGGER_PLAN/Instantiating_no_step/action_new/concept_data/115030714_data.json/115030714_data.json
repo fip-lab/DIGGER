@@ -1,0 +1,3 @@
+[
+    "(:action serve\n  ; Serve a resource and update its status\n  :parameters (?entity - item ?location - place)\n  :precondition (and\n    (at ?entity ?location)\n    (not (served ?entity))\n  )\n  :effect (and\n    (served ?entity)\n  )"
+]

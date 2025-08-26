@@ -1,0 +1,4 @@
+[
+    "(:action store\n  ; Store an item and update its status\n  :parameters (?item - object ?person - person ?location - place)\n  :precondition (and (at ?item ready-to-store) (at ?person available) (at ?location storage-place))\n  :effect (and (at ?item stored) (not (at ?item ready-to-store))",
+    "(:action hang\n  :parameters (?item - object ?person - person ?place - location)\n  :precondition (and (at ?item stored) (at ?person home) (at ?place towel-rack))\n  :effect (and (at ?item hanging) (not (at ?item stored))"
+]

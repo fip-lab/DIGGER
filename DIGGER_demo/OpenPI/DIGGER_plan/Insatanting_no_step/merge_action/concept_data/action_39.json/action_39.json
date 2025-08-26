@@ -1,0 +1,15 @@
+{
+    "pour": [
+        "(:action pour_vinegar_into_container\n  :parameters (?c - container ?v - vinegar)\n  :precondition (and (location ?v in_bottle) (location ?c in_cabinet))\n  :effect (and (location ?v in_container) (location ?c on_countertop))\n)\n\n",
+        "(:action dip_wick_in_vinegar\n  :parameters (?w - wick ?v - vinegar ?c - container)\n  :precondition (and (orientation ?w removed) (composition ?w dry) (location ?v in_container))\n  :effect (and (composition ?w wet) (location ?v in_wick))\n)\n\n"
+    ],
+    "remove": [
+        "(:action remove_wick\n  :parameters (?w - wick ?l - lamp ?s - stove)\n  :precondition (or (and (orientation ?w on_lamp) (composition ?w dry)) (and (orientation ?w on_stove) (composition ?w dry)))\n  :effect (and (orientation ?w removed) (not (orientation ?w on_lamp)) (not (orientation ?w on_stove)))\n)\n\n"
+    ],
+    "dry": [
+        "(:action dry_wick\n  :parameters (?w - wick)\n  :precondition (and (composition ?w wet))\n  :effect (and (composition ?w dry) (wetness ?w dry))\n)\n\n"
+    ],
+    "use": [
+        "(:action use_dry_wick\n  :parameters (?w - wick ?l - lamp ?s - stove)\n  :precondition (and (composition ?w dry) (wetness ?w dry))\n  :effect (and (orientation ?w on_lamp) (orientation ?w on_stove))\n)\n```\n\n### Descriptions of Actions:\n\n1. **pour_vinegar_into_container**:\n   - **Action Name**: pour_vinegar_into_container\n   - **Parameters**: ?c - container, ?v - vinegar\n   - **Preconditions**: The vinegar is in the bottle, and the container is in the cabinet.\n   - **Effects**: The vinegar is now in the container, and the container is on the countertop.\n\n2. **remove_wick**:\n   - **Action Name**: remove_wick\n   - **Parameters**: ?w - wick, ?l - lamp, ?s - stove\n   - **Preconditions**: The wick is either on the lamp or the stove and is dry.\n   - **Effects**: The wick is removed from the lamp or stove.\n\n3. **dip_wick_in_vinegar**:\n   - **Action Name**: dip_wick_in_vinegar\n   - **Parameters**: ?w - wick, ?v - vinegar, ?c - container\n   - **Preconditions**: The wick is removed and dry, and the vinegar is in the container.\n   - **Effects**: The wick is now wet, and the vinegar is in the wick.\n\n4. **dry_wick**:\n   - **Action Name**: dry_wick\n   - **Parameters**: ?w - wick\n   - **Preconditions**: The wick is wet.\n   - **Effects**: The wick is dry, and its wetness is set to dry.\n\n5. **use_dry_wick**:\n   - **Action Name**: use_dry_wick\n   - **Parameters**: ?w - wick, ?l - lamp, ?s - stove\n   - **Preconditions**: The wick is dry and its wetness is dry.\n   - **Effects**: The wick is placed back on the lamp or stove.\n\nThese actions should accurately represent the steps necessary to prevent a wick lamp or stove from smoking by treating the wick with vinegar and ensuring it is thoroughly dried before use."
+    ]
+}

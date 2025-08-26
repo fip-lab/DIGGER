@@ -1,0 +1,927 @@
+[
+    {
+        "step": [
+            "Coat the soft boiled eggs in the batter.",
+            "Deep-fry the battered soft boiled eggs.",
+            "Season the deep-fried soft boiled eggs."
+        ],
+        "task": "How to Eat Soft Boiled Eggs",
+        "goal_state": "get_boiled_eggs velveeta",
+        "steps": "```pddl\n1. (wait(agent condition entity))\n2. (cook(egg pot stove chef kitchen))\n3. (wait(agent condition entity))\n4. (remove(egg pot plate tongs))\n5. (crack(agent egg spoon table))\n6. (serve(egg plate table))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 1888,
+                "task": "How to Fry an Egg",
+                "step": [
+                    "Fry your egg in hot oil for a decadent, golden brown crust and runny yolk.",
+                    "Flip eggs halfway through to make them over-easy.",
+                    "Serve an egg with toast for a simple breakfast.",
+                    "Serve a fried egg over leftovers to make a filling meal.",
+                    "Place a fried egg on sandwiches or burgers for a rich, protein filled option.",
+                    "Make Huevos Rancheros."
+                ],
+                "steps_predictions": [
+                    "fry_eraser npc",
+                    "flip-and-eat you",
+                    "cook npc kitchen",
+                    "cook npc kitchen",
+                    "place-in-fridge fried egg1",
+                    "make_huevos_rancheros alice"
+                ],
+                "goal_state": " ((cooked egg1) (cooked hues_rancheros))",
+                "similar_entity": {
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "kitchen": {
+                        "kitchen counter": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "messy"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[food]]",
+                            "[[a kitchen]] is used for [[cooking food]]",
+                            "[[table]] is related to [[kitchen]]"
+                        ]
+                    },
+                    "egg": {
+                        "the milk": [
+                            {
+                                "attribute": "location",
+                                "before": "in container | in bottle",
+                                "after": "in blender"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[egg]] is related to [[chicken]]",
+                            "You are likely to find [[an egg]] in [[a grocery store]]",
+                            "[[a chicken egg]] is [[a egg]]"
+                        ]
+                    },
+                    "fried": {
+                        "frying pan": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "less full",
+                                "after": "more full"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "quiet",
+                                "after": "sizzling"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[chicken]] is related to [[fried]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1888,
+                "task": "How to Fry an Egg on the Sidewalk",
+                "step": [
+                    "Wait for a very hot day.",
+                    "Place tin foil or metal pan in direct sunlight to heat up.",
+                    "Crack an egg onto the metal surface.",
+                    "Crack a second egg onto the sidewalk.",
+                    "Discard the eggs when you're finished."
+                ],
+                "steps_predictions": [
+                    "wait npc",
+                    "place-in-lamp npc heat",
+                    "break_egg npc",
+                    "crack_egg npc",
+                    "dissolve_eggs npc"
+                ],
+                "goal_state": " ((at npc place-in-lamp))",
+                "similar_entity": {
+                    "heat": {
+                        "heating element": [
+                            {
+                                "attribute": "color",
+                                "before": "black",
+                                "after": "red"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot | hotter | warm"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "open",
+                                "after": "closed"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "unused",
+                                "after": "active"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "heating"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off | on",
+                                "after": "on | off"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "on hands"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "making noise",
+                                "after": "quiet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[fire]] is related to [[heat]]",
+                            "[[heat]] is a kind of [[energy]]",
+                            "*Something you find in [[the oven]] is [[heat]]",
+                            "[[the sun]] is for [[heat]]",
+                            "The effect of [[lighting a fire]] is [[heat]]",
+                            "[[heat]] is not [[cold]]",
+                            "[[heat]] is the opposite of [[cold]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1888,
+                "task": "How to Make Egg Rolls",
+                "step": [
+                    "Place an egg roll wrap on a flat surface in front of you with a corner facing you.",
+                    "Use a spoon to put a scoop of the filling in the middle of the wrap.",
+                    "Fold the bottom of the wrap up, fold the left and right sides in, then roll it up.",
+                    "Beat an egg with a fork or whisk in a bowl and use it to seal the egg rolls.",
+                    "Heat up 1 qt (946 ml) of peanut oil in a pot or deep fryer.",
+                    "Place the egg rolls into the heated oil and fry them until they are brown.",
+                    "Drain the cooked egg rolls on a paper towel or a rack and serve them hot."
+                ],
+                "steps_predictions": [
+                    "place-in-container eggroll wrap",
+                    "put_ingredients_in_container mixing_bowl table",
+                    "fold-and-roll-wrapped towel1",
+                    "be_amazed npc",
+                    "heat_peanut_oil npc",
+                    "cook npc",
+                    "drain_cooked egg_roll npc"
+                ],
+                "goal_state": " ((at_location mixing_bowl table) (has_temperature npc))",
+                "similar_entity": {
+                    "table": {
+                        "table": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clear",
+                                "after": "cluttered"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a table]] is [[a tablecloth]]",
+                            "[[desk]] is related to [[table]]",
+                            "[[a table]] is for [[Putting things on]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "eggroll": {
+                        "tails": [
+                            {
+                                "attribute": "orientation",
+                                "before": "bare",
+                                "after": "adorned | beaded"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open",
+                                "after": "closed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wrap": {
+                        "baking paper": [
+                            {
+                                "attribute": "placement",
+                                "before": "outside of bowl",
+                                "after": "now inside of bowl"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on roll",
+                                "after": "in container | between cookies"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "in one piece",
+                                "after": "segmented"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "in bowl",
+                                "after": "now removed from bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "If you want to [[give a gift]] then you should [[wrap it]]",
+                            "Something that might happen when you [[buy something for a loved one]] is [[you wrap it]]"
+                        ]
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "towel": {
+                        "towel": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | smooth",
+                                "after": "dirty | sticky"
+                            },
+                            {
+                                "attribute": "color",
+                                "before": "white",
+                                "after": "orange"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[napkin]] is related to [[towel]]",
+                            "[[a towel]] can [[dry hair]]",
+                            "*Something you find at [[at hotel]] is [[a towel]]"
+                        ]
+                    },
+                    "egg roll": {
+                        "dough": [
+                            {
+                                "attribute": "location",
+                                "before": "in bowl | balled",
+                                "after": "on wax paper | flattened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in refrigerator",
+                                "after": "on counter"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "warm"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in mound on table | round",
+                                "after": "in pan | pan shaped"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "smooth",
+                                "after": "rigid"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Eat Soft Boiled Eggs  \n**Steps in Natural Language**:\n1. Allow the water to boil in a pot on the stove.\n2. Cook the egg in the boiling water using the pot.\n3. Let the egg cook until it reaches a soft-boiled texture.\n4. Remove the egg from the pot with tongs and place it on a plate.\n5. Crack the egg open with a spoon on the table.\n6. Serve the cracked egg on the plate and enjoy your soft-boiled egg."
+    },
+    {
+        "step": [
+            "Assemble all of the ingredients.",
+            "For the eggs, beat the eggs in a bowl and add 1 tbsp of milk into the eggs and whisk again.",
+            "When the oil is hot enough, pour the egg mixture in with medium heat and start stirring the mixture with a wooden spoon.",
+            "Do not over-cook the eggs.",
+            "Chopped the tomatoes into small cubes about the size a little bigger than your thumbnail!.",
+            "To make the fresh fried tomatoes, heat a little oil in pan in low heat.",
+            "Put a pinch of salt and sugar in to enhance the flavors.",
+            "Now, we toast the bread.",
+            "Lay the bread next to the eggs and tomatoes and drizzle some olive over the dish.",
+            "Finished."
+        ],
+        "task": "How to Make an Egg, Tomato and Toast Breakfast",
+        "goal_state": "make_eraser npc kitchen",
+        "steps": "```pddl\n; PDDL steps for How to Make an Egg, Tomato and Toast Breakfast\n\n1. crack(npc egg surface middle)\n2. cook(egg pot pan npc middle)\n3. cook(tomato pot pan npc middle)\n4. place(npc toast plate)\n5. place(npc egg plate)\n6. place(npc tomato plate)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 1888,
+                "task": "How to Fry an Egg",
+                "step": [
+                    "Fry your egg in hot oil for a decadent, golden brown crust and runny yolk.",
+                    "Flip eggs halfway through to make them over-easy.",
+                    "Serve an egg with toast for a simple breakfast.",
+                    "Serve a fried egg over leftovers to make a filling meal.",
+                    "Place a fried egg on sandwiches or burgers for a rich, protein filled option.",
+                    "Make Huevos Rancheros."
+                ],
+                "steps_predictions": [
+                    "fry_eraser npc",
+                    "flip-and-eat you",
+                    "cook npc kitchen",
+                    "cook npc kitchen",
+                    "place-in-fridge fried egg1",
+                    "make_huevos_rancheros alice"
+                ],
+                "goal_state": " ((cooked egg1) (cooked hues_rancheros))",
+                "similar_entity": {
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "kitchen": {
+                        "kitchen counter": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "messy"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[food]]",
+                            "[[a kitchen]] is used for [[cooking food]]",
+                            "[[table]] is related to [[kitchen]]"
+                        ]
+                    },
+                    "egg": {
+                        "the milk": [
+                            {
+                                "attribute": "location",
+                                "before": "in container | in bottle",
+                                "after": "in blender"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[egg]] is related to [[chicken]]",
+                            "You are likely to find [[an egg]] in [[a grocery store]]",
+                            "[[a chicken egg]] is [[a egg]]"
+                        ]
+                    },
+                    "fried": {
+                        "frying pan": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "less full",
+                                "after": "more full"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "quiet",
+                                "after": "sizzling"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[chicken]] is related to [[fried]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1888,
+                "task": "How to Fry an Egg on the Sidewalk",
+                "step": [
+                    "Wait for a very hot day.",
+                    "Place tin foil or metal pan in direct sunlight to heat up.",
+                    "Crack an egg onto the metal surface.",
+                    "Crack a second egg onto the sidewalk.",
+                    "Discard the eggs when you're finished."
+                ],
+                "steps_predictions": [
+                    "wait npc",
+                    "place-in-lamp npc heat",
+                    "break_egg npc",
+                    "crack_egg npc",
+                    "dissolve_eggs npc"
+                ],
+                "goal_state": " ((at npc place-in-lamp))",
+                "similar_entity": {
+                    "heat": {
+                        "heating element": [
+                            {
+                                "attribute": "color",
+                                "before": "black",
+                                "after": "red"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot | hotter | warm"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "open",
+                                "after": "closed"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "unused",
+                                "after": "active"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "heating"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off | on",
+                                "after": "on | off"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "on hands"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "making noise",
+                                "after": "quiet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[fire]] is related to [[heat]]",
+                            "[[heat]] is a kind of [[energy]]",
+                            "*Something you find in [[the oven]] is [[heat]]",
+                            "[[the sun]] is for [[heat]]",
+                            "The effect of [[lighting a fire]] is [[heat]]",
+                            "[[heat]] is not [[cold]]",
+                            "[[heat]] is the opposite of [[cold]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1888,
+                "task": "How to Make Egg Rolls",
+                "step": [
+                    "Place an egg roll wrap on a flat surface in front of you with a corner facing you.",
+                    "Use a spoon to put a scoop of the filling in the middle of the wrap.",
+                    "Fold the bottom of the wrap up, fold the left and right sides in, then roll it up.",
+                    "Beat an egg with a fork or whisk in a bowl and use it to seal the egg rolls.",
+                    "Heat up 1 qt (946 ml) of peanut oil in a pot or deep fryer.",
+                    "Place the egg rolls into the heated oil and fry them until they are brown.",
+                    "Drain the cooked egg rolls on a paper towel or a rack and serve them hot."
+                ],
+                "steps_predictions": [
+                    "place-in-container eggroll wrap",
+                    "put_ingredients_in_container mixing_bowl table",
+                    "fold-and-roll-wrapped towel1",
+                    "be_amazed npc",
+                    "heat_peanut_oil npc",
+                    "cook npc",
+                    "drain_cooked egg_roll npc"
+                ],
+                "goal_state": " ((at_location mixing_bowl table) (has_temperature npc))",
+                "similar_entity": {
+                    "table": {
+                        "table": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clear",
+                                "after": "cluttered"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a table]] is [[a tablecloth]]",
+                            "[[desk]] is related to [[table]]",
+                            "[[a table]] is for [[Putting things on]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "eggroll": {
+                        "tails": [
+                            {
+                                "attribute": "orientation",
+                                "before": "bare",
+                                "after": "adorned | beaded"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open",
+                                "after": "closed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wrap": {
+                        "baking paper": [
+                            {
+                                "attribute": "placement",
+                                "before": "outside of bowl",
+                                "after": "now inside of bowl"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on roll",
+                                "after": "in container | between cookies"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "in one piece",
+                                "after": "segmented"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "in bowl",
+                                "after": "now removed from bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "If you want to [[give a gift]] then you should [[wrap it]]",
+                            "Something that might happen when you [[buy something for a loved one]] is [[you wrap it]]"
+                        ]
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "towel": {
+                        "towel": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | smooth",
+                                "after": "dirty | sticky"
+                            },
+                            {
+                                "attribute": "color",
+                                "before": "white",
+                                "after": "orange"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[napkin]] is related to [[towel]]",
+                            "[[a towel]] can [[dry hair]]",
+                            "*Something you find at [[at hotel]] is [[a towel]]"
+                        ]
+                    },
+                    "egg roll": {
+                        "dough": [
+                            {
+                                "attribute": "location",
+                                "before": "in bowl | balled",
+                                "after": "on wax paper | flattened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in refrigerator",
+                                "after": "on counter"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "warm"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in mound on table | round",
+                                "after": "in pan | pan shaped"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "smooth",
+                                "after": "rigid"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Make an Egg, Tomato and Toast Breakfast  \n**Steps in Natural Language**:\n1. Crack the egg into the pan.\n2. Cook the egg in the pan over medium heat until it’s fully set.\n3. Cook the tomato in the pan over medium heat until it’s tender.\n4. Place the toast on a plate.\n5. Place the cooked egg on the plate.\n6. Place the cooked tomato on the plate."
+    }
+]

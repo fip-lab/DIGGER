@@ -1,0 +1,280 @@
+[
+    {
+        "cluster_label": 1041,
+        "task": "How to Bible Journal",
+        "step": [
+            "Decide what you want to cover in your faith journal.",
+            "Consider whether you'd like to follow a more structured approach to Bible journaling.",
+            "Keep notes on anything that reading the Bible raises for you.",
+            "Use imagery and visual prompts.",
+            "Consider sharing the Bible journaling."
+        ],
+        "steps_predictions": [
+            "choose_topic npc faith_journal",
+            "create_structibility npc",
+            "listen_to_bible npc",
+            "use_as_visual_sliplargerbinder npc",
+            "start_fire npc"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Journal for Therapy",
+        "step": [
+            "Journal what you feel.",
+            "Evaluate your actions, your thoughts, and your emotions.",
+            "Journal in conjunction with your therapy sessions.",
+            "Don't be afraid to get creative.",
+            "Go into detail.",
+            "Give yourself writing prompts to stimulate your self-inspection.",
+            "Think of your journal like a friend.",
+            "Read through your journal regularly."
+        ],
+        "steps_predictions": [
+            "journal_what_you_feel you",
+            " Evaluate your actions, your thoughts, and your emotions",
+            "create_journal npc covering_tracks track",
+            "create_sliplargerbend npc",
+            "go_into_detail npc",
+            "create_sliplargerbinder npc",
+            "think_of_friend npc",
+            "read_journal npc"
+        ],
+        "goal_state": " ((not (in anish npc)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Write a Reading Log",
+        "step": [
+            "Purchase an attractive journal.",
+            "Keep the log near your favorite reading spot.",
+            "Read actively and widely.",
+            "Read slowly and carefully.",
+            "Write down the bibliographic information for everything you read.",
+            "Include the dates of when you read.",
+            "Write down page numbers of your favorite passages.",
+            "Take notes while you read.",
+            "Reflect on the book once it's complete.",
+            "Reread your personal reading journal."
+        ],
+        "steps_predictions": [
+            "purchase_journal npc",
+            "keep_log npc log",
+            "read_wailmer npc",
+            "read slowly npc",
+            "write_bibliographic_info npc book",
+            "listen_to_broadcast npc",
+            "write_page_number npc",
+            "take_note npc book",
+            "reflect_on_book npc book",
+            "reread_journal npc book"
+        ],
+        "goal_state": " ((not (in npc book)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Journal in Public",
+        "step": [
+            "Bring your journal with you.",
+            "Find somewhere comfortable to write.",
+            "Just write!.",
+            "Be calm about onlookers or questions.",
+            "Avoid making a big deal out of it."
+        ],
+        "steps_predictions": [
+            "bring-journal-with-you journal",
+            "find_comfortable_location npc",
+            "create_sliplargerbinder npc",
+            "be_calm_wailmer npc",
+            "make_not_big_deal npc basement"
+        ],
+        "goal_state": " ((not (in npc basement)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Keep a Summer Journal",
+        "step": [
+            "Purchase a suitable journal that you can carry about with you.",
+            "Start carrying the journal about with you.",
+            "Keep a record of the day's weather.",
+            "Take photos.",
+            "Attach small paper or cloth mementos.",
+            "Do WordPress of the things you enjoyed the most during summer months.",
+            "Have friends contribute to your summer journal.",
+            "Add a summer bucket list at the front of the journal.",
+            "Use the journal as a writing prompt.",
+            "Keep a note of your travels.",
+            "Draw in your summer journal.",
+            "Finish the summer journal at the end of summer."
+        ],
+        "steps_predictions": [
+            "purchase_journal npc",
+            "start_journal about_with you journal",
+            "record_weather npc",
+            "take_photos camera",
+            "attach-small-mementos paper npc",
+            "create_memebers_know npc",
+            "create_memebers_know npc",
+            "add-bucket-list items to the journal",
+            "use_as_writing_ prompt journal",
+            "keep_note npc",
+            "draw_in_journal npc",
+            "finish_journal npc"
+        ],
+        "goal_state": " ((not (in npc)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Write a Devotional",
+        "step": [
+            "Study your Bible each day.",
+            "Take a notebook with you everywhere you go.",
+            "Keep your entries consistent.",
+            "Choose a number of devotionals to coincide with a calendar.",
+            "Proofread your devotionals carefully.",
+            "Submit your collection to Christian publishers."
+        ],
+        "steps_predictions": [
+            "study_bible npc",
+            "take_inventory npc notebook",
+            "keep_completed_with_in_container npc covering_tracks track",
+            "choose_devotionals devotionals",
+            "check_devotionals devotionals",
+            "submit_collection npc ss"
+        ],
+        "goal_state": " ((knowledge npc))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Make a Nature Journal",
+        "step": [
+            "Decide what kind of nature journal you'd like to make.",
+            "Make or buy a suitable journal of you choice.",
+            "Get any other equipment you'll need.",
+            "Dedicate time to journaling.",
+            "Observe the world around you.",
+            "Do your writing on location.",
+            "Begin each entry with the location, date, and time.",
+            "Record your observations with drawings or paintings.",
+            "Write about what you observe.",
+            "Learn more about what you've seen.",
+            "Revisit your past entries."
+        ],
+        "steps_predictions": [
+            "choose_journal npc jungle",
+            "buy_journal npc",
+            "get_equipment you camera you binoculars",
+            "dedicate-time journaling",
+            "observe_world npc",
+            "create_location npc covering_tracks",
+            "start_with_location npc covering_tracks track",
+            "record_observations you",
+            "create_sos_observer npc",
+            "learn npc home",
+            "revisit_past_completed entries"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Keep a Spiritual Journal",
+        "step": [
+            "Purchase a journal to write in.",
+            "Set a time each day to sit and self reflect on your spiritual journey.",
+            "Keep your spiritual journal with you at all times.",
+            "Acknowledge your blessings.",
+            "Set spiritual goals.",
+            "Write down any prayers that inspire you.",
+            "Review your journal entries at least once a month."
+        ],
+        "steps_predictions": [
+            "purchase_journal npc",
+            "set_time_to_reflect npc",
+            "keep_journal npc",
+            "listen_to_family npc",
+            "set_spiritual_goal goal",
+            "write_prayer npc",
+            "review_journal entries journal1 month1"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Write Reflectively",
+        "step": [
+            "Keep a journal either in a notebook or on your computer.",
+            "Set aside a few minutes to write every day or once a week.",
+            "Journal during transition moments in your life to stay centered.",
+            "Try writing reflectively to deal with anxiety and stress.",
+            "Use your journal to reflect on things you are grateful for.",
+            "Write in stream-of-consciousness to overcome writer\u2019s block."
+        ],
+        "steps_predictions": [
+            "keep_journal npc notebook",
+            "set_fewest_minute npc covering_tracks track",
+            "stay_centered npc",
+            "create_shelter npc basement",
+            "reflect_on_gems npc",
+            "break_writer_block npc"
+        ],
+        "goal_state": " ((not (reflective npc)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Write a Journal Entry",
+        "step": [
+            "Organize your thoughts to make them coherent.",
+            "Make sure you reach the required word count.",
+            "Use proper grammar like you would in an essay.",
+            "Proofread your journal entry and correct any mistakes."
+        ],
+        "steps_predictions": [
+            "organize_thoughts npc",
+            "set_word_count npc covering_tracks track",
+            "use_grammar npc",
+            "putobjectinreceptacle agent1 journal1"
+        ],
+        "goal_state": " ((objectAtLocation npc covering_tracks))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Find Journal Articles",
+        "step": [
+            "Use digital full-text articles, when available, for the most convenient option.",
+            "Check your local library catalog to see if it carries the journals you need.",
+            "Ask at the library help desk if you need assistance finding journals or articles.",
+            "See if interlibrary loan (ILL) is an option for hard-to-find journal articles."
+        ],
+        "steps_predictions": [
+            "use_full_text npc covering_tracks track",
+            "check_libraries npc book",
+            "get_helmet npc covering_tracks track",
+            "check_journal_items npc covering_tracks track"
+        ],
+        "goal_state": " ((not (in npc covering_tracks track)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Make a Gardening Journal",
+        "step": [
+            "Decide what purpose you want your gardening journal to fulfill.",
+            "Choose a journal format that suits your purpose.",
+            "Divide your garden journal into sections.",
+            "Leave space in your new sections for non-text items such as seed samples, diagrams and pictures of your garden.",
+            "Cover your gardening journal with a book cover or plastic lamination so that it can safely get wet and dirty.",
+            "Begin entering information, such as description of a day's work or planting dates into the appropriate sections of the garden journal.",
+            "Let your gardening journal evolve as the growing season goes on, adding new sections, including a second volume, inserting additional paper."
+        ],
+        "steps_predictions": [
+            "choose_purpose npc garden_center",
+            "choose_journal_form npc",
+            "divide_into_sections garden_journal journal",
+            "create_area npc",
+            "cover_journal npc garden_center book_cover",
+            "start_fire npc garden_center",
+            "evolve_journal npc garden journal"
+        ],
+        "goal_state": " ((selected_journal_center))"
+    }
+]

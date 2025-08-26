@@ -1,0 +1,4 @@
+(obtain_eraser you eraser)
+(kneel_and_rub you eraser linoleum_floor)
+(wash_and_dry you linoleum_floor faucet_water)
+; cost = 3 (unit cost)

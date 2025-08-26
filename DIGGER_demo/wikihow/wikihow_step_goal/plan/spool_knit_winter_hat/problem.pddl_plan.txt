@@ -1,0 +1,5 @@
+(sew_web_into_rectangle web)
+(join_ends end_points)
+(knit_web web)
+(secure_top_and_make_tassel finished_hat yarn_piece)
+; cost = 4 (unit cost)

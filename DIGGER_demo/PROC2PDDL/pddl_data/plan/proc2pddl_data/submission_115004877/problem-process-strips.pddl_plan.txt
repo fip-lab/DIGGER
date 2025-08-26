@@ -1,0 +1,7 @@
+(get wooden_board npc garage)
+(go in npc garage work_station)
+(soak_strips npc work_station strip)
+(dry_out_strips npc strip)
+(weave_strips_into_sheet npc work_station strip sheet)
+(press_sheet npc work_station wooden_board sheet)
+; cost = 6 (unit cost)

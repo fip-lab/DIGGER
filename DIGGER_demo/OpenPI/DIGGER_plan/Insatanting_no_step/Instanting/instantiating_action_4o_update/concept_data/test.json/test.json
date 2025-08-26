@@ -1,0 +1,82 @@
+[
+    {
+        "task": "Make a Pipe Cleaner Bird",
+        "instantiting_action": [
+            "pick(pipe p loc1 loc2)",
+            "pick(cleaner p loc1 loc2)",
+            "pick(spray p loc1 loc2)",
+            "pick(rag p loc1 loc2)",
+            "pick(trash p loc1 loc2)",
+            "pick(item p loc1 loc2)",
+            "throw(pipe actor start_loc end_loc container)",
+            "throw(cleaner actor start_loc end_loc container)",
+            "throw(spray actor start_loc end_loc container)",
+            "throw(rag actor start_loc end_loc container)",
+            "throw(trash actor start_loc end_loc container)",
+            "throw(item actor start_loc end_loc container)",
+            "dust(p pipe room container)",
+            "dust(p cleaner room container)",
+            "dust(p spray room container)",
+            "dust(p rag room container)",
+            "dust(p trash room container)",
+            "dust(p item room container)",
+            "shake(actor pipe surface)",
+            "shake(actor cleaner surface)",
+            "shake(actor spray surface)",
+            "shake(actor rag surface)",
+            "shake(actor trash surface)",
+            "shake(actor item surface)",
+            "enjoy(p resource)"
+        ]
+    },
+    {
+        "task": "Make Marshmallow Cream Cheese Fruit Dip",
+        "instantiting_action": [
+            "pour(p item bl g st)",
+            "blend(p bl ingredient)"
+        ]
+    },
+    {
+        "task": "Camouflage Equipment",
+        "instantiting_action": [
+            "find(p group t place gear)",
+            "find(p group t place equipment)",
+            "setup(spy victim camouflage)",
+            "setup(spy victim meeting)",
+            "setup(p group c)",
+            "setup(friend team mission)",
+            "setup(people team mission)",
+            "setup(person team mission)"
+        ]
+    },
+    {
+        "task": "Make Rhubarb Cordial",
+        "instantiting_action": [
+            "prepare(agent target)",
+            "take(agent source item)",
+            "moisten(agent item hormone)",
+            "moisten(agent item cordial)",
+            "plant(agent resource location)"
+        ]
+    },
+    {
+        "task": "Make a Pitcher of Melon Pina Coladas",
+        "instantiting_action": [
+            "pour(p item bl g st)",
+            "blend(p bl ingredient)"
+        ]
+    },
+    {
+        "task": "Make Soap Bubbles for Your Children",
+        "instantiting_action": [
+            "grind(p lid ing)",
+            "grind(p pestle ing)",
+            "mix(child lid item)",
+            "mix(child pestle item)",
+            "transfer(p source destination item)",
+            "pour_into_air_tight_container(p c a ing)",
+            "pour(child source destination air)",
+            "pour(child source destination ingredient)"
+        ]
+    }
+]

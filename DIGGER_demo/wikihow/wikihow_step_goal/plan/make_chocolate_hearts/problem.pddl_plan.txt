@@ -1,0 +1,5 @@
+(melt-chocolate chocolate microwave spoon)
+(freeze-chocolate chocolate chocolate)
+(release-from-molds chocolate chocolate)
+(box-chocolates chocolate)
+; cost = 4 (unit cost)

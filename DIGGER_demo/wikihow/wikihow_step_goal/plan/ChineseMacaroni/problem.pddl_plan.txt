@@ -1,0 +1,3 @@
+(boil_macaroni macaroni pan kitchen)
+(serve_macaroni macaroni plate dining_table pan)
+; cost = 2 (unit cost)

@@ -1,0 +1,182 @@
+[
+    {
+        "title": "How to Prevent Cystic Acne",
+        "steps": [
+            "See a dermatologist if your acne is negatively impacting your life.",
+            "Determine if you have cystic acne.",
+            "Use a prescription acne treatment as directed."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Help Prevent Epidemics from Spreading",
+        "steps": [
+            "Go to the doctor if you feel ill or unwell.",
+            "Get vaccinated for diseases regularly.",
+            "Ask your doctor about current epidemics and how you can avoid spreading them."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Treat Blocked Fallopian Tubes",
+        "steps": [
+            "Understand that sexually transmitted infections (STIs) can lead to blocked fallopian tubes.",
+            "Know the role of pelvic inflammatory disease in causing blocked fallopian tubes.",
+            "Be aware of the potential risks associated with endometriosis.",
+            "Recognize the role of uterine infections.",
+            "Factor in past ectopic pregnancies.",
+            "Consider past surgeries."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Prevent Bed Sores",
+        "steps": [
+            "Learn the risk factors.",
+            "Look for the causes.",
+            "Recognize the stages of bed sores."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Protect Yourself from Infectious Diseases",
+        "steps": [
+            "Understand different kinds of infectious diseases.",
+            "Treat bacterial infections with antibiotics.",
+            "Treat viral infections.",
+            "Know how to treat fungal infections.",
+            "Know how to treat parasitic infections."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Prevent the Spread of Genital Warts",
+        "steps": [
+            "Know your immune system is the first defense.",
+            "Watch for the development of genital warts.",
+            "Ask your doctor for a diagnosis.",
+            "Use at-home treatments.",
+            "Ask about skin treatments.",
+            "Understand the complications."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Pumice a Wart",
+        "steps": [
+            "Avoid contact with other warts.",
+            "Cover current warts.",
+            "Be careful sharing grooming tools."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Prevent Staph Infection",
+        "steps": [
+            "Know who is at risk.",
+            "Learn how staph spreads.",
+            "Understand how staph is diagnosed.",
+            "Know how infections are treated.",
+            "Understand MRSA.",
+            "Go to the doctor."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Prevent Syphilis",
+        "steps": [
+            "Recognize syphilis symptoms.",
+            "Get routine blood tests.",
+            "Don\u2019t use home remedies or over-the-counter drugs."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Treat a Wart at Home",
+        "steps": [
+            "See your doctor if you\u2019ve treated your warts but they won\u2019t go away.",
+            "Visit your doctor if your warts are interfering with your daily life.",
+            "Get medical treatment if your warts are painful or change in appearance or color.",
+            "Talk to your doctor if you suddenly develop multiple warts."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Prevent a Bacterial Infection",
+        "steps": [
+            "Understand that bacteria are resilient.",
+            "Learn how bacterial infections spread.",
+            "Know when to call the doctor.",
+            "Seek immediate medical attention in more severe situations."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Stop a Developing Yeast Infection",
+        "steps": [
+            "Recognize the signs.",
+            "Consider the general risk factors.",
+            "Look for the gender specific risk factors.",
+            "Reduce the possibility of a yeast infection."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Know if You Have Malaria",
+        "steps": [
+            "Use extra precautions.",
+            "Take preventative medication.",
+            "Treat malaria.",
+            "Seek immediate medical care."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Prevent E.Coli Poisoning",
+        "steps": [
+            "Follow local and national news regarding E. coli outbreaks.",
+            "Call a local public health department for updates.",
+            "Do not buy or consume potentially contaminated products.",
+            "Do not drink from rivers, lakes, streams, or untreated wells."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Treat the Flu",
+        "steps": [
+            "Get vaccinated before flu season.",
+            "Talk to your doctor before getting the vaccine if you have certain conditions.",
+            "Choose between the flu shot and the nasal spray vaccine.",
+            "Practice good hygiene.",
+            "Keep your body in good general health.",
+            "Take the flu seriously."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Get Rid of Genital Warts",
+        "steps": [
+            "Don't feel ashamed or think you did something wrong.",
+            "Inform any sexual partners if you have genital warts.",
+            "Avoid sexual contact during an outbreak or when treating warts.",
+            "Wear a condom during sex even when no warts are present.",
+            "See your doctor if you have another outbreak."
+        ],
+        "cluster_label": 1387
+    },
+    {
+        "title": "How to Test for Herpes",
+        "steps": [
+            "Take prescription antiviral medications.",
+            "Communicate with your partner or partners.",
+            "Prevent transmission of genital herpes to your partner.",
+            "Be aware of social stigmas.",
+            "Join a support group for genital herpes sufferers.",
+            "Watch for the symptoms of outbreaks and treat them promptly.",
+            "Clean the blisters and keep them dry.",
+            "Lead a healthy lifestyle.",
+            "Make hygiene a priority."
+        ],
+        "cluster_label": 1387
+    }
+]

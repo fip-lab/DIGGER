@@ -1,0 +1,14 @@
+{
+    "collect": [
+        "(:action collect_wood\n    :parameters (?a - agent ?w - material ?s - location)\n    :precondition (and\n      (at ?w storage)\n      (in ?a main_area)\n    )\n    :effect (and\n      (collected ?w)\n      (not (at ?w storage))\n    )\n  )\n\n  ;; Action 2: Gather nails from the toolbox\n  "
+    ],
+    "gather": [
+        "(:action gather_nails\n    :parameters (?a - agent ?n - material ?t - location)\n    :precondition (and\n      (at ?n toolbox)\n      (in ?a main_area)\n    )\n    :effect (and\n      (collected ?n)\n      (not (at ?n toolbox))\n    )\n  )\n\n  ;; Action 3: Obtain paint from the shed\n  ",
+        "(:action obtain_paint\n    :parameters (?a - agent ?p - material ?sh - location)\n    :precondition (and\n      (at ?p shed)\n      (in ?a main_area)\n    )\n    :effect (and\n      (collected ?p)\n      (not (at ?p shed))\n    )\n  )\n\n  ;; Action 4: Retrieve tools from the workshop\n  ",
+        "(:action retrieve_tools\n    :parameters (?a - agent ?t - material ?w - location)\n    :precondition (and\n      (at ?t workshop)\n      (in ?a main_area)\n    )\n    :effect (and\n      (collected ?t)\n      (not (at ?t workshop))\n    )\n  )\n)\n```\n\nThis PDDL domain definition includes actions for collecting wood, gathering nails, obtaining paint, and retrieving tools, based on the hypothetical task and steps provided. Each action includes the necessary parameters, preconditions, and effects to reflect the described entity states and steps.",
+        "(:action select-food-item\n    :parameters (?f - food ?p - player)\n    :precondition (and (long ?f) (thin ?f) (hard ?f) (straight ?f) (stiff ?f) (between-15-and-20-cm ?f) (unselected ?p))\n    :effect (and (selected ?f) (selected ?p) (not (unselected ?p)))\n)\n\n"
+    ],
+    "lay": [
+        "(:action lay-down-masking-tape\n    :parameters (?t - tape ?p - player)\n    :precondition (and (rolled ?t) (onRoll ?t) (selected ?p))\n    :effect (and (unrolled ?t) (inPieces ?t) (not (rolled ?t)) (not (onRoll ?t)))\n)\n```\n\nExplanation:\n\n1. **select-food-item**:\n   - **Parameters**: ?f (food item), ?p (player)\n   - **Preconditions**: The food item must be long, thin, hard, straight, stiff, and between 15 and 20 cm. The player must be unselected.\n   - **Effects**: The food item and player are selected, and the player is no longer unselected.\n\n2. **lay-down-masking-tape**:\n   - **Parameters**: ?t (tape), ?p (player)\n   - **Preconditions**: The tape must be rolled and on the roll. The player must be selected.\n   - **Effects**: The tape is unrolled and in pieces, and it is no longer rolled or on the roll.\n\nThese actions capture the essential steps and conditions for selecting a food item and preparing the floor with masking tape for the task of throwing hotdogs."
+    ]
+}

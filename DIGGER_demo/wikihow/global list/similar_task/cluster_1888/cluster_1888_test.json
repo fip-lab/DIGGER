@@ -1,0 +1,394 @@
+[
+    {
+        "How to Make an Egg, Tomato and Toast Breakfast": [
+            {
+                "cluster_label": 1888,
+                "task": "How to Fry an Egg",
+                "step": [
+                    "Fry your egg in hot oil for a decadent, golden brown crust and runny yolk.",
+                    "Flip eggs halfway through to make them over-easy.",
+                    "Serve an egg with toast for a simple breakfast.",
+                    "Serve a fried egg over leftovers to make a filling meal.",
+                    "Place a fried egg on sandwiches or burgers for a rich, protein filled option.",
+                    "Make Huevos Rancheros."
+                ],
+                "steps_predictions": [
+                    "fry_eraser npc",
+                    "flip-and-eat you",
+                    "cook npc kitchen",
+                    "cook npc kitchen",
+                    "place-in-fridge fried egg1",
+                    "make_huevos_rancheros alice"
+                ],
+                "goal_state": " ((cooked egg1) (cooked hues_rancheros))",
+                "similar_entity": {
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "kitchen": {
+                        "kitchen counter": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "messy"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[food]]",
+                            "[[a kitchen]] is used for [[cooking food]]",
+                            "[[table]] is related to [[kitchen]]"
+                        ]
+                    },
+                    "egg": {
+                        "the milk": [
+                            {
+                                "attribute": "location",
+                                "before": "in container | in bottle",
+                                "after": "in blender"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[egg]] is related to [[chicken]]",
+                            "You are likely to find [[an egg]] in [[a grocery store]]",
+                            "[[a chicken egg]] is [[a egg]]"
+                        ]
+                    },
+                    "fried": {
+                        "frying pan": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "less full",
+                                "after": "more full"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "quiet",
+                                "after": "sizzling"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[chicken]] is related to [[fried]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1888,
+                "task": "How to Make Sunny Side Down Eggs",
+                "step": [
+                    "Put 2 tbsp vegetable oil or butter on the frying pan while the heat is on.",
+                    "After the oil or butter has been melted or what not, make sure it's all over the pan so it won't stick.",
+                    "Crack the egg(s) open and make sure you crack the eggs lower to the pan or else the yolks will break.",
+                    "Just as the whites are starting to turn white, turn the stove off and wait until the eggs are pure white and the yolk has a little bit of a skin over it.",
+                    "Flip the egg over with a spatula gently.",
+                    "After a minute or two, flip it over again gently.",
+                    "Make toast to sweep up the yolk if you like."
+                ],
+                "steps_predictions": [
+                    "put_ingredients_in_oven stove_knob velveeta",
+                    "set_burner_add_oil stove_knob velveeta",
+                    "break_eraser npc",
+                    "turn_off_oven npc",
+                    "flip-over-and-scrifftop egg1",
+                    "flip-over-twice npc",
+                    "sweep_yolk npc kitchen"
+                ],
+                "goal_state": " ((in_oven npc) (flattened egg1))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "stove knob": {
+                        "stove knob": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "turned off",
+                                "after": "turned on"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "in the off position",
+                                "after": "in the on position"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "medium-low",
+                                "after": "low"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "egg": {
+                        "the milk": [
+                            {
+                                "attribute": "location",
+                                "before": "in container | in bottle",
+                                "after": "in blender"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[egg]] is related to [[chicken]]",
+                            "You are likely to find [[an egg]] in [[a grocery store]]",
+                            "[[a chicken egg]] is [[a egg]]"
+                        ]
+                    },
+                    "kitchen": {
+                        "kitchen counter": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "messy"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[food]]",
+                            "[[a kitchen]] is used for [[cooking food]]",
+                            "[[table]] is related to [[kitchen]]"
+                        ]
+                    },
+                    "velveeta": {
+                        "velveeta": [
+                            {
+                                "attribute": "granularity",
+                                "before": "whole | a block",
+                                "after": "cubed | cut into cubes | cut into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the fridge | in package | in front of me",
+                                "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "room temperature"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "large | whole",
+                                "after": "small | cut up"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on the cutting board",
+                                "after": "in the sauce pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | room temperature",
+                                "after": "hot | warming"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "thick",
+                                "after": "runny"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1888,
+                "task": "How to Fry an Egg on the Sidewalk",
+                "step": [
+                    "Wait for a very hot day.",
+                    "Place tin foil or metal pan in direct sunlight to heat up.",
+                    "Crack an egg onto the metal surface.",
+                    "Crack a second egg onto the sidewalk.",
+                    "Discard the eggs when you're finished."
+                ],
+                "steps_predictions": [
+                    "wait npc",
+                    "place-in-lamp npc heat",
+                    "break_egg npc",
+                    "crack_egg npc",
+                    "dissolve_eggs npc"
+                ],
+                "goal_state": " ((at npc place-in-lamp))",
+                "similar_entity": {
+                    "heat": {
+                        "heating element": [
+                            {
+                                "attribute": "color",
+                                "before": "black",
+                                "after": "red"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot | hotter | warm"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "open",
+                                "after": "closed"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "unused",
+                                "after": "active"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "heating"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off | on",
+                                "after": "on | off"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "on hands"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "making noise",
+                                "after": "quiet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[fire]] is related to [[heat]]",
+                            "[[heat]] is a kind of [[energy]]",
+                            "*Something you find in [[the oven]] is [[heat]]",
+                            "[[the sun]] is for [[heat]]",
+                            "The effect of [[lighting a fire]] is [[heat]]",
+                            "[[heat]] is not [[cold]]",
+                            "[[heat]] is the opposite of [[cold]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    }
+]

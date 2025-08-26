@@ -1,0 +1,147 @@
+[
+    {
+        "title": "How to Stop Bleeding Gums",
+        "steps": [
+            "Identify the cause of bleeding gums.",
+            "Understand the consequences of a gum disease.",
+            "Visit your dentist."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Prevent Body Acne",
+        "steps": [
+            "Talk to your doctor.",
+            "Consider the side effects of medications you are taking.",
+            "Ask about medications that may help prevent body acne.",
+            "Discuss other possible causes of your acne."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Prevent Rat Bite Fever",
+        "steps": [
+            "Be aware of how you can contract rat bite fever.",
+            "Look for symptoms of streptobacillary rat bite fever.",
+            "Check for signs of spirillary rat bite fever.",
+            "Clean the bite or scratch as soon as you notice it.",
+            "Go to the hospital after you have cleaned the bite.",
+            "Take antibiotics to treat rat bite fever."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Stop a Mole from Bleeding",
+        "steps": [
+            "Visit your doctor if a mole starts bleeding without provocation.",
+            "Describe the mole and related symptoms to your doctor.",
+            "Ask your doctor if they recommend surgery to test the mole.",
+            "Never attempt to remove your own mole at home."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Prevent Hives",
+        "steps": [
+            "Identify hives.",
+            "Recognize the trigger for your hives.",
+            "Diagnose your hives."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Prevent a Stress Fracture",
+        "steps": [
+            "Be prepared by knowing the symptoms of a stress fracture.",
+            "Be aware of the risk factors that can lead to a stress fracture.",
+            "Know how a stress fracture is diagnosed."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Stop Brain Freeze",
+        "steps": [
+            "Understand what causes brain freeze.",
+            "Prevent cold food from touching the roof of your mouth.",
+            "Consume cold foods and drinks slowly.",
+            "Take a break from the cold."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Stop Wisdom Tooth Pain",
+        "steps": [
+            "Learn about wisdom teeth.",
+            "Know the causes of the pain.",
+            "See your dentist."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Stop a Sneeze",
+        "steps": [
+            "Know when not to stop a sneeze.",
+            "Sneeze healthily.",
+            "Sneeze politely.",
+            "Sneeze safely."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Prevent Varicose Veins",
+        "steps": [
+            "Recognize the symptoms of varicose veins.",
+            "Know when to seek medical help.",
+            "Consider other treatment options."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Prevent Low Blood Sugar",
+        "steps": [
+            "Understand how hypoglycemia works.",
+            "Know the symptoms of low blood sugar.",
+            "Be preventive and take precautions.",
+            "Consult your physician."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Prevent Night Sweats",
+        "steps": [
+            "Discuss your symptoms with your doctor.",
+            "Identify the cause of the night sweats.",
+            "Get the necessary treatment from your doctor."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Stop a Nose Bleed",
+        "steps": [
+            "Learn the types of nose bleeds.",
+            "Know the causes.",
+            "Avoid certain situations.",
+            "Visit the doctor."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Prevent Elder Abuse",
+        "steps": [
+            "Recognize the risk factors.",
+            "Discover who can commit elder abuse.",
+            "Consider common locations of elder abuse.",
+            "Report elder abuse."
+        ],
+        "cluster_label": 553
+    },
+    {
+        "title": "How to Set Up a Stop\u2010loss Order",
+        "steps": [
+            "Consider the benefits of stop-loss orders.",
+            "Consider the disadvantages of stop-loss orders.",
+            "Adapt the way you use stop limit orders to match your tolerance level."
+        ],
+        "cluster_label": 553
+    }
+]

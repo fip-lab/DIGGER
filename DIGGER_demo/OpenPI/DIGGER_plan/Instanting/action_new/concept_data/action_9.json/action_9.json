@@ -1,0 +1,5 @@
+[
+    "(:action knit ; Create or construct a specified object\n    :parameters (?actor - agent ?item - constructible ?location - place)\n    :precondition (and (at ?actor ?location) (not (constructed ?item ?location)))\n    :effect (and (constructed ?item ?location))",
+    "(:action join\n    :parameters (?entity - agent ?target - object ?tool - object ?material - object)\n    :precondition (and (at ?entity ?target) (inventory ?entity ?tool) (inventory ?entity ?material))\n    :effect (and (joined ?target))",
+    "(:action wrap\n    ; A universal action to check and wrap items\n    :parameters (?actor - agent ?item - object ?material - material)\n    :precondition (and (available ?actor) (at ?actor ?item) (joined ?material))\n    :effect (and (wrapped ?actor ?item ?material))"
+]

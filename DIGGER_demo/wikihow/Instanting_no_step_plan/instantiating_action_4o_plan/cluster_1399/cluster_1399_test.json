@@ -1,0 +1,1236 @@
+[
+    {
+        "step": [
+            "Know how to tell when butter is soft.",
+            "Cut butter into pieces before softening.",
+            "Leave butter on the counter near the oven.",
+            "Soften butter more quickly by mashing or beating it.",
+            "Place a container of butter in a warm water bath.",
+            "Rapidly soften frozen butter by grating it."
+        ],
+        "task": "How to Melt Butter",
+        "goal_state": "put_ingredients_in_machine stove_knob velveeta",
+        "steps": "```pddl\n1. (obtain chef butter refrigerator container knife)\n2. (use chef knife butter cutting_board)\n3. (cut chef butter knife cutting_board)\n4. (obtain chef pan cabinet stove)\n5. (use chef butter pan stove)\n6. (adjust_temperature stove_knob stove medium_heat)\n7. (perform_task chef butter stove melted pan)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 1399,
+                "task": "How to Make Butter in a Sealed Container",
+                "step": [
+                    "Gather your ingredients (below).",
+                    "Pour the cream into your container and seal the lid.",
+                    "Start shaking at a steady pace - about one shake per second.",
+                    "When the cream thickens to a paste, add a pinch of salt.",
+                    "Keep shaking, but do not open the container.",
+                    "When a liquid is formed, you should keep shaking steadily, about 100 more times.",
+                    "Place paper towel/cheesecloth over cup, and make a well.",
+                    "Slowly pour the liquid into the paper towel, and let the liquid drain into the cup below.",
+                    "Remove the butter from the cheesecloth or paper towel.",
+                    "Gently knead the butter, while running under very cold water to wash the butter, work the butter with your hand or utensil until all the milk is washed out and any liquid is clear,any milk left in will spoil the butter.",
+                    "Add salt to taste.",
+                    "Let cool and set overnight.",
+                    "Enjoy on crackers, toast, etc."
+                ],
+                "steps_predictions": [
+                    "gather_ingredients you ingredients (inventory into mixing_bowl) (garnished marshmallow",
+                    "put_ingredients_in_container cream_filled container",
+                    "start_shank npc",
+                    "add-ingredients cream_flavorful cream blender",
+                    "open_container container1",
+                    "wet_wicks wick1",
+                    "place-in-container paper towel1 cup1",
+                    "drain_liquid npc",
+                    "remove-ingredients cheesecloth or paper towel1",
+                    "knead-ingredients butter mixing_bowl",
+                    "add-salt-to-treat mixture",
+                    "set_oven npc",
+                    "cook npc"
+                ],
+                "goal_state": " ((inventory npc cream_filled container))",
+                "similar_entity": {
+                    "cheesecloth": {
+                        "sponge": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on ground",
+                                "after": "in bucket"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "wet | dirty | dirtier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "butter": {
+                        "grease": [
+                            {
+                                "attribute": "location",
+                                "before": "in pan",
+                                "after": "in trash"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "hotter",
+                                "after": "cooler"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[butter]] is [[a food]]",
+                            "*Something you find in [[the refrigerator]] is [[butter]]",
+                            "[[Butter]] is [[yellow]]",
+                            "[[Butter]] is [[made from milk]]",
+                            "[[Butter]] can [[spread at room temperature]]",
+                            "[[a knife]] is used for [[butter]]",
+                            "[[bread]] is related to [[butter]]"
+                        ]
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "cream filled": {
+                        "cream cheese": [
+                            {
+                                "attribute": "composition",
+                                "before": "separate | separated",
+                                "after": "combined with marshmallow cream | combined"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in container",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "ingredients": {
+                        "ingredients": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed in pan"
+                            },
+                            {
+                                "attribute": "mixture",
+                                "before": "less stirred | less cooked",
+                                "after": "more stirred | more cooked"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pan | ready to be served",
+                                "after": "served"
+                            },
+                            {
+                                "attribute": "completion",
+                                "before": "unready",
+                                "after": "ready"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[cooking]] requires [[ingredients]]"
+                        ]
+                    },
+                    "cream flavorful": {
+                        "hot sauce": [
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "in bowl"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "mild",
+                                "after": "spicy"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "towel": {
+                        "towel": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | smooth",
+                                "after": "dirty | sticky"
+                            },
+                            {
+                                "attribute": "color",
+                                "before": "white",
+                                "after": "orange"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[napkin]] is related to [[towel]]",
+                            "[[a towel]] can [[dry hair]]",
+                            "*Something you find at [[at hotel]] is [[a towel]]"
+                        ]
+                    },
+                    "(inventory": {
+                        "straw items": [
+                            {
+                                "attribute": "location",
+                                "before": "around house",
+                                "after": "in waste basket"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "disorganized",
+                                "after": "organized"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "into": {
+                        "room": [
+                            {
+                                "attribute": "sound",
+                                "before": "quiet",
+                                "after": "noisier"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[into]] is related to [[preposition]]"
+                        ]
+                    },
+                    "(garnished": {
+                        "pen": [
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in hand"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "paper": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[paper]] is related to [[writing]]",
+                            "[[Paper]] can be [[crumpled]]",
+                            "[[paper]] can [[burn]]",
+                            "You can use [[paper]] to [[make paper airplanes]]",
+                            "[[paper]] can be [[written on]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "blender": {
+                        "the blender": [
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "soaked in pineapple | covered in pineapple"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty | smelling like nothing",
+                                "after": "full of pineapple | smelling like pineapple"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "isolated",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "stationary",
+                                "after": "spinning"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller | heavier",
+                                "after": "less full | lighter"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[blender]]"
+                        ]
+                    },
+                    "mixing bowl)": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "cup": {
+                        "fizzy drink": [
+                            {
+                                "attribute": "cost",
+                                "before": "for sale in store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "sealing",
+                                "before": "sealed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "unobtained",
+                                "after": "obtained"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty",
+                                "after": "filled"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in container",
+                                "after": "on bolt"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on bolt",
+                                "after": "on towel"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A cup]] can [[hold liquids]]",
+                            "[[glass]] is related to [[cup]]",
+                            "*Something you find on [[a table]] is [[cup]]",
+                            "[[a cup]] is for [[drinking]]"
+                        ]
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "mixture": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "marshmallow": {
+                        "the marshmallow cream": [
+                            {
+                                "attribute": "location",
+                                "before": "in continer",
+                                "after": "in bowl"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "by itself | solid",
+                                "after": "blended with marshmellow cream | blended with cream cheese | blended"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "cream": {
+                        "cream cheese": [
+                            {
+                                "attribute": "composition",
+                                "before": "separate | separated",
+                                "after": "combined with marshmallow cream | combined"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in container",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[cream]] is used for [[person]]",
+                            "[[cone]] is related to [[cream]]"
+                        ]
+                    },
+                    "or": {
+                        "cheese": [
+                            {
+                                "attribute": "location",
+                                "before": "to the side",
+                                "after": "in the pot"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[or]] is related to [[conjunction]]"
+                        ]
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1399,
+                "task": "How to Make Butter With a Food Processor",
+                "step": [
+                    "Warm the heavy cream to room temperature.",
+                    "Prepare the food processor.",
+                    "Place the cream in the bowl of the food processor.",
+                    "If you like your butter salty, add salt to taste.",
+                    "Turn on the food processor to churn the butter, preferably at low speed.",
+                    "Drain the buttermilk.",
+                    "Squeeze any remaining buttermilk from the butter.",
+                    "Place the butter into a container.",
+                    "Cool in the refrigerator."
+                ],
+                "steps_predictions": [
+                    "warm_cream cream_machine stove_knob velveeta",
+                    "prepare-food-processor food_processor blender",
+                    "place-ingredients cream_machine mixing_bowl",
+                    "add_salt_to_ingredients canola_oil stove_knob alice",
+                    "chop_ingredients canola_oil stove_knob blender",
+                    "drain_buttermilk canola_oil",
+                    "squeeze-lemon water",
+                    "place-ingredients butter_container container",
+                    "cool-mixture mixture1 refrigerator1"
+                ],
+                "goal_state": " ((in_container cream_machine mixing_bowl))",
+                "similar_entity": {
+                    "canola oil": {
+                        "funnel": [
+                            {
+                                "attribute": "location",
+                                "before": "in drawer | in cupboard | on table",
+                                "after": "on bottle | in bottle | over mouth of bottle"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "butter container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "stove knob": {
+                        "stove knob": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "turned off",
+                                "after": "turned on"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "in the off position",
+                                "after": "in the on position"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "medium-low",
+                                "after": "low"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "mixture": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "cream machine": {
+                        "cream cheese": [
+                            {
+                                "attribute": "composition",
+                                "before": "separate | separated",
+                                "after": "combined with marshmallow cream | combined"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in container",
+                                "after": "in bowl"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "blender": {
+                        "the blender": [
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "soaked in pineapple | covered in pineapple"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty | smelling like nothing",
+                                "after": "full of pineapple | smelling like pineapple"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "isolated",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "stationary",
+                                "after": "spinning"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller | heavier",
+                                "after": "less full | lighter"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[blender]]"
+                        ]
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "refrigerator": {
+                        "refrigerator": [
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the refrigerator]] is [[food]]",
+                            "[[a refrigerator]] is for [[keeping food cold]]",
+                            "[[Frigorífico]] is a translation of [[refrigerator]]",
+                            "[[A refrigerator]] is [[a machine]]",
+                            "[[a refrigerator]] can [[cool food]]"
+                        ]
+                    },
+                    "velveeta": {
+                        "velveeta": [
+                            {
+                                "attribute": "granularity",
+                                "before": "whole | a block",
+                                "after": "cubed | cut into cubes | cut into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the fridge | in package | in front of me",
+                                "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "room temperature"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "large | whole",
+                                "after": "small | cut up"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on the cutting board",
+                                "after": "in the sauce pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | room temperature",
+                                "after": "hot | warming"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "thick",
+                                "after": "runny"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "food processor": {
+                        "peeler": [
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in hand"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "dryness",
+                                "before": "moist",
+                                "after": "drier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hotter | hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "soft",
+                                "after": "crunchy"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cupboard",
+                                "after": "on stove"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on stove | in fryer",
+                                "after": "on table | on serving dish"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "was heavy",
+                                "after": "is light"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "bland",
+                                "after": "seasoned"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    }
+]

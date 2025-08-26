@@ -1,0 +1,10 @@
+{
+    "cut": [
+        "(:action cut_lemon\n    :parameters (?npc - person ?lemon - lemon ?kitchen - location)\n    :precondition (and (at ?npc ?kitchen) (at ?lemon ?kitchen) (whole ?lemon))\n    :effect (and (not (whole ?lemon)) (cut ?lemon))\n)\n\n"
+    ],
+    "squeeze": [
+        "(:action squeeze_lemon\n    :parameters (?npc - person ?lemon - lemon ?kitchen - location)\n    :precondition (and (at ?npc ?kitchen) (at ?lemon ?kitchen) (cut ?lemon))\n    :effect (and (squeezed ?lemon))\n)\n\n",
+        "(:action rub_lemon_on_faucet\n    :parameters (?npc - person ?lemon - lemon ?faucet - faucet ?bathroom - location)\n    :precondition (and (at ?npc ?bathroom) (at ?faucet ?bathroom) (squeezed ?lemon) (dirty ?faucet))\n    :effect (and (not (dirty ?faucet)) (clean ?faucet))\n)\n\n",
+        "(:action wash_faucet\n    :parameters (?npc - person ?faucet - faucet ?bathroom - location ?water - water)\n    :precondition (and (at ?npc ?bathroom) (at ?faucet ?bathroom) (clean ?faucet) (accessible ?water))\n    :effect (and (washed ?faucet))\n)\n```\n\nExplanation of Actions:\n1. **cut_lemon**: This action involves cutting a whole lemon in half. Preconditions ensure the NPC and lemon are in the kitchen, and the lemon is whole. The effect is that the lemon is no longer whole but cut.\n2. **squeeze_lemon**: This action involves squeezing the juice out of the cut lemon. Preconditions ensure the NPC and cut lemon are in the kitchen. The effect is that the lemon is squeezed.\n3. **rub_lemon_on_faucet**: This action involves rubbing the squeezed lemon on the dirty faucet. Preconditions ensure the NPC, squeezed lemon, and dirty faucet are in the bathroom. The effect is that the faucet becomes clean.\n4. **wash_faucet**: This action involves washing the cleaned faucet. Preconditions ensure the NPC, cleaned faucet, and accessible water are in the bathroom. The effect is that the faucet is washed.\n\nThese actions capture the intent and logic of each step in the task of polishing a faucet with a lemon."
+    ]
+}

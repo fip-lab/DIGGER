@@ -1,0 +1,4 @@
+[
+    "(:action cut ; Cut an item to transform its state\n  :parameters (?npc - person ?item - object ?new_item - object)\n  :precondition (and (inventory ?npc ?item) (not (inventory ?npc ?new_item)))\n  :effect (and (inventory ?npc ?new_item) (not (inventory ?npc ?item))",
+    "(:action squeeze ; General action for squeezing or using lemons on objects\n    :parameters (?npc - npc ?item - object ?location - location ?resource - resource)\n    :precondition (and \n        (inventory ?npc ?item) \n        (or \n            (and (at ?npc ?location) (type ?item lemon_half))\n            (and (type ?item lemon) (not (inventory ?npc ?resource)))\n        )\n    )\n    :effect (and \n        (or \n            (and (type ?item lemon) (inventory ?npc ?resource) (not (inventory ?npc ?item))"
+]

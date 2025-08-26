@@ -1,0 +1,115 @@
+[
+    {
+        "title": "How to Measure Wrist Size",
+        "steps": [
+            "Measure your wrist circumference just above the bone.",
+            "Find your height using a tape measure or ruler.",
+            "Compare your wrist measurement to your height using a body frame size chart."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Measure Heel Height",
+        "steps": [
+            "Measure the length of your foot with a ruler or tape measure.",
+            "Divide your foot length by 7.",
+            "Determine if the heel height is right for you."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Measure Leg Length",
+        "steps": [
+            "Find a friend to help you measure your legs.",
+            "Lay down on a flat surface.",
+            "Measure from your hip to your ankle.",
+            "Follow up with a clinician if you find a major discrepancy."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Measure Boot Shaft",
+        "steps": [
+            "Sit with your foot flat.",
+            "Measure up the back of your leg.",
+            "Measure around your calf.",
+            "Estimate an ideal boot shaft height."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Buy a Hanging Light for a Dining Room",
+        "steps": [
+            "Measure your dining room.",
+            "Take the size of your dining room table into account.",
+            "Consider the visual weight of the hanging light when choosing a size.",
+            "Choose a style that complements your dining room d\u00e9cor.",
+            "Shop around."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Measure Stride Length",
+        "steps": [
+            "Measure your height to the closest centimeter.",
+            "Multiply your height by 0.413 to find stride length for females.",
+            "Multiply your height by 0.415 to determine stride length for males."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Use a White Cane",
+        "steps": [
+            "Obtain a suitable cane of the right length for your height.",
+            "Use the cane with whichever hand feels most comfortable.",
+            "Understand the parts of a cane.",
+            "Handle the cane.",
+            "Know how to walk.",
+            "Know how to use the stairs.",
+            "Practice using a cane; it takes a while to get used to."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Work out Your Fitness Age",
+        "steps": [
+            "Search on the Internet to find a site that will measure fitness age according to the data above and your height, weight and actual age.",
+            "Use your newly calculated fitness age as a starting point for your fitness regimen."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Tell if One Leg Is Shorter",
+        "steps": [
+            "Find a friend who would like to assist with the tests.",
+            "Lay in a supine position on your back with your legs extended.",
+            "Rock your hips from side to side for 15 seconds.",
+            "Have your friend perform gentle traction on your legs.",
+            "Compare the anklebones by placing the thumbs directly over them and seeing if the thumbs are at an even level.",
+            "Flex the feet to see if the soles of the feet match up.",
+            "Sit up and extend your legs.",
+            "Bend your knees and bring them to the exact same position on the bed.",
+            "Visit a doctor to repeat these tests with a trained professional."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Get Rid of Leg Pain",
+        "steps": [
+            "Schedule an appointment with your doctor for a diagnosis.",
+            "Describe the location, type, and characteristics of your leg pain.",
+            "Ask about treatment options."
+        ],
+        "cluster_label": 913
+    },
+    {
+        "title": "How to Identify Sciatica",
+        "steps": [
+            "Visit your doctor to receive a comprehensive medical assessment.",
+            "Receive a physical examination from your doctor.",
+            "Get a straight leg raise test done to identify sciatica.",
+            "Undergo additional diagnostic testings."
+        ],
+        "cluster_label": 913
+    }
+]

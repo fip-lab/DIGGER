@@ -1,0 +1,5 @@
+[
+    "(:action process_coconut\n    :parameters (?p - person ?c - coconut ?t - tool ?r - rack ?g - glass)\n    :precondition (and \n                    (available ?p)\n                    (or (wrapped ?c) (has_casing ?c) (on ?c ?r) (not (drained ?c)) (broken ?c))\n                    (or (knife ?t) (sharp ?t) (tool ?t))\n                    (or (empty ?g) (not (empty ?g)))\n                  )\n    :effect (and \n              (or (peeled ?c) (not (wrapped ?c))",
+    "(:action wrap\n  :parameters (?p - person ?item - object ?wrapper - object)\n  :precondition (and\n                  (not (wrapped ?item))\n                  (clean ?wrapper)\n                )\n  :effect (and\n            (wrapped ?item ?wrapper)\n            (not (clean ?wrapper))",
+    "(:action break ; Break an object and update its state\n  :parameters (?p - person ?obj - object ?tool - tool)\n  :precondition (and \n                  (not (broken ?obj))\n                  (in_hand ?tool)\n                )\n  :effect (and \n            (broken ?obj)\n            (not (wrapped ?obj))"
+]

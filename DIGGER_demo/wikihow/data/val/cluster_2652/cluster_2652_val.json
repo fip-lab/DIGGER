@@ -1,0 +1,25 @@
+[
+    {
+        "cluster_label": 2652,
+        "task": "How to Use Your Compost",
+        "step": [
+            "Know when your compost is ready.",
+            "Plant seeds.",
+            "Plant seedlings.",
+            "Nourish established houseplants.",
+            "Spread it on your garden.",
+            "Dig it into garden beds.",
+            "Plant directly in it."
+        ],
+        "steps_predictions": [
+            "know_when_to_add_compost npc",
+            "plant_seeds new_plant fir1 container1",
+            "plant_seeds fir1 container1",
+            "nourish_established_houseplants npc",
+            "gather_tinder npc path tinder",
+            "dig_plant fir1 garden_bed1",
+            "plant_plant fir1 container1"
+        ],
+        "goal_state": " ((knowledge npc container1))"
+    }
+]

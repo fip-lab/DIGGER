@@ -1,0 +1,231 @@
+[
+    {
+        "cluster_label": 10,
+        "task": "How to Choose a Book for a Book Club",
+        "step": [
+            "Look at a bestseller list.",
+            "Ask for a recommendation.",
+            "Visit a few expert websites dealing with book clubs and book reviews.",
+            "Find out what other book clubs are reading.",
+            "Pick a book you have already read and enjoyed.",
+            "Pick a book that goes with the theme of your book club.",
+            "Most importantly, don't stress yourself."
+        ],
+        "steps_predictions": [
+            "check_list npc book",
+            "ask_for_recommendation npc",
+            "visibility npc book_club",
+            "read_bookclub npc bookclub",
+            "pick_book npc book",
+            "pick_book npc book club",
+            "stress_you npc basement"
+        ],
+        "goal_state": " ((not (in npc book)) (is_cult ss))",
+        "similar_entity": {
+            "npc": "hat",
+            "club": "team",
+            "basement": "floor",
+            "bookclub": "rhubarb",
+            "book": "character",
+            "book club": "kids room"
+        }
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Start a Library Book Club",
+        "step": [
+            "Pick books that are available at the library.",
+            "Strike a deal with your library.",
+            "Choose books that are fairly complex.",
+            "Ask for opinions.",
+            "Come with questions prepared.",
+            "Ask each member to bring in a discussion question."
+        ],
+        "steps_predictions": [
+            "pick_books npc book",
+            "strike_deal npc covering_tracks track",
+            "choose_books npc book",
+            "ask_for_inreceptacle agent1 advice1",
+            "prepare_questions npc",
+            "bring_conversation_question npc"
+        ],
+        "goal_state": " ((not (in anish npc)))",
+        "similar_entity": {
+            "npc": "hat",
+            "advice": "advice",
+            "agent": "game character",
+            "track": "movement",
+            "covering tracks": "cover",
+            "book": "character"
+        }
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Start an Online Book Group",
+        "step": [
+            "Don’t try to reinvent the wheel.",
+            "Think about how you would like the discussions to flow.",
+            "Make your website inviting.",
+            "Start with what you know.",
+            "Offer more to your readers than a book discussion.",
+            "Keep it fresh.",
+            "Market your new online group.",
+            "Make people feel welcome."
+        ],
+        "steps_predictions": [
+            "create_new_wheel_reinvention_system npc",
+            "create_conversation npc covering_tracks track",
+            "make_commission npc covering_tracks track",
+            "start_with_knowledge you",
+            "initiate_conversation npc book_panel",
+            "keep_fresh npc",
+            "market_new_member_group npc adrian ss",
+            "make_welcome npc"
+        ],
+        "goal_state": " ((initiative npc book_panel))",
+        "similar_entity": {
+            "you": "you",
+            "npc": "hat",
+            "track": "movement",
+            "ss": "dish",
+            "book panel": "panel",
+            "adrian": "player",
+            "covering tracks": "cover"
+        }
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Create Rules for a Book Club",
+        "step": [
+            "Come up with a member list.",
+            "Set rules for book acquisition.",
+            "Decide where and when to meet.",
+            "Write down the loan policy.",
+            "Set a return schedule.",
+            "Assign a member to track the loans."
+        ],
+        "steps_predictions": [
+            "create_member_list npc ss",
+            "set_rules npc book_acquired",
+            "set_meeting_location npc basement",
+            "write_loans_policy npc home",
+            "set_return_schedule npc basement",
+            "listen_to_member_secret adrian liam ss"
+        ],
+        "goal_state": " ((not (in npc Book Club)))",
+        "similar_entity": {
+            "home": "house",
+            "npc": "hat",
+            "liam": "hay",
+            "book acquired": "the extract",
+            "basement": "floor",
+            "adrian": "player",
+            "ss": "dish"
+        }
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Encourage Adults to Read",
+        "step": [
+            "Start a book club to encourage members to read specific books.",
+            "Suggest books to friends and family.",
+            "Create an online reading community through a book forum.",
+            "Build a little free library."
+        ],
+        "steps_predictions": [
+            "start_bookclub bookclub",
+            "initiate_teach npc book",
+            "create_reading_community npc book_forum",
+            "build_libraries npc book"
+        ],
+        "goal_state": " ((initiative npc book))",
+        "similar_entity": {
+            "bookclub": "rhubarb",
+            "book forum": "kids room",
+            "book": "character",
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Start a Romance Book Club",
+        "step": [
+            "Set the \"heat level.\".",
+            "Stick with one sub-genre.",
+            "Pick books from multiple sub-genres.",
+            "Venture into nonfiction.",
+            "Read a classic romance.",
+            "Select a current bestseller.",
+            "Ask for suggestions.",
+            "Read different books and compare."
+        ],
+        "steps_predictions": [
+            "set_heat_level stove_knob velveeta",
+            "stick_with_subgenre character",
+            "pick_books npc book",
+            "venture_into_nonfiction npc",
+            "read_romance npc",
+            "select_new_member_of_family npc",
+            "ask_for_suggestions user1 pen1",
+            "read_books npc book"
+        ],
+        "goal_state": " ((not (in anish npc)))",
+        "similar_entity": {
+            "velveeta": "velveeta",
+            "pen": "pen",
+            "npc": "hat",
+            "user": "player",
+            "stove knob": "stove knob",
+            "character": "character",
+            "book": "character"
+        }
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Start a Business Book Club",
+        "step": [
+            "Decide what type of business books your club will focus on.",
+            "Take requests.",
+            "Peruse bestseller lists and business blogs.",
+            "Pick out books in advance.",
+            "Share your thoughts and ask questions.",
+            "Encourage others to ask questions."
+        ],
+        "steps_predictions": [
+            "choose_book npc book",
+            "take_ask npc covering_tracks track",
+            "peruse_bestseller_list npc book",
+            "pick_books npc book",
+            "talk_using_social_media you",
+            "encourage_others_to_ask_questions npc"
+        ],
+        "goal_state": " ((not (in npc book)) (is_initiated Book Club))",
+        "similar_entity": {
+            "you": "you",
+            "npc": "hat",
+            "track": "movement",
+            "covering tracks": "cover",
+            "book": "character"
+        }
+    },
+    {
+        "cluster_label": 10,
+        "task": "How to Host a Book Club",
+        "step": [
+            "Select a theme for the book club.",
+            "Find out what sort of snacks your group wants.",
+            "Include some general book-themed decor."
+        ],
+        "steps_predictions": [
+            "select_theme book_club",
+            "get_snack npc",
+            "build_wall npc book_themed"
+        ],
+        "goal_state": " ((selected_topic book_club))",
+        "similar_entity": {
+            "npc": "hat",
+            "book themed": "character",
+            "book club": "kids room"
+        }
+    }
+]

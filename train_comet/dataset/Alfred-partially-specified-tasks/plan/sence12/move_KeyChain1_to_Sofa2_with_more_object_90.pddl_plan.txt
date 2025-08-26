@@ -1,0 +1,5 @@
+(gotolocation agent1 drawer1 desk2)
+(pickupobjectnoreceptacle agent1 keychain1 desk2)
+(gotolocation agent1 desk2 sofa2)
+(putobjectinreceptacle agent1 keychain1 sofa2)
+; cost = 4 (unit cost)

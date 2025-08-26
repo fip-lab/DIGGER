@@ -1,0 +1,11 @@
+(:action GotoLocation;
+(:action PickupObjectInReceptacle;
+(:action PickupObjectNoReceptacle;
+(:action PutObjectInReceptacle;
+(:action PutObjectInReceptacleObject;
+(:action PutReceptacleObjectInReceptacle;
+(:action CleanObject;
+(:action HeatObject;
+(:action CoolObject;
+(:action ToggleObject;
+(:action SliceObject;

@@ -1,0 +1,5 @@
+(find_hiding_spot character player_pistol further_out)
+(investigate_routes character current_routes)
+(wait_until_planting character game_bomb)
+(start_defusing character game_bomb)
+; cost = 4 (unit cost)

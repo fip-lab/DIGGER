@@ -1,0 +1,7 @@
+[
+    "(:action boil ; Boil an entity and update its state\n  :parameters (?entity1 - entity ?entity2 - entity)\n  :precondition (and (at ?entity1 raw) (at ?entity2 cold))\n  :effect (and (at ?entity1 boiling) (at ?entity2 hot) (not (at ?entity2 cold))",
+    "(:action add ; Add an item to a location and update the status\n:parameters (?item - object ?location - container)\n:precondition (and (at ?item source) (at ?location ready))\n:effect (and (at ?item in_location) (not (at ?item source))",
+    "(:action cook\n  :parameters (?actor - agent ?location - place)\n  :precondition (at ?actor ?location)\n  :effect (and (engaged_in_activity ?actor cooking)\n                (state ?location messy))",
+    "(:action boiled\n  :parameters (?item - object ?state - state ?new_state - state)\n  :precondition (and (at ?item ?state) (not (at ?item ?new_state)))\n  :effect (and (at ?item ?new_state) (not (at ?item ?state))",
+    "(:action stirfry\n    :parameters (?npc - person ?k - kitchen)\n    :precondition (and \n        (at ?npc ?k) \n        (cooking ?npc ?k) \n        (has_ingredient ?npc oil) \n        (has_ingredient ?npc sauce) \n        (has_ingredient ?npc macaroni)\n        (boiled ?npc macaroni))\n    :effect (and \n        (cooked ?npc stirfry) \n        (not (cooking ?npc ?k))"
+]

@@ -1,0 +1,477 @@
+{
+    "goal": "Recycle Underpants",
+    "steps": [
+        "Turn the underpants into cleaning rags.",
+        "Use the underwear as garden ties.",
+        "Turn quality undies into craft items.",
+        "Use a bundle of old underwear as stuffing.",
+        "Children can wear old underwear on the outside of their pants to play superhero.",
+        "Donate the underpants."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/7/7c/Recycle-Underpants-Step-1.jpg/aid4274782-v4-728px-Recycle-Underpants-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/3/38/Recycle-Underpants-Step-2.jpg/aid4274782-v4-728px-Recycle-Underpants-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/d/d0/Recycle-Underpants-Step-3.jpg/aid4274782-v4-728px-Recycle-Underpants-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/f/f1/Recycle-Underpants-Step-4.jpg/aid4274782-v4-728px-Recycle-Underpants-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/b/b0/Recycle-Underpants-Step-5.jpg/aid4274782-v4-728px-Recycle-Underpants-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/3/36/Recycle-Underpants-Step-6.jpg/aid4274782-v4-728px-Recycle-Underpants-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "underpants",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "newness",
+                        "before": "new",
+                        "after": "old",
+                        "saliency": 0.5542903151598804,
+                        "attribute_annotation": "newness"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.4665861513687601,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on drawer",
+                        "after": "on floor",
+                        "saliency": 0.41660915573959056,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "used as underpants | underpants",
+                        "after": "used as cleaning rags | cleaning rags",
+                        "saliency": 0.3656314699792961,
+                        "attribute_annotation": "use | shape | composition"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "newness",
+                        "before": "new",
+                        "after": "old",
+                        "saliency": 0.6405567057740971,
+                        "attribute_annotation": "newness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on drawer",
+                        "after": "on table",
+                        "saliency": 0.5028755463538073,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "cut onto mid-thin strips",
+                        "saliency": 0.3635265700483092,
+                        "attribute_annotation": "size"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "used as underpants | underwear",
+                        "after": "used as garden ties | garden ties",
+                        "saliency": 0.2715665976535542,
+                        "attribute_annotation": "use | shape"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "newness",
+                        "before": "new",
+                        "after": "old",
+                        "saliency": 0.588796871405567,
+                        "attribute_annotation": "newness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on drawer",
+                        "after": "on table",
+                        "saliency": 0.45111571198527717,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "cut into thin-strips",
+                        "saliency": 0.31176673567977914,
+                        "attribute_annotation": "size"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "long and straight",
+                        "after": "tied into ribbon around hair",
+                        "saliency": 0.5456636760984587,
+                        "attribute_annotation": "shape"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "used as underpants",
+                        "after": "turned into craft items",
+                        "saliency": 0.37600644122383253,
+                        "attribute_annotation": "use"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "newness",
+                        "before": "new",
+                        "after": "old",
+                        "saliency": 0.6405567057740971,
+                        "attribute_annotation": "newness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on drawer",
+                        "after": "stuffed inside pilow case",
+                        "saliency": 0.5028755463538073,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "whole",
+                        "after": "cut up",
+                        "saliency": 0.5209109730848861,
+                        "attribute_annotation": "use | shape | composition"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "newness",
+                        "before": "new",
+                        "after": "old",
+                        "saliency": 0.6405567057740971,
+                        "attribute_annotation": "newness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on drawer",
+                        "after": "worn by child",
+                        "saliency": 0.5028755463538073,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "used as underwear",
+                        "after": "worn on outside of pants",
+                        "saliency": 0.2715665976535542,
+                        "attribute_annotation": "use | shape"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "newness",
+                        "before": "new",
+                        "after": "old",
+                        "saliency": 0.5542903151598804,
+                        "attribute_annotation": "newness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in donation box",
+                        "saliency": 0.41660915573959056,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "ownership",
+                        "before": "owned | in possession",
+                        "after": "donated",
+                        "saliency": 0.26299746951920866,
+                        "attribute_annotation": "ownership | availability"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "underwear | underwears",
+                "underpants | floor",
+                "underwear strips",
+                "bundle of old underwear",
+                "quality undies"
+            ]
+        },
+        {
+            "entity": "plants",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "form",
+                        "before": "untied",
+                        "after": "tied",
+                        "saliency": 0.4737750172532781,
+                        "attribute_annotation": "form"
+                    },
+                    {
+                        "attribute": "decoration",
+                        "before": "plain",
+                        "after": "decorated",
+                        "saliency": 0.5240970784449045,
+                        "attribute_annotation": "decoration"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "plants",
+                "garden plants"
+            ]
+        },
+        {
+            "entity": "donation box",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "location",
+                        "before": "at home",
+                        "after": "with charity",
+                        "saliency": 0.5169082125603864,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "donation box"
+            ]
+        },
+        {
+            "entity": "pillow case",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "on drawer",
+                        "after": "on table",
+                        "saliency": 0.5097193466758685,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "content",
+                        "before": "empty",
+                        "after": "filled with underwears",
+                        "saliency": 0.3720381872555786,
+                        "attribute_annotation": "content"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "pillow case"
+            ]
+        },
+        {
+            "entity": "scissors",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "on desk",
+                        "after": "on hand",
+                        "saliency": 0.4881527490223142,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "on desk",
+                        "after": "on hand",
+                        "saliency": 0.4881527490223142,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "scissors"
+            ]
+        },
+        {
+            "entity": "pants",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "look",
+                        "before": "looking like regular kid",
+                        "after": "looking like superhero",
+                        "saliency": 0.4665861513687601,
+                        "attribute_annotation": "look"
+                    },
+                    {
+                        "attribute": "covering",
+                        "before": "bare",
+                        "after": "covered in underwear",
+                        "saliency": 0.36306648263170005,
+                        "attribute_annotation": "covering"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "child",
+                "pants"
+            ]
+        }
+    ],
+    "clusters": {
+        "plants": {
+            "entity_cluster": [
+                "garden plants",
+                "plants"
+            ],
+            "attribute_cluster": {
+                "form": [
+                    "form"
+                ],
+                "decoration": [
+                    "decoration"
+                ]
+            }
+        },
+        "scissors": {
+            "entity_cluster": [
+                "scissors"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "donation box": {
+            "entity_cluster": [
+                "donation box"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "floor": {
+            "entity_cluster": [
+                "floor"
+            ],
+            "attribute_cluster": {
+                "newness": [
+                    "newness"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "size": [
+                    "size"
+                ],
+                "availability": [
+                    "availability"
+                ],
+                "ownership": [
+                    "ownership"
+                ],
+                "use": [
+                    "use"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "underpants": {
+            "entity_cluster": [
+                "quality undies",
+                "underpants",
+                "underwears",
+                "underwear",
+                "underwear strips",
+                "bundle of old underwear"
+            ],
+            "attribute_cluster": {
+                "newness": [
+                    "newness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "size": [
+                    "size"
+                ],
+                "use": [
+                    "use"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "availability": [
+                    "availability"
+                ],
+                "ownership": [
+                    "ownership"
+                ]
+            }
+        },
+        "pillow case": {
+            "entity_cluster": [
+                "pillow case"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "content": [
+                    "content"
+                ]
+            }
+        },
+        "pants": {
+            "entity_cluster": [
+                "pants",
+                "child"
+            ],
+            "attribute_cluster": {
+                "look": [
+                    "look"
+                ],
+                "covering": [
+                    "covering"
+                ]
+            }
+        }
+    }
+}

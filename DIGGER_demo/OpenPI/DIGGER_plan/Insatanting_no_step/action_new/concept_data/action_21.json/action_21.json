@@ -1,0 +1,8 @@
+[
+    "(:action select\n    :parameters (?p - player ?item - object ?loc - location)\n    :precondition (and \n        (at ?p ?loc)\n        (or \n            (and (unselected ?loc) (in_garden ?item))\n            (and (in_cabinet ?item) (empty ?item))\n            (in_bag ?item)\n        )\n    )\n    :effect (and \n        (or \n            (and (selected ?loc) (in_hand ?p ?item) (not (in_garden ?item))",
+    "(:action water_plant\n    :parameters (?p - player ?plant - fir ?container - container ?water - water)\n    :precondition (and (in_container ?plant ?container) (dry ?plant))\n    :effect (and (wet ?plant) (not (dry ?plant))",
+    "(:action water ; Water a plant or container with a specified resource\n    :parameters (?agent - player ?target - object ?container - container ?resource - resource)\n    :precondition (and (in_container ?target ?container) (dry ?target) (available ?resource))\n    :effect (and (wet ?target) (not (dry ?target))",
+    "(:action plant\n    :parameters (?agent - agent ?plant - plant ?container - container ?soil - soil)\n    :precondition (and (in_hand ?agent ?plant) (in_container ?agent ?soil) (empty ?container))\n    :effect (and (in_container ?plant ?container) (not (in_hand ?agent ?plant))",
+    "(:action repot\n  :parameters (?agent - player ?entity - object ?from - container ?to - container)\n  :precondition (and (in_container ?entity ?from) (empty ?to))\n  :effect (and (in_container ?entity ?to) (not (in_container ?entity ?from))",
+    "(:action garden\n  :parameters (?agent - player ?entity - object ?resource - object)\n  :precondition (and (available ?agent) (not (utilized ?resource)))\n  :effect (utilized ?resource)\n)"
+]

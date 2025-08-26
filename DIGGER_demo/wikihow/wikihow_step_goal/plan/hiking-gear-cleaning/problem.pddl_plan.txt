@@ -1,0 +1,4 @@
+(read_instructions instructions)
+(clean_polar_fleece polar_fleece washing_machine)
+(wash_clothing clothing washing_machine)
+; cost = 3 (unit cost)

@@ -1,0 +1,618 @@
+{
+    "goal": "Make Potato Ribbons",
+    "steps": [
+        "Wash especially well if you intend to keep the peel intact.",
+        "Cut round and round, keeping the peel as thin as possible as you go.",
+        "Drain the potatoes dry on a clean cloth.",
+        "Fry the ribbons in deep, hot fat.",
+        "Serve."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/f/f9/Make-Potato-Ribbons-Step-1.jpg/aid516346-v4-728px-Make-Potato-Ribbons-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/e/e8/Make-Potato-Ribbons-Step-2.jpg/aid516346-v4-728px-Make-Potato-Ribbons-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/b/b4/Make-Potato-Ribbons-Step-3.jpg/aid516346-v4-728px-Make-Potato-Ribbons-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/5/5d/Make-Potato-Ribbons-Step-4.jpg/aid516346-v4-728px-Make-Potato-Ribbons-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/e/e4/Make-Potato-Ribbons-Step-5.jpg/aid516346-v4-728px-Make-Potato-Ribbons-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "potato",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "cleaner | clean | wet",
+                        "saliency": 0.6118012422360248,
+                        "attribute_annotation": "cleanness | wetness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "on counter",
+                        "saliency": 0.36690328305235137,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "thickness",
+                        "before": "thicker",
+                        "after": "thinner",
+                        "saliency": 0.48609878734102335,
+                        "attribute_annotation": "thickness"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "short",
+                        "after": "long",
+                        "saliency": 0.3484176279207335,
+                        "attribute_annotation": "length"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "peeled",
+                        "saliency": 0.16573006013999803,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "wet",
+                        "after": "dry",
+                        "saliency": 0.6118012422360248,
+                        "attribute_annotation": "cleanness | wetness"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry",
+                        "saliency": 0.5507985803016859,
+                        "attribute_annotation": "moisture"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on cloth",
+                        "saliency": 0.413117420881396,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "composition",
+                        "before": "raw",
+                        "after": "cooked",
+                        "saliency": 0.24336981169279306,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in pan | on stove",
+                        "after": "in dish | on table",
+                        "saliency": 0.28926353149955636,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "potatoes | potato",
+                "potato pieces",
+                "potaoto"
+            ]
+        },
+        {
+            "entity": "peeler",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in hand",
+                        "saliency": 0.5600414078674948,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.44639160011830825,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "dryness",
+                        "before": "moist",
+                        "after": "drier",
+                        "saliency": 0.4768559597752144,
+                        "attribute_annotation": "dryness"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.4583703046435965,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hotter | hot",
+                        "saliency": 0.31699201419698314,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "soft",
+                        "after": "crunchy",
+                        "saliency": 0.29328108054816127,
+                        "attribute_annotation": "texture"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cupboard",
+                        "after": "on stove",
+                        "saliency": 0.22890170560978013,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "on stove | in fryer",
+                        "after": "on table | on serving dish",
+                        "saliency": 0.4824016563146998,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "was heavy",
+                        "after": "is light",
+                        "saliency": 0.3206891452233067,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "bland",
+                        "after": "seasoned",
+                        "saliency": 0.27033422064477963,
+                        "attribute_annotation": "taste"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "peels | peeler | pan | vegetable peeler"
+            ]
+        },
+        {
+            "entity": "cloth",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on counter",
+                        "saliency": 0.5544957113280095,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | damp",
+                        "saliency": 0.413117420881396,
+                        "attribute_annotation": "cleanness | wetness"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.37092083210095633,
+                        "attribute_annotation": "moisture"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "cloth"
+            ]
+        },
+        {
+            "entity": "sink",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.541555752735877,
+                        "attribute_annotation": "power"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.18345164152617568,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "on potatoes",
+                        "after": "on cloth",
+                        "saliency": 0.3215764566696244,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "water faucet",
+                "water",
+                "sink"
+            ]
+        },
+        {
+            "entity": "serving dish",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.541555752735877,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.40387459331558706,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full of potatoes",
+                        "saliency": 0.34006211180124224,
+                        "attribute_annotation": "fullness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "serving dish",
+                "platter"
+            ]
+        },
+        {
+            "entity": "stove burner",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold | cool",
+                        "after": "hot",
+                        "saliency": 0.5378586217095533,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.33917480035492453,
+                        "attribute_annotation": "electric conductivity"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "stove | stove burner"
+            ]
+        },
+        {
+            "entity": "oil",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot",
+                        "saliency": 0.4583703046435965,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "oil"
+            ]
+        },
+        {
+            "entity": "ribbons",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "teture",
+                        "before": "raw",
+                        "after": "fried",
+                        "saliency": 0.41770186335403725,
+                        "attribute_annotation": "teture"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.34006211180124224,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "ribbons",
+                "spatula"
+            ]
+        },
+        {
+            "entity": "kitchen counter",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy",
+                        "saliency": 0.41400473232771373,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "kitchen counter"
+            ]
+        },
+        {
+            "entity": "bowl",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full of potato peels",
+                        "saliency": 0.1746524696835256,
+                        "attribute_annotation": "fullness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "bowl"
+            ]
+        }
+    ],
+    "clusters": {
+        "oil": {
+            "entity_cluster": [
+                "oil"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "potato": {
+            "entity_cluster": [
+                "potaoto",
+                "potato pieces",
+                "potato",
+                "potatoes"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "thickness": [
+                    "thickness"
+                ],
+                "length": [
+                    "length"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "moisture": [
+                    "moisture"
+                ]
+            }
+        },
+        "serving dish": {
+            "entity_cluster": [
+                "serving dish",
+                "platter"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "fullness": [
+                    "fullness"
+                ]
+            }
+        },
+        "sink": {
+            "entity_cluster": [
+                "water",
+                "sink",
+                "water faucet"
+            ],
+            "attribute_cluster": {
+                "power": [
+                    "power"
+                ],
+                "location": [
+                    "location"
+                ],
+                "wetness": [
+                    "wetness"
+                ]
+            }
+        },
+        "stove burner": {
+            "entity_cluster": [
+                "stove burner",
+                "stove",
+                "pan"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "dryness": [
+                    "dryness"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "taste": [
+                    "taste"
+                ],
+                "electric conductivity": [
+                    "electric conductivity"
+                ]
+            }
+        },
+        "peeler": {
+            "entity_cluster": [
+                "vegetable peeler",
+                "peeler",
+                "peels"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "dryness": [
+                    "dryness"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "taste": [
+                    "taste"
+                ]
+            }
+        },
+        "cloth": {
+            "entity_cluster": [
+                "cloth"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wetness": [
+                    "moisture",
+                    "wetness"
+                ]
+            }
+        },
+        "ribbons": {
+            "entity_cluster": [
+                "ribbons",
+                "spatula"
+            ],
+            "attribute_cluster": {
+                "teture": [
+                    "teture"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "kitchen counter": {
+            "entity_cluster": [
+                "kitchen counter"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "bowl": {
+            "entity_cluster": [
+                "bowl"
+            ],
+            "attribute_cluster": {
+                "fullness": [
+                    "fullness"
+                ]
+            }
+        }
+    }
+}

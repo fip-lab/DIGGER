@@ -1,0 +1,4 @@
+(blend_ingredients cream_cheese marshmallow_cream blender)
+(pour_combined_into_bowl cream_cheese marshmallow_cream blender mixing_bowl)
+(serve_with_fruit fruit mixing_bowl marshmallow_cream marshmallow_cream)
+; cost = 3 (unit cost)

@@ -1,0 +1,587 @@
+{
+    "goal": "Board a Small Boat",
+    "steps": [
+        "Prefer boarding across a solid platform if possible.",
+        "If you are crossing using a platform, hold on to the rails provided.",
+        "Avoid plonking one leg in the boat and leaving one on the jetty - this will cause wobbling and you might fall into the water.",
+        "Once in the boat, always remain in the centre line to move around it and lower yourself to a crouch level so that you reduce your centre of gravity and keep the craft as still as possible.",
+        "Keep the craft steady as others board."
+    ],
+    "topics": "Cars & Other Vehicles",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/b/b5/Board-a-Small-Boat-Step-1.jpg/aid490508-v4-728px-Board-a-Small-Boat-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/f/fa/Board-a-Small-Boat-Step-2.jpg/aid490508-v4-728px-Board-a-Small-Boat-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/7/79/Board-a-Small-Boat-Step-3.jpg/aid490508-v4-728px-Board-a-Small-Boat-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/d/df/Board-a-Small-Boat-Step-4.jpg/aid490508-v4-728px-Board-a-Small-Boat-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/7/7d/Board-a-Small-Boat-Step-5.jpg/aid490508-v4-728px-Board-a-Small-Boat-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "passenger position",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "availability",
+                        "before": "unavailaable",
+                        "after": "available",
+                        "saliency": 0.6031746031746031,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "at edge of boat",
+                        "after": "centered in boat",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "passenger position",
+                "room on boat"
+            ]
+        },
+        {
+            "entity": "passenger",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "speed",
+                        "before": "moving quickly",
+                        "after": "moving slowly",
+                        "saliency": 0.5600414078674948,
+                        "attribute_annotation": "speed"
+                    }
+                ],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "away from boat",
+                        "after": "near boat",
+                        "saliency": 0.6606855302507476,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "other passengers",
+                "passenger",
+                "other person"
+            ]
+        },
+        {
+            "entity": "boat",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in open water | on dock",
+                        "after": "at dock | on boat",
+                        "saliency": 0.5399125833908442,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "motion",
+                        "before": "standing",
+                        "after": "walking",
+                        "saliency": 0.17805383022774326,
+                        "attribute_annotation": "motion"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "on dock",
+                        "after": "in boat",
+                        "saliency": 0.6175523349436393,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "in motion",
+                        "after": "still",
+                        "saliency": 0.5657925005751092,
+                        "attribute_annotation": "stability"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.27283183804922934,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "action",
+                        "before": "still",
+                        "after": "moving",
+                        "saliency": 0.22693811824246604,
+                        "attribute_annotation": "action"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "standing",
+                        "after": "crouching",
+                        "saliency": 0.15510697032436163,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "docked",
+                        "after": "in motion",
+                        "saliency": 0.6175523349436393,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "rocking",
+                        "after": "steadied",
+                        "saliency": 0.4881527490223142,
+                        "attribute_annotation": "stability"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "perpendicular to dock",
+                        "after": "parallel to shore",
+                        "saliency": 0.28163100989187945,
+                        "attribute_annotation": "orientation"
+                    },
+                    {
+                        "attribute": "motion",
+                        "before": "moving",
+                        "after": "stationary",
+                        "saliency": 0.17805383022774326,
+                        "attribute_annotation": "motion"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "boat | person"
+            ]
+        },
+        {
+            "entity": "boarding plank",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "connecting boat and dock",
+                        "saliency": 0.6319300667126755,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry",
+                        "saliency": 0.5025304807913504,
+                        "attribute_annotation": "moisture"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "connecting boat and dock",
+                        "after": "on dock",
+                        "saliency": 0.3648493213710605,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "boarding plank",
+                "plank"
+            ]
+        },
+        {
+            "entity": "legs",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "apart",
+                        "after": "together",
+                        "saliency": 0.5657925005751092,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "legs"
+            ]
+        },
+        {
+            "entity": "jumping",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth",
+                        "saliency": 0.39038417299286865,
+                        "attribute_annotation": "stability"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent",
+                        "saliency": 0.5312859443294226,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "jumping",
+                "movement"
+            ]
+        },
+        {
+            "entity": "paddle",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "across boat",
+                        "after": "in gunwale",
+                        "saliency": 0.5169082125603864,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "paddle"
+            ]
+        },
+        {
+            "entity": "dock",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.4881527490223142,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "dock"
+            ]
+        },
+        {
+            "entity": "arms",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "at sides | lowered",
+                        "after": "holding rail | raised",
+                        "saliency": 0.3472509776857603,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "free",
+                        "after": "holding boat",
+                        "saliency": 0.4881527490223142,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "arms",
+                "hands"
+            ]
+        },
+        {
+            "entity": "gravity",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location of center",
+                        "before": "high",
+                        "after": "low",
+                        "saliency": 0.37600644122383253,
+                        "attribute_annotation": "location of center"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "gravity"
+            ]
+        },
+        {
+            "entity": "handrail",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "placement",
+                        "before": "unheld",
+                        "after": "held",
+                        "saliency": 0.40476190476190477,
+                        "attribute_annotation": "placement"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.39038417299286865,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "handrails",
+                "handrail"
+            ]
+        },
+        {
+            "entity": "water",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "texture",
+                        "before": "choppy",
+                        "after": "smooth",
+                        "saliency": 0.31895560156429725,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "water"
+            ]
+        }
+    ],
+    "clusters": {
+        "boat": {
+            "entity_cluster": [
+                "boat"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "motion": [
+                    "motion"
+                ],
+                "stability": [
+                    "stability"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "orientation": [
+                    "orientation"
+                ],
+                "action": [
+                    "action"
+                ]
+            }
+        },
+        "paddle": {
+            "entity_cluster": [
+                "paddle"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "gravity": {
+            "entity_cluster": [
+                "gravity"
+            ],
+            "attribute_cluster": {
+                "location of center": [
+                    "location of center"
+                ]
+            }
+        },
+        "boarding plank": {
+            "entity_cluster": [
+                "boarding plank",
+                "plank"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "moisture": [
+                    "moisture"
+                ]
+            }
+        },
+        "passenger": {
+            "entity_cluster": [
+                "person",
+                "passenger",
+                "other person",
+                "other passengers"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "motion": [
+                    "motion"
+                ],
+                "stability": [
+                    "stability"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "orientation": [
+                    "orientation"
+                ],
+                "action": [
+                    "action"
+                ],
+                "speed": [
+                    "speed"
+                ]
+            }
+        },
+        "dock": {
+            "entity_cluster": [
+                "dock"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability"
+                ]
+            }
+        },
+        "legs": {
+            "entity_cluster": [
+                "legs"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "water": {
+            "entity_cluster": [
+                "water"
+            ],
+            "attribute_cluster": {
+                "texture": [
+                    "texture"
+                ]
+            }
+        },
+        "arms": {
+            "entity_cluster": [
+                "hands",
+                "arms"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "jumping": {
+            "entity_cluster": [
+                "jumping",
+                "movement"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "stability": [
+                    "stability"
+                ]
+            }
+        },
+        "handrail": {
+            "entity_cluster": [
+                "handrail",
+                "handrails"
+            ],
+            "attribute_cluster": {
+                "placement": [
+                    "placement"
+                ],
+                "availability": [
+                    "availability"
+                ]
+            }
+        },
+        "passenger position": {
+            "entity_cluster": [
+                "passenger position",
+                "room on boat"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "availability": [
+                    "availability"
+                ]
+            }
+        }
+    }
+}

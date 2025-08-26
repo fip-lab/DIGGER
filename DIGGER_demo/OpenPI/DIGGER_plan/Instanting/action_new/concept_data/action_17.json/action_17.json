@@ -1,0 +1,5 @@
+[
+    "(:action select ; Select a suitable resource and update selection status\n  :parameters (?agent - person ?resource - object)\n  :precondition (and (inventory ?agent ?resource))\n  :effect (selected ?resource))",
+    "(:action create\n  ; Create or assemble an item from given resources\n  :parameters (?p - player ?item1 - object ?item2 - object ?result - object)\n  :precondition (and (inventory ?p ?item1) (or (inventory ?p ?item2) (found ?item2)) (selected ?item1))\n  :effect (and (inventory ?p ?result) (not (inventory ?p ?item1))",
+    "(:action finish\n  ; Complete a resource and update task status\n  :parameters (?p - person ?item - object)\n  :precondition (and (inventory ?p ?item))\n  :effect (and (completed ?item) (not (inventory ?p ?item))"
+]

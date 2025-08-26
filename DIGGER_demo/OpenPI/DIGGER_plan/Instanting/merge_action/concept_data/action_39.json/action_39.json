@@ -1,0 +1,15 @@
+{
+    "pour": [
+        "(:action pour_vinegar_into_container\n    :parameters (?v - vinegar ?c - container)\n    :precondition (and (location ?v bottle) (location ?c cabinet))\n    :effect (and (location ?v container) (location ?c countertop))\n)\n\n",
+        "(:action dip_wicks_in_vinegar\n    :parameters (?w - wick ?v - vinegar ?c - container)\n    :precondition (and (orientation ?w removed) (composition ?w dry) (location ?v container))\n    :effect (and (composition ?w wet) (location ?v in_wick))\n)\n\n"
+    ],
+    "remove": [
+        "(:action remove_wick\n    :parameters (?w - wick ?l - lamp ?s - stove)\n    :precondition (and (or (orientation ?w on_lamp) (orientation ?w on_stove)))\n    :effect (and (orientation ?w removed) (composition ?w dry))\n)\n\n"
+    ],
+    "dry": [
+        "(:action dry_wicks\n    :parameters (?w - wick)\n    :precondition (and (composition ?w wet))\n    :effect (and (composition ?w dry))\n)\n\n"
+    ],
+    "make": [
+        "(:action make_wicks_dry\n    :parameters (?w - wick)\n    :precondition (and (composition ?w wet))\n    :effect (and (composition ?w dry))\n)\n\nThese actions should capture the necessary steps to prevent a wick lamp or stove from smoking by treating the wicks with vinegar and ensuring they are dry before use."
+    ]
+}

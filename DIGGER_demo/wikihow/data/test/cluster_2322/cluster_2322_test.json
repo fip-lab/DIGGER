@@ -1,0 +1,73 @@
+[
+    {
+        "cluster_label": 2322,
+        "task": "How to Make a Crown Braid",
+        "step": [
+            "Let your hair fall to one side of your face.",
+            "Begin to braid your hair.",
+            "Follow this pattern all the way around.",
+            "Continue for as long as you have hair to incorporate.",
+            "Finish off your twisted crown braid."
+        ],
+        "steps_predictions": [
+            "let_hair_fall_to_one_side_of_face npc",
+            "bend_to_make_hair_into_twice npc",
+            "create_pattern npc",
+            "in_order_hair npc",
+            "finish_with_twice braid1"
+        ],
+        "goal_state": " ((completed braid1))"
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Braid String",
+        "step": [
+            "Cut 5 pieces of 32-inch (81-cm) length of string.",
+            "Knot your strings together.",
+            "Divide your string into 5 groups.",
+            "Weave the first string under and over the next 2 strings.",
+            "Weave the last string under and over the previous 2 strings.",
+            "Repeat the process until you get the length you want.",
+            "Tie the end of the braid into an overhand knot.",
+            "Peel the tape off."
+        ],
+        "steps_predictions": [
+            "cut_string npc",
+            "sliplargerbend string1",
+            "dividend_string npc",
+            "weave_string npc",
+            "weave_string npc string",
+            "repeat_process npc wood drill",
+            "tie_ends_of_braid npc",
+            "peel_tape tape1"
+        ],
+        "goal_state": " ((one_piece npc) (joined_ends ends1))"
+    },
+    {
+        "cluster_label": 2322,
+        "task": "How to Goddess Braid Natural Hair",
+        "step": [
+            "Start with blow-dried hair.",
+            "Part your hair in preparation for the crown braid.",
+            "Apply gel, edge control, or pomade to your part and hair.",
+            "Begin a regular braid to the right of the part.",
+            "Begin to Dutch braid your hair.",
+            "Dutch braid your hair until you reach the back-center part.",
+            "Finish off with a regular braid.",
+            "Repeat the process on the other side of your head.",
+            "Cross the braids across the back of your head and pin them."
+        ],
+        "steps_predictions": [
+            "start_blow_dried_hair npc",
+            "part_of_hair npc",
+            "gel_control gel1 pomade1",
+            "start_braid npc",
+            "start_Dutch_braid npc",
+            "bend_to_into_half_twice npc",
+            "finish_with_braid braid1",
+            "repeat_process npc",
+            "cross_braids npc"
+        ],
+        "goal_state": " ((completed npc braid1))"
+    }
+]

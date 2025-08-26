@@ -1,0 +1,46 @@
+[
+    {
+        "cluster_label": 412,
+        "task": "How to Graft a Tree",
+        "step": [
+            "Choose your cultivar and your rootstock.",
+            "Amputate your rootstock.",
+            "Cleave your rootstock.",
+            "Prepare the scions.",
+            "Insert the scions into the rootstock.",
+            "Seal the graft.",
+            "Look after the graft."
+        ],
+        "steps_predictions": [
+            "choose_cult cultivar rootstock",
+            "put_rootstock_amputate rootstock1 box1",
+            "cleave_rootstock npc rootstock",
+            "prepare_scions ss",
+            "insert_scions_into_rootstock npc",
+            "sliplargerbuck npc",
+            "graft npc"
+        ],
+        "goal_state": " ((planted npc rootstock1 box1))"
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Plant a Plant",
+        "step": [
+            "Store plants with exposed roots in a water-filled bucket.",
+            "Water the plant an hour before transplanting it.",
+            "Add water once a week to keep the soil moist.",
+            "Use a dripping hose to water trees and large bushes.",
+            "Pour a liquid fertilizer over flowers.",
+            "Use a slow-release fertilizer on larger plants."
+        ],
+        "steps_predictions": [
+            "store_plant fir1 bucket1",
+            "plant_plant fir1 container1",
+            "add_water npc garden soil",
+            "drink_water npc",
+            "pour_faucet npc pot",
+            "use_slow_release fertilizer on_plant fir1 container1"
+        ],
+        "goal_state": " ((planted_in fir1 container1))"
+    }
+]

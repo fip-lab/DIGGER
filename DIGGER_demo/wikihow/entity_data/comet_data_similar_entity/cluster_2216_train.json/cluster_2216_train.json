@@ -1,0 +1,368 @@
+[
+    {
+        "cluster_label": 2216,
+        "task": "How to Choose a Combo Alarm System for a Truck",
+        "step": [
+            "Call your truck dealer to ask his advice.",
+            "Evaluate your own anti-theft needs for your truck combo alarm system.",
+            "Establish your budget for your truck combo alarm system.",
+            "Research truck combo alarm systems online or in truck magazines.",
+            "Make a short list of the alarm systems that interest you.",
+            "Go online.",
+            "Decide whether you want to install a DIY combo alarm yourself or have a professional do it for you.",
+            "Choose a combo alarm system for a truck that fits all your needs and matches your budget.",
+            "Purchase your truck combo alarm system."
+        ],
+        "steps_predictions": [
+            "put_in_cage npc basement",
+            "listen_to_alarm_system my_equipment",
+            "set_budget_for_equipment alarm_system",
+            "check_equipment alarm_system npc",
+            "listen_to_alarm_system npc",
+            "go_online npc covering_tracks track",
+            "install_combined_alarm_system npc home",
+            "choose_combuster alarm_system my_equipment",
+            "purchase_equipment alarm_system npc"
+        ],
+        "goal_state": " ((alarm_system npc))",
+        "similar_entity": {
+            "my equipment": "equipment",
+            "home": "house",
+            "npc": "hat",
+            "track": "movement",
+            "alarm system": "timer",
+            "basement": "floor",
+            "covering tracks": "cover"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Find the Best Gas Prices",
+        "step": [
+            "Take a mental note daily of the gas prices as you drive throughout your local area.",
+            "Call and talk to your friends who drive past other fuel stations in the area.",
+            "Fill up in the morning or late at night since gas will condense in the tank with the cooler temperatures.",
+            "Pay attention to local news and radio reports to learn about any gas or fuel promotions in your area.",
+            "Use the Internet to locate the best gas prices in your area.",
+            "Fill up the tank before you hit empty."
+        ],
+        "steps_predictions": [
+            "take_mental_note npc",
+            "talk_to_faucet npc",
+            "fill_tinder npc",
+            "listen_to_broadcast npc",
+            "get_internet npc gas_station",
+            "fill_tank npc basement"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))",
+        "similar_entity": {
+            "npc": "hat",
+            "basement": "floor",
+            "gas station": "oil tank"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Bluetooth Car Kit",
+        "step": [
+            "Research the different options available through Internet sites.",
+            "Visit local stores that carry the model you are considering.",
+            "Choose the type of Bluetooth car kit that best suits your needs.",
+            "Talk to friends or relatives for recommendations.",
+            "Install your Bluetooth car kit per manufacturer's instructions."
+        ],
+        "steps_predictions": [
+            "get_info npc covering_tracks track",
+            "pick_model npc car",
+            "choose_car_kit my_equipment",
+            "talk_to_family npc",
+            "install_in_car npc car"
+        ],
+        "goal_state": " ((knowledge npc covering_tracks))",
+        "similar_entity": {
+            "my equipment": "equipment",
+            "npc": "hat",
+            "track": "movement",
+            "covering tracks": "cover",
+            "car": "vehicle"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Select a Wireless Driveway Alarm",
+        "step": [
+            "Determine the minimum transmission distance you will need.",
+            "Decide why you want it.",
+            "Determine if the alarm will be part your home automation system or a standalone alert.",
+            "Seek out possible interference.",
+            "Figure out how many sensors and receivers you need.",
+            "Ask yourself the following questions: Can you make a different recording for every transmitter if you get a multiple wireless driveway alarm system?."
+        ],
+        "steps_predictions": [
+            "determine_minimum_distance you will need",
+            "choose_objectinreceptacle agent1",
+            "determine_alarm_system npc basement",
+            "seek_in_interference npc covering_tracks track",
+            "choose_sensor_and_receptacle agent1 camera1 lens1",
+            "make_record npc home"
+        ],
+        "goal_state": " ((selected_location npc covering_tracks))",
+        "similar_entity": {
+            "you": "you",
+            "will": "can",
+            "need": "items needed",
+            "home": "house",
+            "npc": "hat",
+            "track": "movement",
+            "basement": "floor",
+            "lens": "glasses",
+            "covering tracks": "cover",
+            "agent": "game character",
+            "camera": "the hdmi"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Directional Compass for Your Car",
+        "step": [
+            "Decide between a bubble compass or a digital compass.",
+            "Learn about the features of car compasses before choosing a compass.",
+            "Determine your compass lighting needs.",
+            "Check the battery needs of the compass.",
+            "Confirm that the compass has a calibration feature.",
+            "Choose the type of digital display to be used.",
+            "Pick a compass that has a readable display location.",
+            "Find the car compass that meets your needs."
+        ],
+        "steps_predictions": [
+            "choose_compensating alice",
+            "choose_compasses car_location",
+            "determine_light_diffuse light",
+            "check_batteries npc",
+            "confirm_commissioner_knowledge user1 compass1 calibrating_feature",
+            "choose_type_of_display npc",
+            "pick_compensate npc",
+            "find_car_compad compass car_location"
+        ],
+        "goal_state": " ((knowledge npc) (has_compensating alice))",
+        "similar_entity": {
+            "calibrating feature": "precision",
+            "npc": "hat",
+            "user": "player",
+            "light": "light",
+            "compass": "handrail",
+            "car location": "vehicle",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Pick Hearing Assistive Technology",
+        "step": [
+            "Consider installing a hearing loop in your home.",
+            "Compare hearing assistive phones.",
+            "Determine if you need alarms in your home.",
+            "Consider getting a hearing dog if you live alone."
+        ],
+        "steps_predictions": [
+            "install_hearing_loop in your home",
+            "compare-phone hearing assistive phones",
+            "determine if you need alarms in your home",
+            "get_hearing_dog npc"
+        ],
+        "goal_state": "pick_hearing_system npc",
+        "similar_entity": {
+            "you": "you",
+            "home": "house",
+            "need": "items needed",
+            "your": "you",
+            "alarms": "timer",
+            "npc": "hat",
+            "if": "can",
+            "hearing": "voice",
+            "assistive": "task",
+            "in": "room",
+            "phones": "cord"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Choose Between a Car with Automatic or Manual Transmission",
+        "step": [
+            "Understand the basics.",
+            "Consider power.",
+            "Consider semi-automatic transmission.",
+            "Determine if fuel economy is an issue.",
+            "Think about maintenance/repair costs.",
+            "Identify your needs.",
+            "Decide if you are willing to own a vehicle with a manual transmission.",
+            "Notice if you are a multitasker."
+        ],
+        "steps_predictions": [
+            "understand npc",
+            "listen_to_broadcast npc",
+            "check_transmission semi-automatic transmission",
+            "determine if fuel_efficiency is an issue",
+            "make_maintenance_costume npc basement",
+            "identify_needs you need",
+            "buy_vehicle npc car",
+            "listen_to_broadcast npc"
+        ],
+        "goal_state": " ((knowledge npc car) (not (car car)))",
+        "similar_entity": {
+            "an": "task",
+            "you": "you",
+            "issue": "task",
+            "need": "items needed",
+            "semi-automatic": "timer",
+            "npc": "hat",
+            "if": "can",
+            "is": "can",
+            "transmission": "speed",
+            "basement": "floor",
+            "fuel efficiency": "speed",
+            "car": "vehicle"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Shop for a Car Alarm System",
+        "step": [
+            "Determine how much money you can spend.",
+            "Consider which features you want in your alarm system.",
+            "Talk to your insurance provider regarding alarm system subsidies.",
+            "Evaluate the quality of the car alarm systems you are considering.",
+            "Shop around before making a purchase to find the best price.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "determine_amounts you can_spend npc",
+            "listen_to_alarm_system alarm system",
+            "talk_to_injured npc",
+            " Evaluate_quality_of_car alarm systems you are considering",
+            "buy_shelter npc",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((inventory npc car_alarm_system) (in_container wreath))",
+        "similar_entity": {
+            "considering": "advice",
+            "are": "can",
+            "you": "you",
+            "wreath": "wreath",
+            "npc": "hat",
+            "system": "task",
+            "systems": "equipment",
+            "alarm": "timer",
+            "can spend": "can",
+            "Evaluate quality of car": "vehicle"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Remote Starter for a Truck",
+        "step": [
+            "Determine what kind of remote starter you need for your particular type of truck.",
+            "Make a list of the features you want.",
+            "Search the Internet for reputable remote starter system manufacturers.",
+            "Contact manufacturers and ask them to send you all of their remote starter product brochures.",
+            "Read over the brochures and decide which systems have all of the features you need and want.",
+            "Research the remote starter systems that apply to your specific needs online.",
+            "Find retailers that sell the remote starter you are interested in and shop around for the best price."
+        ],
+        "steps_predictions": [
+            "determine_remote_starter you remote_start you car",
+            "listen_to_instructions npc covering_tracks track",
+            "search_internet npc home",
+            "initiate_new_member_secret adrian liam ss",
+            "choose_system npc covering_tracks track",
+            "get_remote_system npc home",
+            "get_remote_starter npc tv"
+        ],
+        "goal_state": " ((knowledge npc covering_tracks))",
+        "similar_entity": {
+            "you": "you",
+            "home": "house",
+            "npc": "hat",
+            "remote start": "timer",
+            "track": "movement",
+            "liam": "hay",
+            "adrian": "player",
+            "ss": "dish",
+            "covering tracks": "cover",
+            "tv": "tv",
+            "car": "vehicle"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Choose a Car Alarm",
+        "step": [
+            "Choose which type of car alarm you want.",
+            "Choose what features are right for you and your needs.",
+            "Start shopping around at local stores."
+        ],
+        "steps_predictions": [
+            "choose_car alarm you want",
+            "choose_features my_equipment",
+            "start_shopping npc brickhouse"
+        ],
+        "goal_state": "choose_car alarm you want choose_features my_equipment start_shopping npc car",
+        "similar_entity": {
+            "my equipment": "equipment",
+            "you": "you",
+            "brickhouse": "house",
+            "npc": "hat",
+            "alarm": "timer",
+            "want": "you"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Custom Fit Car Cover",
+        "step": [
+            "Make sure you know the exact year, make, model, body type, and trim of the vehicle you are purchasing a custom car cover for.",
+            "Decide what you want to protect your vehicle from.",
+            "Decide on a budget.",
+            "Find and compare multiple retailers.",
+            "If you have any questions or doubts about the product you're ordering, contact the retailer."
+        ],
+        "steps_predictions": [
+            "buy_car_cover npc car_coathanger",
+            "make_defending_vehicle npc basement",
+            "decide_on_budget npc basement",
+            "find_store npc brickhouse",
+            "pickupobjectnoreceptacle agent npc store"
+        ],
+        "goal_state": " ((in_cage npc car_coathanger))",
+        "similar_entity": {
+            "brickhouse": "house",
+            "npc": "hat",
+            "store": "eraser shelf at the store",
+            "basement": "floor",
+            "car coathanger": "coat hanger",
+            "agent": "game character"
+        }
+    },
+    {
+        "cluster_label": 2216,
+        "task": "How to Buy a Car Battery",
+        "step": [
+            "Buy a car battery proactively.",
+            "Test your battery annually.",
+            "Recycle your old battery."
+        ],
+        "steps_predictions": [
+            "buy_car_batteries npc car",
+            "test_batteries npc",
+            "recycle_batteries old_bike battery1 bike1"
+        ],
+        "goal_state": " ((in_cage npc car) (used_as_cleaned_batteries old_bike battery1 bike1))",
+        "similar_entity": {
+            "bike": "bike",
+            "npc": "hat",
+            "battery": "batter",
+            "old bike": "bike",
+            "car": "vehicle"
+        }
+    }
+]

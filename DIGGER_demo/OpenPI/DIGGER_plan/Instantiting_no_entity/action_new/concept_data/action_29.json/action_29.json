@@ -1,0 +1,6 @@
+[
+    "(:action build ;  Create or prepare something and update the state\n    :parameters (?p - player ?i - item ?l - location)\n    :precondition (and (at ?p ?l) (not (built ?i ?l)))\n    :effect (and (built ?i ?l) (not (at ?p ?l))",
+    "(:action pour\n  :parameters (?p - player ?item - object ?container - container)\n  :precondition (and (at ?p kitchen) (at ?container kitchen) (not (in ?item ?container)))\n  :effect (and (in ?item ?container))",
+    "(:action freeze ;  Freeze an item to change its state from non-frozen to frozen\n  :parameters (?p - person ?item - object ?container - container ?location - location)\n  :precondition (and (in_container ?item ?container) (at ?p ?location) (at ?container ?location))\n  :effect (and (frozen ?item) (not (melted ?item))",
+    "(:action cut ; Cut an object into a specific shape and update its state\n:parameters (?p - person ?o - object ?s - shape)\n:precondition (and (prepared ?o) (at ?p ?location) (has_tool ?p ?tool))\n:effect (and (shaped ?o ?s) (not (prepared ?o))"
+]

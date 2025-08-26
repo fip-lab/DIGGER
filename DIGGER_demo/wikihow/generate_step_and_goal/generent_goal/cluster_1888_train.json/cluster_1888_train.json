@@ -1,0 +1,186 @@
+[
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Roti",
+        "step": [
+            "Heat up your cooking surface.",
+            "Prepare your rolling surface.",
+            "Knead and divide the dough.",
+            "Roll out the balls.",
+            "Begin cooking the roti.",
+            "Finish cooking the roti.",
+            "Remove the roti and repeat with the next ball of dough.",
+            "Enjoy the product of your labor!."
+        ],
+        "steps_predictions": [
+            "heat_surface stove_knob velveeta",
+            "prepare-surface rolling_surface",
+            "knead_and_dividen dough1",
+            "roll_balls alice",
+            "cook npc kitchen",
+            "finish_roofi stove_knob velveeta",
+            "remove-and-repeat-with-roofing dough1",
+            "be_amazed you"
+        ],
+        "goal_state": " ((knowledge you) (amazed you))"
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Crispy Vegetable Spring Rolls",
+        "step": [
+            "Cook the vegetables.",
+            "Add the wet ingredients.",
+            "Make the spring rolls.",
+            "Lift the wrapper over the top and tuck it in under the filling.",
+            "Repeat until all the rolls are finished.",
+            "Fry the egg rolls.",
+            "Serve."
+        ],
+        "steps_predictions": [
+            "cook npc kitchen",
+            "add_wet_ingredients wick1",
+            "make_spring_roll velveeta",
+            "loot_wrapped npc",
+            "repeat_roll npc rolling_board",
+            "fry_ingredients egg_roll mixing_bowl",
+            "cook npc kitchen"
+        ],
+        "goal_state": " ((at stirfry mixing_bowl) (has_temperature npc rolling_board))"
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Egg Rolls",
+        "step": [
+            "Place an egg roll wrap on a flat surface in front of you with a corner facing you.",
+            "Use a spoon to put a scoop of the filling in the middle of the wrap.",
+            "Fold the bottom of the wrap up, fold the left and right sides in, then roll it up.",
+            "Beat an egg with a fork or whisk in a bowl and use it to seal the egg rolls.",
+            "Heat up 1 qt (946 ml) of peanut oil in a pot or deep fryer.",
+            "Place the egg rolls into the heated oil and fry them until they are brown.",
+            "Drain the cooked egg rolls on a paper towel or a rack and serve them hot."
+        ],
+        "steps_predictions": [
+            "place-in-container eggroll wrap",
+            "put_ingredients_in_container mixing_bowl table",
+            "fold-and-roll-wrapped towel1",
+            "be_amazed npc",
+            "heat_peanut_oil npc",
+            "cook npc",
+            "drain_cooked egg_roll npc"
+        ],
+        "goal_state": " ((at_location mixing_bowl table) (has_temperature npc))"
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Fry an Egg",
+        "step": [
+            "Fry your egg in hot oil for a decadent, golden brown crust and runny yolk.",
+            "Flip eggs halfway through to make them over-easy.",
+            "Serve an egg with toast for a simple breakfast.",
+            "Serve a fried egg over leftovers to make a filling meal.",
+            "Place a fried egg on sandwiches or burgers for a rich, protein filled option.",
+            "Make Huevos Rancheros."
+        ],
+        "steps_predictions": [
+            "fry_eraser npc",
+            "flip-and-eat you",
+            "cook npc kitchen",
+            "cook npc kitchen",
+            "place-in-fridge fried egg1",
+            "make_huevos_rancheros alice"
+        ],
+        "goal_state": " ((cooked egg1) (cooked hues_rancheros))"
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Fry an Egg on the Sidewalk",
+        "step": [
+            "Wait for a very hot day.",
+            "Place tin foil or metal pan in direct sunlight to heat up.",
+            "Crack an egg onto the metal surface.",
+            "Crack a second egg onto the sidewalk.",
+            "Discard the eggs when you're finished."
+        ],
+        "steps_predictions": [
+            "wait npc",
+            "place-in-lamp npc heat",
+            "break_egg npc",
+            "crack_egg npc",
+            "dissolve_eggs npc"
+        ],
+        "goal_state": " ((at npc place-in-lamp))"
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make an Egg, Tomato and Toast Breakfast",
+        "step": [
+            "Assemble all of the ingredients.",
+            "For the eggs, beat the eggs in a bowl and add 1 tbsp of milk into the eggs and whisk again.",
+            "When the oil is hot enough, pour the egg mixture in with medium heat and start stirring the mixture with a wooden spoon.",
+            "Do not over-cook the eggs.",
+            "Chopped the tomatoes into small cubes about the size a little bigger than your thumbnail!.",
+            "To make the fresh fried tomatoes, heat a little oil in pan in low heat.",
+            "Put a pinch of salt and sugar in to enhance the flavors.",
+            "Now, we toast the bread.",
+            "Lay the bread next to the eggs and tomatoes and drizzle some olive over the dish.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "assemble_ingredients mixture",
+            "add-ingredients-into-bowl eggs",
+            "pour_oil_into_oven mixture",
+            "cook npc",
+            "chopped_atoes tomato1 bowl1",
+            "heat_oil npc",
+            "enhance-flavor mixture",
+            "boil_bread npc",
+            "lay_oven npc",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((in_bowl mixture))"
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make an Egg Wash",
+        "step": [
+            "Brush the egg wash over your bread.",
+            "Spread egg wash over the bottom of an unbaked pie crust.",
+            "Seal the edges of pastry with egg wash.",
+            "Cover the top of the baked goods.",
+            "Use the egg wash to secure seeds, sugar, or pastry."
+        ],
+        "steps_predictions": [
+            "brush-and-flatten-bread bread",
+            "put_ingredients_in_oven mixing_bowl table",
+            "sliplargerbeads velveeta",
+            "cover_baked_items cookies",
+            "secure_seeds npc"
+        ],
+        "goal_state": " ((in_oven mixing_bowl) (thawed bread))"
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Indian Potato Bread Rolls",
+        "step": [
+            "Peel and boil the potatoes.",
+            "Pour a little oil into the frying pan or skillet.",
+            "Remove from the heat.",
+            "Shape the lemony filling mixture into cylinder or ball shapes.",
+            "Cut the edges off the bread slices.",
+            "Wrap the dampened bread around the filling balls or cylinders.",
+            "Deep fry the rolls in oil in a pan or pot.",
+            "Serve the lemony potato bread rolls with the sauce of your choice."
+        ],
+        "steps_predictions": [
+            "peel_potatoes potato1 stove1",
+            "pour_oil_into_faucet oil_pan stove_knob velveeta",
+            "remove_from_heat stove_knob velveeta",
+            "shape_into_ball_shape mixture",
+            "cut_bread_sliplargerbeads velveeta",
+            "wrap_bread npc",
+            "deep_fry potato1 pan1 oil1",
+            "serve_potatoes potato_rolls sauce"
+        ],
+        "goal_state": " ((at_location potato1 oil1) (has_temperature potato2 serving_d"
+    }
+]

@@ -1,0 +1,107 @@
+{
+    "?action": [
+        "throw",
+        "purchase",
+        "use",
+        "purchase"
+    ],
+    "?object": [
+        "paper",
+        "item",
+        "mat",
+        "spray",
+        "waste",
+        "glass",
+        "cleaner",
+        "rug",
+        "dust",
+        "towel",
+        "screen",
+        "trash",
+        "pipe",
+        "tv",
+        "rag",
+        "candles",
+        "water",
+        "set",
+        "camouflage",
+        "nosiness",
+        "equipment",
+        "gear",
+        "clipping",
+        "cutting",
+        "part",
+        "rhubarb",
+        "candles",
+        "water"
+    ],
+    "?location": [
+        "door",
+        "room",
+        "home",
+        "surface",
+        "house",
+        "socket",
+        "stove",
+        "place",
+        "area",
+        "yard",
+        "socket",
+        "stove"
+    ],
+    "?agent": [
+        "bird",
+        "friend",
+        "victim",
+        "people",
+        "person",
+        "spy",
+        "group"
+    ],
+    "?container": [
+        "can",
+        "basket",
+        "bag",
+        "jar",
+        "saucepan",
+        "pot",
+        "pitcher",
+        "glass",
+        "jar",
+        "saucepan"
+    ],
+    "?state": [
+        "amount",
+        "up",
+        "amount"
+    ],
+    "?context": [
+        "mission",
+        "meeting"
+    ],
+    "?substance": [
+        "hormone",
+        "cordial"
+    ],
+    "?entity": [
+        "bush"
+    ],
+    "?ingredient": [
+        "melon",
+        "rum",
+        "banana",
+        "yogurt",
+        "sorbet",
+        "strawberry",
+        "pina"
+    ],
+    "?item": [
+        "mixture",
+        "coladas",
+        "texture",
+        "smoothie"
+    ],
+    "?bl": [
+        "blender"
+    ]
+}

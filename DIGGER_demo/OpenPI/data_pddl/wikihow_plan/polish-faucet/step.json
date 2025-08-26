@@ -1,0 +1,272 @@
+{
+    "goal": "Polish a Faucet With a Lemon",
+    "steps": [
+        "######Cut a lemon in half.",
+        "######Squeeze out the juice.",
+        "######Take the squeezed out lemon half and rub vigorously over the faucets.",
+        "######Wash the tap after scouring with the lemon half."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/2/21/Clean-with-lemon-Step-1.jpg/aid350278-v4-728px-Clean-with-lemon-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/a/af/Clean-with-lemon-Step-2.jpg/aid350278-v4-728px-Clean-with-lemon-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/6/69/Clean-with-lemon-Step-3.jpg/aid350278-v4-728px-Clean-with-lemon-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/8/86/Clean-with-lemon-Step-4.jpg/v4-347px-Clean-with-lemon-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "faucets",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "dryness",
+                        "before": "dry | dirty",
+                        "after": "wet | clean",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "dryness | cleanness | moisture"
+                    },
+                    {
+                        "attribute": "odor",
+                        "before": "normal smelling | whitish colored",
+                        "after": "lemony fresh | silver and shiny",
+                        "saliency": 0.5139353400222966,
+                        "attribute_annotation": "odor | color"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean | cleaned",
+                        "saliency": 0.5500875935658545,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "appearance",
+                        "before": "stained",
+                        "after": "sparkling",
+                        "saliency": 0.19740404523013222,
+                        "attribute_annotation": "appearance"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "faucets | faucet | tap"
+            ]
+        },
+        {
+            "entity": "lemon",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "size",
+                        "before": "whole | round | solid",
+                        "after": "cut | half moon shaped | cut in half | halved",
+                        "saliency": 0.5496894409937889,
+                        "attribute_annotation": "size | shape"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry | plain smelling",
+                        "after": "juicy | fragrant",
+                        "saliency": 0.474120082815735,
+                        "attribute_annotation": "moisture | odor"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.40476190476190477,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "moisture",
+                        "before": "plain smelling",
+                        "after": "strong smelling",
+                        "saliency": 0.422360248447205,
+                        "attribute_annotation": "moisture | odor"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "halved",
+                        "saliency": 0.40476190476190477,
+                        "attribute_annotation": "size | shape"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.1415565111217285,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "halved",
+                        "saliency": 0.4565217391304348,
+                        "attribute_annotation": "size | shape"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "lemon",
+                "cutting board",
+                "knife"
+            ]
+        },
+        {
+            "entity": "juice",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in lemon",
+                        "after": "in bowl",
+                        "saliency": 0.4246695333651855,
+                        "attribute_annotation": "location | wetness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "inside lemon | in lemon",
+                        "after": "in bowl | squeezed out",
+                        "saliency": 0.5281892021022455,
+                        "attribute_annotation": "location | wetness"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in lemon | dry",
+                        "after": "on faucet | wet with lemon juice",
+                        "saliency": 0.4246695333651855,
+                        "attribute_annotation": "location | wetness"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "on faucet",
+                        "after": "in sink",
+                        "saliency": 0.384854276158624,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "juice | facuets",
+                "lemon juice"
+            ]
+        },
+        {
+            "entity": "water",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in faucet",
+                        "after": "in sink",
+                        "saliency": 0.3251313903487817,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "water"
+            ]
+        }
+    ],
+    "clusters": {
+        "faucets": {
+            "entity_cluster": [
+                "tap",
+                "faucet",
+                "facuets",
+                "faucets"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "odor": [
+                    "odor"
+                ],
+                "color": [
+                    "color"
+                ],
+                "appearance": [
+                    "appearance"
+                ],
+                "dryness": [
+                    "moisture",
+                    "dryness",
+                    "wetness"
+                ],
+                "location": [
+                    "wetness",
+                    "location"
+                ]
+            }
+        },
+        "lemon": {
+            "entity_cluster": [
+                "lemon",
+                "cutting board",
+                "knife"
+            ],
+            "attribute_cluster": {
+                "size": [
+                    "size"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "moisture": [
+                    "moisture"
+                ],
+                "odor": [
+                    "odor"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "juice": {
+            "entity_cluster": [
+                "juice",
+                "lemon juice"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "water": {
+            "entity_cluster": [
+                "water"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        }
+    }
+}

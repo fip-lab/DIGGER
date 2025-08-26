@@ -1,0 +1,106 @@
+{
+    "choose": [
+        "(:action buy-copy\n    :parameters (?b - book ?w - website)\n    :precondition (and (selected ?w) (customized-all-pages) (not (purchased ?b)))\n    :effect (purchased ?b)\n)\n```\n\n### Explanation\n\n1. **Choose Website**: The action involves selecting a website to create the memory book. The state change is from `unselected` to `selected`.\n\n2. **Upload Pictures**: This action involves uploading pictures to the selected website. The pictures change from `not uploaded` to `uploaded`.\n\n3. **Select Theme**: This action involves selecting a design theme for the memory book on the website. The theme state changes from `not selected` to `selected`.\n\n4. **Customize Page**: This action involves customizing pages on the website until satisfied. The page state changes from `not customized` to `customized`.\n\n5. **Buy Copy**: This action involves ordering a copy of the memory book. The book state changes from `not purchased` to `purchased`.\n\nThese actions reflect the steps and state changes involved in creating a wedding memory book as per the task description.",
+        "(:action buy_shelter\n    :parameters (?npc - npc ?container - container ?sachet - sachet ?mothballs - mothballs)\n    :precondition (and (inventory ?npc ?sachet) (inventory ?npc ?mothballs))\n    :effect (and (obtained ?container) (contains ?container ?sachet) (contains ?container ?mothballs))\n)\n\n",
+        "(:action choose-website\n    :parameters (?w - website)\n    :precondition (not (selected ?w))\n    :effect (selected ?w)\n)\n\n;; Action 2: Upload pictures\n",
+        "(:action choose_scraps\n    :parameters (?npc - person)\n    :precondition (and (unselected ?npc))\n    :effect (and (selected ?npc) (not (unselected ?npc)))\n)\n\n",
+        "(:action choose_cardstock\n    :parameters (?npc - person)\n    :precondition (and (nameless ?npc))\n    :effect (and (named ?npc) (not (nameless ?npc)))\n)\n\n",
+        "(:action choose_focus\n    :parameters (?m - moment)\n    :precondition (and (moment ?m) (time ?m earlier))\n    :effect (and (time ?m later) (focus_chosen ?m))\n)\n\n",
+        "(:action gather-memorabilia\n    :parameters (?npc - npc)\n    :precondition (bare ?npc)\n    :effect (and (camouflaged ?npc) (not (bare ?npc)))\n)\n\n",
+        "(:action gather_members\n   :parameters (?npc - npc ?mb - memory_book)\n   :precondition (and (visibility ?npc visible) (location ?mb present))\n   :effect (and (visibility ?npc invisible) (location ?mb in_hand))\n)\n```\n\n### Explanation\n- **Find Template:** This action involves finding a template by changing the location of the covering tracks from a cabinet to a countertop and smoothing the track's stability.\n- **Prepare Content:** This action involves preparing the content by moving it from the store to home and changing the focus of \"you\" from making a bracelet to admiring it.\n- **Pick Composing Style:** This action involves selecting a composing style by updating the character's step and choice attributes.\n- **Create Members Know:** This action involves designing the memory book by camouflaging the npc's decoration and making the memory book present.\n- **Gather Members:** This action involves sharing the memory book by making the npc invisible and placing the memory book in hand.\n\nEach action is designed to reflect the changes in the state of the entities involved, as specified by the task and steps provided.",
+        "(:action gather_cook\n    :parameters (?npc - person ?l - location)\n    :precondition (and (at ?npc ?l) (has_kitchen ?l))\n    :effect (and (learned ?npc recipe) (messy ?l))\n)\n\n",
+        "(:action gather_gems\n    :parameters (?npc - person)\n    :precondition (and (visible ?npc))\n    :effect (and (invisible ?npc) (not (visible ?npc)))\n)\n```\n\n### Explanation:\n- **choose_scraps**: Reflects the decision-making process where the NPC selects the scraps to use.\n- **gather_cook**: Involves gathering recipes in the kitchen, resulting in the NPC learning recipes and the kitchen becoming messy.\n- **create_theme**: The NPC creates a theme, changing their decoration to \"camouflaged\" and the scrapbook's texture to \"crumpled.\"\n- **choose_cardstock**: Represents choosing cardstock, changing the NPC's state to \"named.\"\n- **protect_heirloom_card**: Protects recipe cards, changing their state from \"unobtained\" to \"obtained.\"\n- **add_ingredients_to_scraps**: Adds elements to the scrapbook, changing its state from \"unselected\" to \"selected.\"\n- **create_room**: Moves covering tracks from the cabinet to the countertop, making them fuller.\n- **place_tape_on_panel**: Places tape on tabs, changing their state from \"clear\" to \"cluttered.\"\n- **gather_gems**: Involves the NPC gathering gems, changing their visibility from \"visible\" to \"invisible.\"",
+        "(:action select-theme\n    :parameters (?t - theme ?w - website)\n    :precondition (and (selected ?w) (not (theme-selected ?t)))\n    :effect (theme-selected ?t)\n)\n\n;; Action 4: Customize page\n",
+        "(:action find_template\n   :parameters (?npc - npc ?ct - covering_tracks ?t - track)\n   :precondition (and (at ?ct cabinet) (stability ?t jerky))\n   :effect (and (at ?ct countertop) (stability ?t smooth))\n)\n```\n\n#### Action: Prepare Content\n```lisp\n",
+        "(:action get_amazed\n    :parameters (?bride - person ?bouquet - item ?garters - item)\n    :precondition (and (at ?bride dance_floor) (completed ?bouquet) (together ?garters))\n    :effect (amazed ?bride)\n)\n\n",
+        "(:action save_money\n    :parameters (?npc - npc)\n    :precondition (and\n                    (bare ?npc)\n                    (visible ?npc))\n    :effect (and\n              (camouflaged ?npc)\n              (invisible ?npc))\n  )\n\n;; Action 2: Create a packing list for travel preparation\n",
+        "(:action save_page\n    :parameters (?npc - player ?page - page)\n    :precondition (and (at ?npc album) (on_covering_tracks ?page))\n    :effect (saved ?page)\n)\n\n"
+    ],
+    "round": [
+        "(:action round-up-supplies\n    :parameters (?equipment - my_equipment ?bedroom - bedroom)\n    :precondition (and (scattered ?equipment) (unmade ?bedroom))\n    :effect (and (organized ?equipment) (created ?bedroom) (not (scattered ?equipment)) (not (unmade ?bedroom)))\n)\n\n"
+    ],
+    "decorate": [
+        "(:action decorate-cover\n    :parameters (?npc - npc ?covering_tracks - covering_tracks)\n    :precondition (and (bare ?npc) (in-cabinet ?covering_tracks))\n    :effect (and (camouflaged ?npc) (on-countertop ?covering_tracks) \n                 (not (bare ?npc)) (not (in-cabinet ?covering_tracks)))\n)\n\n",
+        "(:action record_interview\n    :parameters (?a - agent ?npc - person)\n    :precondition (and (connected ?a) (functional ?a) (visible ?npc))\n    :effect (and (recorded ?npc) (transcribed ?npc))\n)\n\n",
+        "(:action mark_date\n    :parameters (?npc - npc ?container - container ?date - date)\n    :precondition (and (obtained ?container))\n    :effect (and (marked ?container ?date))\n)\n```\n\n### Explanation:\n- **buy_shelter**: This action involves obtaining a sturdy container and placing moisture-absorbing sachets and mothballs inside.\n- **put_object_in_receptacle**: This action places a letter into the container, capturing the act of storing items in the time capsule.\n- **create_family**: This action creates a family entity, representing the collection of family members for the time capsule.\n- **cut_family_member**: This action involves taking a hair cutting from a family member and placing it in an envelope.\n- **write_family_member_questionnaire**: This action involves writing and having each family member answer a questionnaire.\n- **listen_to_secret**: This action captures the act of recording personal secrets or thoughts for the future.\n- **put_object_in_receptacle**: This is a generalized action to place meaningful objects into the time capsule.\n- **put_in_cocoa**: This action involves placing cocoa into a bottle, representing the storage of sentimental items.\n- **mark_date**: This action marks the date on the time capsule for future opening.\n\nThese actions reflect the process of creating a time capsule, focusing on the collection and storage of meaningful items and information."
+    ],
+    "add": [
+        "(:action add-memorabilia\n    :parameters (?npc - npc)\n    :precondition (camouflaged ?npc)\n    :effect (and (invisible ?npc) (not (camouflaged ?npc)))\n)\n\n",
+        "(:action add_ingredients_to_scraps\n    :parameters (?book - scrapbook)\n    :precondition (and (unselected ?book))\n    :effect (and (selected ?book) (not (unselected ?book)))\n)\n\n",
+        "(:action collect_info\n    :parameters (?npc - person ?track - covering_tracks)\n    :precondition (and (time_capsule_created ?npc) (on_table ?track))\n    :effect (and (info_collected ?npc) (archived ?track))\n)\n```\n\n### Explanation:\n- **bring_tape_recorder**: This action connects and plugs in the recorder, making it functional.\n- **get_amazed**: This action changes the state of the NPC from visible to invisible and accompanies the state `ss`.\n- **record_interview**: This action involves recording and transcribing the interview with the older person.\n- **create_binder**: This action camouflages the NPC, which might be related to organizing or preparing materials.\n- **scan_photos**: This action scans the photos and updates the track to a fuller state.\n- **create_website**: This action creates a website using the scanned photos and places the track on the table.\n- **put_website_online**: This action puts the website online, marking it as a time capsule.\n- **collect_info**: This action collects the website information and archives it on the track.\n\nThese actions capture the logical sequence and state changes involved in creating a salable life story using the provided task steps."
+    ],
+    "write": [
+        "(:action write-in-title\n    :parameters (?npc - npc ?track - track)\n    :precondition (and (bare ?npc) (jerky ?track))\n    :effect (and (camouflaged ?npc) (smooth ?track) \n                 (not (bare ?npc)) (not (jerky ?track)))\n)\n\n",
+        "(:action write_family_member_questionnaire\n    :parameters (?agent - agent ?questionnaire - questionnaire ?family_member - family_member)\n    :precondition (and (inventory ?agent ?questionnaire) (member ?family_member ?family))\n    :effect (and (answered ?questionnaire ?family_member))\n)\n\n"
+    ],
+    "hold": [
+        "(:action hold-onto-memorabilia\n    :parameters (?npc - npc)\n    :precondition (invisible ?npc)\n    :effect (and (camouflaged ?npc) (not (invisible ?npc)))\n)\n```\n\nThese actions reflect the described steps and entity state transitions for creating a Smash Book, ensuring that each action captures the necessary preconditions and effects."
+    ],
+    "create": [
+        "(:action prepare_content\n   :parameters (?you - you ?c - content)\n   :precondition (and (at ?c store) (focus ?you focused_on_making_bracelet))\n   :effect (and (at ?c home) (focus ?you admiring_bracelet))\n)\n```\n\n#### Action: Pick Composing Style\n```lisp\n",
+        "(:action create_members_know\n   :parameters (?npc - npc ?mb - memory_book)\n   :precondition (and (decoration ?npc bare) (location ?mb absent))\n   :effect (and (decoration ?npc camouflaged) (location ?mb present))\n)\n```\n\n#### Action: Gather Members\n```lisp\n",
+        "(:action create_binder\n    :parameters (?npc - person)\n    :precondition (and (plain ?npc))\n    :effect (and (camouflaged ?npc))\n)\n\n",
+        "(:action create_website\n    :parameters (?npc - person ?track - covering_tracks)\n    :precondition (and (photos_scanned ?npc) (fuller ?track))\n    :effect (and (website_created ?npc) (on_table ?track))\n)\n\n",
+        "(:action create_family\n    :parameters (?npc - npc ?family - family)\n    :precondition (and (not (exists ?family)))\n    :effect (exists (?family) (and (clean ?family)))\n)\n\n",
+        "(:action create_theme\n    :parameters (?npc - person ?sb - scrapbook)\n    :precondition (and (plain ?npc) (flat ?sb))\n    :effect (and (camouflaged ?npc) (crumpled ?sb))\n)\n\n",
+        "(:action create_room\n    :parameters (?npc - person ?ct - covering_tracks ?loc - location)\n    :precondition (and (at ?npc ?loc) (in_cabinet ?ct))\n    :effect (and (on_countertop ?ct) (fuller ?ct) (not (in_cabinet ?ct)))\n)\n\n",
+        "(:action create_packing_list\n    :parameters (?npc - npc ?basement - basement)\n    :precondition (and\n                    (absent ?basement)\n                    (plain ?npc))\n    :effect (and\n              (present ?basement)\n              (covered ?basement)\n              (camouflaged ?npc))\n  )\n\n;; Action 3: Brainstorm a bucket list for motivation to achieve goals\n",
+        "(:action create_bucket_list\n    :parameters (?goal - goal)\n    :precondition (unplayed ?goal)\n    :effect (played ?goal)\n  )\n```\n\n### Explanation:\n\n- **save_money**: This action represents the idea of writing a grocery list to save money. The precondition checks if the `npc` is in a state where it is \"bare\" and \"visible,\" and the effect changes the state to \"camouflaged\" and \"invisible,\" indicating a strategic approach to saving money.\n\n- **create_packing_list**: This action is about creating a packing list for travel preparation. The precondition checks if the `basement` is \"absent\" and the `npc` is \"plain.\" The effect changes the `basement` to \"present\" and \"covered,\" and the `npc` to \"camouflaged,\" suggesting readiness and preparation for travel.\n\n- **create_bucket_list**: This action involves brainstorming a bucket list to motivate goal achievement. The precondition checks if the `goal` is \"unplayed,\" and the effect changes it to \"played,\" indicating progress towards achieving goals.",
+        "(:action create_group_shot\n    :parameters (?npc - player)\n    :precondition (at ?npc album)\n    :effect (group_shot_created)\n)\n\n",
+        "(:action make_smooth_transition_out_of_flashback\n    :parameters (?c - character)\n    :precondition (and (character ?c) (transition_into_flashback_set ?c))\n    :effect (and (smooth_transition_out_of_flashback ?c))\n)\n```\n\n### Explanation:\n\n1. **choose_focus**: This action focuses on selecting a significant moment for the flashback, changing its time attribute to 'later' to indicate its importance.\n\n2. **pistol_shot**: This action metaphorically represents a sudden change or revelation, changing the npc's decoration to 'camouflaged' and visibility to 'invisible'.\n\n3. **label_with_name**: This action labels the flashback clearly, changing the npc's choice from 'nameless' to 'named'.\n\n4. **set_back_door**: This action uses visual cues (metaphorically represented by cleaning the hallway) to set the flashback apart, indicating preparation for the transition.\n\n5. **set_transition_into_flashback**: This action establishes a clear transition into the flashback by selecting the character's step.\n\n6. **make_smooth_transition_out_of_flashback**: This action ensures a smooth transition out of the flashback once the transition into the flashback is set."
+    ],
+    "pick": [
+        "(:action pick_composing_style\n   :parameters (?ch - character)\n   :precondition (and (step ?ch unselected) (choice ?ch nameless))\n   :effect (and (step ?ch selected) (choice ?ch named))\n)\n```\n\n#### Action: Create Members Know\n```lisp\n"
+    ],
+    "bring": [
+        "(:action bring_tape_recorder\n    :parameters (?r - recorder)\n    :precondition (and (disconnected ?r) (unplugged ?r))\n    :effect (and (connected ?r) (plugged_in ?r) (functional ?r))\n)\n\n",
+        "(:action take_page_with_vendor\n    :parameters (?venue - location)\n    :precondition (specified ?venue)\n    :effect (featured ?venue)\n)\n\n"
+    ],
+    "scan": [
+        "(:action scan_photos\n    :parameters (?npc - person ?track - covering_tracks)\n    :precondition (and (visible ?npc) (empty ?track))\n    :effect (and (photos_scanned ?npc) (fuller ?track))\n)\n\n",
+        "(:action scan_invitation\n    :parameters (?npc - player ?studio - location)\n    :precondition (and (at ?npc ?studio))\n    :effect (and (scanned invitation) (not (available ?studio)))\n)\n\n",
+        "(:action listen_to_secret\n    :parameters (?npc - npc ?family_member - family_member ?secret - secret)\n    :precondition (and (member ?family_member ?family))\n    :effect (and (heard ?secret ?npc))\n)\n\n",
+        "(:action check_page\n    :parameters (?npc - player ?page - page ?track - track)\n    :precondition (and (at ?npc album) (on ?track ?page))\n    :effect (checked ?page)\n)\n\n"
+    ],
+    "put": [
+        "(:action put_website_online\n    :parameters (?npc - person ?track - covering_tracks)\n    :precondition (and (website_created ?npc) (on_table ?track))\n    :effect (and (online ?npc) (time_capsule_created ?npc))\n)\n\n",
+        "(:action put_object_in_receptacle\n    :parameters (?agent - agent ?object - ss ?container - container)\n    :precondition (and (inventory ?agent ?object) (obtained ?container))\n    :effect (and (in ?object ?container) (not (inventory ?agent ?object)))\n)\n\n",
+        "(:action put_in_cocoa\n    :parameters (?user - user ?bottle - bottle ?cocoa - cocoa)\n    :precondition (and (inventory ?user ?bottle) (inventory ?user ?cocoa))\n    :effect (and (in ?cocoa ?bottle) (not (inventory ?user ?cocoa)) (full ?bottle))\n)\n\n",
+        "(:action put_focus_on_ceremony\n    :parameters (?npc - player ?ceremony - event)\n    :precondition (and (at ?npc album) (in_progress ?ceremony))\n    :effect (and (focused ?ceremony) (completed ?ceremony))\n)\n\n",
+        "(:action place_tape_on_panel\n    :parameters (?tabs - tabs)\n    :precondition (and (clear ?tabs))\n    :effect (and (cluttered ?tabs) (not (clear ?tabs)))\n)\n\n",
+        "(:action label_with_name\n    :parameters (?npc - npc)\n    :precondition (and (npc ?npc) (choice ?npc nameless))\n    :effect (and (choice ?npc named) (label_created ?npc))\n)\n\n",
+        "(:action set_back_door\n    :parameters (?npc - npc ?h - hallway)\n    :precondition (and (npc ?npc) (hallway ?h) (messiness ?h messy))\n    :effect (and (messiness ?h clean) (back_door_set ?npc ?h))\n)\n\n",
+        "(:action set_transition_into_flashback\n    :parameters (?c - character)\n    :precondition (and (character ?c) (step ?c unselected))\n    :effect (and (step ?c selected) (transition_into_flashback_set ?c))\n)\n\n"
+    ],
+    "cut": [
+        "(:action cut_family_member\n    :parameters (?npc - npc ?family_member - family_member ?envelope - envelope)\n    :precondition (and (member ?family_member ?family) (inventory ?npc ?envelope))\n    :effect (and (cut ?family_member) (in ?family_member ?envelope))\n)\n\n",
+        "(:action cut_cake\n    :parameters (?bowl - mixing_bowl ?table - location)\n    :precondition (and (at ?bowl ?table) (mixed ?bowl))\n    :effect (and (cut ?cake) (cluttered ?table))\n)\n\n"
+    ],
+    "protect": [
+        "(:action protect_heirloom_card\n    :parameters (?card - recipe_card)\n    :precondition (and (unobtained ?card))\n    :effect (and (obtained ?card) (not (unobtained ?card)))\n)\n\n"
+    ],
+    "dedicate": [
+        "(:action dedicate_page\n    :parameters (?npc - player ?ss - page)\n    :precondition (and (at ?npc album))\n    :effect (and (dedicated ?ss) (not (blank ?ss)))\n)\n\n"
+    ],
+    "celebrate": [
+        "(:action celebrate_wreath\n    :parameters (?wreath - decoration)\n    :precondition (in_progress ?wreath)\n    :effect (completed ?wreath)\n)\n\n"
+    ],
+    "use": [
+        "(:action use_as_gems\n    :parameters (?npc - player ?page - page ?track - track)\n    :precondition (and (at ?npc album) (on ?track ?page))\n    :effect (and (used_as_gems ?page) (smooth ?track))\n)\n\n"
+    ],
+    "finish": [
+        "(:action finish_album\n    :parameters (?npc - player)\n    :precondition (and (at ?npc album) (dedicated ?bride_page) (dedicated ?groom_page))\n    :effect (album_finished)\n)\n```\n\nEach action reflects the state changes of the entities involved based on the task description and steps. The parameters, preconditions, and effects are tailored to capture the essence of the task \"How to Make a Storybook Wedding Album.\""
+    ],
+    "upload": [
+        "(:action upload-pictures\n    :parameters (?p - pictures ?w - website)\n    :precondition (and (selected ?w) (not (uploaded ?p)))\n    :effect (uploaded ?p)\n)\n\n;; Action 3: Select theme\n"
+    ],
+    "customize": [
+        "(:action customize-page\n    :parameters (?p - page ?w - website)\n    :precondition (and (selected ?w) (not (customized ?p)))\n    :effect (customized ?p)\n)\n\n;; Action 5: Buy copy of the book\n"
+    ],
+    "pistol": [
+        "(:action pistol_shot\n    :parameters (?npc - npc)\n    :precondition (and (npc ?npc) (decoration ?npc bare) (visibility ?npc visible))\n    :effect (and (decoration ?npc camouflaged) (visibility ?npc invisible))\n)\n\n"
+    ],
+    "be": [
+        "(:action be_amazed\n    :parameters (?couple - people)\n    :precondition (and (at ?couple dance_floor))\n    :effect (amazed ?couple)\n)\n\n"
+    ]
+}

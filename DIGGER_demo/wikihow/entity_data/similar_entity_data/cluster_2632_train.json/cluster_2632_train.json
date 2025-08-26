@@ -1,0 +1,2900 @@
+[
+    {
+        "cluster_label": 2632,
+        "task": "How to Grill That Perfect Burger",
+        "step": [
+            "Start with fresh ground chuck.",
+            "Make sure the chuck has a fat content of at least 15 to 22 percent to ensure juiciness.",
+            "Chill the beef well before forming patties.",
+            "Season the meat with salt and pepper.",
+            "Make each patty by forming about half a pound of ground chuck into a tight ball about the size of a baseball.",
+            "Use a spatula or other straight-edged tool to \"pull in\" the sides of the patty so that they remain together and tight.",
+            "Form patties about 1/2- to 3/4-inch thick.",
+            "Build a hot fire in the grill.",
+            "Place the burgers on the grill over direct heat.",
+            "Check doneness by peeking inside a patty with a spatula, or use an instant-read food thermometer inserted into the center of the patty.",
+            "Serve on fresh buns with any toppings you prefer: cheese, tomatoes, lettuce, onion, pickles and condiments such as ketchup, mayonnaise or mustard.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "start_with_fresh_ground_chuck ground_cheese",
+            "make_chuck chuck",
+            "chill beef patties",
+            "season-meat beef",
+            "form_into_ball ground_chuck",
+            "pull-in-sliplargerbeads potato",
+            "form_patties pc1",
+            "build_fire npc brickhouse",
+            "place_burger_on_grill stove_knob",
+            "peek_into_papyrus npc",
+            "cook npc",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((cooked beef))",
+        "similar_entity": {
+            "potato": {
+                "potato": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "cleaner | clean | wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "on counter"
+                    },
+                    {
+                        "attribute": "thickness",
+                        "before": "thicker",
+                        "after": "thinner"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "short",
+                        "after": "long"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "peeled"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on cloth"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | on stove",
+                        "after": "in dish | on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a potato]] in [[kitchen]]",
+                    "[[gnocchi]] is made of [[potato]]."
+                ]
+            },
+            "ground chuck": {
+                "ground": [
+                    {
+                        "attribute": "volume",
+                        "before": "filled",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "readiness",
+                        "before": "unprepared",
+                        "after": "prepared"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "wreath": {
+                "wreath": [
+                    {
+                        "attribute": "status",
+                        "before": "in progress",
+                        "after": "completed"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "brickhouse": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "pc": {
+                "window": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler | warmer",
+                        "after": "warmer | cooler"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "transparency",
+                        "before": "more opaque | more covered",
+                        "after": "more transparent | more bare"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet | dry",
+                        "after": "dry | wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "transparency",
+                        "before": "more opaque | more covered",
+                        "after": "more transparent | more bare"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirtier",
+                        "after": "cleaner"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "stove knob": {
+                "stove knob": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "in the off position",
+                        "after": "in the on position"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "medium-low",
+                        "after": "low"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "chuck": {
+                "bucket": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold | cooler",
+                        "after": "hot | warmer"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full | fuller"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "more full | fuller",
+                        "after": "less full | emptier"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "ground cheese": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "beef": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Carne bovina]] is a translation of [[beef]]",
+                    "[[cow]] is related to [[beef]]",
+                    "*Something you find on [[a plate]] is [[beef]]"
+                ]
+            },
+            "patties": {
+                "dips": [
+                    {
+                        "attribute": "flavor",
+                        "before": "plain",
+                        "after": "flavorful"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "seasoning",
+                        "before": "bland",
+                        "after": "tasty"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Cook a Cheeseburger",
+        "step": [
+            "Start with good meat.",
+            "Place the ground beef in a bowl.",
+            "Roughly chop the onion and garlic.",
+            "Add the egg yolk.",
+            "Mix it all together.",
+            "Create the burgers.",
+            "Arrange the burgers on a plate.",
+            "Choose your cooking method.",
+            "While the burgers are cooking, prepare the toppings:.",
+            "Cover each with the top half of its bun, and enjoy."
+        ],
+        "steps_predictions": [
+            "start_with_meat beef",
+            "place-ingredients ground beef mixing_bowl",
+            "choose_ingredient onion_and_garlic garlic",
+            "add-ingredients egg_yolk mixing_bowl",
+            "mix_ingredients mixture",
+            "create_burger npc",
+            "build_burger npc kitchen",
+            "choose_cooking_method stove",
+            "prepare_add_ingredients burger",
+            "wrap_bun npc"
+        ],
+        "goal_state": " ((cooked beef) (cooked onion))",
+        "similar_entity": {
+            "beef": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Carne bovina]] is a translation of [[beef]]",
+                    "[[cow]] is related to [[beef]]",
+                    "*Something you find on [[a plate]] is [[beef]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "mixture": {
+                "oil/macaroni": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed into water | mixed in water | mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on stove top"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner | clean",
+                        "after": "dirtier | dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty | emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in containter | in its place | in  its place",
+                        "after": "on macaroni | in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter | warmer"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "garlic": {
+                "cloves": [
+                    {
+                        "attribute": "temperature",
+                        "before": "room temperature | cold",
+                        "after": "warm | hot"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "hot",
+                        "after": "cooler"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on heat",
+                        "after": "off heat"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garlic]] is [[a ingredient]]",
+                    "[[Alho]] is a translation of [[garlic]]"
+                ]
+            },
+            "kitchen": {
+                "kitchen counter": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the kitchen]] is [[food]]",
+                    "[[a kitchen]] is used for [[cooking food]]",
+                    "[[table]] is related to [[kitchen]]"
+                ]
+            },
+            "egg yolk": {
+                "yogurt": [
+                    {
+                        "attribute": "location",
+                        "before": "in tub | in container",
+                        "after": "in blender"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "onion and garlic": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "burger": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "ground": {
+                "ground": [
+                    {
+                        "attribute": "volume",
+                        "before": "filled",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "readiness",
+                        "before": "unprepared",
+                        "after": "prepared"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[floor]] is related to [[ground]]",
+                    "You are likely to find [[dirt ]] in [[the ground]].",
+                    "[[ground]] is the opposite of [[sky]]"
+                ]
+            },
+            "stove": {
+                "stove knob": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "in the off position",
+                        "after": "in the on position"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "medium-low",
+                        "after": "low"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a stove]] can [[heat food]]",
+                    "You can use [[a stove]] to [[cook]]",
+                    "You are likely to find [[a stove]] in [[a house]]",
+                    "[[Stove]] is [[hot]]",
+                    "[[range]] is related to [[stove]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Write a Hamburger Paragraph",
+        "step": [
+            "Write a topic sentence as the \"top bun\" of your hamburger.",
+            "Add a detail as your tomato.",
+            "Layer on another detail as the cheese.",
+            "Add another sentence as your burger.",
+            "Add the lettuce, another detail that connects with the topic sentence.",
+            "Offer up the onions.",
+            "Finish up with the bottom bun.",
+            "Analyse your finished paragraph.",
+            "Review it again and consider any possible improvements.My friend Allie is really great, always there for me when I need her, no matter what."
+        ],
+        "steps_predictions": [
+            "write_topic_sentiment hamburger",
+            "add_detail tomato_center",
+            "layer-cheese cheese mixing_bowl",
+            "add_spear npc",
+            "add-lemon water npc",
+            "choose_ingredient onion1 bowl1",
+            "finish_with_bun bun",
+            "analyze_finished_paragraph npc covering_tracks track",
+            "listen_to_all_member_of_family npc"
+        ],
+        "goal_state": " ((in_container hamburger))",
+        "similar_entity": {
+            "onion": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "hamburger": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find at [[a fast-food restaurant]] is [[a hamburger]]",
+                    "[[a hamburger]] is a type of [[food]]"
+                ]
+            },
+            "bowl": {
+                "batter": [
+                    {
+                        "attribute": "container",
+                        "before": "in bowl",
+                        "after": "in bottle | bottle | in ketchup bottle"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm",
+                        "after": "colder | cold"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "in bottle",
+                        "after": "in pan"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the cupboard]] is [[a bowl]]",
+                    "[[plate]] is related to [[bowl]]",
+                    "[[plate]] is not [[bowl]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "cheese": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Cheese]] is [[a food]]",
+                    "[[cheese]] can [[age well]]",
+                    "*Something you find in [[the refrigerator]] is [[cheese]]",
+                    "[[some cheese]] has [[a strong odor]]",
+                    "[[macaroni]] is related to [[cheese]]"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ]
+            },
+            "tomato center": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ]
+            },
+            "bun": {
+                "the bung": [
+                    {
+                        "attribute": "location",
+                        "before": "on bike | on",
+                        "after": "removed from bike | removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "attached",
+                        "after": "disattached"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from bike",
+                        "after": "on bike"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "loose",
+                        "after": "attached"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[roll]] is related to [[bun]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Make Corned Beef Hash",
+        "step": [
+            "Gather the ingredients.",
+            "Combine corned roast beef hash, onion , mayonnaise, salt and pepper in a bowl.",
+            "Lightly toast bread.",
+            "Spread the corned beef hash mixture on bread."
+        ],
+        "steps_predictions": [
+            "gather_ingredients mixture",
+            "combine_ingredients beef_hash mixing_bowl",
+            "light_flavorful toast",
+            "garnish_with_cheese velveeta"
+        ],
+        "goal_state": " ((combined beef_hash mixing_bowl) (in_container beef",
+        "similar_entity": {
+            "toast": {
+                "dips": [
+                    {
+                        "attribute": "flavor",
+                        "before": "plain",
+                        "after": "flavorful"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "seasoning",
+                        "before": "bland",
+                        "after": "tasty"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[bread]] is related to [[toast]]"
+                ]
+            },
+            "mixture": {
+                "oil/macaroni": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed into water | mixed in water | mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on stove top"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner | clean",
+                        "after": "dirtier | dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty | emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in containter | in its place | in  its place",
+                        "after": "on macaroni | in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter | warmer"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "beef hash": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Make Burger Bites",
+        "step": [
+            "Defrost.",
+            "Prep bread.",
+            "Prep sauce.",
+            "Cook the meat.",
+            "Finish the meat.",
+            "Finish the bread.",
+            "Finish the meal.",
+            "Enjoy your burger bites!."
+        ],
+        "steps_predictions": [
+            "defrost-mixture mixture",
+            "prepare_bread mixing_bowl",
+            "prepare_sauce stove_knob velveeta",
+            "cook npc",
+            "finish_meat beef",
+            "finish-ingredients bread",
+            "finish-mixture soup",
+            "cook npc kitchen"
+        ],
+        "goal_state": " ((in_fridge beef) (served_burnt beef))",
+        "similar_entity": {
+            "bread": {
+                "dough": [
+                    {
+                        "attribute": "location",
+                        "before": "in bowl | balled",
+                        "after": "on wax paper | flattened"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in refrigerator",
+                        "after": "on counter"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "warm"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in mound on table | round",
+                        "after": "in pan | pan shaped"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "rigid"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[bread]] is related to [[food]]",
+                    "You are likely to find [[bread]] in [[breadbox]]",
+                    "[[bread ]] is for [[eating]]",
+                    "[[bread]] contains [[yeast]]",
+                    "[[Bread]] is [[made from flour]]"
+                ]
+            },
+            "beef": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Carne bovina]] is a translation of [[beef]]",
+                    "[[cow]] is related to [[beef]]",
+                    "*Something you find on [[a plate]] is [[beef]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "stove knob": {
+                "stove knob": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "in the off position",
+                        "after": "in the on position"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "medium-low",
+                        "after": "low"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "mixture": {
+                "oil/macaroni": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed into water | mixed in water | mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on stove top"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner | clean",
+                        "after": "dirtier | dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty | emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in containter | in its place | in  its place",
+                        "after": "on macaroni | in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter | warmer"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "kitchen": {
+                "kitchen counter": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the kitchen]] is [[food]]",
+                    "[[a kitchen]] is used for [[cooking food]]",
+                    "[[table]] is related to [[kitchen]]"
+                ]
+            },
+            "soup": {
+                "dips": [
+                    {
+                        "attribute": "flavor",
+                        "before": "plain",
+                        "after": "flavorful"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "seasoning",
+                        "before": "bland",
+                        "after": "tasty"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[soup]] is related to [[food]]",
+                    "[[soup]] is [[food]]",
+                    "You are likely to find [[a bean]] in [[soup]]"
+                ]
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Grill a Burger on a Foreman Grill",
+        "step": [
+            "Choose frozen burger patties that are no more than 0.5 in (1.3 cm) thick.",
+            "Preheat the grill for 5 minutes.",
+            "Place 2-4 frozen patties on the lower grill plate.",
+            "Close the lid and cook the burgers for 4.5-6.5 minutes.",
+            "Remove the burgers and test the internal temperature for doneness.",
+            "Eat the burgers before the internal temperature falls below 140 \u00b0F (60 \u00b0C)."
+        ],
+        "steps_predictions": [
+            "choose_burger patties",
+            "prepare_grill stove_knob velveeta",
+            "free_patties potato1 grill1",
+            "cook npc",
+            "remove-burger burgers",
+            "eat_burger burgers"
+        ],
+        "goal_state": " ((in_fridge burger1) (served_burger patties))",
+        "similar_entity": {
+            "potato": {
+                "potato": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "cleaner | clean | wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "on counter"
+                    },
+                    {
+                        "attribute": "thickness",
+                        "before": "thicker",
+                        "after": "thinner"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "short",
+                        "after": "long"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "peeled"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on cloth"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | on stove",
+                        "after": "in dish | on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a potato]] in [[kitchen]]",
+                    "[[gnocchi]] is made of [[potato]]."
+                ]
+            },
+            "burgers": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "grill": {
+                "stove knob": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "in the off position",
+                        "after": "in the on position"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "medium-low",
+                        "after": "low"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a grill]] in [[a back yard]]",
+                    "[[a grill]] is for [[cooking]]"
+                ]
+            },
+            "stove knob": {
+                "stove knob": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "in the off position",
+                        "after": "in the on position"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "medium-low",
+                        "after": "low"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "patties": {
+                "dips": [
+                    {
+                        "attribute": "flavor",
+                        "before": "plain",
+                        "after": "flavorful"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "seasoning",
+                        "before": "bland",
+                        "after": "tasty"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Keep Burgers Flat",
+        "step": [
+            "Warm vegetable oil over medium-high heat in a skillet or flat top.",
+            "Place the meat in your pan and smash it flat.",
+            "Season the burgers with salt and pepper if you wish.",
+            "Cook the burger for about 2 minutes until the bottom is brown.",
+            "Flip the patties over and season them with salt and pepper.",
+            "Cook the patties for another minute until they are brown all over."
+        ],
+        "steps_predictions": [
+            "cook npc",
+            "smash_meat potato1 pan1",
+            "season-burger burgers",
+            "cook_burger burger",
+            "flatten_patties potato1 container1",
+            "cook_patties potato1 stove1"
+        ],
+        "goal_state": " ((in_fridge potato1) (flat_pestle))",
+        "similar_entity": {
+            "potato": {
+                "potato": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "cleaner | clean | wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "on counter"
+                    },
+                    {
+                        "attribute": "thickness",
+                        "before": "thicker",
+                        "after": "thinner"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "short",
+                        "after": "long"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "peeled"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on cloth"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | on stove",
+                        "after": "in dish | on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a potato]] in [[kitchen]]",
+                    "[[gnocchi]] is made of [[potato]]."
+                ]
+            },
+            "burgers": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "pan": {
+                "oil/macaroni": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed into water | mixed in water | mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on stove top"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner | clean",
+                        "after": "dirtier | dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty | emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in containter | in its place | in  its place",
+                        "after": "on macaroni | in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter | warmer"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A pan]] can be used for [[cooking]]",
+                    null,
+                    "You are likely to find [[a pan]] in [[the pantry]]"
+                ]
+            },
+            "burger": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "stove": {
+                "stove knob": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "in the off position",
+                        "after": "in the on position"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "medium-low",
+                        "after": "low"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a stove]] can [[heat food]]",
+                    "You can use [[a stove]] to [[cook]]",
+                    "You are likely to find [[a stove]] in [[a house]]",
+                    "[[Stove]] is [[hot]]",
+                    "[[range]] is related to [[stove]]"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Cook Polenta",
+        "step": [
+            "Gather the ingredients.",
+            "Make the basic polenta recipe from Method 1.",
+            "Stir in the butter and cheese.",
+            "Stir in the milk, parsley and spices.",
+            "Place the polenta in a bowl and serve hot."
+        ],
+        "steps_predictions": [
+            "gather_ingredients mixture",
+            "make_polenta_recipe alice",
+            "stirf_ingredients cream_cheese mixing_bowl",
+            "mix_ingredients canola_oil blender",
+            "serve-polenta polenta mixing_bowl"
+        ],
+        "goal_state": " ((served mixing_bowl mixture))",
+        "similar_entity": {
+            "polenta": {
+                "tomato": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "canola oil": {
+                "funnel": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer | in cupboard | on table",
+                        "after": "on bottle | in bottle | over mouth of bottle"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "mixture": {
+                "oil/macaroni": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed into water | mixed in water | mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on stove top"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner | clean",
+                        "after": "dirtier | dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty | emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in containter | in its place | in  its place",
+                        "after": "on macaroni | in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter | warmer"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "cream cheese": {
+                "cream cheese": [
+                    {
+                        "attribute": "composition",
+                        "before": "separate | separated",
+                        "after": "combined with marshmallow cream | combined"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in container",
+                        "after": "in bowl"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "blender": {
+                "the blender": [
+                    {
+                        "attribute": "volume",
+                        "before": "less full | lighter",
+                        "after": "fuller | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "soaked in pineapple | covered in pineapple"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty | smelling like nothing",
+                        "after": "full of pineapple | smelling like pineapple"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "less full | lighter",
+                        "after": "fuller | heavier"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "isolated",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "stationary",
+                        "after": "spinning"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller | heavier",
+                        "after": "less full | lighter"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the kitchen]] is [[blender]]"
+                ]
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    }
+]

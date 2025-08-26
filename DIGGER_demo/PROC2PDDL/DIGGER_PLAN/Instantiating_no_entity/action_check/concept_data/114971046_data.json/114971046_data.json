@@ -1,0 +1,3 @@
+[
+    "```pddl\n['(:action stay\n    :parameters (?npc - agent ?location - place ?resource - object)\n    :precondition (and (available ?npc) (in ?npc ?location) (stocked ?npc ?resource))\n    :effect (and (sheltered ?npc) (not (exposed ?npc)))\n)',\n '(:action get_food\n    :parameters (?npc - agent ?food - object)\n    :precondition (and (non_perishable ?food) (inStorage ?food) (available ?npc))\n    :effect (and (stocked ?npc ?food) (not (inStorage ?food)))\n)',\n '(:action get\n    :parameters (?actor - agent ?resource - object)\n    :precondition (and (inStorage ?resource) (available ?actor))\n    :effect (and (obtained ?actor ?resource) (not (inStorage ?resource)))\n)']\n```"
+]

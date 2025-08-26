@@ -1,0 +1,80 @@
+[
+    {
+        "task": "heal-old-man",
+        "step": [
+            "go north npc parkinglot park",
+            "go south npc park church",
+            "get npc church pot",
+            "go north npc church park",
+            "collect_rain_water npc park pot water",
+            "go east npc park store",
+            "get npc store bandage",
+            "boil_water npc brickhouse water pot",
+            "clean_others_wound npc old_man water bandage"
+        ],
+        "desc": [
+            "Purify any water you drink that isn\u2019t from a sealed bottle. A waterborne illness can be life-threatening in a survival situation. If need to use any unbottled water for drinking, always purify it first. The most common method is boiling the water for 1 minute to kill any pathogens. Then filter out larger objects by pouring the water through a fine net or cloth.",
+            "Loot supplies if you have no other choice. Unfortunately, people sometimes have to do desperate things to survive. If you come across supplies or stores that no one is watching or look abandoned, then take everything you need. This might be ethically wrong, but you and your family have to survive.",
+            "Eat as healthy as you can. This isn\u2019t always possible and you have to survive on whatever food you can find. But if at all possible, keep your health up with nutritious food. A steady supply of vitamins, minerals, antioxidants, and fatty acids will help keep your immune system up and fight off sickness."
+        ],
+        "action": [
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action boil_water ; boil water that has not been treated.\n      :parameters (?p - player ?loc - location ?water - water ?pot - pot) \n      :precondition (and (inventory ?p ?water) (inventory ?p ?pot) (not (treated ?water)))\n      :effect (and (treated ?water))\n   )",
+            "(:action collect_rain_water ; collect rain water to be treated.\n      :parameters (?p - player ?loc - location ?pot - pot ?water - water) \n      :precondition (and (inventory ?p ?pot) (at ?p ?loc) (outdoors ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action clean_others_wound ; heal injury.\n      :parameters (?p - player ?p_inj - player ?water - water ?bandage - bandage) \n      :precondition (and (inventory ?p ?water) (treated ?water) (inventory ?p ?bandage) (is_injured ?p_inj))\n      :effect (and (not (is_injured ?p_inj)) (not (inventory ?p ?water)) (not (inventory ?p ?bandage)) )\n   )",
+            "(:action go\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get\n      :parameters (?p - player ?l - location ?i - item)\n      :precondition (and (at ?p ?l) (at ?i ?l) (gettable ?i))\n      :effect (and (not (at ?i ?l)) (inventory ?p ?i))\n   )",
+            "(:action break_car_window ; steal food from car.\n      :parameters (?p - player ?car - car ?rock - rock ?item - item) \n      :precondition (and (at ?p ?car) (inventory ?p ?rock) (has_windows ?car) (at ?item ?car))\n      :effect (and (gettable ?item) (not (inventory ?p ?rock)) (not (has_windows ?car)))\n   )",
+            "(:action barter_food_for_healing ; get food in exchange for healing.\n      :parameters (?p - player ?p_inj - player ?water - water ?bandage - bandage ?food - food ?l -location) \n      :precondition (and (inventory ?p ?water) (inventory ?p ?bandage) (is_injured ?p_inj) (at ?p ?l) (at ?p_inj ?l))\n      :effect (and (not (is_injured ?p_inj)) (gettable ?food)  )\n   )\n\n   \n)",
+            "(:action gofish \n      :parameters (?p - player ?l - location ?fp - fishingpole ?f - fish)\n      :precondition (and (at ?p ?l) (inventory ?p ?fp) (haslake ?l) (at ?f ?l))\n      :effect (and (gettable ?f) )\n   )"
+        ],
+        "goal_state": "((not (is_injured old_man)))"
+    },
+    {
+        "task": "find-shelter",
+        "step": [
+            "go north npc parkinglot park",
+            "go west npc park car",
+            "go north npc car stonehouse",
+            "find_shelter npc stonehouse"
+        ],
+        "desc": [
+            "Find a strong, brick building with a basement for shelter. These buildings types can withstand the most damage and remain standing. Look especially for a building with a basement. This provides added protection and a hiding place if you have to stay out of sight. Search your area for suitable buildings like these and move into one as soon as possible."
+        ],
+        "action": [
+            "(:action gofish \n      :parameters (?p - player ?l - location ?fp - fishingpole ?f - fish)\n      :precondition (and (at ?p ?l) (inventory ?p ?fp) (haslake ?l) (at ?f ?l))\n      :effect (and (gettable ?f) )\n   )",
+            "(:action go\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action find_shelter \n      :parameters (?p - player ?l - location)\n      :precondition (and (at ?p ?l) (has_basement ?l) (not (is_occupied ?l)) )\n      :effect (and (in_shelter ?p))\n   )"
+        ],
+        "goal_state": "((in_shelter npc))"
+    },
+    {
+        "task": "fill-inventory",
+        "step": [
+            "go south npc parkinglot pond",
+            "get_water npc pond water",
+            "go north npc pond parkinglot",
+            "go north npc parkinglot park",
+            "go east npc park store",
+            "get npc store bandage",
+            "go west npc store park",
+            "go west npc park car",
+            "go west npc car brickhouse",
+            "loot_shelter npc brickhouse food"
+        ],
+        "desc": [
+            "Purify any water you drink that isn\u2019t from a sealed bottle. A waterborne illness can be life-threatening in a survival situation. If need to use any unbottled water for drinking, always purify it first. The most common method is boiling the water for 1 minute to kill any pathogens. Then filter out larger objects by pouring the water through a fine net or cloth.",
+            "Learn basic first-aid to treat minor injuries. Injuries are unfortunately inevitable, and they can range from minor to serious. Develop at least a basic knowledge of first aid to treat the injuries you or a partner may encounter. When searching for supplies, take any first aid gear you may find and build a basic first aid kit."
+        ],
+        "action": [
+            "(:action loot_shelter ; steal food from location that is occupied.\n      :parameters (?p - player ?loc - location ?food - food) \n      :precondition (and (at ?food ?loc) (at ?p ?loc) (is_occupied ?loc))\n      :effect (and (inventory ?p ?food) (not (at ?food ?loc)))\n   )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action go\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get\n      :parameters (?p - player ?l - location ?i - item)\n      :precondition (and (at ?p ?l) (at ?i ?l) (gettable ?i))\n      :effect (and (not (at ?i ?l)) (inventory ?p ?i))\n   )",
+            "(:action break_car_window ; steal food from car.\n      :parameters (?p - player ?car - car ?rock - rock ?item - item) \n      :precondition (and (at ?p ?car) (inventory ?p ?rock) (has_windows ?car) (at ?item ?car))\n      :effect (and (gettable ?item) (not (inventory ?p ?rock)) (not (has_windows ?car)))\n   )",
+            "(:action barter_food_for_healing ; get food in exchange for healing.\n      :parameters (?p - player ?p_inj - player ?water - water ?bandage - bandage ?food - food ?l -location) \n      :precondition (and (inventory ?p ?water) (inventory ?p ?bandage) (is_injured ?p_inj) (at ?p ?l) (at ?p_inj ?l))\n      :effect (and (not (is_injured ?p_inj)) (gettable ?food)  )\n   )\n\n   \n)",
+            "(:action gofish \n      :parameters (?p - player ?l - location ?fp - fishingpole ?f - fish)\n      :precondition (and (at ?p ?l) (inventory ?p ?fp) (haslake ?l) (at ?f ?l))\n      :effect (and (gettable ?f) )\n   )"
+        ],
+        "goal_state": "((inventory npc water) (inventory npc food) (inventory npc bandage))"
+    }
+]

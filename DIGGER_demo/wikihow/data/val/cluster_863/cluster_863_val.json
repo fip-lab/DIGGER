@@ -1,0 +1,23 @@
+[
+    {
+        "cluster_label": 863,
+        "task": "How to Remove Wax from Concrete",
+        "step": [
+            "Prepare the cleansers.",
+            "Use a putty knife or similar scraper to remove as much wax as possible.",
+            "Place a terry towel rag over the top of the wax.",
+            "Set the hair dryer to its hottest temperature.",
+            "Wipe up the melted wax with the mineral spirits and a rag or kitchen paper towel.",
+            "Repeat if needed."
+        ],
+        "steps_predictions": [
+            "prepare_cleanser scrubber",
+            "remove_wicks wick1",
+            "place-on-rack towel_rag1 wax1",
+            "set_temperature_add_heat user1 hair_dryer1",
+            "wipe_wicks wick1",
+            "repeat if needed"
+        ],
+        "goal_state": " ((clean wick1))"
+    }
+]

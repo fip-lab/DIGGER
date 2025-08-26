@@ -1,0 +1,16 @@
+{
+    "build": [
+        "(:action build_ingredients\n    :parameters (?p - player)\n    :precondition (and (at ?p kitchen))\n    :effect (and (has_ingredients ?p mixture) (not (at ?p kitchen)))\n)\n\n",
+        "(:action melt_chocolate\n    :parameters (?p - player ?c - chocolate ?m - microwave)\n    :precondition (and (has_ingredients ?p mixture) (at ?p kitchen) (at ?c kitchen) (at ?m kitchen))\n    :effect (and (melted ?c) (not (solid ?c)))\n)\n\n"
+    ],
+    "pour": [
+        "(:action pour_chocolate\n    :parameters (?p - player ?c - chocolate ?b - mixing_bowl)\n    :precondition (and (melted ?c) (at ?p kitchen) (at ?b kitchen))\n    :effect (and (chocolate_in_bowl ?c ?b))\n)\n\n",
+        "(:action box_chocolates\n    :parameters (?p - player ?c - chocolate ?b - box)\n    :precondition (and (heart_shaped ?c) (at ?p kitchen) (at ?b kitchen))\n    :effect (and (boxed ?c ?b) (not (heart_shaped ?c)))\n)\n```\n\n### Explanation:\n\n1. **build_ingredients**: This action assumes that the player assembles all necessary ingredients at the kitchen. \n    - Preconditions: The player is in the kitchen.\n    - Effects: The player has the mixture of ingredients.\n\n2. **melt_chocolate**: This action melts the chocolate using a microwave.\n    - Preconditions: The player has the ingredients, is in the kitchen, and both the chocolate and microwave are in the kitchen.\n    - Effects: The chocolate is melted.\n\n3. **pour_chocolate**: This action pours the melted chocolate into a mixing bowl.\n    - Preconditions: The chocolate is melted, and both the player and the mixing bowl are in the kitchen.\n    - Effects: The chocolate is in the mixing bowl.\n\n4. **freeze_chocolate**: This action freezes the chocolate by placing it in the freezer.\n    - Preconditions: The chocolate is in the mixing bowl, and both the player and the freezer are in the kitchen.\n    - Effects: The chocolate is frozen.\n\n5. **cut_heart_shape**: This action cuts the chocolate into heart shapes using a heart cutter.\n    - Preconditions: The chocolate is frozen, the player is in the kitchen, and the player has a heart cutter tool.\n    - Effects: The chocolate is heart-shaped.\n\n6. **box_chocolates**: This action boxes the heart-shaped chocolates.\n    - Preconditions: The chocolate is heart-shaped, and both the player and the box are in the kitchen.\n    - Effects: The chocolates are boxed.\n\nThese actions should cover the steps required to make chocolate hearts for Valentine's Day based on the provided descriptions and steps."
+    ],
+    "freeze": [
+        "(:action freeze_chocolate\n    :parameters (?p - player ?c - chocolate ?b - mixing_bowl ?f - freezer)\n    :precondition (and (chocolate_in_bowl ?c ?b) (at ?p kitchen) (at ?f kitchen))\n    :effect (and (frozen ?c) (not (melted ?c)))\n)\n\n"
+    ],
+    "cut": [
+        "(:action cut_heart_shape\n    :parameters (?p - player ?c - chocolate ?v - velveeta)\n    :precondition (and (frozen ?c) (at ?p kitchen) (has_tool ?p heart_cutter))\n    :effect (and (heart_shaped ?c) (not (frozen ?c)))\n)\n\n"
+    ]
+}

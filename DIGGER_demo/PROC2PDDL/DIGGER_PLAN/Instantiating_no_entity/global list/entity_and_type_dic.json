@@ -1,0 +1,174 @@
+{
+    "?object": [
+        "disguise",
+        "part",
+        "supply",
+        "costume",
+        "candles",
+        "water",
+        "candles",
+        "water",
+        "fire",
+        "needle",
+        "m",
+        "foot",
+        "shelter",
+        "tree",
+        "building",
+        "flame",
+        "thing",
+        "papyrus",
+        "cyperus",
+        "grass",
+        "reed",
+        "bet",
+        "paper",
+        "plant",
+        "type",
+        "lot",
+        "kilometer",
+        "electronic",
+        "confusion",
+        "chaos",
+        "odd",
+        "help",
+        "minute",
+        "fridge",
+        "shortage",
+        "danger",
+        "loss",
+        "day",
+        "mile",
+        "stuff",
+        "ready_sc",
+        "food",
+        "board",
+        "liquid",
+        "apple",
+        "water"
+    ],
+    "?entity": [
+        "character"
+    ],
+    "?item": [
+        "pathogen",
+        "nutrient",
+        "muscle",
+        "meat",
+        "protein",
+        "minute",
+        "c",
+        "f",
+        "thing"
+    ],
+    "?animal": [
+        "crab",
+        "clam",
+        "animal",
+        "insect",
+        "fish",
+        "mollusks",
+        "oyster"
+    ],
+    "?task": [
+        "prepare_meat"
+    ],
+    "?resource": [
+        "energy",
+        "food",
+        "wood",
+        "leave",
+        "tinder",
+        "bark",
+        "energy",
+        "water",
+        "grass",
+        "twig",
+        "stick",
+        "branch",
+        "kindling",
+        "food",
+        "trunk",
+        "material",
+        "protection",
+        "brick",
+        "electricity"
+    ],
+    "?liquid": [
+        "water"
+    ],
+    "?location": [
+        "island",
+        "socket",
+        "stove",
+        "socket",
+        "stove",
+        "nursery",
+        "river",
+        "area",
+        "shelter",
+        "basement",
+        "building",
+        "place"
+    ],
+    "?action": [
+        "purchase",
+        "purchase",
+        "make_papyrus",
+        "cutting",
+        "carve"
+    ],
+    "?container": [
+        "jar",
+        "saucepan",
+        "jar",
+        "saucepan",
+        "glass"
+    ],
+    "?state": [
+        "amount",
+        "amount",
+        "damage",
+        "minute",
+        "angle",
+        "bit",
+        "time"
+    ],
+    "?place": [
+        "ground",
+        "area",
+        "shelter",
+        "home",
+        "society",
+        "place"
+    ],
+    "?process": [
+        "split",
+        "help"
+    ],
+    "?skill": [
+        "sight"
+    ],
+    "?method": [
+        "hiding",
+        "move_to_bunker"
+    ],
+    "?tool": [
+        "cleaver",
+        "knife"
+    ],
+    "?cover": [
+        "skin",
+        "casing",
+        "shell"
+    ],
+    "?actor": [
+        "chef"
+    ],
+    "?npc": [
+        "man"
+    ],
+    "?coconut": [
+        "coconut"
+    ]
+}

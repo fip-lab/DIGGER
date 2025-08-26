@@ -1,0 +1,5 @@
+(liedown npc)
+(breathe npc)
+(get stick npc here)
+(usestick npc stick qsand)
+; cost = 4 (unit cost)

@@ -1,0 +1,11 @@
+{
+    "fold": [
+        "(:action fold-half-twice\n    :parameters (?t - towel)\n    :precondition (and (folded-twice ?t))\n    :effect (and (folded-half-twice ?t))\n)\n\n"
+    ],
+    "store": [
+        "(:action store-item\n    :parameters (?t - towel ?l - location)\n    :precondition (and (folded-half-twice ?t) (linen-closet ?l))\n    :effect (and (stored ?t ?l) (not (folded-half-twice ?t)))\n)\n\n"
+    ],
+    "hang": [
+        "(:action hang-on-rack\n    :parameters (?t - towel ?r - rack ?l - location)\n    :precondition (and (stored ?t ?l) (towel-rack ?r))\n    :effect (and (hung ?t ?r) (not (stored ?t ?l)))\n)\n```\n\nExplanation:\n1. **fold-twice**: This action folds the towel in thirds lengthwise.\n   - Preconditions: The towel is clean, smooth, dry, and lighter.\n   - Effects: The towel is folded twice, and it is no longer smooth.\n\n2. **fold-half-twice**: This action folds the towel in half, and then in half again.\n   - Preconditions: The towel is folded twice.\n   - Effects: The towel is folded half twice.\n\n3. **store-item**: This action stores the folded towel in the linen closet.\n   - Preconditions: The towel is folded half twice, and the location is a linen closet.\n   - Effects: The towel is stored in the specified location and is no longer folded half twice.\n\n4. **hang-on-rack**: This action hangs the towel on the towel rack.\n   - Preconditions: The towel is stored in the linen closet, and the location is a towel rack.\n   - Effects: The towel is hung on the towel rack, and it is no longer stored in the linen closet."
+    ]
+}

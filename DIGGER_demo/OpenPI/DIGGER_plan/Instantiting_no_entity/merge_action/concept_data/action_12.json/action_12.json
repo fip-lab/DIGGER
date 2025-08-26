@@ -1,0 +1,13 @@
+{
+    "obtain": [
+        "(:action obtain-fizzy-drink\n   :parameters (?p - player ?f - faucet)\n   :precondition (and (at ?p ?f) (faucet ?f))\n   :effect (and (inventory ?p fizzy_drink))\n)\n\n",
+        "(:action replace-bolt\n   :parameters (?p - player ?b - bolt)\n   :precondition (and (at ?p ?b) (ready_to_replace ?b))\n   :effect (and (not (ready_to_replace ?b)) (replaced ?b))\n)\n```\n\nExplanation:\n1. `obtain-fizzy-drink`: This action allows the player to obtain a fizzy drink from a faucet.\n2. `pour-fizzy-drink`: This action involves pouring the fizzy drink over the rusty bolt.\n3. `wipe_clean`: This action involves wiping the bolt clean with a towel after the fizzy drink has been poured.\n4. `dissolve_rust`: This action represents the fizzy drink dissolving the rust on the bolt.\n5. `replace-bolt`: This action involves replacing the now clean and rust-free bolt.\n\nEach action includes the necessary preconditions and effects to ensure the logical progression of the task."
+    ],
+    "pour": [
+        "(:action pour-fizzy-drink\n   :parameters (?p - player ?b - bolt ?f - faucet)\n   :precondition (and (at ?p ?b) (inventory ?p fizzy_drink) (rusty ?b))\n   :effect (and (not (inventory ?p fizzy_drink)) (fizzy_drink_on ?b))\n)\n\n",
+        "(:action wipe_clean\n   :parameters (?p - player ?b - bolt ?t - towel)\n   :precondition (and (at ?p ?b) (fizzy_drink_on ?b) (inventory ?p ?t))\n   :effect (and (not (fizzy_drink_on ?b)) (clean ?b))\n)\n\n"
+    ],
+    "dissolve": [
+        "(:action dissolve_rust\n   :parameters (?p - player ?b - bolt)\n   :precondition (and (at ?p ?b) (clean ?b) (rusty ?b))\n   :effect (and (not (rusty ?b)) (ready_to_replace ?b))\n)\n\n"
+    ]
+}

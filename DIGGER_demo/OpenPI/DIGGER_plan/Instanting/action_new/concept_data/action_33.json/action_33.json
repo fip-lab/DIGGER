@@ -1,0 +1,9 @@
+[
+    "(:action create ; Create a resource or setting for a given entity\n  :parameters (?creator - agent ?entity - object)\n  :precondition (and (not (created ?entity)))\n  :effect (created ?entity)\n)",
+    "(:action create_small_studio\n    :parameters (?p - photographer ?st - studio)\n    :precondition (and (not (studio_set_up ?st)))\n    :effect (and (studio_set_up ?st))",
+    "(:action create\n    :parameters (?creator - photographer ?entity - studio)\n    :precondition (and (not (created ?entity)))\n    :effect (created ?entity)\n  )",
+    "(:action diffuse ; Diffuse an entity and update its status\n  :parameters (?actor - agent ?entity - object ?resource - resource)\n  :precondition (and (prepared ?actor) (ready ?resource) (not (diffused ?entity)))\n  :effect (diffused ?entity)\n)",
+    "(:action start_task ; Start a task once all necessary conditions are met\n :parameters (?agent - person ?task - task ?resources - (set object))\n :precondition (and (all_resources_ready ?resources))\n :effect (task_started ?agent ?task))",
+    "(:action have ; Ensure possession or readiness of an item for a task\n :parameters (?entity - agent ?item - object)\n :precondition (and (not (ready ?item)))\n :effect (ready ?item)\n)",
+    "(:action closeup ; Ensure an item is ready for closeup use\n  :parameters (?entity - person ?item - object)\n  :precondition (and (not (ready ?item)))\n  :effect (and (ready ?item))"
+]

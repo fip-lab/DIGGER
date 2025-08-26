@@ -1,0 +1,4 @@
+(go east npc basecamp jungle)
+(pick_fruit npc jungle)
+(eat_fruit npc)
+; cost = 3 (unit cost)

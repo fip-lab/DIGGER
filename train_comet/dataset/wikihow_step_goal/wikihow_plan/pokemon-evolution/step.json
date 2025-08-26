@@ -1,0 +1,145 @@
+{
+    "goal": "Get Wailord in Pok\u00e9mon Emerald",
+    "steps": [
+        "This is the pre-evolution of Wailord.",
+        "This Wailmer can be pretty annoying to train, so be patient.",
+        "Train it until it evolves.",
+        "Go to battle frontier and copy some rare candies.",
+        "Give the rare candies to a Wailmer and evolve it into a Wailord using them."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/9/98/Get-Wailord-in-Pokemon-Emerald-Step-6-Version-3.jpg/aid1916767-v4-728px-Get-Wailord-in-Pokemon-Emerald-Step-6-Version-3.jpg",
+        "https://www.wikihow.com/images/thumb/b/b6/Get-Wailord-in-Pokemon-Emerald-Step-7-Version-3.jpg/aid1916767-v4-728px-Get-Wailord-in-Pokemon-Emerald-Step-7-Version-3.jpg",
+        "https://www.wikihow.com/images/thumb/1/1e/Get-Wailord-in-Pokemon-Emerald-Step-8-Version-3.jpg/aid1916767-v4-728px-Get-Wailord-in-Pokemon-Emerald-Step-8-Version-3.jpg",
+        "https://www.wikihow.com/images/thumb/8/8e/Get-Wailord-in-Pokemon-Emerald-Step-9-Version-2.jpg/aid1916767-v4-728px-Get-Wailord-in-Pokemon-Emerald-Step-9-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/9/97/Get-Wailord-in-Pokemon-Emerald-Step-10-Version-2.jpg/aid1916767-v4-728px-Get-Wailord-in-Pokemon-Emerald-Step-10-Version-2.jpg"
+    ],
+    "states": [
+        {
+            "entity": "wailmer",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "action",
+                        "before": "unused",
+                        "after": "used",
+                        "saliency": 0.4737750172532781,
+                        "attribute_annotation": "action"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained",
+                        "saliency": 0.5837646652864045,
+                        "attribute_annotation": "knowledge"
+                    },
+                    {
+                        "attribute": "going",
+                        "before": "still",
+                        "after": "going",
+                        "saliency": 0.4460835058661146,
+                        "attribute_annotation": "going"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained",
+                        "saliency": 0.5061249137336095,
+                        "attribute_annotation": "knowledge"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved | still wailmer",
+                        "after": "evolved | evolving",
+                        "saliency": 0.3225500345065563,
+                        "attribute_annotation": "change"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "unattained",
+                        "after": "now attained",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "items",
+                        "before": "uncopied",
+                        "after": "copied",
+                        "saliency": 0.4845583160800553,
+                        "attribute_annotation": "items"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "full",
+                        "before": "hungry",
+                        "after": "full",
+                        "saliency": 0.3634748102139407,
+                        "attribute_annotation": "full"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved",
+                        "after": "evolved",
+                        "saliency": 0.24491028295376124,
+                        "attribute_annotation": "change"
+                    },
+                    {
+                        "attribute": "action",
+                        "before": "without rare candies",
+                        "after": "now holder of rare candy",
+                        "saliency": 0.19901656314699795,
+                        "attribute_annotation": "action"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "wailmer",
+                "battle frontier location",
+                "candy",
+                "ball"
+            ]
+        }
+    ],
+    "clusters": {
+        "wailmer": {
+            "entity_cluster": [
+                "battle frontier location",
+                "wailmer",
+                "ball",
+                "candy"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ],
+                "change": [
+                    "evolution",
+                    "change"
+                ],
+                "full": [
+                    "full"
+                ],
+                "going": [
+                    "going"
+                ],
+                "action": [
+                    "action"
+                ],
+                "location": [
+                    "location"
+                ],
+                "items": [
+                    "items"
+                ]
+            }
+        }
+    }
+}

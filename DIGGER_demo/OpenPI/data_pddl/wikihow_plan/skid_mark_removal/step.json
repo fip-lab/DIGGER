@@ -1,0 +1,381 @@
+{
+    "goal": "Remove Black Skid Marks from Linoleum",
+    "steps": [
+        "Obtain a decent sized eraser that you can hold comfortable in your fingers.",
+        "Kneel down next to the linoleum and use the eraser to rub along the skid mark.",
+        "Continue rubbing until the black mark lifts.",
+        "Wash and dry as usual."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/b/b1/Remove-Black-Skid-Marks-from-Linoleum-Step-1.jpg/aid374766-v4-728px-Remove-Black-Skid-Marks-from-Linoleum-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/0/00/Remove-Black-Skid-Marks-from-Linoleum-Step-2.jpg/aid374766-v4-728px-Remove-Black-Skid-Marks-from-Linoleum-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/d/d6/Remove-Black-Skid-Marks-from-Linoleum-Step-3.jpg/aid374766-v4-728px-Remove-Black-Skid-Marks-from-Linoleum-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/4/4f/Remove-Black-Skid-Marks-from-Linoleum-Step-4.jpg/aid374766-v4-728px-Remove-Black-Skid-Marks-from-Linoleum-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "eraser",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in store | absent | at shop/in drawer | owned by store",
+                        "after": "in home | present | in hand | bought by you",
+                        "saliency": 0.6349569576114199,
+                        "attribute_annotation": "location | ownership"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at store",
+                        "after": "purchased fro store",
+                        "saliency": 0.3697177726926011,
+                        "attribute_annotation": "cost"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on linoleum",
+                        "saliency": 0.5573172060586249,
+                        "attribute_annotation": "location | ownership"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "getting smaller",
+                        "saliency": 0.20525952562565836,
+                        "attribute_annotation": "size"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "eraser"
+            ]
+        },
+        {
+            "entity": "floor",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "marked",
+                        "after": "clean",
+                        "saliency": 0.5845592241473248,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "black smudged",
+                        "after": "yellow",
+                        "saliency": 0.47003378010242997,
+                        "attribute_annotation": "color | odor"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean",
+                        "saliency": 0.6621989757001199,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "black marked",
+                        "after": "yellow",
+                        "saliency": 0.47003378010242997,
+                        "attribute_annotation": "color | odor"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean",
+                        "saliency": 0.6621989757001199,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "foul smelling",
+                        "after": "clean smelling",
+                        "saliency": 0.47003378010242997,
+                        "attribute_annotation": "color | odor"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | wet",
+                        "after": "wet | dry",
+                        "saliency": 0.37238022592713665,
+                        "attribute_annotation": "wetness | moisture"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "floor | lineoleum"
+            ]
+        },
+        {
+            "entity": "linoleum",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "stained",
+                        "after": "clean",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "cleanness | wetness"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "clean | wet",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "cleanness | wetness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "linoleum"
+            ]
+        },
+        {
+            "entity": "skid mark",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "dampness",
+                        "before": "dry",
+                        "after": "moister",
+                        "saliency": 0.5532309033453198,
+                        "attribute_annotation": "dampness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed",
+                        "saliency": 0.2602702408194399,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "skid mark"
+            ]
+        },
+        {
+            "entity": "person",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "motion",
+                        "before": "still",
+                        "after": "moving/rubbing",
+                        "saliency": 0.36986487959028,
+                        "attribute_annotation": "motion"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "upright | standing up",
+                        "after": "kneeled down",
+                        "saliency": 0.39239402854963495,
+                        "attribute_annotation": "form | position"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "away from linoleum",
+                        "after": "near linoleum",
+                        "saliency": 0.3570883731066798,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "standing",
+                        "after": "kneeling",
+                        "saliency": 0.2354800043587229,
+                        "attribute_annotation": "orientation"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "hands",
+                "body | person",
+                "you"
+            ]
+        },
+        {
+            "entity": "hand muscles",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "power",
+                        "before": "relaxed",
+                        "after": "being used",
+                        "saliency": 0.4388144273727798,
+                        "attribute_annotation": "power"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "hand muscles"
+            ]
+        },
+        {
+            "entity": "water",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in faucet",
+                        "after": "on lineoleum",
+                        "saliency": 0.34346736406232975,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "water"
+            ]
+        }
+    ],
+    "clusters": {
+        "person": {
+            "entity_cluster": [
+                "body",
+                "person",
+                "hands",
+                "you"
+            ],
+            "attribute_cluster": {
+                "motion": [
+                    "motion"
+                ],
+                "form": [
+                    "form"
+                ],
+                "position": [
+                    "position",
+                    "location"
+                ],
+                "orientation": [
+                    "orientation"
+                ]
+            }
+        },
+        "eraser": {
+            "entity_cluster": [
+                "eraser"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "ownership": [
+                    "ownership"
+                ],
+                "cost": [
+                    "cost"
+                ],
+                "size": [
+                    "size"
+                ]
+            }
+        },
+        "linoleum": {
+            "entity_cluster": [
+                "linoleum",
+                "lineoleum"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "wetness",
+                    "cleanness"
+                ],
+                "color": [
+                    "color"
+                ],
+                "odor": [
+                    "odor"
+                ],
+                "wetness": [
+                    "moisture",
+                    "wetness"
+                ]
+            }
+        },
+        "water": {
+            "entity_cluster": [
+                "water"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "skid mark": {
+            "entity_cluster": [
+                "skid mark"
+            ],
+            "attribute_cluster": {
+                "dampness": [
+                    "dampness"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "hand muscles": {
+            "entity_cluster": [
+                "hand muscles"
+            ],
+            "attribute_cluster": {
+                "power": [
+                    "power"
+                ]
+            }
+        },
+        "floor": {
+            "entity_cluster": [
+                "floor"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "color": [
+                    "color"
+                ],
+                "odor": [
+                    "odor"
+                ],
+                "wetness": [
+                    "moisture",
+                    "wetness"
+                ]
+            }
+        }
+    }
+}

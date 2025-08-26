@@ -1,0 +1,1363 @@
+[
+    {
+        "step": [
+            "Determine what functions you want.",
+            "Choose a basic or pager model.",
+            "Decide whether to add an alarm.",
+            "Some remote keyless entry systems include the optional feature of a car alarm that is activated when the door is forced open or opened without the controller.",
+            "Compare transmitter ranges.",
+            "Evaluate warranty options.",
+            "Consider how many controllers you need.",
+            "Have the system professionally installed."
+        ],
+        "task": "How to Buy a Remote Keyless Entry System for a Car",
+        "goal_state": "buy_key_system npc car",
+        "steps": "```pddl\n(research(agent target))\n(list_features(a))\n(search_remote_starter_manufacturers(a))\n(contact_manufacturers(a manufacturer))\n(evaluate(agent product criteria))\n(choose(agent product context))\n(shop(entity resource store))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 2216,
+                "task": "How to Buy a Remote Starter for a Truck",
+                "step": [
+                    "Determine what kind of remote starter you need for your particular type of truck.",
+                    "Make a list of the features you want.",
+                    "Search the Internet for reputable remote starter system manufacturers.",
+                    "Contact manufacturers and ask them to send you all of their remote starter product brochures.",
+                    "Read over the brochures and decide which systems have all of the features you need and want.",
+                    "Research the remote starter systems that apply to your specific needs online.",
+                    "Find retailers that sell the remote starter you are interested in and shop around for the best price."
+                ],
+                "steps_predictions": [
+                    "determine_remote_starter you remote_start you car",
+                    "listen_to_instructions npc covering_tracks track",
+                    "search_internet npc home",
+                    "initiate_new_member_secret adrian liam ss",
+                    "choose_system npc covering_tracks track",
+                    "get_remote_system npc home",
+                    "get_remote_starter npc tv"
+                ],
+                "goal_state": " ((knowledge npc covering_tracks))",
+                "similar_entity": {
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "home": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[nest]] is related to [[home]]",
+                            "You are likely to find [[a ferret]] in [[your home]]",
+                            "[[home]] is [[where the heart is]]",
+                            "[[a home]] is for [[living]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "remote start": {
+                        "heating element": [
+                            {
+                                "attribute": "color",
+                                "before": "black",
+                                "after": "red"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot | hotter | warm"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "open",
+                                "after": "closed"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "unused",
+                                "after": "active"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "heating"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off | on",
+                                "after": "on | off"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "on hands"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "making noise",
+                                "after": "quiet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    },
+                    "liam": {
+                        "leaves": [
+                            {
+                                "attribute": "location",
+                                "before": "elsewhere",
+                                "after": "on rucksaks"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "elsewhere",
+                                "after": "on helmet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "absent",
+                                "after": "on webbing"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "adrian": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "ss": {
+                        "main dish": [
+                            {
+                                "attribute": "temperature",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "accompaniment",
+                                "before": "unaccompanied",
+                                "after": "accompanied"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            null
+                        ]
+                    },
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "tv": {
+                        "tv": [
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "unplugged",
+                                "after": "plugged in"
+                            },
+                            {
+                                "attribute": "attachment",
+                                "before": "unattached",
+                                "after": "connected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[TV]] is [[an abbreviation for television]]",
+                            "*Something you find at [[your house]] is [[a tv]]",
+                            "[[using a VCR]] requires [[A TV]]",
+                            "[[tv]] is [[short for television]]",
+                            "[[a tv]] is used for [[entertainment]]",
+                            "[[news]] is related to [[tv]]"
+                        ]
+                    },
+                    "car": {
+                        "vehicle": [
+                            {
+                                "attribute": "location",
+                                "before": "in garage",
+                                "after": "in forest"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            },
+                            {
+                                "attribute": "vehicle",
+                                "before": "uncovered",
+                                "after": "netted with camouflage"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[drive]] is related to [[car]]",
+                            "You are likely to find [[a car]] in [[the city]]",
+                            "[[A car]] can [[go fast]]",
+                            "[[a car]] has [[seats]]",
+                            "[[A tire]] is part of [[a car]]",
+                            "[[A volvo]] is a type of [[car]]",
+                            "[[my car]] is [[red]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 2216,
+                "task": "How to Buy a Bluetooth Car Kit",
+                "step": [
+                    "Research the different options available through Internet sites.",
+                    "Visit local stores that carry the model you are considering.",
+                    "Choose the type of Bluetooth car kit that best suits your needs.",
+                    "Talk to friends or relatives for recommendations.",
+                    "Install your Bluetooth car kit per manufacturer's instructions."
+                ],
+                "steps_predictions": [
+                    "get_info npc covering_tracks track",
+                    "pick_model npc car",
+                    "choose_car_kit my_equipment",
+                    "talk_to_family npc",
+                    "install_in_car npc car"
+                ],
+                "goal_state": " ((knowledge npc covering_tracks))",
+                "similar_entity": {
+                    "my equipment": {
+                        "equipment": [
+                            {
+                                "attribute": "organization",
+                                "before": "scattered | laying sporadically",
+                                "after": "organized | gathered"
+                            },
+                            {
+                                "attribute": "equipment",
+                                "before": "unorganized",
+                                "after": "laid in pattern"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    },
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "car": {
+                        "vehicle": [
+                            {
+                                "attribute": "location",
+                                "before": "in garage",
+                                "after": "in forest"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            },
+                            {
+                                "attribute": "vehicle",
+                                "before": "uncovered",
+                                "after": "netted with camouflage"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[drive]] is related to [[car]]",
+                            "You are likely to find [[a car]] in [[the city]]",
+                            "[[A car]] can [[go fast]]",
+                            "[[a car]] has [[seats]]",
+                            "[[A tire]] is part of [[a car]]",
+                            "[[A volvo]] is a type of [[car]]",
+                            "[[my car]] is [[red]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 2216,
+                "task": "How to Choose a Combo Alarm System for a Truck",
+                "step": [
+                    "Call your truck dealer to ask his advice.",
+                    "Evaluate your own anti-theft needs for your truck combo alarm system.",
+                    "Establish your budget for your truck combo alarm system.",
+                    "Research truck combo alarm systems online or in truck magazines.",
+                    "Make a short list of the alarm systems that interest you.",
+                    "Go online.",
+                    "Decide whether you want to install a DIY combo alarm yourself or have a professional do it for you.",
+                    "Choose a combo alarm system for a truck that fits all your needs and matches your budget.",
+                    "Purchase your truck combo alarm system."
+                ],
+                "steps_predictions": [
+                    "put_in_cage npc basement",
+                    "listen_to_alarm_system my_equipment",
+                    "set_budget_for_equipment alarm_system",
+                    "check_equipment alarm_system npc",
+                    "listen_to_alarm_system npc",
+                    "go_online npc covering_tracks track",
+                    "install_combined_alarm_system npc home",
+                    "choose_combuster alarm_system my_equipment",
+                    "purchase_equipment alarm_system npc"
+                ],
+                "goal_state": " ((alarm_system npc))",
+                "similar_entity": {
+                    "my equipment": {
+                        "equipment": [
+                            {
+                                "attribute": "organization",
+                                "before": "scattered | laying sporadically",
+                                "after": "organized | gathered"
+                            },
+                            {
+                                "attribute": "equipment",
+                                "before": "unorganized",
+                                "after": "laid in pattern"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "home": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[nest]] is related to [[home]]",
+                            "You are likely to find [[a ferret]] in [[your home]]",
+                            "[[home]] is [[where the heart is]]",
+                            "[[a home]] is for [[living]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    },
+                    "alarm system": {
+                        "heating element": [
+                            {
+                                "attribute": "color",
+                                "before": "black",
+                                "after": "red"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot | hotter | warm"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "open",
+                                "after": "closed"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "unused",
+                                "after": "active"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "heating"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off | on",
+                                "after": "on | off"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "on hands"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "making noise",
+                                "after": "quiet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Buy a Remote Keyless Entry System for a Car\n\n**Steps in Natural Language**:\n1. Research the different remote keyless entry systems available for your car.\n2. Make a list of the features you want in a remote keyless entry system.\n3. Search for manufacturers that produce remote keyless entry systems.\n4. Contact manufacturers to request information about their remote keyless entry products.\n5. Evaluate each product based on your criteria and needs.\n6. Choose the remote keyless entry system that best fits your car and requirements.\n7. Visit a store or shop online to purchase the selected remote keyless entry system."
+    },
+    {
+        "step": [
+            "Fix an alarm that starts when you turn the car on.",
+            "Diagnose an alarm that never sets.",
+            "Fix an alarm that goes off randomly.",
+            "Check if the alarm is the reason your car won't stop."
+        ],
+        "task": "How to Reset a Factory Car Alarm",
+        "goal_state": "reset_car alarmClock_set npc garage",
+        "steps": "```pddl\ntest(entity resource alarm factory)\nevaluate(entity resource factory)\ncheck(entity resource factory)\nidentify(entity car)\nperform_task(actor target factory resource)\nreset(entity car alarm)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 2216,
+                "task": "How to Choose a Car Alarm",
+                "step": [
+                    "Choose which type of car alarm you want.",
+                    "Choose what features are right for you and your needs.",
+                    "Start shopping around at local stores."
+                ],
+                "steps_predictions": [
+                    "choose_car alarm you want",
+                    "choose_features my_equipment",
+                    "start_shopping npc brickhouse"
+                ],
+                "goal_state": "choose_car alarm you want choose_features my_equipment start_shopping npc car",
+                "similar_entity": {
+                    "my equipment": {
+                        "equipment": [
+                            {
+                                "attribute": "organization",
+                                "before": "scattered | laying sporadically",
+                                "after": "organized | gathered"
+                            },
+                            {
+                                "attribute": "equipment",
+                                "before": "unorganized",
+                                "after": "laid in pattern"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "brickhouse": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "alarm": {
+                        "heating element": [
+                            {
+                                "attribute": "color",
+                                "before": "black",
+                                "after": "red"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot | hotter | warm"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "open",
+                                "after": "closed"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "unused",
+                                "after": "active"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "heating"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off | on",
+                                "after": "on | off"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "on hands"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "making noise",
+                                "after": "quiet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "want": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[need]] is related to [[want]]",
+                            null
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 2216,
+                "task": "How to Select a Wireless Driveway Alarm",
+                "step": [
+                    "Determine the minimum transmission distance you will need.",
+                    "Decide why you want it.",
+                    "Determine if the alarm will be part your home automation system or a standalone alert.",
+                    "Seek out possible interference.",
+                    "Figure out how many sensors and receivers you need.",
+                    "Ask yourself the following questions: Can you make a different recording for every transmitter if you get a multiple wireless driveway alarm system?."
+                ],
+                "steps_predictions": [
+                    "determine_minimum_distance you will need",
+                    "choose_objectinreceptacle agent1",
+                    "determine_alarm_system npc basement",
+                    "seek_in_interference npc covering_tracks track",
+                    "choose_sensor_and_receptacle agent1 camera1 lens1",
+                    "make_record npc home"
+                ],
+                "goal_state": " ((selected_location npc covering_tracks))",
+                "similar_entity": {
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "will": {
+                        "cheese": [
+                            {
+                                "attribute": "location",
+                                "before": "to the side",
+                                "after": "in the pot"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "need": {
+                        "items needed": [
+                            {
+                                "attribute": "location",
+                                "before": "in places",
+                                "after": "ready for use"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[need]] is related to [[want]]",
+                            "[[need]] would make you want to [[buy something]]",
+                            "You would [[buy products]] because [[you need them]]",
+                            null
+                        ]
+                    },
+                    "home": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[nest]] is related to [[home]]",
+                            "You are likely to find [[a ferret]] in [[your home]]",
+                            "[[home]] is [[where the heart is]]",
+                            "[[a home]] is for [[living]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "lens": {
+                        "glasses": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "ungarnished",
+                                "after": "garnished"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "decoration",
+                                "before": "undecorated",
+                                "after": "decorated"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a lens]] in [[the camera]]",
+                            "[[THe lens]] is part of [[the eye]]",
+                            "[[Lentille]] is a translation of [[Lens]]",
+                            "[[Most cameras]] have [[a lens]]",
+                            "[[A lens]] is used to [[magnify something]]",
+                            "[[A lens]] is made of [[glass]].",
+                            "[[eye]] is related to [[lens]]"
+                        ]
+                    },
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "agent": {
+                        "game character": [
+                            {
+                                "attribute": "location",
+                                "before": "further out",
+                                "after": "in"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "out",
+                                "after": "hidden"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "pulling out pistol",
+                                "after": "investigating"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "investigating routes",
+                                "after": "waiting"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hiding spot",
+                                "after": "now at bomb"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "hiding",
+                                "after": "defusing"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[agent]] is related to [[secret]]"
+                        ]
+                    },
+                    "camera": {
+                        "hdmi cord": [
+                            {
+                                "attribute": "organization",
+                                "before": "unplugged",
+                                "after": "plugged in | plugged into cable"
+                            },
+                            {
+                                "attribute": "connection",
+                                "before": "loose",
+                                "after": "attached"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "unplugged | unpligged",
+                                "after": "plugged in | connected to tv's hdmi input"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "unattached",
+                                "after": "plugged in"
+                            },
+                            {
+                                "attribute": "organization",
+                                "before": "unplugged",
+                                "after": "plugged into converter and tv"
+                            },
+                            {
+                                "attribute": "attachment",
+                                "before": "loose",
+                                "after": "plugged in"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You can use [[a camera]] to [[take pictures]]",
+                            "You are likely to find [[a lens]] in [[the camera]]",
+                            "[[picture]] is related to [[camera]]",
+                            "[[Camera]] has [[a flash]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 2216,
+                "task": "How to Choose a Combo Alarm System for a Truck",
+                "step": [
+                    "Call your truck dealer to ask his advice.",
+                    "Evaluate your own anti-theft needs for your truck combo alarm system.",
+                    "Establish your budget for your truck combo alarm system.",
+                    "Research truck combo alarm systems online or in truck magazines.",
+                    "Make a short list of the alarm systems that interest you.",
+                    "Go online.",
+                    "Decide whether you want to install a DIY combo alarm yourself or have a professional do it for you.",
+                    "Choose a combo alarm system for a truck that fits all your needs and matches your budget.",
+                    "Purchase your truck combo alarm system."
+                ],
+                "steps_predictions": [
+                    "put_in_cage npc basement",
+                    "listen_to_alarm_system my_equipment",
+                    "set_budget_for_equipment alarm_system",
+                    "check_equipment alarm_system npc",
+                    "listen_to_alarm_system npc",
+                    "go_online npc covering_tracks track",
+                    "install_combined_alarm_system npc home",
+                    "choose_combuster alarm_system my_equipment",
+                    "purchase_equipment alarm_system npc"
+                ],
+                "goal_state": " ((alarm_system npc))",
+                "similar_entity": {
+                    "my equipment": {
+                        "equipment": [
+                            {
+                                "attribute": "organization",
+                                "before": "scattered | laying sporadically",
+                                "after": "organized | gathered"
+                            },
+                            {
+                                "attribute": "equipment",
+                                "before": "unorganized",
+                                "after": "laid in pattern"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "home": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[nest]] is related to [[home]]",
+                            "You are likely to find [[a ferret]] in [[your home]]",
+                            "[[home]] is [[where the heart is]]",
+                            "[[a home]] is for [[living]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "track": {
+                        "jumping": [
+                            {
+                                "attribute": "stability",
+                                "before": "jerky",
+                                "after": "smooth"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "absent"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A track]] is [[a defined path]]",
+                            "[[a track]] is used for [[running]]",
+                            "You are likely to find [[a track]] in [[a stadium]]"
+                        ]
+                    },
+                    "alarm system": {
+                        "heating element": [
+                            {
+                                "attribute": "color",
+                                "before": "black",
+                                "after": "red"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot | hotter | warm"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "open",
+                                "after": "closed"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "unused",
+                                "after": "active"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "heating"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off | on",
+                                "after": "on | off"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "on hands"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "making noise",
+                                "after": "quiet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Reset a Factory Car Alarm\n\n**Steps in Natural Language**:\n1. Test the factory's car alarm system to ensure it is functioning correctly.\n2. Assess the factory's available resources to prepare for resetting the car alarm.\n3. Check the factory's procedures to confirm you are following the correct steps for resetting the car alarm.\n4. Identify the car that needs its alarm reset.\n5. Use the factory's resources to perform the task of resetting the car's alarm.\n6. Reset the car's alarm following the factory's guidelines."
+    }
+]

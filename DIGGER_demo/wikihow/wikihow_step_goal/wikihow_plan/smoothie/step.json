@@ -1,0 +1,572 @@
+{
+    "goal": "Make a Banana Strawberry Rum Smoothie",
+    "steps": [
+        "Place the yogurt, bananas, and sorbet in a blender.",
+        "Blend the mixture until it's smooth in texture.",
+        "Pour the rum in and quickly blend again.",
+        "Pour the smoothie into chilled glasses.",
+        "Garnish each glass with a strawberry."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/7/77/Make-a-Banana-Strawberry-Rum-Smoothie-Step-1.jpg/aid467603-v4-728px-Make-a-Banana-Strawberry-Rum-Smoothie-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/e/e2/Make-a-Banana-Strawberry-Rum-Smoothie-Step-2.jpg/aid467603-v4-728px-Make-a-Banana-Strawberry-Rum-Smoothie-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/8/88/Make-a-Banana-Strawberry-Rum-Smoothie-Step-3.jpg/aid467603-v4-728px-Make-a-Banana-Strawberry-Rum-Smoothie-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/9/91/Make-a-Banana-Strawberry-Rum-Smoothie-Step-4.jpg/aid467603-v4-728px-Make-a-Banana-Strawberry-Rum-Smoothie-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/4/49/Make-a-Banana-Strawberry-Rum-Smoothie-Step-5.jpg/aid467603-v4-728px-Make-a-Banana-Strawberry-Rum-Smoothie-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "rum",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in liquor cabinet",
+                        "after": "in blender | poured in blender",
+                        "saliency": 0.757946656923639,
+                        "attribute_annotation": "location | rum"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed with ingredients",
+                        "saliency": 0.4710753866764097,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavy",
+                        "after": "light",
+                        "saliency": 0.4763122640360492,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.33863110461575935,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "rum",
+                "bottle"
+            ]
+        },
+        {
+            "entity": "strawberry",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "inside refrigerator | in container",
+                        "after": "on glass | garnished on glass",
+                        "saliency": 0.6833516015101693,
+                        "attribute_annotation": "location | strawberry"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "strawberry"
+            ]
+        },
+        {
+            "entity": "smoothie",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "organization",
+                        "before": "seperate",
+                        "after": "combined",
+                        "saliency": 0.33079608655056225,
+                        "attribute_annotation": "organization"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "texture",
+                        "before": "chunky | separate | whole",
+                        "after": "smooth | blended/chopped | blended",
+                        "saliency": 0.44783826574107904,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "smoothie",
+                        "before": "in blender",
+                        "after": "in glasses",
+                        "saliency": 0.6468152478382657,
+                        "attribute_annotation": "smoothie"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in blender",
+                        "after": "in glass | in glasses",
+                        "saliency": 0.490013396663013,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "smoothie | mixture | ingredients"
+            ]
+        },
+        {
+            "entity": "blender",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.6392035074899525,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.45562862826289935,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "blender",
+                        "before": "empty",
+                        "after": "filled with yogurt, bananas, sorbet",
+                        "saliency": 0.41891365241748874,
+                        "attribute_annotation": "blender"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.3462428449640726,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.48392400438436245,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.3462428449640726,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.30034912515730927,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on",
+                        "saliency": 0.27740226525392764,
+                        "attribute_annotation": "electric conductivity"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on",
+                        "saliency": 0.12212276214833759,
+                        "attribute_annotation": "electric conductivity"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavy",
+                        "after": "light",
+                        "saliency": 0.3462428449640726,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.30034912515730927,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "blender"
+            ]
+        },
+        {
+            "entity": "glasses",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.6392035074899525,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | warme",
+                        "after": "chilled",
+                        "saliency": 0.5726708074534161,
+                        "attribute_annotation": "temperature | glasses"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.5015223480696627,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.45562862826289935,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.4326817683595177,
+                        "attribute_annotation": "moisture"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "appearance",
+                        "before": "plain",
+                        "after": "garnished | decorated",
+                        "saliency": 0.2377095765842569,
+                        "attribute_annotation": "appearance"
+                    },
+                    {
+                        "attribute": "decoration",
+                        "before": "bare rimmed",
+                        "after": "decorated/garnished",
+                        "saliency": 0.623980026793326,
+                        "attribute_annotation": "decoration"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "glasses | glass",
+                "glass"
+            ]
+        },
+        {
+            "entity": "sorber",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in tub | in refrigerator/freezer | in container",
+                        "after": "in blender",
+                        "saliency": 0.6376811594202899,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "45 degrees",
+                        "after": "32 degrees",
+                        "saliency": 0.4687005236877359,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "composition",
+                        "before": "non-alcoholic",
+                        "after": "alcoholic",
+                        "saliency": 0.1833516015101693,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "sorber | fruit and sorbet | sorbet",
+                "banana | bananas",
+                "fruit",
+                "liquid"
+            ]
+        },
+        {
+            "entity": "yogurt",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in tub | in container",
+                        "after": "in blender",
+                        "saliency": 0.5539520155888442,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "yogurt"
+            ]
+        },
+        {
+            "entity": "mixture",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed/blended",
+                        "saliency": 0.5143709657776154,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "ingredients"
+            ]
+        },
+        {
+            "entity": "items",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "mixed",
+                        "saliency": 0.4687005236877359,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "items"
+            ]
+        }
+    ],
+    "clusters": {
+        "glasses": {
+            "entity_cluster": [
+                "glass",
+                "glasses"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "glasses": [
+                    "glasses"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "moisture": [
+                    "moisture"
+                ],
+                "appearance": [
+                    "appearance"
+                ],
+                "decoration": [
+                    "decoration"
+                ]
+            }
+        },
+        "yogurt": {
+            "entity_cluster": [
+                "yogurt"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "blender": {
+            "entity_cluster": [
+                "blender"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "blender": [
+                    "blender"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "electric conductivity": [
+                    "electric conductivity"
+                ]
+            }
+        },
+        "sorbet": {
+            "entity_cluster": [
+                "sorbet"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "rum": {
+            "entity_cluster": [
+                "bottle",
+                "rum"
+            ],
+            "attribute_cluster": {
+                "rum": [
+                    "rum"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "location": [
+                    "location"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "strawberry": {
+            "entity_cluster": [
+                "strawberry"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location",
+                    "strawberry"
+                ]
+            }
+        },
+        "smoothie": {
+            "entity_cluster": [
+                "smoothie"
+            ],
+            "attribute_cluster": {
+                "texture": [
+                    "texture"
+                ],
+                "smoothie": [
+                    "smoothie"
+                ],
+                "location": [
+                    "location"
+                ],
+                "organization": [
+                    "organization"
+                ]
+            }
+        },
+        "mixture": {
+            "entity_cluster": [
+                "ingredients",
+                "fruit and sorbet",
+                "mixture"
+            ],
+            "attribute_cluster": {
+                "texture": [
+                    "texture"
+                ],
+                "smoothie": [
+                    "smoothie"
+                ],
+                "location": [
+                    "location"
+                ],
+                "organization": [
+                    "organization"
+                ],
+                "composition": [
+                    "composition"
+                ]
+            }
+        },
+        "items": {
+            "entity_cluster": [
+                "items"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ]
+            }
+        },
+        "sorber": {
+            "entity_cluster": [
+                "bananas",
+                "liquid",
+                "fruit",
+                "banana",
+                "sorber"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "composition": [
+                    "composition"
+                ]
+            }
+        }
+    }
+}

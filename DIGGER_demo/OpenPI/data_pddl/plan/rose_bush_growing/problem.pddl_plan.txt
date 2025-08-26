@@ -1,0 +1,5 @@
+(prepare_area clipping)
+(take_cutting clipping)
+(moisten_clipping clipping)
+(plant_cutting clipping)
+; cost = 4 (unit cost)

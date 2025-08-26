@@ -1,0 +1,3 @@
+[
+    "```pddl\n[\n  (:action clean\n    :parameters (?agent - agent ?target - object ?location - location)\n    :precondition (and\n      (at ?target ?location)\n      (at ?agent ?location)\n      (or (dusty ?location) (full ?target) (dirty ?target)))\n    :effect (and\n      (not (dusty ?location))\n      (not (dirty ?target))\n      (not (full ?target))\n      (dust_free ?location)\n      (clean ?target))),\n\n  (:action pickup\n    :parameters (?item - object ?container - object ?agent - agent)\n    :precondition (and\n      (at ?item around_house)\n      (at ?agent around_house))\n    :effect (and\n      (inventory ?agent ?item)\n      (not (at ?item around_house))))\n]\n```"
+]

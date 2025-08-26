@@ -1,0 +1,11 @@
+(:action get ; 
+(:action travel ;
+(:action search_location;3
+(:action pluck_river_reeds;1
+(:action cut_stalks;2
+(:action cut_strips;5
+(:action soak_strips;5,17
+(:action roll_strips;8
+(:action weave_strips;9,19
+(:action bundle_strips;10
+(:action cut_sheet;22

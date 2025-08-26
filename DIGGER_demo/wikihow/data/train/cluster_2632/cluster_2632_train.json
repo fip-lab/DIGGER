@@ -1,0 +1,194 @@
+[
+    {
+        "cluster_label": 2632,
+        "task": "How to Grill That Perfect Burger",
+        "step": [
+            "Start with fresh ground chuck.",
+            "Make sure the chuck has a fat content of at least 15 to 22 percent to ensure juiciness.",
+            "Chill the beef well before forming patties.",
+            "Season the meat with salt and pepper.",
+            "Make each patty by forming about half a pound of ground chuck into a tight ball about the size of a baseball.",
+            "Use a spatula or other straight-edged tool to \"pull in\" the sides of the patty so that they remain together and tight.",
+            "Form patties about 1/2- to 3/4-inch thick.",
+            "Build a hot fire in the grill.",
+            "Place the burgers on the grill over direct heat.",
+            "Check doneness by peeking inside a patty with a spatula, or use an instant-read food thermometer inserted into the center of the patty.",
+            "Serve on fresh buns with any toppings you prefer: cheese, tomatoes, lettuce, onion, pickles and condiments such as ketchup, mayonnaise or mustard.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "start_with_fresh_ground_chuck ground_cheese",
+            "make_chuck chuck",
+            "chill beef patties",
+            "season-meat beef",
+            "form_into_ball ground_chuck",
+            "pull-in-sliplargerbeads potato",
+            "form_patties pc1",
+            "build_fire npc brickhouse",
+            "place_burger_on_grill stove_knob",
+            "peek_into_papyrus npc",
+            "cook npc",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((cooked beef))"
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Cook a Cheeseburger",
+        "step": [
+            "Start with good meat.",
+            "Place the ground beef in a bowl.",
+            "Roughly chop the onion and garlic.",
+            "Add the egg yolk.",
+            "Mix it all together.",
+            "Create the burgers.",
+            "Arrange the burgers on a plate.",
+            "Choose your cooking method.",
+            "While the burgers are cooking, prepare the toppings:.",
+            "Cover each with the top half of its bun, and enjoy."
+        ],
+        "steps_predictions": [
+            "start_with_meat beef",
+            "place-ingredients ground beef mixing_bowl",
+            "choose_ingredient onion_and_garlic garlic",
+            "add-ingredients egg_yolk mixing_bowl",
+            "mix_ingredients mixture",
+            "create_burger npc",
+            "build_burger npc kitchen",
+            "choose_cooking_method stove",
+            "prepare_add_ingredients burger",
+            "wrap_bun npc"
+        ],
+        "goal_state": " ((cooked beef) (cooked onion))"
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Write a Hamburger Paragraph",
+        "step": [
+            "Write a topic sentence as the \"top bun\" of your hamburger.",
+            "Add a detail as your tomato.",
+            "Layer on another detail as the cheese.",
+            "Add another sentence as your burger.",
+            "Add the lettuce, another detail that connects with the topic sentence.",
+            "Offer up the onions.",
+            "Finish up with the bottom bun.",
+            "Analyse your finished paragraph.",
+            "Review it again and consider any possible improvements.My friend Allie is really great, always there for me when I need her, no matter what."
+        ],
+        "steps_predictions": [
+            "write_topic_sentiment hamburger",
+            "add_detail tomato_center",
+            "layer-cheese cheese mixing_bowl",
+            "add_spear npc",
+            "add-lemon water npc",
+            "choose_ingredient onion1 bowl1",
+            "finish_with_bun bun",
+            "analyze_finished_paragraph npc covering_tracks track",
+            "listen_to_all_member_of_family npc"
+        ],
+        "goal_state": " ((in_container hamburger))"
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Make Corned Beef Hash",
+        "step": [
+            "Gather the ingredients.",
+            "Combine corned roast beef hash, onion , mayonnaise, salt and pepper in a bowl.",
+            "Lightly toast bread.",
+            "Spread the corned beef hash mixture on bread."
+        ],
+        "steps_predictions": [
+            "gather_ingredients mixture",
+            "combine_ingredients beef_hash mixing_bowl",
+            "light_flavorful toast",
+            "garnish_with_cheese velveeta"
+        ],
+        "goal_state": " ((combined beef_hash mixing_bowl) (in_container beef"
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Make Burger Bites",
+        "step": [
+            "Defrost.",
+            "Prep bread.",
+            "Prep sauce.",
+            "Cook the meat.",
+            "Finish the meat.",
+            "Finish the bread.",
+            "Finish the meal.",
+            "Enjoy your burger bites!."
+        ],
+        "steps_predictions": [
+            "defrost-mixture mixture",
+            "prepare_bread mixing_bowl",
+            "prepare_sauce stove_knob velveeta",
+            "cook npc",
+            "finish_meat beef",
+            "finish-ingredients bread",
+            "finish-mixture soup",
+            "cook npc kitchen"
+        ],
+        "goal_state": " ((in_fridge beef) (served_burnt beef))"
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Grill a Burger on a Foreman Grill",
+        "step": [
+            "Choose frozen burger patties that are no more than 0.5 in (1.3 cm) thick.",
+            "Preheat the grill for 5 minutes.",
+            "Place 2-4 frozen patties on the lower grill plate.",
+            "Close the lid and cook the burgers for 4.5-6.5 minutes.",
+            "Remove the burgers and test the internal temperature for doneness.",
+            "Eat the burgers before the internal temperature falls below 140 \u00b0F (60 \u00b0C)."
+        ],
+        "steps_predictions": [
+            "choose_burger patties",
+            "prepare_grill stove_knob velveeta",
+            "free_patties potato1 grill1",
+            "cook npc",
+            "remove-burger burgers",
+            "eat_burger burgers"
+        ],
+        "goal_state": " ((in_fridge burger1) (served_burger patties))"
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Keep Burgers Flat",
+        "step": [
+            "Warm vegetable oil over medium-high heat in a skillet or flat top.",
+            "Place the meat in your pan and smash it flat.",
+            "Season the burgers with salt and pepper if you wish.",
+            "Cook the burger for about 2 minutes until the bottom is brown.",
+            "Flip the patties over and season them with salt and pepper.",
+            "Cook the patties for another minute until they are brown all over."
+        ],
+        "steps_predictions": [
+            "cook npc",
+            "smash_meat potato1 pan1",
+            "season-burger burgers",
+            "cook_burger burger",
+            "flatten_patties potato1 container1",
+            "cook_patties potato1 stove1"
+        ],
+        "goal_state": " ((in_fridge potato1) (flat_pestle))"
+    },
+    {
+        "cluster_label": 2632,
+        "task": "How to Cook Polenta",
+        "step": [
+            "Gather the ingredients.",
+            "Make the basic polenta recipe from Method 1.",
+            "Stir in the butter and cheese.",
+            "Stir in the milk, parsley and spices.",
+            "Place the polenta in a bowl and serve hot."
+        ],
+        "steps_predictions": [
+            "gather_ingredients mixture",
+            "make_polenta_recipe alice",
+            "stirf_ingredients cream_cheese mixing_bowl",
+            "mix_ingredients canola_oil blender",
+            "serve-polenta polenta mixing_bowl"
+        ],
+        "goal_state": " ((served mixing_bowl mixture))"
+    }
+]

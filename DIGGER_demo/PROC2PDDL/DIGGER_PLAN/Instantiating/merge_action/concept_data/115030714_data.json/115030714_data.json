@@ -1,0 +1,5 @@
+{
+    "cook": [
+        "(:action cook_food\n    :parameters (?npc - agent ?kitchen - location)\n    :precondition (and\n      (at ?npc ?kitchen)\n      (clean ?kitchen)\n      (not (cooked_food ?npc))\n    )\n    :effect (and\n      (cooked_food ?npc)\n      (messy ?kitchen)\n    )\n)\n```\n\nThis action captures the process of cooking food in the kitchen by an NPC. The preconditions ensure that the NPC is in the kitchen and the kitchen is clean before starting to cook. The effects reflect that after cooking, the food is cooked, and the kitchen becomes messy. \n\nPlease note that the provided task and steps are minimal, and the descriptions do not directly relate to the steps. If there were more steps or detailed descriptions, additional actions could be generated accordingly."
+    ]
+}

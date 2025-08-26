@@ -1,0 +1,5 @@
+(fold-lengthwise towel1)
+(fold-half-twice towel1)
+(store-in-closet towel1)
+(hang-on-rack towel1)
+; cost = 4 (unit cost)

@@ -1,0 +1,14 @@
+{
+    "get": [
+        "(:action get_gems\n    :parameters (?p - player ?g - gems)\n    :precondition (and (at ?p market))\n    :effect (inventory ?p ?g)\n)\n\n",
+        "(:action buy_stuff\n    :parameters (?p - player ?s - stuff ?g - gems)\n    :precondition (and (inventory ?p ?g) (at ?p market))\n    :effect (and (inventory ?p ?s) (not (inventory ?p ?g)))\n)\n\n"
+    ],
+    "build": [
+        "(:action build_rooms\n    :parameters (?p - player ?r - room ?l - location)\n    :precondition (and (inventory ?p ?r) (at ?p ?l))\n    :effect (built ?r ?l)\n)\n\n",
+        "(:action create_rooms\n    :parameters (?p - player ?r - room ?l - location)\n    :precondition (and (built ?r ?l) (at ?p ?l))\n    :effect (room_created ?r ?l)\n)\n\n",
+        "(:action make_area\n    :parameters (?p - player ?a - area ?l - location)\n    :precondition (and (at ?p ?l))\n    :effect (area_created ?a ?l)\n)\n\n"
+    ],
+    "keep": [
+        "(:action keep_family_safe\n    :parameters (?p - player ?f - family ?r - room)\n    :precondition (and (at ?p ?r) (at ?f ?r))\n    :effect (safe ?f)\n)\n```\n\nThese actions are designed to reflect the steps and descriptions provided for making your den look like a home on Animal Jam. They capture the necessary preconditions and effects for each step in the process."
+    ]
+}

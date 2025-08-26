@@ -1,0 +1,6 @@
+[
+    "(:action collect\n    :parameters (?item - object ?l - location)\n    :precondition (and\n      (at ?item ?l)\n      (not (collected ?item))\n    )\n    :effect (and\n      (collected ?item)\n      (not (at ?item ?l))",
+    "(:action buy_papyrus\n       :parameters (?npc - agent ?p - papyrus)\n       :precondition (and (not (obtained ?p)) (not (knowledge ?p)))\n       :effect (and (obtained ?p) (knowledge ?p))",
+    "(:action buy ; Obtain a resource and update its status\n    :parameters (?npc - agent ?item - object)\n    :precondition (and (not (obtained ?item)) (not (knowledge ?item)))\n    :effect (and (obtained ?item) (knowledge ?item))",
+    "(:action make ; Create or modify a resource and update knowledge\n:parameters (?npc - agent ?resource - object ?location - place)\n:precondition (and (obtained ?resource) (not (knowledge ?location)) (not (made ?resource)))\n:effect (and (knowledge ?location) (made ?resource))"
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "cluster_label": 2632,
+        "task": "How to Grill Burgers",
+        "step": [
+            "Get creative with the meat.",
+            "Season the meat.",
+            "Go crazy with toppings.",
+            "Experiment with a variety of condiments.",
+            "Use wood chips in your charcoal grill.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "create_creatibility meat",
+            "season-meat beef",
+            "go_crazy with_flavor toppings",
+            "experiment_with_condiments condiments",
+            "cook npc wood_chips",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((at_location beef_cooked) (has_temperature beef"
+    }
+]

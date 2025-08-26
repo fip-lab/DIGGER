@@ -1,0 +1,12 @@
+{
+    "create": [
+        "(:action create_small_studio\n  :parameters (?p - person ?s - studio)\n  :precondition (and (not (studio_set_up ?s)))\n  :effect (and (studio_set_up ?s))\n)\n\n",
+        "(:action prepare_closeup_lens\n  :parameters (?p - person ?l - lens)\n  :precondition (and (not (lens_ready ?l)))\n  :effect (and (lens_ready ?l))\n)\n\n"
+    ],
+    "set": [
+        "(:action set_up_reflectors\n  :parameters (?p - person ?r - reflector ?s - studio)\n  :precondition (and (studio_set_up ?s) (not (reflectors_set_up ?r)))\n  :effect (and (reflectors_set_up ?r) (light_diffused ?r))\n)\n\n"
+    ],
+    "start": [
+        "(:action start_experimenting\n  :parameters (?p - person ?e - experiment ?s - studio ?r - reflector ?l - lens)\n  :precondition (and (studio_set_up ?s) (reflectors_set_up ?r) (lens_ready ?l) (not (experiment_started ?e)))\n  :effect (and (experiment_started ?e) (light_diffused ?r))\n)\n```\n\n### Explanation:\n\n1. **Action: `create_small_studio`**\n   - **Parameters:** `?p` (person), `?s` (studio)\n   - **Preconditions:** The studio is not set up.\n   - **Effects:** The studio is set up.\n\n2. **Action: `set_up_reflectors`**\n   - **Parameters:** `?p` (person), `?r` (reflector), `?s` (studio)\n   - **Preconditions:** The studio is set up, and the reflectors are not set up.\n   - **Effects:** The reflectors are set up, and the light is diffused.\n\n3. **Action: `prepare_closeup_lens`**\n   - **Parameters:** `?p` (person), `?l` (lens)\n   - **Preconditions:** The lens is not ready.\n   - **Effects:** The lens is ready.\n\n4. **Action: `start_experimenting`**\n   - **Parameters:** `?p` (person), `?e` (experiment), `?s` (studio), `?r` (reflector), `?l` (lens)\n   - **Preconditions:** The studio is set up, the reflectors are set up, the lens is ready, and the experiment is not started.\n   - **Effects:** The experiment is started, and the light is diffused.\n\nThese actions capture the steps and entity states required for the task \"Learn Photography by Shooting Macro\" and ensure that each step logically follows the previous one."
+    ]
+}

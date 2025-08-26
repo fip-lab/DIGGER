@@ -1,0 +1,117 @@
+{
+    "?object": [
+        "dust",
+        "towel",
+        "tv",
+        "rag",
+        "throw",
+        "can",
+        "item",
+        "paper",
+        "mat",
+        "trash",
+        "bag",
+        "glass",
+        "spray",
+        "pipe",
+        "rug",
+        "waste",
+        "screen",
+        "bird",
+        "basket",
+        "candles",
+        "water",
+        "camouflage",
+        "part",
+        "cordial",
+        "pot",
+        "clipping",
+        "rhubarb",
+        "bush",
+        "hormone",
+        "cutting",
+        "texture",
+        "smoothie",
+        "banana",
+        "pitcher",
+        "glass",
+        "mixture",
+        "rum",
+        "strawberry",
+        "melon",
+        "yogurt",
+        "coladas",
+        "pina",
+        "sorbet",
+        "candles",
+        "water"
+    ],
+    "?location": [
+        "door",
+        "room",
+        "house",
+        "home",
+        "surface",
+        "socket",
+        "stove",
+        "place",
+        "area",
+        "yard",
+        "socket",
+        "stove"
+    ],
+    "?agent": [
+        "cleaner"
+    ],
+    "?action": [
+        "purchase",
+        "use",
+        "set",
+        "purchase"
+    ],
+    "?container": [
+        "jar",
+        "saucepan",
+        "jar",
+        "saucepan"
+    ],
+    "?state": [
+        "amount",
+        "up",
+        "nosiness",
+        "amount"
+    ],
+    "?victim": [
+        "victim"
+    ],
+    "?entity1": [
+        "friend"
+    ],
+    "?npc": [
+        "spy"
+    ],
+    "?entity2": [
+        "person"
+    ],
+    "?event": [
+        "meeting"
+    ],
+    "?group": [
+        "group"
+    ],
+    "?task": [
+        "mission"
+    ],
+    "?sg": [
+        "people"
+    ],
+    "?equipment": [
+        "equipment"
+    ],
+    "?gear": [
+        "gear"
+    ],
+    "?bl": [
+        "blender"
+    ]
+}

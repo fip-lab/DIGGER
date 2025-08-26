@@ -1,0 +1,44 @@
+task,nl_step
+3-decorate,"**Task**: 3-decorate  
+**Steps in Natural Language**:
+1. Put the scissors into the designated container."
+prepare_meat,"**Task**: prepare_meat  
+**Steps in Natural Language**:
+1. Hunt animals in the designated area to obtain fresh meat.
+2. Cook the harvested meat thoroughly to ensure it is safe and ready to eat."
+pick_hard_lock,"**Task**: pick_hard_lock
+
+**Steps in Natural Language**:
+1. Slide the credit card between the door frame and the lock to unlock the door."
+finishing_papyrus,"**Task**: finishing_papyrus
+
+**Steps in Natural Language**:
+1. **Dry the linen papyrus using a drying tool.** Hold the linen papyrus and evenly apply the drying tool across its surface to ensure it becomes completely dry.
+2. **Smooth the finished papyrus with a shell or a piece of ivory.** Rub the shell or ivory firmly over the papyrus to create a sleek and uniform finish.
+3. **Lay the finished papyrus onto the desired surface.** Carefully place the smoothed papyrus in its final location to complete the finishing process."
+gather_kindling,"**Task**: gather_kindling
+
+**Steps in Natural Language**:
+1. Search a specific part of the area for materials that can help start a fire. Look for dry sticks, small branches, or pieces of bark that are easy to collect.
+2. Examine the entire area carefully to ensure you find all possible kindling sources. Check under leaves, around tree bases, and in clearings.
+3. Find dry, easily flammable materials to use as tinder. Look for items like dry grass, leaves, or pine needles that will catch fire quickly.
+4. Gather dry sticks, branches, and pieces of bark to use as your kindling. Collect enough to help sustain and grow your fire once the tinder is ignited."
+make_papyrus,"**Task**: make_papyrus
+
+**Steps in Natural Language**:
+1. Locate the necessary papyrus materials.
+2. Bring the papyrus materials from the storage room to your workspace.
+3. Soak the papyrus materials until they are thoroughly wet."
+move_to_bunker,"**Task**: move_to_bunker
+
+**Steps in Natural Language**:
+1. Follow the non-player character to reach Bunker 2. Stay close to the guide and pay attention to their movements. Once you arrive at Bunker 2, enter through the main entrance and secure the area."
+ready_sc,"**Task**: ready_sc
+
+**Steps in Natural Language**:
+1. Use the brick to interact with the ready_sc component.
+2. Wait for the ready_sc to complete its operation."
+heal-old-man,"**Task**: heal-old-man
+
+**Steps in Natural Language**:
+1. Provide medical assistance to the old man by administering the appropriate treatment to restore his health."

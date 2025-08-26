@@ -1,0 +1,222 @@
+{
+    "goal": "Clean Synthetic Hiking Gear",
+    "steps": [
+        "Read all of the instructions first.",
+        "Wash Gore-Tex and other breathable, waterproof synthetic outer shell clothing following the instructions on the label.",
+        "Be careful with synthetic boots.",
+        "Take care cleaning synthetic jackets containing down.",
+        "Wash polar fleece (microfleece or micrafleece) in the washing machine."
+    ],
+    "topics": "Sports and Fitness",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/d/da/Clean-Synthetic-Hiking-Gear-Step-1.jpg/aid764929-v4-728px-Clean-Synthetic-Hiking-Gear-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/1/19/Clean-Synthetic-Hiking-Gear-Step-2.jpg/aid764929-v4-728px-Clean-Synthetic-Hiking-Gear-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/3/32/Clean-Synthetic-Hiking-Gear-Step-3.jpg/aid764929-v4-728px-Clean-Synthetic-Hiking-Gear-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/5/50/Clean-Synthetic-Hiking-Gear-Step-4.jpg/aid764929-v4-728px-Clean-Synthetic-Hiking-Gear-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/b/ba/Clean-Synthetic-Hiking-Gear-Step-5.jpg/aid764929-v4-728px-Clean-Synthetic-Hiking-Gear-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "instructions",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unread | avalable",
+                        "after": "known | read",
+                        "saliency": 0.6635610766045549,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "instructions"
+            ]
+        },
+        {
+            "entity": "washing machine",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full with polar fleece",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.39648033126293997,
+                        "attribute_annotation": "electric conductivity"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "washing machine"
+            ]
+        },
+        {
+            "entity": "clothing",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean",
+                        "saliency": 0.4910282953761214,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "clothing",
+                "gore-tex"
+            ]
+        },
+        {
+            "entity": "polar fleece",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "unwashed",
+                        "after": "washed",
+                        "saliency": 0.4824016563146998,
+                        "attribute_annotation": "cleanness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "polar fleece",
+                "fleece"
+            ]
+        },
+        {
+            "entity": "detergent",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle",
+                        "after": "in drain",
+                        "saliency": 0.4306418219461698,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "detergent"
+            ]
+        },
+        {
+            "entity": "dirt",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "on clothes",
+                        "after": "in drain",
+                        "saliency": 0.3443754313319531,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "dirt"
+            ]
+        }
+    ],
+    "clusters": {
+        "instructions": {
+            "entity_cluster": [
+                "instructions"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "dirt": {
+            "entity_cluster": [
+                "dirt"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "washing machine": {
+            "entity_cluster": [
+                "washing machine"
+            ],
+            "attribute_cluster": {
+                "fullness": [
+                    "fullness"
+                ],
+                "electric conductivity": [
+                    "electric conductivity"
+                ]
+            }
+        },
+        "detergent": {
+            "entity_cluster": [
+                "detergent"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "polar fleece": {
+            "entity_cluster": [
+                "polar fleece",
+                "fleece"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "clothing": {
+            "entity_cluster": [
+                "clothing",
+                "gore-tex"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        }
+    }
+}

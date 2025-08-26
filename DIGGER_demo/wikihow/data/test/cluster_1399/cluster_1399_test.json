@@ -1,0 +1,23 @@
+[
+    {
+        "cluster_label": 1399,
+        "task": "How to Melt Butter",
+        "step": [
+            "Know how to tell when butter is soft.",
+            "Cut butter into pieces before softening.",
+            "Leave butter on the counter near the oven.",
+            "Soften butter more quickly by mashing or beating it.",
+            "Place a container of butter in a warm water bath.",
+            "Rapidly soften frozen butter by grating it."
+        ],
+        "steps_predictions": [
+            "know_when_to_know you",
+            "cut_ingredients alice",
+            "put_ingredients_in_oven stove_knob velveeta",
+            "soften_ingredients butter mixing_bowl",
+            "place-ingredients container-container water-bath",
+            "break_potatoes potato1 stove1"
+        ],
+        "goal_state": " ((at_location mixing_bowl) (has_temperature cream_cheese))"
+    }
+]

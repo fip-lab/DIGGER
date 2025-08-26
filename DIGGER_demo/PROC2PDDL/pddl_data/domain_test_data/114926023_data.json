@@ -1,0 +1,79 @@
+[
+    {
+        "task": "build_raft",
+        "step": [
+            "go north npc beach root_of_tree",
+            "go north npc root_of_tree jungle",
+            "go east npc jungle hills",
+            "get vines npc hills",
+            "go west npc hills jungle",
+            "get log npc jungle",
+            "go south npc jungle root_of_tree",
+            "go south npc root_of_tree beach",
+            "build_raft npc log vines raft_draft",
+            "test_raft npc beach raft_draft raft_finished"
+        ],
+        "desc": [
+            "Create a rescue signal. If you hope to be rescued, it's a good idea to leave rescuers with a signal. The signal you create will help search parties find your location and get you home more quickly than you would otherwise. You might try making some of these rescue signals to make you more visible:"
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action test_raft ; test a raft before riding it.\n      :parameters (?p - player ?loc - location ?rd - raft_draft ?rf - raft_finished) \n      :precondition (and (at ?p ?loc) (haswater ?loc) (inventory ?p ?rd))\n      :effect (and (inventory ?p ?rf))\n   )\n\n\n\n)",
+            "(:action build_raft ; build a raft.\n      :parameters (?p - player ?l - log ?v - vines ?r - raft_draft) \n      :precondition (and (inventory ?p ?l) (inventory ?p ?v))\n      :effect (and (inventory ?p ?r))\n   )"
+        ],
+        "goal_state": "((inventory npc raft_finished))"
+    },
+    {
+        "task": "prepare_meat",
+        "step": [
+            "go north npc beach root_of_tree",
+            "go north npc root_of_tree jungle",
+            "go east npc jungle hills",
+            "get sharp_stone npc hills",
+            "go west npc hills jungle",
+            "hunt_animal npc jungle sharp_stone animal",
+            "prepare_animal npc jungle sharp_stone animal"
+        ],
+        "desc": [
+            "",
+            "Create a shelter. Shelters are vital when it comes to keeping you safe and out of the elements. Shelters can also give you a place to rest and recover while you consider your next moves. There are many different types of shelters you can build. The natural material found on the island will dictate what kind of shelter you can create. As an example, you may try to create a simple lean-to shelter, using these steps:"
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action prepare_animal ; prepare animals with a sharp stone before eating it.\n      :parameters (?p - player ?loc - location ?s - sharp_stone ?a - animal) \n      :precondition (and (at ?p ?loc) (inventory ?p ?s) (inventory ?p ?a))\n      :effect (and (treated ?a))\n   )",
+            "(:action hunt_animal ; hunt animals with a sharp stone.\n      :parameters (?p - player ?loc - location ?s - sharp_stone ?a - animal) \n      :precondition (and (at ?p ?loc) (at ?a ?loc) (inventory ?p ?s))\n      :effect (and (inventory ?p ?a) (not (treated ?a)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )"
+        ],
+        "goal_state": "((inventory npc animal) (treated animal))"
+    },
+    {
+        "task": "create_shelter",
+        "step": [
+            "go north npc beach root_of_tree",
+            "go up npc root_of_tree top_of_tree",
+            "get leaves npc top_of_tree",
+            "go down npc top_of_tree root_of_tree",
+            "go north npc root_of_tree jungle",
+            "get small_sticks npc jungle",
+            "get log npc jungle",
+            "go south npc jungle root_of_tree",
+            "build_wall npc root_of_tree small_sticks wall",
+            "build_roof npc root_of_tree log roof",
+            "build_bed npc root_of_tree leaves bed",
+            "complete_shelter npc root_of_tree roof wall bed shelter"
+        ],
+        "desc": [
+            ""
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action build_roof ; build roof with log.\n      :parameters (?p - player ?loc - location ?i - log ?r - roof) \n      :precondition (and (at ?p ?loc) (inventory ?p ?i) (not (at ?r ?loc)))\n      :effect (and (at ?r ?loc) (not (inventory ?p ?i)))\n   )",
+            "(:action build_bed ; build bed with leaves.\n      :parameters (?p - player ?loc - location ?i - leaves ?b - bed) \n      :precondition (and (at ?p ?loc) (inventory ?p ?i) (not (at ?b ?loc)))\n      :effect (and (at ?b ?loc) (not (inventory ?p ?i)))\n   )",
+            "(:action build_wall ; build wall with small sticks.\n      :parameters (?p - player ?loc - location ?i - small_sticks ?w - wall) \n      :precondition (and (at ?p ?loc) (inventory ?p ?i) (not (at ?w ?loc)))\n      :effect (and (at ?w ?loc) (not (inventory ?p ?i)))\n   )",
+            "(:action complete_shelter ; complete shelter with roof, wall and bed.\n      :parameters (?p - player ?loc - location ?r - roof ?w - wall ?b - bed ?s - shelter) \n      :precondition (and (at ?p ?loc) (at ?b ?loc) (at ?r ?loc) (at ?w ?loc) (at ?b ?loc))\n      :effect (and (at ?s ?loc))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )"
+        ],
+        "goal_state": "((at shelter root_of_tree))"
+    }
+]

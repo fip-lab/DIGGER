@@ -1,0 +1,17 @@
+[
+    {
+        "cluster_label": 1399,
+        "task": "How to Soften Butter",
+        "step": [
+            "Cut the butter into \u20442 inch (1.3 cm) squares.",
+            "Put the butter in your microwave for 5 seconds.",
+            "Use 5 seconds increments until the butter is soft but not melted."
+        ],
+        "steps_predictions": [
+            "cut_ingredients alice",
+            "put_ingredients_in_machine alice",
+            "set_burner_add_ingredients stove_knob velveeta"
+        ],
+        "goal_state": " ((at_location butter_knob velveeta))"
+    }
+]

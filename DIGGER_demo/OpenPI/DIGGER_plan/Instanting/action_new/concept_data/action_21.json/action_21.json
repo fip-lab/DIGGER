@@ -1,0 +1,6 @@
+[
+    "(:action choose ; Choose an item and add it to the player's inventory\n    :parameters (?p - player ?item - object ?loc - location)\n    :precondition (and (at ?p ?loc) (at ?item ?loc))\n    :effect (and (inventory ?p ?item) (not (at ?item ?loc))",
+    "(:action establish ; Establish an entity and update its status\n    :parameters (?agent - agent ?entity - entity ?location - place)\n    :precondition (and (at ?agent ?location) (at ?entity ?location) (not (established ?entity ?location)))\n    :effect (established ?entity ?location)\n)",
+    "(:action plant\n    :parameters (?p - player ?e - entity ?c - container ?s - substance)\n    :precondition (and (inventory ?p ?e) (inventory ?p ?c) (inventory ?p ?s))\n    :effect (and (not (inventory ?p ?e))",
+    "(:action re ;  Modify an entity's state and update its location or status\n    :parameters (?actor - agent ?entity - object ?loc1 - location ?loc2 - location)\n    :precondition (and (at ?actor ?loc1) (at ?entity ?loc1) (established ?entity ?loc1) (inventory ?actor ?loc2))\n    :effect (and (not (at ?entity ?loc1))"
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "task": "collect-water",
+        "step": [
+            "go up npc basement kitchen",
+            "get bottles kitchen npc",
+            "go up npc kitchen bedroom",
+            "go in npc bedroom bathroom",
+            "drop bottles bathroom npc",
+            "fill bottles bathroom npc",
+            "put_in_stopper bathtub bathroom npc",
+            "get purification_tablets bathroom npc",
+            "purify bottles bathroom npc",
+            "fill bathtub bathroom npc"
+        ],
+        "desc": [
+            "Eat anything in your fridge first to minimize food shortages. For the first 1-2 days, eat whatever is in your fridge and hasn\u2019t gone bad immediately. Save the dry stuff for later when you may really need it. The odds are low society will completely collapse and you\u2019ll go without help for super long, but it\u2019s still better to go through everything that\u2019s going to go bad anyway.",
+            "Shelter in place and wait for the initial chaos to subside. If all of the electronics suddenly stop working, the immediate loss of electricity will cause a lot of sudden confusion and chaos. If you aren\u2019t home, wait 30-45 minutes for all of the abrupt danger to pass. Then, go home if you\u2019re within a few miles or kilometers. If you\u2019re already home, stay there and do not go outside."
+        ],
+        "action": [
+            "(:action fill\n      :parameters (?it - item ?l - location ?p - player)\n      :precondition (and (can_be_filled ?it) (at ?p ?l) (at ?it ?l))\n      :effect (full ?it)\n   )",
+            "(:action drop\n      :parameters (?it - item ?l - location ?p - player)\n      :precondition (and (inventory ?p ?it) (at ?p ?l))\n      :effect (and (not (inventory ?p ?it)) (at ?it ?l))\n   )",
+            "(:action go\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action purify\n      :parameters (?it - item ?l - location ?p - player)\n      :precondition (and (at ?it ?l) (at ?p ?l) (full ?it) (inventory ?p purification_tablets) (not (sealed ?it)))\n      :effect (and (purified ?it) (not (inventory ?p purification_tablets)))\n   )",
+            "(:action get\n      :parameters (?it - item ?l - location ?p - player)\n      :precondition (and (at ?it ?l) (at ?p ?l))\n      :effect (and (inventory ?p ?it) (not (at ?it ?l)))\n   )",
+            "(:action put_in_stopper\n      :parameters (?it - item ?l - location ?p - player)\n      :precondition (and (has_stopper ?it) (not (full ?it)) (at ?it ?l) (at ?p ?l))\n      :effect (can_be_filled ?it)\n   )"
+        ],
+        "goal_state": "((full bathtub) (purified bottles) (sealed bottles))"
+    },
+    {
+        "task": "turn-on-radio",
+        "step": [
+            "go up npc kitchen bedroom",
+            "get batteries bedroom npc",
+            "go down npc bedroom kitchen",
+            "go down npc kitchen basement",
+            "put_batteries_in npc basement radio",
+            "turn_on_radio npc basement radio"
+        ],
+        "desc": [
+            "Your vehicle may still work if it\u2019s older or it doesn\u2019t rely on a dedicated electrical signal outside of the battery to keep the engine going, which is the case for many vehicles.",
+            "Turn your radio on immediately to get as much information as possible. Most electronics are going to stop functioning as soon as the EMP goes off. However, depending on the type of EMP, there is a good chance that radios will continue to work\u2014at least for a short while. Turn the radio on and tune in to any news source with a decent signal. Keep it on as long as possible and pay attention while you take the next steps to ensure that you get as much information as you can."
+        ],
+        "action": [
+            "(:action put_batteries_in ; pick up an item and put it in the inventory\n      :parameters (?p - player ?l1 - location ?radio - radio) \n      :precondition (and (at ?p ?l1) (inventory ?p batteries) (not (has_batteries ?radio)))\n      :effect (has_batteries ?radio)\n   )",
+            "(:action go\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action turn_on_radio ; turn on the radio\n      :parameters (?p - player ?loc - location ?radio - radio) \n      :precondition (and (at ?p ?loc) (at ?radio ?loc) (has_batteries ?radio))\n      :effect (on ?radio)\n   )",
+            "(:action get\n      :parameters (?it - item ?l - location ?p - player)\n      :precondition (and (at ?it ?l) (at ?p ?l))\n      :effect (and (inventory ?p ?it) (not (at ?it ?l)))\n   )"
+        ],
+        "goal_state": "((on radio))"
+    },
+    {
+        "task": "get-home",
+        "step": [
+            "wait npc",
+            "go east npc work backroads",
+            "go south npc backroads school",
+            "get kids school npc",
+            "go west npc school home",
+            "go down npc home basement",
+            "drop kids basement npc"
+        ],
+        "desc": [
+            "If you\u2019re outside during a nuclear blast, cover your mouth and nose with a cloth or mask to avoid breathing in toxic particles."
+        ],
+        "action": [
+            "(:action drop\n      :parameters (?it - item ?l - location ?p - player)\n      :precondition (and (inventory ?p ?it) (at ?p ?l))\n      :effect (and (not (inventory ?p ?it)) (at ?it ?l))\n   )",
+            "(:action go\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action wait\n      :parameters (?p - player)\n      :precondition (not (at ?p home))\n      :effect (and (not (blocked work east backroads)) (not (blocked school north backroads)) \n              (not (blocked school west home)) (not (blocked home east school)))\n   )",
+            "(:action get\n      :parameters (?it - item ?l - location ?p - player)\n      :precondition (and (at ?it ?l) (at ?p ?l))\n      :effect (and (inventory ?p ?it) (not (at ?it ?l)))\n   )"
+        ],
+        "goal_state": "((at npc basement) (at kids basement))"
+    },
+    {
+        "task": "prepare-for-attack",
+        "step": [
+            "get phone bedroom npc",
+            "get ipad bedroom npc",
+            "go down npc bedroom kitchen",
+            "get aluminum_foil kitchen npc",
+            "get laptop kitchen npc",
+            "go down npc kitchen basement",
+            "get trashcan basement npc",
+            "get trashlid basement npc",
+            "get nintendo_switch basement npc",
+            "create_cage npc basement",
+            "put_in_cage npc basement phone",
+            "put_in_cage npc basement nintendo_switch",
+            "put_in_cage npc basement laptop",
+            "put_in_cage npc basement ipad",
+            "close_cage npc basement"
+        ],
+        "desc": [
+            "You can drive it if you absolutely have to, but it\u2019s safer to stay off of the roads if you can."
+        ],
+        "action": [
+            "(:action put_in_cage ; put item in the farraday cage\n      :parameters (?p - player ?loc - location ?it - item)\n      :precondition (and (at farraday_cage ?loc) (inventory ?p ?it))\n      :effect (and (in_cage ?it) (not (inventory ?p ?it))  (not (cage_closed farraday_cage)))\n   )\n\n)",
+            "(:action close_cage ; Close the farraday cage\n      :parameters (?p - player ?loc - location)\n      :precondition (and (at farraday_cage ?loc) (inventory ?p trashlid))\n      :effect (cage_closed farraday_cage)\n   )",
+            "(:action go\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get\n      :parameters (?it - item ?l - location ?p - player)\n      :precondition (and (at ?it ?l) (at ?p ?l))\n      :effect (and (inventory ?p ?it) (not (at ?it ?l)))\n   )",
+            "(:action create_cage ; create a farraday cage\n      :parameters (?p - player ?loc - location)\n      :precondition (and (inventory ?p trashcan) (inventory ?p aluminum_foil))\n      :effect (and (at farraday_cage ?loc) (not (inventory ?p trashcan)) (not (inventory ?p aluminum_foil)))\n   )"
+        ],
+        "goal_state": "((in_cage phone) (in_cage ipad) (in_cage laptop) (in_cage nintendo_switch) (cage_closed farraday_cage))"
+    }
+]

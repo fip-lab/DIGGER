@@ -1,0 +1,6 @@
+[
+    "(:action clean ; Clean an item and update its status\n  :parameters (?actor - agent ?item - object ?cleaner - object ?tool - object)\n  :precondition (and \n    (at ?actor ?item) \n    (inventory ?actor ?cleaner) \n    (or (and (cloth ?item) (at ?item storage) (at ?tool storage))\n        (and (window ?item) (or (clean ?tool) (scraped ?item)) (or (and (chemical_solvent ?cleaner) (at ?paint_splatters ?item))\n                                                                    (glass_cleaner ?cleaner)))\n        (and (paint_splatters ?item) (at ?item ?window)))\n  )\n  :effect (and \n    (or (and (cloth ?item) (not (dirty ?item))",
+    "(:action wet_window_with_water\n  :parameters (?p - player ?w - window ?water - water)\n  :precondition (and (at ?p ?w) (has_water ?water))\n  :effect (and (wet ?w) (not (dry ?w))",
+    "(:action wet ; Wet a resource and update its state\n  :parameters (?agent - entity ?resource - entity ?liquid - entity)\n  :precondition (and (at ?agent ?resource) (has_liquid ?liquid))\n  :effect (and (wet ?resource) (not (dry ?resource))",
+    "(:action position ; Position an item and update the state of the target\n  :parameters (?p - player ?r - object ?w - target)\n  :precondition (and (at ?p ?w) (inventory ?p ?r))\n  :effect (and (positioned ?r ?w) (scraped ?w) (not (painted ?w))"
+]

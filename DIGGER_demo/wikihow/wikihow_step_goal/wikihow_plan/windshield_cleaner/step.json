@@ -1,0 +1,271 @@
+{
+    "goal": "Make a Simple Inside Windshield Cleaner",
+    "steps": [
+        "Purchase a blackboard eraser.",
+        "Keep the blackboard eraser in the glove box or attach it to a spot on or near the car door for easy access.",
+        "Use the eraser to clean the inner side of the windshield.",
+        "Replace after use."
+    ],
+    "topics": "Cars & Other Vehicles",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/a/ab/Make-a-Simple-Inside-Windshield-Cleaner-Step-1.jpg/aid514012-v4-728px-Make-a-Simple-Inside-Windshield-Cleaner-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/c/cc/Make-a-Simple-Inside-Windshield-Cleaner-Step-2.jpg/aid514012-v4-728px-Make-a-Simple-Inside-Windshield-Cleaner-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/4/42/Make-a-Simple-Inside-Windshield-Cleaner-Step-3.jpg/aid514012-v4-728px-Make-a-Simple-Inside-Windshield-Cleaner-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/e/e0/Make-a-Simple-Inside-Windshield-Cleaner-Step-4.jpg/aid514012-v4-728px-Make-a-Simple-Inside-Windshield-Cleaner-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "eraser",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "possession",
+                        "before": "at store | in store",
+                        "after": "now owned by you | owned | purchased",
+                        "saliency": 0.6376811594202899,
+                        "attribute_annotation": "possession | ownership"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in store | on shelf",
+                        "after": "at customer's house | in home",
+                        "saliency": 0.37888198757763975,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "outside of car",
+                        "after": "now stored in car",
+                        "saliency": 0.474120082815735,
+                        "attribute_annotation": "placement"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "condition",
+                        "before": "new",
+                        "after": "used",
+                        "saliency": 0.39648033126293997,
+                        "attribute_annotation": "condition"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in glovebox | in glove box",
+                        "after": "on windshield | on dash",
+                        "saliency": 0.37888198757763975,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "sitting",
+                        "after": "rubbing",
+                        "saliency": 0.17236024844720496,
+                        "attribute_annotation": "movement"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "on windshield | on glass",
+                        "after": "in glovebox | in glove box",
+                        "saliency": 0.32712215320910976,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "rubbing",
+                        "after": "resting",
+                        "saliency": 0.12060041407867494,
+                        "attribute_annotation": "movement"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "the blackboard eraser | eraser"
+            ]
+        },
+        {
+            "entity": "glovebox",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "away from car",
+                        "after": "inside car",
+                        "saliency": 0.49965493443754305,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "less full | empty",
+                        "after": "more full | full",
+                        "saliency": 0.3530020703933748,
+                        "attribute_annotation": "fullness"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "glovebox",
+                "glove box"
+            ]
+        },
+        {
+            "entity": "bank account",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "fullness",
+                        "before": "more full",
+                        "after": "more empty",
+                        "saliency": 0.4910282953761215,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in customer's hand",
+                        "after": "in cashier's hand",
+                        "saliency": 0.31849551414768806,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "eraser shelf at the store",
+                "bank account",
+                "money"
+            ]
+        },
+        {
+            "entity": "inside windshield",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean",
+                        "saliency": 0.4133885438233264,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "windshield",
+                "inside windshield"
+            ]
+        },
+        {
+            "entity": "hands",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "activity",
+                        "before": "relaxed",
+                        "after": "active",
+                        "saliency": 0.1808143547273982,
+                        "attribute_annotation": "activity"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "activity",
+                        "before": "working on windshield",
+                        "after": "relaxed",
+                        "saliency": 0.1808143547273982,
+                        "attribute_annotation": "activity"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "hands"
+            ]
+        }
+    ],
+    "clusters": {
+        "eraser": {
+            "entity_cluster": [
+                "eraser",
+                "the blackboard eraser"
+            ],
+            "attribute_cluster": {
+                "possession": [
+                    "ownership",
+                    "possession"
+                ],
+                "location": [
+                    "placement",
+                    "location"
+                ],
+                "condition": [
+                    "condition",
+                    "cleanness"
+                ],
+                "movement": [
+                    "movement"
+                ]
+            }
+        },
+        "hands": {
+            "entity_cluster": [
+                "hands"
+            ],
+            "attribute_cluster": {
+                "activity": [
+                    "activity"
+                ]
+            }
+        },
+        "glovebox": {
+            "entity_cluster": [
+                "glove box",
+                "glovebox"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "fullness": [
+                    "fullness"
+                ]
+            }
+        },
+        "inside windshield": {
+            "entity_cluster": [
+                "inside windshield",
+                "windshield"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "bank account": {
+            "entity_cluster": [
+                "eraser shelf at the store",
+                "bank account",
+                "money"
+            ],
+            "attribute_cluster": {
+                "fullness": [
+                    "fullness"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        }
+    }
+}

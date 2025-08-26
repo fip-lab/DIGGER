@@ -1,0 +1,1270 @@
+[
+    {
+        "step": [
+            "Bend one pipe cleaner in half to form the legs.",
+            "Shape another pipe cleaner to form the body.",
+            "Move 1.5 inches (3.8 cm) from the tip of where the beak should be.",
+            "Use 2 pipe cleaners to enlarge the torso."
+        ],
+        "task": "Make a Pipe Cleaner Bird",
+        "goal_state": "make_pipe_cleaner bird",
+        "steps": "```\npickup(pipe_cleaner agent)\npickup(feathers agent)\npickup(glue agent)\nassemble(pipe_cleaner feathers glue agent)\nshape(pipe_cleaner agent bird_shape)\ndecorate(bird_shape feathers agent)\n```",
+        "similar_task": [
+            {
+                "task": "Clean Your Home Efficiently",
+                "step": [
+                    "######Pick up and put away stray items and throw trash into waste baskets.",
+                    "######Dust, again going through the entire house room by room.",
+                    "######Take a large trash bag and go through each room emptying the waste baskets and trash cans.",
+                    "######Use a spray cleaner and rags or paper towels to clean any glass surfaces, including the TV screens.",
+                    "First pick up any throw rugs and inside door mats and shake them outside.",
+                    "######Enjoy your clean home!"
+                ],
+                "steps_predictions": [
+                    "pickup_items item1 basket1",
+                    "get_dust_room rug1",
+                    "empty_trash basket1 trash_bag1",
+                    "clean_surface tv cleaner1",
+                    "pickup_throw_rugs rug1",
+                    "clean_room npc basement"
+                ],
+                "similar_entity": {
+                    "basket": {
+                        "trash bags": [
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on floor | laying around",
+                                "after": "in waste baskets | in waste baskts | in trashcan"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in waste baskets",
+                                "after": "in trash bag"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "flat",
+                                "after": "rounder"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Cesto]] is a translation of [[basket]]",
+                            "You are likely to find [[a small dog]] in [[a basket]]",
+                            "[[a basket]] is for [[carrying something]]"
+                        ]
+                    },
+                    "trash bag": {
+                        "trash bags": [
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on floor | laying around",
+                                "after": "in waste baskets | in waste baskts | in trashcan"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in waste baskets",
+                                "after": "in trash bag"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "flat",
+                                "after": "rounder"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "rug": {
+                        "throw rugs and inside door mats": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean | cleaner"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a rug]] is for [[floor covering]]",
+                            "*Something you find on [[the rug]] is [[a stain]]",
+                            "[[Tapete]] is a translation of [[rug]]",
+                            "[[carpet]] is related to [[rug]]"
+                        ]
+                    },
+                    "cleaner": {
+                        "spray cleaner": [
+                            {
+                                "attribute": "location",
+                                "before": "inside bottle",
+                                "after": "on windows"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[soap]] is related to [[cleaner]]"
+                        ]
+                    },
+                    "item": {
+                        "straw items": [
+                            {
+                                "attribute": "location",
+                                "before": "around house",
+                                "after": "in waste basket"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "disorganized",
+                                "after": "organized"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[price]] is related to [[item]]"
+                        ]
+                    },
+                    "tv": {
+                        "tv": [
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "unplugged",
+                                "after": "plugged in"
+                            },
+                            {
+                                "attribute": "attachment",
+                                "before": "unattached",
+                                "after": "connected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[TV]] is [[an abbreviation for television]]",
+                            "*Something you find at [[your house]] is [[a tv]]",
+                            "[[using a VCR]] requires [[A TV]]",
+                            "[[tv]] is [[short for television]]",
+                            "[[a tv]] is used for [[entertainment]]",
+                            "[[news]] is related to [[tv]]"
+                        ]
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Blend the cream cheese and marshmallow cream until combined.",
+            "Pour the mixture into a clean bowl.",
+            "Serve with fruit or whatever else you like.",
+            "Finished."
+        ],
+        "task": "Make Marshmallow Cream Cheese Fruit Dip",
+        "goal_state": "make_cream_dip marshmallow1 cream1",
+        "steps": "```pddl\n(place blender marshmallow1 cream1)\n(blend blender marshmallow1 cream1)\n(add blender fruit1)\n(blend blender marshmallow1 cream1 fruit1)\n(serve blender dip)\n```",
+        "similar_task": [
+            {
+                "task": "Make a Banana Strawberry Rum Smoothie",
+                "step": [
+                    "Place the yogurt, bananas, and sorbet in a blender.",
+                    "Blend the mixture until it's smooth in texture.",
+                    "Pour the rum in and quickly blend again.",
+                    "Pour the smoothie into chilled glasses.",
+                    "Garnish each glass with a strawberry."
+                ],
+                "steps_predictions": [
+                    "place-ingredients bananas sorbet yogurt blender-1",
+                    "blend_into_texture blender",
+                    "add-rum-and-blend rum blender",
+                    "pour-into-glass blender-1 glass-filled",
+                    "garnish-glass glass-1"
+                ],
+                "similar_entity": {
+                    "blender-": {
+                        "the blender": [
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "soaked in pineapple | covered in pineapple"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty | smelling like nothing",
+                                "after": "full of pineapple | smelling like pineapple"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "isolated",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "stationary",
+                                "after": "spinning"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller | heavier",
+                                "after": "less full | lighter"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "glass-": {
+                        "glasses": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "ungarnished",
+                                "after": "garnished"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "decoration",
+                                "before": "undecorated",
+                                "after": "decorated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "glass-filled": {
+                        "glasses": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "ungarnished",
+                                "after": "garnished"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "decoration",
+                                "before": "undecorated",
+                                "after": "decorated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "yogurt": {
+                        "yogurt": [
+                            {
+                                "attribute": "location",
+                                "before": "in tub | in container",
+                                "after": "in blender"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "rum": {
+                        "rum": [
+                            {
+                                "attribute": "locaion",
+                                "before": "in botle",
+                                "after": "in pitcher"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[rum]] is related to [[alcohol]]"
+                        ]
+                    },
+                    "bananas": {
+                        "sorber": [
+                            {
+                                "attribute": "location",
+                                "before": "in tub | in refrigerator/freezer | in container",
+                                "after": "in blender"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "45 degrees",
+                                "after": "32 degrees"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "non-alcoholic",
+                                "after": "alcoholic"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "blender": {
+                        "the blender": [
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "soaked in pineapple | covered in pineapple"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty | smelling like nothing",
+                                "after": "full of pineapple | smelling like pineapple"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "isolated",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "stationary",
+                                "after": "spinning"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller | heavier",
+                                "after": "less full | lighter"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[blender]]"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Firstly, lay out all the equipment you are going to use-whatever pattern it is.",
+            "Start with your rucksack, this is the biggest piece of your personal kit so needs the most camouflage.",
+            "Next, move on to the helmet.",
+            "Be careful with webbing.",
+            "Be extremely cautious when disguising your weapon.",
+            "Vehicles really need a vehicle camouflage net."
+        ],
+        "task": "Camouflage Equipment",
+        "goal_state": " ((equip_equipment Camouflage Equipment))",
+        "steps": "```\nset(camouflage_gear camouflage_equipment)\ngather(camouflage_material leaves)\ngather(camouflage_material paint)\nset(final_touch camouflage_equipment)\n```",
+        "similar_task": [
+            {
+                "task": "Be a Spy With Friends",
+                "step": [
+                    "Set-up your spy group You will need a trustworthy 2-5 person group.",
+                    "It's good to have a place to keep your gear when not in use, hold meetings, and just talk in private without worrying about the nosiness of certain people in public places.",
+                    "Get some gear To be a good spy, you and your friends must have gear that will help with missions.",
+                    "Find your first \"victim\" The victim is the person you will be watching and spying on."
+                ],
+                "steps_predictions": [
+                    "set_spy_group co_conspirator1 co",
+                    "talk_in_private npc",
+                    "gather_gear you camera, gather_equipment you binoculars",
+                    "find_victim victim1"
+                ],
+                "similar_entity": {
+                    "gather equipment": {
+                        "equipment": [
+                            {
+                                "attribute": "organization",
+                                "before": "scattered | laying sporadically",
+                                "after": "organized | gathered"
+                            },
+                            {
+                                "attribute": "equipment",
+                                "before": "unorganized",
+                                "after": "laid in pattern"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "co conspirator": {
+                        "co-conspirators": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unenlisted",
+                                "after": "enlisted"
+                            },
+                            {
+                                "attribute": "forming",
+                                "before": "unformed",
+                                "after": "now formed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "co": {
+                        "person": [
+                            {
+                                "attribute": "volume",
+                                "before": "silent",
+                                "after": "talking"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unsupported",
+                                "after": "supported"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            null
+                        ]
+                    },
+                    "camera,": {
+                        "tv": [
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "unplugged",
+                                "after": "plugged in"
+                            },
+                            {
+                                "attribute": "attachment",
+                                "before": "unattached",
+                                "after": "connected"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "binoculars": {
+                        "glasses": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "ungarnished",
+                                "after": "garnished"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "decoration",
+                                "before": "undecorated",
+                                "after": "decorated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "victim": {
+                        "person": [
+                            {
+                                "attribute": "volume",
+                                "before": "silent",
+                                "after": "talking"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unsupported",
+                                "after": "supported"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Simmer the rhubarb with the sugar, cloves and water.",
+            "Simmer until the rhubarb becomes soft.",
+            "Remove from the heat.",
+            "Add the mint leaves for decoration."
+        ],
+        "task": "Make Rhubarb Cordial",
+        "goal_state": "make_cordial rhubarb cordial",
+        "steps": "```pddl\nprepare(actor rhubarb)\ndip(p rhubarb cordial)\n```",
+        "similar_task": [
+            {
+                "task": "Grow a Rose Bush from Rose Bush Cuttings",
+                "step": [
+                    "Prepare the pot or area in your yard where you plan to plant your clipping.",
+                    "Take a cutting from the rose bush you would like to grow your new bush from.",
+                    "Moisten the part of the clipping that you just scraped and dip it into rooting hormone.",
+                    "Immediately plant the cutting."
+                ],
+                "steps_predictions": [
+                    "prepare_area clipping",
+                    "take_cutting clipping",
+                    "dip_in_hormide npc",
+                    "plant_cutting clipping"
+                ],
+                "similar_entity": {
+                    "clipping": {
+                        "the clipping": [
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "cut"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "drier | dry",
+                                "after": "wetter | moister | moistened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "pure",
+                                "after": "dipped into rooting hormone"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Pour the ingredients (except the garnish) into a pitcher that can hold 100 ounces.",
+            "Ensure everything is mixed thoroughly.",
+            "Allow the mixture to chill in the refrigerator until ready to serve.",
+            "Pour the mixture into tall glasses.",
+            "Add a chunk of honeydew melon on the side of each glass.",
+            "Finished."
+        ],
+        "task": "Make a Pitcher of Melon Pina Coladas",
+        "goal_state": "make_pistachio_coladas velveeta",
+        "steps": "```pddl\n(place actor coladas pitcher)\n(blend blender coladas melon)\n(blend blender coladas pina)\n(blend blender coladas rum)\n(pour blender pitcher)\n```",
+        "similar_task": [
+            {
+                "task": "Make a Banana Strawberry Rum Smoothie",
+                "step": [
+                    "Place the yogurt, bananas, and sorbet in a blender.",
+                    "Blend the mixture until it's smooth in texture.",
+                    "Pour the rum in and quickly blend again.",
+                    "Pour the smoothie into chilled glasses.",
+                    "Garnish each glass with a strawberry."
+                ],
+                "steps_predictions": [
+                    "place-ingredients bananas sorbet yogurt blender-1",
+                    "blend_into_texture blender",
+                    "add-rum-and-blend rum blender",
+                    "pour-into-glass blender-1 glass-filled",
+                    "garnish-glass glass-1"
+                ],
+                "similar_entity": {
+                    "blender-": {
+                        "the blender": [
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "soaked in pineapple | covered in pineapple"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty | smelling like nothing",
+                                "after": "full of pineapple | smelling like pineapple"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "isolated",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "stationary",
+                                "after": "spinning"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller | heavier",
+                                "after": "less full | lighter"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "glass-": {
+                        "glasses": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "ungarnished",
+                                "after": "garnished"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "decoration",
+                                "before": "undecorated",
+                                "after": "decorated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "glass-filled": {
+                        "glasses": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "ungarnished",
+                                "after": "garnished"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "decoration",
+                                "before": "undecorated",
+                                "after": "decorated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "yogurt": {
+                        "yogurt": [
+                            {
+                                "attribute": "location",
+                                "before": "in tub | in container",
+                                "after": "in blender"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "rum": {
+                        "rum": [
+                            {
+                                "attribute": "locaion",
+                                "before": "in botle",
+                                "after": "in pitcher"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[rum]] is related to [[alcohol]]"
+                        ]
+                    },
+                    "bananas": {
+                        "sorber": [
+                            {
+                                "attribute": "location",
+                                "before": "in tub | in refrigerator/freezer | in container",
+                                "after": "in blender"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "45 degrees",
+                                "after": "32 degrees"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "non-alcoholic",
+                                "after": "alcoholic"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "blender": {
+                        "the blender": [
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "soaked in pineapple | covered in pineapple"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty | smelling like nothing",
+                                "after": "full of pineapple | smelling like pineapple"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "isolated",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "stationary",
+                                "after": "spinning"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller | heavier",
+                                "after": "less full | lighter"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[blender]]"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Mix soap and water.",
+            "Enhance your bubble solution.",
+            "Make a little bubble wand.",
+            "Make a giant bubble wand.",
+            "First go outside, since bubbles look most beautiful when the sun shines through their iridescent swirls.",
+            "Make giant bubbles."
+        ],
+        "task": "Make Soap Bubbles for Your Children",
+        "goal_state": "make_bubble alice",
+        "steps": "```pddl\n1. mix_ingredients alice bubble_solution\n2. pour_into_container alice bubble_solution container\n3. gotolocation alice container garden\n4. process_item alice bubble_wand container garden dry wet\n5. make_bubble alice\n```",
+        "similar_task": [
+            {
+                "task": "Make Seasoned Salt",
+                "step": [
+                    "Mix the ingredients together thoroughly.",
+                    "Pour into an air-tight container with a lid.",
+                    "It goes well in dips, salad dressings, soups and on sandwiches.",
+                    "Grind the ingredients together in a mortar and pestle.",
+                    "Transfer to a storage container as needed."
+                ],
+                "steps_predictions": [
+                    "mix_ingredients mixture",
+                    "pour-into-container container1",
+                    "dip_sand npc",
+                    "grind-ingredients alice mortar_and_pestle",
+                    "gotolocation agent container"
+                ],
+                "similar_entity": {
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "agent": {
+                        "game character": [
+                            {
+                                "attribute": "location",
+                                "before": "further out",
+                                "after": "in"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "out",
+                                "after": "hidden"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "pulling out pistol",
+                                "after": "investigating"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "investigating routes",
+                                "after": "waiting"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hiding spot",
+                                "after": "now at bomb"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "hiding",
+                                "after": "defusing"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[agent]] is related to [[secret]]"
+                        ]
+                    },
+                    "mortar and pestle": {
+                        "mortar and pestle": [
+                            {
+                                "attribute": "fullness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "status",
+                                "before": "idle | on table | absent",
+                                "after": "used | in mortar | present"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "mixture": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    }
+]

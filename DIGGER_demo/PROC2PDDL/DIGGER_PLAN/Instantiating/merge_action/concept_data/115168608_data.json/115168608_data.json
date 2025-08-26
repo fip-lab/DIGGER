@@ -1,0 +1,13 @@
+{
+    "collect": [
+        "(:action collect_wood\n    :parameters (?w - wood ?l - location)\n    :precondition (and\n      (at ?w ?l)\n      (not (collected ?w))\n    )\n    :effect (and\n      (collected ?w)\n      (not (at ?w ?l))\n    )\n)\n```\n\n#### Action 2: Collect Nails\n```pddl\n",
+        "(:action collect_nails\n    :parameters (?n - nails ?l - location)\n    :precondition (and\n      (at ?n ?l)\n      (not (collected ?n))\n    )\n    :effect (and\n      (collected ?n)\n      (not (at ?n ?l))\n    )\n)\n```\n\n#### Action 3: Collect Tools\n```pddl\n",
+        "(:action collect_tools\n    :parameters (?t - tool ?l - location)\n    :precondition (and\n      (at ?t ?l)\n      (not (collected ?t))\n    )\n    :effect (and\n      (collected ?t)\n      (not (at ?t ?l))\n    )\n)\n```\n\n### Explanation\n- **Action Name**: The name reflects the specific material being collected.\n- **Parameters**: Include the material and its location.\n- **Preconditions**: Ensure the material is at a specific location and not already collected.\n- **Effects**: Update the state to reflect that the material is collected and no longer at the initial location.\n\nIf you provide specific steps, descriptions, and entity states, I can refine these actions to better fit your task."
+    ],
+    "buy": [
+        "(:action buy_papyrus\n    :parameters (?npc - agent ?p - papyrus)\n    :precondition (and (not (obtained ?p)) (not (knowledge ?p)))\n    :effect (and (obtained ?p) (knowledge ?p))\n)\n\n;; Action 2: Make River Reeds\n"
+    ],
+    "make": [
+        "(:action make_river_reeds\n    :parameters (?npc - agent ?p - papyrus ?r - riverside)\n    :precondition (and (obtained ?p) (not (knowledge ?r)) (not (made ?p)))\n    :effect (and (knowledge ?r) (made ?p))\n)\n```\n\n### Explanation\n\n1. **Action Name**: Each action is named after the task step it represents.\n   \n2. **Parameters**: The parameters include the involved entities such as `npc` (non-player character or agent), `papyrus`, and `riverside`.\n\n3. **Preconditions**:\n   - **buy_papyrus**: The papyrus must not have been obtained or known yet.\n   - **make_river_reeds**: The papyrus must be obtained, the riverside must not be known, and the papyrus must not be made yet.\n\n4. **Effects**:\n   - **buy_papyrus**: The papyrus becomes obtained, and knowledge about it is acquired.\n   - **make_river_reeds**: Knowledge about the riverside is acquired, and the papyrus is made from river reeds.\n\nThese actions capture the intent of obtaining a papyrus plant and making paper from river reeds, as described in the task and entity states."
+    ]
+}

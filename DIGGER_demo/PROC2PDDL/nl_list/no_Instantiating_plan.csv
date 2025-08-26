@@ -1,0 +1,46 @@
+task,nl_step
+3-decorate,"**Task**: 3-decorate
+
+**Steps in Natural Language**:
+1. Use scissors to decorate."
+prepare_meat,"**Task**: prepare_meat
+
+**Steps in Natural Language**:
+1. Use a knife to carve the animal where it is located.
+2. Cook the carved animal over the fire until it is thoroughly cooked."
+pick_hard_lock,"**Task**: pick_hard_lock
+
+**Steps in Natural Language**:
+1. Insert the tool into the lock and push it carefully to manipulate the locking mechanism and unlock the door."
+finishing_papyrus,"**Task**: finishing_papyrus  
+**Steps in Natural Language**:
+1. **Cut the papyrus stalks.** Use a sharp knife or scissors to carefully remove the stalks from the papyrus plants.
+2. **Peel the papyrus strips.** Gently remove the outer layers from the papyrus strips to create a smooth surface.
+3. **Lay the papyrus strips in the designated drying area.** Spread out the prepared papyrus strips on the specified location to allow them to dry properly."
+gather_kindling,"**Task**: gather_kindling
+
+**Steps in Natural Language**:
+1. **Search the area for kindling materials**. Look around your designated area to find small, dry branches, twigs, or leaves that can be used as kindling.
+2. **Gather the available kindling from the selected area**. Collect the small branches and twigs you found, making sure they are dry and suitable for use.
+3. **Collect the gathered kindling and prepare it for use**. Ensure each piece of kindling is dry and organized, ready to be used for building a fire.
+4. **Place the prepared kindling in your designated storage location**. Store the collected kindling in a safe and accessible spot for easy use when starting a fire."
+make_papyrus,"**Task**: make_papyrus  
+**Steps in Natural Language**:
+1. Buy papyrus from a craft store or an online supplier.
+2. Create papyrus at your workspace by processing the purchased materials."
+move_to_bunker,"**Task**: move_to_bunker
+
+**Steps in Natural Language**:
+1. Identify a strong and safe bunker that includes a basement.
+2. Move to the chosen bunker and enter its basement.
+3. Take shelter in the basement to stay protected and hidden."
+ready_sc,"**Task**: ready_sc
+
+**Steps in Natural Language**:
+1. Check the SC by ensuring you are available, have not already checked it, and are in the correct context. Then verify the SC, update its status, and learn its functionality.
+2. Obtain the resource by going to its location and acquiring it, ensuring the resource is no longer available there."
+heal-old-man,"**Task**: heal-old-man
+
+**Steps in Natural Language**:
+1. Use a knife to carefully open the coconut by cutting it and place it on a rack to drain the coconut water into a glass. Ensure the glass is positioned securely to collect all the liquid.
+2. Wrap the old man with a clean bandage, making sure to cover his injuries snugly to support the healing process."

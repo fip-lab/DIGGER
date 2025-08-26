@@ -1,0 +1,16 @@
+{
+    "choose": [
+        "(:action choose_plant\n    :parameters (?p - player ?f - fir ?n - nursery)\n    :precondition (and (at ?p ?n) (at ?f ?n))\n    :effect (and (inventory ?p ?f) (not (at ?f ?n)))\n)\n\n",
+        "(:action choose_soil\n    :parameters (?p - player ?s - soil ?g - garden_center)\n    :precondition (and (at ?p ?g) (at ?s ?g))\n    :effect (and (inventory ?p ?s) (not (at ?s ?g)))\n)\n\n",
+        "(:action select_container\n    :parameters (?p - player ?c - container ?g - garden_center)\n    :precondition (and (at ?p ?g) (at ?c ?g))\n    :effect (and (inventory ?p ?c) (not (at ?c ?g)))\n)\n\n"
+    ],
+    "establish": [
+        "(:action establish_plant\n    :parameters (?p - player ?f - fir ?c - container)\n    :precondition (and (planted ?f ?c) (at ?f ?c) (at ?p ?c))\n    :effect (and (established ?f ?c))\n)\n\n"
+    ],
+    "plant": [
+        "(:action plant_fir\n    :parameters (?p - player ?f - fir ?c - container ?s - soil)\n    :precondition (and (inventory ?p ?f) (inventory ?p ?c) (inventory ?p ?s))\n    :effect (and (not (inventory ?p ?f)) (not (inventory ?p ?s)) (planted ?f ?c) (at ?f ?c))\n)\n\n"
+    ],
+    "re": [
+        "(:action re_pot\n    :parameters (?p - player ?f - fir ?c1 - container ?c2 - container)\n    :precondition (and (at ?p ?c1) (at ?f ?c1) (established ?f ?c1) (inventory ?p ?c2))\n    :effect (and (not (at ?f ?c1)) (not (established ?f ?c1)) (at ?f ?c2) (established ?f ?c2))\n)\n```\n\nThese actions represent the steps required to grow a Dwarf Balsam Fir, including choosing the plant, selecting a container, choosing soil, planting the fir, establishing the plant, and repotting it when necessary."
+    ]
+}

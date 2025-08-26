@@ -1,0 +1,12 @@
+[
+    "(:action move_to_storage_room\n    :parameters (?a - agent ?r - room)\n    :precondition (and\n      (at ?a ?current_location)\n      (is_storage_room ?r)\n    )\n    :effect (and\n      (not (at ?a ?current_location))",
+    "(:action locate_required_material\n    :parameters (?a - agent ?m - material ?r - room)\n    :precondition (and\n      (at ?a ?current_location)\n      (material_location ?m ?r)\n    )\n    :effect (and\n      (not (at ?a ?current_location))",
+    "(:action move\n    :parameters (?a - agent ?r - room ?m - object)\n    :precondition (and\n      (at ?a ?current_location)\n      (or (is_storage_room ?r) (material_location ?m ?r))\n    )\n    :effect (and\n      (not (at ?a ?current_location))",
+    "(:action pick ; Pick a resource and update its location status\n    :parameters (?agent - agent ?item - object ?location - location)\n    :precondition (and\n        (at ?agent ?location)\n        (located ?item ?location)\n        (not (carrying ?agent ?item))\n    )\n    :effect (and\n        (carrying ?agent ?item)\n        (not (located ?item ?location))",
+    "(:action bring\n    :parameters (?agent - entity ?item - object ?from - location ?to - location)\n    :precondition (and\n        (at ?agent ?from)\n        (carrying ?agent ?item)\n    )\n    :effect (and\n        (not (at ?agent ?from))",
+    "(:action select ; Select a resource or area and update its status\n  :parameters (?agent - entity ?resource - object)\n  :precondition (and (not (selected ?resource)))\n  :effect (selected ?resource)\n)",
+    "(:action wet\n  :parameters (?entity - object)\n  :precondition (and (dry ?entity) (on-ground ?entity))\n  :effect (and (wet ?entity) (in-container ?entity))",
+    "(:action camouflage\n    :parameters (?entity - object ?agent - agent)\n    :precondition (and (plain ?entity) (visible ?agent))\n    :effect (and (camouflaged ?entity) (invisible ?agent))",
+    "(:action locate\n    :parameters (?a - agent ?i - item ?r - room)\n    :precondition (and\n      (at ?a ?r)\n      (is_storage_room ?r)\n      (in ?i ?r)\n    )\n    :effect (and\n      (located ?a ?i)\n    )",
+    "(:action pick_up\n    :parameters (?a - agent ?i - item ?r - room)\n    :precondition (and\n      (at ?a ?r)\n      (located ?a ?i)\n    )\n    :effect (and\n      (has ?a ?i)\n      (not (located ?a ?i))"
+]

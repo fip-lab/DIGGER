@@ -1,0 +1,190 @@
+[
+    {
+        "cluster_label": 793,
+        "task": "How to Make Fizzy Salts",
+        "step": [
+            "Mix the Epsom salts, sea salt and baking soda together well.",
+            "Add a few drops of food color for desired color.",
+            "Add 1 tablespoon of skin safe fragrance oil.",
+            "Add 1/2 cup of citric acid.",
+            "Use a funnel to pour the fizzy salts mixture in a jar or container.",
+            "Seal the jar or container."
+        ],
+        "steps_predictions": [
+            "mix_ingredients alice mixing_bowl",
+            "add-ingredient food_color",
+            "add_ingredients_to_frume_oil user1 alice",
+            "add-ingredients citric acid1 cup1",
+            "pour_salt_into_glass fizzy_drink faucet",
+            "sliplargerbeads container"
+        ]
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make Lemon Salt",
+        "step": [
+            "Measure 1 cup of lemon juice, and 2 tablespoons of salt together in a small bowl.",
+            "Place the lemon juice and salt in a pan and boil.",
+            "Scrape off the crust with a spoon.",
+            "Place the crust in a clean bowl.",
+            "Continue to boil.",
+            "Keep the process going.",
+            "Drain all of the juice from the crust.",
+            "Put the crust, now dry, in a small container.",
+            "Eat little by little, or save to put on top of flavorless crackers."
+        ],
+        "steps_predictions": [
+            "mix_lemon_juice lemon_salt mixing_bowl",
+            "place-lemon-juice lemon-salt stove-knob",
+            "scrape-off-crust crust",
+            "place-in-bowl crust",
+            "boiled_water pot water",
+            "keep_process going process",
+            "drain_lemon npc",
+            "put_rusting_in_container velveeta",
+            "eat_cheese npc"
+        ]
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make a Water Colour Salt Painting",
+        "step": [
+            "Set up your painting area.",
+            "Wet your paper.",
+            "Paint with watercolors.",
+            "Sprinkle some salt over the still-wet painting.",
+            "Let the painting dry.",
+            "When the painting is dry, tip the paper up gently and shake the excess salt off.",
+            "Finished!."
+        ],
+        "steps_predictions": [
+            "set_area area",
+            "wet_paper npc papyrus",
+            "create_painting watercolors",
+            "sprinkle-salt painting",
+            "dry_painting painting",
+            "tip_paper_add_salt npc",
+            "finish-wreath wreath-1"
+        ]
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make a Salt Dough Name Banner",
+        "step": [
+            "Gather the ingredients for salt dough.",
+            "Make the dough.",
+            "Knead the dough.",
+            "Divide the dough into pieces based on the letters in your name.",
+            "Shape the dough into the letters of your name.",
+            "Poke holes in the top of each letter.",
+            "Decorate!.",
+            "Bake the beads at 350 degrees for 30 minutes to an hour.",
+            "Paint the letters and add any more decorations.",
+            "String together all the letters."
+        ],
+        "steps_predictions": [
+            "gather_ingredients salt_dough mixing_bowl",
+            "make_dough npc",
+            "knead-dough dough1",
+            "dissolve_name npc",
+            "shape-dough dough1",
+            "poke_hole letter",
+            "decorate-room livingroom",
+            "cook npc",
+            "create_signal npc",
+            "string_letters npc covering_tracks track"
+        ]
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make Flavored Salt",
+        "step": [
+            "Select a flavored liquid for your salt.",
+            "Bring the liquid to a boil.",
+            "Heat the liquid until it forms a reduction.",
+            "Add the salt and dry the mixture."
+        ],
+        "steps_predictions": [
+            "select_flavorful_liquid alice",
+            "boil_water npc boil water",
+            "heat_loot npc",
+            "add_salt_and_dry mixture1"
+        ]
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make Colored Salt",
+        "step": [
+            "Choose a chalk color that you wish to use.",
+            "Cover the workspace with a large sheet of paper.",
+            "Pour the salt onto the paper.",
+            "Place the piece of chalk on its side, on the salt.",
+            "Using the paper as a funnel, pour the chalk-colored salt into a resealable bag or a storage container.",
+            "Done."
+        ],
+        "steps_predictions": [
+            "choose_chalk_color alice",
+            "cover_with_sheet npc covering_tracks track",
+            "pour_salt_into_paper canola_oil table",
+            "place_chalk_on_table chalk1 table1",
+            "pour_salt_into_bag bag",
+            "get_done npc"
+        ]
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Prepare a Sea Salt Soak",
+        "step": [
+            "Pour 453 g (1.9 cups) of fine grain sea salt into a bowl.",
+            "Consider adding 15 to 30 drops of scented or essential oil to the sea salt.",
+            "Mix the salts and oils thoroughly then store the mix in a glass container.",
+            "Add 120 g (1/2 cup) of the salt soak to a warm bath and let it dissolve.",
+            "Take a bath with the sea salt soak when you need to relax and unwind."
+        ],
+        "steps_predictions": [
+            "put_ingredients_in_bowl user1 bowl1",
+            "add-salt-to-leaves alice",
+            "mix_salt_and_oil mixture1 glass_container1",
+            "dissolve-salt water faucet",
+            "take_bath npc"
+        ]
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make Sandalwood Bath Salts",
+        "step": [
+            "Assemble ingredients.",
+            "Mix together dry ingredients in a ceramic bowl.",
+            "Add the essential oils.",
+            "Stir as you add the drops.",
+            "Place mixture into a small jar and screw on the lid.",
+            "Keep in a dry spot out of direct sunlight for 2 - 3 days to allow the oils to blend.",
+            "Use bath salts."
+        ],
+        "steps_predictions": [
+            "assemble_ingredients mixture",
+            "mix_dry_ingredients mixing_bowl pot",
+            "add-ingredients essential_oil oil1 bottle1",
+            "add-drops-to-drink mixture",
+            "place_mixture_in_lid user1 screw1 container1",
+            "blend_oil npc",
+            "use_bath_salt alice"
+        ]
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Salt\u2010Speckle Paper",
+        "step": [
+            "Vary the grain size to get different effects.",
+            "Add the salt immediately to the wet paint for a more wide-spread effect.",
+            "Wait 1-2 minutes for the paint to dry for more concentrated speckles.",
+            "Try adding salt to water to get bursts of color."
+        ],
+        "steps_predictions": [
+            "vary_grain_size grass_tinder",
+            "add_salt_to_painting canola_oil paint",
+            "wait1-2 minutes for_painting paint1",
+            "add-salt water water"
+        ]
+    }
+]

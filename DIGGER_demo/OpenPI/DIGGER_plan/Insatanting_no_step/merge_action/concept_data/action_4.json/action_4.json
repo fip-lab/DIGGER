@@ -1,0 +1,18 @@
+{
+    "acquire": [
+        "(:action acquire_fairy_moss\n  :parameters (?p - person ?n - nursery ?m - moss)\n  :precondition (and (at ?p ?n) (for_sale ?n ?m))\n  :effect (and (inventory ?p ?m) (not (for_sale ?n ?m)))\n)\n\n"
+    ],
+    "find": [
+        "(:action find_container\n  :parameters (?p - person ?c - container ?loc - location)\n  :precondition (and (at ?p ?loc) (available ?loc ?c))\n  :effect (and (inventory ?p ?c) (not (available ?loc ?c)))\n)\n\n"
+    ],
+    "fill": [
+        "(:action fill_bowl_with_water\n  :parameters (?p - person ?b - bowl ?w - water ?loc - location)\n  :precondition (and (inventory ?p ?b) (at ?p ?loc) (source ?loc ?w))\n  :effect (and (filled ?b ?w))\n)\n\n",
+        "(:action place_container\n  :parameters (?p - person ?c - container ?loc - location)\n  :precondition (and (inventory ?p ?c) (suitable_position ?loc))\n  :effect (and (at ?c ?loc) (not (inventory ?p ?c)))\n)\n\n"
+    ],
+    "add": [
+        "(:action add_fairy_moss\n  :parameters (?p - person ?b - bowl ?m - moss)\n  :precondition (and (inventory ?p ?b) (inventory ?p ?m) (filled ?b ?water))\n  :effect (and (in ?m ?b) (not (inventory ?p ?m)))\n)\n\n"
+    ],
+    "prune": [
+        "(:action prune_fairy_moss\n  :parameters (?p - person ?m - moss ?b - bowl)\n  :precondition (and (in ?m ?b) (at ?p ?b))\n  :effect (and (pruned ?m))\n)\n```\n\nDescriptions:\n- Ask for it at a nursery or garden center that specializes in pond plant varieties.\n- Find a suitable container.\n- Fill the bowl with water.\n- Add the fairy moss.\n- Place in a suitable position.\n- Prune.\n\nEntity State:\n- `fairy_moss`: {`moss`: [{'attribute': 'cost', 'before': 'for sale at nursery', 'after': 'purchased from nursery'}, {'attribute': 'wetness', 'before': 'dry', 'after': 'wetter'}, {'attribute': 'position', 'before': 'outside of bowl', 'after': 'inside of bowl'}, {'attribute': 'size', 'before': 'larger', 'after': 'smaller'}, {'attribute': 'shape', 'before': 'mess', 'after': 'pruned'}]}\n- `container`: {`container`: [{'attribute': 'location', 'before': 'in cabinet', 'after': 'on countertop'}, {'attribute': 'volume', 'before': 'empty', 'after': 'fuller'}, {'attribute': 'location', 'before': 'on countertop', 'after': 'on table'}]}\n- `water`: {`boiling pot`: [{'attribute': 'temperature', 'before': 'cold', 'after': 'hot'}, {'attribute': 'fullness', 'before': 'emptier', 'after': 'fuller'}, {'attribute': 'location', 'before': 'in pipes', 'after': 'out of faucet'}]}\n- `person`: {`person`: [{'attribute': 'inventory', 'before': 'empty', 'after': 'full'}, {'attribute': 'location', 'before': 'outside', 'after': 'inside'}]}\n- `nursery`: {`nursery`: [{'attribute': 'for_sale', 'before': 'available', 'after': 'sold'}]}\n\nNote: The entity states are used to define the preconditions and effects for each action. The actions follow the logical sequence of acquiring the fairy moss, preparing the container, and placing the moss in a suitable environment."
+    ]
+}

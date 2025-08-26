@@ -1,0 +1,15 @@
+{
+    "read": [
+        "(:action read_instructions\n      :parameters (?ins - instructions ?p - person)\n      :precondition (and (at ?ins ?p))\n      :effect (and (read ?ins))\n   )\n\n"
+    ],
+    "wash": [
+        "(:action wash_gore_tex\n      :parameters (?cl - clothing ?p - person ?wm - washing_machine)\n      :precondition (and (read ?ins) (at ?cl ?p) (is_gore_tex ?cl) (at ?wm ?p))\n      :effect (and (clean ?cl))\n   )\n\n",
+        "(:action wash_polar_fleece\n      :parameters (?pf - polar_fleece ?p - person ?wm - washing_machine)\n      :precondition (and (read ?ins) (at ?pf ?p) (at ?wm ?p))\n      :effect (and (clean ?pf))\n   )"
+    ],
+    "check": [
+        "(:action check_boots\n      :parameters (?b - boots ?p - person)\n      :precondition (and (at ?b ?p) (is_synthetic ?b))\n      :effect (and (checked ?b))\n   )\n\n"
+    ],
+    "clean": [
+        "(:action clean_sliplargerbund\n      :parameters (?j - jacket ?p - person)\n      :precondition (and (at ?j ?p) (contains_down ?j))\n      :effect (and (clean ?j))\n   )\n\n"
+    ]
+}

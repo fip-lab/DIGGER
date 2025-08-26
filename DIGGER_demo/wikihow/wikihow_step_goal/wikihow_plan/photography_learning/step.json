@@ -1,0 +1,84 @@
+{
+    "goal": "Learn Photography by Shooting Macro",
+    "steps": [
+        "Create a very small studio.",
+        "Have the appropriate sized reflectors.",
+        "Have a closeup lens.",
+        "Again, they don't need to be that big, but big enough to diffuse light for your small subject.",
+        "Start experimenting."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/5/59/Learn-Photography-by-Shooting-Macro-Step-1.jpg/aid2030305-v4-728px-Learn-Photography-by-Shooting-Macro-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/d/d3/Learn-Photography-by-Shooting-Macro-Step-2.jpg/aid2030305-v4-728px-Learn-Photography-by-Shooting-Macro-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/f/fe/Learn-Photography-by-Shooting-Macro-Step-3.jpg/aid2030305-v4-728px-Learn-Photography-by-Shooting-Macro-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/c/cb/Learn-Photography-by-Shooting-Macro-Step-4.jpg/aid2030305-v4-728px-Learn-Photography-by-Shooting-Macro-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/0/0b/Learn-Photography-by-Shooting-Macro-Step-5.jpg/aid2030305-v4-728px-Learn-Photography-by-Shooting-Macro-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "light",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "amount",
+                        "before": "bright",
+                        "after": "diffused",
+                        "saliency": 0.8015873015873016,
+                        "attribute_annotation": "amount"
+                    }
+                ],
+                "step5": []
+            },
+            "entity_annotation": [
+                "light"
+            ]
+        },
+        {
+            "entity": "studio",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent | considered | non-existent",
+                        "after": "set up | created",
+                        "saliency": 0.7929606625258799,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": []
+            },
+            "entity_annotation": [
+                "studio"
+            ]
+        }
+    ],
+    "clusters": {
+        "light": {
+            "entity_cluster": [
+                "light"
+            ],
+            "attribute_cluster": {
+                "amount": [
+                    "amount"
+                ]
+            }
+        },
+        "studio": {
+            "entity_cluster": [
+                "studio"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability"
+                ]
+            }
+        }
+    }
+}

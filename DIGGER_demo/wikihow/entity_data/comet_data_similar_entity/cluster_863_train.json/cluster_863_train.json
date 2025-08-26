@@ -1,0 +1,382 @@
+[
+    {
+        "cluster_label": 863,
+        "task": "How to Remove Hair from Your Bikini Area with Nair",
+        "step": [
+            "Decide how much hair you want to remove.",
+            "Clean up down south.",
+            "Trim your hair.",
+            "Wet the skin.",
+            "Apply the Nair.",
+            "Give it time to work.",
+            "Rinse off the Nair in a test patch.",
+            "Wash off all the Nair.",
+            "Wait 24 to moisturize your skin.",
+            "Maintain your bikini."
+        ],
+        "steps_predictions": [
+            "remove_wailmer npc",
+            "clean_shelter npc",
+            "trim_hair npc",
+            "wet_skin npc",
+            "apply_nair nair",
+            "gather_time npc",
+            "in_test_patch npc",
+            "wash_all npc",
+            "wait_for_loot npc",
+            "maintain_bikini npc"
+        ],
+        "goal_state": " ((not (in_area npc)))",
+        "similar_entity": {
+            "npc": "hat",
+            "nair": "razor blade"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Remove Butt Hair",
+        "step": [
+            "Use an epilator to pull out the hairs.",
+            "Apply a depilatory cream to get rid of hairs at the surface.",
+            "Trim your butt hair using an electric clipper.",
+            "Consider laser hair removal for a permanent fix."
+        ],
+        "steps_predictions": [
+            "pull_hairs npc",
+            "apply_depilatory_cream npc",
+            "trim_butt_hair npc",
+            "remove_lock npc laser_removed"
+        ],
+        "goal_state": " ((not (stuck npc razor_removed)))",
+        "similar_entity": {
+            "npc": "hat",
+            "laser removed": "pistol"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Wash Coconut Oil Out of Hair",
+        "step": [
+            "Choose a dry shampoo or powder to soak up the oil.",
+            "Apply the powder to your roots.",
+            "Comb through your hair until the powder soaks up the oil."
+        ],
+        "steps_predictions": [
+            "choose_oil alice",
+            "apply_powder_to_roots alice",
+            "comb_through_hair my_equipment"
+        ],
+        "goal_state": " ((clean coconut_oil_out_of_air))",
+        "similar_entity": {
+            "my equipment": "equipment",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Wax With Honey",
+        "step": [
+            "Wash and dry your skin beforehand.",
+            "Grow your hair out first.",
+            "Plan to wax often in the beginning."
+        ],
+        "steps_predictions": [
+            "wash_and_dry you skin",
+            "grow_hair npc",
+            "plan_wax wick1"
+        ],
+        "goal_state": " ((on_skin npc plan_wax wick1))",
+        "similar_entity": {
+            "skin": "body",
+            "npc": "hat",
+            "you": "you",
+            "wick": "wick"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Get Wax Off a Tablecloth",
+        "step": [
+            "Freeze the dripped wax.",
+            "Use a dull knife, such as a butter knife, or your fingernail to carefully scrape the frozen wax off the tablecloth.",
+            "Remove the wax with heat."
+        ],
+        "steps_predictions": [
+            "free_wicks wick1",
+            "scrash-wicks npc",
+            "remove_wicks wick1 heat1"
+        ],
+        "goal_state": "gotolocation wick1 tablecloth1",
+        "similar_entity": {
+            "heat": "temperature",
+            "wick": "wick",
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Use Veet on Your Bikini Area",
+        "step": [
+            "Lay out a towel for you to sit on while you wax.",
+            "Sit in a comfortable position with your legs spread open.",
+            "Rub a Veet wax strip between your hands to warm it up.",
+            "Peel the strips apart and set them on the towel wax-side up.",
+            "Apply 1 of the strips to your skin.",
+            "Rub the strip 3-4 times in the direction of your hair growth.",
+            "Hold your skin taut so that it’s easy to pull off the strip.",
+            "Grasp the end of the wax strip and rip it off.",
+            "Continue applying wax strips until your entire bikini area is hair-free.",
+            "Wipe off the excess wax using the cloths provided in the box."
+        ],
+        "steps_predictions": [
+            "lay_out_tape towel1",
+            "sliplargerbend npc",
+            "rub_wicks_with_leaves velveeta",
+            "peel_strips npc strip",
+            "apply_strips_to_skin npc strip",
+            "rub_strip npc strip",
+            "pull_strips npc strip",
+            "grasp_end_strips end_strip",
+            "apply_wax_strips alice",
+            "wipe_wicks npc"
+        ],
+        "goal_state": " ((on_rack npc strip))",
+        "similar_entity": {
+            "end strip": "ends",
+            "npc": "hat",
+            "velveeta": "velveeta",
+            "towel": "towel",
+            "alice": "character",
+            "strip": "cutting"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Remove Hair Using Organic Ganda Beroza",
+        "step": [
+            "Exfoliate your skin before removing hair.",
+            "Wash your hands with soap and water.",
+            "Take a small amount of solid ganda beroza.",
+            "Take a pinch of the hair removal agent.",
+            "Apply the pinch of ganda beroza to your body hair.",
+            "Hold the unwanted hair between your thumb and index finger where you have already applied the ganda beroza.",
+            "Keep repeating the procedure until all unwanted hairs are removed.",
+            "Clean the skin gently.",
+            "Remove ganda beroza from you fingers.",
+            "Wash your hands with soap and water."
+        ],
+        "steps_predictions": [
+            "remove_wicks npc",
+            "wash_hand soap2 water1",
+            "take_ganda_beroza npc",
+            "take_pinch npc",
+            "apply_gandas_painting user1 ganda beroza1",
+            "apply_ganda_beroza npc",
+            "remove_wailmer npc",
+            "clean_skin npc",
+            "remove-ganda beroza",
+            "wash_hand soap2 water1"
+        ],
+        "goal_state": " ((not (wailmer npc)))",
+        "similar_entity": {
+            "soap": "soap",
+            "ganda": "potaoto",
+            "npc": "hat",
+            "user": "player",
+            "beroza": "potaoto",
+            "water": "water"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Wax",
+        "step": [
+            "Avoid ingrown hairs.",
+            "Use baby powder.",
+            "Avoid burning yourself with the wax.",
+            "Make sure hair is long enough before you attempt to wax it.",
+            "Don't wax the same area twice."
+        ],
+        "steps_predictions": [
+            "break_ingrown_hairs npc",
+            "use_baby_powder npc",
+            "burn_wicks you wick1",
+            "wax_hair npc",
+            "wax_area area2"
+        ],
+        "goal_state": " ((wax_area area2))",
+        "similar_entity": {
+            "npc": "hat",
+            "you": "you",
+            "area": "area",
+            "wick": "wick"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Use Wax on Your Hair",
+        "step": [
+            "Start with dry, combed hair.",
+            "Warm a pea-sized amount of wax between your palms.",
+            "Run your fingers through your hair to tousle it.",
+            "Apply another pea-sized amount to create additional volume.",
+            "Use a small amount to add definition and texture to particular pieces."
+        ],
+        "steps_predictions": [
+            "comb_hair_with_dry_wicks npc",
+            "wick_pea_sized alice",
+            "run_fingers_through_hair tousle",
+            "create_add_pea_size_to_volume pc2",
+            "add-texture-to-piece work_station"
+        ],
+        "goal_state": " ((completed_wicks npc wick_peeled))",
+        "similar_entity": {
+            "work station": "living room",
+            "tousle": "pestle",
+            "npc": "hat",
+            "pc": "window",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Shave Your Legs Out of Water",
+        "step": [
+            "Spray your legs with water or use a wet towel to wet your legs.",
+            "Add some stick deodorant, (NOT antiperspirant!).",
+            "Squirt just a little bit of water on top of your gel/foamburst/deodrant.",
+            "Now shave your legs as you normally do if you were in a shower.",
+            "Use a dry cloth or towel to dry your legs and get any hair off.",
+            "Once your finished use a after-shaving lotion or a body lotion to make your legs even smoother and moisturizer."
+        ],
+        "steps_predictions": [
+            "drink_water npc",
+            "add-stick deodorant stick1",
+            "squirt-lemon water",
+            "shave_legs you towel1",
+            "dry_legs you towel",
+            "make_smooth_legs you lotion"
+        ],
+        "goal_state": " ((on_legs you towel1))",
+        "similar_entity": {
+            "you": "you",
+            "npc": "hat",
+            "lotion": "marshmallow cream",
+            "deodorant": "detergent",
+            "stick": "sticks",
+            "towel": "towel",
+            "water": "water"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Get Gum Out of Your Hair",
+        "step": [
+            "Try ice.",
+            "Use an ice wrap to harden the gum.",
+            "Chip the hardened gum out of your hair."
+        ],
+        "steps_predictions": [
+            "freeze-mixture mixture",
+            "make_gum_harden alice",
+            "chip_gems alice"
+        ],
+        "goal_state": " ((not (gum_harden alice)))",
+        "similar_entity": {
+            "alice": "character",
+            "mixture": "mixture"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Use Hair Removing Wax",
+        "step": [
+            "Warm the wax.",
+            "Dip the applicator into the warm wax.",
+            "Apply the fabric over the wax in the direction of hair growth, leaving enough free fabric at the end to grasp the strip firmly."
+        ],
+        "steps_predictions": [
+            "warm_wicks wick1",
+            "dip_in_wicks user1 wick1",
+            "apply_fabric npc strip"
+        ],
+        "goal_state": " ((clean wick1))",
+        "similar_entity": {
+            "wick": "wick",
+            "user": "player",
+            "npc": "hat",
+            "strip": "cutting"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Apply Hair Wax",
+        "step": [
+            "Purchase hair wax.",
+            "Apply hair wax to dry or slightly-damp hair.",
+            "Make sure that you are fully-clothed when you apply the wax.",
+            "Scoop out a bit of wax with your index, middle, and ring finger.",
+            "Rub the wax between the tips of your fingers.",
+            "Restyle your wax when necessary.",
+            "Wash the wax out of your hair."
+        ],
+        "steps_predictions": [
+            "purchase_wailmer alice wand1",
+            "add_wicks_to_hair_machine alice wand1",
+            "apply_wax npc covering_tracks",
+            "scoop_wax npc",
+            "rub_wicks npc",
+            "restyle_wax alice wand1",
+            "wash_wicks npc"
+        ],
+        "goal_state": " ((completed_wax npc covering_tracks))",
+        "similar_entity": {
+            "covering tracks": "cover",
+            "npc": "hat",
+            "alice": "character",
+            "wand": "ribbon"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Remove Wax from Wool",
+        "step": [
+            "Place a plain paper bag over the wax spill area.",
+            "Run an iron over the bag on medium heat.",
+            "Remove the paper bag.",
+            "Repeat with clean paper bags until the wax is removed."
+        ],
+        "steps_predictions": [
+            "place_plain_bag passenger1 paperbag1",
+            "run_in_oven npc",
+            "remove-paper-bag bag",
+            "remove_wicks npc"
+        ],
+        "goal_state": " ((clean wick1) (transparent npc))",
+        "similar_entity": {
+            "passenger": "passenger",
+            "npc": "hat",
+            "paperbag": "bag",
+            "bag": "bag"
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Wax Your Legs",
+        "step": [
+            "Search for leg wax services in your area.",
+            "Call to make an appointment.",
+            "Show up for your appointment."
+        ],
+        "steps_predictions": [
+            "search_for_leg_wax npc basement",
+            "make_appointment npc",
+            "check_appointment npc"
+        ],
+        "goal_state": " ((completed npc wax_wax))",
+        "similar_entity": {
+            "npc": "hat",
+            "basement": "floor"
+        }
+    }
+]

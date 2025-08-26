@@ -1,0 +1,53 @@
+(define (problem move_Pen1_to_Box1_with_two_object_28)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    CellPhone1 - object
+    Box1 - receptacle
+    Laptop1 - object
+    Pillow1 - object
+    Pencil1 - object
+    CD1 - object
+    CD2 - object
+    AlarmClock1 - object
+    Book1 - object
+    Pen1 - object
+    CreditCard1 - object
+    Bed1 - receptacle
+    Drawer1 - receptacle
+    Desk3 - receptacle
+    Sofa3 - receptacle
+    Sofa2 - receptacle
+    Sofa1 - receptacle
+    Desk1 - receptacle
+    GarbageCan1 - receptacle
+    Drawer2 - receptacle
+    Desk2 - receptacle
+    Book2 - object
+    Book3 - object
+    Pencil2 - object
+    Box2 - receptacle
+  )
+
+  (:init
+    (atLocation agent1 Bed1)
+    (objectAtLocation Pillow1 Sofa1)
+    (objectAtLocation Pen1 Drawer1)
+    (objectAtLocation Laptop1 Bed1)
+    (objectAtLocation CD1 GarbageCan1)
+    (objectAtLocation CellPhone1 Desk1)
+    (objectAtLocation CD2 Desk2)
+    (objectAtLocation CreditCard1 Desk3)
+    (objectAtLocation Pencil1 Drawer2)
+    (objectAtLocation Pencil2 Sofa1)
+    (objectAtLocation Book2 Box1)
+    (objectAtLocation Book3 Box1)
+    (objectAtLocation Book1 Box2)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation Pen1 Box1)
+    )
+  )
+)

@@ -1,0 +1,177 @@
+task,nl_step
+3-decorate,"Decorators in Python are a powerful tool that allow us to wrap another function in order to extend the behavior of the wrapped function, without permanently modifying it.
+
+Here is an example of how to implement a simple decorator in Python:
+
+```python
+def my_decorator(func):
+    def wrapper():
+        print(""Something is happening before the function is called."")
+        func()
+        print(""Something is happening after the function is called."")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print(""Hello!"")
+
+say_hello()
+```
+
+In this example, `my_decorator` is a function that takes another function and extends its behavior without modifying it. The `@my_decorator` line is a shorthand way of saying `say_hello = my_decorator(say_hello)`.
+
+When we call `say_hello()`, it's not the original `say_hello` function that gets called, but the `wrapper` function that was returned by `my_decorator`. The `wrapper` function adds some behavior (printing a message) before and after calling the original function.
+
+So the output of calling `say_hello()` would be:
+
+```
+Something is happening before the function is called.
+Hello!
+Something is happening after the function is called.
+```
+
+This is a very simple example, but decorators can be much more complex and powerful. They can modify the arguments passed to the function, change the return value, handle exceptions, and much more. They are a key feature of Python and are used extensively in many Python libraries and frameworks."
+prepare_meat,"Here is a simple solution for the task ""prepare_meat"". This solution is assuming that the task is to prepare a meat for cooking. 
+
+Ingredients:
+1. Meat (1 kg)
+2. Salt (to taste)
+3. Pepper (to taste)
+4. Olive oil (2 tablespoons)
+5. Garlic (2 cloves, minced)
+6. Lemon juice (2 tablespoons)
+
+Steps:
+
+1. First, clean the meat thoroughly under running water. 
+
+2. Pat dry the meat using a clean kitchen towel. This is to ensure that the meat will brown nicely when cooked.
+
+3. Season the meat with salt and pepper on all sides. Rub them in to make sure the meat is well seasoned.
+
+4. In a small bowl, combine olive oil, minced garlic, and lemon juice. Stir well.
+
+5. Rub this mixture all over the meat, making sure it's well coated. 
+
+6. Let the meat marinate for at least 30 minutes. For best results, marinate it in the refrigerator overnight.
+
+7. Now, the meat is ready to be cooked as per your recipe. 
+
+Remember, the key to a delicious meat dish is in the preparation. Always choose fresh, high-quality meat and take the time to prepare it properly. Enjoy your cooking!"
+pick_hard_lock,"Picking a hard lock is a task that requires a lot of skill, patience, and precision. Here's a basic solution but remember, it's illegal to pick locks that aren't yours or without permission from the owner. 
+
+Materials needed:
+1. Tension wrench
+2. Lock pick
+3. Lubricant (optional)
+
+Steps:
+
+1. Apply a small amount of lubricant to the lock, this is optional but it can make the process easier by reducing friction.
+
+2. Insert the tension wrench into the bottom of the keyhole. The tension wrench is used to apply pressure to the lock's plug, which is the part that actually unlocks the door when it's turned.
+
+3. Apply slight pressure to the tension wrench, turning it in the direction the lock turns. You should apply just enough pressure to hold the wrench in place, but not so much that it bends.
+
+4. While maintaining pressure on the tension wrench, insert your lock pick into the top of the keyhole.
+
+5. Use the lock pick to probe the pins inside the lock. There are usually five or six pins in a lock, and you'll need to set each one individually.
+
+6. When you find a pin, apply upward pressure to it with the lock pick. If you're applying the correct amount of tension with the wrench, the pin should stay in place once it's been lifted. If it falls back down, you're not applying enough tension.
+
+7. Repeat this process with each pin. You'll need to feel around with the lock pick to find each one, and it may take several tries to set them all.
+
+8. Once all the pins are set, the lock should open when you turn the tension wrench.
+
+Remember, lock picking should only be used for legal purposes, and it can take a lot of practice to get good at it. If you're not able to pick a lock after several tries, it's best to call a professional locksmith."
+finishing_papyrus,"This task seems to be incomplete or not clear. Please provide more details or context about the task so that it can be understood and solved correctly. Are you referring to a task related to the ancient writing material ""papyrus""? Or is ""finishing_papyrus"" a code function or a project name? Any additional information would be helpful."
+gather_kindling,"Solution:
+
+Gathering kindling is a simple task that involves collecting small pieces of wood or other easily combustible materials for starting a fire. Here's how to do it:
+
+Materials needed:
+1. A bag or basket to collect the kindling.
+2. Gloves to protect your hands.
+
+Steps:
+1. Put on your gloves to protect your hands from splinters.
+2. Start your search for kindling. Look for small, dry, easily combustible materials. This could be twigs, small branches, dry grass, pine cones, or even pieces of paper or cardboard. 
+3. Test the potential kindling by trying to snap it. If it snaps easily, it's dry and will burn well. If it bends, it's still green and won't burn as well.
+4. Collect a variety of sizes, from very small twigs (which will catch fire quickly) to larger sticks (which will burn longer). 
+5. As you gather the kindling, place it in your bag or basket. 
+6. Continue gathering until you have enough kindling to start your fire. The exact amount will depend on the size of the fire you want to build, but a good rule of thumb is to gather enough to fill a large shopping bag.
+7. Once you have enough, transport your kindling back to your campfire site or fireplace. Store it in a dry place until you're ready to use it.
+
+Remember: Never strip bark or branches from living trees for kindling, as this can harm the tree. Always look for fallen branches or twigs on the ground."
+make_papyrus,"To solve this task, we are going to create a Python function named `make_papyrus`. This function will simulate the process of making papyrus. The function will take no arguments and will print out the steps of making papyrus.
+
+Here is a simple solution:
+
+```python
+def make_papyrus():
+    print(""Step 1: Harvest the papyrus plant."")
+    print(""Step 2: Cut the plant into thin strips."")
+    print(""Step 3: Soak the strips in water."")
+    print(""Step 4: Lay the strips out to dry."")
+    print(""Step 5: Press the strips together."")
+    print(""Step 6: Polish the surface."")
+    print(""Congratulations! You have made papyrus."")
+
+# Call the function
+make_papyrus()
+```
+When you run this program, it will print out the steps to make papyrus."
+move_to_bunker,"To solve this task, we will assume that we have a game character that needs to move to a bunker. This will be a simple solution and will not include any artificial intelligence or pathfinding algorithms.
+
+Here is a possible solution in Python:
+
+```python
+class Character:
+    def __init__(self, name, position):
+        self.name = name
+        self.position = position
+
+    def move(self, new_position):
+        self.position = new_position
+        print(f""{self.name} moved to {self.position}"")
+
+class Bunker:
+    def __init__(self, position):
+        self.position = position
+
+def move_to_bunker(character, bunker):
+    character.move(bunker.position)
+
+# Create a character and a bunker
+john = Character(""John"", (0, 0))
+bunker = Bunker((10, 10))
+
+# Move the character to the bunker
+move_to_bunker(john, bunker)
+```
+
+In this code, we first create a `Character` class that has a `move` method. This method changes the character's position and prints a message. We also create a `Bunker` class that simply holds a position.
+
+The `move_to_bunker` function takes a character and a bunker as arguments. It calls the `move` method of the character with the position of the bunker.
+
+Finally, we create a character and a bunker, and we move the character to the bunker by calling `move_to_bunker`."
+ready_sc,"The task description ""ready_sc"" is not clear and lacks details. Please provide more information about the task, such as what ""ready_sc"" stands for, what the task involves, what language or system it pertains to, and any specific goals or requirements. 
+
+For example, if ""ready_sc"" refers to a function in a programming language, please provide information about what the function is supposed to do, what parameters it takes, what it returns, and any other important details. If ""ready_sc"" refers to a process or procedure in a certain field, please provide information about the steps involved, the expected outcome, and any important considerations. 
+
+Without this information, it's not possible to provide a solution to the task."
+heal-old-man,"In order to complete the task ""heal-old-man"", we will need to identify the type of healing the old man needs. This could involve physical, emotional, or mental healing. Here is a possible solution:
+
+1. Identify the Problem: First, we need to find out what's wrong with the old man. This could be a physical ailment, emotional distress, or mental health issues. If it's a physical problem, it might be necessary to get a medical professional involved. If it's emotional or mental, a psychologist or counselor might be required.
+
+2. Develop a Treatment Plan: Once we know what the problem is, we can develop a plan to address it. This might involve medication, therapy, or lifestyle changes. The plan should be developed in consultation with the old man and any relevant medical professionals.
+
+3. Implement the Plan: Once the plan is developed, it's time to put it into action. This could involve regular doctor's visits, therapy sessions, or medication. It's important to monitor the old man's progress and adjust the plan as necessary.
+
+4. Provide Support: Healing can be a difficult process, and the old man will likely need support. This could involve providing emotional support, helping with daily tasks, or ensuring he has access to necessary resources.
+
+5. Monitor Progress: Regularly check in with the old man to see how he's doing. If the plan isn't working, it might be necessary to adjust it or try a different approach. 
+
+6. Continue Treatment: Healing often takes time, so it's important to continue the treatment plan even if progress is slow. Patience and persistence are key.
+
+Remember, it's important to respect the old man's autonomy and wishes throughout this process. He should be involved in every step of the process and his comfort and wellbeing should be the top priority."

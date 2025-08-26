@@ -1,0 +1,5 @@
+(bend_to_form_legs pc1)
+(enlarge_torso torso)
+(move_for_beak tip)
+(shape_to_form_body pc2)
+; cost = 4 (unit cost)

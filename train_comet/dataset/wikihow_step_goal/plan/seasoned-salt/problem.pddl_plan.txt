@@ -1,0 +1,4 @@
+(mix-ingredients celery_salt)
+(grind-ingredients celery_salt mortar_and_pestle)
+(season-food celery_salt salads)
+; cost = 3 (unit cost)

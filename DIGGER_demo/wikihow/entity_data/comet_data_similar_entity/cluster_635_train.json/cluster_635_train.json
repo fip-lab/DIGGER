@@ -1,0 +1,185 @@
+[
+    {
+        "cluster_label": 635,
+        "task": "How to Cook Chuck Steak",
+        "step": [
+            "Choose the chuck steak.",
+            "Store and handle the chuck steak.",
+            "Serve the chuck steak."
+        ],
+        "steps_predictions": [
+            "choose_chuck_steak chuck_cheese",
+            "store_chuck_steak chuck_cheese",
+            "cooking chuck_steak stove"
+        ],
+        "goal_state": " ((chuck_steak chuck_cheese))",
+        "similar_entity": {
+            "chuck cheese": "cheese",
+            "chuck steak": "beef",
+            "stove": "stove"
+        }
+    },
+    {
+        "cluster_label": 635,
+        "task": "How to Tell if Steak Is Done",
+        "step": [
+            "Cut into the thickest part of the steak to check the color inside.",
+            "Check the doneness of your steak using the finger test.",
+            "Compare the firmness of the steak to various parts of your face to estimate doneness.",
+            "Use size as an indicator of whether your steak is done."
+        ],
+        "steps_predictions": [
+            "cut_into_thickest_piece steak",
+            "check_doneness steak",
+            "check_meat steak",
+            "make_signal npc"
+        ],
+        "goal_state": " ((not (steak steak)))",
+        "similar_entity": {
+            "steak": "beef",
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 635,
+        "task": "How to Grill Steak",
+        "step": [
+            "Use a dry rub or seasoning instead of straight salt and pepper.",
+            "Try out a wet marinade for a softer, more-flavorful steak.",
+            "Slather your steak with a pat of butter for a rich steakhouse meal.",
+            "Top your steak with something special to make a meal of it."
+        ],
+        "steps_predictions": [
+            "use_dry_rub alice",
+            "cook npc",
+            "slather_with_ingredients steak_house",
+            "add-ingredients beef steak"
+        ],
+        "goal_state": " ((cooked beef steak))",
+        "similar_entity": {
+            "steak house": "house",
+            "npc": "hat",
+            "beef": "beef",
+            "steak": "beef",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 635,
+        "task": "How to Cook Kangaroo Steak",
+        "step": [
+            "Rub herbs and spices into your steak for taste.",
+            "Submerge your steak in a flavored liquid.",
+            "Place your kangaroo steak in a plastic or glass bowl and cover it with plastic wrap.",
+            "Place your steak in the fridge and let it marinate overnight."
+        ],
+        "steps_predictions": [
+            "rub_with_ingredients beef_cooked beef",
+            "submerge_in_flavorful_lemon npc",
+            "place-in-bowl kangaroo_steak ketchup_bottle",
+            "place_in_fridge beef_cooked beef"
+        ],
+        "goal_state": " ((cooked beef))",
+        "similar_entity": {
+            "kangaroo steak": "beef",
+            "npc": "hat",
+            "beef cooked": "beef",
+            "beef": "beef",
+            "ketchup bottle": "ketchup bottle"
+        }
+    },
+    {
+        "cluster_label": 635,
+        "task": "How to Make a Steak",
+        "step": [
+            "Make a simple grilling marinade.",
+            "Make a simple dry rub.",
+            "Make an herbed butter for topping the steak.",
+            "Top sliced steak with chopped herbs.",
+            "Serve grilled steak with a lemon wedge."
+        ],
+        "steps_predictions": [
+            "make_grilling_marinade stove_knob velveeta",
+            "make_dry_rub alice",
+            "make_herbed_ingredients stove_knob velveeta",
+            "chopped_asparagus steak",
+            "cook npc"
+        ],
+        "goal_state": " ((cooked steak))",
+        "similar_entity": {
+            "npc": "hat",
+            "stove knob": "stove knob",
+            "steak": "beef",
+            "velveeta": "velveeta",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 635,
+        "task": "How to Cook Skirt Steak on a Grill",
+        "step": [
+            "Marinate the steak for a spiced chili flavor.",
+            "Mix a garlic and herb marinade for fresh flavor.",
+            "Serve the grilled steak with grilled vegetables to make fajitas.",
+            "Serve the steak with chimichurri."
+        ],
+        "steps_predictions": [
+            "marinate_steak npc",
+            "mix_flavor garlic_and_arinade mixing_bowl",
+            "cook npc",
+            "cook npc"
+        ],
+        "goal_state": " ((in_fridge Skirt Steak))",
+        "similar_entity": {
+            "npc": "hat",
+            "mixing bowl": "mixing bowl",
+            "garlic and arinade": "olive oil"
+        }
+    },
+    {
+        "cluster_label": 635,
+        "task": "How to Make Steak Rub",
+        "step": [
+            "Place all of the ingredients into a mixing bowl.",
+            "Mix to combine thoroughly.",
+            "Sprinkle the rub across the steak.",
+            "Cook the steak as usual."
+        ],
+        "steps_predictions": [
+            "place_ingredients mixing_bowl",
+            "combine-mix mixing_bowl",
+            "sliplargerbeads steak",
+            "cook_steak steak"
+        ],
+        "goal_state": " ((combined mixing_bowl mixture) (cooked steak))",
+        "similar_entity": {
+            "steak": "beef",
+            "mixing bowl": "mixing bowl"
+        }
+    },
+    {
+        "cluster_label": 635,
+        "task": "How to Grill Sirloin Steak",
+        "step": [
+            "Rub a seasoning over the meat in place of salt and pepper.",
+            "Soak the sirloin in a wet marinade to get moist, delicious flavor.",
+            "Brush a pat of butter on top of the sirloin for steakhouse richness.",
+            "Top your steak."
+        ],
+        "steps_predictions": [
+            "rub_ingredients_with_salt spice mixture",
+            "soak_sirloin npc",
+            "brush_ingredients sirloin_cooked",
+            "add-cheese beef steak"
+        ],
+        "goal_state": " ((cooked beef steak))",
+        "similar_entity": {
+            "npc": "hat",
+            "mixture": "mixture",
+            "beef": "beef",
+            "steak": "beef",
+            "sirloin cooked": "hot sauce",
+            "spice": "spices"
+        }
+    }
+]

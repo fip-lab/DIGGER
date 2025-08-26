@@ -1,0 +1,184 @@
+[
+    {
+        "task": "3-decorate",
+        "instantiting_action": [
+            "get_costume(character c)",
+            "get(part supply)",
+            "clean_clothing(c)",
+            "decorate_helmet(h)",
+            "decorate(character supply)",
+            "make(character supply state1 state2)",
+            "make_helmet_invisible(character h)",
+            "make_clothing_clean(character c)",
+            "make_helmet_camouflaged(character h)"
+        ]
+    },
+    {
+        "task": "prepare_meat",
+        "instantiting_action": [
+            "perform_task(person electricity tool)",
+            "perform_task(person food tool)",
+            "carve(person brick tool)",
+            "cook(character food tool)"
+        ]
+    },
+    {
+        "task": "pick_hard_lock",
+        "instantiting_action": [
+            "push(agent target tool)",
+            "hook_latch(agent car tool)",
+            "hook(agent item tool)",
+            "SlideIntoSideOfDoor(agent creditcard lock)"
+        ]
+    },
+    {
+        "task": "finishing_papyrus",
+        "instantiting_action": [
+            "replace(actor location item)",
+            "lay(npc item location)",
+            "dip_strips(npc s)",
+            "dip(agent item)",
+            "cut_stalks(npc finishing_papyrus)",
+            "cut_stalks(npc papyrus)",
+            "peel_papyrus_strips(npc finishing_papyrus)",
+            "peel_papyrus_strips(npc papyrus)",
+            "cut(npc item state_before state_after)",
+            "peel(npc item)",
+            "flatten(npc ws item)",
+            "laid(npc item)"
+        ]
+    },
+    {
+        "task": "gather_kindling",
+        "instantiting_action": [
+            "collect(agent supply)",
+            "place_sticks_in_formation(s)",
+            "build_shelter(component)",
+            "place(part socket)",
+            "place(part stove)",
+            "place(part nursery)",
+            "place(part river)",
+            "place(part place)",
+            "place(part home)",
+            "place(part shelter)",
+            "build(character socket structure materials)",
+            "build(character stove structure materials)",
+            "build(character nursery structure materials)",
+            "build(character river structure materials)",
+            "build(character place structure materials)",
+            "build(character home structure materials)",
+            "build(character shelter structure materials)",
+            "gather(character electricity area)",
+            "gather(character food area)",
+            "search(agent target)",
+            "start(character socket structure electricity help)",
+            "start(character socket structure food help)",
+            "start(character stove structure electricity help)",
+            "start(character stove structure food help)",
+            "start(character nursery structure electricity help)",
+            "start(character nursery structure food help)",
+            "start(character river structure electricity help)",
+            "start(character river structure food help)",
+            "start(character place structure electricity help)",
+            "start(character place structure food help)",
+            "start(character home structure electricity help)",
+            "start(character home structure food help)",
+            "start(character shelter structure electricity help)",
+            "start(character shelter structure food help)"
+        ]
+    },
+    {
+        "task": "make_papyrus",
+        "instantiting_action": [
+            "collect(item l)",
+            "buy_papyrus(npc papyrus)",
+            "buy(npc item)",
+            "make(npc resource nursery)",
+            "make(npc resource river)"
+        ]
+    },
+    {
+        "task": "move_to_bunker",
+        "instantiting_action": [
+            "get_shelter(npc building basement)",
+            "get_shelter(npc shelter basement)",
+            "clean_house(cleaner house)",
+            "get(entity resource)",
+            "clean(entity)",
+            "cover(entity brick)",
+            "camouflage(npc item place)",
+            "camouflage(npc item area)",
+            "drink(npc liquid)",
+            "learn(npc item)",
+            "build(npc resource item)"
+        ]
+    },
+    {
+        "task": "ready_sc",
+        "instantiting_action": [
+            "fill(part character socket)",
+            "fill(part character stove)",
+            "fill(part character nursery)",
+            "fill(part character river)",
+            "fill(part character place)",
+            "fill(part character area)",
+            "fill(part character home)",
+            "fill(part character shelter)",
+            "get(agent electricity socket)",
+            "get(agent electricity stove)",
+            "get(agent electricity nursery)",
+            "get(agent electricity river)",
+            "get(agent electricity place)",
+            "get(agent electricity area)",
+            "get(agent electricity home)",
+            "get(agent electricity shelter)",
+            "get(agent food socket)",
+            "get(agent food stove)",
+            "get(agent food nursery)",
+            "get(agent food river)",
+            "get(agent food place)",
+            "get(agent food area)",
+            "get(agent food home)",
+            "get(agent food shelter)",
+            "check(agent electricity day)",
+            "check(agent electricity help)",
+            "check(agent electricity minute)",
+            "check(agent electricity society)",
+            "check(agent electricity loss)",
+            "check(agent electricity chaos)",
+            "check(agent electricity lot)",
+            "check(agent electricity kilometer)",
+            "check(agent electricity ready_sc)",
+            "check(agent electricity mile)",
+            "check(agent electricity danger)",
+            "check(agent electricity confusion)",
+            "check(agent electricity odd)",
+            "check(agent electricity shortage)",
+            "check(agent food day)",
+            "check(agent food help)",
+            "check(agent food minute)",
+            "check(agent food society)",
+            "check(agent food loss)",
+            "check(agent food chaos)",
+            "check(agent food lot)",
+            "check(agent food kilometer)",
+            "check(agent food ready_sc)",
+            "check(agent food mile)",
+            "check(agent food danger)",
+            "check(agent food confusion)",
+            "check(agent food odd)",
+            "check(agent food shortage)"
+        ]
+    },
+    {
+        "task": "heal-old-man",
+        "instantiting_action": [
+            "process_coconut(finishing_papyrus c t r g)",
+            "process_coconut(papyrus c t r g)",
+            "wrap(finishing_papyrus supply wrapper)",
+            "wrap(papyrus supply wrapper)",
+            "break(finishing_papyrus obj tool)",
+            "break(papyrus obj tool)"
+        ]
+    }
+]

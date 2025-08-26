@@ -1,0 +1,119 @@
+[
+    {
+        "title": "How to Cook Skirt Steak on a Grill",
+        "steps": [
+            "Marinate the steak for a spiced chili flavor.",
+            "Mix a garlic and herb marinade for fresh flavor.",
+            "Serve the grilled steak with grilled vegetables to make fajitas.",
+            "Serve the steak with chimichurri."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Make Spotted Dick",
+        "steps": [
+            "Mix the dry ingredients.",
+            "Add the butter.",
+            "Add the milk.",
+            "Prepare to steam.",
+            "Cook the spotted dick.",
+            "Serve."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Make a Steak",
+        "steps": [
+            "Make a simple grilling marinade.",
+            "Make a simple dry rub.",
+            "Make an herbed butter for topping the steak.",
+            "Top sliced steak with chopped herbs.",
+            "Serve grilled steak with a lemon wedge."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Pair Wine with Grilled Steak",
+        "steps": [
+            "Drink dry wines with steak.",
+            "Bring out herb flavors with a Bordeaux.",
+            "Match the savory flavors in beef with a Malbec.",
+            "Accentuate sweet and/or spicy flavors with a Zinfandel.",
+            "Pair with a dry riesling when you can't settle on a vintage.",
+            "Select your wine according to how well done the meat is."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Grill Steak",
+        "steps": [
+            "Use a dry rub or seasoning instead of straight salt and pepper.",
+            "Try out a wet marinade for a softer, more-flavorful steak.",
+            "Slather your steak with a pat of butter for a rich steakhouse meal.",
+            "Top your steak with something special to make a meal of it."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Grill Sirloin Steak",
+        "steps": [
+            "Rub a seasoning over the meat in place of salt and pepper.",
+            "Soak the sirloin in a wet marinade to get moist, delicious flavor.",
+            "Brush a pat of butter on top of the sirloin for steakhouse richness.",
+            "Top your steak."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Cook Chuck Steak",
+        "steps": [
+            "Choose the chuck steak.",
+            "Store and handle the chuck steak.",
+            "Serve the chuck steak."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Make Steak Rub",
+        "steps": [
+            "Place all of the ingredients into a mixing bowl.",
+            "Mix to combine thoroughly.",
+            "Sprinkle the rub across the steak.",
+            "Cook the steak as usual."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Tell if Steak Is Done",
+        "steps": [
+            "Cut into the thickest part of the steak to check the color inside.",
+            "Check the doneness of your steak using the finger test.",
+            "Compare the firmness of the steak to various parts of your face to estimate doneness.",
+            "Use size as an indicator of whether your steak is done."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Apply a Steak Rub",
+        "steps": [
+            "Choose a steak to grill.",
+            "Find a rub recipe from a cookbook or online.",
+            "Make the rub.",
+            "Apply the rub to the steak.",
+            "Let the steak rest.",
+            "Grill the steak.",
+            "Finished."
+        ],
+        "cluster_label": 635
+    },
+    {
+        "title": "How to Cook Kangaroo Steak",
+        "steps": [
+            "Rub herbs and spices into your steak for taste.",
+            "Submerge your steak in a flavored liquid.",
+            "Place your kangaroo steak in a plastic or glass bowl and cover it with plastic wrap.",
+            "Place your steak in the fridge and let it marinate overnight."
+        ],
+        "cluster_label": 635
+    }
+]

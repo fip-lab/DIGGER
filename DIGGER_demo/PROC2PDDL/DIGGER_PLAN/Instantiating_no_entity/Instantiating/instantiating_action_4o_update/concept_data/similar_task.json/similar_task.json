@@ -1,0 +1,183 @@
+[
+    {
+        "task": "3-decorate",
+        "instantiting_action": [
+            "get(chef pathogen)",
+            "get(chef nutrient)",
+            "get(chef muscle)",
+            "get(chef meat)",
+            "get(chef protein)",
+            "get(chef minute)",
+            "get(chef c)",
+            "get(chef f)",
+            "get(chef thing)"
+        ]
+    },
+    {
+        "task": "prepare_meat",
+        "instantiting_action": [
+            "drink(p liquid)",
+            "carve(p m t)",
+            "hunt(p r l)",
+            "prepare(agent meat knife food saucepan)",
+            "prepare(agent meat knife energy saucepan)",
+            "prepare(agent meat cleaver food saucepan)",
+            "prepare(agent meat cleaver energy saucepan)",
+            "prepare(agent protein knife food saucepan)",
+            "prepare(agent protein knife energy saucepan)",
+            "prepare(agent protein cleaver food saucepan)",
+            "prepare(agent protein cleaver energy saucepan)",
+            "heat(food source prepare_meat)",
+            "heat(energy source prepare_meat)",
+            "serve(meat saucepan location)",
+            "serve(protein saucepan location)",
+            "start(p food knife)",
+            "start(p food cleaver)",
+            "start(p energy knife)",
+            "start(p energy cleaver)",
+            "get(p meat)",
+            "get(p protein)"
+        ]
+    },
+    {
+        "task": "pick_hard_lock",
+        "instantiting_action": [
+            "push(npc item socket)",
+            "push(npc item stove)",
+            "hook_latch(npc car)",
+            "straighten_coat_hanger(npc hanger)",
+            "hook(npc item target)",
+            "straighten(npc item target)",
+            "SlideCardIntoDoor(npc c l)"
+        ]
+    },
+    {
+        "task": "finishing_papyrus",
+        "instantiting_action": [
+            "replace(npc old_item new_item ws)",
+            "lay(npc ws item)",
+            "dip(npc item substance)",
+            "cut(agent material)",
+            "process_papyrus(agent p)",
+            "flatten(agent socket item)",
+            "flatten(agent stove item)"
+        ]
+    },
+    {
+        "task": "gather_kindling",
+        "instantiting_action": [
+            "gather(npc item location)",
+            "prop(entity structure)",
+            "build(actor location structure kindling)",
+            "build(actor location structure wood)",
+            "build(actor location structure tinder)",
+            "build(actor location structure twig)",
+            "build(actor location structure stick)",
+            "build(actor location structure branch)",
+            "build(actor location structure trunk)",
+            "search(actor target)",
+            "start(actor process resource1 resource2 resource3)"
+        ]
+    },
+    {
+        "task": "make_papyrus",
+        "instantiting_action": [
+            "gather(entity nursery)",
+            "gather(entity river)",
+            "collect_nails(n t)",
+            "retrieve_paint(p r)",
+            "collect(item loc)",
+            "make(npc item nursery)",
+            "make(npc item river)"
+        ]
+    },
+    {
+        "task": "move_to_bunker",
+        "instantiting_action": [
+            "get(npc target area)",
+            "get(npc target shelter)",
+            "get(npc target basement)",
+            "get(npc target building)",
+            "get(npc target place)",
+            "purify(entity method1 method2)",
+            "drink(npc liquid)",
+            "learn(npc protection sight)",
+            "learn(npc brick sight)"
+        ]
+    },
+    {
+        "task": "ready_sc",
+        "instantiting_action": [
+            "fill(agent saucepan stove food)",
+            "fill(agent saucepan stove energy)",
+            "fill(agent saucepan stove kindling)",
+            "fill(agent saucepan stove wood)",
+            "fill(agent saucepan stove twig)",
+            "fill(agent saucepan stove branch)",
+            "get_resource(npc food source)",
+            "get_resource(npc energy source)",
+            "get_resource(npc kindling source)",
+            "get_resource(npc wood source)",
+            "get_resource(npc twig source)",
+            "get_resource(npc branch source)",
+            "check(npc nutrient stove)",
+            "turn(npc device)"
+        ]
+    },
+    {
+        "task": "heal-old-man",
+        "instantiting_action": [
+            "peel(chef coconut cleaver jar)",
+            "peel(chef coconut cleaver saucepan)",
+            "peel(chef coconut cleaver glass)",
+            "peel(chef coconut knife jar)",
+            "peel(chef coconut knife saucepan)",
+            "peel(chef coconut knife glass)",
+            "wrap(pathogen skin)",
+            "wrap(pathogen casing)",
+            "wrap(pathogen shell)",
+            "wrap(nutrient skin)",
+            "wrap(nutrient casing)",
+            "wrap(nutrient shell)",
+            "wrap(muscle skin)",
+            "wrap(muscle casing)",
+            "wrap(muscle shell)",
+            "wrap(meat skin)",
+            "wrap(meat casing)",
+            "wrap(meat shell)",
+            "wrap(protein skin)",
+            "wrap(protein casing)",
+            "wrap(protein shell)",
+            "wrap(minute skin)",
+            "wrap(minute casing)",
+            "wrap(minute shell)",
+            "wrap(c skin)",
+            "wrap(c casing)",
+            "wrap(c shell)",
+            "wrap(f skin)",
+            "wrap(f casing)",
+            "wrap(f shell)",
+            "wrap(thing skin)",
+            "wrap(thing casing)",
+            "wrap(thing shell)",
+            "smash(man pathogen cleaver)",
+            "smash(man pathogen knife)",
+            "smash(man nutrient cleaver)",
+            "smash(man nutrient knife)",
+            "smash(man muscle cleaver)",
+            "smash(man muscle knife)",
+            "smash(man meat cleaver)",
+            "smash(man meat knife)",
+            "smash(man protein cleaver)",
+            "smash(man protein knife)",
+            "smash(man minute cleaver)",
+            "smash(man minute knife)",
+            "smash(man c cleaver)",
+            "smash(man c knife)",
+            "smash(man f cleaver)",
+            "smash(man f knife)",
+            "smash(man thing cleaver)",
+            "smash(man thing knife)"
+        ]
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "cluster_label": 2322,
+        "task": "How to Braid Rope",
+        "step": [
+            "Start with a flexible single cord.",
+            "Make a loop.",
+            "Push the long side through the loop.",
+            "Turn the u-shaped part into a new loop.",
+            "Create another loop.",
+            "Repeat through the length of the rope.",
+            "Pass the end through the final loop."
+        ],
+        "steps_predictions": [
+            "start_with_unstuck cordial",
+            "make_loop loop",
+            "push_long_side_through_loop player1",
+            "turn_into_new_loop u_shaped part",
+            "create_loop loop",
+            "repeat_through_length rope1",
+            "pass_end_through_loop player1 player2"
+        ],
+        "goal_state": " ((on_rack rope1) (has_weight_heavier finished))"
+    }
+]

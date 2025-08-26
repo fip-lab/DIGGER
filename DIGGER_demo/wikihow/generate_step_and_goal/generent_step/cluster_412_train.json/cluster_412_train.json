@@ -1,0 +1,242 @@
+[
+    {
+        "cluster_label": 412,
+        "task": "How to Plant a Bare Root Tree",
+        "step": [
+            "Carefully unpack the bare root tree from the container or material it came in.",
+            "Set the tree into a bucket filled with water.",
+            "Dig a hole slightly larger than the diameter and depth of the tree and soil width.",
+            "Check to be sure there are no large weed roots in the hole you have dug.",
+            "Plant the tree so that where the roots meet the base of the tree.",
+            "Shovel the remaining dirt from the container.",
+            "Build a water basin around the outside of the tree.",
+            "Add a mulch area of a metre /a yard wide and 5 centimeter (2.0 in) deep around the tree base.",
+            "Water the tree again and again.",
+            "Stake large trees.",
+            "Remove the stake after a year."
+        ],
+        "steps_predictions": [
+            "unpack_bare_branch npc container",
+            "set_tree fir1 bucket1",
+            "dig_hole npc path oak_log",
+            "check_soil npc path",
+            "plant_tinder npc path tinder",
+            "peel_dirt npc",
+            "build_water_basin npc west_plain",
+            "add_area mulch area2",
+            "drink_water npc",
+            "stake_oak npc oaks oak_log",
+            "remove-stake alice"
+        ]
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Plant a Plant",
+        "step": [
+            "Store plants with exposed roots in a water-filled bucket.",
+            "Water the plant an hour before transplanting it.",
+            "Add water once a week to keep the soil moist.",
+            "Use a dripping hose to water trees and large bushes.",
+            "Pour a liquid fertilizer over flowers.",
+            "Use a slow-release fertilizer on larger plants."
+        ],
+        "steps_predictions": [
+            "store_plant fir1 bucket1",
+            "plant_plant fir1 container1",
+            "add_water npc garden soil",
+            "drink_water npc",
+            "pour_faucet npc pot",
+            "use_slow_release fertilizer on_plant fir1 container1"
+        ]
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Plant",
+        "step": [
+            "Choose the best location for your tree.",
+            "Till the soil lightly with a pick or a shovel.",
+            "Dig a hole in the area that is twice as wide as the root ball of your tree.",
+            "Loosen the roots in preparation for the transplant.",
+            "Pull the container away from the root ball until it is completely exposed.",
+            "Look for roots that are circling.",
+            "Place the root ball of the tree in your hole.",
+            "Mix one part compost with three parts soil before you fill the hole around the tree.",
+            "Fill in the area around the root ball with your mixture of compost and soil.",
+            "Create a circular berm, or small mounded hill.",
+            "Cover the area with a layer of mulch.",
+            "Use stakes to support the tree.",
+            "Water the area.",
+            "Enjoy your gift to the earth!."
+        ],
+        "steps_predictions": [
+            "choose_location fir1",
+            "treat_soil soil1 garden_center",
+            "dig_area root_ball area",
+            "loosen_branch npc root_center",
+            "pull_container container1 root_ball1",
+            "get_roots npc root_of_tree",
+            "place_root_of_tree fir1 garden_center",
+            "mix_soil npc garden soil",
+            "fill_area area1 container1",
+            "create_berm berm1",
+            "cover_area area1",
+            "stabilize_tree npc path",
+            "drink_water area water",
+            "gather_gems npc garden"
+        ]
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Transplant Daffodils",
+        "step": [
+            "Plant daffodil bulbs in a deep pot with good drainage.",
+            "Use bulb compost or regular potting compost.",
+            "Keep the pot in a cool, dark spot for the first few months.",
+            "Fertilize potted daffodils with bone meal.",
+            "Replant fresh bulbs each year.",
+            "Transplant daffodils from a pot to the ground."
+        ],
+        "steps_predictions": [
+            "plant_daffodil_in fir1 container1",
+            "use_bulp_composter alice",
+            "keep_pot_in_spot pot",
+            "fertilize_potted_daffodils npc garden",
+            "replant_new_bulb bulb1 garden_center",
+            "transplant_daffodils npc garden_center"
+        ]
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Graft Plants",
+        "step": [
+            "Plant the rootstock plants in advance.",
+            "Prepare to graft the plants in cool weather when the scion plant is budding.",
+            "Make a T-shaped cut on the rootstock plant.",
+            "Cut a healthy bud and attached wood from the scion plant.",
+            "Insert the bud wood into the T cut.",
+            "Tie the plants together.",
+            "Wait for it to heal before removing the binding.",
+            "Cut the rootstock branch some distance above the new bud.",
+            "Once the bud wood has grown a few new leaves, remove the rest of the rootstock branch."
+        ],
+        "steps_predictions": [
+            "plant_plant fir1 container1",
+            "graft_plant npc clifftop fir1",
+            "make_cut npc rootstock_plant container",
+            "cut_buds npc nursery",
+            "insert_bamboo_log npc",
+            "tie_plant fir1 container1",
+            "remove_binding npc",
+            "cut_branch npc path",
+            "remove_branch npc path"
+        ]
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Grow Kumquat",
+        "step": [
+            "Transplant trees in early spring or fall.",
+            "Keep your kumquat in 6 hours of sunlight outside in the summer.",
+            "Move your kumquat inside to a south-facing window in the winter.",
+            "Water the potting mix so the soil is damp 1 in (2.5 cm) deep.",
+            "Harvest the fruits when they are bright orange in the summer.",
+            "Prune the growing stems after you harvest the fruit.",
+            "Cut back the roots by 1 in (2.5 cm) each year.",
+            "Use neem oil to prevent spider mites and other pests."
+        ],
+        "steps_predictions": [
+            "transplant_oak npc path oak_log",
+            "keep_kumquat npc",
+            "gotolocation agent kumquat inside_window",
+            "drink_water person water pot",
+            "harvest_fruit npc",
+            "prune_stalks npc nursery",
+            "cut_tinder npc path tinder",
+            "stop npc spider_mite"
+        ]
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Plant Boxwood",
+        "step": [
+            "Decide whether to plant boxwood in a garden or a pot.",
+            "Choose the correct time to plant.",
+            "Determine where to plant.",
+            "Test your soil.",
+            "Loosen the ball of roots on a new boxwood plant so they are mostly spread out.",
+            "Dig a hole in the soil about as deep as the plant's height and as wide as the spread of the roots.",
+            "Place the boxwood inside the hole and cover the roots with water and soil about 2 inches (5.08 cm) short of the top.",
+            "Pour 2 inches (5.08 cm) of mulch into the remainder of the hole and pack it down.",
+            "Water the boxwood once a week during warm months and much less often during cooler periods."
+        ],
+        "steps_predictions": [
+            "plant_boxwood fir1 container1",
+            "choose_correct_time plant",
+            "determine_where_to_plant fir1 container1",
+            "test_soil soil1 garden_center",
+            "loosen_tinder npc path tinder",
+            "dig_hole npc root_center",
+            "place_tinder npc boxwood tinder",
+            "add_mulch mulch1 garden_center",
+            "drink_water npc boxwood"
+        ]
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Remove a Tree",
+        "step": [
+            "Water the soil surrounding the tree the day before you remove it.",
+            "Remove the topsoil surrounding the top roots.",
+            "Dig the roots out with a spade.",
+            "Dig underneath the root ball and pull it out of the ground."
+        ],
+        "steps_predictions": [
+            "remove_soil fir1 container1 water1",
+            "remove_tinder npc path tinder",
+            "dig_tinder npc path tinder",
+            "dig_tinder npc root_ball"
+        ]
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Graft a Tree",
+        "step": [
+            "Choose your cultivar and your rootstock.",
+            "Amputate your rootstock.",
+            "Cleave your rootstock.",
+            "Prepare the scions.",
+            "Insert the scions into the rootstock.",
+            "Seal the graft.",
+            "Look after the graft."
+        ],
+        "steps_predictions": [
+            "choose_cult cultivar rootstock",
+            "put_rootstock_amputate rootstock1 box1",
+            "cleave_rootstock npc rootstock",
+            "prepare_scions ss",
+            "insert_scions_into_rootstock npc",
+            "sliplargerbuck npc",
+            "graft npc"
+        ]
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Promote Root Growth",
+        "step": [
+            "Apply a root stimulator when you plant the tree or shrub.",
+            "Do a soil test to learn about the health of the soil around the plant.",
+            "Adjust the pH of the soil so it's between 6 and 7.",
+            "Spread fertilizer that's high in phosphorus or potassium.",
+            "Water the plants with willow water to encourage root growth.",
+            "Move potted plants to larger pots."
+        ],
+        "steps_predictions": [
+            "apply_soil fir1 container1 soil1",
+            "learn_soil npc soil_test",
+            "adjust_ pH_of_soil soil water",
+            "plant_plant fir1 pot1",
+            "water_plant fir1 container1 water1",
+            "gotolocation agent potted_plant fir1 container1"
+        ]
+    }
+]

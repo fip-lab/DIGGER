@@ -1,0 +1,97 @@
+[
+    {
+        "task": "build_shelter",
+        "step": [
+            "go west npc camp path",
+            "go west npc path cliff",
+            "go up npc cliff waterfall",
+            "go east npc waterfall mountain",
+            "get branch npc mountain",
+            "go east npc mountain west_plain",
+            "insert_beam branch tree npc west_plain beam",
+            "go east npc west_plain east_plain",
+            "get branches npc east_plain",
+            "get leaves npc east_plain",
+            "get twigs npc east_plain",
+            "go west npc east_plain west_plain",
+            "lean_branches branches npc west_plain beam frame",
+            "clear_spider leaves npc",
+            "layer twigs leaves npc west_plain frame shelter"
+        ],
+        "desc": [
+            "Find a branch 10 feet (3.0 m) long and 3\u20136 inches (7.6\u201315.2 cm) thick. To form your shelter you need a support beam, so look for a sturdy tree branch that isn't rotting. The straighter the branch, the better it will be for forming the structure of your shelter.",
+            "Place the other end of the branch into the split of the other tree. Form a horizontal frame with the main branch by inserting the other end in the split of a nearby tree. Make sure the branch is firmly held in place by shaking it a little.",
+            "In the event that you have no containers and no way to purify water, you can dig a deep hole, let it fill with groundwater, and wait for the particles to settle at the bottom and the water is clear before you drink it. You should only do this if you have no other option.",
+            "Insert 1 end of the branch into the split of 1 of the trees. Where the tree splits and forms a \u201cV\u201d shape, place 1 end of the branch to hold it up as a support beam. If the tree doesn't have a split, use a log that ends in a \u201cV\u201d shape and lean it against a tree so the branch is supported by the tree."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action insert_beam ; insert end(s) of the branch into the split(s) of the tree(s)\n      :parameters (?b - branch ?t - tree ?p - player ?l1 - location ?beam - beam) \n      :precondition (and (at ?p ?l1) (dry ?l1) (flat ?l1) (at ?t ?l1) (has_split_in_trunk ?t) (inventory ?p ?b) (not (has_bug ?b)) (long ?b) (thick ?b) )\n      :effect (and (at ?p ?l1) (not (inventory ?p ?b)) (at ?beam ?l1))\n   )",
+            "(:action lean_branches ; Lean branches against the main branch to form the structure of your shelter.\n      :parameters (?branches - branches ?p - player ?l1 - location ?beam - beam ?frame - frame) \n      :precondition (and (at ?p ?l1) (inventory ?p ?branches) (at ?beam ?l1))\n      :effect (and (at ?p ?l1) (not (inventory ?p ?branches)) (at ?frame ?l1))\n   )",
+            "(:action eat ; Eat anything you find edible\n      :parameters (?i - item ?p - player) \n      :precondition (and (hungry ?p) (inventory ?p ?i) (not (unwashed ?i)) (edible ?i))\n      :effect (and (not (inventory ?p ?i)) (not (hungry ?p)))\n   )",
+            "(:action wash ; Wash off plants that you find.\n      :parameters (?i - item ?p - player ?water - water) \n      :precondition (and (inventory ?p ?i) (inventory ?p ?water) (unwashed ?i))\n      :effect (and (inventory ?p ?i) (not (unwashed ?i)))\n   )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action make_snare ; Take a piece of wire and make a large circle\n      :parameters (?w - wire ?p - player ?s - snare) \n      :precondition (and (inventory ?p ?w))\n      :effect (and (not (inventory ?p ?w)) (inventory ?p ?s) (not (hanged ?s)))\n   )",
+            "(:action make_horizontal_bar ; Make a horizontal bar with a branch to hang your snare\n      :parameters (?b - branch ?p - player ?bar - bar) \n      :precondition (and (inventory ?p ?b))\n      :effect (and (not (inventory ?p ?b)) (inventory ?p ?bar))\n   )",
+            "(:action hang_snare ; Hang the circle of the snare over a path\n      :parameters (?s - snare ?bar - bar ?p - player ?l - location) \n      :precondition (and (inventory ?p ?s) (inventory ?p ?bar) (not (hanged ?s)) (at ?p ?l) (made_by_animal ?l))\n      :effect (and (hanged ?s) (at ?s ?l))\n   )\n\n)",
+            "(:action layer ; Lay twigs and leaves\n      :parameters (?twigs - twigs ?leaves - leaves ?p - player ?l1 - location ?frame - frame ?shelter - shelter) \n      :precondition (and (at ?p ?l1) (inventory ?p ?twigs) (inventory ?p ?leaves) (not (has_bug ?leaves)) (at ?frame ?l1))\n      :effect (and (at ?p ?l1) (not (inventory ?p ?twigs)) (not (inventory ?p ?leaves)) (at ?shelter ?l1))\n   )",
+            "(:action clear_spider ; clear off any critters or spiders that may be on the branch or leaves\n      :parameters (?item - item ?p - player) \n      :precondition (and (inventory ?p ?item) (has_bug ?item))\n      :effect (and (not (has_bug ?item)) (inventory ?p ?item))\n   )",
+            "(:action drop ; drop down an item and remove it from the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (inventory ?p ?item) (not (at ?item ?l1)))\n      :effect (and (not (inventory ?p ?item)) (at ?item ?l1))\n   )"
+        ],
+        "goal_state": "((at shelter west_plain) (at npc west_plain))"
+    },
+    {
+        "task": "eat_plants",
+        "step": [
+            "go west npc camp path",
+            "go west npc path cliff",
+            "go up npc cliff waterfall",
+            "get_water npc waterfall water",
+            "go east npc waterfall mountain",
+            "get flowers npc mountain",
+            "wash flowers npc water",
+            "eat flowers npc"
+        ],
+        "desc": [
+            "Pick wild edible berries to eat. If you happen to come by an identifiable berry bush, definitely take advantage. Never consume any berries that you cannot positively identify as many are toxic. To be safe, stick to eating berries that you recognize like blackberries, raspberries, and wild strawberries.",
+            "Search for a source of fresh water."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action eat ; Eat anything you find edible\n      :parameters (?i - item ?p - player) \n      :precondition (and (hungry ?p) (inventory ?p ?i) (not (unwashed ?i)) (edible ?i))\n      :effect (and (not (inventory ?p ?i)) (not (hungry ?p)))\n   )",
+            "(:action wash ; Wash off plants that you find.\n      :parameters (?i - item ?p - player ?water - water) \n      :precondition (and (inventory ?p ?i) (inventory ?p ?water) (unwashed ?i))\n      :effect (and (inventory ?p ?i) (not (unwashed ?i)))\n   )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )"
+        ],
+        "goal_state": "((not (hungry npc)))"
+    },
+    {
+        "task": "build_snare",
+        "step": [
+            "go west npc camp path",
+            "get wire npc path",
+            "go west npc path cliff",
+            "go up npc cliff waterfall",
+            "go east npc waterfall mountain",
+            "get branch npc mountain",
+            "go west npc mountain waterfall",
+            "go west npc waterfall footpath",
+            "make_snare wire npc snare",
+            "make_horizontal_bar branch npc bar",
+            "hang_snare snare bar npc footpath"
+        ],
+        "desc": [
+            "Look for edible mushrooms in the woods, if you are trained. Look for wild mushrooms near dark and damp areas or on dying trees in the woods. But be very careful because if you eat the wrong mushroom, you could become extremely ill and potentially die. If you're not sure about whether or not a mushroom is safe to eat, don't eat it!"
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action make_snare ; Take a piece of wire and make a large circle\n      :parameters (?w - wire ?p - player ?s - snare) \n      :precondition (and (inventory ?p ?w))\n      :effect (and (not (inventory ?p ?w)) (inventory ?p ?s) (not (hanged ?s)))\n   )",
+            "(:action make_horizontal_bar ; Make a horizontal bar with a branch to hang your snare\n      :parameters (?b - branch ?p - player ?bar - bar) \n      :precondition (and (inventory ?p ?b))\n      :effect (and (not (inventory ?p ?b)) (inventory ?p ?bar))\n   )",
+            "(:action hang_snare ; Hang the circle of the snare over a path\n      :parameters (?s - snare ?bar - bar ?p - player ?l - location) \n      :precondition (and (inventory ?p ?s) (inventory ?p ?bar) (not (hanged ?s)) (at ?p ?l) (made_by_animal ?l))\n      :effect (and (hanged ?s) (at ?s ?l))\n   )\n\n)"
+        ],
+        "goal_state": "((hanged snare) (at snare footpath))"
+    }
+]

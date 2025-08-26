@@ -1,0 +1,21 @@
+[
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate Your Husband's Birthday with No Money",
+        "step": [
+            "Print out free party decorations online.",
+            "Make a special dessert with ingredients you already have.",
+            "Plan a potluck picnic with your husband\u2019s friends.",
+            "Have a throwback birthday party for your husband.",
+            "Show one of your husband\u2019s favorite movies."
+        ],
+        "steps_predictions": [
+            "print-free party decorations",
+            "make_dessert npc kitchen",
+            "plan_potatoes potatoes",
+            "throw_back_to_birth_party my_husband",
+            "gather_husband npc basement"
+        ],
+        "goal_state": " ((in_air food) (served_food npc dining_table))"
+    }
+]

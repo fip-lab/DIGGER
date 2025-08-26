@@ -1,0 +1,3688 @@
+[
+    {
+        "cluster_label": 412,
+        "task": "How to Plant a Shrub",
+        "step": [
+            "Keep the shrub in the container before planting.",
+            "Remove the plant from the container.",
+            "Prepare the roots.",
+            "Situate the shrub in the hole.",
+            "Replace dirt around the plant.",
+            "Spread mulch around the shrub.",
+            "Water the area."
+        ],
+        "steps_predictions": [
+            "plant_shrub fir1 container1",
+            "remove_plant fir1 container1",
+            "prepare_roots root_center",
+            "sliplargerbamboo_center shrub",
+            "replace_dirt_with_water npc garden",
+            "spread_mixture mulch container1 container2",
+            "drink_water area water"
+        ],
+        "goal_state": " ((planted_in fir1 container2))",
+        "similar_entity": {
+            "root center": {
+                "roots": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "root center ObjectUse dig a hole",
+                    "root center MadeUpOf root",
+                    "root center HasProperty root",
+                    "root center CapableOf dig hole"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "garden": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[flowers]]",
+                    "You are likely to find [[a lizard]] in [[your garden]]",
+                    "[[a garden]] has [[flowers]]"
+                ],
+                "comet_knowledge": [
+                    "garden ObjectUse growing vegetables",
+                    "garden MadeUpOf garden",
+                    "garden HasProperty growing vegetables",
+                    "garden CapableOf grow vegetables"
+                ]
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ],
+                "comet_knowledge": [
+                    "water ObjectUse water plants",
+                    "water MadeUpOf water",
+                    "water HasProperty found in ocean",
+                    "water CapableOf water plants"
+                ]
+            },
+            "shrub": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "shrub ObjectUse put in the garden",
+                    "shrub MadeUpOf shrub",
+                    "shrub HasProperty grasses",
+                    "shrub CapableOf put in garden"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[area]]"
+                ],
+                "comet_knowledge": [
+                    "area ObjectUse place to live",
+                    "area MadeUpOf surface of earth",
+                    "area HasProperty surface of earth",
+                    "area CapableOf travel to"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fir ObjectUse water plants",
+                    "fir MadeUpOf water",
+                    "fir HasProperty found in forest",
+                    "fir CapableOf water plants"
+                ]
+            },
+            "mulch": {
+                "trash bags": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on floor | laying around",
+                        "after": "in waste baskets | in waste baskts | in trashcan"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in waste baskets",
+                        "after": "in trash bag"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "flat",
+                        "after": "rounder"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "mulch ObjectUse put in the garden",
+                    "mulch MadeUpOf mulch",
+                    "mulch HasProperty mulch",
+                    "mulch CapableOf put on lawn"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Plant Boxwood",
+        "step": [
+            "Decide whether to plant boxwood in a garden or a pot.",
+            "Choose the correct time to plant.",
+            "Determine where to plant.",
+            "Test your soil.",
+            "Loosen the ball of roots on a new boxwood plant so they are mostly spread out.",
+            "Dig a hole in the soil about as deep as the plant's height and as wide as the spread of the roots.",
+            "Place the boxwood inside the hole and cover the roots with water and soil about 2 inches (5.08 cm) short of the top.",
+            "Pour 2 inches (5.08 cm) of mulch into the remainder of the hole and pack it down.",
+            "Water the boxwood once a week during warm months and much less often during cooler periods."
+        ],
+        "steps_predictions": [
+            "plant_boxwood fir1 container1",
+            "choose_correct_time plant",
+            "determine_where_to_plant fir1 container1",
+            "test_soil soil1 garden_center",
+            "loosen_tinder npc path tinder",
+            "dig_hole npc root_center",
+            "place_tinder npc boxwood tinder",
+            "add_mulch mulch1 garden_center",
+            "drink_water npc boxwood"
+        ],
+        "goal_state": " ((planted_in fir1 container1))",
+        "similar_entity": {
+            "path": {
+                "routes": [
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "appearance",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "uninvestigated",
+                        "after": "investigated"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[road]] is related to [[path]]"
+                ],
+                "comet_knowledge": [
+                    "path ObjectUse walk on",
+                    "path MadeUpOf path",
+                    "path HasProperty found in woods",
+                    "path CapableOf walk on"
+                ]
+            },
+            "root center": {
+                "roots": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "root center ObjectUse dig a hole",
+                    "root center MadeUpOf root",
+                    "root center HasProperty root",
+                    "root center CapableOf dig hole"
+                ]
+            },
+            "soil": {
+                "soil": [
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "in container"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Solo]] is a translation of [[soil]]",
+                    "[[ground]] is related to [[soil]]",
+                    "You are likely to find [[a potato]] in [[soil]]"
+                ],
+                "comet_knowledge": [
+                    "soil ObjectUse make a garden",
+                    "soil MadeUpOf soil",
+                    "soil HasProperty soil",
+                    "soil CapableOf plant seeds"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "boxwood": {
+                "bare wood": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "tacky"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "brown",
+                        "after": "white"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "sticky"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "boxwood ObjectUse cut into pieces",
+                    "boxwood MadeUpOf boxwood",
+                    "boxwood HasProperty wood",
+                    "boxwood CapableOf burn for fuel"
+                ]
+            },
+            "plant": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[seed]] is related to [[plant]]",
+                    "*Something you find on [[the windowsill]] is [[a plant]]",
+                    "[[A plant]] can [[grow in a garden]]",
+                    "[[Cabbage]] is [[a plant]]",
+                    "If you want to [[grow vegetables]] then you should [[plant them]]"
+                ],
+                "comet_knowledge": [
+                    "plant ObjectUse plant in garden",
+                    "plant MadeUpOf seed",
+                    "plant HasProperty found in garden",
+                    "plant CapableOf plant seeds"
+                ]
+            },
+            "tinder": {
+                "tin": [
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "tinder ObjectUse connect with someone",
+                    "tinder MadeUpOf search engine",
+                    "tinder HasProperty social media",
+                    "tinder CapableOf connect with someone"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fir ObjectUse water plants",
+                    "fir MadeUpOf water",
+                    "fir HasProperty found in forest",
+                    "fir CapableOf water plants"
+                ]
+            },
+            "mulch": {
+                "trash bags": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on floor | laying around",
+                        "after": "in waste baskets | in waste baskts | in trashcan"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in waste baskets",
+                        "after": "in trash bag"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "flat",
+                        "after": "rounder"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "mulch ObjectUse put in the garden",
+                    "mulch MadeUpOf mulch",
+                    "mulch HasProperty mulch",
+                    "mulch CapableOf put on lawn"
+                ]
+            },
+            "garden center": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "garden center ObjectUse buying plants",
+                    "garden center MadeUpOf garden",
+                    "garden center HasProperty found in",
+                    "garden center CapableOf garden"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Transplant a Plant",
+        "step": [
+            "Research the date when you should move your plant outside.",
+            "Begin to harden the plant off 2 weeks before the transplanting date.",
+            "Plan to transplant during the cool part of the day.",
+            "Fill the planting bed with gardening soil.",
+            "Dig a hole big enough to hold the plant's pot.",
+            "Turn the pot upside down and slide the root ball out.",
+            "Leave the plant in the pot if it's made from peat or paper.",
+            "Loosen the root ball with your fingers, if needed.",
+            "Place the root ball into the hole.",
+            "Fill the space around the root ball with more soil and pat it down.",
+            "Water the plant thoroughly."
+        ],
+        "steps_predictions": [
+            "move_plant fir1 container1",
+            "harden_plant fir1 container1",
+            "plan_transplant npc",
+            "fill_planted_soil container",
+            "dip_pot fir1 pot1",
+            "slide_pot_out root_ball1 container1",
+            "peel npc clifftop",
+            "loosen_tinder npc root_ball",
+            "place_root_ball_into_hole root_balls",
+            "fill soil_container root_ball1 container1",
+            "wet_plant fir1 container1"
+        ],
+        "goal_state": " ((planted_in fir1 container1))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "root balls": {
+                "carob fruit balls": [
+                    {
+                        "attribute": "location",
+                        "before": "in hand | on counter",
+                        "after": "in freezer | on plate"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "room temperature | room temp",
+                        "after": "cold | freezing"
+                    },
+                    {
+                        "attribute": "readiness",
+                        "before": "unprepared",
+                        "after": "prepared"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in freezer",
+                        "after": "on table"
+                    },
+                    {
+                        "attribute": "hardness",
+                        "before": "soft",
+                        "after": "firm"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "root balls ObjectUse throw at someone",
+                    "root balls MadeUpOf root",
+                    "root balls HasProperty planted in garden",
+                    "root balls CapableOf plant in garden"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fir ObjectUse water plants",
+                    "fir MadeUpOf water",
+                    "fir HasProperty found in forest",
+                    "fir CapableOf water plants"
+                ]
+            },
+            "soil container": {
+                "soil": [
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "in container"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "soil container ObjectUse put the dirt in",
+                    "soil container MadeUpOf soil",
+                    "soil container HasProperty used in garden",
+                    "soil container CapableOf put dirt in"
+                ]
+            },
+            "clifftop": {
+                "bubble want": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted | shaped like want | bent into loop"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "in its original shape",
+                        "after": "in wand shape"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "for hanging",
+                        "after": "for blowing bubbles"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "inside",
+                        "after": "outside"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "clifftop ObjectUse climb to",
+                    "clifftop MadeUpOf roof",
+                    "clifftop HasProperty found in mountains",
+                    "clifftop CapableOf climb to"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "pot": {
+                "pot": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the cupboard | in the cabinet",
+                        "after": "on the stovetop | on the stove top"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[-gryde]] is a translation of [[pot]]",
+                    "You are likely to find [[a ficus]] in [[a pot]]",
+                    "[[a pot]] can be used to [[make soup]]"
+                ],
+                "comet_knowledge": [
+                    "pot ObjectUse put the food in",
+                    "pot MadeUpOf hot water",
+                    "pot HasProperty boiling water",
+                    "pot CapableOf boil water"
+                ]
+            },
+            "root ball": {
+                "wailmer": [
+                    {
+                        "attribute": "action",
+                        "before": "unused",
+                        "after": "used"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained"
+                    },
+                    {
+                        "attribute": "going",
+                        "before": "still",
+                        "after": "going"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved | still wailmer",
+                        "after": "evolved | evolving"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "unattained",
+                        "after": "now attained"
+                    },
+                    {
+                        "attribute": "items",
+                        "before": "uncopied",
+                        "after": "copied"
+                    },
+                    {
+                        "attribute": "full",
+                        "before": "hungry",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved",
+                        "after": "evolved"
+                    },
+                    {
+                        "attribute": "action",
+                        "before": "without rare candies",
+                        "after": "now holder of rare candy"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "root ball ObjectUse throw at someone",
+                    "root ball MadeUpOf root",
+                    "root ball HasProperty root",
+                    "root ball CapableOf plant in garden"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Remove a Tree",
+        "step": [
+            "Water the soil surrounding the tree the day before you remove it.",
+            "Remove the topsoil surrounding the top roots.",
+            "Dig the roots out with a spade.",
+            "Dig underneath the root ball and pull it out of the ground."
+        ],
+        "steps_predictions": [
+            "remove_soil fir1 container1 water1",
+            "remove_tinder npc path tinder",
+            "dig_tinder npc path tinder",
+            "dig_tinder npc root_ball"
+        ],
+        "goal_state": " ((remove_soil fir1 container1))",
+        "similar_entity": {
+            "path": {
+                "routes": [
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "appearance",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "uninvestigated",
+                        "after": "investigated"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[road]] is related to [[path]]"
+                ],
+                "comet_knowledge": [
+                    "path ObjectUse walk on",
+                    "path MadeUpOf path",
+                    "path HasProperty found in woods",
+                    "path CapableOf walk on"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ],
+                "comet_knowledge": [
+                    "water ObjectUse water plants",
+                    "water MadeUpOf water",
+                    "water HasProperty found in ocean",
+                    "water CapableOf water plants"
+                ]
+            },
+            "tinder": {
+                "tin": [
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "tinder ObjectUse connect with someone",
+                    "tinder MadeUpOf search engine",
+                    "tinder HasProperty social media",
+                    "tinder CapableOf connect with someone"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fir ObjectUse water plants",
+                    "fir MadeUpOf water",
+                    "fir HasProperty found in forest",
+                    "fir CapableOf water plants"
+                ]
+            },
+            "root ball": {
+                "wailmer": [
+                    {
+                        "attribute": "action",
+                        "before": "unused",
+                        "after": "used"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained"
+                    },
+                    {
+                        "attribute": "going",
+                        "before": "still",
+                        "after": "going"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved | still wailmer",
+                        "after": "evolved | evolving"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "unattained",
+                        "after": "now attained"
+                    },
+                    {
+                        "attribute": "items",
+                        "before": "uncopied",
+                        "after": "copied"
+                    },
+                    {
+                        "attribute": "full",
+                        "before": "hungry",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved",
+                        "after": "evolved"
+                    },
+                    {
+                        "attribute": "action",
+                        "before": "without rare candies",
+                        "after": "now holder of rare candy"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "root ball ObjectUse throw at someone",
+                    "root ball MadeUpOf root",
+                    "root ball HasProperty root",
+                    "root ball CapableOf plant in garden"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Plant a Bare Root Tree",
+        "step": [
+            "Carefully unpack the bare root tree from the container or material it came in.",
+            "Set the tree into a bucket filled with water.",
+            "Dig a hole slightly larger than the diameter and depth of the tree and soil width.",
+            "Check to be sure there are no large weed roots in the hole you have dug.",
+            "Plant the tree so that where the roots meet the base of the tree.",
+            "Shovel the remaining dirt from the container.",
+            "Build a water basin around the outside of the tree.",
+            "Add a mulch area of a metre /a yard wide and 5 centimeter (2.0 in) deep around the tree base.",
+            "Water the tree again and again.",
+            "Stake large trees.",
+            "Remove the stake after a year."
+        ],
+        "steps_predictions": [
+            "unpack_bare_branch npc container",
+            "set_tree fir1 bucket1",
+            "dig_hole npc path oak_log",
+            "check_soil npc path",
+            "plant_tinder npc path tinder",
+            "peel_dirt npc",
+            "build_water_basin npc west_plain",
+            "add_area mulch area2",
+            "drink_water npc",
+            "stake_oak npc oaks oak_log",
+            "remove-stake alice"
+        ],
+        "goal_state": " ((planted_in npc oak_log))",
+        "similar_entity": {
+            "path": {
+                "routes": [
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "appearance",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "uninvestigated",
+                        "after": "investigated"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[road]] is related to [[path]]"
+                ],
+                "comet_knowledge": [
+                    "path ObjectUse walk on",
+                    "path MadeUpOf path",
+                    "path HasProperty found in woods",
+                    "path CapableOf walk on"
+                ]
+            },
+            "oaks": {
+                "bare wood": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "tacky"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "brown",
+                        "after": "white"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "sticky"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "oaks ObjectUse wear as a hat",
+                    "oaks MadeUpOf water",
+                    "oaks HasProperty water",
+                    "oaks CapableOf water plants"
+                ]
+            },
+            "west plain": {
+                "outside area": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created | made"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "west plain ObjectUse north america",
+                    "west plain MadeUpOf north america",
+                    "west plain HasProperty north america",
+                    "west plain CapableOf fly kite"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "bucket": {
+                "bucket": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold | cooler",
+                        "after": "hot | warmer"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full | fuller"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "more full | fuller",
+                        "after": "less full | emptier"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a bucket]] is used for [[carrying liquids]]",
+                    "[[Balde]] is a translation of [[bucket]]",
+                    "You are likely to find [[a bucket]] in [[a janitors closet]]",
+                    "[[a bucket]] is [[a container]]"
+                ],
+                "comet_knowledge": [
+                    "bucket ObjectUse holding water",
+                    "bucket MadeUpOf bucket",
+                    "bucket HasProperty holding water",
+                    "bucket CapableOf hold water"
+                ]
+            },
+            "tinder": {
+                "tin": [
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "tinder ObjectUse connect with someone",
+                    "tinder MadeUpOf search engine",
+                    "tinder HasProperty social media",
+                    "tinder CapableOf connect with someone"
+                ]
+            },
+            "oak log": {
+                "bare wood": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "tacky"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "brown",
+                        "after": "white"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "sticky"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "oak log ObjectUse burn for fuel",
+                    "oak log MadeUpOf wood",
+                    "oak log HasProperty found in woods",
+                    "oak log CapableOf burn for fuel"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[area]]"
+                ],
+                "comet_knowledge": [
+                    "area ObjectUse place to live",
+                    "area MadeUpOf surface of earth",
+                    "area HasProperty surface of earth",
+                    "area CapableOf travel to"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fir ObjectUse water plants",
+                    "fir MadeUpOf water",
+                    "fir HasProperty found in forest",
+                    "fir CapableOf water plants"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            },
+            "mulch": {
+                "trash bags": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on floor | laying around",
+                        "after": "in waste baskets | in waste baskts | in trashcan"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in waste baskets",
+                        "after": "in trash bag"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "flat",
+                        "after": "rounder"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "mulch ObjectUse put in the garden",
+                    "mulch MadeUpOf mulch",
+                    "mulch HasProperty mulch",
+                    "mulch CapableOf put on lawn"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Graft Plants",
+        "step": [
+            "Plant the rootstock plants in advance.",
+            "Prepare to graft the plants in cool weather when the scion plant is budding.",
+            "Make a T-shaped cut on the rootstock plant.",
+            "Cut a healthy bud and attached wood from the scion plant.",
+            "Insert the bud wood into the T cut.",
+            "Tie the plants together.",
+            "Wait for it to heal before removing the binding.",
+            "Cut the rootstock branch some distance above the new bud.",
+            "Once the bud wood has grown a few new leaves, remove the rest of the rootstock branch."
+        ],
+        "steps_predictions": [
+            "plant_plant fir1 container1",
+            "graft_plant npc clifftop fir1",
+            "make_cut npc rootstock_plant container",
+            "cut_buds npc nursery",
+            "insert_bamboo_log npc",
+            "tie_plant fir1 container1",
+            "remove_binding npc",
+            "cut_branch npc path",
+            "remove_branch npc path"
+        ],
+        "goal_state": " ((planted npc fir1 container1))",
+        "similar_entity": {
+            "path": {
+                "routes": [
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "appearance",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "uninvestigated",
+                        "after": "investigated"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[road]] is related to [[path]]"
+                ],
+                "comet_knowledge": [
+                    "path ObjectUse walk on",
+                    "path MadeUpOf path",
+                    "path HasProperty found in woods",
+                    "path CapableOf walk on"
+                ]
+            },
+            "rootstock plant": {
+                "roots": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "rootstock plant ObjectUse grow in a garden",
+                    "rootstock plant MadeUpOf root",
+                    "rootstock plant HasProperty rootstock",
+                    "rootstock plant CapableOf plant in garden"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "clifftop": {
+                "bubble want": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted | shaped like want | bent into loop"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "in its original shape",
+                        "after": "in wand shape"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "for hanging",
+                        "after": "for blowing bubbles"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "inside",
+                        "after": "outside"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "clifftop ObjectUse climb to",
+                    "clifftop MadeUpOf roof",
+                    "clifftop HasProperty found in mountains",
+                    "clifftop CapableOf climb to"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fir ObjectUse water plants",
+                    "fir MadeUpOf water",
+                    "fir HasProperty found in forest",
+                    "fir CapableOf water plants"
+                ]
+            },
+            "nursery": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "nursery ObjectUse sleep in",
+                    "nursery MadeUpOf house",
+                    "nursery HasProperty homeschool",
+                    "nursery CapableOf sleep in"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Transplant Daffodils",
+        "step": [
+            "Plant daffodil bulbs in a deep pot with good drainage.",
+            "Use bulb compost or regular potting compost.",
+            "Keep the pot in a cool, dark spot for the first few months.",
+            "Fertilize potted daffodils with bone meal.",
+            "Replant fresh bulbs each year.",
+            "Transplant daffodils from a pot to the ground."
+        ],
+        "steps_predictions": [
+            "plant_daffodil_in fir1 container1",
+            "use_bulp_composter alice",
+            "keep_pot_in_spot pot",
+            "fertilize_potted_daffodils npc garden",
+            "replant_new_bulb bulb1 garden_center",
+            "transplant_daffodils npc garden_center"
+        ],
+        "goal_state": " ((planted_in fir1 container1))",
+        "similar_entity": {
+            "bulb": {
+                "lamp": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wicked",
+                        "after": "wickless"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[idea]] is related to [[bulb]]"
+                ],
+                "comet_knowledge": [
+                    "bulb ObjectUse light up room",
+                    "bulb MadeUpOf light bulb",
+                    "bulb HasProperty light",
+                    "bulb CapableOf light way"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "garden": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[flowers]]",
+                    "You are likely to find [[a lizard]] in [[your garden]]",
+                    "[[a garden]] has [[flowers]]"
+                ],
+                "comet_knowledge": [
+                    "garden ObjectUse growing vegetables",
+                    "garden MadeUpOf garden",
+                    "garden HasProperty growing vegetables",
+                    "garden CapableOf grow vegetables"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fir ObjectUse water plants",
+                    "fir MadeUpOf water",
+                    "fir HasProperty found in forest",
+                    "fir CapableOf water plants"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "pot": {
+                "pot": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the cupboard | in the cabinet",
+                        "after": "on the stovetop | on the stove top"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[-gryde]] is a translation of [[pot]]",
+                    "You are likely to find [[a ficus]] in [[a pot]]",
+                    "[[a pot]] can be used to [[make soup]]"
+                ],
+                "comet_knowledge": [
+                    "pot ObjectUse put the food in",
+                    "pot MadeUpOf hot water",
+                    "pot HasProperty boiling water",
+                    "pot CapableOf boil water"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            },
+            "garden center": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "garden center ObjectUse buying plants",
+                    "garden center MadeUpOf garden",
+                    "garden center HasProperty found in",
+                    "garden center CapableOf garden"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Plant",
+        "step": [
+            "Choose the best location for your tree.",
+            "Till the soil lightly with a pick or a shovel.",
+            "Dig a hole in the area that is twice as wide as the root ball of your tree.",
+            "Loosen the roots in preparation for the transplant.",
+            "Pull the container away from the root ball until it is completely exposed.",
+            "Look for roots that are circling.",
+            "Place the root ball of the tree in your hole.",
+            "Mix one part compost with three parts soil before you fill the hole around the tree.",
+            "Fill in the area around the root ball with your mixture of compost and soil.",
+            "Create a circular berm, or small mounded hill.",
+            "Cover the area with a layer of mulch.",
+            "Use stakes to support the tree.",
+            "Water the area.",
+            "Enjoy your gift to the earth!."
+        ],
+        "steps_predictions": [
+            "choose_location fir1",
+            "treat_soil soil1 garden_center",
+            "dig_area root_ball area",
+            "loosen_branch npc root_center",
+            "pull_container container1 root_ball1",
+            "get_roots npc root_of_tree",
+            "place_root_of_tree fir1 garden_center",
+            "mix_soil npc garden soil",
+            "fill_area area1 container1",
+            "create_berm berm1",
+            "cover_area area1",
+            "stabilize_tree npc path",
+            "drink_water area water",
+            "gather_gems npc garden"
+        ],
+        "goal_state": " ((planted_in fir1 container1))",
+        "similar_entity": {
+            "root center": {
+                "roots": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "root center ObjectUse dig a hole",
+                    "root center MadeUpOf root",
+                    "root center HasProperty root",
+                    "root center CapableOf dig hole"
+                ]
+            },
+            "path": {
+                "routes": [
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "appearance",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "uninvestigated",
+                        "after": "investigated"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[road]] is related to [[path]]"
+                ],
+                "comet_knowledge": [
+                    "path ObjectUse walk on",
+                    "path MadeUpOf path",
+                    "path HasProperty found in woods",
+                    "path CapableOf walk on"
+                ]
+            },
+            "soil": {
+                "soil": [
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "in container"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Solo]] is a translation of [[soil]]",
+                    "[[ground]] is related to [[soil]]",
+                    "You are likely to find [[a potato]] in [[soil]]"
+                ],
+                "comet_knowledge": [
+                    "soil ObjectUse make a garden",
+                    "soil MadeUpOf soil",
+                    "soil HasProperty soil",
+                    "soil CapableOf plant seeds"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "berm": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "berm ObjectUse use as a weapon",
+                    "berm MadeUpOf water",
+                    "berm HasProperty hard to break down",
+                    "berm CapableOf use as weapon"
+                ]
+            },
+            "garden": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[flowers]]",
+                    "You are likely to find [[a lizard]] in [[your garden]]",
+                    "[[a garden]] has [[flowers]]"
+                ],
+                "comet_knowledge": [
+                    "garden ObjectUse growing vegetables",
+                    "garden MadeUpOf garden",
+                    "garden HasProperty growing vegetables",
+                    "garden CapableOf grow vegetables"
+                ]
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ],
+                "comet_knowledge": [
+                    "water ObjectUse water plants",
+                    "water MadeUpOf water",
+                    "water HasProperty found in ocean",
+                    "water CapableOf water plants"
+                ]
+            },
+            "root of tree": {
+                "roots": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "root of tree ObjectUse root",
+                    "root of tree MadeUpOf root",
+                    "root of tree HasProperty root",
+                    "root of tree CapableOf root tree"
+                ]
+            },
+            "garden center": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "garden center ObjectUse buying plants",
+                    "garden center MadeUpOf garden",
+                    "garden center HasProperty found in",
+                    "garden center CapableOf garden"
+                ]
+            },
+            "area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[area]]"
+                ],
+                "comet_knowledge": [
+                    "area ObjectUse place to live",
+                    "area MadeUpOf surface of earth",
+                    "area HasProperty surface of earth",
+                    "area CapableOf travel to"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fir ObjectUse water plants",
+                    "fir MadeUpOf water",
+                    "fir HasProperty found in forest",
+                    "fir CapableOf water plants"
+                ]
+            },
+            "root ball": {
+                "wailmer": [
+                    {
+                        "attribute": "action",
+                        "before": "unused",
+                        "after": "used"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained"
+                    },
+                    {
+                        "attribute": "going",
+                        "before": "still",
+                        "after": "going"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved | still wailmer",
+                        "after": "evolved | evolving"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "unattained",
+                        "after": "now attained"
+                    },
+                    {
+                        "attribute": "items",
+                        "before": "uncopied",
+                        "after": "copied"
+                    },
+                    {
+                        "attribute": "full",
+                        "before": "hungry",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved",
+                        "after": "evolved"
+                    },
+                    {
+                        "attribute": "action",
+                        "before": "without rare candies",
+                        "after": "now holder of rare candy"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "root ball ObjectUse throw at someone",
+                    "root ball MadeUpOf root",
+                    "root ball HasProperty root",
+                    "root ball CapableOf plant in garden"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Grow Kumquat",
+        "step": [
+            "Transplant trees in early spring or fall.",
+            "Keep your kumquat in 6 hours of sunlight outside in the summer.",
+            "Move your kumquat inside to a south-facing window in the winter.",
+            "Water the potting mix so the soil is damp 1 in (2.5 cm) deep.",
+            "Harvest the fruits when they are bright orange in the summer.",
+            "Prune the growing stems after you harvest the fruit.",
+            "Cut back the roots by 1 in (2.5 cm) each year.",
+            "Use neem oil to prevent spider mites and other pests."
+        ],
+        "steps_predictions": [
+            "transplant_oak npc path oak_log",
+            "keep_kumquat npc",
+            "gotolocation agent kumquat inside_window",
+            "drink_water person water pot",
+            "harvest_fruit npc",
+            "prune_stalks npc nursery",
+            "cut_tinder npc path tinder",
+            "stop npc spider_mite"
+        ],
+        "goal_state": " ((planted npc oak_log))",
+        "similar_entity": {
+            "path": {
+                "routes": [
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "appearance",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "uninvestigated",
+                        "after": "investigated"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[road]] is related to [[path]]"
+                ],
+                "comet_knowledge": [
+                    "path ObjectUse walk on",
+                    "path MadeUpOf path",
+                    "path HasProperty found in woods",
+                    "path CapableOf walk on"
+                ]
+            },
+            "person": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[person]] is related to [[human]]",
+                    "[[A person]] can [[cross a street]]",
+                    "[[a person]] wants [[a headache]]",
+                    "[[A slave]] is [[a person]]",
+                    "[[a person]] doesn't want to [[be diseased]]",
+                    "[[a person]] is part of [[society]]"
+                ],
+                "comet_knowledge": [
+                    "person ObjectUse have sex with",
+                    "person MadeUpOf person y",
+                    "person HasProperty one's self",
+                    "person CapableOf drink too much"
+                ]
+            },
+            "pot": {
+                "pot": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the cupboard | in the cabinet",
+                        "after": "on the stovetop | on the stove top"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[-gryde]] is a translation of [[pot]]",
+                    "You are likely to find [[a ficus]] in [[a pot]]",
+                    "[[a pot]] can be used to [[make soup]]"
+                ],
+                "comet_knowledge": [
+                    "pot ObjectUse put the food in",
+                    "pot MadeUpOf hot water",
+                    "pot HasProperty boiling water",
+                    "pot CapableOf boil water"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "kumquat": {
+                "potato": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "cleaner | clean | wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "on counter"
+                    },
+                    {
+                        "attribute": "thickness",
+                        "before": "thicker",
+                        "after": "thinner"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "short",
+                        "after": "long"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "peeled"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on cloth"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | on stove",
+                        "after": "in dish | on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "kumquat ObjectUse kumquat",
+                    "kumquat MadeUpOf seed",
+                    "kumquat HasProperty kumquat",
+                    "kumquat CapableOf plant in garden"
+                ]
+            },
+            "tinder": {
+                "tin": [
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "tinder ObjectUse connect with someone",
+                    "tinder MadeUpOf search engine",
+                    "tinder HasProperty social media",
+                    "tinder CapableOf connect with someone"
+                ]
+            },
+            "inside window": {
+                "window": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler | warmer",
+                        "after": "warmer | cooler"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "transparency",
+                        "before": "more opaque | more covered",
+                        "after": "more transparent | more bare"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet | dry",
+                        "after": "dry | wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "transparency",
+                        "before": "more opaque | more covered",
+                        "after": "more transparent | more bare"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirtier",
+                        "after": "cleaner"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "inside window ObjectUse look out of",
+                    "inside window MadeUpOf windowsill",
+                    "inside window HasProperty inside",
+                    "inside window CapableOf look out"
+                ]
+            },
+            "spider mite": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "spider mite ObjectUse scare people away",
+                    "spider mite MadeUpOf spider web",
+                    "spider mite HasProperty found in garden",
+                    "spider mite CapableOf kill spider"
+                ]
+            },
+            "oak log": {
+                "bare wood": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "tacky"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "brown",
+                        "after": "white"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "sticky"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "oak log ObjectUse burn for fuel",
+                    "oak log MadeUpOf wood",
+                    "oak log HasProperty found in woods",
+                    "oak log CapableOf burn for fuel"
+                ]
+            },
+            "agent": {
+                "game character": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[agent]] is related to [[secret]]"
+                ],
+                "comet_knowledge": [
+                    "agent ObjectUse get a job",
+                    "agent MadeUpOf agent",
+                    "agent HasProperty found in office",
+                    "agent CapableOf sign contract"
+                ]
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ],
+                "comet_knowledge": [
+                    "water ObjectUse water plants",
+                    "water MadeUpOf water",
+                    "water HasProperty found in ocean",
+                    "water CapableOf water plants"
+                ]
+            },
+            "nursery": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "nursery ObjectUse sleep in",
+                    "nursery MadeUpOf house",
+                    "nursery HasProperty homeschool",
+                    "nursery CapableOf sleep in"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 412,
+        "task": "How to Plant Trees for a Reforestation Project",
+        "step": [
+            "Contact your local extension office.",
+            "Order numerous seedlings.",
+            "Plan your planting time.",
+            "Mow the reforested area with a tractor and a shredding attachment.",
+            "Purchase a specialized planting tool such as a power auger, planting bar, dibble, or hoedad to dig the holes for the seedlings.",
+            "Place the reforestation seedlings in a planting bag.",
+            "Dig the hole for the seedling.",
+            "Plant a seedling in the hole in an upright position with the roots straight down.",
+            "Press the soil firmly around the roots of the seedling with the dibble or planting bar.",
+            "Place seedling protectors around the newly planted trees."
+        ],
+        "steps_predictions": [
+            "make_contact_with_local_extension_office npc covering_tracks track",
+            "order_seeds fir1 container1",
+            "plan_plant fir1 container1",
+            "mow_area reforested area",
+            "buy_shelter npc brickhouse",
+            "place_reforestation_seeds fir1 container1",
+            "dig_hole npc garden soil",
+            "plant_plant fir1 garden_center",
+            "press_soil npc garden soil",
+            "place_shelter npc nursery"
+        ],
+        "goal_state": " ((planted_in fir1 container1))",
+        "similar_entity": {
+            "soil": {
+                "soil": [
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "in container"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Solo]] is a translation of [[soil]]",
+                    "[[ground]] is related to [[soil]]",
+                    "You are likely to find [[a potato]] in [[soil]]"
+                ],
+                "comet_knowledge": [
+                    "soil ObjectUse make a garden",
+                    "soil MadeUpOf soil",
+                    "soil HasProperty soil",
+                    "soil CapableOf plant seeds"
+                ]
+            },
+            "nursery": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "nursery ObjectUse sleep in",
+                    "nursery MadeUpOf house",
+                    "nursery HasProperty homeschool",
+                    "nursery CapableOf sleep in"
+                ]
+            },
+            "brickhouse": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "brickhouse ObjectUse living in",
+                    "brickhouse MadeUpOf house",
+                    "brickhouse HasProperty two stories",
+                    "brickhouse CapableOf live in"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "garden": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[flowers]]",
+                    "You are likely to find [[a lizard]] in [[your garden]]",
+                    "[[a garden]] has [[flowers]]"
+                ],
+                "comet_knowledge": [
+                    "garden ObjectUse growing vegetables",
+                    "garden MadeUpOf garden",
+                    "garden HasProperty growing vegetables",
+                    "garden CapableOf grow vegetables"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "reforested": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "reforested ObjectUse reforested",
+                    "reforested MadeUpOf tree",
+                    "reforested HasProperty reforested",
+                    "reforested CapableOf plant trees"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[area]]"
+                ],
+                "comet_knowledge": [
+                    "area ObjectUse place to live",
+                    "area MadeUpOf surface of earth",
+                    "area HasProperty surface of earth",
+                    "area CapableOf travel to"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fir ObjectUse water plants",
+                    "fir MadeUpOf water",
+                    "fir HasProperty found in forest",
+                    "fir CapableOf water plants"
+                ]
+            },
+            "garden center": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "garden center ObjectUse buying plants",
+                    "garden center MadeUpOf garden",
+                    "garden center HasProperty found in",
+                    "garden center CapableOf garden"
+                ]
+            }
+        }
+    }
+]

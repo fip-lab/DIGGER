@@ -1,0 +1,24 @@
+{
+    "get": [
+        "(:action get_shelter\n    :parameters (?npc - npc ?building - building ?basement - basement)\n    :precondition (and\n                    (strong_building ?building)\n                    (has_basement ?building ?basement)\n                    (safe_location ?building))\n    :effect (and\n              (in_shelter ?npc ?building)\n              (protected ?npc)\n              (hidden ?npc))\n)\n\n;; Action: clean_house\n"
+    ],
+    "clean": [
+        "(:action clean_house\n    :parameters (?building - building)\n    :precondition (and\n                    (messy ?building)\n                    (dusty ?building))\n    :effect (and\n              (not (messy ?building))\n              (not (dusty ?building))\n              (clean ?building))\n)\n\n;; Action: cover_basement\n",
+        "(:action purify_water\n    :parameters (?w - water ?p - pot ?h - heat_source ?f - filter)\n    :precondition (and\n      (unsealed ?w)\n      (has_heat_source ?h)\n      (has_filter ?f)\n    )\n    :effect (and\n      (purified ?w)\n      (not (unsealed ?w))\n    )\n)\n\n;;; Action 2: Drink Water\n"
+    ],
+    "cover": [
+        "(:action cover_basement\n    :parameters (?basement - basement ?drop_cloth - drop_cloth)\n    :precondition (and\n                    (in_basement ?drop_cloth ?basement)\n                    (not (covered ?basement)))\n    :effect (and\n              (covered ?basement)\n              (safe ?basement))\n)\n\n;; Action: camouflage_helmet\n"
+    ],
+    "camouflage": [
+        "(:action camouflage_helmet\n    :parameters (?npc - npc ?helmet - helmet)\n    :precondition (and\n                    (wearing ?npc ?helmet)\n                    (plain_helmet ?helmet))\n    :effect (and\n              (camouflaged_helmet ?helmet)\n              (hidden ?npc))\n)\n```\n\n### Explanation:\n\n1. **get_shelter**: This action describes the process of finding and moving into a strong building with a basement for shelter. The preconditions ensure that the building is strong, has a basement, and is a safe location. The effects indicate that the NPC is now in the shelter, protected, and hidden.\n\n2. **clean_house**: This action describes cleaning the house (building) to ensure it is not messy or dusty. The preconditions check if the building is messy and dusty, and the effects change the state to clean.\n\n3. **cover_basement**: This action involves covering the basement with a drop cloth to make it safe. Preconditions check if the drop cloth is in the basement and the basement is not covered. The effects indicate that the basement is now covered and safe.\n\n4. **camouflage_helmet**: This action describes camouflaging the NPC's helmet. The preconditions ensure the NPC is wearing the helmet and the helmet is plain. The effects indicate that the helmet is now camouflaged and the NPC is hidden.\n\nThese actions align with the task of finding shelter and the descriptions provided."
+    ],
+    "drink": [
+        "(:action drink_water\n    :parameters (?npc - character ?w - water)\n    :precondition (purified ?w)\n    :effect (hydrated ?npc)\n)\n```\n\n#### Step 2: Learn First Aid\n- **Description**: Learn basic first-aid to treat minor injuries and build a basic first aid kit when finding supplies.\n\n```lisp\n;;; Action 3: Learn First Aid\n"
+    ],
+    "learn": [
+        "(:action learn_first_aid\n    :parameters (?npc - character ?book - first_aid_book)\n    :precondition (has_book ?book)\n    :effect (knows_first_aid ?npc)\n)\n\n;;; Action 4: Build First Aid Kit\n"
+    ],
+    "build": [
+        "(:action build_first_aid_kit\n    :parameters (?npc - character ?supplies - first_aid_supplies)\n    :precondition (and\n      (knows_first_aid ?npc)\n      (has_supplies ?supplies)\n    )\n    :effect (and\n      (has_first_aid_kit ?npc)\n      (not (has_supplies ?supplies))\n    )\n)\n```\n\n### Entity State Considerations:\n- The entity state provided indicates that the NPC's helmet changes from \"bare | plain\" to \"camouflaged\" and \"visible\" to \"invisible.\" However, it does not directly relate to the steps provided. If necessary, this transformation could be incorporated into a different action related to camouflage or stealth, but it does not directly pertain to the \"fill-inventory\" task.\n\nThese PDDL actions are designed to reflect the steps and descriptions provided for the task, ensuring that the NPC can purify and drink water safely and learn first aid to build a basic first aid kit."
+    ]
+}

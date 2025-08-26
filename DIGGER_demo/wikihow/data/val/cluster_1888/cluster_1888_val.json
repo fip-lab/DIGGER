@@ -1,0 +1,27 @@
+[
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Roti",
+        "step": [
+            "Heat up your cooking surface.",
+            "Prepare your rolling surface.",
+            "Knead and divide the dough.",
+            "Roll out the balls.",
+            "Begin cooking the roti.",
+            "Finish cooking the roti.",
+            "Remove the roti and repeat with the next ball of dough.",
+            "Enjoy the product of your labor!."
+        ],
+        "steps_predictions": [
+            "heat_surface stove_knob velveeta",
+            "prepare-surface rolling_surface",
+            "knead_and_dividen dough1",
+            "roll_balls alice",
+            "cook npc kitchen",
+            "finish_roofi stove_knob velveeta",
+            "remove-and-repeat-with-roofing dough1",
+            "be_amazed you"
+        ],
+        "goal_state": " ((knowledge you) (amazed you))"
+    }
+]

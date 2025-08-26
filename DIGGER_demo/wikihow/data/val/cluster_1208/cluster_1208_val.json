@@ -1,0 +1,19 @@
+[
+    {
+        "cluster_label": 1208,
+        "task": "How to Freeze Eggs",
+        "step": [
+            "Thaw in the refrigerator overnight.",
+            "Only use thawed eggs in well-cooked dishes.",
+            "Get ideas for how to use separated yolks or whites.",
+            "Learn how much egg to use."
+        ],
+        "steps_predictions": [
+            "thaw cookies",
+            "make_cheese npc",
+            "get_ideas npc",
+            "learn_how_to_use_eraser npc"
+        ],
+        "goal_state": " ((thawed cookies))"
+    }
+]

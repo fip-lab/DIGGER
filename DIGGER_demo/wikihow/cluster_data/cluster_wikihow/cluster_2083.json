@@ -1,0 +1,217 @@
+[
+    {
+        "title": "How to Save Time",
+        "steps": [
+            "Cook more efficiently.",
+            "Save time when cleaning your house.",
+            "Handle your finances all at once.",
+            "Start your day with an efficient morning routine."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Observe Tisha B'Av",
+        "steps": [
+            "Understand the five major prohibitions of the day.",
+            "Have a filling meal shortly before the fast begins.",
+            "Change into non-leather shoes.",
+            "Attend services at your local synagogue.",
+            "Try to spend the day of Tisha B'Av in a meaningful way.",
+            "Break the fast after nightfall."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Reduce Convenience Purchases",
+        "steps": [
+            "Know what convenience purchases are most expensive.",
+            "Plan your weekly meals.",
+            "Draw up a budget for the month.",
+            "Buy in bulk.",
+            "Don\u2019t buy day-to-day essentials at the gas station or drug store.",
+            "Order your groceries and products online."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Plan a Healthy Diet",
+        "steps": [
+            "Make a grocery list based on your meal plan, and stick to it.",
+            "Look for healthy shortcuts to cut back on your meal prep time.",
+            "Assemble your meals in batches to streamline meal prep.",
+            "Limit how often you eat out, and eat healthy when you do."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Fast",
+        "steps": [
+            "Learn about the role fasting plays in your religious tradition.",
+            "Avoid boasting or complaining about your fast.",
+            "Stop for a moment of prayer when you feel hunger pangs.",
+            "Eat well-balanced permitted meals slowly."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Eat Paleo on a Budget",
+        "steps": [
+            "Cook more paleo meals at home.",
+            "Make a paleo meal plan for the week.",
+            "Allocate more of your budget to food."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Make a Meal Plan for One",
+        "steps": [
+            "Google meal plan.",
+            "Browse wikiHow."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Arrange for Meals While in College",
+        "steps": [
+            "If you live in a college dorm, you may be required to buy a meal plan.",
+            "If you are living in an apartment still consider buying a meal plan.",
+            "Pack food from home.",
+            "Consider going out to eat.",
+            "After having done all this, count the total number of meals you plan to eat per week and subtract the total number of meals accounted for by steps 2, 3 and 4.",
+            "After Step 5, if you still have any meals unaccounted for, consider cooking at home."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Meal Plan",
+        "steps": [
+            "Find recipes that use similar ingredients to save money and time.",
+            "Engage your family when planning meals.",
+            "Choose healthy options now to eat healthy throughout the week.",
+            "Buy produce that is in season or on sale to save money and eat fresher foods.",
+            "Make a \"theme night\" once a week, such as Taco Tuesdays or Pasta Wednesdays.",
+            "Check the weather to determine what nights you might want hot or cold foods.",
+            "Save your receipts and keep notes on your meal planning, adjusting accordingly."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Meal Prep",
+        "steps": [
+            "Plan to make fruits and vegetables half of every meal.",
+            "Incorporate whole grains into your meals for added fiber and nutrients.",
+            "Include a source of lean protein.",
+            "Add dairy or a dairy substitute for calcium.",
+            "Choose healthy sources of fat and sugar."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Prepare Dinner for the Week",
+        "steps": [
+            "Assess your personal situation.",
+            "Read advertisements from the local paper to see what's on sale at your local grocery store.",
+            "Plan your dinners for each night at the beginning of the week, choosing entrees that will fit in the criteria you defined above.",
+            "Write down all the ingredients you will need for each dinner on a central list.",
+            "Take an inventory of your pantry, refrigerator, and freezer before you go.",
+            "Use leftovers whenever possible in your menu planning.",
+            "Visit your local grocery store to purchase the items on your list.",
+            "Ask family members to help in meal preparation, including cleaning up before and after.",
+            "Recycle your menu plans."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Create a Healthy Fast Food Menu for Home",
+        "steps": [
+            "Make a list of the tasty fast food that you normally order when you want to eat out.",
+            "Reinvent the fast food meals you and your family eat.",
+            "Revamp the burger and fries option.",
+            "Curtail the fat-soaked pizza and turn it healthy.",
+            "Make homemade fish and chips.",
+            "Create fried chicken with healthy oils and shallow frying.",
+            "Go Mexican, not Tex Mex.",
+            "Enjoy more Asian-inspired fast food choices.",
+            "Make cinema food.",
+            "Consider the small things, too.",
+            "Complete the \"fast food\" experience by having fruit juice and carbonated water mixed together to make a refreshing, but healthy fizzy drink.",
+            "Learn from your experiences.",
+            "Reserve fast foods at home for irregular, special treats."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Decide What to Cook for Dinner",
+        "steps": [
+            "Plan your meals ahead if you don\u2019t want to decide what to cook every day.",
+            "Plan meals for multiple people if you live with your family.",
+            "Shop ahead of time for all the ingredients you need for the next week.",
+            "Prepare as many ingredients as you can right after shopping.",
+            "Build flexibility into your meal plans."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Have a Food Philosophy",
+        "steps": [
+            "Consider what a food philosophy is.",
+            "Consider what you personally feel in the foods you select.",
+            "Consider the benefits and disadvantages of incorporating different philosophies.",
+            "Try to incorporate aspects which have the most long term benefit to you and your family.",
+            "Try to consider ways to avoid how a philosophy could be a disadvantage as well as how you can avoid these disadvantages.",
+            "Look into social groups that may be of a similar philosophy."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Stretch a Meal",
+        "steps": [
+            "Note your existing supplies and consider where the menu can be expanded.",
+            "Use leftovers creatively.",
+            "Serve an appetizer or an hors d'oeuvres.",
+            "Rely on classic fillers.",
+            "Adjust your cooking time for unexpected or delayed arrivals.",
+            "Make meat and fish go further.",
+            "Make vegetables stretch.",
+            "Consider dessert and after dinner extensions.",
+            "Plan for the future to make your day easier."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Make Your Own Convenience Foods",
+        "steps": [
+            "Make strategic use of leftovers.",
+            "Use natural \"convenience\" foods.",
+            "Freeze your own pizza or pizza dough (unbaked or pre-baked for about 3 minutes).",
+            "Freeze your own waffles.",
+            "Buy plain yogurt in bulk and add your own flavors.",
+            "Make muesli, granola, or oatmeal in place of boxed cereals.",
+            "Pack your own oatmeal.",
+            "Make your own mixes.",
+            "Replace box dinners and \"helpers\".",
+            "Make dehydrated banana spears, a quick high energy snack."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Plan Meals for Diabetics",
+        "steps": [
+            "Use calorie counting apps or look for nutrition information on restaurants\u2019 websites when eating at chain restaurants.",
+            "Never take insulin immediately after ordering your meal.",
+            "When in doubt, ask for information about your or your loved one\u2019s meal.",
+            "Understand that although there is so much to consider in meal planning for diabetics, mastering one or more of the above methods is a meaningful step toward ensuring long-term health with diabetes."
+        ],
+        "cluster_label": 2083
+    },
+    {
+        "title": "How to Save Money on Food",
+        "steps": [
+            "Prepare a week\u2019s worth of lunches on Sunday night before bed.",
+            "Stick to a weekly meal schedule for your evening meals.",
+            "Cook soon-to-expire veggies in a stew rather than tossing them out.",
+            "Cook meals at home from scratch to save money."
+        ],
+        "cluster_label": 2083
+    }
+]

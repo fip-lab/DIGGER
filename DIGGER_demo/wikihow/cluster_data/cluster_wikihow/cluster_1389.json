@@ -1,0 +1,108 @@
+[
+    {
+        "title": "How to Check Your Oil",
+        "steps": [
+            "Know how often to change your oil.",
+            "Change your own oil.",
+            "Hire someone to change your oil."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Tell the Difference Between Essential Oil and Infused Oil",
+        "steps": [
+            "Learn about infused oils.",
+            "Study the properties of different infused oils.",
+            "Make your own infused oils.",
+            "Understand hydrosols.",
+            "Create infused oils for cooking."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Use Passion Flower for Health",
+        "steps": [
+            "Use passion flower for minor burns only.",
+            "Create a compress for burns using passion flower extract and a cold, damp cloth.",
+            "Apply passion flower extract directly to hemorrhoids."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Use Castor Oil",
+        "steps": [
+            "Gather castor oil and your favorite essential oils.",
+            "Add the essential oil to the castor oil.",
+            "Mix and use the oil."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Mix Essential Oils with Carrier Oils",
+        "steps": [
+            "Don\u2019t use undiluted essential oils on your skin.",
+            "Test a mixture on your inner forearm before applying it.",
+            "Avoid using essential oils to treat medical conditions."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Safely Use Essential Oils Topically",
+        "steps": [
+            "Talk to a dermatologist if you have an existing skin condition.",
+            "Ask your doctor if you can safely use essential oils.",
+            "Contact a doctor if you have a severe reaction to essential oils."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Use Essential Oils to Prevent an Itchy Scalp",
+        "steps": [
+            "See your doctor if you\u2019re not sure what\u2019s causing your itchy scalp.",
+            "Contact your doctor if home remedies don\u2019t help with your itching.",
+            "Make an appointment if you experience severe itching or other serious symptoms.",
+            "Seek medical care if you have a severe reaction to an essential oil."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Test Essential Oils for Purity",
+        "steps": [
+            "Select an oil to test and get a piece of blank paper.",
+            "Place one drop of the oil on the paper.",
+            "Allow the oil to dry completely.",
+            "Check the places where you dropped the oil for a leftover ring of oil or grease.",
+            "Send your oils to a lab for testing if you will be using them for professional reasons."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Make Natural Essential Oils",
+        "steps": [
+            "Accept your oils will not be as pure.",
+            "Make sure to follow all regular safety guidelines regarding use of commercial essential oils.",
+            "Consider whether making your own oils is worth the time."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Use Peppermint Oil",
+        "steps": [
+            "Read the label.",
+            "Dilute peppermint oil with a carrier oil.",
+            "Do a patch test.",
+            "Notice potential reactions."
+        ],
+        "cluster_label": 1389
+    },
+    {
+        "title": "How to Use Laser Pointers Safely",
+        "steps": [
+            "Never aim a laser pointer at planes, trains, boats, or automobiles.",
+            "Do not bring laser pointers to concerts or sporting events.",
+            "Never point the laser pointer at animals.",
+            "Avoid skin contact for prolonged periods of time."
+        ],
+        "cluster_label": 1389
+    }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "task": "board_ship",
+        "step": [
+            "splash_swim out npc open_sea deep_sea shark",
+            "spot_ship npc deep_sea ship",
+            "onboard npc ship deep_sea"
+        ],
+        "desc": [
+            "Hit the shark in the face and gills.Your best bet, if attacked, is to make the shark see you as a strong, credible threat. Usually, a hard blow to the shark's gills, eyes or snout (end of its nose) will cause it to retreat.",
+            "Sharks have several different attack methods. Sometimes they swim right up and charge, sometimes they circle for a while before lunging, and sometimes they sneak up from behind for a surprise attack. To be able to defend against the shark, you must know where it is, so make every effort to watch the animal, even as you are working out your escape."
+        ],
+        "action": [
+            "(:action swim ; swim normally till you reach safety!\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location ?s - shark) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (attacked ?p ?s)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)) (at ?s ?l2) (not (visible ?s)))\n   )",
+            "(:action onboard ; get on to the ship\n      :parameters (?p - player ?shp - ship ?loc - location) \n      :precondition (and (at ?p ?loc) (at ?shp ?loc) (visible ?shp))\n      :effect (and (on ?p ?shp))\n   )",
+            "(:action splash_swim ; swim with loud sounds - you don't get to monitor the shark!\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location ?s - shark) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)) (at ?s ?l2) (not (visible ?s)) (attacked ?p ?s))\n   )",
+            "(:action spot_ship ; spot ships that are nearby\n      :parameters (?p - player ?loc - location ?shp - ship) \n      :precondition (and (at ?p ?loc) (at ?shp ?loc))\n      :effect (and (visible ?shp))\n   )"
+        ],
+        "goal_state": "((on npc ship))"
+    },
+    {
+        "task": "ultimate_win",
+        "step": [
+            "splash_swim out npc open_sea deep_sea shark",
+            "get spear npc deep_sea",
+            "spot_ship npc deep_sea ship",
+            "defend npc shark",
+            "attack_vulnerable npc shark spear eye deep_sea ship",
+            "onboard npc ship deep_sea",
+            "medicare npc ship"
+        ],
+        "desc": [
+            "Do not block the shark's path. If you are standing between the shark and the open ocean, move away.",
+            "Do not take your eyes off the shark.",
+            "Sharks have several different attack methods. Sometimes they swim right up and charge, sometimes they circle for a while before lunging, and sometimes they sneak up from behind for a surprise attack. To be able to defend against the shark, you must know where it is, so make every effort to watch the animal, even as you are working out your escape.",
+            "Hit the shark in the face and gills.Your best bet, if attacked, is to make the shark see you as a strong, credible threat. Usually, a hard blow to the shark's gills, eyes or snout (end of its nose) will cause it to retreat.",
+            "If you have a spear gun or pole, use it! A sharp object is a good way to inflict enough pain to scare away the shark. Aim for the head, specifically the eyes or the gills."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action swim ; swim normally till you reach safety!\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location ?s - shark) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (attacked ?p ?s)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)) (at ?s ?l2) (not (visible ?s)))\n   )",
+            "(:action onboard ; get on to the ship\n      :parameters (?p - player ?shp - ship ?loc - location) \n      :precondition (and (at ?p ?loc) (at ?shp ?loc) (visible ?shp))\n      :effect (and (on ?p ?shp))\n   )",
+            "(:action attack_vulnerable ; attack shark on its eyes / gill / snout\n      :parameters (?p - player ?s - shark ?tool - item ?pt - part ?loc - location ?sh - ship) \n      :precondition (and (at ?p ?loc) (at ?s ?loc) (inventory ?p ?tool) (vulnerable ?pt) (sharp ?tool) (not (on ?p ?sh)))\n      :effect (and (fleed ?s) (not (attacked ?p ?s)))\n   )",
+            "(:action defend ; defend yourself\n      :parameters (?p - player ?s - shark) \n      :precondition (and (attacked ?p ?s))\n      :effect (and (not (attacked ?p ?s)) (wounded ?p) (defending ?p))\n   )",
+            "(:action medicare ; get help from medicare, to deal with your wounds\n      :parameters (?p - player ?sh - ship)\n      :precondition (and (on ?p ?sh) (wounded ?p))\n      :effect (and (not (wounded ?p)))\n   )",
+            "(:action spot_ship ; spot ships that are nearby\n      :parameters (?p - player ?loc - location ?shp - ship) \n      :precondition (and (at ?p ?loc) (at ?shp ?loc))\n      :effect (and (visible ?shp))\n   )",
+            "(:action splash_swim ; swim with loud sounds - you don't get to monitor the shark!\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location ?s - shark) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)) (at ?s ?l2) (not (visible ?s)) (attacked ?p ?s))\n   )"
+        ],
+        "goal_state": "((on npc ship) (fleed shark) (defending npc) (not (wounded npc)))"
+    },
+    {
+        "task": "defend_position",
+        "step": [
+            "splash_swim in npc open_sea shallow_sea shark",
+            "defend npc shark"
+        ],
+        "desc": [
+            "Do not take your eyes off the shark.",
+            "Sharks have several different attack methods. Sometimes they swim right up and charge, sometimes they circle for a while before lunging, and sometimes they sneak up from behind for a surprise attack. To be able to defend against the shark, you must know where it is, so make every effort to watch the animal, even as you are working out your escape."
+        ],
+        "action": [
+            "(:action swim ; swim normally till you reach safety!\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location ?s - shark) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (attacked ?p ?s)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)) (at ?s ?l2) (not (visible ?s)))\n   )",
+            "(:action defend ; defend yourself\n      :parameters (?p - player ?s - shark) \n      :precondition (and (attacked ?p ?s))\n      :effect (and (not (attacked ?p ?s)) (wounded ?p) (defending ?p))\n   )",
+            "(:action splash_swim ; swim with loud sounds - you don't get to monitor the shark!\n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location ?s - shark) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)) (at ?s ?l2) (not (visible ?s)) (attacked ?p ?s))\n   )"
+        ],
+        "goal_state": "((defending npc))"
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "crumple": [
+        "(:action crumple_and_thread_squares\n    :parameters (?p - player ?hanger - hanger ?square - paper_square)\n    :precondition (and (at ?p ?hanger) (inventory ?p ?square) (shaped ?hanger circle))\n    :effect (and (threaded ?hanger ?square) (not (inventory ?p ?square)))\n)\n\n"
+    ],
+    "fill": [
+        "(:action fill_hanger_with_squares\n    :parameters (?p - player ?hanger - hanger ?square - paper_square)\n    :precondition (and (at ?p ?hanger) (threaded ?hanger ?square))\n    :effect (and (filled ?hanger) (not (threaded ?hanger ?square)))\n)\n\n"
+    ],
+    "twist": [
+        "(:action twist_hanger_ends\n    :parameters (?p - player ?hanger - hanger ?pliers - pliers)\n    :precondition (and (at ?p ?hanger) (at ?p ?pliers) (inventory ?p ?pliers) (filled ?hanger))\n    :effect (and (ends_twisted ?hanger) (not (filled ?hanger)))\n)\n\n"
+    ],
+    "slide": [
+        "(:action slide_and_scrunch_squares\n    :parameters (?p - player ?hanger - hanger ?square - paper_square)\n    :precondition (and (at ?p ?hanger) (ends_twisted ?hanger) (threaded ?hanger ?square))\n    :effect (and (scrunched ?hanger ?square) (not (threaded ?hanger ?square)))\n)\n\n"
+    ],
+    "complete": [
+        "(:action complete_wreath\n    :parameters (?p - player ?hanger - hanger ?wreath - wreath)\n    :precondition (and (at ?p ?hanger) (ends_twisted ?hanger) (scrunched ?hanger ?square))\n    :effect (and (completed ?wreath) (not (ends_twisted ?hanger)) (not (scrunched ?hanger ?square)))\n)\n```\n\n### Entity State Considerations:\n- The hanger starts in a straight shape and is shaped into a circle.\n- Paper squares are crumpled and threaded onto the hanger.\n- The hanger is filled with squares and the ends are twisted together using pliers.\n- The squares are scrunched for fullness.\n- The wreath is completed with the final action.\n\nThese actions capture the logic and sequence necessary to create a wreath using a wire hanger and paper squares, based on the steps and descriptions provided."
+    ],
+    "untwist": [
+        "(:action untwist_and_shape_hanger\n    :parameters (?p - player ?hanger - hanger ?pliers - pliers)\n    :precondition (and (at ?p ?hanger) (at ?p ?pliers) (straight ?hanger) (inventory ?p ?pliers))\n    :effect (and (twisted ?hanger) (not (straight ?hanger)) (shaped ?hanger circle))\n)\n\n"
+    ]
+}

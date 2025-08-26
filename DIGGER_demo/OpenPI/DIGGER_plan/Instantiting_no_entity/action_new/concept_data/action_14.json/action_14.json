@@ -1,0 +1,4 @@
+[
+    "(:action choose ;  Choose a resource and update its status\n  :parameters (?entity - object ?resource - entity)\n  :precondition (and (available ?resource))\n  :effect (and (chosen ?entity ?resource) (not (available ?resource))",
+    "(:action move\n    :parameters (?agent - agent ?from - location ?to - location)\n    :precondition (and (at ?agent ?from) (not (at ?agent ?to)))\n    :effect (and (at ?agent ?to) (not (at ?agent ?from))"
+]

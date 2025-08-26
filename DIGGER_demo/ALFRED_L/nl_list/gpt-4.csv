@@ -1,0 +1,161 @@
+task,nl_step
+put CellPhone2 on the Sofa3 Do not put it in Box1,"To complete this task, follow the steps below:
+
+1. First, locate CellPhone2. It could be anywhere in the room, so search carefully. Ensure you handle it with care to avoid any damage.
+2. Once you have CellPhone2, now move towards Sofa3. Make sure you have a clear path to avoid any accidents.
+3. Gently place CellPhone2 on Sofa3. Do not throw or drop it, place it gently.
+4. Make sure you do not place CellPhone2 in Box1. Even if Box1 is on or near Sofa3, avoid placing CellPhone2 inside it. The task specifically instructs not to put it in Box1.
+
+By following these steps, you've successfully completed the task."
+put CD1 next to Sofa1 Do not move CreditCard1,"To solve this task, follow the steps below:
+
+1. Identify the location of CD1 and Sofa1 in the room.
+2. Walk over to where CD1 is located.
+3. Pick up CD1 carefully to avoid any damage.
+4. Walk over to where Sofa1 is located.
+5. Place CD1 next to Sofa1, ensuring it is within easy reach and visible but not in a location where it could be accidentally sat on or knocked over.
+6. Leave CreditCard1 where it is, do not touch or move it during this process. 
+
+Remember, the goal is to move CD1 next to Sofa1 without disturbing the position of CreditCard1."
+put KeyChain1 on the Sofa2 Do not put it in Box1,"To complete this task, follow these steps:
+
+1. Locate the item named 'KeyChain1'. It could be anywhere in the room, on a table, in a drawer, or even in your pocket. 
+
+2. Once you have found 'KeyChain1', pick it up carefully. Make sure you have a firm grip on it to prevent it from slipping out of your hand.
+
+3. Now, search for 'Sofa2'. This could be in the same room or a different one, depending on the layout of your house.
+
+4. When you have found 'Sofa2', place 'KeyChain1' gently on it. Make sure it is visible and not likely to be knocked off accidentally.
+
+5. The task also specifies not to put 'KeyChain1' in 'Box1'. So, if you see 'Box1' anywhere around, avoid placing 'KeyChain1' inside it. 
+
+6. If 'Box1' is on 'Sofa2', move 'Box1' to a different location before placing 'KeyChain1' on 'Sofa2'. 
+
+By following these steps, you should have successfully completed the task."
+move CellPhone1 to Box2 with two object,"To accomplish this task, you need to follow these steps:
+
+1. Identify the location of CellPhone1: First, you need to locate where CellPhone1 is currently placed. It could be on a table, a shelf, or any other place.
+
+2. Pick up CellPhone1: Once you have identified its location, move towards it and carefully pick it up. Ensure that you have a good grip on it to prevent it from slipping and falling.
+
+3. Identify the location of Box2: Now, you need to locate Box2. This box is supposed to have two objects already in it. 
+
+4. Open Box2: Once you reach Box2, open it if it is closed. Make sure there is enough space for CellPhone1 to fit in without damaging the other two objects already in the box.
+
+5. Place CellPhone1 in Box2: Now, gently place CellPhone1 in the box. Ensure that you arrange it in such a way that it does not damage the other two objects. 
+
+6. Close Box2: Once you have successfully placed CellPhone1 in Box2, close the box to secure the objects inside. 
+
+7. Confirm completion: Finally, double-check to ensure that CellPhone1 is indeed in Box2 with the two other objects. 
+
+By following these steps, you will have successfully moved CellPhone1 to Box2 with two other objects."
+move CellPhone1 to Box1 with three object,"1. First, locate where CellPhone1 is currently placed. Make sure that you have a clear path to it and that it is safe to move it. 
+
+2. Carefully pick up CellPhone1, making sure to hold it securely to avoid dropping or damaging it. 
+
+3. Next, locate Box1. This should be a box that is large enough to hold CellPhone1 and three other objects. Make sure that the box is clean and free of any substances that could potentially harm CellPhone1.
+
+4. Place CellPhone1 inside Box1. Make sure to place it gently to avoid causing any damage. 
+
+5. Now, locate the three other objects that need to be placed in Box1. These objects should also be safe to move and small enough to fit in the box alongside CellPhone1. 
+
+6. One by one, pick up each of the three objects and place them inside Box1. Make sure to arrange them in a way that doesn't cause any damage to CellPhone1 or the other objects. 
+
+7. Once all three objects and CellPhone1 are safely inside Box1, close the box securely. 
+
+8. Finally, move Box1 to its designated location. Make sure to carry it carefully to avoid dropping it or causing any damage to the objects inside. 
+
+By following these steps, you should be able to successfully move CellPhone1 to Box1 with three other objects."
+move KeyChain1 to GarbageCan2 with more object,"1. Identify the current location of KeyChain1. It could be on a table, in a drawer, or any other place. 
+
+2. Next, identify the location of GarbageCan2. This could be in the kitchen, the bathroom, or any other place. 
+
+3. Now, check the number of objects in GarbageCan2. If there are already a lot of objects in the can, you may need to remove some before you can add the KeyChain1. 
+
+4. Once you've ensured there's enough space in GarbageCan2 for KeyChain1, pick up the keychain. Be sure to hold it securely so it doesn't slip out of your hand. 
+
+5. Walk over to GarbageCan2. Be careful not to bump into anything or drop KeyChain1 on the way. 
+
+6. Once you're at GarbageCan2, open the lid if it's not already open. 
+
+7. Carefully place KeyChain1 into the garbage can. Make sure it goes in and doesn't bounce out. 
+
+8. Once KeyChain1 is in GarbageCan2, close the lid. 
+
+9. Check to make sure KeyChain1 is securely in GarbageCan2 and won't easily fall out. 
+
+10. Finally, return to your original location. Task completed. 
+
+Remember, it's important to be careful when moving objects around to avoid accidents or damage."
+move AlarmClock1 to Box2 with three object,"Solution:
+
+1. Identify the location of AlarmClock1. Ensure that it is accessible and safe to move.
+
+2. Prepare Box2 by ensuring it is empty and clean. Since the task mentions three objects, ensure that the box has enough space to accommodate AlarmClock1 and two other objects.
+
+3. Carefully pick up AlarmClock1. Be sure to handle it with care to avoid any damage.
+
+4. Place AlarmClock1 gently into Box2. Ensure it is positioned in a way that will leave enough room for the other two objects.
+
+5. Once AlarmClock1 is in Box2, it has been successfully moved. You can now proceed to add the other two objects as per the task requirements."
+move Pillow1 to Box2 with two object,"1. First, ensure that both Pillow1 and Box2 are within your reach. 
+
+2. Pick up Pillow1 with both hands, ensuring a firm but gentle grip. Be careful not to squeeze too hard as it may damage the pillow.
+
+3. Once you have a secure hold on Pillow1, move towards Box2. Make sure your path is clear to avoid any accidents.
+
+4. When you reach Box2, carefully place Pillow1 into the box. If there are already two objects in the box, you may need to rearrange them to make space for Pillow1. 
+
+5. Make sure Pillow1 is securely placed in Box2 and won't fall out or tip the box over.
+
+6. Once Pillow1 is in Box2, the task is complete. Ensure the box is in a safe and secure place to avoid any accidents."
+move CellPhone1 to Bed1 with more object,"Here is a possible solution for this task. This assumes that you're using a programming language that supports object-oriented programming and that your objects have methods for moving them:
+
+```python
+class CellPhone:
+    def __init__(self, position):
+        self.position = position
+
+    def move(self, new_position):
+        self.position = new_position
+        print(f'CellPhone has been moved to {new_position}')
+
+class Bed:
+    def __init__(self, position):
+        self.position = position
+
+class Room:
+    def __init__(self, objects):
+        self.objects = objects
+
+    def find_object(self, object_name):
+        for obj in self.objects:
+            if type(obj).__name__ == object_name:
+                return obj
+        return None
+
+    def move_object(self, object_name, new_position):
+        obj = self.find_object(object_name)
+        if obj is not None:
+            obj.move(new_position)
+        else:
+            print(f'No {object_name} found in the room.')
+
+# Initialize objects
+cell_phone1 = CellPhone('Table1')
+bed1 = Bed('Corner1')
+room = Room([cell_phone1, bed1])
+
+# Move cell_phone1 to bed1
+room.move_object('CellPhone', 'Bed1')
+```
+
+This script first creates a CellPhone class and a Bed class, each with a position attribute. Then, it creates a Room class that contains a list of these objects. The Room class has a method to find an object by its class name and a method to move an object to a new position. The script then initializes a cell phone and a bed, puts them in a room, and moves the cell phone to the bed."
+put Book1 on the Sofa1 Do not put it in Box1,"To solve this task, follow the steps below:
+
+1. Locate Book1. It might be on a shelf, a table, or any other place where books are usually kept.
+2. Walk over to the location of Sofa1. Be careful not to trip over anything on the way.
+3. Extend your hand and grasp Book1 firmly but gently. Be careful not to damage the book.
+4. Carry Book1 over to Sofa1. Watch your step to avoid any accidents.
+5. When you reach Sofa1, gently place Book1 on it. Make sure it's stable and won't easily fall off.
+6. Remember, do not put Book1 in Box1. Ignore Box1 and focus only on placing the book on Sofa1."

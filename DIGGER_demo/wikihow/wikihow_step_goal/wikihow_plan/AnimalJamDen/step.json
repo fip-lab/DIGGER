@@ -1,0 +1,189 @@
+{
+    "goal": "Make Your Den Look Like a Home on Animal Jam (Non Members)",
+    "steps": [
+        "Get lots of gems.",
+        "for a family home you will need quite a lot of stuff.",
+        "Try to get room shoji screens so you can section things off into smaller rooms.",
+        "If you can get shoji screens, try making a kids room, a master bedroom, and a living/dining room.",
+        "Make an outside area.",
+        "Keep your family safe."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/f/fa/Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-1.jpg/aid3129112-v4-728px-Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/8/88/Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-2.jpg/aid3129112-v4-728px-Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/3/30/Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-3.jpg/aid3129112-v4-728px-Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/6/6e/Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-4.jpg/aid3129112-v4-728px-Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/a/ad/Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-5.jpg/aid3129112-v4-728px-Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/3/30/Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-6.jpg/aid3129112-v4-728px-Make-Your-Den-Look-Like-a-Home-on-Animal-Jam-%28Non-Members%29-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "screens",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in store",
+                        "after": "in home",
+                        "saliency": 0.5452528837622006,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "screens"
+            ]
+        },
+        {
+            "entity": "kids room",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created",
+                        "saliency": 0.6118012422360248,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "master bedroom | living room | living/dining room",
+                "kids room"
+            ]
+        },
+        {
+            "entity": "stuff",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in store",
+                        "after": "in home",
+                        "saliency": 0.5346896522584189,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "stuff"
+            ]
+        },
+        {
+            "entity": "gems",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "availability",
+                        "before": "unacquired",
+                        "after": "acquired",
+                        "saliency": 0.529408036506528,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "gems"
+            ]
+        },
+        {
+            "entity": "outside area",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created | made",
+                        "saliency": 0.5214856128786918,
+                        "attribute_annotation": "availability | step"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "outside area"
+            ]
+        }
+    ],
+    "clusters": {
+        "outside area": {
+            "entity_cluster": [
+                "outside area"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability",
+                    "step"
+                ]
+            }
+        },
+        "screens": {
+            "entity_cluster": [
+                "screens"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "gems": {
+            "entity_cluster": [
+                "gems"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability"
+                ]
+            }
+        },
+        "stuff": {
+            "entity_cluster": [
+                "stuff"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "kids room": {
+            "entity_cluster": [
+                "kids room",
+                "living/dining room",
+                "master bedroom",
+                "living room"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability"
+                ]
+            }
+        }
+    }
+}

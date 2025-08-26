@@ -1,0 +1,8 @@
+[
+    "(:action swing ; Swing an object into a position for interaction\n  :parameters (?entity - agent ?object - item)\n  :precondition (and (adjacent ?object ?entity) (not (engaged ?object ?entity)))\n  :effect (and (engaged ?object ?entity) (not (adjacent ?object ?entity))",
+    "(:action put ; Put an object into a designated state\n  :parameters (?agent - agent ?object - object ?target - location)\n  :precondition (and (possesses ?agent ?object) (not (at ?object ?target)))\n  :effect (and (at ?object ?target) (not (possesses ?agent ?object))",
+    "(:action hold ; Hold an item or control a mechanism\n    :parameters (?actor - agent ?item - object)\n    :precondition (and (accessible ?item ?actor) (not (holding ?actor ?item)))\n    :effect (holding ?actor ?item)\n)",
+    "(:action pedal ; Pedal to initiate movement\n  :parameters (?agent - person ?vehicle - vehicle ?control - control)\n  :precondition (and (situated ?vehicle ?agent) (grasping ?control ?agent ?vehicle) (in-contact ?pedal ?agent))\n  :effect (and (in-motion ?vehicle) (not (stationary ?vehicle))",
+    "(:action stop\n    :parameters (?p - person ?b - bike)\n    :precondition (moving ?b)\n    :effect (and (stopped ?b) (not (moving ?b))",
+    "(:action stop ; Universal stop action to halt an activity or object\n  :parameters (?agent - agent ?entity - object)\n  :precondition (and (engaged ?agent ?entity) (moving ?entity))\n  :effect (and (stopped ?entity) (not (moving ?entity))"
+]

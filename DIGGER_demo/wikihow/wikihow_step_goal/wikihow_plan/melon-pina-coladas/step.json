@@ -1,0 +1,491 @@
+{
+    "goal": "Make a Pitcher of Melon Pina Coladas",
+    "steps": [
+        "Pour the ingredients (except the garnish) into a pitcher that can hold 100 ounces.",
+        "Ensure everything is mixed thoroughly.",
+        "Allow the mixture to chill in the refrigerator until ready to serve.",
+        "Pour the mixture into tall glasses.",
+        "Add a chunk of honeydew melon on the side of each glass.",
+        "Finished."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/a/a8/Make-a-Pitcher-of-Melon-Pina-Coladas-Step-1.jpg/aid3422906-v4-728px-Make-a-Pitcher-of-Melon-Pina-Coladas-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/0/0c/Make-a-Pitcher-of-Melon-Pina-Coladas-Step-2.jpg/aid3422906-v4-728px-Make-a-Pitcher-of-Melon-Pina-Coladas-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/1/1e/Make-a-Pitcher-of-Melon-Pina-Coladas-Step-3.jpg/aid3422906-v4-728px-Make-a-Pitcher-of-Melon-Pina-Coladas-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/f/fa/Make-a-Pitcher-of-Melon-Pina-Coladas-Step-4.jpg/aid3422906-v4-728px-Make-a-Pitcher-of-Melon-Pina-Coladas-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/f/f3/Make-a-Pitcher-of-Melon-Pina-Coladas-Step-5.jpg/aid3422906-v4-728px-Make-a-Pitcher-of-Melon-Pina-Coladas-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/8/89/Make-a-Pitcher-of-Melon-Pina-Coladas-Final.jpg/aid3422906-v4-728px-Make-a-Pitcher-of-Melon-Pina-Coladas-Final.jpg"
+    ],
+    "states": [
+        {
+            "entity": "pitcher",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.6506211180124224,
+                        "attribute_annotation": "container | volume"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.4611801242236025,
+                        "attribute_annotation": "wetness"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "juicy | dirty",
+                        "saliency": 0.41528640441683917,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter | light",
+                        "after": "heavier | heavy",
+                        "saliency": 0.3146997929606625,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.6506211180124224,
+                        "attribute_annotation": "container | volume"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.3146997929606625,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirtier",
+                        "saliency": 0.1823671497584541,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "pitcher"
+            ]
+        },
+        {
+            "entity": "refrigerator",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.6635610766045549,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller",
+                        "saliency": 0.525879917184265,
+                        "attribute_annotation": "fullness"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "refrigerator"
+            ]
+        },
+        {
+            "entity": "glasses",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.5859213250517599,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "wetness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.44824016563146996,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier",
+                        "saliency": 0.6635610766045549,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "ungarnished",
+                        "after": "garnished",
+                        "saliency": 0.3894064872325742,
+                        "attribute_annotation": "taste"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.36645962732919257,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "decoration",
+                        "before": "undecorated",
+                        "after": "decorated",
+                        "saliency": 0.12991718426501034,
+                        "attribute_annotation": "decoration"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "side of each glass",
+                "glass | tall glasses",
+                "glasses"
+            ]
+        },
+        {
+            "entity": "mixture",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in container | in containers",
+                        "after": "in pitcher",
+                        "saliency": 0.5129399585921325,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "composition",
+                        "before": "just put in pitcher | separate | unmixed",
+                        "after": "mixed | mixed thoroughly",
+                        "saliency": 0.5212215320910973,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "outside of refrigerator",
+                        "after": "inside refrigerator",
+                        "saliency": 0.5988612836438924,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | warmer | room temperature",
+                        "after": "chilled | cold | colder",
+                        "saliency": 0.37646652864044167,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in pitcher",
+                        "after": "in glass | in glasses",
+                        "saliency": 0.5212215320910973,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "mixture | liquid",
+                "ingredients",
+                "rum and coconut"
+            ]
+        },
+        {
+            "entity": "honeydew",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "shape",
+                        "before": "solid",
+                        "after": "cut",
+                        "saliency": 0.6118012422360248,
+                        "attribute_annotation": "shape"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "in chunks",
+                        "saliency": 0.3505866114561767,
+                        "attribute_annotation": "size"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "on glass",
+                        "saliency": 0.31884057971014496,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "honeydew",
+                "honeydew melon"
+            ]
+        },
+        {
+            "entity": "mixing spoon",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.5859213250517599,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "outside of pitcher",
+                        "after": "inside pitcher",
+                        "saliency": 0.4953416149068323,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.31176673567977914,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "mixing spoon",
+                "spoon"
+            ]
+        },
+        {
+            "entity": "task",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "completion",
+                        "before": "incomplete",
+                        "after": "finished",
+                        "saliency": 0.4824016563146998,
+                        "attribute_annotation": "completion"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "task"
+            ]
+        },
+        {
+            "entity": "rum",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "locaion",
+                        "before": "in botle",
+                        "after": "in pitcher",
+                        "saliency": 0.1306073153899241,
+                        "attribute_annotation": "locaion"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "rum"
+            ]
+        }
+    ],
+    "clusters": {
+        "glasses": {
+            "entity_cluster": [
+                "glass",
+                "tall glasses",
+                "side of each glass",
+                "glasses"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "taste": [
+                    "taste"
+                ],
+                "decoration": [
+                    "decoration"
+                ]
+            }
+        },
+        "pitcher": {
+            "entity_cluster": [
+                "pitcher"
+            ],
+            "attribute_cluster": {
+                "container": [
+                    "container"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "mixing spoon": {
+            "entity_cluster": [
+                "mixing spoon",
+                "spoon"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "wetness": [
+                    "wetness"
+                ]
+            }
+        },
+        "honeydew": {
+            "entity_cluster": [
+                "honeydew",
+                "honeydew melon"
+            ],
+            "attribute_cluster": {
+                "shape": [
+                    "shape"
+                ],
+                "size": [
+                    "size"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "refrigerator": {
+            "entity_cluster": [
+                "refrigerator"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ],
+                "fullness": [
+                    "fullness"
+                ]
+            }
+        },
+        "task": {
+            "entity_cluster": [
+                "task"
+            ],
+            "attribute_cluster": {
+                "completion": [
+                    "completion"
+                ]
+            }
+        },
+        "mixture": {
+            "entity_cluster": [
+                "rum and coconut",
+                "liquid",
+                "ingredients",
+                "mixture"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "composition": [
+                    "composition"
+                ]
+            }
+        },
+        "rum": {
+            "entity_cluster": [
+                "rum"
+            ],
+            "attribute_cluster": {
+                "locaion": [
+                    "locaion"
+                ]
+            }
+        }
+    }
+}

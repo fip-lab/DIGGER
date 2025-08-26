@@ -1,0 +1,22 @@
+{
+    "forage": [
+        "(:action forage_edible_plants\n    :parameters (?plant - plant ?location - location)\n    :precondition (and\n                    (in_jungle ?location)\n                    (known_edible ?plant)\n                    (at ?plant ?location))\n    :effect (and\n              (collected ?plant)\n              (not (at ?plant ?location)))\n)\n```\n\n#### Action 2: Build Solar Water Still\n\n```pddl\n"
+    ],
+    "build": [
+        "(:action build_solar_still\n    :parameters (?container - container ?plastic_sheet - sheet ?location - location)\n    :precondition (and\n                    (in_sunlight ?location)\n                    (has ?container)\n                    (has ?plastic_sheet))\n    :effect (and\n              (solar_still_built ?location)\n              (water_collected ?container))\n)\n```\n\n### Explanation\n\n- **Forage for Edible Plants and Fruits**: This action represents searching for and collecting known edible plants and fruits in the jungle. The preconditions ensure the location is in the jungle and that the plant is recognized as edible. The effect is that the plant is collected and is no longer at the location.\n\n- **Build Solar Water Still**: This action involves constructing a solar water still with a container and a plastic sheet in an area that receives sunlight. The preconditions check that the location is sunny and that the necessary materials are available. The effect is that the solar still is built, and water is collected in the container.\n\nThese actions align with the task of addressing hunger by finding food and creating a means to obtain water. If there were additional steps or relevant tasks, more actions could be added accordingly."
+    ],
+    "filter": [
+        "(:action filter_particles\n    :parameters (?w - water ?f - fabric)\n    :precondition (and (particles_in ?w) (type ?f fabric))\n    :effect (and (not (particles_in ?w)) (filtered ?w))\n)\n\n"
+    ],
+    "start": [
+        "(:action start_fire\n    :parameters (?f - fire ?w - water)\n    :precondition (and (not (lit ?f)) (filtered ?w))\n    :effect (and (lit ?f) (boiling ?w))\n)\n\n"
+    ],
+    "collect": [
+        "(:action collect_rainfall\n    :parameters (?l - leaf ?b - bamboo ?c - container)\n    :precondition (and (rainfall_collected ?l) (rainfall_collected ?b))\n    :effect (and (water_in ?c) (not (rainfall_collected ?l)) (not (rainfall_collected ?b)))\n)\n\n"
+    ],
+    "bend": [
+        "(:action bend_leaf_funnel\n    :parameters (?l - leaf ?c - container)\n    :precondition (and (rainfall_collected ?l) (empty ?c))\n    :effect (and (water_in ?c) (not (rainfall_collected ?l)))\n)\n\n",
+        "(:action break_bamboo_compartment\n    :parameters (?b - bamboo ?c - container)\n    :precondition (and (rainfall_collected ?b) (empty ?c))\n    :effect (and (water_in ?c) (not (rainfall_collected ?b)))\n)\n\n",
+        "(:action boil_stream_water\n    :parameters (?w - water ?f - fire)\n    :precondition (and (stream_water ?w) (lit ?f))\n    :effect (and (boiling ?w) (safe_to_drink ?w))\n)\n```\n\nThese actions encapsulate the steps involved in the dehydration task, ensuring that the necessary preconditions and effects are detailed as per the provided descriptions and entity states."
+    ]
+}

@@ -1,0 +1,177 @@
+[
+    {
+        "title": "How to Study the Causes of Chronic Kidney Failure",
+        "steps": [
+            "Learn the definition of chronic kidney failure.",
+            "Study the biochemical manifestations of this disorder.",
+            "Study the role of vitamin D in relation to kidney failure."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Locate Your Prostate",
+        "steps": [
+            "Watch for urination-related symptoms of an enlarged prostate.",
+            "Stay alert for additional symptoms of prostate issues as well.",
+            "Undergo testing and treatment in consultation with your medical team."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Prepare for a Pelvic Ultrasound",
+        "steps": [
+            "Empty your bladder right before your ultrasound.",
+            "Lie on the exam table and put your feet in the stirrups.",
+            "Relax your pelvic muscles as the technician inserts the transducer.",
+            "Watch the ultrasound monitor if you want to see the images.",
+            "Keep your pelvic muscles relaxed while the tech removes the transducer.",
+            "Change back into your clothes and continue your day normally."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Know if Your Child Has Kidney Stones",
+        "steps": [
+            "Be aware most kidney stones are caused by certain dietary minerals and substances that form solid crystals.",
+            "Limit your child\u2019s salt intake or amount of salty foods they eat.",
+            "Monitor your child\u2019s intake of foods high in purines.",
+            "Keep an eye on your child\u2019s intake of foods rich in phosphates.",
+            "Avoid eliminating any foods completely from your child\u2019s diet until you get a diagnosis."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Cleanse Your Kidneys",
+        "steps": [
+            "Consult your doctor.",
+            "Determine your daily calorie needs.",
+            "Choose the duration of your cleanse.",
+            "Avoid caffeine.",
+            "Avoid alcohol.",
+            "Consider taking supplements during your cleanse."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Find a Kidney Donor",
+        "steps": [
+            "Allow the donor to meet with your doctor.",
+            "Have the donor get tested for eligibility.",
+            "Set a date for the kidney donation."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Use a Bladder Scanner",
+        "steps": [
+            "Turn ON the system by pressing the Power button.",
+            "Operator Login a) Pad Scan bladder scanner has an operator login system which allows authorized operators to login.",
+            "Enter the patient data a)Touch Patient button to enter patient management system.",
+            "Prepare the patient a) Have the patient lie in the supine position with abdominal muscles relaxed.",
+            "Aim toward the bladder a) stand at the patient's right side.",
+            "Press the Scan button  a) Press the probe button to start ultrasound scanning to locate the bladder b) Make sure the ultrasound bladder image is the biggest and centered.",
+            "Save, review and print the exam results.",
+            "Finish exam."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Prepare for Kidney Dialysis",
+        "steps": [
+            "Recognize the symptoms of and triggers for kidney failure.",
+            "Watch for later symptoms of kidney failure.",
+            "Identify the signs of end stage kidney failure.",
+            "Ask your doctor about peritoneal dialysis.",
+            "Discuss hemodialysis with your doctor."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Treat CKD",
+        "steps": [
+            "Undergo haemodialysis to remove waste from your blood.",
+            "Get peritoneal dialysis as an alternative.",
+            "Talk to your doctor about a kidney transplant.",
+            "Ask about conservative care if other treatments aren\u2019t right for you."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Identify Hyperuricemia",
+        "steps": [
+            "See your doctor if you experience symptoms of hyperuricemia or gout.",
+            "Have your doctor test your uric acid levels.",
+            "Check for uric acid crystals.",
+            "Ask your doctor to rule out any other issues.",
+            "Follow your doctor\u2019s instructions for care.",
+            "Treat gout."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Test for Kidney Disease",
+        "steps": [
+            "Assess with your doctor whether additional tests are needed.",
+            "Get an ultrasound test.",
+            "Get a CT scan.",
+            "Undergo a kidney biopsy in a hospital."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Understand a Kidney Cleansing Fast",
+        "steps": [
+            "Understand the function of the kidneys and urinary system.",
+            "Consult your doctor before starting a kidney cleansing fast.",
+            "Reduce the amount of food you eat during the days leading up to your fast.",
+            "Determine what your fluid intake should be.",
+            "Adopt a liquid diet for 3 days that includes water, juice, herbal teas and vegetable broth.",
+            "Eat watermelon to cleanse kidneys after your 3 day fast.",
+            "Ease yourself slowly out of the fast by eating raw vegetables."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Test for Ketones",
+        "steps": [
+            "Ask your doctor when you should test your ketone levels.",
+            "Discuss whether urine or blood testing is better for you.",
+            "Watch for signs of ketoacidosis if you have diabetes.",
+            "Check for low-medium levels of ketones if you\u2019re on a ketogenic diet."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Flush Your Kidneys",
+        "steps": [
+            "Learn why your kidneys are important.",
+            "Know the risks of poor kidney health.",
+            "Talk to your doctor."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Relieve Kidney Stone Pain",
+        "steps": [
+            "Call your if you have serious or severe symptoms.",
+            "Ask about prescription pain medications.",
+            "Save the stone if you pass it."
+        ],
+        "cluster_label": 224
+    },
+    {
+        "title": "How to Become an Organ Donor in California",
+        "steps": [
+            "Understand that some organs can be donated by living donors.",
+            "Be an adult in good health.",
+            "Take the Donate Life California Self-Assessment.",
+            "Discuss your financial, physical, and psychological well-being with a transplant center.",
+            "Think carefully about the impacts of living donation.",
+            "Know the medical risks.",
+            "Know the financial risks.",
+            "Talk with an Independent Donor Advocate about your questions and concerns.",
+            "Donate your organ to a family member, friend, or stranger."
+        ],
+        "cluster_label": 224
+    }
+]

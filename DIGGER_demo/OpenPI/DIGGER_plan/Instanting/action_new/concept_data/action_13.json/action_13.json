@@ -1,0 +1,5 @@
+[
+    "(:action catch\n  ; Perform an action to capture, find, or select an item\n  :parameters (?p - player ?item - object ?loc - location)\n  :precondition (and \n                  (or (in_wild ?item) (at ?p ?loc) (owned ?p))\n                  (not (or (in_bag ?item) (bag_selected ?item))))\n  :effect (and \n           (or (caught ?item) (in_bag ?item) (bag_selected ?item))",
+    "(:action use ; Use an item or resource to achieve an effect\n  :parameters (?agent - entity ?target - entity ?item - object)\n  :precondition (and (owned ?target) (in_inventory ?item) (inventory_selected ?agent))\n  :effect (and (effect_applied ?target) (not (in_inventory ?item))",
+    "(:action wait\n    :parameters (?entity - object)\n    :precondition (and (in_transition ?entity))\n    :effect (and (completed_transition ?entity) (not (in_transition ?entity))"
+]

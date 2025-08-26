@@ -1,0 +1,131 @@
+[
+    {
+        "title": "How to Show an Alpaca",
+        "steps": [
+            "Make a sound decision about why you are showing your alpaca.",
+            "Know what the alpacas are being judged on.",
+            "Register for the show.",
+            "Obtain suitable clothing.",
+            "Make sure the alpaca is trained properly.",
+            "Bring the right gear and needs with you.",
+            "Bring your alpaca's health papers.",
+            "Be on time.",
+            "Don't talk to the judge."
+        ],
+        "cluster_label": 642
+    },
+    {
+        "title": "How to Become a Talent Agent",
+        "steps": [
+            "Scout undiscovered talent.",
+            "Choose a specialty.",
+            "Get your talent agent license.",
+            "Develop your talent."
+        ],
+        "cluster_label": 642
+    },
+    {
+        "title": "How to Become a Dairy Show Judge",
+        "steps": [
+            "Continue competing in competitions to become more prominent in your field.",
+            "Talk to competition officials and other teams at shows to meet more people.",
+            "Fill out an application to get added to an approved judges list."
+        ],
+        "cluster_label": 642
+    },
+    {
+        "title": "How to Sing Opera",
+        "steps": [
+            "Train with a professional instructor.",
+            "Join a local singing group.",
+            "Attend live opera performances.",
+            "Audition for local operas to perform live."
+        ],
+        "cluster_label": 642
+    },
+    {
+        "title": "How to Sing at a School Talent Show",
+        "steps": [
+            "Choose your song.",
+            "Put some effort into your appearance.",
+            "Choose how to sing the song.",
+            "Practice.",
+            "Know what to avoid and do prior to the show.",
+            "During your performance, be crowd friendly!.",
+            "After your performance, be sure to thank anyone who has helped you."
+        ],
+        "cluster_label": 642
+    },
+    {
+        "title": "How to Do an Emotional Song for a Talent Show",
+        "steps": [
+            "Pick a good emotional song.",
+            "Memorize the lyrics.",
+            "Try to connect to what the song means.",
+            "Prepare before the show.",
+            "Relax once you're on stage."
+        ],
+        "cluster_label": 642
+    },
+    {
+        "title": "How to Meet Your Idol",
+        "steps": [
+            "Get a press pass.",
+            "Attend free speeches, lectures, demonstrations and gallery openings.",
+            "Use your connections and network.",
+            "Obtain tickets to talk shows.",
+            "Wait by theater stage doors.",
+            "Go to filmings.",
+            "Be a seat filler at awards shows.",
+            "Enter and hopefully win a contest.",
+            "Get a job where your idol goes.",
+            "Find a way backstage.",
+            "Determine where your idol is staying."
+        ],
+        "cluster_label": 642
+    },
+    {
+        "title": "How to Enter in a Talent Show",
+        "steps": [
+            "Make sure your school has a talent show(or you could find a community talent show).",
+            "Once you are sure your school has a talent show, sign up!.",
+            "Ask friends, family, and other close people to judge you truthfully.",
+            "Be confident about your talent.",
+            "Take it seriously.",
+            "Practice!.",
+            "Before the talent show, look over your notes a practice again.",
+            "When you wake up, eat well and brush your teeth.",
+            "When it is your turn on stage, focus on what you are doing.",
+            "Clap for everyone and accept what you get.",
+            "After the show, help clean up the stage and put your props (and award!)."
+        ],
+        "cluster_label": 642
+    },
+    {
+        "title": "How to Look or Be Like a Musical Girl",
+        "steps": [
+            "Have an interest in music- There's no point in acting like your musical when you have no interest in it whatsoever.",
+            "Have some musical talent- It helps if you actually have some musical talent, e.g.",
+            "Always be listening to music- Try carrying around an iPod/music player.",
+            "Dress the part- Music is a form of art, it's expressing yourself, as is your fashion sense, so make an effort to look the part.",
+            "Get the natural look- When it comes to hair and makeup, keep it natural.",
+            "Don't care what others think- If you want to listen to Mozart then you listen to Mozart.",
+            "Lets others see your talent- If you're an amazing singer or can play the guitar really well or whatever your talent, then get out there and show the world."
+        ],
+        "cluster_label": 642
+    },
+    {
+        "title": "How to Have a Good Concert",
+        "steps": [
+            "Make an impression as soon as you step on stage.",
+            "Check that you know your songs.",
+            "Plan ahead.",
+            "Be prepared!.",
+            "Develop your stage presence.",
+            "Engage the audience.",
+            "Look awesome.",
+            "Enjoy yourself and have a good time!."
+        ],
+        "cluster_label": 642
+    }
+]

@@ -1,0 +1,25 @@
+{
+    "replace": [
+        "(:action replace_sheet\n    :parameters (?npc - npc ?ws - work_station ?p - papyrus)\n    :precondition (and (at ?npc ?ws) (wet ?p))\n    :effect (and (dry ?p) (not (wet ?p)))\n)\n```\n\nExplanation of PDDL Actions:\n\n1. **polish_papyrus**:\n    - **Action Name**: polish_papyrus\n    - **Parameters**: ?npc - npc, ?p - papyrus\n    - **Preconditions**: The papyrus should not be already polished, and the npc must have a tool (shell or ivory) to polish it.\n    - **Effects**: The papyrus becomes polished.\n\n2. **flatten_sheet**:\n    - **Action Name**: flatten_sheet\n    - **Parameters**: ?npc - npc, ?ws - work_station, ?s - sheet\n    - **Preconditions**: The sheet should not be already flattened, the npc should be at the work station, and the work station should have a stone slab.\n    - **Effects**: The sheet becomes flattened.\n\n3. **replace_sheet**:\n    - **Action Name**: replace_sheet\n    - **Parameters**: ?npc - npc, ?ws - work_station, ?p - papyrus\n    - **Preconditions**: The npc should be at the work station, and the papyrus should be wet.\n    - **Effects**: The papyrus becomes dry, and it is no longer wet.\n\nThese actions capture the necessary steps to achieve the task of getting the papyrus ready, following the provided steps and descriptions.",
+        "(:action buy_papyrus\n    :parameters (?npc - agent ?p - papyrus)\n    :precondition (and (not (has ?npc ?p)))\n    :effect (has ?npc ?p)\n)\n```\n\n#### Action 2: Cut Stalks\n```lisp\n"
+    ],
+    "lay": [
+        "(:action lay_strips\n    :parameters (?npc - agent ?ws - work_station ?s - strip)\n    :precondition (and\n                    (dry ?s)\n                    (at ?s ?ws)\n                    (vertical ?s)\n                  )\n    :effect (and\n              (horizontal ?s)\n              (not (vertical ?s))\n            )\n)\n\n"
+    ],
+    "dip": [
+        "(:action dip_strips\n    :parameters (?npc - agent ?s - strip)\n    :precondition (and\n                    (dry ?s)\n                    (laid_out ?s)\n                  )\n    :effect (and\n              (wet ?s)\n              (soaked ?s)\n              (not (dry ?s))\n            )\n)\n```\n\nEach PDDL action is designed to reflect the steps and descriptions provided, ensuring that the preconditions and effects align with the entity states before and after each action."
+    ],
+    "cut": [
+        "(:action cut_stalks\n    :parameters (?npc - agent ?p - papyrus)\n    :precondition (and (has ?npc ?p) (not (stalks_cut ?p)))\n    :effect (stalks_cut ?p)\n)\n```\n\n#### Action 3: Peel Papyrus Strips\n```lisp\n"
+    ],
+    "peel": [
+        "(:action peel_papyrus_strips\n    :parameters (?npc - agent ?ps - papyrus_strips)\n    :precondition (and (stalks_cut ?ps) (not (peeled ?ps)))\n    :effect (peeled ?ps)\n)\n```\n\n### Explanation:\n\n1. **Buy Papyrus**: This action involves acquiring a papyrus plant. The precondition checks if the agent (`npc`) does not already have the papyrus, and the effect results in the agent possessing the papyrus.\n\n2. **Cut Stalks**: This action involves cutting the papyrus stalks as described. The precondition ensures that the agent has the papyrus and that the stalks have not been cut yet. The effect marks the stalks as cut.\n\n3. **Peel Papyrus Strips**: This action involves peeling the papyrus strips. The precondition requires that the stalks are cut and not yet peeled. The effect marks the strips as peeled.\n\nThese actions reflect the logical sequence of obtaining and preparing papyrus strips, capturing the necessary preconditions and effects based on the task descriptions and entity states provided.",
+        "(:action polish_papyrus\n    :parameters (?npc - npc ?p - papyrus)\n    :precondition (and (not (polished ?p)) (has-tool ?npc ?shell))\n    :effect (polished ?p)\n)\n\n"
+    ],
+    "flatten": [
+        "(:action flatten_sheet\n    :parameters (?npc - npc ?ws - work_station ?s - sheet)\n    :precondition (and (not (flattened ?s)) (at ?npc ?ws) (has-stone-slab ?ws))\n    :effect (flattened ?s)\n)\n\n"
+    ],
+    "laid": [
+        "(:action laid_strips\n    :parameters (?npc - agent ?ps - papyrus_strip)\n    :precondition (and\n                    (dry ?ps)\n                    (on_ground ?ps)\n                  )\n    :effect (and\n              (laid_out ?ps)\n              (not (on_ground ?ps))\n            )\n)\n\n"
+    ]
+}

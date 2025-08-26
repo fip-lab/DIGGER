@@ -1,0 +1,22 @@
+{
+    "gather": [
+        "(:action gather-tinder\n    :parameters (?p - person ?t - tinder)\n    :precondition (not (tinder_gathered ?t))\n    :effect (tinder_gathered ?t)\n)\n\n",
+        "(:action gather_water\n    :parameters (?agent - person ?container - boiling_pot ?source - faucet)\n    :precondition (and\n                    (at ?agent ?source)\n                    (container_empty ?container)\n                    (water_out_of_faucet ?source))\n    :effect (and\n              (container_full ?container)\n              (water_hot ?container)\n              (not (container_empty ?container)))\n)\n```\n\nThese actions reflect the logical steps required to scavenge for useful items, particularly water, and to gather it using a container. The preconditions and effects are based on the entity states and descriptions provided, ensuring that the actions align with the task's objectives.",
+        "(:action gather_driftwood\n    :parameters (?a - agent ?d - driftwood ?b - beach)\n    :precondition (and\n                    (at ?a ?b)\n                    (driftwood-available ?b))\n    :effect (and\n              (has ?a ?d)\n              (not (driftwood-available ?b))\n             )\n)\n```\n\n#### Action 2: create_shelter\n```pddl\n",
+        "(:action find_water_source\n    :parameters (?agent - person ?location - river)\n    :precondition (and\n                    (at ?agent ?location)\n                    (river_related_to_water ?location))\n    :effect (and\n              (found_water ?agent)\n              (can_drink ?agent))\n)\n```\n\n#### Action 3: Gather_Water\n```pddl\n"
+    ],
+    "create": [
+        "(:action create-spark\n    :parameters (?p - person ?t - tinder)\n    :precondition (and (tinder_gathered ?t) (not (spark_created ?t)))\n    :effect (spark_created ?t)\n)\n\n",
+        "(:action create_shelter\n    :parameters (?a - agent ?d - driftwood ?b - beach)\n    :precondition (and\n                    (at ?a ?b)\n                    (has ?a ?d))\n    :effect (and\n              (shelter-created ?b)\n              (not (has ?a ?d))\n             )\n)\n```\n\n#### Action 3: prepare_tinder\n```pddl\n",
+        "(:action create_smoke_signal\n    :parameters (?a - agent ?b - beach)\n    :precondition (and\n                    (at ?a ?b)\n                    (fire-started ?b))\n    :effect (smoke-signal-created ?b)\n)\n```\n\n### Explanation:\n1. **gather_driftwood**: The agent gathers driftwood from the beach, ensuring driftwood is available.\n2. **create_shelter**: The agent uses the gathered driftwood to create a shelter on the beach.\n3. **prepare_tinder**: The agent prepares tinder, ensuring tinder is available on the beach.\n4. **make_fire**: The agent uses the prepared tinder to start a fire at the beach, provided a shelter has been created.\n5. **create_smoke_signal**: The agent creates a smoke signal using the fire started at the beach.",
+        "(:action build-fire\n    :parameters (?p - person ?t - tinder)\n    :precondition (tinder_lit ?t)\n    :effect (fire_built ?t)\n)",
+        "(:action prepare_tinder\n    :parameters (?a - agent ?t - tinder ?b - beach)\n    :precondition (and\n                    (at ?a ?b)\n                    (tinder-available ?b))\n    :effect (and\n              (has ?a ?t)\n              (not (tinder-available ?b))\n             )\n)\n```\n\n#### Action 4: make_fire\n```pddl\n",
+        "(:action make_fire\n    :parameters (?a - agent ?t - tinder ?b - beach)\n    :precondition (and\n                    (at ?a ?b)\n                    (has ?a ?t)\n                    (shelter-created ?b))\n    :effect (and\n              (fire-started ?b)\n              (not (has ?a ?t))\n             )\n)\n```\n\n#### Action 5: create_smoke_signal\n```pddl\n"
+    ],
+    "light": [
+        "(:action light-tinder\n    :parameters (?p - person ?t - tinder)\n    :precondition (and (spark_created ?t) (not (tinder_lit ?t)))\n    :effect (tinder_lit ?t)\n)\n\n"
+    ],
+    "scavenge": [
+        "(:action scavenge_floating_items\n    :parameters (?agent - person ?location - water_body)\n    :precondition (and\n                    (at ?agent ?location)\n                    (floating_items ?location))\n    :effect (and\n              (collected_items ?agent)\n              (not (floating_items ?location))\n             )\n)\n```\n\n#### Action 2: Find_Water_Source\n```pddl\n"
+    ]
+}

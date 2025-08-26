@@ -1,0 +1,467 @@
+{
+    "goal": "Grow Dwarf Balsam Fir",
+    "steps": [
+        "Choose the plant from a nursery or garden center.",
+        "This plant spreads and flattens as it grows, so select a broad sized container, preferably with a rounded shape.",
+        "Choose the potting soil.",
+        "Plant the fir in the container.",
+        "Keep this up until the tree is well established.",
+        "Re-pot occasionally."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/5/51/Grow-Dwarf-Balsam-Fir-Step-1.jpg/aid1641189-v4-728px-Grow-Dwarf-Balsam-Fir-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/1/14/Grow-Dwarf-Balsam-Fir-Step-2.jpg/aid1641189-v4-728px-Grow-Dwarf-Balsam-Fir-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/0/0c/Grow-Dwarf-Balsam-Fir-Step-3.jpg/aid1641189-v4-728px-Grow-Dwarf-Balsam-Fir-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/a/a4/Grow-Dwarf-Balsam-Fir-Step-4.jpg/aid1641189-v4-728px-Grow-Dwarf-Balsam-Fir-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/a/af/Grow-Dwarf-Balsam-Fir-Step-5.jpg/aid1641189-v4-728px-Grow-Dwarf-Balsam-Fir-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/c/c5/Grow-Dwarf-Balsam-Fir-Step-6.jpg/aid1641189-v4-728px-Grow-Dwarf-Balsam-Fir-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "container",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "contents",
+                        "before": "with dirt",
+                        "after": "with dirt and plant",
+                        "saliency": 0.5828766289124345,
+                        "attribute_annotation": "contents"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "containers"
+            ]
+        },
+        {
+            "entity": "fir",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand",
+                        "saliency": 0.4208379003775423,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center",
+                        "saliency": 0.40323955669224215,
+                        "attribute_annotation": "cost"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession",
+                        "saliency": 0.4817318231640482,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier",
+                        "saliency": 0.5213128729752771,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.3611314090853733,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.5213128729752771,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.43514797223237117,
+                        "attribute_annotation": "container"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container",
+                        "saliency": 0.4208379003775423,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.5058661145617668,
+                        "attribute_annotation": "watered | wetness"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed",
+                        "saliency": 0.3002374862988674,
+                        "attribute_annotation": "contentment"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered",
+                        "saliency": 0.33863110461575935,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier",
+                        "saliency": 0.41237364511021796,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers",
+                        "saliency": 0.49153574473267564,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "plant | container | bag",
+                "buds",
+                "fir"
+            ]
+        },
+        {
+            "entity": "soil",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "in container",
+                        "saliency": 0.5432955791012056,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "soil"
+            ]
+        },
+        {
+            "entity": "shovel",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "weight",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.27073438070880523,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.5067592254293022,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.5219827061259287,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in hand",
+                        "saliency": 0.38430154670563876,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "shovel",
+                "hands"
+            ]
+        },
+        {
+            "entity": "money",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register",
+                        "saliency": 0.5067592254293022,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "value",
+                        "before": "more",
+                        "after": "less",
+                        "saliency": 0.36907806600901233,
+                        "attribute_annotation": "value"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in possession",
+                        "after": "in center's possesion",
+                        "saliency": 0.5067592254293022,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "greater",
+                        "after": "less",
+                        "saliency": 0.323184346202249,
+                        "attribute_annotation": "amount"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register",
+                        "saliency": 0.5067592254293022,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "more",
+                        "after": "less",
+                        "saliency": 0.323184346202249,
+                        "attribute_annotation": "amount"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "money"
+            ]
+        },
+        {
+            "entity": "water",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in hose",
+                        "after": "on plant",
+                        "saliency": 0.5067592254293022,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "knob",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.3002374862988674,
+                        "attribute_annotation": "knob"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "water"
+            ]
+        }
+    ],
+    "clusters": {
+        "fir": {
+            "entity_cluster": [
+                "buds",
+                "plant",
+                "fir"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "cost": [
+                    "cost"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "container": [
+                    "container"
+                ],
+                "contentment": [
+                    "contentment"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "watered": [
+                    "wetness",
+                    "watered"
+                ],
+                "wetness": [
+                    "wetness"
+                ]
+            }
+        },
+        "soil": {
+            "entity_cluster": [
+                "soil"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "water": {
+            "entity_cluster": [
+                "water"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "knob": [
+                    "knob"
+                ]
+            }
+        },
+        "shovel": {
+            "entity_cluster": [
+                "shovel",
+                "hands"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "money": {
+            "entity_cluster": [
+                "bag",
+                "money"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "cost": [
+                    "cost"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "container": [
+                    "container"
+                ],
+                "contentment": [
+                    "contentment"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "watered": [
+                    "wetness",
+                    "watered"
+                ],
+                "value": [
+                    "value"
+                ],
+                "amount": [
+                    "amount"
+                ]
+            }
+        },
+        "container": {
+            "entity_cluster": [
+                "containers",
+                "container"
+            ],
+            "attribute_cluster": {
+                "contents": [
+                    "contents"
+                ],
+                "location": [
+                    "location"
+                ],
+                "cost": [
+                    "cost"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "container": [
+                    "container"
+                ],
+                "contentment": [
+                    "contentment"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "watered": [
+                    "wetness",
+                    "watered"
+                ]
+            }
+        }
+    }
+}

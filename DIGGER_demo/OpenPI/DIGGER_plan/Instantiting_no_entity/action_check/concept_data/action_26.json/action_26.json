@@ -1,0 +1,3 @@
+[
+    "```lisp\n[\n  (:action get\n    ; Obtain an item and update the player's inventory\n    :parameters (?p - player ?item - object ?resource - object)\n    :precondition (and (at ?p market) (or (inventory ?p ?resource) (not (inventory ?p ?item))))\n    :effect (and (inventory ?p ?item) (not (inventory ?p ?resource)))\n  ),\n  (:action keep\n    :parameters (?entity - object ?target - object ?location - location)\n    :precondition (and (at ?entity ?location) (at ?target ?location))\n    :effect (safe ?target)\n  )\n]\n```"
+]

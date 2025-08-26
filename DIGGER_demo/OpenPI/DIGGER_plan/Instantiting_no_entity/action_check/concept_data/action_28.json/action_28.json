@@ -1,0 +1,3 @@
+[
+    "```pddl\n[\n  '(:action cut ; Cut an item to obtain a derived item and update inventory status\n    :parameters (?p - person ?item - object ?derived_item - object)\n    :precondition (and (inventory ?p ?item))\n    :effect (and (inventory ?p ?derived_item) (not (inventory ?p ?item)))',\n  \n  '(:action slip ; Slip beads onto a strip\n    :parameters (?p - person ?strip - strip ?bead1 - bead ?small_bead - bead)\n    :precondition (and (inventory ?p ?strip) (inventory ?p ?bead1) (inventory ?p ?small_bead))\n    :effect (and (on_strip ?strip ?small_bead) (on_strip ?strip ?bead1))'\n]\n```"
+]

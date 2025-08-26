@@ -1,0 +1,12 @@
+{
+    "set": [
+        "(:action set_spy_group ; set up the spy group\n      :parameters (?p - player ?co - co_conspirator)\n      :precondition (and (not (in_group ?co ?p)))\n      :effect (and (in_group ?co ?p))\n)\n\n"
+    ],
+    "talk": [
+        "(:action talk_in_private ; talk in private to discuss plans\n      :parameters (?p - player ?npc - npc)\n      :precondition (and (in_group ?npc ?p) (not (talking ?npc ?p)))\n      :effect (and (talking ?npc ?p))\n)\n\n"
+    ],
+    "gather": [
+        "(:action gather_gear ; gather spy gear\n      :parameters (?p - player ?gear - equipment)\n      :precondition (and (not (gathered ?gear)))\n      :effect (and (gathered ?gear))\n)\n\n",
+        "(:action find_victim ; identify a victim for spying\n      :parameters (?p - player ?v - victim)\n      :precondition (and (not (identified ?v)))\n      :effect (and (identified ?v))\n)\n```\n\nThe actions are defined to reflect the steps and their descriptions, considering the necessary preconditions and effects based on the entity states provided."
+    ]
+}

@@ -1,0 +1,8 @@
+[
+    "(:action pour\n    :parameters (?agent - person ?substance - substance ?target - target)\n    :precondition (and (available ?agent) (substance ?substance) (target ?target) (not (contains ?target ?substance)))\n    :effect (and (contains ?target ?substance))",
+    "(:action dip\n    :parameters (?agent - person ?item - item ?substance - substance ?container - container)\n    :precondition (and (available ?agent) (item ?item) (substance ?substance) (container ?container) (contains ?container ?substance))\n    :effect (and (soaked_in ?item ?substance))",
+    "(:action remove_wick\n        :parameters (?w - wick ?l - lamp ?s - stove)\n        :precondition (and (or (in ?w ?l) (in ?w ?s)))\n        :effect (and (not (in ?w ?l))",
+    "(:action remove ; Generalized remove action\n    :parameters (?item - object ?container1 - container ?container2 - container)\n    :precondition (and (or (in ?item ?container1) (in ?item ?container2)))\n    :effect (and (not (in ?item ?container1))",
+    "(:action dry ; Dry an entity and update its state\n    :parameters (?entity - object)\n    :precondition (and (soaked ?entity))\n    :effect (and (drying ?entity))",
+    "(:action make\n    :parameters (?entity - object ?resource - object ?state1 - state ?state2 - state)\n    :precondition (and \n        (current_state ?entity ?state1)\n        (not (current_state ?entity ?state2))\n    )\n    :effect (and \n        (current_state ?entity ?state2)\n        (not (current_state ?entity ?state1))"
+]

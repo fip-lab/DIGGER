@@ -1,0 +1,53 @@
+[
+    {
+        "cluster_label": 490,
+        "task": "How to Dilute Bleach",
+        "step": [
+            "Wear rubber gloves when working with bleach.",
+            "Work in a well-ventilated room.",
+            "Pour the bleach over a sink or tub.",
+            "Use cold water.",
+            "Avoid using undiluted bleach."
+        ],
+        "steps_predictions": [
+            "wear_rubber_gens velveeta",
+            "set_room npc basement",
+            "pour_blend_into_sink_or_tub user1 bleach1 container1",
+            "use_water npc water",
+            "break_blender user1 bottle1"
+        ],
+        "goal_state": " ((in_container Bleach1 container1) (sealed towel1))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Wash Hemp",
+        "step": [
+            "Don't use chlorinated bleach on hemp.",
+            "Avoid high-heat.",
+            "Don't dry clean hemp."
+        ],
+        "steps_predictions": [
+            "use_chlorinated_bleach npc",
+            "break_burner npc",
+            "dry_clean hemp1 cloth1"
+        ],
+        "goal_state": " ((clean hemp1 cloth1))"
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Use Bleach in Your Washing Machine",
+        "step": [
+            "Set the washing machine to a hot, long wash. Push the hot wash button and then select the long wash option.",
+            "Add 1 quart (946 mL) of bleach into the machine.",
+            "Pause the cycle to allow the bleach to soak in for 1 hour.",
+            "Restart the machine to allow the cycle to finish."
+        ],
+        "steps_predictions": [
+            "set_wicks_in_machine washingmachine",
+            "add_blend_into_machine user1 bleach1 machine1",
+            "put_blend_in_machine npc",
+            "restart_machine npc"
+        ],
+        "goal_state": " ((in_machine npc))"
+    }
+]

@@ -1,0 +1,65 @@
+task,nl_step
+put CellPhone2 on the Sofa3 Do not put it in Box1,"**Task**: put CellPhone2 on the Sofa3 Do not put it in Box1
+
+**Steps in Natural Language**:
+1. You pick up CellPhone2 from the sofa.
+2. You move the sofa to Sofa3.
+3. You place CellPhone2 on Sofa3."
+put CD1 next to Sofa1 Do not move CreditCard1,"**Task**: put CD1 next to Sofa1 Do not move CreditCard1
+
+**Steps in Natural Language**:
+1. Agent 1 moves from location1 to Sofa1.
+2. Agent 1 picks up CD1 from location1.
+3. Agent 1 puts CD1 next to Sofa1."
+put KeyChain1 on the Sofa2 Do not put it in Box1,"**Task**: Put KeyChain1 on the Sofa2. Do not put it in Box1.
+
+**Steps in Natural Language**:
+1. Agent 1 picks up KeyChain1 from the drawer.
+2. Agent 1 moves from the drawer to Sofa2.
+3. Agent 1 puts KeyChain1 on Sofa2."
+move CellPhone1 to Box2 with two object,"**Task**: move CellPhone1 to Box2 with two object
+
+**Steps in Natural Language**:
+1. Agent 1 picks up cellphone 1 from the desk 1.
+2. Agent 1 moves from the desk 1 to Box 2.
+3. Agent 1 puts cellphone 1 in Box 2."
+move CellPhone1 to Box1 with three object,"**Task**: move CellPhone1 to Box1 with three object
+
+**Steps in Natural Language**:
+1. Agent 1 picks up CellPhone1 from the desk.
+2. Agent 1 moves the desk to Box1.
+3. Agent 1 puts CellPhone1 in Box1.
+4. Agent 1 picks up an object from Box1."
+move KeyChain1 to GarbageCan2 with more object,"**Task**: move KeyChain1 to GarbageCan2 with more object
+
+**Steps in Natural Language**:
+1. You pick up KeyChain1 from the desk.
+2. You move from desk1 to desk2.
+3. You put KeyChain1 in GarbageCan2."
+move AlarmClock1 to Box2 with three object,"**Task**: move AlarmClock1 to Box2 with three object
+
+**Steps in Natural Language**:
+1. Agent 1 picks up AlarmClock1 from the desk.
+2. Agent 1 moves from the desk to Box2.
+3. Agent 1 puts AlarmClock1 in Box2."
+move Pillow1 to Box2 with two object,"**Task**: move Pillow1 to Box2 with two object
+
+**Steps in Natural Language**:
+1. Agent 1 picks up pillow 1 from the sofa.
+2. Agent 1 moves from the sofa to box 2.
+3. Agent 1 puts pillow 1 in box 2."
+move CellPhone1 to Bed1 with more object,"**Task**: move CellPhone1 to Bed1 with more object
+
+**Steps in Natural Language**:
+1. Agent 1 moves from desk to bed 1.
+2. Agent 1 picks up cellphone 1 from desk.
+3. Agent 1 puts cellphone 1 on bed 1.
+4. Agent 1 picks up book from desk.
+5. Agent 1 puts book on bed 1."
+put Book1 on the Sofa1 Do not put it in Box1,"**Task**: put Book1 on the Sofa1 Do not put it in Box1
+
+**Steps in Natural Language**:
+1. Agent 1 picks up Book1 from the sofa.
+2. Agent 1 moves to Sofa1.
+3. Agent 1 places Book1 on Sofa1.
+4. Agent 1 ensures Book1 is not placed in Box1."

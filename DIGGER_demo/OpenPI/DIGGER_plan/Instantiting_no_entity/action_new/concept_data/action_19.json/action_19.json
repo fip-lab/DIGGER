@@ -1,0 +1,4 @@
+[
+    "(:action cut ; Cut an object and update task status\n:parameters (?npc - person ?item - object ?loc - location)\n:precondition (and (at ?npc ?loc) (inventory ?npc ?item) (not (cut ?item)))\n:effect (cut ?item))",
+    "(:action squeeze\n  ; Squeeze a lemon and apply the resulting juice to clean a faucet\n  :parameters (?npc - person ?lemon - object ?juice - object ?faucet - object ?water - object ?loc - location)\n  :precondition (and (at ?npc ?loc)\n                     (or (and (not (squeezed ?lemon)) (cut ?lemon))\n                         (and (squeezed ?lemon) (at ?faucet ?loc)))\n                     (or (and (squeezed ?lemon) (inventory ?npc ?water) (rubbed ?faucet ?lemon))\n                         (not (squeezed ?lemon))))\n  :effect (and (when (and (cut ?lemon) (not (squeezed ?lemon))"
+]

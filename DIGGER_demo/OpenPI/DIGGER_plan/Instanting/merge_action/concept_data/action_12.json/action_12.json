@@ -1,0 +1,13 @@
+{
+    "obtain": [
+        "(:action obtain_fizzy_drink\n  :parameters (?p - player ?f - faucet ?fd - fizzy_drink)\n  :precondition (and (at ?p ?f) (available ?fd))\n  :effect (and (inventory ?p ?fd) (not (available ?fd)))\n)\n\n",
+        "(:action replace_bolt\n  :parameters (?p - player ?b - old_bolt)\n  :precondition (and (at ?p ?b) (rust_dissolved ?b))\n  :effect (and (not (stuck ?b)) (new ?b))\n)\n```\n\nThese actions should capture the intent and logic of the provided steps and descriptions. The preconditions and effects are based on the entity states before and after each action."
+    ],
+    "pour": [
+        "(:action pour_fizzy_drink\n  :parameters (?p - player ?f - faucet ?fd - fizzy_drink ?b - old_bolt)\n  :precondition (and (at ?p ?f) (inventory ?p ?fd) (at ?b ?f))\n  :effect (and (not (inventory ?p ?fd)) (on ?fd ?b))\n)\n\n",
+        "(:action wipe_clean\n  :parameters (?p - player ?t - towel ?b - old_bolt ?fd - fizzy_drink)\n  :precondition (and (at ?p ?b) (inventory ?p ?t) (on ?fd ?b))\n  :effect (and (not (on ?fd ?b)) (on ?fd ?t) (clean ?b))\n)\n\n"
+    ],
+    "dissolve": [
+        "(:action dissolve_rust\n  :parameters (?p - player ?b - old_bolt ?fd - fizzy_drink)\n  :precondition (and (at ?p ?b) (on ?fd ?b))\n  :effect (and (rust_dissolved ?b) (not (on ?fd ?b)))\n)\n\n"
+    ]
+}

@@ -1,0 +1,5 @@
+(mix_ingredients user1 mixing_bowl1 spoon1 carob1 carob1 carob1 carob1)
+(roll_into_balls user1 mixing_bowl1 spoon1)
+(freeze_balls user1 mixing_bowl1 freezer1)
+(serve_balls user1 mixing_bowl1 plate1)
+; cost = 4 (unit cost)

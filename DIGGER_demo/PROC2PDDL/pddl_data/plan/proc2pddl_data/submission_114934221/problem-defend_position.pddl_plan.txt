@@ -1,0 +1,3 @@
+(splash_swim in npc open_sea shallow_sea shark)
+(defend npc shark)
+; cost = 2 (unit cost)

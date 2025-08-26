@@ -1,0 +1,7 @@
+(keep-family-safe kids-room)
+(bring-stuff-home stuff)
+(bring-stuff-home screens)
+(create-rooms outside-area)
+(create-rooms kids-room)
+(acquire-gems gems)
+; cost = 6 (unit cost)

@@ -1,0 +1,1109 @@
+[
+    {
+        "step": [
+            "Pour a small amount of oil into the palm of your hand.",
+            "Massage the oil into the wax.",
+            "Pull the excess wax free as it loosens.",
+            "Wash and condition your hair in hot water."
+        ],
+        "task": "How to Get Wax out of Hair",
+        "goal_state": "get_wax_out_of_hair wick1",
+        "steps": "```pddl\n; PDDL Planning Steps for Task: How to Get Wax out of Hair\n\n1. (wet_skin p skin)\n2. (apply_powder_to_roots p h)\n3. (check_and_comb agent resource tip)\n4. (wash entity tool skin)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 863,
+                "task": "How to Use Hair Removing Wax",
+                "step": [
+                    "Warm the wax.",
+                    "Dip the applicator into the warm wax.",
+                    "Apply the fabric over the wax in the direction of hair growth, leaving enough free fabric at the end to grasp the strip firmly."
+                ],
+                "steps_predictions": [
+                    "warm_wicks wick1",
+                    "dip_in_wicks user1 wick1",
+                    "apply_fabric npc strip"
+                ],
+                "goal_state": " ((clean wick1))",
+                "similar_entity": {
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "strip": {
+                        "the clipping": [
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "cut"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "drier | dry",
+                                "after": "wetter | moister | moistened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "pure",
+                                "after": "dipped into rooting hormone"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 863,
+                "task": "How to Wax With Honey",
+                "step": [
+                    "Wash and dry your skin beforehand.",
+                    "Grow your hair out first.",
+                    "Plan to wax often in the beginning."
+                ],
+                "steps_predictions": [
+                    "wash_and_dry you skin",
+                    "grow_hair npc",
+                    "plan_wax wick1"
+                ],
+                "goal_state": " ((on_skin npc plan_wax wick1))",
+                "similar_entity": {
+                    "skin": {
+                        "person": [
+                            {
+                                "attribute": "volume",
+                                "before": "silent",
+                                "after": "talking"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unsupported",
+                                "after": "supported"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[skin]] is for [[covering the body]]",
+                            "[[Pele]] is a translation of [[skin]]",
+                            "[[mole]] is related to [[skin]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 863,
+                "task": "How to Apply Hair Wax",
+                "step": [
+                    "Purchase hair wax.",
+                    "Apply hair wax to dry or slightly-damp hair.",
+                    "Make sure that you are fully-clothed when you apply the wax.",
+                    "Scoop out a bit of wax with your index, middle, and ring finger.",
+                    "Rub the wax between the tips of your fingers.",
+                    "Restyle your wax when necessary.",
+                    "Wash the wax out of your hair."
+                ],
+                "steps_predictions": [
+                    "purchase_wailmer alice wand1",
+                    "add_wicks_to_hair_machine alice wand1",
+                    "apply_wax npc covering_tracks",
+                    "scoop_wax npc",
+                    "rub_wicks npc",
+                    "restyle_wax alice wand1",
+                    "wash_wicks npc"
+                ],
+                "goal_state": " ((completed_wax npc covering_tracks))",
+                "similar_entity": {
+                    "covering tracks": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wand": {
+                        "twine": [
+                            {
+                                "attribute": "location",
+                                "before": "on spool",
+                                "after": "on wreath base"
+                            },
+                            {
+                                "attribute": "organization",
+                                "before": "loose",
+                                "after": "attached"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Get Wax out of Hair\n\n**Steps in Natural Language**:\n1. Wet your hair thoroughly with warm water.\n2. Apply a powder, such as baby powder or cornstarch, to the roots of your hair where the wax is located.\n3. Gently check your hair and comb through the waxy areas to loosen the wax from your hair strands.\n4. Wash your hair with shampoo and water to remove the loosened wax completely."
+    },
+    {
+        "step": [
+            "Remove as much slime as you can.",
+            "Put goggles on the person to protect their eyes.",
+            "Rub a mixture of 2/3 vinegar and 1/3 warm water into the hair.",
+            "Use conditioner to rinse out the remaining slime."
+        ],
+        "task": "How to Get Slime Out of Hair",
+        "goal_state": "gotolocation agent hair_outside_area razor",
+        "steps": "```pddl\n1. (wet(entity hair water))\n2. (apply(finger soap hair))\n3. (wash(entity hand hair))\n4. (check_and_comb(agent water hair))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 863,
+                "task": "How to Remove Hair Using Organic Ganda Beroza",
+                "step": [
+                    "Exfoliate your skin before removing hair.",
+                    "Wash your hands with soap and water.",
+                    "Take a small amount of solid ganda beroza.",
+                    "Take a pinch of the hair removal agent.",
+                    "Apply the pinch of ganda beroza to your body hair.",
+                    "Hold the unwanted hair between your thumb and index finger where you have already applied the ganda beroza.",
+                    "Keep repeating the procedure until all unwanted hairs are removed.",
+                    "Clean the skin gently.",
+                    "Remove ganda beroza from you fingers.",
+                    "Wash your hands with soap and water."
+                ],
+                "steps_predictions": [
+                    "remove_wicks npc",
+                    "wash_hand soap2 water1",
+                    "take_ganda_beroza npc",
+                    "take_pinch npc",
+                    "apply_gandas_painting user1 ganda beroza1",
+                    "apply_ganda_beroza npc",
+                    "remove_wailmer npc",
+                    "clean_skin npc",
+                    "remove-ganda beroza",
+                    "wash_hand soap2 water1"
+                ],
+                "goal_state": " ((not (wailmer npc)))",
+                "similar_entity": {
+                    "soap": {
+                        "soap bottle": [
+                            {
+                                "attribute": "fullness",
+                                "before": "more full | heavier",
+                                "after": "less full | lighter"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bottle",
+                                "after": "in bucket"
+                            },
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed together"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bucket",
+                                "after": "on window"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[soap]] is related to [[cleaning]]",
+                            "[[a soap]] can be used to [[clean something]]",
+                            "*Something you find at [[the supermarket]] is [[soap]]"
+                        ]
+                    },
+                    "ganda": {
+                        "potato": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty | dry",
+                                "after": "cleaner | clean | wet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bag",
+                                "after": "on counter"
+                            },
+                            {
+                                "attribute": "thickness",
+                                "before": "thicker",
+                                "after": "thinner"
+                            },
+                            {
+                                "attribute": "length",
+                                "before": "short",
+                                "after": "long"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "peeled"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "on cloth"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pan | on stove",
+                                "after": "in dish | on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "beroza": {
+                        "potato": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty | dry",
+                                "after": "cleaner | clean | wet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bag",
+                                "after": "on counter"
+                            },
+                            {
+                                "attribute": "thickness",
+                                "before": "thicker",
+                                "after": "thinner"
+                            },
+                            {
+                                "attribute": "length",
+                                "before": "short",
+                                "after": "long"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "peeled"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "on cloth"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pan | on stove",
+                                "after": "in dish | on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 863,
+                "task": "How to Remove Butt Hair",
+                "step": [
+                    "Use an epilator to pull out the hairs.",
+                    "Apply a depilatory cream to get rid of hairs at the surface.",
+                    "Trim your butt hair using an electric clipper.",
+                    "Consider laser hair removal for a permanent fix."
+                ],
+                "steps_predictions": [
+                    "pull_hairs npc",
+                    "apply_depilatory_cream npc",
+                    "trim_butt_hair npc",
+                    "remove_lock npc laser_removed"
+                ],
+                "goal_state": " ((not (stuck npc razor_removed)))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "laser removed": {
+                        "pistol": [
+                            {
+                                "attribute": "location",
+                                "before": "hidden | concealed",
+                                "after": "out | exposed"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "in inventory",
+                                "after": "equipped"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Get Slime Out of Hair  \n**Steps in Natural Language**:\n1. Wet your hair thoroughly with water.\n2. Apply liquid soap to your hair using your fingers.\n3. Wash your hands and hair to remove the slime.\n4. Check your hair for any remaining slime and comb it out while it's still wet."
+    },
+    {
+        "step": [
+            "Examine your armpits in the mirror.",
+            "Remove excess wax with oil.",
+            "Clean the area."
+        ],
+        "task": "How to Wax Your Armpits",
+        "goal_state": "wax_armpits user1 razor1",
+        "steps": "```\n1. (ensure_hair_length(hair armpit))\n2. (wash(entity tool armpit))\n3. (use_baby_powder(agent powder armpit))\n4. (warm_wax(w))\n5. (dip_applicator(a w))\n6. (apply_wax_for_volume(agent w armpit))\n7. (place_wax_strip(item armpit))\n8. (hold_skin_taut(hand))\n9. (rip_wax_strip(strip person))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 863,
+                "task": "How to Wax With Honey",
+                "step": [
+                    "Wash and dry your skin beforehand.",
+                    "Grow your hair out first.",
+                    "Plan to wax often in the beginning."
+                ],
+                "steps_predictions": [
+                    "wash_and_dry you skin",
+                    "grow_hair npc",
+                    "plan_wax wick1"
+                ],
+                "goal_state": " ((on_skin npc plan_wax wick1))",
+                "similar_entity": {
+                    "skin": {
+                        "person": [
+                            {
+                                "attribute": "volume",
+                                "before": "silent",
+                                "after": "talking"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unsupported",
+                                "after": "supported"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[skin]] is for [[covering the body]]",
+                            "[[Pele]] is a translation of [[skin]]",
+                            "[[mole]] is related to [[skin]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 863,
+                "task": "How to Use Wax on Your Hair",
+                "step": [
+                    "Start with dry, combed hair.",
+                    "Warm a pea-sized amount of wax between your palms.",
+                    "Run your fingers through your hair to tousle it.",
+                    "Apply another pea-sized amount to create additional volume.",
+                    "Use a small amount to add definition and texture to particular pieces."
+                ],
+                "steps_predictions": [
+                    "comb_hair_with_dry_wicks npc",
+                    "wick_pea_sized alice",
+                    "run_fingers_through_hair tousle",
+                    "create_add_pea_size_to_volume pc2",
+                    "add-texture-to-piece work_station"
+                ],
+                "goal_state": " ((completed_wicks npc wick_peeled))",
+                "similar_entity": {
+                    "work station": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "tousle": {
+                        "mortar and pestle": [
+                            {
+                                "attribute": "fullness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "status",
+                                "before": "idle | on table | absent",
+                                "after": "used | in mortar | present"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "pc": {
+                        "window": [
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler | warmer",
+                                "after": "warmer | cooler"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "transparency",
+                                "before": "more opaque | more covered",
+                                "after": "more transparent | more bare"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier",
+                                "after": "lighter"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet | dry",
+                                "after": "dry | wet"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "transparency",
+                                "before": "more opaque | more covered",
+                                "after": "more transparent | more bare"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirtier",
+                                "after": "cleaner"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 863,
+                "task": "How to Use Veet on Your Bikini Area",
+                "step": [
+                    "Lay out a towel for you to sit on while you wax.",
+                    "Sit in a comfortable position with your legs spread open.",
+                    "Rub a Veet wax strip between your hands to warm it up.",
+                    "Peel the strips apart and set them on the towel wax-side up.",
+                    "Apply 1 of the strips to your skin.",
+                    "Rub the strip 3-4 times in the direction of your hair growth.",
+                    "Hold your skin taut so that it’s easy to pull off the strip.",
+                    "Grasp the end of the wax strip and rip it off.",
+                    "Continue applying wax strips until your entire bikini area is hair-free.",
+                    "Wipe off the excess wax using the cloths provided in the box."
+                ],
+                "steps_predictions": [
+                    "lay_out_tape towel1",
+                    "sliplargerbend npc",
+                    "rub_wicks_with_leaves velveeta",
+                    "peel_strips npc strip",
+                    "apply_strips_to_skin npc strip",
+                    "rub_strip npc strip",
+                    "pull_strips npc strip",
+                    "grasp_end_strips end_strip",
+                    "apply_wax_strips alice",
+                    "wipe_wicks npc"
+                ],
+                "goal_state": " ((on_rack npc strip))",
+                "similar_entity": {
+                    "end strip": {
+                        "ends": [
+                            {
+                                "attribute": "organization",
+                                "before": "seperate",
+                                "after": "touching"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "bare",
+                                "after": "joined together"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "velveeta": {
+                        "velveeta": [
+                            {
+                                "attribute": "granularity",
+                                "before": "whole | a block",
+                                "after": "cubed | cut into cubes | cut into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the fridge | in package | in front of me",
+                                "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "room temperature"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "large | whole",
+                                "after": "small | cut up"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on the cutting board",
+                                "after": "in the sauce pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | room temperature",
+                                "after": "hot | warming"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "thick",
+                                "after": "runny"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "towel": {
+                        "towel": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | smooth",
+                                "after": "dirty | sticky"
+                            },
+                            {
+                                "attribute": "color",
+                                "before": "white",
+                                "after": "orange"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[napkin]] is related to [[towel]]",
+                            "[[a towel]] can [[dry hair]]",
+                            "*Something you find at [[at hotel]] is [[a towel]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "strip": {
+                        "the clipping": [
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "cut"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "drier | dry",
+                                "after": "wetter | moister | moistened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "pure",
+                                "after": "dipped into rooting hormone"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Wax Your Armpits\n\n**Steps in Natural Language**:\n1. **Trim your armpit hair** to about a quarter-inch in length before waxing.\n2. **Wash your armpits thoroughly** with soap and water to ensure the area is clean.\n3. **Apply baby powder** to your armpits to keep the skin dry during the waxing process.\n4. **Heat the wax** according to the package instructions until it reaches the appropriate temperature.\n5. **Dip a waxing applicator** or spatula into the warmed wax.\n6. **Apply a thick layer of wax** evenly to your armpits using the applicator.\n7. **Place a wax strip** firmly over the applied wax on your armpits.\n8. **Hold your skin taut** with one hand to minimize discomfort when removing the wax strip.\n9. **Quickly pull the wax strip off** in the opposite direction of hair growth to effectively remove the hair."
+    }
+]

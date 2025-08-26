@@ -1,0 +1,3 @@
+[
+    "```lisp\n['(:action peel\n  ; Peel an item and update its status\n  :parameters (?agent - agent ?item - object)\n  :precondition (and (not (peeled ?item)) (has-tool ?agent))\n  :effect (and (peeled ?item) (not (outer-layer ?item))))',\n  \n '(:action buy\n  ; Purchase or prepare a resource and update its status\n  :parameters (?npc - agent ?resource - object)\n  :precondition (and (not (obtained ?resource)) \n                     (or (has-money ?npc) (has-tool ?npc)))\n  :effect (obtained ?resource))']\n```"
+]

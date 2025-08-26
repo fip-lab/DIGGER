@@ -1,0 +1,6 @@
+[
+    "(:action peel-papyrus\n  :parameters (?npc - person ?ps - papyrus_strip)\n  :precondition (and (has-outer-layer ?ps) (not (peeled ?ps)))\n  :effect (and (peeled ?ps) (not (has-outer-layer ?ps))",
+    "(:action buy-papyrus\n  :parameters (?npc - person ?ps - papyrus_strip)\n  :precondition (and (not (owned ?npc ?ps)))\n  :effect (owned ?npc ?ps)\n)",
+    "(:action handle-resource\n  :parameters (?npc - person ?item - object)\n  :precondition (and \n    (or (has-outer-layer ?item) (not (owned ?npc ?item)) (not (peeled ?item)))\n    (not (checked ?npc ?item)))\n  :effect (and \n    (or (peeled ?item) (owned ?npc ?item))",
+    "(:action buy\n    :parameters (?buyer - agent ?item - object)\n    :precondition (not (has ?buyer ?item))\n    :effect (has ?buyer ?item)\n)"
+]

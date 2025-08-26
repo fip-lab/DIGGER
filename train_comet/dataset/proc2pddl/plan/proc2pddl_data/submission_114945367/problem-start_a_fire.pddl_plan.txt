@@ -1,0 +1,7 @@
+(go west npc camp path)
+(get_dry_materials npc path dry_materials)
+(get_twigs_leaves npc path twigs_leaves)
+(get_logs npc path logs)
+(build_teepee npc path dry_materials twigs_leaves teepee)
+(start_fire npc path teepee logs)
+; cost = 6 (unit cost)

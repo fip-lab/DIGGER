@@ -1,0 +1,14 @@
+{
+    "gather": [
+        "(:action gather_wood\n    :parameters (?w - wood ?s - storage)\n    :precondition (and\n      (at ?w ?s)\n      (available ?w)\n    )\n    :effect (and\n      (gathered ?w)\n      (not (at ?w ?s))\n    )\n)\n\n;; Action 2: Collect nails from the toolbox\n",
+        "(:action retrieve_paint\n    :parameters (?p - paint ?r - supply_room)\n    :precondition (and\n      (at ?p ?r)\n      (available ?p)\n    )\n    :effect (and\n      (retrieved ?p)\n      (not (at ?p ?r))\n    )\n)\n\n;; Action 4: Obtain a hammer from the tool shed\n",
+        "(:action obtain_hammer\n    :parameters (?h - hammer ?s - tool_shed)\n    :precondition (and\n      (at ?h ?s)\n      (available ?h)\n    )\n    :effect (and\n      (obtained ?h)\n      (not (at ?h ?s))\n    )\n)\n```\n\nIn this example, each PDDL action is defined with parameters, preconditions, and effects, capturing the intent and logic of gathering materials for a construction project. Adjust the task, steps, and descriptions as needed to fit the actual scenario.",
+        "(:action buy-papyrus\n    :parameters (?npc - npc ?p - papyrus)\n    :precondition (and (not (obtained ?p)) (available ?p) (seller ?npc))\n    :effect (and (obtained ?p) (not (available ?p)))\n)\n\n;; Action 2: Make Paper from River Reeds\n"
+    ],
+    "collect": [
+        "(:action collect_nails\n    :parameters (?n - nails ?t - toolbox)\n    :precondition (and\n      (at ?n ?t)\n      (available ?n)\n    )\n    :effect (and\n      (collected ?n)\n      (not (at ?n ?t))\n    )\n)\n\n;; Action 3: Retrieve paint from the supply room\n"
+    ],
+    "make": [
+        "(:action make-river-reeds\n    :parameters (?npc - npc ?p - papyrus ?r - riverside)\n    :precondition (and (obtained ?p) (at ?npc ?r) (not (made-paper ?p)))\n    :effect (made-paper ?p)\n)\n```\n\n### Explanation\n\n1. **Action: buy-papyrus**\n   - **Parameters**: `?npc` (non-player character or seller), `?p` (papyrus plant)\n   - **Preconditions**: The papyrus plant is available for purchase, and the seller is present.\n   - **Effects**: The papyrus plant is obtained, and it is no longer available for purchase.\n\n2. **Action: make-river-reeds**\n   - **Parameters**: `?npc` (non-player character), `?p` (papyrus plant), `?r` (riverside location)\n   - **Preconditions**: The papyrus plant has been obtained, and the character is at the riverside location.\n   - **Effects**: Paper is made from the papyrus plant.\n\nThese actions reflect the task of obtaining a papyrus plant and making paper from river reeds, aligning with the descriptions provided."
+    ]
+}

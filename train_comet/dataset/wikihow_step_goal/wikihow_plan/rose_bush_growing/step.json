@@ -1,0 +1,475 @@
+{
+    "goal": "Grow a Rose Bush from Rose Bush Cuttings",
+    "steps": [
+        "Prepare the pot or area in your yard where you plan to plant your clipping.",
+        "Take a cutting from the rose bush you would like to grow your new bush from.",
+        "Moisten the part of the clipping that you just scraped and dip it into rooting hormone.",
+        "Immediately plant the cutting."
+    ],
+    "topics": "Home and Garden",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/d/d9/Grow-a-Rose-Bush-from-Rose-Bush-Cuttings-Step-1.jpg/aid663847-v4-728px-Grow-a-Rose-Bush-from-Rose-Bush-Cuttings-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/9/9b/Grow-a-Rose-Bush-from-Rose-Bush-Cuttings-Step-2.jpg/aid663847-v4-728px-Grow-a-Rose-Bush-from-Rose-Bush-Cuttings-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/1/14/Grow-a-Rose-Bush-from-Rose-Bush-Cuttings-Step-3.jpg/aid663847-v4-728px-Grow-a-Rose-Bush-from-Rose-Bush-Cuttings-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/c/c6/Grow-a-Rose-Bush-from-Rose-Bush-Cuttings-Step-4.jpg/aid663847-v4-560px-Grow-a-Rose-Bush-from-Rose-Bush-Cuttings-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "pruning shears",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.6118012422360248,
+                        "attribute_annotation": "wetness | moisture"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.2412008281573499,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the pruning shears | pruning shears"
+            ]
+        },
+        {
+            "entity": "the clipping",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "cut",
+                        "saliency": 0.32712215320910976,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed",
+                        "saliency": 0.40476190476190477,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "moisture",
+                        "before": "drier | dry",
+                        "after": "wetter | moister | moistened",
+                        "saliency": 0.548950014788524,
+                        "attribute_annotation": "moisture | wetness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed",
+                        "saliency": 0.4121561668145519,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "pure",
+                        "after": "dipped into rooting hormone",
+                        "saliency": 0.274475007394262,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed",
+                        "saliency": 0.40476190476190477,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "the clipping | clipping",
+                "cutting",
+                "the cutting"
+            ]
+        },
+        {
+            "entity": "hole in ground",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "filled",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "container"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "hole in ground"
+            ]
+        },
+        {
+            "entity": "the rose bush",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.5267672286305827,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "fuller | intact",
+                        "after": "thinner | cut",
+                        "saliency": 0.419550428867199,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the rose bush",
+                "rose bush"
+            ]
+        },
+        {
+            "entity": "the shovel",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.5045844424726412,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the shovel"
+            ]
+        },
+        {
+            "entity": "ground",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "volume",
+                        "before": "filled",
+                        "after": "empty",
+                        "saliency": 0.4750073942620527,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "readiness",
+                        "before": "unprepared",
+                        "after": "prepared",
+                        "saliency": 0.3825791186039633,
+                        "attribute_annotation": "readiness"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "ground",
+                "yard",
+                "area"
+            ]
+        },
+        {
+            "entity": "rooting hormone",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle",
+                        "after": "on roots",
+                        "saliency": 0.3862762496302869,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "rooting hormone"
+            ]
+        },
+        {
+            "entity": "pot",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.3751848565513162,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.29754510499852116,
+                        "attribute_annotation": "volume"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "pot"
+            ]
+        },
+        {
+            "entity": "water",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in hose",
+                        "after": "in soil",
+                        "saliency": 0.31233362910381546,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "water"
+            ]
+        },
+        {
+            "entity": "roots",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.31233362910381546,
+                        "attribute_annotation": "moisture"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "roots"
+            ]
+        },
+        {
+            "entity": "soil",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "in pot",
+                        "saliency": 0.3049393670511683,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "in pot",
+                        "saliency": 0.3049393670511683,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "damp",
+                        "saliency": 0.16725820763087842,
+                        "attribute_annotation": "moisture"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "in pot",
+                        "saliency": 0.3049393670511683,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "soil"
+            ]
+        }
+    ],
+    "clusters": {
+        "rooting hormone": {
+            "entity_cluster": [
+                "rooting hormone"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "water": {
+            "entity_cluster": [
+                "water"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "the clipping": {
+            "entity_cluster": [
+                "the cutting",
+                "cutting",
+                "the clipping",
+                "clipping"
+            ],
+            "attribute_cluster": {
+                "moisture": [
+                    "moisture",
+                    "wetness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "composition": [
+                    "composition"
+                ]
+            }
+        },
+        "the shovel": {
+            "entity_cluster": [
+                "the shovel"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "pruning shears": {
+            "entity_cluster": [
+                "the pruning shears",
+                "pruning shears"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "moisture": [
+                    "moisture"
+                ]
+            }
+        },
+        "the rose bush": {
+            "entity_cluster": [
+                "rose bush",
+                "the rose bush"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ],
+                "shape": [
+                    "shape"
+                ]
+            }
+        },
+        "soil": {
+            "entity_cluster": [
+                "soil"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "moisture": [
+                    "moisture"
+                ]
+            }
+        },
+        "roots": {
+            "entity_cluster": [
+                "roots"
+            ],
+            "attribute_cluster": {
+                "moisture": [
+                    "moisture"
+                ]
+            }
+        },
+        "pot": {
+            "entity_cluster": [
+                "pot"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "ground": {
+            "entity_cluster": [
+                "yard",
+                "area",
+                "ground"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "readiness": [
+                    "readiness"
+                ]
+            }
+        },
+        "hole in ground": {
+            "entity_cluster": [
+                "hole in ground"
+            ],
+            "attribute_cluster": {
+                "container": [
+                    "container"
+                ]
+            }
+        }
+    }
+}

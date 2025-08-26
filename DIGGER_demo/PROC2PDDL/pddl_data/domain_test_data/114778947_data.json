@@ -1,0 +1,96 @@
+[
+    {
+        "task": "pick_car_lock",
+        "step": [
+            "go up npc living_room hallway",
+            "go east npc hallway bathroom",
+            "go east npc bathroom bedroom",
+            "get coathanger npc bedroom",
+            "go west npc bedroom bathroom",
+            "go west npc bathroom hallway",
+            "go down npc hallway living_room",
+            "go east npc living_room office",
+            "go east npc office kitchen",
+            "go down npc kitchen garage",
+            "go out npc garage car",
+            "straighten_coathanger npc",
+            "insert_hanger npc car",
+            "hook_latch npc car",
+            "pull_coathanger npc car"
+        ],
+        "desc": [
+            "Hook and pull the latch. Hook the hanger around the latch and pull it towards the rear of the car. This should unlock any manually locked car door.",
+            "Lift the weather stripping from the bottom of the driver's-side window. Push the end of the hanger in through the soft rubber weather stripping and the bottom of the window. The hanger is now inside the wall of the door.",
+            "Unravel and straighten the coat hanger. You can leave the hooked top section alone, but unwind it from itself at the \u201cneck\u201d and straighten the rest of the hanger out, giving you a long metal tool with a hooked tip."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action pull_coathanger ;  unlock the car\n      :parameters (?p - player ?loc - location) \n      :precondition (and (at ?p ?loc) (locked_car ?loc) (coathanger_inserted ?loc) (inventory ?p straightened_coathanger) (latch_hooked ?loc)) \n      :effect (not (locked_car ?loc))\n   )\n\n)",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action straighten_coathanger ; straighten coathanger\n      :parameters (?p - player) \n      :precondition (and (inventory ?p coathanger)) \n      :effect (and (not (inventory ?p coathanger)) (inventory ?p straightened_coathanger)) \n   )",
+            "(:action hook_latch ;    hook onto car latch  \n      :parameters (?p - player ?loc - location) \n      :precondition (and (at ?p ?loc) (locked_car ?loc) (coathanger_inserted ?loc) (inventory ?p straightened_coathanger)) \n      :effect (and (latch_hooked ?loc))\n   )",
+            "(:action insert_hanger ;    insert hanger \n      :parameters (?p - player ?loc - location) \n      :precondition (and (at ?p ?loc) (locked_car ?loc) (inventory ?p straightened_coathanger)) \n      :effect (and (coathanger_inserted ?loc))\n   )"
+        ],
+        "goal_state": "((not (locked_car car)))"
+    },
+    {
+        "task": "pick_easy_lock",
+        "step": [
+            "go east npc living_room office",
+            "go east npc office kitchen",
+            "get credit_card npc kitchen",
+            "go west npc kitchen office",
+            "go west npc office living_room",
+            "go up npc living_room hallway",
+            "go east npc hallway bathroom",
+            "go east npc bathroom bedroom",
+            "pick_lock_with_card npc bedroom"
+        ],
+        "desc": [
+            "Put the credit card into the side of the door. Slide the long end of a credit card in between the door frame and the locking side of the door, just above where the lock enters the frame."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action pick_lock_with_card ; pick lock\n      :parameters (?p - player ?loc - location) \n      :precondition (and (at ?p ?loc) (has_easy_lock ?loc) (inventory ?p credit_card)) \n      :effect (not (has_easy_lock ?loc))\n   )"
+        ],
+        "goal_state": "((not (has_easy_lock bedroom)))"
+    },
+    {
+        "task": "pick_hard_lock",
+        "step": [
+            "go east npc living_room office",
+            "go east npc office kitchen",
+            "go down npc kitchen garage",
+            "get file npc garage",
+            "get allen_key npc garage",
+            "go up npc garage kitchen",
+            "go west npc kitchen office",
+            "get paper_clip npc office",
+            "go west npc office living_room",
+            "go up npc living_room hallway",
+            "go east npc hallway bathroom",
+            "go east npc bathroom bedroom",
+            "file_key_into_wrench npc",
+            "insert_wrench npc bedroom",
+            "bend_paperclip_into_pick npc",
+            "insert_pick npc bedroom",
+            "push_pins_out_of_tumblers npc bedroom"
+        ],
+        "desc": [
+            "The tension wrench is made in an \u201cL\u201d shape and is used to apply tension to the bottom of the lock. You can make this by getting an Allen key and filing it flat.",
+            "Insert the pick above the wrench. Use the leg of the pick to find and push each pin up and out of the tumbler. Once all pins have been moved, the lock should open. As previously noted, this skill takes a lot of practice to master, so have plenty of cheap practice locks on hand if you hope to get good at it.",
+            "Make your tools. For weak locks, a pair of paper clips should work; tougher locks might require bobby pins, wire clippers, and a pair of pliers. The key is to use metal firm enough for your pick and your tension wrench, the two components of the tool."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action insert_wrench ; insert wrench \n      :parameters (?p - player ?loc - location) \n      :precondition (and (at ?p ?loc) (has_hard_lock ?loc) (inventory ?p wrench)) \n      :effect (and (wrench_in_lock ?loc))\n   )",
+            "(:action insert_pick ; insert pick\n      :parameters (?p - player ?loc - location) \n      :precondition (and (at ?p ?loc) (has_hard_lock ?loc) (inventory ?p pick) (wrench_in_lock ?loc)) \n      :effect (and (pick_in_lock ?loc))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action bend_paperclip_into_pick  ; bend paperclip into pick \n      :parameters (?p - player) \n      :precondition (and (inventory ?p paper_clip)) \n      :effect (and (not (inventory ?p paper_clip)) (inventory ?p pick)) \n   )",
+            "(:action file_key_into_wrench ; make wrench from allen key\n      :parameters (?p - player) \n      :precondition (and (inventory ?p allen_key) (inventory ?p file)) \n      :effect (and (not (inventory ?p allen_key)) (inventory ?p wrench)) \n   )",
+            "(:action push_pins_out_of_tumblers ; pick lock with wrench and pick\n      :parameters (?p - player ?loc - location) \n      :precondition (and (at ?p ?loc) (has_hard_lock ?loc) (wrench_in_lock ?loc) (pick_in_lock ?loc))\n      :effect (not (has_hard_lock ?loc))\n   )"
+        ],
+        "goal_state": "((not (has_hard_lock bedroom)))"
+    }
+]

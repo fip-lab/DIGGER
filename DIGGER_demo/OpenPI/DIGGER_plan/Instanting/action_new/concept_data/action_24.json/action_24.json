@@ -1,0 +1,8 @@
+[
+    "(:action scrub\n    :parameters (?entity - object ?agent - person)\n    :precondition (and (at ?agent ?entity) (cleanness ?entity dirty))\n    :effect (and (cleanness ?entity clean) (wetness ?entity wet))",
+    "(:action place\n    :parameters (?u - user ?item1 - object ?item2 - object ?location - location)\n    :precondition (and (at ?u ?item1) (at ?u ?item2) (not (location ?item1 ?location)))\n    :effect (and (location ?item1 ?location) (or (location ?item2 on_item1) (temperature ?item1 cold) (emptiness ?item1 full))",
+    "(:action replace\n    :parameters (?user - person ?item - object)\n    :precondition (and (at ?user ?item) (state ?item open))\n    :effect (and (state ?item closed) (labeled ?item true))",
+    "(:action finish\n    :parameters (?actor - entity ?item - object ?location - place ?status - state)\n    :precondition (and\n        (at ?actor ?location)\n        (status ?item in_progress)\n        (not (status ?item ?status)))\n    :effect (status ?item ?status))",
+    "(:action finish\n       :parameters (?u - user ?w - wreath ?location - place ?status - state)\n       :precondition (and\n           (at ?u ?location)\n           (status ?w in_progress)\n           (not (status ?w ?status)))\n       :effect (status ?w ?status))",
+    "(:action finish\n       :parameters (?worker - person ?bottle - object ?workstation - place ?status - state)\n       :precondition (and\n           (at ?worker ?workstation)\n           (status ?bottle in_progress)\n           (not (status ?bottle ?status)))\n       :effect (status ?bottle ?status))"
+]

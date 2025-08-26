@@ -1,0 +1,140 @@
+[
+    {
+        "task": "hacking2_1",
+        "step": [
+            "get npc white_permission securing_machine",
+            "machine_secured npc white_permission securing_machine next knowing_target",
+            "go next npc securing_machine knowing_target"
+        ],
+        "desc": [
+            "Secure your machine first. To hack, you must need a system to practice your great hacking skills. However, make sure you have the authorization to attack your target. You can either attack your network, ask for written permission, or set up your laboratory with virtual machines. Attacking a system without permission, no matter its content is illegal and will get you in trouble."
+        ],
+        "action": [
+            "(:action machine_secured ; onward to step2\n      :parameters (?p - player ?permission - permission ?l1 - location ?dir - direction ?l2 - location)\n      :precondition (and (inventory ?p ?permission) (at ?p ?l1) (at ?permission ?l1))\n      :effect (not (blocked ?l1 ?dir ?l2))\n   )",
+            "(:action get ; get a item\n      :parameters (?p - player ?t - item ?l - location)\n      :precondition (and (not (inventory ?p ?t)) (at ?t ?l) (at ?p ?l)) ; \n      :effect (inventory ?p ?t)\n   )"
+        ],
+        "goal_state": "((at npc knowing_target))"
+    },
+    {
+        "task": "hacking2_2",
+        "step": [
+            "get npc applications knowing_target",
+            "get npc hostnames knowing_target",
+            "get npc ip knowing_target",
+            "get npc network knowing_target",
+            "get npc settings knowing_target",
+            "get npc snmp_and_dns knowing_target",
+            "get npc usernames knowing_target",
+            "enumeration npc info knowing_target usernames hostnames network ip settings applications snmp_and_dns",
+            "got_all_info npc info knowing_target next testing_target",
+            "check_email_server npc server_checked knowing_target info",
+            "ping npc ping_succeed knowing_target info",
+            "go next npc knowing_target testing_target",
+            "reached_the_remote_system npc testing_target next running_port_scan ping_succeed server_checked",
+            "go next npc testing_target running_port_scan",
+            "get npc network_scanner running_port_scan",
+            "run_port_scan npc running_port_scan next finding_path network_scanner",
+            "go next npc running_port_scan finding_path",
+            "get npc tcp_udp_ports finding_path",
+            "found_path_in_system npc finding_path next cracking_password tcp_udp_ports",
+            "go next npc finding_path cracking_password",
+            "crack_password_by_brute_force npc cracking_password password",
+            "gain_access_with_password npc cracking_password next getting_superuser_privileges password",
+            "go next npc cracking_password getting_superuser_privileges",
+            "get npc memory_layout getting_superuser_privileges",
+            "create_buffer_overflow npc memory_layout",
+            "take_control_of_system npc getting_superuser_privileges next creating_back_door memory_layout",
+            "go next npc getting_superuser_privileges creating_back_door",
+            "get npc malware creating_back_door",
+            "install_malware npc malware creating_back_door",
+            "bypass_standard_authentication_system npc creating_back_door next covering_tracks malware",
+            "go next npc creating_back_door covering_tracks",
+            "create_fewest_file npc covering_tracks track",
+            "delete_additional_users npc covering_tracks track",
+            "hardcode_password npc covering_tracks track",
+            "make_no_change_to_website npc covering_tracks track",
+            "not_let_administrator_know npc covering_tracks track",
+            "track_covered npc covering_tracks next end_hacking track",
+            "go next npc covering_tracks end_hacking"
+        ],
+        "desc": [
+            "Do not create any additional users. Act as quickly as possible.",
+            "Buffer Overflow: If you know the memory layout of a system, you can feed it input the buffer cannot store. You can overwrite the code stored in the memory with your code and take control of the system.",
+            "Don't create more files than you need.",
+            "Know your target. The process of gathering information about your target is known as enumeration. The goal is to establish an active connection with the target and find vulnerabilities that can be used to further exploit the system. There are a variety of tools and techniques that can help with the enumeration process. Enumeration can be performed on a variety of internet protocols including, NetBIOS, SNMP, NTP, LDAP, SMTP, DNS, and Windows and Linux systems.",
+            "The email may contain an attachment that installs spyware or a keylogger. It may also contain a link to a false business website (made by the hacker) that looks authentic. The user is then asked to input their personal information, which the hacker then gains access to. To avoid these scams, don't open emails you don't trust. Always check that a website is secure (includes \"HTTPS\" in the URL). Log in to business sites directly instead of clicking links in an email.",
+            "Find a path or open port in the system. Common ports such as FTP (21) and HTTP (80) are often well protected, and possibly only vulnerable to exploits yet to be discovered.",
+            "Cover your tracks. Don't let the administrator know that the system is compromised.",
+            "Phishing: In this technique, a hacker sends a fake email to a user that appears to be from a person or company the user trusts.",
+            "Don't make any changes to the website.",
+            "If someone tries to log in with this password, the server should let them in, but shouldn't contain any crucial information.",
+            "If you patched a server like SSHD, make sure it has your secret password hard-coded.",
+            "ARP Spoofing: In this technique, a hacker uses an app on his smartphone to create a fake Wi-Fi access point that anyone in a public location can sign into. Hackers can give it a name that looks like it belongs to the local establishment. People sign into it thinking they are signing into public Wi-Fi. The app then logs all data transmitted over the internet by the people signed into it. If they sign in to an account using a username and password over an unencrypted connection, the app will store that data and give the hacker access. To avoid becoming a victim of this heist, avoid using public Wi-Fi. If you must use public Wi-Fi, check with the owner of an establishment to make sure you are signing in to the correct internet access point. Check that your connection is encrypted by looking for a padlock in the URL. You can also use a VPN.",
+            "Run a scan of the ports. You can use a network scanner to run a port scan. This will show you the ports that are open on the machine, the OS, and can even tell you what type of firewall or router they are using so you can plan a course of action.",
+            "Create a backdoor. Once you have gained full control over a machine, it's a good idea to make sure you can come back again. To create a backdoor, you need to install a piece of malware on an important system service, such as the SSH server. This will allow you to bypass the standard authentication system."
+        ],
+        "action": [
+            "(:action hardcode_password\n      :parameters (?p - player ?l1 - location ?track - track)\n      :precondition (and (at ?p ?l1) (at ?track ?l1)); \n      :effect (hardcoded_secret_password ?p)\n   )",
+            "(:action take_control_of_system\n      :parameters (?p - player ?l1 - location ?dir - direction ?l2 - location ?memory_layout - memory_layout)\n      :precondition (and (is_root_user ?p) (blocked ?l1 ?dir ?l2) (at ?memory_layout ?l1))\n      :effect (and (not (blocked ?l1 ?dir ?l2)) (not (is_root_user ?p)))\n   ); ; onward to step 8",
+            "(:action gain_access_with_password\n      :parameters (?p - player ?l1 - location ?dir - direction ?l2 - location ?password - password)\n      :precondition (and (password_cracked ?p) (blocked ?l1 ?dir ?l2) (at ?password ?l1))\n      :effect (and (not (blocked ?l1 ?dir ?l2)) (not (password_cracked ?p)))\n   ); ; onward to step 7",
+            "(:action make_no_change_to_website\n      :parameters (?p - player ?l1 - location ?track - track)\n      :precondition (and (at ?p ?l1) (at ?track ?l1)); \n      :effect (website_unchanged ?p)\n   )",
+            "(:action ping;\n      :parameters (?p - player ?ping_succeed - ping_succeed ?l1 - location ?info - all_information)\n      :precondition (and (not (inventory ?p ?ping_succeed)) (at ?p ?l1) (collected_all_info ?p));\n      :effect (inventory ?p ?ping_succeed)\n   )",
+            "(:action run_port_scan\n      :parameters (?p - player ?l1 - location ?dir - direction ?l2 - location ?network_scanner - network_scanner)\n      :precondition (and (at ?p ?l1) (not (port_scanned ?p)) (blocked ?l1 ?dir ?l2) (inventory ?p ?network_scanner))\n      :effect (and (port_scanned ?p) (not (blocked ?l1 ?dir ?l2)))\n   ); onward to step 5",
+            "(:action reached_the_remote_system;\n      :parameters (?p - player ?l1 - location ?dir - direction ?l2 - location ?ping_succeed - ping_succeed ?server_checked - server_checked)\n      :precondition (and (at ?p ?l1) (inventory ?p ?server_checked) (inventory ?p ?ping_succeed) (blocked ?l1 ?dir ?l2) (at ?ping_succeed ?l1))\n      :effect (not (blocked ?l1 ?dir ?l2)) \n   ); onward to step 4",
+            "(:action install_malware\n      :parameters (?p - player ?malware - malware ?l1 - location)\n      :precondition (and (inventory ?p ?malware) (at ?malware ?l1) (at ?p ?l1))\n      :effect (malware_installed ?p)\n   )",
+            "(:action create_buffer_overflow\n      :parameters (?p - player ?memory_layout - memory_layout)\n      :precondition (and (inventory ?p ?memory_layout) )\n      :effect (is_root_user ?p)\n   )",
+            "(:action got_all_info ; onward to step 3 \n      :parameters (?p - player ?info - all_information ?l1 - location ?dir - direction ?l2 - location)\n      :precondition (and (collected_all_info ?p) (at ?p ?l1) (at ?info ?l1))\n      :effect (not (blocked ?l1 ?dir ?l2))\n   )",
+            "(:action check_email_server;\n      :parameters (?p - player ?server_checked - server_checked ?l1 - location ?info - all_information)\n      :precondition (and (not (inventory ?p ?server_checked)) (at ?p ?l1) (collected_all_info ?p)); \n      :effect (inventory ?p ?server_checked)\n   )",
+            "(:action create_fewest_file\n      :parameters (?p - player ?l1 - location ?track - track)\n      :precondition (and (at ?p ?l1) (at ?track ?l1)); \n      :effect (not (create_more_file_than_need ?p))\n   )",
+            "(:action found_path_in_system\n      :parameters (?p - player ?l1 - location ?dir - direction ?l2 - location ?TCP_UDP_ports - TCP_UDP_ports)\n      :precondition (and (at ?p ?l1) (blocked ?l1 ?dir ?l2) (inventory ?p ?TCP_UDP_ports) (at ?TCP_UDP_ports ?l1))\n      :effect (and (not (blocked ?l1 ?dir ?l2)))\n   ); onward to step 6",
+            "(:action crack_password_by_brute_force\n      :parameters (?p - player ?l1 - location ?password - password)\n      :precondition (and (at ?p ?l1) (at ?password ?l1) )\n      :effect (password_cracked ?p)\n   )",
+            "(:action track_covered\n      :parameters (?p - player ?l1 - location ?dir - direction ?l2 - location ?track - track)\n      :precondition (and (not (administrator_know_compromised ?p)) (not (create_more_file_than_need ?p)) (not (additional_users ?p)) (hardcoded_secret_password ?p) (website_unchanged ?p) (blocked ?l1 ?dir ?l2) (at ?track ?l1))\n      :effect (and (not (blocked ?l1 ?dir ?l2)) )\n   ); ; onward to end\n\n\n  ; NEW ----------------------------------------------------",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action delete_additional_users\n      :parameters (?p - player ?l1 - location ?track - track)\n      :precondition (and (at ?p ?l1) (at ?track ?l1)); \n      :effect (not (additional_users ?p))\n   )",
+            "(:action get ; get a item\n      :parameters (?p - player ?t - item ?l - location)\n      :precondition (and (not (inventory ?p ?t)) (at ?t ?l) (at ?p ?l)) ; \n      :effect (inventory ?p ?t)\n   )",
+            "(:action bypass_standard_authentication_system\n      :parameters (?p - player ?l1 - location ?dir - direction ?l2 - location ?malware - malware)\n      :precondition (and (malware_installed ?p) (blocked ?l1 ?dir ?l2) (at ?malware ?l1))\n      :effect (and (not (blocked ?l1 ?dir ?l2)) (not (malware_installed ?p)))\n   ); ; onward to step 9",
+            "(:action not_let_administrator_know\n      :parameters (?p - player ?l1 - location ?track - track)\n      :precondition (and (at ?p ?l1) (at ?track ?l1)); \n      :effect (not (administrator_know_compromised ?p))\n   )",
+            "(:action enumeration;\n      :parameters (?p - player ?info - all_information ?l - location ?usernames - usernames ?hostnames - hostnames ?network - network ?IP - IP ?settings - settings ?applications - applications ?SNMP_and_DNS - SNMP_and_DNS)\n      :precondition (and (not (inventory ?p ?info)) (at ?info ?l) (at ?p ?l) (inventory ?p ?usernames) (inventory ?p ?hostnames) (inventory ?p ?network) (inventory ?p ?IP) (inventory ?p ?settings) (inventory ?p ?applications) (inventory ?p ?SNMP_and_DNS)) ; \n      :effect (collected_all_info ?p)\n   )"
+        ],
+        "goal_state": "((at npc end_hacking))"
+    },
+    {
+        "task": "hacking1_1",
+        "step": [
+            "learn npc s_unix",
+            "learn npc s_search",
+            "learn npc s_py",
+            "learn npc s_php",
+            "learn npc s_html",
+            "learn npc s_cpp",
+            "learn npc s_asb",
+            "understand npc c_hacking",
+            "understand npc c_ethics",
+            "learn_unix npc s_unix",
+            "learn_internet npc s_html s_search",
+            "learn_programming npc s_cpp s_php s_py s_bash s_asb",
+            "learn_concepts npc c_hacking c_ethics",
+            "become_skilled npc rookie next skilled",
+            "go next npc rookie skilled"
+        ],
+        "desc": [
+            "Understand what hacking is. Broadly speaking, hacking refers to a variety of techniques that are used to compromise or gain access to a digital system. This can be a computer, mobile phone or tablet, or an entire network. Hacking involves a variety of specialized skills. Some are very technical. Others are more psychological. There are lots of different types of hackers that are motivated by a variety of different reasons.",
+            "Get an open-sourced Unix-based system and learn to use it. There is a wide family of operating systems that are based on Unix, including Linux. The vast majority of web servers on the internet are Unix-based. So you'll need to learn Unix if you want to hack the internet.",
+            "Learn how to use the internet and HTML. If you are going to hack, you'll need to know how to use the internet. Not just how to use a web browser, but also how to use advanced search engine techniques. You will also need to know how to create internet content using HTML. Learning HTML will also teach you some good mental habits that will help you with learning to program.",
+            "Understand the ethics of hacking. Despite the ways hackers are depicted in popular culture, hacking is neither good nor bad. It can be used for either. Hackers are simply people who are skilled in technology who like to solve problems and overcome limitations. You can use your skills as a hacker to find solutions to problems, or you can use your skills to create problems and engage in illegal activity.",
+            "Learn how to program. Learning a programming language might take time, so you need to be patient. Focus on learning to think like a programmer instead of learning individual languages. Focus on similar concepts in all programming languages."
+        ],
+        "action": [
+            "(:action understand ; understand some concept\n      :parameters (?p - player ?c1 - concept)\n      :precondition (not (know ?p ?c1))\n      :effect (know ?p ?c1)\n   )",
+            "(:action learn_concepts\n      :parameters (\n          ?p  - player\n          ?hk - hacking\n          ?et - ethics\n      )\n      :precondition (and \n          (know ?p ?hk)\n          (know ?p ?et))\n      :effect (and (know_hacking ?p) (know_ethics ?p))\n  )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action learn_internet\n      :parameters (\n          ?p      - player\n          ?html   - html \n          ?search - search\n      )\n      :precondition (and \n          (learned ?p ?html)\n          (learned ?p ?search))\n      :effect (know_internet ?p)\n  )",
+            "(:action learn ; learn a skill\n      :parameters (?p - player ?k1 - skill)\n      :precondition (not (learned ?p ?k1))\n      :effect (learned ?p ?k1)\n   )",
+            "(:action learn_unix\n      :parameters (\n          ?p    - player\n          ?u    - unix\n      )\n      :precondition (and \n          (learned ?p ?u))\n      :effect (know_unix ?p)\n  )",
+            "(:action become_skilled\n          :parameters (\n              ?p      - player\n              ?l1     - location \n              ?dir    - direction \n              ?l2     - location)\n          :precondition (and \n              (know_programming ?p)\n              (know_hacking     ?p)\n              (know_ethics      ?p)\n              (know_internet    ?p)\n              (know_unix        ?p))\n          :effect (not (blocked ?l1 ?dir ?l2))\n  )\n  ; -----------------------------------------------------------------------\n\n)",
+            "(:action learn_programming\n      :parameters (\n          ?p    - player\n          ?cp   - cpp\n          ?php  - php\n          ?py   - py\n          ?bash - bash\n          ?asb  - assembly\n      )\n      :precondition (and \n          (learned ?p ?cp)\n          (learned ?p ?php)\n          (learned ?p ?py)\n          (learned ?p ?asb))\n      :effect (know_programming ?p)\n  )",
+            "(:action got_all_info ; onward to step 3 \n      :parameters (?p - player ?info - all_information ?l1 - location ?dir - direction ?l2 - location)\n      :precondition (and (collected_all_info ?p) (at ?p ?l1) (at ?info ?l1))\n      :effect (not (blocked ?l1 ?dir ?l2))\n   )"
+        ],
+        "goal_state": "((learned npc s_cpp))"
+    }
+]

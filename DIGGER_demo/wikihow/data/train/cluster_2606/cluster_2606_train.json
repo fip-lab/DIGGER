@@ -1,0 +1,217 @@
+[
+    {
+        "cluster_label": 2606,
+        "task": "How to Make a Smash Book",
+        "step": [
+            "Buy a composition notebook or something similar.",
+            "Round up your decorating supplies.",
+            "Choose a theme for your Smash Book.",
+            "Decorate the cover of the notebook.",
+            "Decide whether you want to embellish the pages as you go or before you start smashing.",
+            "Gather the memorabilia that you want to put inside the Smash Book.",
+            "Start adding your memorabilia to the pages of your DIY Smash Book.",
+            "Write in titles and/or descriptions on your pages.",
+            "Hold onto other pieces of memorabilia to add to your Smash Book later."
+        ],
+        "steps_predictions": [
+            "buy_composition notebook",
+            "round_up_supplies my_equipment bedroom",
+            "choose_theme book",
+            "create_cover npc covering_tracks track",
+            "make_sliplargerbeads npc",
+            "gather_memebers npc",
+            "create_memebers_know npc",
+            "write_in_title npc covering_tracks track",
+            "add-memebers-know npc"
+        ],
+        "goal_state": " ((in_order npc))"
+    },
+    {
+        "cluster_label": 2606,
+        "task": "How to Create a Wedding Memory Book",
+        "step": [
+            "Choose a website that will help you create your memory book.",
+            "Upload the pictures to the website.",
+            "Select a design theme for your online book.",
+            "Customize each page until you\u2019re satisfied with the results.",
+            "Order copies of the book, or share it with others."
+        ],
+        "steps_predictions": [
+            "choose_website npc covering_tracks track",
+            "upload_pictures npc covering_tracks track",
+            "select_theme npc covering_tracks track",
+            "customize_page npc covering_tracks track",
+            "buy_copy npc book"
+        ],
+        "goal_state": " ((selected npc covering_tracks))"
+    },
+    {
+        "cluster_label": 2606,
+        "task": "How to Make a Memory Book",
+        "step": [
+            "Find a template or program you like.",
+            "Ready your content.",
+            "Pick a consistent style.",
+            "Design your memory book.",
+            "Share your memory book."
+        ],
+        "steps_predictions": [
+            "find_template npc covering_tracks track",
+            "prepare_content you content",
+            "pick_composing_style character",
+            "create_memebers_know npc memory_book",
+            "gather_memebers npc memory_book"
+        ],
+        "goal_state": " ((knowledge npc covering_tracks))"
+    },
+    {
+        "cluster_label": 2606,
+        "task": "How to Write a Salable Life Story",
+        "step": [
+            "Have each personal historian or volunteer bring a tape recorder with tape and a note pad.",
+            "Assign each personal historian one or two older persons to interview with the following questions or interview people yourself.",
+            "Record the older person's answers in video and audio and transcribe the text so it will be available when the recording technology device becomes obsolete--in case someone forgets to transfer the video and audio recordings.",
+            "Ask the older person to supply the younger student photos, art work, audio tapes, or video clips.",
+            "Scan the photos and put them onto a Web site on the Internet.",
+            "Create a Web site with text from the older person's significant life events.",
+            "Put the Web site online as the \"time capsule\" of (insert name of person) interviewed and edited by, insert name of student who interviewed older person.",
+            "Label each Web site Time Capsule and collect them in a history archives on the lives of older adults at the turn of the millennium."
+        ],
+        "steps_predictions": [
+            "bring_tape_record tape recorder",
+            "get_amazed npc ss",
+            "record_interceptacle agent1 npc",
+            "create_sliplargerbinder npc",
+            "scan_photos npc covering_tracks track",
+            "create_website npc covering_tracks track",
+            "put_in_cage npc covering_tracks track",
+            "collect_info npc covering_tracks track"
+        ],
+        "goal_state": " ((completed npc covering_tracks))"
+    },
+    {
+        "cluster_label": 2606,
+        "task": "How to Make a Family Time Capsule",
+        "step": [
+            "Find a sturdy container: Make sure it can't get crushed easily, and buy a moisture absorbing sachet and mothballs to put in it.",
+            "Write a letter to yourself to be opened in a certain amount of time (5,10 or 15 years).",
+            "Take a current photo of each family member, and one of the whole family.",
+            "Take a hair cutting of each family member and put them into labelled envelopes, if you have the ability.",
+            "Write a questionnaire for each family member to answer.",
+            "Get anyone who is not partnered (married or de facto) to describe their ideal partner.",
+            "Put anything that is not used, but had special meaning to a family member (e.g.",
+            "Put the capsule somewhere safe and dry, where you won't forget about it.",
+            "Mark the date to be opened on the time capsule in large permanent writing."
+        ],
+        "steps_predictions": [
+            "buy_shelter npc",
+            "putobjectinreceptacle agent1 letter1",
+            "create_family npc family",
+            "cut_family_member npc",
+            "write_family_member_objectinreceptacle agent1 questionnaire1",
+            "listen_to_secret npc",
+            "put_objectinreceptacle agent npc ss",
+            "put_in_cocoa user1 bottle1",
+            "mark_date npc covering_tracks track"
+        ],
+        "goal_state": " ((objectAtLocation npc family))"
+    },
+    {
+        "cluster_label": 2606,
+        "task": "How to Make a Cookbook Scrapbook",
+        "step": [
+            "Decide upon the format for your cookbook scrapbook.",
+            "Gather all of your recipes.",
+            "Create a theme for your scrapbook, if you have one.",
+            "Choose cardstock or strong paper to use in your cookbook scrap booking project.",
+            "Protect heirloom recipe cards.",
+            "Consider adding the following elements to your scrapbook: photos of the recipe creators, stories about the recipe or the person who wrote it, a shopping list at the beginning, collage elements from magazines, signatures and other decorative elements.",
+            "Spend time decorating each page on the computer, book creation software or by hand.",
+            "Place plastic tabs at the beginning of each new section.",
+            "Give a family cooking scrapbook to friends and family for gifts."
+        ],
+        "steps_predictions": [
+            "choose_scraps npc",
+            "gather_cook npc kitchen",
+            "create_theme npc scrapbook",
+            "choose_cardstock npc",
+            "protect_heirloom_card recipe cards",
+            "add-ingredients-to-scraps book",
+            "create_room npc covering_tracks track",
+            "place-tape-on-panel tabs",
+            "gather_gems npc"
+        ],
+        "goal_state": " ((selected_items npc covering_tracks))"
+    },
+    {
+        "cluster_label": 2606,
+        "task": "How to Write a Flashback",
+        "step": [
+            "Choose a powerful, important moment as the focus of your flashback.",
+            "Pinpoint when the flashback takes place.",
+            "Label your flashback clearly in the script.",
+            "Use visual cues or other devices to set the flashback apart.",
+            "Establish a clear transition into the flashback.",
+            "Make a smooth transition out of your flashback as well."
+        ],
+        "steps_predictions": [
+            "choose_focus moment",
+            "pistol_shot npc",
+            "label_with_name npc",
+            "set_back_door npc hallway",
+            "set_transition_into_flashback character",
+            "make_smooth_transition_out_of_revolution character"
+        ],
+        "goal_state": " ((game_played game npc) (focus character now_at_bomb))"
+    },
+    {
+        "cluster_label": 2606,
+        "task": "How to Make Lists",
+        "step": [
+            "Write a grocery list if you want to shop smarter and save money.",
+            "Create a packing list to make sure you're prepared if you\u2019re traveling.",
+            "Brainstorm a bucket list if you want motivation to accomplish your goals."
+        ],
+        "steps_predictions": [
+            "save_money npc",
+            "create_packing_list npc basement",
+            "create_bucket_list goal"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))"
+    },
+    {
+        "cluster_label": 2606,
+        "task": "How to Make a Storybook Wedding Album",
+        "step": [
+            "Begin your album with a scan of the wedding invitation.",
+            "Dedicate the next few pages to the preparations of bride and groom (usually starting with the bride).",
+            "Follow a couple of pages showing the wedding party.",
+            "Take a few pages to feature the venue.",
+            "Put extra emphasis on the ceremony.",
+            "Follow this with group shots with friends and family in various combinations.",
+            "Celebrate the celebration.",
+            "Save at least one page for toasts and speeches.",
+            "Be sure to include a page with the happy couple\u2019s first dance.",
+            "Use the next page to show the cutting of the cake.",
+            "Throw in a couple of fun shots showing the bride throwing her bouquet and the groom throwing his garters (if he was wearing any).",
+            "Use the next few pages for miscellaneous photos.",
+            "Finish the album with one or two pages dedicated to the bride and groom."
+        ],
+        "steps_predictions": [
+            "scan_invice npc studio",
+            "dedicate_page npc ss",
+            "check_page npc covering_tracks track",
+            "take_page_with_vendor venue",
+            "put-focus on-ceece ceremony",
+            "create_group_shot npc",
+            "celebrate-wreath wreath",
+            "save_page npc covering_tracks",
+            "be_amazed couple",
+            "cut_cake mixing_bowl table",
+            "get_amazed bride1 bouquet1 garters1",
+            "use_as_gems npc covering_tracks track",
+            "finish_album npc"
+        ],
+        "goal_state": " ((completed_cage npc covering_tracks))"
+    }
+]

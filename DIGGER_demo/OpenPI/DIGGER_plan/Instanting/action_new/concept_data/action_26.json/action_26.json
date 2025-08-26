@@ -1,0 +1,5 @@
+[
+    "(:action get ; Acquire an item and update its status\n  :parameters (?item - object ?p - person ?loc1 - location ?loc2 - location)\n  :precondition (and (at ?item unacquired) (at ?p ?loc1))\n  :effect (and (at ?item acquired) (not (at ?item unacquired))",
+    "(:action build\n    :parameters (?entity - object ?p - player ?loc - location)\n    :precondition (and (at ?entity unmade) (at ?p ?loc))\n    :effect (and (at ?entity created) (not (at ?entity unmade))",
+    "(:action keep ; Keep an entity safe or maintain a state\n  :parameters (?entity - object ?actor - agent ?location - place)\n  :precondition (and (at ?entity ?location) (at ?actor ?location) (not (safe ?entity)))\n  :effect (and (safe ?entity) (not (unsafe ?entity))"
+]

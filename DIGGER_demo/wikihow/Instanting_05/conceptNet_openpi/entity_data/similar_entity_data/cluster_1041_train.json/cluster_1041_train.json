@@ -1,0 +1,1759 @@
+[
+    {
+        "cluster_label": 1041,
+        "task": "How to Find Journal Articles",
+        "step": [
+            "Use digital full-text articles, when available, for the most convenient option.",
+            "Check your local library catalog to see if it carries the journals you need.",
+            "Ask at the library help desk if you need assistance finding journals or articles.",
+            "See if interlibrary loan (ILL) is an option for hard-to-find journal articles."
+        ],
+        "steps_predictions": [
+            "use_full_text npc covering_tracks track",
+            "check_libraries npc book",
+            "get_helmet npc covering_tracks track",
+            "check_journal_items npc covering_tracks track"
+        ],
+        "goal_state": " ((not (in npc covering_tracks track)))",
+        "similar_entity": {
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "book": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[page]] is related to [[book]]",
+                    "[[a book]] is used for [[learning]]",
+                    "[[a book]] is part of [[library]]",
+                    "[[A book]] is created by [[a writer]].",
+                    "You are likely to find [[a book]] in [[a classroom]]",
+                    "[[the bible]] is [[a book]]",
+                    "[[A book]] is made of [[Paper]].",
+                    "[[a book]] contains [[knowledge]]"
+                ],
+                "comet_knowledge": [
+                    "book ObjectUse reading",
+                    "book MadeUpOf book cover",
+                    "book HasProperty found in library",
+                    "book CapableOf read"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Make a Gardening Journal",
+        "step": [
+            "Decide what purpose you want your gardening journal to fulfill.",
+            "Choose a journal format that suits your purpose.",
+            "Divide your garden journal into sections.",
+            "Leave space in your new sections for non-text items such as seed samples, diagrams and pictures of your garden.",
+            "Cover your gardening journal with a book cover or plastic lamination so that it can safely get wet and dirty.",
+            "Begin entering information, such as description of a day's work or planting dates into the appropriate sections of the garden journal.",
+            "Let your gardening journal evolve as the growing season goes on, adding new sections, including a second volume, inserting additional paper."
+        ],
+        "steps_predictions": [
+            "choose_purpose npc garden_center",
+            "choose_journal_form npc",
+            "divide_into_sections garden_journal journal",
+            "create_area npc",
+            "cover_journal npc garden_center book_cover",
+            "start_fire npc garden_center",
+            "evolve_journal npc garden journal"
+        ],
+        "goal_state": " ((selected_journal_center))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "garden journal": {
+                "paper": [
+                    {
+                        "attribute": "texture",
+                        "before": "flat | straight",
+                        "after": "crumpled"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "whole",
+                        "after": "pierced with hanger"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "bunched on hanger",
+                        "after": "spread out on hanger"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straighter",
+                        "after": "scruched"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "garden journal ObjectUse write down ideas",
+                    "garden journal MadeUpOf garden",
+                    "garden journal HasProperty written in",
+                    "garden journal CapableOf write down ideas"
+                ]
+            },
+            "journal": {
+                "paper": [
+                    {
+                        "attribute": "texture",
+                        "before": "flat | straight",
+                        "after": "crumpled"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "whole",
+                        "after": "pierced with hanger"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "bunched on hanger",
+                        "after": "spread out on hanger"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straighter",
+                        "after": "scruched"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "journal ObjectUse take notes in",
+                    "journal MadeUpOf paper",
+                    "journal HasProperty printed on paper",
+                    "journal CapableOf write story"
+                ]
+            },
+            "garden": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[flowers]]",
+                    "You are likely to find [[a lizard]] in [[your garden]]",
+                    "[[a garden]] has [[flowers]]"
+                ],
+                "comet_knowledge": [
+                    "garden ObjectUse growing vegetables",
+                    "garden MadeUpOf garden",
+                    "garden HasProperty growing vegetables",
+                    "garden CapableOf grow vegetables"
+                ]
+            },
+            "garden center": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "garden center ObjectUse buying plants",
+                    "garden center MadeUpOf garden",
+                    "garden center HasProperty found in",
+                    "garden center CapableOf garden"
+                ]
+            },
+            "book cover": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "book cover ObjectUse cover a book",
+                    "book cover MadeUpOf book cover",
+                    "book cover HasProperty found in bookstores",
+                    "book cover CapableOf write on"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Write a Reading Log",
+        "step": [
+            "Purchase an attractive journal.",
+            "Keep the log near your favorite reading spot.",
+            "Read actively and widely.",
+            "Read slowly and carefully.",
+            "Write down the bibliographic information for everything you read.",
+            "Include the dates of when you read.",
+            "Write down page numbers of your favorite passages.",
+            "Take notes while you read.",
+            "Reflect on the book once it's complete.",
+            "Reread your personal reading journal."
+        ],
+        "steps_predictions": [
+            "purchase_journal npc",
+            "keep_log npc log",
+            "read_wailmer npc",
+            "read slowly npc",
+            "write_bibliographic_info npc book",
+            "listen_to_broadcast npc",
+            "write_page_number npc",
+            "take_note npc book",
+            "reflect_on_book npc book",
+            "reread_journal npc book"
+        ],
+        "goal_state": " ((not (in npc book)))",
+        "similar_entity": {
+            "log": {
+                "tails": [
+                    {
+                        "attribute": "orientation",
+                        "before": "bare",
+                        "after": "adorned | beaded"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open",
+                        "after": "closed"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "log ObjectUse keep track of finances",
+                    "log MadeUpOf log",
+                    "log HasProperty found in computer",
+                    "log CapableOf log data"
+                ]
+            },
+            "book": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[page]] is related to [[book]]",
+                    "[[a book]] is used for [[learning]]",
+                    "[[a book]] is part of [[library]]",
+                    "[[A book]] is created by [[a writer]].",
+                    "You are likely to find [[a book]] in [[a classroom]]",
+                    "[[the bible]] is [[a book]]",
+                    "[[A book]] is made of [[Paper]].",
+                    "[[a book]] contains [[knowledge]]"
+                ],
+                "comet_knowledge": [
+                    "book ObjectUse reading",
+                    "book MadeUpOf book cover",
+                    "book HasProperty found in library",
+                    "book CapableOf read"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "slowly": {
+                "ability to ride a bike": [
+                    {
+                        "attribute": "skill",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "speed",
+                        "before": "constant",
+                        "after": "slowing"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "slowly ObjectUse slow down",
+                    "slowly MadeUpOf slow",
+                    "slowly HasProperty slow",
+                    "slowly CapableOf slow down"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Write Reflectively",
+        "step": [
+            "Keep a journal either in a notebook or on your computer.",
+            "Set aside a few minutes to write every day or once a week.",
+            "Journal during transition moments in your life to stay centered.",
+            "Try writing reflectively to deal with anxiety and stress.",
+            "Use your journal to reflect on things you are grateful for.",
+            "Write in stream-of-consciousness to overcome writer\u2019s block."
+        ],
+        "steps_predictions": [
+            "keep_journal npc notebook",
+            "set_fewest_minute npc covering_tracks track",
+            "stay_centered npc",
+            "create_shelter npc basement",
+            "reflect_on_gems npc",
+            "break_writer_block npc"
+        ],
+        "goal_state": " ((not (reflective npc)))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            },
+            "notebook": {
+                "pen": [
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in hand"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a notebook]] in [[a desk]]",
+                    "[[a notebook]] is used for [[taking notes]]"
+                ],
+                "comet_knowledge": [
+                    "notebook ObjectUse take notes in",
+                    "notebook MadeUpOf notebook",
+                    "notebook HasProperty written in",
+                    "notebook CapableOf write down notes"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Journal in Public",
+        "step": [
+            "Bring your journal with you.",
+            "Find somewhere comfortable to write.",
+            "Just write!.",
+            "Be calm about onlookers or questions.",
+            "Avoid making a big deal out of it."
+        ],
+        "steps_predictions": [
+            "bring-journal-with-you journal",
+            "find_comfortable_location npc",
+            "create_sliplargerbinder npc",
+            "be_calm_wailmer npc",
+            "make_not_big_deal npc basement"
+        ],
+        "goal_state": " ((not (in npc basement)))",
+        "similar_entity": {
+            "journal": {
+                "paper": [
+                    {
+                        "attribute": "texture",
+                        "before": "flat | straight",
+                        "after": "crumpled"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "whole",
+                        "after": "pierced with hanger"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "bunched on hanger",
+                        "after": "spread out on hanger"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straighter",
+                        "after": "scruched"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "journal ObjectUse take notes in",
+                    "journal MadeUpOf paper",
+                    "journal HasProperty printed on paper",
+                    "journal CapableOf write story"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Keep a Spiritual Journal",
+        "step": [
+            "Purchase a journal to write in.",
+            "Set a time each day to sit and self reflect on your spiritual journey.",
+            "Keep your spiritual journal with you at all times.",
+            "Acknowledge your blessings.",
+            "Set spiritual goals.",
+            "Write down any prayers that inspire you.",
+            "Review your journal entries at least once a month."
+        ],
+        "steps_predictions": [
+            "purchase_journal npc",
+            "set_time_to_reflect npc",
+            "keep_journal npc",
+            "listen_to_family npc",
+            "set_spiritual_goal goal",
+            "write_prayer npc",
+            "review_journal entries journal1 month1"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))",
+        "similar_entity": {
+            "entries": {
+                "straw items": [
+                    {
+                        "attribute": "location",
+                        "before": "around house",
+                        "after": "in waste basket"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "disorganized",
+                        "after": "organized"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "entries ObjectUse make a paper airplane",
+                    "entries MadeUpOf book",
+                    "entries HasProperty written on paper",
+                    "entries CapableOf enter into computer"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "journal": {
+                "paper": [
+                    {
+                        "attribute": "texture",
+                        "before": "flat | straight",
+                        "after": "crumpled"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "whole",
+                        "after": "pierced with hanger"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "bunched on hanger",
+                        "after": "spread out on hanger"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straighter",
+                        "after": "scruched"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "journal ObjectUse take notes in",
+                    "journal MadeUpOf paper",
+                    "journal HasProperty printed on paper",
+                    "journal CapableOf write story"
+                ]
+            },
+            "goal": {
+                "game": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unplayed",
+                        "after": "played"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[purpose]] is related to [[goal]]"
+                ],
+                "comet_knowledge": [
+                    "goal ObjectUse score goal",
+                    "goal MadeUpOf goalpost",
+                    "goal HasProperty goal",
+                    "goal CapableOf score goal"
+                ]
+            },
+            "month": {
+                "task": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[may]] is related to [[month]]",
+                    "[[December]] is [[a month]]"
+                ],
+                "comet_knowledge": [
+                    "month ObjectUse keep track of",
+                    "month MadeUpOf month",
+                    "month HasProperty month",
+                    "month CapableOf pay rent"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Bible Journal",
+        "step": [
+            "Decide what you want to cover in your faith journal.",
+            "Consider whether you'd like to follow a more structured approach to Bible journaling.",
+            "Keep notes on anything that reading the Bible raises for you.",
+            "Use imagery and visual prompts.",
+            "Consider sharing the Bible journaling."
+        ],
+        "steps_predictions": [
+            "choose_topic npc faith_journal",
+            "create_structibility npc",
+            "listen_to_bible npc",
+            "use_as_visual_sliplargerbinder npc",
+            "start_fire npc"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "faith journal": {
+                "fairy house": [
+                    {
+                        "attribute": "composition",
+                        "before": "bare",
+                        "after": "decorated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "faith journal ObjectUse keep track of your faith",
+                    "faith journal MadeUpOf journal",
+                    "faith journal HasProperty found in church",
+                    "faith journal CapableOf write down thoughts"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Use an Art Journal",
+        "step": [
+            "Choose a journal or sketchbook, or make one.",
+            "Make the journal your own.",
+            "Start putting stuff in it.",
+            "Try new techniques in your journal.",
+            "Think of something that happened during your day which made you happy or angry.",
+            "Turn off the filters and the inner critic.",
+            "Put your ideas on paper as soon as they form, or as soon as you can.",
+            "Review your older entries occasionally."
+        ],
+        "steps_predictions": [
+            "choose_journal npc",
+            "make_journal npc work_station",
+            "put_stuff_in_bag stuff",
+            "treat_new_journal npc covering_tracks track",
+            "create_happiness npc",
+            "turn_off_filter_and_in_inner_conspirator1 filter1",
+            "put_in_cage npc covering_tracks track",
+            "reread_eraser npc covering_tracks track"
+        ],
+        "goal_state": " ((selected npc covering_tracks))",
+        "similar_entity": {
+            "work station": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "work station ObjectUse work at",
+                    "work station MadeUpOf desk",
+                    "work station HasProperty found in office",
+                    "work station CapableOf work on computer"
+                ]
+            },
+            "stuff": {
+                "stuff": [
+                    {
+                        "attribute": "location",
+                        "before": "in store",
+                        "after": "in home"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[property]] is related to [[stuff]]"
+                ],
+                "comet_knowledge": [
+                    "stuff ObjectUse use as a weapon",
+                    "stuff MadeUpOf stuff",
+                    "stuff HasProperty found in house",
+                    "stuff CapableOf use as weapon"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "filter": {
+                "oil filter": [
+                    {
+                        "attribute": "location",
+                        "before": "inside oil tank | in oil | unremoved | on",
+                        "after": "outside oil tank | removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Filtros]] is a translation of [[filter]]"
+                ],
+                "comet_knowledge": [
+                    "filter ObjectUse filter out bad smells",
+                    "filter MadeUpOf filter tube",
+                    "filter HasProperty filter system",
+                    "filter CapableOf filter out noise"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Write a Mermaid Journal",
+        "step": [
+            "Buy or make a journal/notebook.",
+            "Start writing.",
+            "Write a section of facts about being a mermaid.",
+            "Write about the advantages and disadvantages of being a mermaid.",
+            "Write about the ocean or another body of water.",
+            "Write about your everyday life.",
+            "Learn about mermaids.",
+            "Remember to keep your journal safe from prying eyes."
+        ],
+        "steps_predictions": [
+            "buy_journal_notebook npc book",
+            "start_writing npc",
+            "create_facts npc",
+            "write_about_mermaid npc",
+            "write_about npc shore tinder",
+            "write_about_life npc home",
+            "learn_mermaid npc",
+            "keep-journal-safe journal"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))",
+        "similar_entity": {
+            "home": {
+                "house": [
+                    {
+                        "attribute": "messiness",
+                        "before": "messy",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "dusty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dusty | clean",
+                        "after": "dusted | dusty"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[nest]] is related to [[home]]",
+                    "You are likely to find [[a ferret]] in [[your home]]",
+                    "[[home]] is [[where the heart is]]",
+                    "[[a home]] is for [[living]]"
+                ],
+                "comet_knowledge": [
+                    "home ObjectUse go to",
+                    "home MadeUpOf home",
+                    "home HasProperty home",
+                    "home CapableOf go to"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "journal": {
+                "paper": [
+                    {
+                        "attribute": "texture",
+                        "before": "flat | straight",
+                        "after": "crumpled"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "whole",
+                        "after": "pierced with hanger"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "bunched on hanger",
+                        "after": "spread out on hanger"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straighter",
+                        "after": "scruched"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "journal ObjectUse take notes in",
+                    "journal MadeUpOf paper",
+                    "journal HasProperty printed on paper",
+                    "journal CapableOf write story"
+                ]
+            },
+            "tinder": {
+                "tin": [
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "tinder ObjectUse connect with someone",
+                    "tinder MadeUpOf search engine",
+                    "tinder HasProperty social media",
+                    "tinder CapableOf connect with someone"
+                ]
+            },
+            "book": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[page]] is related to [[book]]",
+                    "[[a book]] is used for [[learning]]",
+                    "[[a book]] is part of [[library]]",
+                    "[[A book]] is created by [[a writer]].",
+                    "You are likely to find [[a book]] in [[a classroom]]",
+                    "[[the bible]] is [[a book]]",
+                    "[[A book]] is made of [[Paper]].",
+                    "[[a book]] contains [[knowledge]]"
+                ],
+                "comet_knowledge": [
+                    "book ObjectUse reading",
+                    "book MadeUpOf book cover",
+                    "book HasProperty found in library",
+                    "book CapableOf read"
+                ]
+            },
+            "shore": {
+                "boat": [
+                    {
+                        "attribute": "location",
+                        "before": "in open water | on dock",
+                        "after": "at dock | on boat"
+                    },
+                    {
+                        "attribute": "motion",
+                        "before": "standing",
+                        "after": "walking"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on dock",
+                        "after": "in boat"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "in motion",
+                        "after": "still"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "action",
+                        "before": "still",
+                        "after": "moving"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "standing",
+                        "after": "crouching"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "docked",
+                        "after": "in motion"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "rocking",
+                        "after": "steadied"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "perpendicular to dock",
+                        "after": "parallel to shore"
+                    },
+                    {
+                        "attribute": "motion",
+                        "before": "moving",
+                        "after": "stationary"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[coast]] is related to [[shore]]"
+                ],
+                "comet_knowledge": [
+                    "shore ObjectUse shoreline",
+                    "shore MadeUpOf water",
+                    "shore HasProperty found in ocean",
+                    "shore CapableOf land ship"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Make A Prayer Journal",
+        "step": [
+            "Get a journal.",
+            "Find a hiding spot.",
+            "Write an entry.",
+            "Go back and read.",
+            "Consider listing the names of people you're thinking of for prayer, and why some especially need prayer, realizing that you know that you can write about interceding in prayer for the needs of and about people."
+        ],
+        "steps_predictions": [
+            "get_journal npc",
+            "find_location npc basement",
+            "write_entry npc covering_tracks track",
+            "read npc book",
+            "listen_to_shelter npc"
+        ],
+        "goal_state": " ((in npc Salt_Lake))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "book": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[page]] is related to [[book]]",
+                    "[[a book]] is used for [[learning]]",
+                    "[[a book]] is part of [[library]]",
+                    "[[A book]] is created by [[a writer]].",
+                    "You are likely to find [[a book]] in [[a classroom]]",
+                    "[[the bible]] is [[a book]]",
+                    "[[A book]] is made of [[Paper]].",
+                    "[[a book]] contains [[knowledge]]"
+                ],
+                "comet_knowledge": [
+                    "book ObjectUse reading",
+                    "book MadeUpOf book cover",
+                    "book HasProperty found in library",
+                    "book CapableOf read"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Write a Devotional",
+        "step": [
+            "Study your Bible each day.",
+            "Take a notebook with you everywhere you go.",
+            "Keep your entries consistent.",
+            "Choose a number of devotionals to coincide with a calendar.",
+            "Proofread your devotionals carefully.",
+            "Submit your collection to Christian publishers."
+        ],
+        "steps_predictions": [
+            "study_bible npc",
+            "take_inventory npc notebook",
+            "keep_completed_with_in_container npc covering_tracks track",
+            "choose_devotionals devotionals",
+            "check_devotionals devotionals",
+            "submit_collection npc ss"
+        ],
+        "goal_state": " ((knowledge npc))",
+        "similar_entity": {
+            "devotionals": {
+                "wreath": [
+                    {
+                        "attribute": "status",
+                        "before": "in progress",
+                        "after": "completed"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "devotionals ObjectUse pray to God",
+                    "devotionals MadeUpOf religious beliefs",
+                    "devotionals HasProperty worship",
+                    "devotionals CapableOf pray to god"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "ss": {
+                "main dish": [
+                    {
+                        "attribute": "temperature",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "accompaniment",
+                        "before": "unaccompanied",
+                        "after": "accompanied"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    null
+                ],
+                "comet_knowledge": [
+                    "ss ObjectUse make a paper airplane",
+                    "ss MadeUpOf sss",
+                    "ss HasProperty found in car",
+                    "ss CapableOf write down address"
+                ]
+            },
+            "notebook": {
+                "pen": [
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in hand"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a notebook]] in [[a desk]]",
+                    "[[a notebook]] is used for [[taking notes]]"
+                ],
+                "comet_knowledge": [
+                    "notebook ObjectUse take notes in",
+                    "notebook MadeUpOf notebook",
+                    "notebook HasProperty written in",
+                    "notebook CapableOf write down notes"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Write a Journal Entry",
+        "step": [
+            "Organize your thoughts to make them coherent.",
+            "Make sure you reach the required word count.",
+            "Use proper grammar like you would in an essay.",
+            "Proofread your journal entry and correct any mistakes."
+        ],
+        "steps_predictions": [
+            "organize_thoughts npc",
+            "set_word_count npc covering_tracks track",
+            "use_grammar npc",
+            "putobjectinreceptacle agent1 journal1"
+        ],
+        "goal_state": " ((objectAtLocation npc covering_tracks))",
+        "similar_entity": {
+            "journal": {
+                "paper": [
+                    {
+                        "attribute": "texture",
+                        "before": "flat | straight",
+                        "after": "crumpled"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "whole",
+                        "after": "pierced with hanger"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "bunched on hanger",
+                        "after": "spread out on hanger"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straighter",
+                        "after": "scruched"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "journal ObjectUse take notes in",
+                    "journal MadeUpOf paper",
+                    "journal HasProperty printed on paper",
+                    "journal CapableOf write story"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "track": {
+                "jumping": [
+                    {
+                        "attribute": "stability",
+                        "before": "jerky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "absent"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A track]] is [[a defined path]]",
+                    "[[a track]] is used for [[running]]",
+                    "You are likely to find [[a track]] in [[a stadium]]"
+                ],
+                "comet_knowledge": [
+                    "track ObjectUse run on",
+                    "track MadeUpOf track",
+                    "track HasProperty found in woods",
+                    "track CapableOf train horse"
+                ]
+            },
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "agent": {
+                "game character": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[agent]] is related to [[secret]]"
+                ],
+                "comet_knowledge": [
+                    "agent ObjectUse get a job",
+                    "agent MadeUpOf agent",
+                    "agent HasProperty found in office",
+                    "agent CapableOf sign contract"
+                ]
+            }
+        }
+    }
+]

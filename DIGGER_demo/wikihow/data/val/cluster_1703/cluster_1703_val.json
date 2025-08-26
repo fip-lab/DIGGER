@@ -1,0 +1,21 @@
+[
+    {
+        "cluster_label": 1703,
+        "task": "How to Remove Press\u2010On Nails",
+        "step": [
+            "Go polish and press-on free for a few days.",
+            "Cut your nails short to prevent breakage.",
+            "Buff your nails to even out rough spots.",
+            "Replenish lost moisture.",
+            "Apply a top coat before you use press on nails again."
+        ],
+        "steps_predictions": [
+            "polish_and_press_on npc work_station desk",
+            "cut_nail npc",
+            "bend_to_pick npc",
+            "replenish_wicks wick1",
+            "apply_top_coathanger npc"
+        ],
+        "goal_state": " ((cleanness npc) (flattened wick1))"
+    }
+]

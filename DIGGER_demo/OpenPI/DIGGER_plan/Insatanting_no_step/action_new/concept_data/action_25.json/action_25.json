@@ -1,0 +1,4 @@
+[
+    "(:action pour ; Handle the process of preparing and serving a drink\n:parameters (?p - player ?item - ingredient ?bl - blender ?g - glass ?st - garnishment)\n:precondition (and \n    (inventory ?p ?item) \n    (at ?bl kitchen) \n    (at ?p kitchen) \n    (smooth_mixture ?bl)\n    (chilled ?g)\n    (inventory ?p ?st)\n)\n:effect (and \n    (in ?item ?bl) \n    (in ?item ?g) \n    (garnished ?g) \n    (not (inventory ?p ?item))",
+    "(:action blend\n  ; Blend ingredients to create a mixture\n  :parameters (?p - player ?bl - blender ?ingredient - object)\n  :precondition (and (at ?p kitchen) (in ?ingredient ?bl) (not (smooth_mixture ?bl)) (power_off ?bl))\n  :effect (and (smooth_mixture ?bl) (power_on ?bl) (not (power_off ?bl))"
+]

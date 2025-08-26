@@ -1,0 +1,17 @@
+{
+    "gather": [
+        "(:action gather_squares\n    :parameters (?p - player ?squares - squares)\n    :precondition (and (at ?p ?location) (at ?squares ?location))\n    :effect (and (inventory ?p ?squares))\n)\n\n"
+    ],
+    "push": [
+        "(:action push_squares_away\n    :parameters (?p - player ?hanger - hanger ?squares - squares)\n    :precondition (and (inventory ?p ?hanger) (inventory ?p ?squares) (threaded ?squares ?hanger))\n    :effect (and (pushed_away ?squares ?hanger))\n)\n\n"
+    ],
+    "slide": [
+        "(:action slide_squares\n    :parameters (?p - player ?hanger - hanger ?squares - squares)\n    :precondition (and (inventory ?p ?hanger) (pushed_away ?squares ?hanger))\n    :effect (and (slid ?squares ?hanger))\n)\n\n"
+    ],
+    "finish": [
+        "(:action finish_wreath\n    :parameters (?p - player ?hanger - hanger ?squares - squares ?wreath - wreath)\n    :precondition (and (inventory ?p ?hanger) (slid ?squares ?hanger) (circular_shape ?hanger))\n    :effect (and (at ?wreath ?p) (not (inventory ?p ?hanger)) (not (inventory ?p ?squares)))\n)\n```\n\nExplanation:\n1. **untwist_hanger**: This action untwists a hanger and shapes it into a circle using pliers.\n2. **gather_squares**: This action gathers the squares of paper needed for the wreath.\n3. **push_squares_away**: This action pushes the threaded squares away from the ends of the hanger.\n4. **slide_squares**: This action slides the squares back towards the joined ends of the hanger, scrunching them for fullness.\n5. **finish_wreath**: This action finishes the wreath by finalizing the shape and arrangement of the squares on the hanger.\n\nThese actions capture the steps and descriptions provided, ensuring each step is represented with appropriate preconditions and effects."
+    ],
+    "untwist": [
+        "(:action untwist_hanger\n    :parameters (?p - player ?hanger - hanger ?pliers - pliers)\n    :precondition (and (inventory ?p ?hanger) (inventory ?p ?pliers) (twisted ?hanger))\n    :effect (and (not (twisted ?hanger)) (circular_shape ?hanger))\n)\n\n"
+    ]
+}

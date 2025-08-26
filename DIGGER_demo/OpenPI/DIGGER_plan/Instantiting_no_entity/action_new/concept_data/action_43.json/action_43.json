@@ -1,0 +1,8 @@
+[
+    "(:action make ;  Make a connection or creation process for an item\n  :parameters (?actor - agent ?item - object)\n  :precondition (and (not (connected ?actor ?item)) (has_item ?actor ?item))\n  :effect (connected ?actor ?item)\n)",
+    "(:action find\n    :parameters (?entity - agent ?item - object)\n    :precondition (and (at ?entity ?location) (not (found ?entity ?item)))\n    :effect (found ?entity ?item))",
+    "(:action check\n    :parameters (?actor - entity ?resource - resource)\n    :precondition (and (available ?actor) (not (checked ?actor ?resource)))\n    :effect (checked ?actor ?resource)\n)",
+    "(:action talk\n    :parameters (?p - player ?mic - microphone ?voice - voice ?advice - advice)\n    :precondition (and (microphone_connected ?p ?mic) \n                       (panel_checked ?p voice_panel) \n                       (not (talking ?p ?voice)) \n                       (not (advising ?p ?advice)))\n    :effect (and (talking ?p ?voice) \n                 (advising ?p ?advice))",
+    "(:action use_microphone\n    :parameters (?p - player ?voice - voice)\n    :precondition (and (talking ?p ?voice) (not (using_microphone ?p ?voice)))\n    :effect (using_microphone ?p ?voice)\n)",
+    "(:action use ; Use a resource and update usage status\n:parameters (?user - agent ?resource - item)\n:precondition (and (available ?user) (not (using ?user ?resource)))\n:effect (using ?user ?resource))"
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "task": "How to Remove Nail Polish Without Using Remover",
+        "instantiting_action": [
+            "choose(agent item context)",
+            "choose(agent item context)",
+            "choose(agent item context)",
+            "choose(agent item context)",
+            "clean(agent target tool)",
+            "use(user item target)",
+            "wipe(cleaner surface tool)",
+            "add(actor item1 item2)",
+            "avoid(b item)",
+            "transform_state(entity1 entity2 tool context)",
+            "chip(p object tool)",
+            "treat(user stain tool method)",
+            "paint(p substance target)",
+            "open(actor item)",
+            "take(entity item)",
+            "apply(p nail item)",
+            "reuse_bottle(u b)",
+            "use_bottle_for_paint(u b)",
+            "reuse(u b purpose)"
+        ]
+    },
+    {
+        "task": "How to Remove Old Nail Polish",
+        "instantiting_action": [
+            "choose(agent cuticle old)",
+            "choose(agent cuticle old)",
+            "choose(agent cuticle old)",
+            "choose(agent cuticle old)",
+            "clean(agent target cap)",
+            "clean(agent target stick)",
+            "use(user cuticle target)",
+            "wipe(cleaner surface cap)",
+            "wipe(cleaner surface stick)",
+            "wipe(cleaner counter cap)",
+            "wipe(cleaner counter stick)",
+            "add(actor item1 item2)",
+            "avoid(b cuticle)",
+            "transform_state(entity1 entity2 cap old)",
+            "transform_state(entity1 entity2 stick old)",
+            "chip(p material cap)",
+            "chip(p material stick)",
+            "chip(p band cap)",
+            "chip(p band stick)",
+            "treat(user stain cap force)",
+            "treat(user stain stick force)",
+            "paint(p water target)",
+            "paint(p gel target)",
+            "paint(p polish target)",
+            "paint(p glue target)",
+            "open(actor cuticle)",
+            "take(entity cuticle)",
+            "apply(p nail cuticle)",
+            "reuse_bottle(u b)",
+            "use_bottle_for_paint(u b)",
+            "reuse(u b purpose)"
+        ]
+    }
+]

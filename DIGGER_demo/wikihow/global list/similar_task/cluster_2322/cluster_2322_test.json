@@ -1,0 +1,1002 @@
+[
+    {
+        "How to Goddess Braid Natural Hair": [
+            {
+                "cluster_label": 2322,
+                "task": "How to Style Your Braids",
+                "step": [
+                    "Trim away frizz, dip the braids in hot water, then set them with gel.",
+                    "Re-do the braids around your hairline.",
+                    "Tame the baby hairs around your hairline with edge control cream.",
+                    "Switch up the length and style of your braids.",
+                    "Cover unruly hairlines and roots with clever styling or a scarf."
+                ],
+                "steps_predictions": [
+                    "dip_braids_in_faucet npc",
+                    "re_do_braids npc",
+                    "treat_baby_hair npc",
+                    "switch_length_and_style_of_braids you",
+                    "cover_hair_and_roots npc"
+                ],
+                "goal_state": " ((completed_braids npc))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 2322,
+                "task": "How to Do a Basic Hair Braid",
+                "step": [
+                    "Part your hair off to the side.",
+                    "Gather a small chunk of hair right next to the side part and your hairline.",
+                    "Divide the chunk into three even sections.",
+                    "Begin with a standard braid.",
+                    "Add a thin strand of hair to the section closest to your hairline.",
+                    "Cross the hairline section over the middle section.",
+                    "Add a thin strand of hair to the section closest to your side part.",
+                    "Cross the side part section over the new middle section.",
+                    "Continue adding strands and crossing over sections.",
+                    "Consider how you want to end the braid.",
+                    "Stop braiding when you are 1 inch (2.54 centimeters) away from the nape of your neck.",
+                    "Consider adding a decorations to the end of your braid after you tie it off."
+                ],
+                "steps_predictions": [
+                    "part_of_hair npc",
+                    "gather_hair npc",
+                    "divide_chunk npc basement",
+                    "start_braid npc",
+                    "add_hair_to_section npc",
+                    "cross_hairline section",
+                    "add_hair_to_sliplargerbeads npc",
+                    "cross_panel panel",
+                    "cross_over_crosses npc",
+                    "end_braid braid1",
+                    "stop braiding npc",
+                    "attach_completed_braid npc"
+                ],
+                "goal_state": " ((completed_hair npc))",
+                "similar_entity": {
+                    "section": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[department]] is related to [[section]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "braiding": {
+                        "webbing": [
+                            {
+                                "attribute": "location",
+                                "before": "in vehicle",
+                                "after": "on ground"
+                            },
+                            {
+                                "attribute": "attention",
+                                "before": "carelessly placed",
+                                "after": "carefully placed"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "panel": {
+                        "panel": [
+                            {
+                                "attribute": "selection",
+                                "before": "unadjusted",
+                                "after": "adjusted"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "invisible",
+                                "after": "visible"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "deselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "braid": {
+                        "the piece of yarn": [
+                            {
+                                "attribute": "shape",
+                                "before": "straight",
+                                "after": "twisted and folded"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 2322,
+                "task": "How to Braid Curly Hair",
+                "step": [
+                    "Gather some hair at the crown and start to braid.",
+                    "Pull more hair from each side of the head before repeating the pattern.",
+                    "Continue the braiding process to the end."
+                ],
+                "steps_predictions": [
+                    "gather_hair npc",
+                    "pull_hair npc scissors",
+                    "bend_to_end npc"
+                ],
+                "goal_state": "bend_to_end npc scissors",
+                "similar_entity": {
+                    "scissors": {
+                        "the clipping": [
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "cut"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "drier | dry",
+                                "after": "wetter | moister | moistened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "pure",
+                                "after": "dipped into rooting hormone"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[scissors]] are used to [[cut]]",
+                            "[[scissors]] can [[cut that paper]]",
+                            "[[cut]] is related to [[scissors]]",
+                            "*Something you find in [[the desk]] is [[scissors]]",
+                            "[[going to get a haircut]] requires [[scissors]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "How to Braid String": [
+            {
+                "cluster_label": 2322,
+                "task": "How to Do a Basic Hair Braid",
+                "step": [
+                    "Part your hair off to the side.",
+                    "Gather a small chunk of hair right next to the side part and your hairline.",
+                    "Divide the chunk into three even sections.",
+                    "Begin with a standard braid.",
+                    "Add a thin strand of hair to the section closest to your hairline.",
+                    "Cross the hairline section over the middle section.",
+                    "Add a thin strand of hair to the section closest to your side part.",
+                    "Cross the side part section over the new middle section.",
+                    "Continue adding strands and crossing over sections.",
+                    "Consider how you want to end the braid.",
+                    "Stop braiding when you are 1 inch (2.54 centimeters) away from the nape of your neck.",
+                    "Consider adding a decorations to the end of your braid after you tie it off."
+                ],
+                "steps_predictions": [
+                    "part_of_hair npc",
+                    "gather_hair npc",
+                    "divide_chunk npc basement",
+                    "start_braid npc",
+                    "add_hair_to_section npc",
+                    "cross_hairline section",
+                    "add_hair_to_sliplargerbeads npc",
+                    "cross_panel panel",
+                    "cross_over_crosses npc",
+                    "end_braid braid1",
+                    "stop braiding npc",
+                    "attach_completed_braid npc"
+                ],
+                "goal_state": " ((completed_hair npc))",
+                "similar_entity": {
+                    "section": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[department]] is related to [[section]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "braiding": {
+                        "webbing": [
+                            {
+                                "attribute": "location",
+                                "before": "in vehicle",
+                                "after": "on ground"
+                            },
+                            {
+                                "attribute": "attention",
+                                "before": "carelessly placed",
+                                "after": "carefully placed"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "panel": {
+                        "panel": [
+                            {
+                                "attribute": "selection",
+                                "before": "unadjusted",
+                                "after": "adjusted"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "invisible",
+                                "after": "visible"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "deselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "braid": {
+                        "the piece of yarn": [
+                            {
+                                "attribute": "shape",
+                                "before": "straight",
+                                "after": "twisted and folded"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 2322,
+                "task": "How to Braid Wire Rope",
+                "step": [
+                    "Know how many strands of wire you'll be braiding.",
+                    "Separate the strands of wire.",
+                    "Pull the wire strands correctly.",
+                    "Secure loose ends."
+                ],
+                "steps_predictions": [
+                    "braiding_with_wire npc",
+                    "separate_weave npc",
+                    "pull_twice npc",
+                    "secure_ends ends"
+                ],
+                "goal_state": " ((has_shape npc) (width_narrower rope))",
+                "similar_entity": {
+                    "ends": {
+                        "ends": [
+                            {
+                                "attribute": "organization",
+                                "before": "seperate",
+                                "after": "touching"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "bare",
+                                "after": "joined together"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 2322,
+                "task": "How to Do a Chain Braid",
+                "step": [
+                    "Part your hair down the center.",
+                    "Grab a small section of hair from next to the part.",
+                    "Divide the section into two thinner strands.",
+                    "Tie the strands into a knot, just like tying a pair of shoes.",
+                    "Add some hair to each strand, just like French braiding.",
+                    "Tie the strands into another knot.",
+                    "Continue adding hair to each strand and tying them into knots.",
+                    "Tie the braid off with an elastic.",
+                    "Braid the other section of hair.",
+                    "Gather your hair into a half-up, half-down ponytail or two pigtails.",
+                    "Twist the ponytail or pigtails into a bun."
+                ],
+                "steps_predictions": [
+                    "part_with_hair npc",
+                    "grab_small_area npc scissors",
+                    "divide_section section1",
+                    "tied_with_completed_ties npc",
+                    "add_hair_to_strand npc",
+                    "tied_with_spider npc",
+                    "add_hair_to_strand npc",
+                    "tie_braid npc",
+                    "bend_to_shape_others_hair npc",
+                    "gather_hair pony1",
+                    "twist-ponytail-into-un bun"
+                ],
+                "goal_state": " ((completed npc))",
+                "similar_entity": {
+                    "section": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[department]] is related to [[section]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "pony": {
+                        "tails": [
+                            {
+                                "attribute": "orientation",
+                                "before": "bare",
+                                "after": "adorned | beaded"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open",
+                                "after": "closed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[horse]] is related to [[pony]]"
+                        ]
+                    },
+                    "scissors": {
+                        "the clipping": [
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "cut"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "drier | dry",
+                                "after": "wetter | moister | moistened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "pure",
+                                "after": "dipped into rooting hormone"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[scissors]] are used to [[cut]]",
+                            "[[scissors]] can [[cut that paper]]",
+                            "[[cut]] is related to [[scissors]]",
+                            "*Something you find in [[the desk]] is [[scissors]]",
+                            "[[going to get a haircut]] requires [[scissors]]"
+                        ]
+                    },
+                    "bun": {
+                        "the bung": [
+                            {
+                                "attribute": "location",
+                                "before": "on bike | on",
+                                "after": "removed from bike | removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "attached",
+                                "after": "disattached"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from bike",
+                                "after": "on bike"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "loose",
+                                "after": "attached"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[roll]] is related to [[bun]]"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "How to Make a Crown Braid": [
+            {
+                "cluster_label": 2322,
+                "task": "How to Braid Curly Hair",
+                "step": [
+                    "Gather some hair at the crown and start to braid.",
+                    "Pull more hair from each side of the head before repeating the pattern.",
+                    "Continue the braiding process to the end."
+                ],
+                "steps_predictions": [
+                    "gather_hair npc",
+                    "pull_hair npc scissors",
+                    "bend_to_end npc"
+                ],
+                "goal_state": "bend_to_end npc scissors",
+                "similar_entity": {
+                    "scissors": {
+                        "the clipping": [
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "cut"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "drier | dry",
+                                "after": "wetter | moister | moistened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "pure",
+                                "after": "dipped into rooting hormone"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[scissors]] are used to [[cut]]",
+                            "[[scissors]] can [[cut that paper]]",
+                            "[[cut]] is related to [[scissors]]",
+                            "*Something you find in [[the desk]] is [[scissors]]",
+                            "[[going to get a haircut]] requires [[scissors]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 2322,
+                "task": "How to Do a Basic Hair Braid",
+                "step": [
+                    "Part your hair off to the side.",
+                    "Gather a small chunk of hair right next to the side part and your hairline.",
+                    "Divide the chunk into three even sections.",
+                    "Begin with a standard braid.",
+                    "Add a thin strand of hair to the section closest to your hairline.",
+                    "Cross the hairline section over the middle section.",
+                    "Add a thin strand of hair to the section closest to your side part.",
+                    "Cross the side part section over the new middle section.",
+                    "Continue adding strands and crossing over sections.",
+                    "Consider how you want to end the braid.",
+                    "Stop braiding when you are 1 inch (2.54 centimeters) away from the nape of your neck.",
+                    "Consider adding a decorations to the end of your braid after you tie it off."
+                ],
+                "steps_predictions": [
+                    "part_of_hair npc",
+                    "gather_hair npc",
+                    "divide_chunk npc basement",
+                    "start_braid npc",
+                    "add_hair_to_section npc",
+                    "cross_hairline section",
+                    "add_hair_to_sliplargerbeads npc",
+                    "cross_panel panel",
+                    "cross_over_crosses npc",
+                    "end_braid braid1",
+                    "stop braiding npc",
+                    "attach_completed_braid npc"
+                ],
+                "goal_state": " ((completed_hair npc))",
+                "similar_entity": {
+                    "section": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[department]] is related to [[section]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "braiding": {
+                        "webbing": [
+                            {
+                                "attribute": "location",
+                                "before": "in vehicle",
+                                "after": "on ground"
+                            },
+                            {
+                                "attribute": "attention",
+                                "before": "carelessly placed",
+                                "after": "carefully placed"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "panel": {
+                        "panel": [
+                            {
+                                "attribute": "selection",
+                                "before": "unadjusted",
+                                "after": "adjusted"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "invisible",
+                                "after": "visible"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "deselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "braid": {
+                        "the piece of yarn": [
+                            {
+                                "attribute": "shape",
+                                "before": "straight",
+                                "after": "twisted and folded"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 2322,
+                "task": "How to Do a Chain Braid",
+                "step": [
+                    "Part your hair down the center.",
+                    "Grab a small section of hair from next to the part.",
+                    "Divide the section into two thinner strands.",
+                    "Tie the strands into a knot, just like tying a pair of shoes.",
+                    "Add some hair to each strand, just like French braiding.",
+                    "Tie the strands into another knot.",
+                    "Continue adding hair to each strand and tying them into knots.",
+                    "Tie the braid off with an elastic.",
+                    "Braid the other section of hair.",
+                    "Gather your hair into a half-up, half-down ponytail or two pigtails.",
+                    "Twist the ponytail or pigtails into a bun."
+                ],
+                "steps_predictions": [
+                    "part_with_hair npc",
+                    "grab_small_area npc scissors",
+                    "divide_section section1",
+                    "tied_with_completed_ties npc",
+                    "add_hair_to_strand npc",
+                    "tied_with_spider npc",
+                    "add_hair_to_strand npc",
+                    "tie_braid npc",
+                    "bend_to_shape_others_hair npc",
+                    "gather_hair pony1",
+                    "twist-ponytail-into-un bun"
+                ],
+                "goal_state": " ((completed npc))",
+                "similar_entity": {
+                    "section": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[department]] is related to [[section]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "pony": {
+                        "tails": [
+                            {
+                                "attribute": "orientation",
+                                "before": "bare",
+                                "after": "adorned | beaded"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open",
+                                "after": "closed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[horse]] is related to [[pony]]"
+                        ]
+                    },
+                    "scissors": {
+                        "the clipping": [
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "cut"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "drier | dry",
+                                "after": "wetter | moister | moistened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "pure",
+                                "after": "dipped into rooting hormone"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "attached",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[scissors]] are used to [[cut]]",
+                            "[[scissors]] can [[cut that paper]]",
+                            "[[cut]] is related to [[scissors]]",
+                            "*Something you find in [[the desk]] is [[scissors]]",
+                            "[[going to get a haircut]] requires [[scissors]]"
+                        ]
+                    },
+                    "bun": {
+                        "the bung": [
+                            {
+                                "attribute": "location",
+                                "before": "on bike | on",
+                                "after": "removed from bike | removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "attached",
+                                "after": "disattached"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from bike",
+                                "after": "on bike"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "loose",
+                                "after": "attached"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[roll]] is related to [[bun]]"
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+]

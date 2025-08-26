@@ -1,0 +1,17 @@
+{
+    "acquire": [
+        "(:action acquire_oil_based_painting\n    :parameters (?npc - npc ?oil_floor - location ?roller_finished - item)\n    :precondition (and (at ?npc ?oil_floor) (available ?roller_finished))\n    :effect (and (inventory ?npc ?roller_finished) (not (available ?roller_finished)))\n)\n\n"
+    ],
+    "move": [
+        "(:action move_painting_branch\n    :parameters (?npc - npc ?work_station - location ?wood - item)\n    :precondition (and (at ?npc ?work_station) (available ?wood))\n    :effect (and (at ?wood ?work_station) (not (available ?wood)))\n)\n\n"
+    ],
+    "clean": [
+        "(:action clean_room\n    :parameters (?npc - npc ?room - location)\n    :precondition (and (at ?npc ?room) (dirty ?room))\n    :effect (and (not (dirty ?room)) (clean ?room))\n)\n\n"
+    ],
+    "finish": [
+        "(:action finish_wreath\n    :parameters (?npc - npc ?wreath - item)\n    :precondition (and (in_progress ?wreath))\n    :effect (and (completed ?wreath) (not (in_progress ?wreath)))\n)\n\nNote: Some steps in the provided list were irrelevant to the task of painting bare wood, so they were modified or omitted to fit the context of the task."
+    ],
+    "be": [
+        "(:action be_amazed\n    :parameters (?npc - npc)\n    :precondition (and (completed ?task))\n    :effect (amazed ?npc)\n)\n\n"
+    ]
+}

@@ -1,0 +1,135 @@
+[
+    {
+        "3-decorate": {
+            "disguise": "?c",
+            "costume": "?c",
+            "supply": "?s",
+            "character": "?p",
+            "part": "?item"
+        }
+    },
+    {
+        "prepare_meat": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "pick_hard_lock": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "finishing_papyrus": {
+            "step": "?action",
+            "finishing_papyrus": "?papyrus",
+            "sheet": "?sheet",
+            "slab": "?stone",
+            "ivory": "?ivory",
+            "piece": "?object",
+            "shell": "?shell",
+            "papyrus": "?papyrus",
+            "ridge": "?object",
+            "day": "?state",
+            "process": "?action",
+            "board": "?tool",
+            "hour": "?state",
+            "paper": "?object",
+            "one": "?state",
+            "linen": "?linen",
+            "stone": "?stone",
+            "type": "?state"
+        }
+    },
+    {
+        "gather_kindling": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "make_papyrus": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    },
+    {
+        "move_to_bunker": {
+            "hiding": "?state",
+            "damage": "?state",
+            "protection": "?state",
+            "basement": "?container",
+            "sight": "?state",
+            "move_to_bunker": "?action",
+            "type": "?state",
+            "place": "?location",
+            "brick": "?resource",
+            "area": "?location",
+            "building": "?container",
+            "shelter": "?container"
+        }
+    },
+    {
+        "ready_sc": {
+            "kilometer": "?location",
+            "confusion": "?context",
+            "shortage": "?context",
+            "chaos": "?context",
+            "place": "?location",
+            "food": "?food",
+            "shelter": "?storage",
+            "electricity": "?resource",
+            "home": "?location",
+            "day": "?context",
+            "minute": "?context",
+            "loss": "?context",
+            "danger": "?context",
+            "ready_sc": "?context",
+            "stuff": "?entity",
+            "society": "?context",
+            "fridge": "?storage",
+            "odd": "?context",
+            "electronic": "?entity",
+            "mile": "?location",
+            "help": "?context",
+            "lot": "?context"
+        }
+    },
+    {
+        "heal-old-man": {
+            "purchase": "?action",
+            "jar": "?container",
+            "socket": "?location",
+            "saucepan": "?container",
+            "candles": "?object",
+            "amount": "?state",
+            "stove": "?location",
+            "water": "?object"
+        }
+    }
+]

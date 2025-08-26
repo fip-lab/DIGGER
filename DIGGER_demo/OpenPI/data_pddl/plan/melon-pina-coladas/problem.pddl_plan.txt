@@ -1,0 +1,6 @@
+(pour_ingredients_into_pitcher mixture1 pitcher1 kitchen_counter)
+(mix_pitcher pitcher1 mixture1)
+(chill_mixture pitcher1 refrigerator1)
+(pour_into_glass mixture1 pitcher1 glass1)
+(add_garnish honeydew1 glass1 mixture1)
+; cost = 5 (unit cost)

@@ -1,0 +1,8 @@
+[
+    "(:action find ; Find a resource and update its status\n  :parameters (?agent - agent ?target - entity)\n  :precondition (and (at ?agent ?target) (not (found ?agent ?target)))\n  :effect (found ?agent ?target)\n)",
+    "(:action collect_twigs_and_sticks\n  :parameters (?p - player ?loc - location ?stick - stick)\n  :precondition (and (at ?p ?loc) (scattered ?stick ?loc))\n  :effect (and (inventory ?p ?stick) (not (scattered ?stick ?loc))",
+    "(:action collect ; Collect an item from a location and add it to the inventory\n  :parameters (?agent - agent ?item - object ?loc - location)\n  :precondition (and (at ?agent ?loc) (scattered ?item ?loc))\n  :effect (and (inventory ?agent ?item) (not (scattered ?item ?loc))",
+    "(:action create\n    :parameters (?p - player ?loc - location ?item - object ?structure - structure)\n    :precondition (and (at ?p ?loc) \n                       (or (inventory ?p ?item) (in_formation ?item ?structure)))\n    :effect (and (or (in_formation ?item ?structure) (built ?structure ?item))",
+    "(:action use ; Use a material to modify or fortify an entity\n  :parameters (?agent - agent ?entity - entity ?material - material)\n  :precondition (and (available ?agent) (at ?agent ?entity) (or (leaf ?material) (bark ?material)) (built ?entity))\n  :effect (fortified ?entity ?material)\n)",
+    "(:action decorate ; Decorate an entity and update its status\n  :parameters (?entity - object ?decoration - object ?loc - location ?actor - agent)\n  :precondition (and (at ?actor ?loc) (built ?entity) (not (decorated ?entity ?decoration)))\n  :effect (decorated ?entity ?decoration)\n)"
+]

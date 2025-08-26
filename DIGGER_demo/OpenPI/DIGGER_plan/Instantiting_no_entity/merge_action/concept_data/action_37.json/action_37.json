@@ -1,0 +1,16 @@
+{
+    "fold": [
+        "(:action make_horizontal_bar\n    :parameters (?npc - npc ?loc - location ?duct_tape - duct_tape ?horizontal_bar - horizontal_bar)\n    :precondition (and (at ?npc ?loc) (inventory ?npc ?duct_tape) (piece_length ?duct_tape ?horizontal_bar))\n    :effect (and (inventory ?npc ?horizontal_bar) (not (inventory ?npc ?duct_tape)))\n)\n\n",
+        "(:action fold_wreath\n    :parameters (?npc - npc ?loc - location ?cut_piece - cut_piece ?wreath - wreath)\n    :precondition (and (at ?npc ?loc) (inventory ?npc ?cut_piece) (folded_halfway ?cut_piece))\n    :effect (and (inventory ?npc ?wreath) (not (inventory ?npc ?cut_piece)))\n)\n\n",
+        "(:action fold_half_tape\n    :parameters (?npc - npc ?loc - location ?wreath - wreath ?half_folded_tape - half_folded_tape)\n    :precondition (and (at ?npc ?loc) (inventory ?npc ?wreath) (folded_no_sticky ?wreath))\n    :effect (and (inventory ?npc ?half_folded_tape) (not (inventory ?npc ?wreath)))\n)\n\n"
+    ],
+    "cut": [
+        "(:action cut_roll\n    :parameters (?npc - npc ?loc - location ?horizontal_bar - horizontal_bar ?cut_piece - cut_piece)\n    :precondition (and (at ?npc ?loc) (inventory ?npc ?horizontal_bar) (measured_to_head ?horizontal_bar))\n    :effect (and (inventory ?npc ?cut_piece) (not (inventory ?npc ?horizontal_bar)))\n)\n\n"
+    ],
+    "tape": [
+        "(:action tape_ends\n    :parameters (?npc - npc ?loc - location ?half_folded_tape - half_folded_tape ?taped_ends - taped_ends)\n    :precondition (and (at ?npc ?loc) (inventory ?npc ?half_folded_tape) (ends_taped ?half_folded_tape))\n    :effect (and (inventory ?npc ?taped_ends) (not (inventory ?npc ?half_folded_tape)))\n)\n\n"
+    ],
+    "put": [
+        "(:action put_in_machine\n    :parameters (?npc - npc ?loc - location ?taped_ends - taped_ends ?machine - machine)\n    :precondition (and (at ?npc ?loc) (inventory ?npc ?taped_ends) (at ?machine ?loc))\n    :effect (and (in ?taped_ends ?machine) (not (inventory ?npc ?taped_ends)))\n)\n```\n\nExplanation:\n1. `make_horizontal_bar`: This action involves taking a roll of duct tape and making a piece that is a little bigger than your head.\n2. `cut_roll`: This action involves measuring the piece around your head and cutting it off the roll.\n3. `fold_wreath`: This action involves folding the cut piece halfway through the middle.\n4. `fold_half_tape`: This action involves folding the other half so there is no sticky part showing.\n5. `tape_ends`: This action involves taping the ends together.\n6. `put_in_machine`: This action involves putting the final product into a machine, which signifies the completion of the task.\n\nEach PDDL action follows the format and structure provided in the example, with appropriate preconditions and effects based on the task descriptions and steps."
+    ]
+}

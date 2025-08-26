@@ -1,0 +1,26 @@
+[
+    {
+        "task": "How to Boil Corned Beef",
+        "instantiting_action": [
+            "finish(actor item socket)",
+            "finish(actor item stove)",
+            "chill(actor item)",
+            "season(agent item socket tool)",
+            "season(agent item stove tool)",
+            "pull(agent entity)",
+            "peek(agent resource)",
+            "add(entity1 entity2 socket)",
+            "add(entity1 entity2 stove)",
+            "write(p c)",
+            "listen(agent entity)",
+            "free(agent entity socket)",
+            "free(agent entity stove)",
+            "remove(agent item socket)",
+            "remove(agent item stove)",
+            "eat(p b g f s)",
+            "serve(entity container1 container2)",
+            "layer(actor item jar target)",
+            "layer(actor item saucepan target)"
+        ]
+    }
+]

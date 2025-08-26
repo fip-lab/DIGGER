@@ -1,0 +1,23 @@
+{
+    "breathe": [
+        "(:action breathe\n    :parameters (?n - npc)\n    :precondition (and (calm ?n) (lungs_empty ?n))\n    :effect (and (buoyant ?n) (lungs_full ?n) (not (lungs_empty ?n)))\n)\n\n"
+    ],
+    "free": [
+        "(:action free-from-qsand\n    :parameters (?n - npc ?q - qsand)\n    :precondition (and (stuck ?n ?q) (pressure ?n))\n    :effect (and (not (stuck ?n ?q)) (free ?n) (not (pressure ?n)))\n)\n\n"
+    ],
+    "stay": [
+        "(:action stay-flat\n    :parameters (?n - npc ?s - stick ?q - qsand)\n    :precondition (and (onBack ?n) (inContact ?n ?q) (hasGuide ?n ?s))\n    :effect (and (stable ?n) (movingToFirmGround ?n) (not (stuck ?n ?q)))\n)\n```\n\n### Explanation:\n\n1. **breathe**:\n   - **Parameters**: The action involves an NPC (`?n`).\n   - **Preconditions**: The NPC must be calm and have empty lungs.\n   - **Effects**: The NPC becomes buoyant with full lungs, helping them stay afloat.\n\n2. **free-from-qsand**:\n   - **Parameters**: The action involves an NPC (`?n`) and quicksand (`?q`).\n   - **Preconditions**: The NPC is stuck in quicksand and under pressure.\n   - **Effects**: The NPC is freed from the quicksand, removing the pressure.\n\n3. **stay-flat**:\n   - **Parameters**: The action involves an NPC (`?n`), a stick (`?s`), and quicksand (`?q`).\n   - **Preconditions**: The NPC is on their back, in contact with quicksand, and has a stick as a guide.\n   - **Effects**: The NPC becomes stable and starts moving towards firm ground, no longer stuck in quicksand.\n\nThese actions are designed to reflect the steps and descriptions provided, ensuring the NPC can effectively escape from quicksand by breathing deeply, freeing themselves, and using a stick as guidance while staying flat."
+    ],
+    "identify": [
+        "(:action identify-quicksand\n    :parameters (?q - quicksand_area)\n    :precondition (and (unidentified ?q))\n    :effect (and (identified ?q) (not (unidentified ?q)))\n)\n\n"
+    ],
+    "mark": [
+        "(:action mark-quicksand\n    :parameters (?q - quicksand_area ?m - marker)\n    :precondition (and (identified ?q) (available ?m))\n    :effect (and (marked ?q ?m) (not (available ?m)))\n)\n\n"
+    ],
+    "create": [
+        "(:action create-safe-path\n    :parameters (?q - quicksand_area ?p - path)\n    :precondition (and (marked ?q ?m) (undefined ?p))\n    :effect (and (defined ?p) (circumvents ?p ?q) (not (undefined ?p)))\n)\n\n"
+    ],
+    "guide": [
+        "(:action guide-others\n    :parameters (?q - quicksand_area ?p - person)\n    :precondition (and (identified ?q) (unaware ?p))\n    :effect (and (aware ?p) (avoiding ?p ?q) (not (unaware ?p)))\n)\n```\n\nThese actions capture the process of avoiding quicksand by identifying the area, marking it, creating a safe path, and guiding others to avoid it. If you have specific steps, descriptions, or entity states, feel free to provide them for more tailored PDDL actions."
+    ]
+}

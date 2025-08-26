@@ -1,0 +1,13 @@
+{
+    "select": [
+        "(:action select_body_part ; select a body part of the character\n    :parameters (?p - player ?part - body_part)\n    :precondition (and (at ?p cantina) (part_unselected ?part))\n    :effect (and (part_selected ?part) (not (part_unselected ?part)))\n)\n\n",
+        "(:action choose_specific_part ; choose a specific part for the selected body part\n    :parameters (?p - player ?part - body_part ?specific_part - specific_part)\n    :precondition (and (at ?p cantina) (part_selected ?part) (specific_part_available ?specific_part))\n    :effect (and (part_chosen ?part ?specific_part) (not (part_selected ?part)))\n)\n\n",
+        "(:action save_and_exit ; save the character and exit\n    :parameters (?p - player)\n    :precondition (and (at ?p cantina) (character_named ?name))\n    :effect (and (character_saved ?name) (not (at ?p cantina)) (at ?p main_menu))\n)\n\n"
+    ],
+    "name": [
+        "(:action name_character ; name the character\n    :parameters (?p - player ?name - string)\n    :precondition (and (at ?p cantina) (character_nameless))\n    :effect (and (character_named ?name) (not (character_nameless)))\n)\n\n"
+    ],
+    "enter": [
+        "(:action enter_free_play ; enter a completed level and turn on free play\n    :parameters (?p - player ?level - level)\n    :precondition (and (at ?p main_menu) (level_completed ?level))\n    :effect (and (in_free_play ?p ?level) (not (at ?p main_menu)))\n)\n```\n\nExplanation:\n- `select_body_part`: This action allows the player to select a body part of the character.\n- `choose_specific_part`: This action allows the player to choose a specific part for the selected body part.\n- `name_character`: This action allows the player to name the character.\n- `save_and_exit`: This action allows the player to save the character and exit the character creation screen.\n- `enter_free_play`: This action allows the player to enter a completed level and turn on free play."
+    ]
+}

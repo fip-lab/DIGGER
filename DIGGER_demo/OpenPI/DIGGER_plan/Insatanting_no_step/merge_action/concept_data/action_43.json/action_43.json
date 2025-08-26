@@ -1,0 +1,20 @@
+{
+    "check": [
+        "(:action check_microphone_connection\n  :parameters (?p - player ?mic - microphone)\n  :precondition (and (at ?p ?mic) (not (connected ?mic)))\n  :effect (connected ?mic)\n)\n\n"
+    ],
+    "find": [
+        "(:action find_panels\n  :parameters (?p - player ?panel - panel)\n  :precondition (and (at ?p ?panel) (not (visible ?panel)))\n  :effect (visible ?panel)\n)\n\n"
+    ],
+    "click": [
+        "(:action click_voice_panel\n  :parameters (?p - player ?panel - panel)\n  :precondition (and (at ?p ?panel) (visible ?panel) (not (selected ?panel)))\n  :effect (selected ?panel)\n)\n\n"
+    ],
+    "start": [
+        "(:action start_talking\n  :parameters (?p - player ?mic - microphone ?voice - voice)\n  :precondition (and (connected ?mic) (selected ?panel) (not (heard ?voice)))\n  :effect (heard ?voice)\n)\n\n"
+    ],
+    "communicate": [
+        "(:action communicate_efficiently\n  :parameters (?p - player ?mic - microphone ?voice - voice)\n  :precondition (and (connected ?mic) (heard ?voice) (not (efficient ?voice)))\n  :effect (efficient ?voice)\n)\n\n"
+    ],
+    "advise": [
+        "(:action advise_teammates\n  :parameters (?p - player ?advice - advice)\n  :precondition (and (connected ?mic) (heard ?voice) (efficient ?voice) (not (given ?advice)))\n  :effect (given ?advice)\n)\n```\n\n### Explanation:\n1. **check_microphone_connection**: Ensures the microphone is connected.\n   - Preconditions: Player is at the microphone, and the microphone is not connected.\n   - Effects: The microphone becomes connected.\n\n2. **find_panels**: Makes the panels visible.\n   - Preconditions: Player is at the panel, and the panel is not visible.\n   - Effects: The panel becomes visible.\n\n3. **click_voice_panel**: Selects the voice panel.\n   - Preconditions: Player is at the panel, the panel is visible, and the panel is not selected.\n   - Effects: The panel becomes selected.\n\n4. **start_talking**: Starts talking using the microphone.\n   - Preconditions: The microphone is connected, the panel is selected, and the voice is not heard.\n   - Effects: The voice is heard.\n\n5. **communicate_efficiently**: Communicates efficiently using the microphone.\n   - Preconditions: The microphone is connected, the voice is heard, and the voice is not efficient.\n   - Effects: The voice becomes efficient.\n\n6. **advise_teammates**: Advises teammates and makes game plans.\n   - Preconditions: The microphone is connected, the voice is heard, the voice is efficient, and the advice is not given.\n   - Effects: The advice is given.\n\nThese actions capture the logical steps required to use a microphone in Team Fortress 2, ensuring that each step's preconditions and effects are correctly represented."
+    ]
+}

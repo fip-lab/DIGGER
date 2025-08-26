@@ -1,0 +1,14 @@
+{
+    "prepare": [
+        "(:action prepare_area ; prepare the planting area\n    :parameters (?p - player ?l - location)\n    :precondition (and (at ?p ?l) (not (prepared ?l)))\n    :effect (prepared ?l)\n)\n\n"
+    ],
+    "take": [
+        "(:action take_cutting ; take a cutting from the rose bush\n    :parameters (?p - player ?bush - rose_bush ?cutting - clipping)\n    :precondition (and (at ?p ?bush) (attached ?cutting ?bush))\n    :effect (and (not (attached ?cutting ?bush)) (cut ?cutting))\n)\n\n"
+    ],
+    "dip": [
+        "(:action dip_in_hormide ; dip the cutting in rooting hormone\n    :parameters (?p - player ?cutting - clipping ?hormone - rooting_hormone)\n    :precondition (and (at ?p ?cutting) (cut ?cutting) (moistened ?cutting) (pure ?cutting))\n    :effect (dipped_into_rooting_hormone ?cutting)\n)\n\n"
+    ],
+    "plant": [
+        "(:action plant_cutting ; plant the cutting\n    :parameters (?p - player ?cutting - clipping ?l - location)\n    :precondition (and (at ?p ?cutting) (dipped_into_rooting_hormone ?cutting) (prepared ?l))\n    :effect (planted ?cutting ?l)\n)\n```\n\nExplanation:\n- `prepare_area`: Prepares the area where the cutting will be planted.\n- `take_cutting`: Takes a cutting from the rose bush.\n- `dip_in_hormide`: Dips the moistened cutting into rooting hormone.\n- `plant_cutting`: Plants the prepared cutting into the prepared area."
+    ]
+}

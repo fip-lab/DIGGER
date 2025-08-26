@@ -1,0 +1,380 @@
+{
+    "goal": "Make Carob Fruit Balls",
+    "steps": [
+        "Mix all of the ingredients together.",
+        "Roll into small balls.",
+        "Place in the freezer for half an hour.",
+        "Serve."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/b/b3/Make-Carob-Fruit-Balls-Step-1.jpg/aid515079-v4-728px-Make-Carob-Fruit-Balls-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/9/9a/Make-Carob-Fruit-Balls-Step-2.jpg/aid515079-v4-728px-Make-Carob-Fruit-Balls-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/f/fb/Make-Carob-Fruit-Balls-Step-3.jpg/aid515079-v4-728px-Make-Carob-Fruit-Balls-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/4/41/Make-Carob-Fruit-Balls-Step-4.jpg/aid515079-v4-728px-Make-Carob-Fruit-Balls-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "carob",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "composition",
+                        "before": "separated | separate",
+                        "after": "mixed together | mixed",
+                        "saliency": 0.7670807453416149,
+                        "attribute_annotation": "composition | consistency"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in packaging",
+                        "after": "in mixing bowl",
+                        "saliency": 0.562111801242236,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "mixed",
+                        "before": "flavorful",
+                        "after": "tasty",
+                        "saliency": 0.32712215320910976,
+                        "attribute_annotation": "mixed"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "composition",
+                        "before": "mixture",
+                        "after": "dough",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "composition | consistency"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "dispersed | mixed",
+                        "after": "rolled",
+                        "saliency": 0.23084886128364387,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "ingredients",
+                "carob"
+            ]
+        },
+        {
+            "entity": "mixture",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "size",
+                        "before": "one large ball | formless",
+                        "after": "several small pieces | balls",
+                        "saliency": 0.6376811594202899,
+                        "attribute_annotation": "size | shape"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "in hand",
+                        "saliency": 0.3478260869565218,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "number",
+                        "before": "one",
+                        "after": "many pieces",
+                        "saliency": 0.14130434782608697,
+                        "attribute_annotation": "number"
+                    },
+                    {
+                        "attribute": "density",
+                        "before": "umixed",
+                        "after": "balled up",
+                        "saliency": 0.127536231884058,
+                        "attribute_annotation": "density"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "dough | dough pieces",
+                "mixture"
+            ]
+        },
+        {
+            "entity": "carob fruit balls",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in hand | on counter",
+                        "after": "in freezer | on plate",
+                        "saliency": 0.4306418219461698,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "room temperature | room temp",
+                        "after": "cold | freezing",
+                        "saliency": 0.2670807453416149,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "readiness",
+                        "before": "unprepared",
+                        "after": "prepared",
+                        "saliency": 0.6066252587991718,
+                        "attribute_annotation": "readiness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in freezer",
+                        "after": "on table",
+                        "saliency": 0.468944099378882,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "hardness",
+                        "before": "soft",
+                        "after": "firm",
+                        "saliency": 0.4230503795721187,
+                        "attribute_annotation": "hardness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "carob fruit balls",
+                "balls"
+            ]
+        },
+        {
+            "entity": "mixing bowl",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "filled with ingredients",
+                        "saliency": 0.5445134575569358,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavier",
+                        "saliency": 0.40683229813664595,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on counter top",
+                        "saliency": 0.3609385783298827,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavy",
+                        "after": "lighter",
+                        "saliency": 0.3167701863354037,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "mixing bowl",
+                "bowl"
+            ]
+        },
+        {
+            "entity": "spoon",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in mixing bowl",
+                        "saliency": 0.4824016563146998,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.3167701863354037,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "stickiness",
+                        "before": "dry",
+                        "after": "sticky",
+                        "saliency": 0.17908902691511386,
+                        "attribute_annotation": "stickiness"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "spoon",
+                "hand"
+            ]
+        },
+        {
+            "entity": "plate",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "on counter top",
+                        "after": "in freezer",
+                        "saliency": 0.4824016563146998,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "filled",
+                        "saliency": 0.3447204968944099,
+                        "attribute_annotation": "container"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "plate"
+            ]
+        }
+    ],
+    "clusters": {
+        "mixing bowl": {
+            "entity_cluster": [
+                "mixing bowl",
+                "bowl"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "plate": {
+            "entity_cluster": [
+                "plate"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "container": [
+                    "container"
+                ]
+            }
+        },
+        "spoon": {
+            "entity_cluster": [
+                "spoon",
+                "hand"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "stickiness": [
+                    "stickiness"
+                ]
+            }
+        },
+        "carob fruit balls": {
+            "entity_cluster": [
+                "balls",
+                "carob fruit balls"
+            ],
+            "attribute_cluster": {
+                "readiness": [
+                    "readiness"
+                ],
+                "hardness": [
+                    "hardness"
+                ],
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "mixture": {
+            "entity_cluster": [
+                "dough pieces",
+                "mixture",
+                "dough"
+            ],
+            "attribute_cluster": {
+                "size": [
+                    "shape",
+                    "size"
+                ],
+                "location": [
+                    "location"
+                ],
+                "number": [
+                    "number"
+                ],
+                "density": [
+                    "density"
+                ]
+            }
+        },
+        "carob": {
+            "entity_cluster": [
+                "carob",
+                "ingredients"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "consistency": [
+                    "consistency"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "location": [
+                    "location"
+                ],
+                "mixed": [
+                    "mixed"
+                ]
+            }
+        }
+    }
+}

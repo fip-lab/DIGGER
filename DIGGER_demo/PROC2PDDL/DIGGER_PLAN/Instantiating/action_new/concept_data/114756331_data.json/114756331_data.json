@@ -1,0 +1,10 @@
+[
+    "(:action breathe ;  Perform a breathing action to change the state of the entity\n    :parameters (?entity - agent)\n    :precondition (and (calm ?entity) (lungs_empty ?entity))\n    :effect (and (buoyant ?entity) (lungs_full ?entity) (not (lungs_empty ?entity))",
+    "(:action free\n  :parameters (?entity - object ?state - state)\n  :precondition (and (stuck ?entity ?state) (pressure ?entity))\n  :effect (and (not (stuck ?entity ?state))",
+    "(:action stay\n    :parameters (?n - npc ?s - stick ?q - qsand)\n    :precondition (and \n        (or (onBack ?n) (calm ?n) (stuck ?n ?q))\n        (or (inContact ?n ?q) (hasGuide ?n ?s))\n        (or (emptyLungs ?n) (underPressure ?n)))\n    :effect (and \n        (or (stable ?n) (buoyant ?n))",
+    "(:action identify_quicksand\n       :parameters (?q - quicksand_area)\n       :precondition (and (unidentified ?q))\n       :effect (and (identified ?q) (not (unidentified ?q))",
+    "(:action identify ; Identify an entity and update its status\n    :parameters (?entity - object)\n    :precondition (and (unidentified ?entity))\n    :effect (and (identified ?entity) (not (unidentified ?entity))",
+    "(:action mark ; Mark a target with a resource to indicate a state change\n    :parameters (?agent - entity ?target - object ?resource - object)\n    :precondition (and (identified ?target) (available ?resource))\n    :effect (and (marked ?target ?resource) (not (available ?resource))",
+    "(:action create ; Create a defined entity from an undefined state\n  :parameters (?creator - agent ?entity - object ?condition - condition)\n  :precondition (and (marked ?condition ?creator) (undefined ?entity))\n  :effect (and (defined ?entity) (satisfies ?entity ?condition) (not (undefined ?entity))",
+    "(:action guide ; Guide an entity to avoid identified hazards or obstacles\n  :parameters (?area - location ?entity - person ?hazard - condition)\n  :precondition (and (identified ?area ?hazard) (unaware ?entity))\n  :effect (and (aware ?entity) (avoiding ?entity ?area) (not (unaware ?entity))"
+]

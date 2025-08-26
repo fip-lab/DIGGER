@@ -1,0 +1,203 @@
+{
+    "goal": "Create a Character in Lego Star Wars",
+    "steps": [
+        "When you begin the game, you will start as Princess Leia and Captain Antilles in the Star Wars cantina.",
+        "Use the up and down arrows to select the part of the character (hat, head, shirt, arms, hands, weapon, belt, and legs) and the left and right arrows to select through a selection of the body part you are on.",
+        "Press \"triangle\" to name it, and \"O\" to save and exit.",
+        "Now enter a completed level and turn on free play."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/8/85/Create-a-Character-in-Lego-Star-Wars-Step-1.jpg/aid414032-v4-728px-Create-a-Character-in-Lego-Star-Wars-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/5/5a/Create-a-Character-in-Lego-Star-Wars-Step-2.jpg/aid414032-v4-728px-Create-a-Character-in-Lego-Star-Wars-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/1/16/Create-a-Character-in-Lego-Star-Wars-Step-3.jpg/aid414032-v4-728px-Create-a-Character-in-Lego-Star-Wars-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/f/f7/Create-a-Character-in-Lego-Star-Wars-Step-4.jpg/aid414032-v4-728px-Create-a-Character-in-Lego-Star-Wars-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "up/down and left/right arrows",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "movement",
+                        "before": "unclicked",
+                        "after": "clicked",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "movement"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "up/down and left/right arrows"
+            ]
+        },
+        {
+            "entity": "you",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unaware how to make selections",
+                        "after": "aware",
+                        "saliency": 0.5091739844363533,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unaware of how to save and exit",
+                        "after": "aware",
+                        "saliency": 0.45741415006782327,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "you"
+            ]
+        },
+        {
+            "entity": "character",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected",
+                        "saliency": 0.5645034625544371,
+                        "attribute_annotation": "step"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named",
+                        "saliency": 0.3732776468908403,
+                        "attribute_annotation": "choice"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "character parts",
+                "character"
+            ]
+        },
+        {
+            "entity": "completed level",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "step",
+                        "before": "unentered",
+                        "after": "now entered",
+                        "saliency": 0.5645034625544371,
+                        "attribute_annotation": "step"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.5109588063111302,
+                        "attribute_annotation": "power"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "completed level",
+                "free play"
+            ]
+        },
+        {
+            "entity": "game",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unplayed",
+                        "after": "played",
+                        "saliency": 0.3628185907046477,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "game"
+            ]
+        }
+    ],
+    "clusters": {
+        "game": {
+            "entity_cluster": [
+                "game"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "completed level": {
+            "entity_cluster": [
+                "free play",
+                "completed level"
+            ],
+            "attribute_cluster": {
+                "step": [
+                    "step"
+                ],
+                "power": [
+                    "power"
+                ]
+            }
+        },
+        "you": {
+            "entity_cluster": [
+                "you"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "up/down and left/right arrows": {
+            "entity_cluster": [
+                "up/down and left/right arrows"
+            ],
+            "attribute_cluster": {
+                "movement": [
+                    "movement"
+                ]
+            }
+        },
+        "character": {
+            "entity_cluster": [
+                "character",
+                "character parts"
+            ],
+            "attribute_cluster": {
+                "step": [
+                    "step"
+                ],
+                "choice": [
+                    "choice"
+                ]
+            }
+        }
+    }
+}

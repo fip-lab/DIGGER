@@ -1,0 +1,12 @@
+[
+    "(:action get_costume\n       :parameters (?npc - npc ?c - costume)\n       :precondition (and\n                       (not (has-costume ?npc ?c)))\n       :effect (has-costume ?npc ?c)\n   )",
+    "(:action get ; Acquire an item and update the entity's state\n  :parameters (?entity - entity ?item - item)\n  :precondition (and (available ?entity) (not (has ?entity ?item)))\n  :effect (has ?entity ?item)\n)",
+    "(:action clean_clothing\n       :parameters (?c - clothing)\n       :precondition (and (clothing-dirty ?c))\n       :effect (and (not (clothing-dirty ?c))",
+    "(:action decorate_helmet\n       :parameters (?h - helmet)\n       :precondition (and (helmet-plain ?h))\n       :effect (and (not (helmet-plain ?h))",
+    "(:action clean\n    :parameters (?item - object)\n    :precondition (and\n        (or (clothing-dirty ?item)\n            (helmet-plain ?item)))\n    :effect (and\n        (when (clothing-dirty ?item)\n            (and (not (clothing-dirty ?item))",
+    "(:action decorate ; Decorate an item and update its status\n:parameters (?npc - entity ?item - object)\n:precondition (and\n                (decoratable ?item)\n                (possesses ?npc ?item)\n                (not (decorated ?item)))\n:effect (and\n          (not (plain ?item))",
+    "(:action make\n  :parameters (?npc - entity ?item - object ?state1 - state ?state2 - state)\n  :precondition (and \n                  (has ?npc ?item) \n                  (?state1 ?item)\n                  (not (?state2 ?item)))\n  :effect (and \n            (not (?state1 ?item))",
+    "(:action make\n     :parameters (?npc - npc ?h - helmet ?helmet-visible - state ?helmet-invisible - state)\n     :precondition (and\n                     (has ?npc ?h)\n                     (helmet-visible ?h)\n                     (not (helmet-invisible ?h)))\n     :effect (and\n               (not (helmet-visible ?h))",
+    "(:action make\n     :parameters (?npc - npc ?c - clothing ?dirty - state ?clean - state)\n     :precondition (and\n                     (has ?npc ?c)\n                     (dirty ?c)\n                     (not (clean ?c)))\n     :effect (and\n               (not (dirty ?c))",
+    "(:action make\n     :parameters (?npc - npc ?h - helmet ?plain - state ?camouflaged - state)\n     :precondition (and\n                     (has ?npc ?h)\n                     (plain ?h)\n                     (not (camouflaged ?h)))\n     :effect (and\n               (not (plain ?h))"
+]

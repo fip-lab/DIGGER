@@ -1,0 +1,10 @@
+{
+    "obtain": [
+        "(:action obtain_fizzy_drink\n    :parameters (?p - player ?d - fizzy_drink ?s - store)\n    :precondition (and (at ?p ?s) (for_sale ?d ?s))\n    :effect (and (not (for_sale ?d ?s)) (inventory ?p ?d))\n)\n\n",
+        "(:action replace_rusty_bolt\n    :parameters (?p - player ?b - old_bolt ?m - machine)\n    :precondition (and (at ?p ?m) (clean ?b))\n    :effect (and (not (in ?b ?m)) (on_counter ?b) (new ?b))\n)\n```\n\nThese actions follow the task steps and entity states provided, ensuring that each action has the necessary preconditions and effects."
+    ],
+    "pour": [
+        "(:action pour_fizzy_drink_over_bolt\n    :parameters (?p - player ?d - fizzy_drink ?b - old_bolt)\n    :precondition (and (inventory ?p ?d) (at ?p ?b) (sealed ?d))\n    :effect (and (not (sealed ?d)) (on ?d ?b) (wet ?b))\n)\n\n",
+        "(:action wipe_bolt_with_towel\n    :parameters (?p - player ?t - towel ?b - old_bolt)\n    :precondition (and (inventory ?p ?t) (at ?p ?b) (wet ?b))\n    :effect (and (not (wet ?b)) (clean ?b) (dirty ?t) (wet ?t))\n)\n\n"
+    ]
+}

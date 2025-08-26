@@ -1,0 +1,13 @@
+{
+    "cut": [
+        "(:action cut_strips\n  :parameters (?npc - npc ?elastic - elastic)\n  :precondition (and (at ?npc ?loc) (at ?elastic ?loc) (shape ?elastic uncut))\n  :effect (and (shape ?elastic cut) (location ?elastic in_lap) (length ?elastic shorter)))\n\n"
+    ],
+    "slip": [
+        "(:action slip_larger_beads\n  :parameters (?npc - npc ?bead - bead ?elastic - elastic)\n  :precondition (and (at ?npc ?loc) (at ?bead ?loc) (at ?elastic ?loc) (location ?bead off_strip))\n  :effect (and (location ?bead on_strip) (organization ?bead in_order_on_band) (shape ?bead banded)))\n\n",
+        "(:action slip_smaller_bead\n  :parameters (?npc - npc ?bead - bead ?elastic - elastic)\n  :precondition (and (at ?npc ?loc) (at ?bead ?loc) (at ?elastic ?loc) (location ?bead off_strip))\n  :effect (and (location ?bead on_strip) (organization ?bead in_order_on_band) (shape ?bead banded)))\n\n"
+    ],
+    "finish": [
+        "(:action finish_ring\n  :parameters (?npc - npc ?elastic - elastic)\n  :precondition (and (at ?npc ?loc) (at ?elastic ?loc) (shape ?elastic cut) (organization ?bead in_order_on_band))\n  :effect (and (shape ?elastic rounded) (location ?elastic on_finger)))\n\n",
+        "(:action finish_wreath\n  :parameters (?npc - npc ?wreath - wreath)\n  :precondition (and (at ?npc ?loc) (status ?wreath in_progress))\n  :effect (and (status ?wreath completed)))\n```\n\nExplanation:\n1. **cut_strips**: This action cuts a strip of elastic, changing its shape to \"cut\" and its length to \"shorter\".\n2. **slip_larger_beads**: This action slips larger beads onto the elastic, changing the bead's location to \"on_strip\" and its organization to \"in_order_on_band\".\n3. **slip_smaller_bead**: This action slips a smaller bead onto the elastic, changing the bead's location to \"on_strip\" and its organization to \"in_order_on_band\".\n4. **finish_ring**: This action finishes the ring by rounding the elastic and placing it on the finger.\n5. **finish_wreath**: This action finishes the wreath, changing its status to \"completed\".\n\nPlease note that the steps were slightly modified to ensure relevance to the task and to fit the PDDL structure."
+    ]
+}

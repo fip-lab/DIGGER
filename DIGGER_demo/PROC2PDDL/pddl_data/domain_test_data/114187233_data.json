@@ -1,0 +1,115 @@
+[
+    {
+        "task": "get_coconut_juice",
+        "step": [
+            "go west npc counter fridge",
+            "get coconut npc fridge",
+            "go east npc fridge counter",
+            "go north npc counter rack",
+            "get knife npc rack",
+            "pierce npc",
+            "drain npc rack"
+        ],
+        "desc": [
+            "Use a knife to shave off the tender white casing. Position your young coconut on a cutting board, and use a sharp cleaver or a sturdy chef\u2019s knife to slice off the outer casing. Carve at an angle, as if you were removing the skin from an apple, until you expose the hard inner shell. Work to expose as much of the shell as possible.",
+            "Turn the coconut upside down over a glass and allow it to drain. Let the coconut sit for several minutes or until all of the liquid drains out. You may need to shake the coconut a few times to get the last bit of water out of it."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action drain\n      :parameters (?p - player ?l - location)\n      :precondition (and (inventory ?p coconut) (pierced coconut) (not(smashed coconut)) (not(burnt coconut)) (at glass ?l) (at ?p ?l))\n      :effect (and (inventory ?p coconut_juice) (empty coconut))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action pierce ; pierce the coconut\n      :parameters (?p - player)\n      :precondition (and (inventory ?p coconut) (not(pierced coconut)) (inventory ?p knife))\n      :effect (pierced coconut)\n   )"
+        ],
+        "goal_state": "((inventory npc coconut_juice))"
+    },
+    {
+        "task": "get_coconut_meat_without_oven",
+        "step": [
+            "go west npc counter fridge",
+            "get coconut npc fridge",
+            "go east npc fridge counter",
+            "get mallet npc counter",
+            "go north npc counter rack",
+            "get knife npc rack",
+            "get towel npc rack",
+            "pierce npc",
+            "drain npc rack",
+            "go south npc rack counter",
+            "wrap_coconut npc towel",
+            "smash_with_mallet npc",
+            "unwrap_coconut npc towel",
+            "drop towel npc counter",
+            "separate npc bag",
+            "peel npc"
+        ],
+        "desc": [
+            "Whack the wrapped coconut with a hammer, or bash it against a hard surface. With the coconut still wrapped in the towel, use a hammer or a mallet to repeatedly and forcefully whack the coconut. Turn the coconut as you hammer it, in order to strike it from multiple angles. Hammer it until you feel it break open beneath the towel.",
+            "Wrap the mature coconut in a kitchen towel. Place the coconut in the center of the towel, and gather the corners of the towel together to form a pouch. This will keep coconut bits from flying when you go to smash it with a hammer.",
+            "Use a knife to shave off the tender white casing. Position your young coconut on a cutting board, and use a sharp cleaver or a sturdy chef\u2019s knife to slice off the outer casing. Carve at an angle, as if you were removing the skin from an apple, until you expose the hard inner shell. Work to expose as much of the shell as possible.",
+            "Turn the coconut upside down over a glass and allow it to drain. Let the coconut sit for several minutes or until all of the liquid drains out. You may need to shake the coconut a few times to get the last bit of water out of it."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action unwrap_coconut\n      :parameters (?p - player ?w - wrappable)\n      :precondition (and (inventory ?p coconut) (wrapped coconut) (wrapped_with coconut ?w))\n      :effect (and (not (wrapped coconut)) (not(wrapped_with coconut ?w)) (inventory ?p ?w))\n   )",
+            "(:action peel\n      :parameters (?p - player)\n      :precondition (and (inventory ?p coconut_meat) (inventory ?p knife) (not(peeled coconut_meat)) (at towel counter) (at ?p counter))\n      :effect (peeled coconut_meat)\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action drop\n      :parameters (?i - item ?p - player ?l - location)\n      :precondition (and (at ?p ?l) (inventory ?p ?i))\n      :effect (and (at ?i ?l) (not (inventory ?p ?i)))\n   )",
+            "(:action drain\n      :parameters (?p - player ?l - location)\n      :precondition (and (inventory ?p coconut) (pierced coconut) (not(smashed coconut)) (not(burnt coconut)) (at glass ?l) (at ?p ?l))\n      :effect (and (inventory ?p coconut_juice) (empty coconut))\n   )",
+            "(:action separate\n      :parameters (?p - player ?w - wrappable)\n      :precondition (and (inventory ?p coconut) (inventory ?p knife) (not (wrapped coconut)) (smashed coconut) (at towel counter) (at ?p counter))\n      :effect (and (not (inventory ?p coconut)) (inventory ?p coconut_shell) (inventory ?p coconut_meat))\n   )",
+            "(:action smash_with_mallet\n      :parameters (?p - player)\n      :precondition (and (inventory ?p coconut) (inventory ?p mallet) (wrapped_with coconut towel) (empty coconut) (not(burnt coconut)) (not(smashed coconut)) (at ?p counter))\n      :effect (smashed coconut)\n   )\n)",
+            "(:action pierce ; pierce the coconut\n      :parameters (?p - player)\n      :precondition (and (inventory ?p coconut) (not(pierced coconut)) (inventory ?p knife))\n      :effect (pierced coconut)\n   )",
+            "(:action wrap_coconut\n      :parameters (?p - player ?w - wrappable)\n      :precondition (and (inventory ?p coconut) (not(wrapped coconut)) (not(smashed coconut)) (inventory ?p ?w))\n      :effect (and (wrapped coconut) (wrapped_with coconut ?w) (not(inventory ?p ?w)))\n   )"
+        ],
+        "goal_state": "((inventory npc coconut_meat) (peeled coconut_meat) (not (burnt coconut)))"
+    },
+    {
+        "task": "get_coconut_meat_with_oven",
+        "step": [
+            "go west npc counter fridge",
+            "get coconut npc fridge",
+            "go east npc fridge counter",
+            "go north npc counter rack",
+            "get knife npc rack",
+            "get towel npc rack",
+            "pierce npc",
+            "drain npc rack",
+            "go south npc rack counter",
+            "get bag npc counter",
+            "go south npc counter oven",
+            "turn_on_oven npc",
+            "burn_item npc",
+            "turn_off_oven npc",
+            "go north npc oven counter",
+            "wrap_coconut npc bag",
+            "smash_with_hands npc",
+            "drop towel npc counter",
+            "unwrap_coconut npc bag",
+            "separate npc bag",
+            "peel npc"
+        ],
+        "desc": [
+            "Wrap the mature coconut in a kitchen towel. Place the coconut in the center of the towel, and gather the corners of the towel together to form a pouch. This will keep coconut bits from flying when you go to smash it with a hammer.",
+            "Use a knife to shave off the tender white casing. Position your young coconut on a cutting board, and use a sharp cleaver or a sturdy chef\u2019s knife to slice off the outer casing. Carve at an angle, as if you were removing the skin from an apple, until you expose the hard inner shell. Work to expose as much of the shell as possible.",
+            "Use a knife to separate the meat from the shell. Remove the coconut pieces from the towel. Take each piece, and wedge a knife between the shell and the white meat of the coconut to carefully separate the two. Then, use the knife (or a vegetable peeler) or remove the fibrous layer that might still be clinging to the outside of the meat.",
+            "Whack the wrapped coconut with a hammer, or bash it against a hard surface. With the coconut still wrapped in the towel, use a hammer or a mallet to repeatedly and forcefully whack the coconut. Turn the coconut as you hammer it, in order to strike it from multiple angles. Hammer it until you feel it break open beneath the towel.",
+            "Remove the coconut and wrap it in a towel to cool. Use oven mitts to retrieve the coconut from the oven or microwave, and allow it to cool for about 5 minutes while wrapped in a towel. Doing this ensures you don\u2019t have hot coconut bits flying everywhere when you go to smash it in the next step.",
+            "Turn the coconut upside down over a glass and allow it to drain. Let the coconut sit for several minutes or until all of the liquid drains out. You may need to shake the coconut a few times to get the last bit of water out of it."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action burn_item\n      :parameters (?p - player)\n      :precondition (and (at ?p oven) (on oven) (inventory ?p coconut) (empty coconut) (not(burnt coconut)) (not(smashed coconut)))\n      :effect (burnt coconut)\n   )",
+            "(:action unwrap_coconut\n      :parameters (?p - player ?w - wrappable)\n      :precondition (and (inventory ?p coconut) (wrapped coconut) (wrapped_with coconut ?w))\n      :effect (and (not (wrapped coconut)) (not(wrapped_with coconut ?w)) (inventory ?p ?w))\n   )",
+            "(:action peel\n      :parameters (?p - player)\n      :precondition (and (inventory ?p coconut_meat) (inventory ?p knife) (not(peeled coconut_meat)) (at towel counter) (at ?p counter))\n      :effect (peeled coconut_meat)\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action drop\n      :parameters (?i - item ?p - player ?l - location)\n      :precondition (and (at ?p ?l) (inventory ?p ?i))\n      :effect (and (at ?i ?l) (not (inventory ?p ?i)))\n   )",
+            "(:action drain\n      :parameters (?p - player ?l - location)\n      :precondition (and (inventory ?p coconut) (pierced coconut) (not(smashed coconut)) (not(burnt coconut)) (at glass ?l) (at ?p ?l))\n      :effect (and (inventory ?p coconut_juice) (empty coconut))\n   )",
+            "(:action smash_with_hands\n      :parameters (?p - player)\n      :precondition (and (inventory ?p coconut) (wrapped_with coconut bag) (not(smashed coconut)) (not(on oven)) (burnt coconut) (at ?p counter))\n      :effect (smashed coconut)\n   )",
+            "(:action separate\n      :parameters (?p - player ?w - wrappable)\n      :precondition (and (inventory ?p coconut) (inventory ?p knife) (not (wrapped coconut)) (smashed coconut) (at towel counter) (at ?p counter))\n      :effect (and (not (inventory ?p coconut)) (inventory ?p coconut_shell) (inventory ?p coconut_meat))\n   )",
+            "(:action pierce ; pierce the coconut\n      :parameters (?p - player)\n      :precondition (and (inventory ?p coconut) (not(pierced coconut)) (inventory ?p knife))\n      :effect (pierced coconut)\n   )",
+            "(:action turn_off_oven\n      :parameters (?p - player)\n      :precondition (and (at ?p oven) (on oven))\n      :effect (not (on oven))\n   )",
+            "(:action turn_on_oven\n      :parameters (?p - player)\n      :precondition (and (at ?p oven) (not (on oven)))\n      :effect (on oven)\n   )",
+            "(:action wrap_coconut\n      :parameters (?p - player ?w - wrappable)\n      :precondition (and (inventory ?p coconut) (not(wrapped coconut)) (not(smashed coconut)) (inventory ?p ?w))\n      :effect (and (wrapped coconut) (wrapped_with coconut ?w) (not(inventory ?p ?w)))\n   )"
+        ],
+        "goal_state": "((inventory npc coconut_meat) (peeled coconut_meat) (burnt coconut))"
+    }
+]

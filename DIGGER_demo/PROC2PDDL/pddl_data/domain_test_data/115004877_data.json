@@ -1,0 +1,75 @@
+[
+    {
+        "task": "process-strips",
+        "step": [
+            "get wooden_board npc garage",
+            "go in npc garage work_station",
+            "soak_strips npc work_station strip",
+            "dry_out_strips npc strip",
+            "weave_strips_into_sheet npc work_station strip sheet",
+            "press_sheet npc work_station wooden_board sheet"
+        ],
+        "desc": [
+            "Lay the papyrus plant strips on a hard, flat surface. The pattern doesn't matter at this point as you will be rearranging them later. Just lay them out on a hard, flat surface and make sure they don't overlap.",
+            "Replace the wet linen sheets with dry ones. You should do this every few hours. Be careful when removing the wet linen. Peel it off of the papyrus gently. The drying process should take approximately 72 hours.",
+            "Lay the second half of the strips out. Once the first half off the strips have been laid out vertically, begin laying out the second half of the strips. Lay the strips out horizontally and on top of the vertical ones.",
+            "Dip the strips into the glue and water mixture. Dip each strip individually. Try to keep the strips as flat as possible when dipping them. Make sure the strips are fully soaked with the mixture."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action press_sheet ; \n      :parameters (?p - player ?loc - location ?wooden_board - wooden_board ?sheet - sheet) \n      :precondition (and (at ?p ?loc) (has_hard_surface ?loc) (inventory ?p ?wooden_board) (inventory ?p ?sheet))\n      :effect (and (flat ?sheet) (not (very_flat ?sheet)))\n   )",
+            "(:action soak_strips ; \n      :parameters (?p - player ?loc - location ?strip - strip) \n      :precondition (and (at ?p ?loc) (has_water ?loc) (inventory ?p ?strip))\n      :effect (and (clean ?strip) (not (dry ?strip)))\n   )",
+            "(:action dry_out_strips ; \n      :parameters (?p - player ?strip - strip) \n      :precondition (and (inventory ?p ?strip) (clean ?strip))\n      :effect (dry ?strip)\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action weave_strips_into_sheet ; \n      :parameters (?p - player ?loc - location ?strip - strip ?sheet - sheet) \n      :precondition (and (at ?p ?loc) (has_hard_surface ?loc) (inventory ?p ?strip) (dry ?strip))\n      :effect (and (inventory ?p ?sheet) (not (inventory ?p ?strip)) (not (flat ?sheet)))\n   )"
+        ],
+        "goal_state": "((inventory npc sheet) (flat sheet))"
+    },
+    {
+        "task": "get-strips",
+        "step": [
+            "get scissors npc garage",
+            "go west npc garage nursery",
+            "get plant npc nursery",
+            "cut_plant npc scissors plant stalk",
+            "peel_stalk npc stalk",
+            "cut_stalk_into_strips npc scissors stalk strip"
+        ],
+        "desc": [
+            "Peel away the outer layer of the papyrus plant. Only the inner part of the plant is used for the paper. You will need to remove the outer green part of the plant. Use a sharp knife and slice down the length of the plant until the entire outer layer is removed. The inside of the plant should be a white or slightly greenish color.",
+            "Obtain a papyrus plant. Papyrus paper is created from the Cyperus papyrus plant, which is a light but strong reed. You can buy them online or in nurseries. A nursery that specializes in papyrus would be your best bet, however.",
+            "Cut the stalks. About 12 inches (30 cm) of papyrus plant will make a large piece of paper that will be nearly 24 inches (61 cm) in length. Cut off as many stalks as you will need to make the amount of paper you want. The cuts must be diagonally made. Then, cut the tips of the papyrus. You will not use the tips, which are the thinner, grass-like end of the plant."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action peel_stalk ; \n      :parameters (?p - player ?stalk - stalk) \n      :precondition (and (not (peeled ?stalk)) (inventory ?p ?stalk))\n      :effect (peeled ?stalk)\n   )",
+            "(:action cut_stalk_into_strips ; \n      :parameters (?p - player ?scissors - scissors ?stalk - stalk ?strip - strip) \n      :precondition (and (inventory ?p ?stalk) (inventory ?p ?scissors) (peeled ?stalk))\n      :effect (and (inventory ?p ?strip) (not (inventory ?p ?stalk)) (not (clean ?strip)))\n   )",
+            "(:action cut_plant ;\n      :parameters (?p - player ?scissors - scissors ?plant - plant ?stalk - stalk) \n      :precondition  (and (inventory ?p ?scissors) (inventory ?p ?plant))\n      :effect (and (inventory ?p ?stalk) (not (inventory ?p ?plant)) (not (peeled ?stalk)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )"
+        ],
+        "goal_state": "((inventory npc strip))"
+    },
+    {
+        "task": "get-papyrus",
+        "step": [
+            "get shell npc garage",
+            "go in npc garage work_station",
+            "flatten_sheet npc work_station sheet",
+            "polish_sheet npc work_station sheet shell",
+            "cut_sheet npc garage sheet scissors papyrus"
+        ],
+        "desc": [
+            "Replace the wet linen sheets with dry ones. You should do this every few hours. Be careful when removing the wet linen. Peel it off of the papyrus gently. The drying process should take approximately 72 hours.",
+            "Flatten the sheet. The paper may not be completely flat after you remove it from the wooden boards. Put the paper under a stone slab for up to 6 days to make it completely flat.",
+            "Polish the papyrus. This step isn't absolutely necessary, but it will make the papyrus look nicer and more finished. Use a shell or smooth piece of ivory. Any type of shell that is smooth and without ridges will do. Rub the shell or ivory over the sheet of paper until it appears to be shinier than it was."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action polish_sheet ; \n      :parameters (?p - player ?loc - location ?sheet - sheet ?shell - shell) \n      :precondition (and (at ?p ?loc) (has_hard_surface ?loc) (inventory ?p ?sheet) (inventory ?p ?shell) (very_flat ?sheet))\n      :effect (and (not (inventory ?p ?shell)) (smooth ?sheet))\n   )",
+            "(:action cut_sheet ; \n      :parameters (?p - player ?loc - location ?sheet - sheet ?scissors - scissors ?papyrus - papyrus) \n      :precondition (and (inventory ?p ?scissors) (smooth ?sheet))\n      :effect (inventory ?p ?papyrus)\n   )\n)",
+            "(:action flatten_sheet ; \n      :parameters (?p - player ?loc - location ?sheet - sheet) \n      :precondition (and (at ?p ?loc) (has_hard_surface ?loc) (inventory ?p ?sheet) (flat ?sheet))\n      :effect (and (very_flat ?sheet) (not (smooth ?sheet)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )"
+        ],
+        "goal_state": "((inventory npc papyrus))"
+    }
+]

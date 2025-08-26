@@ -1,0 +1,4 @@
+[
+    "(:action cut ; Cut an item to obtain a derived item and update inventory status\n  :parameters (?p - person ?item - object ?derived_item - object)\n  :precondition (and (inventory ?p ?item))\n  :effect (and (inventory ?p ?derived_item) (not (inventory ?p ?item))",
+    "(:action slip ; Slip beads onto a strip\n  :parameters (?p - player ?strip - strip ?bead1 - bead ?bead2 - bead ?small_bead - bead)\n  :precondition (and (inventory ?p ?strip) (inventory ?p ?bead1) (inventory ?p ?small_bead)\n                     (or (not (exists (?bead2 - bead) (inventory ?p ?bead2))) (inventory ?p ?bead2)))\n  :effect (and (on_strip ?strip ?small_bead)\n               (when (inventory ?p ?bead1) (on_strip ?strip ?bead1))"
+]

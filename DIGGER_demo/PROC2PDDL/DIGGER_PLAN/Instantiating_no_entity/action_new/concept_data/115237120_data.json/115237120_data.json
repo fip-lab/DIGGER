@@ -1,0 +1,6 @@
+[
+    "(:action get ; Acquire an item or reach a state of safety\n  :parameters (?npc - character ?target - object ?location - location)\n  :precondition (and\n    (available ?npc)\n    (not (acquired ?npc ?target))\n    (in_area ?npc ?location))\n  :effect (and\n    (acquired ?npc ?target)\n    (safe ?npc))",
+    "(:action purify ; Purify a resource and update its status\n    :parameters (?entity - resource ?method1 - method ?method2 - method)\n    :precondition (and\n      (impure ?entity)\n      (available ?method1)\n      (available ?method2)\n    )\n    :effect (and\n      (pure ?entity)\n      (not (impure ?entity))",
+    "(:action drink ; Consume a resource to alleviate a need\n  :parameters (?npc - entity ?liquid - resource)\n  :precondition (and \n    (safe_to_consume ?liquid)\n    (needs_hydration ?npc)\n  )\n  :effect (and\n    (not (needs_hydration ?npc))",
+    "(:action learn ; Learn a skill or gather necessary resources\n  :parameters (?npc - entity ?resource - object ?skill - skill)\n  :precondition (and\n    (has_resource ?resource)\n    (not (has_skill ?npc ?skill))\n  )\n  :effect (and\n    (has_skill ?npc ?skill)\n  )"
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "task": "Make a Pipe Cleaner Bird",
+        "instantiting_action": [
+            "get(entity agent location)",
+            "clean(agent item loc)",
+            "pickup(item p l)"
+        ]
+    },
+    {
+        "task": "Make Marshmallow Cream Cheese Fruit Dip",
+        "instantiting_action": [
+            "place(p item target)",
+            "blend(p item1 item2 bl)"
+        ]
+    },
+    {
+        "task": "Camouflage Equipment",
+        "instantiting_action": [
+            "set(entity1 entity2 group)",
+            "talk_in_private(p npc sg)",
+            "talk(p npc grp)",
+            "gather(p item sg)",
+            "spy(p sg gear equipment victim place)"
+        ]
+    },
+    {
+        "task": "Make Rhubarb Cordial",
+        "instantiting_action": [
+            "prepare(agent entity)",
+            "take(item source agent)",
+            "dip(agent item substance)",
+            "plant(entity area agent)",
+            "plant(entity yard agent)"
+        ]
+    },
+    {
+        "task": "Make a Pitcher of Melon Pina Coladas",
+        "instantiting_action": [
+            "place(p item target)",
+            "blend(p item1 item2 bl)"
+        ]
+    },
+    {
+        "task": "Make Soap Bubbles for Your Children",
+        "instantiting_action": [
+            "mix(p item storage)",
+            "pour_into_container(p soup container)",
+            "pour_into_container(p soup mortar)",
+            "pour(actor soap target)",
+            "pour(actor air target)",
+            "grind(p item pestle)",
+            "gotolocation(agent storage)",
+            "process_ingredients(agent ingredient container pestle)",
+            "process_ingredients(agent ingredient mortar pestle)"
+        ]
+    }
+]

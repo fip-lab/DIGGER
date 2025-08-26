@@ -1,0 +1,151 @@
+[
+    {
+        "title": "How to Climb a Mountain",
+        "steps": [
+            "Do your research.",
+            "Assess your mental strength.",
+            "Get fit.",
+            "Acquire the gear.",
+            "Learn about mountaineering ethics.",
+            "Get training.",
+            "Plan your first climb.",
+            "Keep improving your skills and trying harder mountain climbs.",
+            "Find a good guide.",
+            "Prepare for the trip.",
+            "Understand what's involved on arrival at the mountain.",
+            "Begin climbing.",
+            "Descend with plenty of time to get back safely."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Rock Climb",
+        "steps": [
+            "Keep your hips close to the wall.",
+            "Relax your grip.",
+            "Find your \"dead point\" when making big moves on the wall.",
+            "Climb with rhythm.",
+            "Climb down a few routes.",
+            "Increase your climbing pace while staying deliberate in your movements.",
+            "Watch other climbers to learn new moves and possible betas."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Climb Buildings",
+        "steps": [
+            "First, identify the building you want to climb.",
+            "Check for climbing holds.",
+            "Find a good starting point.",
+            "Follow your route.",
+            "Stay safe."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Lead Climb Indoors",
+        "steps": [
+            "Check with your local climbing gym about their lead climbing policy.",
+            "Expect to pay a small fee for the class and/or certification test.",
+            "Many gyms have quickdraws permanently attached to the walls.",
+            "Most gyms provide lead climbing ropes for you, but occasionally you may need to provide your own.",
+            "Check that your harness is properly buckled, and the waist belt fits above your hip bones.",
+            "Ensure that your partner is ready to belay you.",
+            "Examine the route before you start climbing, thinking through not just the moves of how to climb it but looking at where each clip-in point is located.",
+            "Tell your partner that you're about to start climbing, and wait for her go-ahead before you proceed.",
+            "Grasp the climbing rope near your harness and clip it through the first quickdraw.",
+            "Continue climbing and clipping into each protection point as you go."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Begin Glacier Climbing",
+        "steps": [
+            "Be in good shape.",
+            "Take a safety course to learn the best methods of glacier climbing.",
+            "Understand glacial terrain.",
+            "Learn about glacier hazards.",
+            "Practice glacier rescue techniques.",
+            "Be a good compass and map reader.",
+            "Learn to read weather reports.",
+            "Have the right gear.",
+            "Know your chosen glacier.",
+            "Know your teammate."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Get Fit for Climbing",
+        "steps": [
+            "Improve upper body strength.",
+            "Start doing arm pull ups, sit ups, weightlifting and other exercises that would help.",
+            "Try to make yourself more agile -- seriously, it helps.",
+            "Do hand and finger exercises so your strength in your hands get stronger.",
+            "Do your best to try to make your grip better.",
+            "Improve your cardio-vascular fitness by including exercises like running, biking, swimming or jumping rope in your exercise routine.",
+            "Include balance exercises in your training program.",
+            "Buy a fitness ball, like those used in pilates, and learn to use it.",
+            "Learn to  Walk a Slackline.",
+            "Eat healthy foods.",
+            "Go climbing!."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Climb a Rope",
+        "steps": [
+            "Choose your rope.",
+            "Build your upper-body strength.",
+            "Test yourself.",
+            "Fasten your rope.",
+            "Practice climbing safety."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Buy a Climbing Harness",
+        "steps": [
+            "Select a comfortable harness with small gear loops for sport climbing.",
+            "Opt for a harness with large gear loops for traditional cragging.",
+            "Go with a harness with lots of gear storage for multi-pitch climbing.",
+            "Look for a harness with ice clipper slots for ice climbing.",
+            "Search for a versatile harness if you\u2019ll be doing alpine climbing.",
+            "Buy a harness that is comfortable for walking in for mountaineering.",
+            "Purchase a specialty big wall harness for big wall climbing."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Belay",
+        "steps": [
+            "Get rock climbing harnesses with belay loops.",
+            "Put the harness on correctly.",
+            "Use a safe locking carabiner with your belay device.",
+            "Get good climbing shoes.",
+            "Use climbing chalk."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Build a Home Rock Climbing Wall",
+        "steps": [
+            "Decide exactly what you want out of your rock climbing wall.",
+            "Plan on the construction method you will use for your wall.",
+            "Calculate exactly how much the wall will cost, exactly what supplies you will need and all the technicalities.",
+            "Build your wall.",
+            "Finish the wall surface, paint, and apply texture.",
+            "Consider what your fall zone is going to be.",
+            "Crank your holds on and build your routes."
+        ],
+        "cluster_label": 801
+    },
+    {
+        "title": "How to Start Rock Climbing",
+        "steps": [
+            "Search online for outdoor rock climbing classes in your area.",
+            "Hire a personal guide if you don't like group classes.",
+            "Practice with a partner in areas with minimal drops as your skills progress."
+        ],
+        "cluster_label": 801
+    }
+]

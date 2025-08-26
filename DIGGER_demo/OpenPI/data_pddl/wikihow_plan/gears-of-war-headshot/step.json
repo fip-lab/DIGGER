@@ -1,0 +1,116 @@
+{
+    "goal": "Get a Headshot in Gears of War",
+    "steps": [
+        "Sniper \u2014 Simply aim at the head and pull the trigger, unless you're the host, in which case you will need to aim in front of where they're going.",
+        "Shotgun \u2014 The aim on the shotgun is almost like a rectangle.",
+        "Pistol \u2014 I'm not sure because I haven't played in a while, but it's either six or seven shots to the head with the standard-issue pistol for a headshot.",
+        "BoomShot \u2014 BoomShot headshots are possible \u2014 don't let anyone tell you they're not but the chance of one happening is about a million to one."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/8/82/Get-a-Headshot-in-Gears-of-War-Step-1.jpg/aid177564-v4-728px-Get-a-Headshot-in-Gears-of-War-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/6/63/Get-a-Headshot-in-Gears-of-War-Step-2.jpg/aid177564-v4-728px-Get-a-Headshot-in-Gears-of-War-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/2/2b/Get-a-Headshot-in-Gears-of-War-Step-3.jpg/aid177564-v4-728px-Get-a-Headshot-in-Gears-of-War-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/6/6d/Get-a-Headshot-in-Gears-of-War-Step-4.jpg/aid177564-v4-728px-Get-a-Headshot-in-Gears-of-War-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "weapon",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "still | down",
+                        "after": "focused | up",
+                        "saliency": 0.6376811594202899,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "unfired",
+                        "after": "fired",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "gun | weapon"
+            ]
+        },
+        {
+            "entity": "you",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unsure where to aim",
+                        "after": "aware of where to aim",
+                        "saliency": 0.41770186335403725,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "shape",
+                        "before": "unaware of shape of aim on shotgun",
+                        "after": "aware of shape of aim on shotgun",
+                        "saliency": 0.11977225672877848,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unaware of how many shots is needed for a pistol head shot",
+                        "after": "needed for a pistol head shot",
+                        "saliency": 0.34006211180124224,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unaware of odds of boomshot headshot",
+                        "after": "aware of odds of boomshot headshot",
+                        "saliency": 0.41770186335403725,
+                        "attribute_annotation": "knowledge"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "you"
+            ]
+        }
+    ],
+    "clusters": {
+        "weapon": {
+            "entity_cluster": [
+                "gun",
+                "weapon"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "you": {
+            "entity_cluster": [
+                "you"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ],
+                "shape": [
+                    "shape"
+                ]
+            }
+        }
+    }
+}

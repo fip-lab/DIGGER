@@ -1,0 +1,755 @@
+{
+    "goal": "Make Taco Filling",
+    "steps": [
+        "Brown the meat and the onion in a medium sized frying pan.",
+        "Drain the excess fat.",
+        "Add the remaining ingredients (except for the hot sauce) and simmer for fifteen minutes.",
+        "Finished."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/b/b9/Make-Taco-Filling-Step-1.jpg/aid2234384-v4-728px-Make-Taco-Filling-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/b/ba/Make-Taco-Filling-Step-2.jpg/aid2234384-v4-728px-Make-Taco-Filling-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/b/b7/Make-Taco-Filling-Step-3.jpg/aid2234384-v4-728px-Make-Taco-Filling-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/f/f7/Make-Taco-Filling-Intro.jpg/aid2234384-v4-728px-Make-Taco-Filling-Intro.jpg"
+    ],
+    "states": [
+        {
+            "entity": "tomato",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "chopped | in pieces",
+                        "saliency": 0.7929606625258799,
+                        "attribute_annotation": "form | composition | shape"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "cooked | hot",
+                        "saliency": 0.35457951296460616,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "uncooked",
+                        "after": "cooked",
+                        "saliency": 0.6771172237010746,
+                        "attribute_annotation": "cooked or not"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "moisture",
+                        "before": "more wet",
+                        "after": "less wet",
+                        "saliency": 0.47993690229715075,
+                        "attribute_annotation": "moisture"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "diced",
+                        "saliency": 0.6315685694567682,
+                        "attribute_annotation": "form"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan",
+                        "saliency": 0.5045844424726412,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot",
+                        "saliency": 0.36690328305235137,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked",
+                        "saliency": 0.5994774721482796,
+                        "attribute_annotation": "cooked or not"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "simmering",
+                        "saliency": 0.5169082125603864,
+                        "attribute_annotation": "movement"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in skillet",
+                        "after": "in bowl",
+                        "saliency": 0.47993690229715075,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "onion",
+                "tomato",
+                "ingredients | spices",
+                "liquids",
+                "beef",
+                "food"
+            ]
+        },
+        {
+            "entity": "sink",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in pan",
+                        "saliency": 0.7831016464556838,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "more full",
+                        "saliency": 0.4765454007690032,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.4676131322094055,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "raw",
+                        "after": "cooked",
+                        "saliency": 0.46026816523710934,
+                        "attribute_annotation": "cooked or not | wetness"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "pink | red",
+                        "after": "brown",
+                        "saliency": 0.41989549442965596,
+                        "attribute_annotation": "color"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in pan | in frying pan",
+                        "after": "in disposal container | drained from frying pan | in sink",
+                        "saliency": 0.5243024746130337,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.3299319727891157,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "wet | more wet",
+                        "after": "drier | more dry",
+                        "saliency": 0.30498866213151926,
+                        "attribute_annotation": "cooked or not | wetness"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "more full",
+                        "after": "less full",
+                        "saliency": 0.28403825298235236,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "more greasy",
+                        "after": "less greasy",
+                        "saliency": 0.259647047224687,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.18697623977127084,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "warmer",
+                        "saliency": 0.14108251996450755,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.3299319727891157,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "less full",
+                        "after": "more full",
+                        "saliency": 0.3212658976634132,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "cooked or not",
+                        "before": "less cooked",
+                        "after": "more cooked",
+                        "saliency": 0.2504683032633343,
+                        "attribute_annotation": "how cooked"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "on stove",
+                        "after": "on counter/table",
+                        "saliency": 0.47254264024450365,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "meat | fat | pan",
+                "grease c ontainer",
+                "sink"
+            ]
+        },
+        {
+            "entity": "grease container",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.6278221433500937,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "grease container"
+            ]
+        },
+        {
+            "entity": "serving bowl",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.5785270629991127,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.44084590357882286,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.39495218377205954,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot",
+                        "saliency": 0.273415163166716,
+                        "attribute_annotation": "temperature"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "serving bowl",
+                "bowl"
+            ]
+        },
+        {
+            "entity": "hot sauce",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in bowl",
+                        "saliency": 0.541555752735877,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "mild",
+                        "after": "spicy",
+                        "saliency": 0.5045844424726412,
+                        "attribute_annotation": "taste"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "hot sauce",
+                "flavor"
+            ]
+        },
+        {
+            "entity": "spatula",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.5169082125603864,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.49226067238489596,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "spatula",
+                "knife"
+            ]
+        },
+        {
+            "entity": "frying pan",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot",
+                        "saliency": 0.5169082125603864,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "fullness",
+                        "before": "less full",
+                        "after": "more full",
+                        "saliency": 0.3792270531400966,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.3333333333333333,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "quiet",
+                        "after": "sizzling",
+                        "saliency": 0.3103864734299517,
+                        "attribute_annotation": "sound"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "skillet",
+                "frying pan"
+            ]
+        },
+        {
+            "entity": "grease",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in pan",
+                        "after": "in trash",
+                        "saliency": 0.5045844424726412,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "hotter",
+                        "after": "cooler",
+                        "saliency": 0.36690328305235137,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "grease"
+            ]
+        },
+        {
+            "entity": "cheese",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in bowl",
+                        "saliency": 0.5045844424726412,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "whole",
+                        "after": "shredded",
+                        "saliency": 0.47781721384205855,
+                        "attribute_annotation": "form | composition"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "cheese"
+            ]
+        },
+        {
+            "entity": "recipe",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unknown",
+                        "after": "learned",
+                        "saliency": 0.5045844424726412,
+                        "attribute_annotation": "knowledge"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "recipe"
+            ]
+        },
+        {
+            "entity": "stove",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.30868579315784284,
+                        "attribute_annotation": "power"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "power",
+                        "before": "on",
+                        "after": "off",
+                        "saliency": 0.1534062900522528,
+                        "attribute_annotation": "power"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "stove"
+            ]
+        }
+    ],
+    "clusters": {
+        "frying pan": {
+            "entity_cluster": [
+                "frying pan",
+                "skillet",
+                "pan"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "cooked or not": [
+                    "how cooked",
+                    "cooked or not"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "color": [
+                    "color"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "sound": [
+                    "sound"
+                ]
+            }
+        },
+        "grease": {
+            "entity_cluster": [
+                "grease",
+                "fat"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "cooked or not": [
+                    "how cooked",
+                    "cooked or not"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "color": [
+                    "color"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "recipe": {
+            "entity_cluster": [
+                "recipe"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "serving bowl": {
+            "entity_cluster": [
+                "serving bowl",
+                "bowl"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "grease container": {
+            "entity_cluster": [
+                "grease container"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "spatula": {
+            "entity_cluster": [
+                "knife",
+                "spatula"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "stove": {
+            "entity_cluster": [
+                "stove"
+            ],
+            "attribute_cluster": {
+                "power": [
+                    "power"
+                ]
+            }
+        },
+        "tomato": {
+            "entity_cluster": [
+                "onion",
+                "liquids",
+                "spices",
+                "food",
+                "tomato",
+                "beef",
+                "ingredients"
+            ],
+            "attribute_cluster": {
+                "form": [
+                    "form"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "location": [
+                    "location"
+                ],
+                "cooked or not": [
+                    "cooked or not"
+                ],
+                "movement": [
+                    "movement"
+                ],
+                "moisture": [
+                    "moisture"
+                ]
+            }
+        },
+        "hot sauce": {
+            "entity_cluster": [
+                "hot sauce",
+                "flavor"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "taste": [
+                    "taste"
+                ]
+            }
+        },
+        "cheese": {
+            "entity_cluster": [
+                "cheese"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "form": [
+                    "form"
+                ],
+                "composition": [
+                    "composition"
+                ]
+            }
+        },
+        "sink": {
+            "entity_cluster": [
+                "sink",
+                "meat",
+                "grease c ontainer"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "cooked or not": [
+                    "how cooked",
+                    "cooked or not"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "color": [
+                    "color"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        }
+    }
+}

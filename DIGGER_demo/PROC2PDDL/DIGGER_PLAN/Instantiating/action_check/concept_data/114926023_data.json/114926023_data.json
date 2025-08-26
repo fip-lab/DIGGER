@@ -1,0 +1,3 @@
+[
+    "```lisp\n[\n(:action create\n  :parameters (?n - agent ?b - location ?i - item)\n  :precondition (at ?n ?b)\n  :effect (and \n            (raft_created ?i)\n            (not (raft_draft_available ?i)))\n),\n(:action put\n  :parameters (?agent - agent ?item - object ?from - location ?to - location)\n  :precondition (and \n                  (location ?item ?from)\n                  (can_access ?agent ?from)\n                  (not (location ?item ?to))\n                  (not (location ?agent ?to))\n                )\n  :effect (and\n           (location ?item ?to)\n           (agent_moved ?agent ?to)\n           (not (location ?item ?from)))\n)\n]\n```"
+]

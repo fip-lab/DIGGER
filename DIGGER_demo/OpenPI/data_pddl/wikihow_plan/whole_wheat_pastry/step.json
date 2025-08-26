@@ -1,0 +1,494 @@
+{
+    "goal": "Make Whole Wheat Pastry With Canola",
+    "steps": [
+        "Place the whole wheat flour and salt into the mixing bowl.",
+        "Pour in the oil.",
+        "Place the pastry onto a sheet of wax paper.",
+        "Remove from the fridge.",
+        "Press the pastry into the pie dish.",
+        "Create an edge with the sides of a fork."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/7/74/Make-Whole-Wheat-Pastry-With-Canola-Step-1.jpg/aid968323-v4-728px-Make-Whole-Wheat-Pastry-With-Canola-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/e/ef/Make-Whole-Wheat-Pastry-With-Canola-Step-2.jpg/aid968323-v4-728px-Make-Whole-Wheat-Pastry-With-Canola-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/0/07/Make-Whole-Wheat-Pastry-With-Canola-Step-3.jpg/aid968323-v4-728px-Make-Whole-Wheat-Pastry-With-Canola-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/e/e3/Make-Whole-Wheat-Pastry-With-Canola-Step-4.jpg/aid968323-v4-728px-Make-Whole-Wheat-Pastry-With-Canola-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/4/41/Make-Whole-Wheat-Pastry-With-Canola-Step-5.jpg/aid968323-v4-728px-Make-Whole-Wheat-Pastry-With-Canola-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/9/92/Make-Whole-Wheat-Pastry-With-Canola-Step-6.jpg/aid968323-v4-728px-Make-Whole-Wheat-Pastry-With-Canola-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "mixing bowl",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed",
+                        "saliency": 0.5729813664596274,
+                        "attribute_annotation": "location | composition"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt",
+                        "saliency": 0.36719428304281043,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier",
+                        "saliency": 0.22951312362252055,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed",
+                        "saliency": 0.29300518711458406,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet",
+                        "saliency": 0.561711079943899,
+                        "attribute_annotation": "wetness | moisture"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended",
+                        "saliency": 0.4673746076270621,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet",
+                        "saliency": 0.4890803446203166,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge",
+                        "saliency": 0.3338008415147265,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled",
+                        "saliency": 0.27375943364723165,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller",
+                        "saliency": 0.2530554998998197,
+                        "attribute_annotation": "size"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "flour and salt",
+                "mixture | mixture in bowl",
+                "dry and wet ingredients",
+                "mixing bowl",
+                "ingredients"
+            ]
+        },
+        {
+            "entity": "dough",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in bowl | balled",
+                        "after": "on wax paper | flattened",
+                        "saliency": 0.4782274761236893,
+                        "attribute_annotation": "location | shape"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in refrigerator",
+                        "after": "on counter",
+                        "saliency": 0.4005877245708943,
+                        "attribute_annotation": "location | shape"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "warm",
+                        "saliency": 0.1877713217124157,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "location",
+                        "before": "in mound on table | round",
+                        "after": "in pan | pan shaped",
+                        "saliency": 0.4782274761236893,
+                        "attribute_annotation": "location | shape"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "rigid",
+                        "saliency": 0.1418776019056524,
+                        "attribute_annotation": "texture"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "pastry",
+                "dough"
+            ]
+        },
+        {
+            "entity": "edge",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "texture",
+                        "before": "smoother",
+                        "after": "bumpy",
+                        "saliency": 0.5500233754090696,
+                        "attribute_annotation": "texture"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "uneven",
+                        "after": "shaped",
+                        "saliency": 0.38639551192145866,
+                        "attribute_annotation": "shape"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in hand",
+                        "saliency": 0.38639551192145866,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "edges",
+                "edge",
+                "fork"
+            ]
+        },
+        {
+            "entity": "bowl",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.1503706672009617,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavy",
+                        "after": "light",
+                        "saliency": 0.30875576036866365,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "bowl"
+            ]
+        },
+        {
+            "entity": "fridge door",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.3755426434248314,
+                        "attribute_annotation": "electric conductivity"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed",
+                        "saliency": 0.36719428304281043,
+                        "attribute_annotation": "openness"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "fridge light",
+                "fridge door"
+            ]
+        },
+        {
+            "entity": "pie dish",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "covered in pastry",
+                        "saliency": 0.34214920189674747,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.2044680424764576,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.15857432266969432,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "pie dish"
+            ]
+        },
+        {
+            "entity": "oil",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet | in bottle",
+                        "after": "in bowl",
+                        "saliency": 0.24036599211914783,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed with flour",
+                        "saliency": 0.17152541240900288,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "oil"
+            ]
+        },
+        {
+            "entity": "wax paper",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "area",
+                        "before": "on roll",
+                        "after": "covering tray",
+                        "saliency": 0.21281640285847858,
+                        "attribute_annotation": "area"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "wax paper"
+            ]
+        }
+    ],
+    "clusters": {
+        "pie dish": {
+            "entity_cluster": [
+                "pie dish"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        },
+        "fridge door": {
+            "entity_cluster": [
+                "fridge light",
+                "fridge door"
+            ],
+            "attribute_cluster": {
+                "electric conductivity": [
+                    "electric conductivity"
+                ],
+                "openness": [
+                    "openness"
+                ]
+            }
+        },
+        "wax paper": {
+            "entity_cluster": [
+                "wax paper"
+            ],
+            "attribute_cluster": {
+                "area": [
+                    "area"
+                ]
+            }
+        },
+        "dough": {
+            "entity_cluster": [
+                "pastry",
+                "dough"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "texture": [
+                    "texture"
+                ]
+            }
+        },
+        "edge": {
+            "entity_cluster": [
+                "edge",
+                "edges",
+                "fork"
+            ],
+            "attribute_cluster": {
+                "texture": [
+                    "texture"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "oil": {
+            "entity_cluster": [
+                "oil"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "composition": [
+                    "composition"
+                ]
+            }
+        },
+        "mixing bowl": {
+            "entity_cluster": [
+                "mixing bowl",
+                "ingredients",
+                "mixture",
+                "dry and wet ingredients",
+                "mixture in bowl",
+                "flour and salt"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "wetness": [
+                    "moisture",
+                    "wetness"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "size": [
+                    "size"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "bowl": {
+            "entity_cluster": [
+                "bowl"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        }
+    }
+}

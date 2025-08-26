@@ -1,0 +1,227 @@
+task,nl_step
+put CellPhone2 on the Sofa3 Do not put it in Box1,"### Solution:
+
+To complete the task of placing **CellPhone2** on **Sofa3** and ensuring it is **not** placed in **Box1**, follow these steps:
+
+1. **Locate CellPhone2**: Identify where **CellPhone2** is currently located.  
+2. **Pick up CellPhone2**: Carefully pick up **CellPhone2**.  
+3. **Locate Sofa3**: Find **Sofa3** in the room.  
+4. **Place CellPhone2 on Sofa3**: Gently place **CellPhone2** on **Sofa3**.  
+5. **Verify it is not in Box1**: Double-check that **CellPhone2** is **not** in **Box1**.  
+
+### Final Outcome:  
+**CellPhone2** is successfully placed on **Sofa3** and is **not** in **Box1**."
+put CD1 next to Sofa1 Do not move CreditCard1,"To solve the task of placing CD1 next to Sofa1 without moving CreditCard1, follow these steps:
+
+1. **Locate CD1**: Identify where CD1 is currently placed.
+2. **Locate Sofa1**: Identify the position of Sofa1.
+3. **Ensure CreditCard1 remains stationary**: Verify that CreditCard1 is not in the path or area where CD1 needs to be moved.
+4. **Move CD1**: Carefully pick up CD1 and place it directly next to Sofa1, ensuring it is positioned as desired (e.g., on a table or shelf near Sofa1).
+5. **Verify placement**: Double-check that CD1 is correctly placed next to Sofa1 and that CreditCard1 has not been disturbed.
+
+This approach ensures the task is completed efficiently and without affecting CreditCard1."
+put KeyChain1 on the Sofa2 Do not put it in Box1,"### Solution:
+
+To complete the task of placing **KeyChain1** on **Sofa2** while ensuring it is not placed in **Box1**, follow these steps:
+
+1. **Locate KeyChain1**: Identify where **KeyChain1** is currently located.
+2. **Pick up KeyChain1**: Gently pick up **KeyChain1** from its current location.
+3. **Identify Sofa2**: Find **Sofa2** in the room or area where the task is being performed.
+4. **Place KeyChain1 on Sofa2**: Carefully place **KeyChain1** on **Sofa2**, ensuring it is visible and not hidden.
+5. **Avoid Box1**: Make sure **KeyChain1** is not placed inside **Box1** at any point during this process.
+6. **Verify Placement**: Double-check that **KeyChain1** is securely placed on **Sofa2** and not in **Box1**.
+
+### Final Confirmation:
+- **KeyChain1** is now on **Sofa2**.
+- **KeyChain1** is **not** in **Box1**.
+
+Task completed successfully!"
+move CellPhone1 to Box2 with two object,"To move `CellPhone1` to `Box2` using two objects, we can follow these steps:
+
+### Solution:
+
+1. **Pick up `CellPhone1` using `Hand`:**
+   - Use your hand to grasp `CellPhone1` securely.
+
+2. **Move `CellPhone1` to `Box2`:**
+   - While holding `CellPhone1` with your hand, position it over `Box2`.
+
+3. **Place `CellPhone1` inside `Box2`:**
+   - Gently lower `CellPhone1` into `Box2` and release your grip, ensuring that the phone is safely placed inside the box.
+
+### Summary:
+- **Object 1:** `Hand` (used to pick up and move `CellPhone1`)
+- **Object 2:** `Box2` (the destination for `CellPhone1`)
+
+By using these two objects, `Hand` and `Box2`, you can successfully move `CellPhone1` from its current location to `Box2`."
+move CellPhone1 to Box1 with three object,"To move **CellPhone1** to **Box1** using three objects, we need to carefully plan the steps to ensure the task is completed efficiently. Here's a step-by-step solution:
+
+---
+
+### **Solution:**
+
+#### **Objects Required:**
+1. **CellPhone1**: The item to be moved.
+2. **Box1**: The destination container.
+3. **Hands**: To physically move the cell phone.
+4. **Table or Flat Surface**: To temporarily place the cell phone during the process.
+
+---
+
+#### **Steps to Move CellPhone1 to Box1:**
+
+1. **Prepare the Objects:**
+   - Ensure **Box1** is open and ready to receive **CellPhone1**.
+   - Place **CellPhone1** on a **table** or flat surface for easy access.
+
+2. **Pick Up CellPhone1:**
+   - Use your **hands** to carefully pick up **CellPhone1** from the table.
+
+3. **Move CellPhone1 to Box1:**
+   - While holding **CellPhone1**, bring it over to **Box1**.
+   - Ensure **Box1** is stable and positioned correctly to receive the cell phone.
+
+4. **Place CellPhone1 into Box1:**
+   - Gently place **CellPhone1** inside **Box1**.
+   - Ensure the cell phone is securely placed and not at risk of falling or getting damaged.
+
+5. **Close Box1 (if applicable):**
+   - If **Box1** has a lid or cover, close it securely to protect **CellPhone1**.
+
+---
+
+### **Summary:**
+By using **hands** to pick up **CellPhone1**, moving it to **Box1**, and placing it inside, the task is completed efficiently. The **table** serves as a temporary surface to facilitate the process."
+move KeyChain1 to GarbageCan2 with more object,"To move `KeyChain1` to `GarbageCan2` while incorporating more objects into the task, we can create a scenario where multiple objects are involved in the process. Here's a step-by-step solution:
+
+---
+
+### **Solution: Move KeyChain1 to GarbageCan2 with Additional Objects**
+
+1. **Identify the Objects Involved:**
+   - **KeyChain1**: The object to be moved.
+   - **GarbageCan2**: The destination for `KeyChain1`.
+   - **Additional Objects**: 
+     - **Hand**: To physically move `KeyChain1`.
+     - **Table**: A surface where `KeyChain1` is initially placed.
+     - **TrashBag**: A container inside `GarbageCan2` to hold `KeyChain1`.
+     - **Gloves**: To protect hands while handling `KeyChain1` (optional).
+
+2. **Step-by-Step Process:**
+   - **Step 1**: Place `KeyChain1` on the `Table` (if not already there).
+   - **Step 2**: Put on `Gloves` (optional, for hygiene or safety).
+   - **Step 3**: Use your `Hand` to pick up `KeyChain1` from the `Table`.
+   - **Step 4**: Open the lid of `GarbageCan2` (if applicable).
+   - **Step 5**: Place `KeyChain1` into the `TrashBag` inside `GarbageCan2`.
+   - **Step 6**: Close the lid of `GarbageCan2` (if applicable).
+   - **Step 7**: Remove and dispose of the `Gloves` (if used).
+
+3. **Verification:**
+   - Ensure `KeyChain1` is successfully placed inside `GarbageCan2` and is no longer on the `Table`.
+   - Confirm that all additional objects (e.g., `Gloves`, `TrashBag`) are properly handled.
+
+---
+
+### **Summary of Object Interactions:**
+- `Hand` interacts with `KeyChain1` and `TrashBag`.
+- `KeyChain1` moves from `Table` to `TrashBag` inside `GarbageCan2`.
+- `Gloves` (optional) are used for protection and disposed of afterward.
+
+This solution incorporates multiple objects to make the task more comprehensive and realistic."
+move AlarmClock1 to Box2 with three object,"To move `AlarmClock1` to `Box2` using three objects, we can follow a structured approach. Here's a step-by-step solution:
+
+### Objects Involved:
+1. **AlarmClock1**: The object to be moved.
+2. **Box2**: The destination container.
+3. **Hand**: The tool used to carry the object.
+4. **Table**: A surface to temporarily place objects during the process.
+
+### Steps:
+
+1. **Pick Up AlarmClock1**:
+   - Use your **Hand** to pick up `AlarmClock1` from its current location.
+
+2. **Move AlarmClock1 to Table**:
+   - Temporarily place `AlarmClock1` on the **Table** to free your hand for the next step.
+
+3. **Open Box2**:
+   - Use your **Hand** to open `Box2` if it is closed.
+
+4. **Pick Up AlarmClock1 from Table**:
+   - Use your **Hand** to pick up `AlarmClock1` from the **Table** again.
+
+5. **Place AlarmClock1 in Box2**:
+   - Carefully place `AlarmClock1` inside `Box2`.
+
+6. **Close Box2 (Optional)**:
+   - If desired, use your **Hand** to close `Box2` to secure `AlarmClock1`.
+
+### Summary:
+By using the **Hand** to carry `AlarmClock1`, the **Table** as a temporary surface, and **Box2** as the destination, we can efficiently move `AlarmClock1` to its new location in three simple steps."
+move Pillow1 to Box2 with two object,"### Solution:
+
+To move **Pillow1** to **Box2** using two objects (let's assume the objects are **Hand** and **Table**), follow these steps:
+
+1. **Pick up Pillow1 with Hand**:  
+   - Use your **Hand** to grasp **Pillow1** firmly.
+
+2. **Place Pillow1 on Table**:  
+   - Move your **Hand** (holding **Pillow1**) to the **Table** and place **Pillow1** on it.
+
+3. **Pick up Pillow1 with Hand again**:  
+   - Once **Pillow1** is on the **Table**, use your **Hand** to pick it up again.
+
+4. **Move Pillow1 to Box2**:  
+   - Carry **Pillow1** with your **Hand** to **Box2** and place it inside.
+
+### Summary:  
+You moved **Pillow1** to **Box2** by using **Hand** and **Table** as intermediate objects."
+move CellPhone1 to Bed1 with more object,"To move `CellPhone1` to `Bed1` while incorporating more objects, we can create a scenario where multiple items are being organized or transported together. Here's a step-by-step solution:
+
+### Solution:
+
+1. **Identify the Objects**:  
+   Let's assume we have the following objects:  
+   - `CellPhone1` (the primary object to be moved)  
+   - `Laptop1`  
+   - `Notebook1`  
+   - `Charger1`  
+   - `WaterBottle1`  
+
+2. **Gather the Objects**:  
+   Collect all the objects from their current locations. For example:  
+   - `CellPhone1` is on the `Desk`.  
+   - `Laptop1` is on the `Table`.  
+   - `Notebook1` is in the `Backpack`.  
+   - `Charger1` is plugged into the `WallSocket`.  
+   - `WaterBottle1` is in the `Kitchen`.  
+
+3. **Prepare a Container or Bag**:  
+   Use a bag or container to carry all the objects together. For example, a `Backpack` or a `ToteBag`.  
+
+4. **Place the Objects in the Container**:  
+   - Place `CellPhone1` in the `Backpack`.  
+   - Place `Laptop1` in the `Backpack`.  
+   - Place `Notebook1` in the `Backpack`.  
+   - Place `Charger1` in the `Backpack`.  
+   - Place `WaterBottle1` in the `Backpack`.  
+
+5. **Move the Container to `Bed1`**:  
+   Carry the `Backpack` to `Bed1` and place it on the bed.  
+
+6. **Unpack if Necessary**:  
+   If you need to use any of the objects, unpack them from the `Backpack` and place them on `Bed1`.  
+
+### Summary:
+By organizing the objects into a single container (like a `Backpack`), you can efficiently move `CellPhone1` along with other items (`Laptop1`, `Notebook1`, `Charger1`, `WaterBottle1`) to `Bed1` in one trip. This method saves time and ensures that all necessary items are transported together."
+put Book1 on the Sofa1 Do not put it in Box1,"### Solution:
+
+To accomplish the task of placing **Book1** on **Sofa1** while ensuring it is not placed in **Box1**, follow these steps:
+
+1. **Locate Book1**: Find **Book1** in its current location.
+2. **Identify Sofa1**: Locate **Sofa1** in the room.
+3. **Avoid Box1**: Ensure **Book1** is not placed in **Box1** during the process.
+4. **Place Book1 on Sofa1**: Gently place **Book1** on **Sofa1** in a stable position.
+5. **Verify Placement**: Double-check that **Book1** is securely placed on **Sofa1** and not in **Box1**.
+
+By following these steps, **Book1** will be correctly placed on **Sofa1** without ending up in **Box1**."

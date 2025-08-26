@@ -1,0 +1,136 @@
+[
+    {
+        "cluster_label": 722,
+        "task": "How to Treat Ovarian Cysts",
+        "step": [
+            "Monitor pelvic pain.",
+            "Look for other symptoms of ovarian cysts.",
+            "Be aware of the risk factors.",
+            "Schedule a doctor\u2019s appointment."
+        ],
+        "steps_predictions": [
+            "monitor_painter npc",
+            "check_symptoms ovarian_customies",
+            "be_informed npc",
+            "schedule_check npc"
+        ],
+        "goal_state": " ((not (is_injured npc)))"
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Treat a Cyst",
+        "step": [
+            "Know when to call a doctor.",
+            "Ask your doctor about removal.",
+            "Evaluate your surgical options.",
+            "Determine if removal of a skin cyst is necessary.",
+            "Determine if removal of a cyst on the breast is necessary.",
+            "Consult with a dermatologist for treatment of cystic acne.",
+            "Seek treatment for a ganglion cyst.",
+            "Treat a Bartholin gland cyst.",
+            "Understand treatment of a testicular cyst."
+        ],
+        "steps_predictions": [
+            "call_doctor npc philly",
+            "ask_doctor_about_removation you",
+            "listen_to_shelter npc",
+            "determine if removal_of_skin_cyst npc",
+            "remov_of_cyst npc",
+            "get_eraser npc",
+            "get_treatment_for_gangs_cage npc",
+            "treat_gastro_stratified person_treated",
+            "understand_treatment_of_testicular_surstick npc"
+        ],
+        "goal_state": " ((not (injured npc)))"
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Treat a Ruptured Ovarian Cyst",
+        "step": [
+            "Go to your doctor or the emergency room.",
+            "Get a physical exam.",
+            "Test for a ruptured cyst."
+        ],
+        "steps_predictions": [
+            "go_to_emergency_room npc",
+            "get_physical_examination you",
+            "test_cyst npc"
+        ],
+        "goal_state": " ((not (is_injured npc)))"
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Know if You Have a Baker's Cyst",
+        "step": [
+            "Understand that some health conditions can lead to the create of baker\u2019s cysts.",
+            "Know that some knee injuries can increase your chances of developing these cysts.",
+            "Be aware that previous surgeries can predispose you to getting these cysts."
+        ],
+        "steps_predictions": [
+            "learn npc",
+            "know_you_are_where_to_aim you",
+            "be_injured npc"
+        ],
+        "goal_state": " ((not (injured npc)))"
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Know if You Have an Ovarian Cyst",
+        "step": [
+            "Learn the causes of ovarian cysts.",
+            "Know that functional cysts are not serious.",
+            "Identify nonfunctional cysts."
+        ],
+        "steps_predictions": [
+            "learn_instructions npc",
+            "know_not_seriousness cysts",
+            "identify_not_functional_cysts npc"
+        ],
+        "goal_state": " ((not (in anish ss)) (is_knowledge npc)))"
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Prevent Cysts",
+        "step": [
+            "Use heat to treat small skin cysts.",
+            "Visit your doctor if you have a lump on your hand or wrist.",
+            "Check for a Baker\u2019s cyst if your knee hurts."
+        ],
+        "steps_predictions": [
+            "reat_small_scysts person_treated",
+            "visibility agent1 lump1 wrist1",
+            "check_knee_is_injured you"
+        ],
+        "goal_state": " ((not (injured you)))"
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Shrink Hemorrhoids",
+        "step": [
+            "Seek medical attention for severe hemorrhoids.",
+            "Discuss non-surgical treatment options with your doctor.",
+            "Consider having a hemorrhoidectomy."
+        ],
+        "steps_predictions": [
+            "get_medical_attached_with_lemon npc",
+            "listen_to_doctor you doctor",
+            "be_injured person bathroom npc"
+        ],
+        "goal_state": " ((not (hrink Hemorrhoids)))"
+    },
+    {
+        "cluster_label": 722,
+        "task": "How to Shrink Ovarian Cysts",
+        "step": [
+            "See your doctor if you have symptoms of an ovarian cyst.",
+            "Discuss surgery to remove large, painful, or complicated cysts.",
+            "Ask about using hormone treatments to prevent future cysts."
+        ],
+        "steps_predictions": [
+            "check_symptoms npc",
+            "remov_surgery npc",
+            "ask_about_hormonal_treat npc"
+        ],
+        "goal_state": " ((not (vulnerable npc)))"
+    }
+]

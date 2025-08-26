@@ -1,0 +1,4 @@
+[
+    "(:action obtain\n  ; Obtain a resource and change its state or location\n  :parameters (?entity - object ?location1 - place ?location2 - place)\n  :precondition (and (available ?entity) (at ?entity ?location1))\n  :effect (and (obtained ?entity) (at ?entity ?location2))",
+    "(:action peel\n    :parameters (?entity - object ?tool - object ?location - place)\n    :precondition (and (obtained ?entity) \n                       (intact ?entity outer_layer) \n                       (sharp ?tool) \n                       (at ?tool ?location) \n                       (at ?entity ?location))\n    :effect (and (not (intact ?entity outer_layer))"
+]

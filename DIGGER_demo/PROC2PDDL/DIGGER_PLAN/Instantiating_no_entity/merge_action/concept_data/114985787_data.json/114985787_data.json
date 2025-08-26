@@ -1,0 +1,24 @@
+{
+    "make": [
+        "(:action make_splash\n    :parameters (?npc - character ?p - path ?o - oak_log ?b - branch)\n    :precondition (and (at ?npc ?p) (not (used ?o ?b)))\n    :effect (used ?o ?b)\n  )\n\n",
+        "(:action build_shelter\n    :parameters (?npc - character ?c - camp ?t - teepee_structure)\n    :precondition (and (at ?npc ?c) (has_materials ?npc))\n    :effect (built ?t)\n  )\n\n"
+    ],
+    "drink": [
+        "(:action drink_water\n    :parameters (?npc - character)\n    :precondition (and (thirsty ?npc) (has_no_container ?npc))\n    :effect (not (thirsty ?npc))\n  )\n\n",
+        "(:action eat_fruit\n    :parameters (?npc - agent ?fruit - plant)\n    :precondition (and\n      (npc_hungry ?npc)\n      (edible_fruit ?fruit)\n      (identified_fruit ?fruit)\n    )\n    :effect (and\n      (npc_fed ?npc)\n      (not (npc_hungry ?npc))\n    )\n)\n```\n\n### Summary\n- The `get_water` action ensures that the NPC can find and drink fresh water to quench their thirst.\n- The `eat_fruit` action allows the NPC to pick and eat identifiable and edible wild berries to satisfy their hunger.\n\nThese actions capture the intent and logic of the steps provided in the task \"eat_plants\"."
+    ],
+    "place": [
+        "(:action place_branch\n    :parameters (?npc - character ?wp - west_plain ?bp - branch_piece)\n    :precondition (and (at ?npc ?wp) (not (placed ?bp)))\n    :effect (placed ?bp)\n  )\n```",
+        "(:action place_snare\n    :parameters (?s - snare ?l - location)\n    :precondition (and\n                    (snare_setup ?s)\n                    (not (snare_placed ?s))\n                  )\n    :effect (snare_placed ?s)\n)\n\n;; Action 4: Check Snare\n"
+    ],
+    "get": [
+        "(:action get_water\n    :parameters (?npc - agent ?water - resource)\n    :precondition (and\n      (npc_thirsty ?npc)\n      (fresh_water_source ?water)\n    )\n    :effect (and\n      (npc_hydrated ?npc)\n      (not (npc_thirsty ?npc))\n    )\n)\n```\n\n#### Step 2: eat_fruit\n**Description:** Pick wild edible berries to eat. If you happen to come by an identifiable berry bush, definitely take advantage. Never consume any berries that you cannot positively identify as many are toxic. To be safe, stick to eating berries that you recognize like blackberries, raspberries, and wild strawberries.\n\n```pddl\n",
+        "(:action gather_materials\n    :parameters (?s - snare)\n    :precondition (not (materials_gathered ?s))\n    :effect (materials_gathered ?s)\n)\n\n;; Action 2: Set Up Snare\n"
+    ],
+    "check": [
+        "(:action check_snare\n    :parameters (?s - snare)\n    :precondition (snare_placed ?s)\n    :effect (snare_checked ?s)\n)\n```\n\n### Explanation:\n\n1. **gather_materials**: This action involves gathering the necessary materials to build a snare. The precondition is that the materials have not yet been gathered, and the effect is that they are gathered.\n\n2. **setup_snare**: This action involves setting up the snare using the gathered materials. The precondition is that the materials have been gathered, and the effect is that the snare is set up.\n\n3. **place_snare**: This action involves placing the snare in a suitable location. The precondition is that the snare is set up and not yet placed, and the effect is that the snare is placed.\n\n4. **check_snare**: This action involves checking the snare after it has been placed. The precondition is that the snare is placed, and the effect is that the snare is checked.\n\nThese actions collectively represent the process of building and deploying a snare."
+    ],
+    "setup": [
+        "(:action setup_snare\n    :parameters (?s - snare)\n    :precondition (materials_gathered ?s)\n    :effect (snare_setup ?s)\n)\n\n;; Action 3: Place Snare\n"
+    ]
+}

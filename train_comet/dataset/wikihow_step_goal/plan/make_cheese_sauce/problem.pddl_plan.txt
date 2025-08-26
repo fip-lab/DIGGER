@@ -1,0 +1,5 @@
+(cut_velveeta velveeta cutting_board)
+(set_burner_add_cheese stove_knob velveeta pot)
+(add_peppers_and_olives olives peppers pot)
+(serve_cheese_sauce cheese_sauce pot)
+; cost = 4 (unit cost)

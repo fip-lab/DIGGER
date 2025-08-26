@@ -1,0 +1,104 @@
+[
+    {
+        "task": "make_a_fire",
+        "step": [
+            "go west npc camp path",
+            "go west npc path cliff",
+            "go up npc cliff clifftop",
+            "go east npc clifftop bushwood",
+            "get stick npc bushwood",
+            "go east npc bushwood clifftop",
+            "go down npc clifftop cliff",
+            "go east npc cliff path",
+            "go east npc path camp",
+            "sharpen_stick npc stick",
+            "start_fire npc camp stick"
+        ],
+        "desc": [
+            "Test the food you eat for poison. If you've never eaten the fruit that you find on the island, test it for poison by rubbing it on a sensitive part of your skin, like your wrist. Wait 45 minutes. If there is no adverse reaction, rub some of the food on your lips. If you form a rash, or there is burning or irritation, then the food is most likely poisonous. Never eat large amounts of any unknown food. Eat a small amount, wait an hour or two to see if you feel sick, then eat the rest of it.",
+            "Hunt for fish, insects, and small animals for food. The protein and nutrients from meat and fish will give you energy. Mollusks, clams, oysters, crabs, muscles, and fish are all things that you may be able to find in the shallow waters surrounding or on an island."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n     :parameters (?item - item ?p - player ?l1 - location)\n     :precondition (and (at ?p ?l1) (at ?item ?l1))\n     :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n  )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n     :parameters (?p - player ?loc - location ?water - water)\n     :precondition (and (at ?p ?loc) (has_water_source ?loc))\n     :effect (and (inventory ?p ?water) (not (treated ?water)))\n  )",
+            "(:action get_tarp ; get tarp for shelter construction\n     :parameters (?p - player ?loc - location ?tarp - tarp)\n     :precondition (and (at ?p ?loc) )\n     :effect (and (inventory ?p ?tarp))\n  )",
+            "(:action get_shellfish ; catch shellfish from a location that has fish.\n     :parameters (?p - player ?loc - location ?shellfish - shellfish)\n     :precondition (and (at ?p ?loc) (has_shellfish ?loc))\n     :effect (and (inventory ?p ?shellfish) (not (edible ?shellfish)))\n  )",
+            "(:action get_leave ; get leaves for shelter construction\n     :parameters (?p - player ?loc - location ?leave - leave)\n     :precondition (and (at ?p ?loc) )\n     :effect (and (inventory ?p ?leave))\n  )",
+            "(:action start_fire ; start a fire at a location\n     :parameters (?p - player ?loc - location ?stick - stick)\n     :precondition (and (at ?p ?loc) (inventory ?p ?stick) (sharpened ?stick))\n     :effect (and (has_fire ?loc))\n  )",
+            "(:action go ; navigate to an adjacent location\n     :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location)\n     :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n     :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n  )",
+            "(:action get_stick ; get a stick from bosk\n     :parameters (?p - player ?loc - location ?stick - stick)\n     :precondition (and (at ?p ?loc) (at ?stick ?loc))\n     :effect (and (inventory ?p ?stick) (not (sharpened ?stick)))\n  )",
+            "(:action sharpen_stick ; sharpen stick to hunt fish or bird or to use it to make a fire\n     :parameters (?p - player ?stick - stick)\n     :precondition (and (inventory ?p ?stick) (not (sharpened ?stick)))\n     :effect (and (inventory ?p ?stick) (sharpened ?stick))\n  )"
+        ],
+        "goal_state": "((has_fire camp))"
+    },
+    {
+        "task": "hunt_animal_for_food",
+        "step": [
+            "get stick2 npc camp",
+            "sharpen_stick npc stick2",
+            "go north npc camp beach",
+            "get_shellfish npc beach shellfish",
+            "catch_fish npc beach fish stick2",
+            "go south npc beach camp",
+            "go west npc camp path",
+            "hunt_insect npc path insect",
+            "go west npc path cliff",
+            "go up npc cliff clifftop",
+            "start_fire npc clifftop stick2",
+            "cook npc clifftop shellfish",
+            "hunt_bird npc clifftop bird stick2"
+        ],
+        "desc": [
+            "Heating the water above 185\u00b0 F (85\u00b0 C) for three minutes will kill all pathogens in your water.",
+            "Hunt for fish, insects, and small animals for food. The protein and nutrients from meat and fish will give you energy. Mollusks, clams, oysters, crabs, muscles, and fish are all things that you may be able to find in the shallow waters surrounding or on an island.",
+            "Test the food you eat for poison. If you've never eaten the fruit that you find on the island, test it for poison by rubbing it on a sensitive part of your skin, like your wrist. Wait 45 minutes. If there is no adverse reaction, rub some of the food on your lips. If you form a rash, or there is burning or irritation, then the food is most likely poisonous. Never eat large amounts of any unknown food. Eat a small amount, wait an hour or two to see if you feel sick, then eat the rest of it."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n     :parameters (?item - item ?p - player ?l1 - location)\n     :precondition (and (at ?p ?l1) (at ?item ?l1))\n     :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n  )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n     :parameters (?p - player ?loc - location ?water - water)\n     :precondition (and (at ?p ?loc) (has_water_source ?loc))\n     :effect (and (inventory ?p ?water) (not (treated ?water)))\n  )",
+            "(:action get_stick ; get a stick from bosk\n     :parameters (?p - player ?loc - location ?stick - stick)\n     :precondition (and (at ?p ?loc) (at ?stick ?loc))\n     :effect (and (inventory ?p ?stick) (not (sharpened ?stick)))\n  )",
+            "(:action get_tarp ; get tarp for shelter construction\n     :parameters (?p - player ?loc - location ?tarp - tarp)\n     :precondition (and (at ?p ?loc) )\n     :effect (and (inventory ?p ?tarp))\n  )",
+            "(:action get_shellfish ; catch shellfish from a location that has fish.\n     :parameters (?p - player ?loc - location ?shellfish - shellfish)\n     :precondition (and (at ?p ?loc) (has_shellfish ?loc))\n     :effect (and (inventory ?p ?shellfish) (not (edible ?shellfish)))\n  )",
+            "(:action hunt_insect ; catch an insect from a location that has insects.\n     :parameters (?p - player ?loc - location ?insect - insect)\n     :precondition (and (at ?p ?loc) (has_insect ?loc))\n     :effect (and (inventory ?p ?insect) (edible ?insect))\n  )",
+            "(:action get_leave ; get leaves for shelter construction\n     :parameters (?p - player ?loc - location ?leave - leave)\n     :precondition (and (at ?p ?loc) )\n     :effect (and (inventory ?p ?leave))\n  )",
+            "(:action start_fire ; start a fire at a location\n     :parameters (?p - player ?loc - location ?stick - stick)\n     :precondition (and (at ?p ?loc) (inventory ?p ?stick) (sharpened ?stick))\n     :effect (and (has_fire ?loc))\n  )",
+            "(:action hunt_bird ; catch a bird from a location that has birds.\n     :parameters (?p - player ?loc - location ?bird - bird ?stick - stick)\n     :precondition (and (at ?p ?loc) (has_bird ?loc) (inventory ?p ?stick) (sharpened ?stick))\n     :effect (and (inventory ?p ?bird) (edible ?bird))\n  )",
+            "(:action go ; navigate to an adjacent location\n     :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location)\n     :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n     :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n  )",
+            "(:action cook ; cook to make animal edible\n     :parameters (?p - player ?loc - location ?animal - animal)\n     :precondition (and (at ?p ?loc) (inventory ?p ?animal) (has_fire ?loc))\n     :effect (and (inventory ?p ?animal) (edible ?animal))\n  )",
+            "(:action sharpen_stick ; sharpen stick to hunt fish or bird or to use it to make a fire\n     :parameters (?p - player ?stick - stick)\n     :precondition (and (inventory ?p ?stick) (not (sharpened ?stick)))\n     :effect (and (inventory ?p ?stick) (sharpened ?stick))\n  )",
+            "(:action catch_fish ; catch fish from a location that has fish.\n     :parameters (?p - player ?loc - location ?fish - fish ?stick - stick)\n     :precondition (and (at ?p ?loc) (has_fish ?loc) (inventory ?p ?stick) (sharpened ?stick))\n     :effect (and (inventory ?p ?fish) (edible ?fish))\n  )"
+        ],
+        "goal_state": "((inventory npc fish) (edible fish) (inventory npc bird) (edible bird) (inventory npc insect) (edible insect) (inventory npc shellfish) (edible shellfish))"
+    },
+    {
+        "task": "construct_a_sturdy_shelter",
+        "step": [
+            "go west npc camp path",
+            "go west npc path cliff",
+            "go up npc cliff clifftop",
+            "go east npc clifftop bushwood",
+            "get stick npc bushwood",
+            "go east npc bushwood clifftop",
+            "go down npc clifftop cliff",
+            "go east npc cliff path",
+            "get_tarp npc path tarp",
+            "go east npc path camp",
+            "construct_shelter npc camp stick tarp leave"
+        ],
+        "desc": [
+            "Scurvy is a serious condition that occurs when you don't have a balanced diet. Symptoms include fatigue, anemia, and infections and is caused by a vitamin C deficiency.",
+            "Eating fresh citrus fruits like lemons and oranges can help prevent the condition."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n     :parameters (?item - item ?p - player ?l1 - location)\n     :precondition (and (at ?p ?l1) (at ?item ?l1))\n     :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n  )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n     :parameters (?p - player ?loc - location ?water - water)\n     :precondition (and (at ?p ?loc) (has_water_source ?loc))\n     :effect (and (inventory ?p ?water) (not (treated ?water)))\n  )",
+            "(:action get_tarp ; get tarp for shelter construction\n     :parameters (?p - player ?loc - location ?tarp - tarp)\n     :precondition (and (at ?p ?loc) )\n     :effect (and (inventory ?p ?tarp))\n  )",
+            "(:action construct_shelter ; construct a shelter with stick plus either tarp or leaves\n     :parameters (?p - player ?loc - location ?stick - stick ?tarp - tarp ?leave - leave)\n     :precondition (and (at ?p ?loc) (inventory ?p ?stick) (inventory ?p ?tarp))\n     :effect (and (sheltered ?loc))\n  )\n)",
+            "(:action get_shellfish ; catch shellfish from a location that has fish.\n     :parameters (?p - player ?loc - location ?shellfish - shellfish)\n     :precondition (and (at ?p ?loc) (has_shellfish ?loc))\n     :effect (and (inventory ?p ?shellfish) (not (edible ?shellfish)))\n  )",
+            "(:action get_leave ; get leaves for shelter construction\n     :parameters (?p - player ?loc - location ?leave - leave)\n     :precondition (and (at ?p ?loc) )\n     :effect (and (inventory ?p ?leave))\n  )",
+            "(:action get_stick ; get a stick from bosk\n     :parameters (?p - player ?loc - location ?stick - stick)\n     :precondition (and (at ?p ?loc) (at ?stick ?loc))\n     :effect (and (inventory ?p ?stick) (not (sharpened ?stick)))\n  )",
+            "(:action go ; navigate to an adjacent location\n     :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location)\n     :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n     :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n  )"
+        ],
+        "goal_state": "((sheltered camp))"
+    }
+]

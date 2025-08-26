@@ -1,0 +1,297 @@
+{
+    "goal": "Connect a Wii to HD TV",
+    "steps": [
+        "Plug in your HDMI cord to the cable.",
+        "Plug it into your TV's HDMI input.",
+        "Plug it into your wii's AV Composite Output instead of putting in the Composite cord that comes with the Wii.",
+        "Plug your HDMI cord (assuming you have one) into the converter and your TV."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/4/4c/Connect-a-Wii-to-HD-TV-Step-2.jpg/aid2836110-v4-728px-Connect-a-Wii-to-HD-TV-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/6/62/Connect-a-Wii-to-HD-TV-Step-3.jpg/aid2836110-v4-728px-Connect-a-Wii-to-HD-TV-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/f/fe/Connect-a-Wii-to-HD-TV-Step-4.jpg/aid2836110-v4-728px-Connect-a-Wii-to-HD-TV-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/4/47/Connect-a-Wii-to-HD-TV-Step-5.jpg/aid2836110-v4-728px-Connect-a-Wii-to-HD-TV-Step-5.jpg"
+    ],
+    "states": [
+        {
+            "entity": "hdmi cord",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "organization",
+                        "before": "unplugged",
+                        "after": "plugged in | plugged into cable",
+                        "saliency": 0.5551889233954451,
+                        "attribute_annotation": "organization | power"
+                    },
+                    {
+                        "attribute": "connection",
+                        "before": "loose",
+                        "after": "attached",
+                        "saliency": 0.3657479296066253,
+                        "attribute_annotation": "connection"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "power",
+                        "before": "unplugged | unpligged",
+                        "after": "plugged in | connected to tv's hdmi input",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "power | connection"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "power",
+                        "before": "unattached",
+                        "after": "plugged in",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "power | connection"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "organization",
+                        "before": "unplugged",
+                        "after": "plugged into converter and tv",
+                        "saliency": 0.4775491718426501,
+                        "attribute_annotation": "organization | power"
+                    },
+                    {
+                        "attribute": "attachment",
+                        "before": "loose",
+                        "after": "plugged in",
+                        "saliency": 0.31985420979986195,
+                        "attribute_annotation": "attachment"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "hdmi cord | hdmi converter cable | the hdmi cord",
+                "the hdmi"
+            ]
+        },
+        {
+            "entity": "wii's av composite output",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.6328286749482401,
+                        "attribute_annotation": "container"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "wii's av composite output"
+            ]
+        },
+        {
+            "entity": "the cord",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.3465320910973085,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in",
+                        "saliency": 0.5018115942028986,
+                        "attribute_annotation": "power"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in",
+                        "saliency": 0.5018115942028986,
+                        "attribute_annotation": "power"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "cord",
+                "plug",
+                "the cord"
+            ]
+        },
+        {
+            "entity": "tv",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.551953933747412,
+                        "attribute_annotation": "container"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in",
+                        "saliency": 0.4468167701863354,
+                        "attribute_annotation": "power"
+                    },
+                    {
+                        "attribute": "attachment",
+                        "before": "unattached",
+                        "after": "connected",
+                        "saliency": 0.30913561076604557,
+                        "attribute_annotation": "attachment"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "tv's hdmi input",
+                "tv"
+            ]
+        },
+        {
+            "entity": "converter",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "attachment",
+                        "before": "unattached",
+                        "after": "connected",
+                        "saliency": 0.5422489648033126,
+                        "attribute_annotation": "attachment"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "converter"
+            ]
+        },
+        {
+            "entity": "wii",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "connection",
+                        "before": "loose",
+                        "after": "attached",
+                        "saliency": 0.45490424430641824,
+                        "attribute_annotation": "connection"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "wii"
+            ]
+        }
+    ],
+    "clusters": {
+        "tv": {
+            "entity_cluster": [
+                "tv",
+                "tv's hdmi input"
+            ],
+            "attribute_cluster": {
+                "container": [
+                    "container"
+                ],
+                "power": [
+                    "power"
+                ],
+                "attachment": [
+                    "attachment"
+                ]
+            }
+        },
+        "converter": {
+            "entity_cluster": [
+                "converter"
+            ],
+            "attribute_cluster": {
+                "attachment": [
+                    "attachment"
+                ]
+            }
+        },
+        "wii's av composite output": {
+            "entity_cluster": [
+                "wii's av composite output"
+            ],
+            "attribute_cluster": {
+                "container": [
+                    "container"
+                ]
+            }
+        },
+        "wii": {
+            "entity_cluster": [
+                "wii"
+            ],
+            "attribute_cluster": {
+                "connection": [
+                    "connection"
+                ]
+            }
+        },
+        "the cord": {
+            "entity_cluster": [
+                "the cord",
+                "cord",
+                "plug"
+            ],
+            "attribute_cluster": {
+                "power": [
+                    "power"
+                ],
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "hdmi cord": {
+            "entity_cluster": [
+                "hdmi converter cable",
+                "hdmi cord",
+                "the hdmi",
+                "the hdmi cord"
+            ],
+            "attribute_cluster": {
+                "organization": [
+                    "organization"
+                ],
+                "power": [
+                    "power"
+                ],
+                "connection": [
+                    "connection"
+                ],
+                "attachment": [
+                    "attachment"
+                ]
+            }
+        }
+    }
+}

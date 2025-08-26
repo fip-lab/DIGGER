@@ -1,0 +1,6 @@
+[
+    "(:action find\n  ; Find an appropriate resource and update its selection status\n  :parameters (?agent - entity ?resource - object ?location - location)\n  :precondition (and (at ?agent ?location) (not (selected ?resource)) (condition_met ?resource))\n  :effect (selected ?resource)\n)",
+    "(:action collect ; Collect an item and update its status in the player's inventory\n    :parameters (?agent - agent ?loc - location ?item - collectible)\n    :precondition (and (at ?agent ?loc) (collectible ?item) (not (in_inventory ?agent ?item)))\n    :effect (and (in_inventory ?agent ?item) (collected ?item))",
+    "(:action create ; Create an entity by transforming available resources\n    :parameters (?p - player ?loc - location ?resource - object ?product - entity)\n    :precondition (and (at ?p ?loc) (inventory ?p ?resource))\n    :effect (and (created ?product ?resource) (not (inventory ?p ?resource))",
+    "(:action use ; Use a resource to modify an entity's state\n  :parameters (?user - agent ?resource - object ?target - entity ?location - location)\n  :precondition (and (at ?user ?location) (not (used ?user ?resource ?target)) (has_resource ?user ?resource))\n  :effect (and (used ?user ?resource ?target) (not (has_resource ?user ?resource))"
+]

@@ -1,0 +1,13 @@
+{
+    "search": [
+        "(:action search_for_water_source\n  :parameters (?agent - person ?location - place)\n  :precondition (and\n    (at ?agent ?location)\n    (not (found_water ?agent))\n  )\n  :effect (and\n    (found_water ?agent)\n  )\n)\n```\n\nExplanation:\n- **Action Name:** `search_for_water_source`\n- **Parameters:** `?agent` (the person searching for water), `?location` (the place where the search is conducted)\n- **Preconditions:** The agent must be at the location, and the agent has not yet found water.\n- **Effects:** The agent will have found water.\n\nSince the task and description provided only mention searching for a source of fresh water, this single action captures the necessary steps and conditions for completing the task.",
+        "(:action search_area\n    :parameters (?a - area)\n    :precondition (not (selected ?a))\n    :effect (selected ?a)\n)\n\n;; Action 4: Start Fire\n"
+    ],
+    "find": [
+        "(:action find_tinder\n    :parameters (?t - tinder)\n    :precondition (not (collected ?t))\n    :effect (collected ?t)\n)\n\n;; Action 2: Gather Kindling\n",
+        "(:action gather_kindling\n    :parameters (?k - kindling)\n    :precondition (not (collected ?k))\n    :effect (collected ?k)\n)\n\n;; Action 3: Search for Area\n"
+    ],
+    "start": [
+        "(:action start_fire\n    :parameters (?t - tinder ?k - kindling ?a - area)\n    :precondition (and (collected ?t) (collected ?k) (selected ?a))\n    :effect (fire_started ?a)\n)\n```\n\n### Explanation of PDDL Actions:\n\n1. **find_tinder**:\n   - **Parameters**: ?t - tinder\n   - **Preconditions**: The tinder must not already be collected.\n   - **Effects**: The tinder is collected.\n\n2. **gather_kindling**:\n   - **Parameters**: ?k - kindling\n   - **Preconditions**: The kindling must not already be collected.\n   - **Effects**: The kindling is collected.\n\n3. **search_area**:\n   - **Parameters**: ?a - area\n   - **Preconditions**: The area must not already be selected.\n   - **Effects**: The area is selected.\n\n4. **start_fire**:\n   - **Parameters**: ?t - tinder, ?k - kindling, ?a - area\n   - **Preconditions**: The tinder and kindling must be collected, and the area must be selected.\n   - **Effects**: The fire is started in the selected area.\n\nThese actions follow the structure and logic of the example provided and are tailored to the task of starting a fire using the given descriptions and entity states."
+    ]
+}

@@ -1,0 +1,6 @@
+(find_fire_stone stone)
+(select_bag bag)
+(catch_or_trade_vulpix vulpix)
+(select_stone stone)
+(wait_for_evolution vulpix)
+; cost = 5 (unit cost)

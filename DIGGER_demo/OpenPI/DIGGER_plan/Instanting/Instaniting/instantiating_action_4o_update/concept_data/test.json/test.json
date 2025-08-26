@@ -1,0 +1,137 @@
+[
+    {
+        "task": "Make a Pipe Cleaner Bird",
+        "instantiting_action": [
+            "clean(agent target surface)",
+            "clean(agent target door)",
+            "clean(agent target house)",
+            "clean(agent target room)",
+            "clean(agent target home)",
+            "clean(agent target socket)",
+            "clean(agent target stove)",
+            "clean(agent target area)",
+            "clean(agent target yard)",
+            "pickup(smoothie can agent)",
+            "pickup(smoothie basket agent)",
+            "pickup(smoothie bag agent)",
+            "pickup(smoothie jar agent)",
+            "pickup(smoothie saucepan agent)",
+            "pickup(smoothie pot agent)",
+            "pickup(smoothie pitcher agent)",
+            "pickup(smoothie glass agent)",
+            "pickup(coladas can agent)",
+            "pickup(coladas basket agent)",
+            "pickup(coladas bag agent)",
+            "pickup(coladas jar agent)",
+            "pickup(coladas saucepan agent)",
+            "pickup(coladas pot agent)",
+            "pickup(coladas pitcher agent)",
+            "pickup(coladas glass agent)"
+        ]
+    },
+    {
+        "task": "Make Marshmallow Cream Cheese Fruit Dip",
+        "instantiting_action": [
+            "place(actor smoothie can)",
+            "place(actor smoothie basket)",
+            "place(actor smoothie bag)",
+            "place(actor smoothie jar)",
+            "place(actor smoothie saucepan)",
+            "place(actor smoothie pot)",
+            "place(actor smoothie pitcher)",
+            "place(actor smoothie glass)",
+            "place(actor coladas can)",
+            "place(actor coladas basket)",
+            "place(actor coladas bag)",
+            "place(actor coladas jar)",
+            "place(actor coladas saucepan)",
+            "place(actor coladas pot)",
+            "place(actor coladas pitcher)",
+            "place(actor coladas glass)",
+            "blend(blender smoothie strawberry)",
+            "blend(blender smoothie melon)",
+            "blend(blender smoothie rum)",
+            "blend(blender smoothie sorbet)",
+            "blend(blender smoothie yogurt)",
+            "blend(blender smoothie pina)",
+            "blend(blender smoothie banana)",
+            "blend(blender coladas strawberry)",
+            "blend(blender coladas melon)",
+            "blend(blender coladas rum)",
+            "blend(blender coladas sorbet)",
+            "blend(blender coladas yogurt)",
+            "blend(blender coladas pina)",
+            "blend(blender coladas banana)"
+        ]
+    },
+    {
+        "task": "Camouflage Equipment",
+        "instantiting_action": [
+            "set(entity1 entity2)",
+            "talk(speaker listener context)",
+            "gather(entity smoothie)",
+            "gather(entity coladas)"
+        ]
+    },
+    {
+        "task": "Make Rhubarb Cordial",
+        "instantiting_action": [
+            "prepare(actor target)",
+            "take(agent source smoothie)",
+            "take(agent source coladas)",
+            "dip(p smoothie cordial)",
+            "dip(p smoothie hormone)",
+            "dip(p coladas cordial)",
+            "dip(p coladas hormone)",
+            "plant(p resource l)"
+        ]
+    },
+    {
+        "task": "Make a Pitcher of Melon Pina Coladas",
+        "instantiting_action": [
+            "place(actor smoothie can)",
+            "place(actor smoothie basket)",
+            "place(actor smoothie bag)",
+            "place(actor smoothie jar)",
+            "place(actor smoothie saucepan)",
+            "place(actor smoothie pot)",
+            "place(actor smoothie pitcher)",
+            "place(actor smoothie glass)",
+            "place(actor coladas can)",
+            "place(actor coladas basket)",
+            "place(actor coladas bag)",
+            "place(actor coladas jar)",
+            "place(actor coladas saucepan)",
+            "place(actor coladas pot)",
+            "place(actor coladas pitcher)",
+            "place(actor coladas glass)",
+            "blend(blender smoothie strawberry)",
+            "blend(blender smoothie melon)",
+            "blend(blender smoothie rum)",
+            "blend(blender smoothie sorbet)",
+            "blend(blender smoothie yogurt)",
+            "blend(blender smoothie pina)",
+            "blend(blender smoothie banana)",
+            "blend(blender coladas strawberry)",
+            "blend(blender coladas melon)",
+            "blend(blender coladas rum)",
+            "blend(blender coladas sorbet)",
+            "blend(blender coladas yogurt)",
+            "blend(blender coladas pina)",
+            "blend(blender coladas banana)"
+        ]
+    },
+    {
+        "task": "Make Soap Bubbles for Your Children",
+        "instantiting_action": [
+            "mix(actor entity surface)",
+            "pour(agent substance container surface)",
+            "grind(agent resource tool surface)",
+            "process_item(agent item tool loc state1 state2)",
+            "mix_ingredients(agent mixture loc)",
+            "pour_into_container(agent mixture container loc)",
+            "grind_ingredients(agent mixture mortar_pestle loc)",
+            "gotolocation(agent container loc1 loc2)"
+        ]
+    }
+]

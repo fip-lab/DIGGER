@@ -1,0 +1,6 @@
+(get knife npc home)
+(get linen_sheets npc home)
+(get rolling_pin npc home)
+(get water npc home)
+(get wooden_boards npc home)
+; cost = 5 (unit cost)

@@ -1,0 +1,6 @@
+[
+    "(:action pour ; Pour a liquid into a container and modify the state of related objects\n    :parameters (?liquid - liquid ?container - container ?object - object)\n    :precondition (and (location ?liquid source) (location ?container target_location) (orientation ?object initial_orientation) (composition ?object initial_composition))\n    :effect (and (location ?liquid ?container) (composition ?object modified_composition) (location ?liquid in_object))",
+    "(:action remove ; Remove an object from its current location\n  :parameters (?obj - object ?loc1 - location ?loc2 - location)\n  :precondition (and (or (orientation ?obj ?loc1) (orientation ?obj ?loc2)))\n  :effect (and (orientation ?obj removed))",
+    "(:action dry ; Dry an entity and update its state\n :parameters (?entity - object)\n :precondition (and (composition ?entity wet))\n :effect (composition ?entity dry))",
+    "(:action make\n    ; Generalized action for making or transforming an object's state\n    :parameters (?obj - object ?state_before - state ?state_after - state)\n    :precondition (and (composition ?obj ?state_before))\n    :effect (and (composition ?obj ?state_after))"
+]

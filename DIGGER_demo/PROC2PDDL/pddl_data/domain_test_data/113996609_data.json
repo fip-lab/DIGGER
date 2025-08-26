@@ -1,0 +1,119 @@
+[
+    {
+        "task": "clean_water",
+        "step": [
+            "go west person beach ocean",
+            "get rock person ocean",
+            "go east person ocean beach",
+            "get tinder person beach",
+            "go east person beach jungle",
+            "chop_wood person jungle wood",
+            "go east person jungle river",
+            "carve_groove person wood rock",
+            "get_water person river water",
+            "light_fire person wood beach tinder fire",
+            "clean_water person beach water fire",
+            "drink_water person water"
+        ],
+        "desc": [
+            "Check for water at the base of leaves or cacti, inside of caves, hollowed trees, or undercut banks.",
+            "Hunt for fish, insects, and small animals for food. The protein and nutrients from meat and fish will give you energy. Mollusks, clams, oysters, crabs, muscles, and fish are all things that you may be able to find in the shallow waters surrounding or on an island.",
+            "Do not drink salt water from the ocean because it will dehydrate you."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action carve_groove ; create a grove in wood to light flint.\n      :parameters (?p - player ?wood - wood ?rock - rock) \n      :precondition (and (inventory ?p ?wood) (inventory ?p ?rock) (not (groove ?wood)))\n      :effect (and (groove ?wood))\n   )",
+            "(:action light_fire ; light a fire\n      :parameters (?p - player ?wood - wood ?loc - location ?tinder - tinder ?fire - fire) \n      :precondition (and (inventory ?p ?wood) (inventory ?p ?tinder) (can_light_fire ?loc) (groove ?wood))\n      :effect (and (at ?fire ?loc) (not (inventory ?wood)) (not (groove ?wood)))\n   )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action drink_water ; drink water\n      :parameters (?p - player ?water - water) \n      :precondition (and (inventory ?p ?water) (treated ?water))\n      :effect (and (drank ?water))\n   )",
+            "(:action chop_wood ; chop down wood from a nearby tree.\n      :parameters (?p - player ?loc - location ?wood - wood) \n      :precondition (and (at ?p ?loc) (has_wood ?loc))\n      :effect (and (inventory ?p ?wood) (not (groove ?wood)))\n   )",
+            "(:action clean_water ; boil water to clean it\n      :parameters (?p - player ?loc - location ?water - water ?fire - fire) \n      :precondition (and (inventory ?p ?water) (at ?fire ?loc))\n      :effect (and (treated ?water))\n   )"
+        ],
+        "goal_state": "((drank water))"
+    },
+    {
+        "task": "catch_cook_fish",
+        "step": [
+            "go west person beach ocean",
+            "get rock person ocean",
+            "go east person ocean beach",
+            "get tinder person beach",
+            "go east person beach jungle",
+            "chop_wood person jungle wood",
+            "get vines person jungle",
+            "carve_groove person wood rock",
+            "make_weapon rock person wood vines spear",
+            "light_fire person wood beach tinder fire",
+            "hunt_fish person river spear fish",
+            "cook_fish person fish fire beach"
+        ],
+        "desc": [
+            "Heating the water above 185\u00b0 F (85\u00b0 C) for three minutes will kill all pathogens in your water.",
+            "Hunt for fish, insects, and small animals for food. The protein and nutrients from meat and fish will give you energy. Mollusks, clams, oysters, crabs, muscles, and fish are all things that you may be able to find in the shallow waters surrounding or on an island."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action hunt_fish ; catch fish with spear\n      :parameters (?p - player ?loc - location ?spear - spear ?fish - fish) \n      :precondition (and (inventory ?p ?spear) (has_fish ?loc))\n      :effect (and (inventory ?p ?fish))\n   )",
+            "(:action carve_groove ; create a grove in wood to light flint.\n      :parameters (?p - player ?wood - wood ?rock - rock) \n      :precondition (and (inventory ?p ?wood) (inventory ?p ?rock) (not (groove ?wood)))\n      :effect (and (groove ?wood))\n   )",
+            "(:action cook_fish ; cook fish \n      :parameters (?p - player ?fish - fish ?fire - fire ?loc - location) \n      :precondition (and (inventory ?p ?fish) (at ?fire ?loc))\n      :effect (and (cooked ?fish))\n   )   \n)",
+            "(:action light_fire ; light a fire\n      :parameters (?p - player ?wood - wood ?loc - location ?tinder - tinder ?fire - fire) \n      :precondition (and (inventory ?p ?wood) (inventory ?p ?tinder) (can_light_fire ?loc) (groove ?wood))\n      :effect (and (at ?fire ?loc) (not (inventory ?wood)) (not (groove ?wood)))\n   )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action chop_wood ; chop down wood from a nearby tree.\n      :parameters (?p - player ?loc - location ?wood - wood) \n      :precondition (and (at ?p ?loc) (has_wood ?loc))\n      :effect (and (inventory ?p ?wood) (not (groove ?wood)))\n   )",
+            "(:action make_weapon ; create a spear to hunt fish \n      :parameters (?rock - rock ?p - player ?wood - wood ?vines - vines ?spear - spear) \n      :precondition (and (inventory ?p ?rock) (inventory ?p ?vines) (inventory ?p ?wood))\n      :effect (and (inventory ?p ?spear))\n   )"
+        ],
+        "goal_state": "((cooked fish))"
+    },
+    {
+        "task": "start_fire",
+        "step": [
+            "go east person beach jungle",
+            "chop_wood person jungle wood)    8,9,14\n",
+            "go west person jungle beach",
+            "get tinder person beach",
+            "go west person beach ocean",
+            "get rock person ocean",
+            "carve_groove person wood rock)   9\n",
+            "light_fire person wood beach tinder fire)   9,12,3\n"
+        ],
+        "desc": [
+            "Hunt for fish, insects, and small animals for food. The protein and nutrients from meat and fish will give you energy. Mollusks, clams, oysters, crabs, muscles, and fish are all things that you may be able to find in the shallow waters surrounding or on an island."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action carve_groove ; create a grove in wood to light flint.\n      :parameters (?p - player ?wood - wood ?rock - rock) \n      :precondition (and (inventory ?p ?wood) (inventory ?p ?rock) (not (groove ?wood)))\n      :effect (and (groove ?wood))\n   )",
+            "(:action light_fire ; light a fire\n      :parameters (?p - player ?wood - wood ?loc - location ?tinder - tinder ?fire - fire) \n      :precondition (and (inventory ?p ?wood) (inventory ?p ?tinder) (can_light_fire ?loc) (groove ?wood))\n      :effect (and (at ?fire ?loc) (not (inventory ?wood)) (not (groove ?wood)))\n   )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action chop_wood ; chop down wood from a nearby tree.\n      :parameters (?p - player ?loc - location ?wood - wood) \n      :precondition (and (at ?p ?loc) (has_wood ?loc))\n      :effect (and (inventory ?p ?wood) (not (groove ?wood)))\n   )"
+        ],
+        "goal_state": "((at fire beach))"
+    },
+    {
+        "task": "escape_island",
+        "step": [
+            "go east person beach jungle",
+            "go east person jungle river",
+            "find_other_survivors river survivor person",
+            "go west person river jungle",
+            "chop_wood person jungle wood",
+            "get vines person jungle",
+            "go west person jungle beach",
+            "build_raft beach vines person wood"
+        ],
+        "desc": [
+            "Hunt for fish, insects, and small animals for food. The protein and nutrients from meat and fish will give you energy. Mollusks, clams, oysters, crabs, muscles, and fish are all things that you may be able to find in the shallow waters surrounding or on an island.",
+            "Ration all of your supplies. Do not waste anything, even if you have an overabundance of it. Store away your excess food and water and stick to strict rationing. The body requires 32 ounces of water a day and 200-1500 calories of food for an average person."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action build_raft ; build a raft to escape the deserted island \n      :parameters (?loc - location ?vines - vines ?p - player ?wood - wood) \n      :precondition (and (at ?p ?loc) (at_ocean ?loc) (inventory ?p ?wood) (inventory ?p ?vines) (has_friend ?p))\n      :effect (and (has_escaped ?p))\n   )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n      :parameters (?p - player ?loc - location ?water - water) \n      :precondition (and (at ?p ?loc) (has_water_source ?loc))\n      :effect (and (inventory ?p ?water) (not (treated ?water)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action find_other_survivors ; find other survivors on the deserted island \n      :parameters (?loc - location ?survivor - survivor ?p - player) \n      :precondition (and (at ?survivor ?loc) (at ?p ?loc))\n      :effect (and (has_friend ?p))\n   )",
+            "(:action chop_wood ; chop down wood from a nearby tree.\n      :parameters (?p - player ?loc - location ?wood - wood) \n      :precondition (and (at ?p ?loc) (has_wood ?loc))\n      :effect (and (inventory ?p ?wood) (not (groove ?wood)))\n   )"
+        ],
+        "goal_state": "((has_escaped person))"
+    }
+]

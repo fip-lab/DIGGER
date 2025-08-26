@@ -1,0 +1,63 @@
+[
+    {
+        "task": "How to Eat Soft Boiled Eggs",
+        "instantiting_action": [
+            "wait(p)",
+            "wait(entity socket)",
+            "wait(entity stove)",
+            "crack(actor item socket jar tool appliance ingredient)",
+            "crack(actor item socket saucepan tool appliance ingredient)",
+            "crack(actor item stove jar tool appliance ingredient)",
+            "crack(actor item stove saucepan tool appliance ingredient)",
+            "flip(agent item surface tool)",
+            "cook(agent item socket jar tool)",
+            "cook(agent item socket saucepan tool)",
+            "cook(agent item stove jar tool)",
+            "cook(agent item stove saucepan tool)",
+            "lift(agent item socket)",
+            "lift(agent item stove)",
+            "repeat(agent task_object goal_state)",
+            "serve(agent item1 item2 dish loc)",
+            "secure(egg_wash item1 item2 table)",
+            "roll(actor candles socket)",
+            "roll(actor candles stove)",
+            "roll(actor water socket)",
+            "roll(actor water stove)",
+            "cut(actor item tool)",
+            "shape_into_ball_shape(mixture)",
+            "cut_edges_off_bread_slices(bread)",
+            "shape(item shape_type)",
+            "deep(ingredient utensil socket)",
+            "deep(ingredient utensil stove)",
+            "transition_state(actor target)"
+        ]
+    },
+    {
+        "task": "How to Make an Egg, Tomato and Toast Breakfast",
+        "instantiting_action": [
+            "wait(p)",
+            "wait(entity stove)",
+            "crack(actor item stove pan tool appliance egg)",
+            "crack(actor item stove pan tool appliance tomato)",
+            "crack(actor item stove pan tool appliance butter)",
+            "crack(actor item stove pan tool appliance protein)",
+            "flip(agent item surface tool)",
+            "cook(agent item stove pan tool)",
+            "lift(agent item stove)",
+            "repeat(agent task_object goal_state)",
+            "serve(agent item1 item2 toast loc)",
+            "serve(agent item1 item2 meal loc)",
+            "secure(egg_wash item1 item2 table)",
+            "roll(actor object stove)",
+            "cut(actor item tool)",
+            "shape_into_ball_shape(mixture)",
+            "cut_edges_off_bread_slices(bread)",
+            "shape(item shape_type)",
+            "deep(egg spatula stove)",
+            "deep(tomato spatula stove)",
+            "deep(butter spatula stove)",
+            "deep(protein spatula stove)",
+            "transition_state(actor target)"
+        ]
+    }
+]

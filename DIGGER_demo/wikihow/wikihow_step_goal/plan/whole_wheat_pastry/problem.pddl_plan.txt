@@ -1,0 +1,6 @@
+(add_flour_and_salt canola_oil canola_oil mixing_bowl table)
+(mix_ingredients canola_oil mixing_bowl canola_oil canola_oil)
+(prepare_pastry mixing_bowl canola_oil table)
+(press_into_pie_dish mixing_bowl table)
+(create_edge canola_oil table)
+; cost = 5 (unit cost)

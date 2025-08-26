@@ -1,0 +1,431 @@
+{
+    "goal": "Make Marshmallow Cream Cheese Fruit Dip",
+    "steps": [
+        "Blend the cream cheese and marshmallow cream until combined.",
+        "Pour the mixture into a clean bowl.",
+        "Serve with fruit or whatever else you like.",
+        "Finished."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/f/ff/Make-Marshmallow-Cream-Cheese-Fruit-Dip-Step-1-Version-2.jpg/aid2179924-v4-728px-Make-Marshmallow-Cream-Cheese-Fruit-Dip-Step-1-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/2/2c/Make-Marshmallow-Cream-Cheese-Fruit-Dip-Step-2-Version-2.jpg/aid2179924-v4-728px-Make-Marshmallow-Cream-Cheese-Fruit-Dip-Step-2-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/4/49/Make-Marshmallow-Cream-Cheese-Fruit-Dip-Step-3-Version-2.jpg/aid2179924-v4-728px-Make-Marshmallow-Cream-Cheese-Fruit-Dip-Step-3-Version-2.jpg",
+        "https://www.wikihow.com/images/thumb/3/39/Make-Marshmallow-Cream-Cheese-Fruit-Dip-Step-4.jpg/aid2179924-v4-728px-Make-Marshmallow-Cream-Cheese-Fruit-Dip-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "cream cheese",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "composition",
+                        "before": "separate | separated",
+                        "after": "combined with marshmallow cream | combined",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in container",
+                        "after": "in bowl",
+                        "saliency": 0.381062508259548,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the cream cheese | cream cheese and marshmallow"
+            ]
+        },
+        {
+            "entity": "the marshmallow cream",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in continer",
+                        "after": "in bowl",
+                        "saliency": 0.6464913439936566,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "by itself | solid",
+                        "after": "blended with marshmellow cream | blended with cream cheese | blended",
+                        "saliency": 0.5341614906832298,
+                        "attribute_annotation": "composition | shape"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "marshmallow",
+                "the marshmallow cream | marshmallow cream | cream cheese"
+            ]
+        },
+        {
+            "entity": "the mixing bowl",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.337011585392714,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "emptier",
+                        "after": "fuller",
+                        "saliency": 0.2911178655859507,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirty",
+                        "saliency": 0.2681710056825691,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier",
+                        "saliency": 0.606845513413506,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dryer",
+                        "after": "wetter",
+                        "saliency": 0.3700497775428395,
+                        "attribute_annotation": "moisture"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirty",
+                        "saliency": 0.32415605773607625,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller",
+                        "saliency": 0.3012091978326946,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the mixing bowl | the clean bowl",
+                "the bowl"
+            ]
+        },
+        {
+            "entity": "mixture",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in mixing bowl | outside of bowl",
+                        "after": "in serving bowl | inside bowl",
+                        "saliency": 0.5963834192326329,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy",
+                        "saliency": 0.4526672833795868,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full of mixture | full",
+                        "saliency": 0.27092198581560284,
+                        "attribute_annotation": "container | volume"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.2231986843457704,
+                        "attribute_annotation": "moisture"
+                    }
+                ],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "mixtre | mixture",
+                "the mixture | bowl"
+            ]
+        },
+        {
+            "entity": "blender",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.3139068763490595,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.13033199712200638,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on",
+                        "saliency": 0.10738513721862473,
+                        "attribute_annotation": "electric conductivity"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "weight",
+                        "before": "heavy",
+                        "after": "light",
+                        "saliency": 0.17622571692876968,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.13033199712200638,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | was clean",
+                        "after": "wet | dirty",
+                        "saliency": 0.5462754944716092,
+                        "attribute_annotation": "wetness | cleanness"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the knife",
+                "blender"
+            ]
+        },
+        {
+            "entity": "fruit",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "sliced",
+                        "saliency": 0.5242500330381921,
+                        "attribute_annotation": "composition | size"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.3425179507510682,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the fruit | fruit"
+            ]
+        },
+        {
+            "entity": "ingredients",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "organization",
+                        "before": "seperate",
+                        "after": "combined",
+                        "saliency": 0.15235745855542343,
+                        "attribute_annotation": "organization"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "ingredients"
+            ]
+        }
+    ],
+    "clusters": {
+        "fruit": {
+            "entity_cluster": [
+                "fruit",
+                "the fruit"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "size": [
+                    "size"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "the mixing bowl": {
+            "entity_cluster": [
+                "the bowl",
+                "bowl",
+                "the mixing bowl",
+                "the clean bowl"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ],
+                "moisture": [
+                    "moisture"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "location": [
+                    "location"
+                ],
+                "container": [
+                    "container"
+                ]
+            }
+        },
+        "blender": {
+            "entity_cluster": [
+                "blender",
+                "the knife"
+            ],
+            "attribute_cluster": {
+                "wetness": [
+                    "wetness",
+                    "cleanness"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "electric conductivity": [
+                    "electric conductivity"
+                ]
+            }
+        },
+        "cream cheese": {
+            "entity_cluster": [
+                "cream cheese",
+                "the cream cheese"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "location": [
+                    "location"
+                ],
+                "shape": [
+                    "shape"
+                ]
+            }
+        },
+        "the marshmallow cream": {
+            "entity_cluster": [
+                "marshmallow cream",
+                "the marshmallow cream",
+                "marshmallow"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "shape": [
+                    "shape"
+                ]
+            }
+        },
+        "mixture": {
+            "entity_cluster": [
+                "the mixture",
+                "cream cheese and marshmallow",
+                "mixtre",
+                "mixture"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "container": [
+                    "container"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "moisture": [
+                    "moisture"
+                ]
+            }
+        },
+        "ingredients": {
+            "entity_cluster": [
+                "ingredients"
+            ],
+            "attribute_cluster": {
+                "organization": [
+                    "organization"
+                ]
+            }
+        }
+    }
+}

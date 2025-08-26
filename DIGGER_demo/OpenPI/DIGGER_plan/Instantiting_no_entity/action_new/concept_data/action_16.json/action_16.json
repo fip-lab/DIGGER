@@ -1,0 +1,7 @@
+[
+    "(:action find\n  ; Find a resource or location and update player status\n  :parameters (?p - player ?target - object ?loc - location)\n  :precondition (and (at ?p ?loc) (not (found ?p ?target)))\n  :effect (and (found ?p ?target))",
+    "(:action collect_sticks\n      :parameters (?p - player ?loc - location ?stick - stick)\n      :precondition (and (at ?p ?loc) (has_twigs_and_sticks ?loc))\n      :effect (and (inventory ?p ?stick))",
+    "(:action collect ; Collect an item from a location and update inventory\n  :parameters (?collector - agent ?item - object ?location - place)\n  :precondition (and (at ?collector ?location) (available ?item ?location))\n  :effect (and (in_inventory ?collector ?item))",
+    "(:action create\n  ; Create an object or structure using required materials at a specified location\n  :parameters (?p - player ?loc - location ?material - object ?creation - creation)\n  :precondition (and (at ?p ?loc) (has_material ?p ?material ?loc))\n  :effect (and (at ?creation ?loc) (not (has_material ?p ?material ?loc))",
+    "(:action use ;  Use an item to perform a task and update status\n:parameters (?agent - person ?item - object ?location - location ?target - target)\n:precondition (and (at ?agent ?location) (at ?target ?location) (inventory ?agent ?item))\n:effect (and (at ?target_with_item ?location) (not (inventory ?agent ?item))"
+]

@@ -1,0 +1,160 @@
+[
+    {
+        "title": "How to Air Condition Your Dog's House",
+        "steps": [
+            "Get the necessary tools.",
+            "Choose the doghouse.",
+            "Purchase a small air conditioning unit.",
+            "Make sure the doghouse is safe.",
+            "Cut a hole for the air conditioner.",
+            "Install the air conditioner."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Get Pet Hair Out of Laundry",
+        "steps": [
+            "Run an empty wash cycle after you remove the laundry.",
+            "Wipe the drums of the washing machine and dryer if there\u2019s still hair.",
+            "Vacuum out any excess hair from the washing machine or dryer."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Remove Pet Hair",
+        "steps": [
+            "Set a lint roller by the door for a quick once-over before you leave.",
+            "Run a piece of tape over your clothes if you don't have a lint remover.",
+            "Dry hair-covered clothes before you wash them."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Get Dog Hair off Furniture",
+        "steps": [
+            "Cover your furniture.",
+            "Groom your dog.",
+            "Teach your dog not to climb on the furniture.",
+            "Consult your vet."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Reduce Allergies to Dogs",
+        "steps": [
+            "Wear a mask and gloves when bathing and grooming a dog.",
+            "Touch dogs as little as possible.",
+            "Wash your hands and other exposed skin thoroughly after touching a dog or handling a dog item such as a toy.",
+            "Remove and wash your clothing with an allergen reducing detergent promptly after handling a dog.",
+            "Discuss medications to reduce allergies to dogs with your doctor."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Blow Dry a Dog",
+        "steps": [
+            "Get your dog used to the dryer.",
+            "Monitor the temperature.",
+            "Blow in short increments, if necessary.",
+            "Provide ample treats and encouragement.",
+            "Avoid the sensitive areas."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Dry a Dog",
+        "steps": [
+            "Use a hair dryer.",
+            "Get your dog used to the blow dryer.",
+            "Blow air on the dog's coat.",
+            "Keep the dryer moving.",
+            "Praise your dog.",
+            "Know your dog's limits."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Wash a Chihuahua",
+        "steps": [
+            "Wait until your dog is dirty to bathe it.",
+            "Brush your chihuahua once a day to keep its coat looking good.",
+            "Rub your chihuahua down with a damp paper towel or soft washcloth.",
+            "Clean your chihuahua's ears with cotton balls and cleaning solution."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Dye Your Pet",
+        "steps": [
+            "Avoid letting your pet lick the dye.",
+            "Watch for an allergic reaction.",
+            "Acknowledge color fading.",
+            "Observe behavioral changes in your pet."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Diaper Your Dog with Disposable Dog Diapers",
+        "steps": [
+            "Opt for underwear-style diapers for full coverage.",
+            "Choose a belly band style for male dogs with urinary incontinence.",
+            "Measure your dog's waist to determine the size diaper you need.",
+            "Look for diapers with Velcro fasteners."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Bathe a Clumsy Dog",
+        "steps": [
+            "Take your dog to the groomer.",
+            "Have your vet bathe your dog.",
+            "Ask a friend to help you."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Make Dog Shampoo",
+        "steps": [
+            "Avoid products containing toxic ingredients.",
+            "Never use laundry detergent in dog shampoo.",
+            "See a vet to treat problems that do not respond to natural treatments.",
+            "Watch for signs of an adverse reaction."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Treat Anaphylactic Shock in a Dog",
+        "steps": [
+            "Avoid exposing your dog to allergens.",
+            "Change your dog\u2019s diet if it went into shock because of a food allergen.",
+            "Carry emergency medications for your dog if your vet recommends this."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Give a Dog an Enema",
+        "steps": [
+            "Position your dog.",
+            "Fill the enema bulb.",
+            "Identify the anus.",
+            "Prime the enema pump.",
+            "Insert the tubing in a straight line.",
+            "Administer the enema solution.",
+            "Take your dog to use the bathroom."
+        ],
+        "cluster_label": 603
+    },
+    {
+        "title": "How to Groom a Hyper Dog",
+        "steps": [
+            "Get your dog ready for their bath.",
+            "Thoroughly wet their fur.",
+            "Massage shampoo into their coat.",
+            "Rinse your dog thoroughly.",
+            "Dry your dog.",
+            "Restrain your dog for the rest of grooming.",
+            "Reward your dog for their good behavior."
+        ],
+        "cluster_label": 603
+    }
+]

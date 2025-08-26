@@ -1,0 +1,216 @@
+{
+    "goal": "Make a Fairy House in the Woods",
+    "steps": [
+        "Find a small area with slightly damp dirt.",
+        "Collect many twigs and sticks.",
+        "Using the sticks, create either a square formation, circle formation, or a Teepee formation.",
+        "Build your exterior walls.",
+        "You can use either a leaf or a wide strip of bark.",
+        "Decorate."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/5/53/Make-a-Fairy-House-in-the-Woods-Step-1.jpg/aid211061-v4-728px-Make-a-Fairy-House-in-the-Woods-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/5/59/Make-a-Fairy-House-in-the-Woods-Step-2.jpg/aid211061-v4-728px-Make-a-Fairy-House-in-the-Woods-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/c/c8/Make-a-Fairy-House-in-the-Woods-Step-3.jpg/aid211061-v4-728px-Make-a-Fairy-House-in-the-Woods-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/b/b3/Make-a-Fairy-House-in-the-Woods-Step-4.jpg/aid211061-v4-728px-Make-a-Fairy-House-in-the-Woods-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/f/ff/Make-a-Fairy-House-in-the-Woods-Step-5.jpg/aid211061-v4-728px-Make-a-Fairy-House-in-the-Woods-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/2/22/Make-a-Fairy-House-in-the-Woods-Step-6.jpg/aid211061-v4-728px-Make-a-Fairy-House-in-the-Woods-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "sticks",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered",
+                        "after": "bundled",
+                        "saliency": 0.42844964072585556,
+                        "attribute_annotation": "organization"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "all over place",
+                        "after": "collected",
+                        "saliency": 0.5843989769820972,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "bunched up",
+                        "after": "in formation",
+                        "saliency": 0.5996224576787237,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "bundled",
+                        "after": "stacked",
+                        "saliency": 0.3508098891730605,
+                        "attribute_annotation": "organization"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "composition",
+                        "before": "stand-alone",
+                        "after": "fortified",
+                        "saliency": 0.6894409937888198,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "tightness",
+                        "before": "untied",
+                        "after": "tired with bark",
+                        "saliency": 0.38430154670563876,
+                        "attribute_annotation": "tightness"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "fairy house frame",
+                "sticks | twigs",
+                "twigs",
+                "bundle"
+            ]
+        },
+        {
+            "entity": "fairy house",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "composition",
+                        "before": "bare",
+                        "after": "decorated",
+                        "saliency": 0.598100109609061,
+                        "attribute_annotation": "composition"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "fairy house"
+            ]
+        },
+        {
+            "entity": "walls",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "down",
+                        "after": "up",
+                        "saliency": 0.4291194738765071,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "location",
+                        "before": "bare",
+                        "after": "decorated",
+                        "saliency": 0.3514797223237121,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "walls"
+            ]
+        },
+        {
+            "entity": "area",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected",
+                        "saliency": 0.2762148337595908,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "area"
+            ]
+        }
+    ],
+    "clusters": {
+        "walls": {
+            "entity_cluster": [
+                "walls"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "area": {
+            "entity_cluster": [
+                "area"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "sticks": {
+            "entity_cluster": [
+                "twigs",
+                "fairy house frame",
+                "sticks",
+                "bundle"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "organization": [
+                    "organization"
+                ],
+                "location": [
+                    "location"
+                ],
+                "tightness": [
+                    "tightness"
+                ],
+                "availability": [
+                    "availability"
+                ]
+            }
+        },
+        "fairy house": {
+            "entity_cluster": [
+                "fairy house"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ]
+            }
+        }
+    }
+}

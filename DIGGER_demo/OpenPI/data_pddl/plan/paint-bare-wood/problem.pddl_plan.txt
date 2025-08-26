@@ -1,0 +1,6 @@
+(acquire_tool alice paintbrush1)
+(acquire_paint alice oil_paint1)
+(apply_under_coat alice paintbrush1 oil_paint1 barewood1)
+(apply_second_coat alice paintbrush1 oil_paint1 barewood1)
+(finish_painting alice barewood1)
+; cost = 5 (unit cost)

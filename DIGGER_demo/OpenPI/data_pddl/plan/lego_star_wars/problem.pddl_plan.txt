@@ -1,0 +1,7 @@
+(select_character_parts level)
+(save_name_and_exit level)
+(select_character_parts character)
+(save_name_and_exit character)
+(complete_level level)
+(start_game game)
+; cost = 6 (unit cost)

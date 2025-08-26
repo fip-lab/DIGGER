@@ -1,0 +1,329 @@
+{
+    "goal": "Use a Mic in Team Fortress 2",
+    "steps": [
+        "Make sure that your microphone is working and connected first.",
+        "Find various panels at the top like \"Multiplayer\", \"Mouse\", \"Audio\", etc.",
+        "Click on the Voice panel.",
+        "Start talking with other players using your microphone!",
+        "Use the microphone to communicate with your team in a more efficient manner and demand that your voice is heard!",
+        "Advise teammates as well as make game plans to help and support your team."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/0/01/Use-a-Mic-in-Team-Fortress-2-Step-1.jpg/aid4352016-v4-728px-Use-a-Mic-in-Team-Fortress-2-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/b/b4/Use-a-Mic-in-Team-Fortress-2-Step-2.jpg/aid4352016-v4-728px-Use-a-Mic-in-Team-Fortress-2-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/1/18/Use-a-Mic-in-Team-Fortress-2-Step-3.jpg/aid4352016-v4-728px-Use-a-Mic-in-Team-Fortress-2-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/d/d5/Use-a-Mic-in-Team-Fortress-2-Step-4.jpg/aid4352016-v4-728px-Use-a-Mic-in-Team-Fortress-2-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/0/03/Use-a-Mic-in-Team-Fortress-2-Step-5.jpg/aid4352016-v4-728px-Use-a-Mic-in-Team-Fortress-2-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/b/b7/Use-a-Mic-in-Team-Fortress-2-Step-6.jpg/aid4352016-v4-728px-Use-a-Mic-in-Team-Fortress-2-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "microphone",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "connection",
+                        "before": "unconnected | unplugged | disconnected",
+                        "after": "connected | plugged in",
+                        "saliency": 0.6154983732623485,
+                        "attribute_annotation": "connection"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off | disconnected",
+                        "after": "turned on | connected",
+                        "saliency": 0.45193729665779353,
+                        "attribute_annotation": "electric conductivity"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "nonfunctional",
+                        "after": "functional",
+                        "saliency": 0.3284038252982352,
+                        "attribute_annotation": "availability"
+                    },
+                    {
+                        "attribute": "operation",
+                        "before": "untested",
+                        "after": "tested",
+                        "saliency": 0.30545696539485356,
+                        "attribute_annotation": "operation"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "connection",
+                        "before": "unused",
+                        "after": "being used",
+                        "saliency": 0.6672582076308784,
+                        "attribute_annotation": "connection"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "availability",
+                        "before": "unused",
+                        "after": "used",
+                        "saliency": 0.3284038252982352,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "microphone"
+            ]
+        },
+        {
+            "entity": "panel",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "selection",
+                        "before": "unadjusted",
+                        "after": "adjusted",
+                        "saliency": 0.5156758355516119,
+                        "attribute_annotation": "selection"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "visibility",
+                        "before": "invisible",
+                        "after": "visible",
+                        "saliency": 0.5859213250517599,
+                        "attribute_annotation": "visibility | knowledge"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "closed",
+                        "after": "open",
+                        "saliency": 0.497190180419994,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "visibility",
+                        "before": "unselected",
+                        "after": "selected",
+                        "saliency": 0.7412008281573499,
+                        "attribute_annotation": "visibility | knowledge"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "deselected",
+                        "after": "selected",
+                        "saliency": 0.47870452528837626,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "panels | panel",
+                "audio options",
+                "menu options",
+                "voice panel"
+            ]
+        },
+        {
+            "entity": "voice",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "availability",
+                        "before": "unavailable",
+                        "after": "available",
+                        "saliency": 0.5156758355516119,
+                        "attribute_annotation": "availability"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "unheard",
+                        "after": "heard",
+                        "saliency": 0.367790594498669,
+                        "attribute_annotation": "sound"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "stability",
+                        "before": "inefficient",
+                        "after": "efficient",
+                        "saliency": 0.3779946761313221,
+                        "attribute_annotation": "stability"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "unheard",
+                        "after": "heard",
+                        "saliency": 0.4195504288671991,
+                        "attribute_annotation": "sound"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "communication",
+                "voice"
+            ]
+        },
+        {
+            "entity": "advice",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "availability",
+                        "before": "impossible",
+                        "after": "possible",
+                        "saliency": 0.46021887015675833,
+                        "attribute_annotation": "availability"
+                    },
+                    {
+                        "attribute": "ownership",
+                        "before": "withheld",
+                        "after": "given",
+                        "saliency": 0.3862762496302869,
+                        "attribute_annotation": "ownership"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "game plans",
+                "advice"
+            ]
+        },
+        {
+            "entity": "person",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking",
+                        "saliency": 0.3212658976634132,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported",
+                        "saliency": 0.4010647737355812,
+                        "attribute_annotation": "stability"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "team",
+                "person"
+            ]
+        }
+    ],
+    "clusters": {
+        "microphone": {
+            "entity_cluster": [
+                "microphone"
+            ],
+            "attribute_cluster": {
+                "connection": [
+                    "connection"
+                ],
+                "electric conductivity": [
+                    "electric conductivity"
+                ],
+                "operation": [
+                    "operation"
+                ],
+                "availability": [
+                    "availability"
+                ]
+            }
+        },
+        "voice": {
+            "entity_cluster": [
+                "communication",
+                "voice"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability"
+                ],
+                "stability": [
+                    "stability"
+                ],
+                "sound": [
+                    "sound"
+                ]
+            }
+        },
+        "person": {
+            "entity_cluster": [
+                "team",
+                "person"
+            ],
+            "attribute_cluster": {
+                "stability": [
+                    "stability"
+                ],
+                "volume": [
+                    "volume"
+                ]
+            }
+        },
+        "advice": {
+            "entity_cluster": [
+                "game plans",
+                "advice"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability"
+                ],
+                "ownership": [
+                    "ownership"
+                ]
+            }
+        },
+        "panel": {
+            "entity_cluster": [
+                "voice panel",
+                "panels",
+                "panel",
+                "audio options",
+                "menu options"
+            ],
+            "attribute_cluster": {
+                "visibility": [
+                    "knowledge",
+                    "visibility"
+                ],
+                "selection": [
+                    "selection"
+                ],
+                "availability": [
+                    "availability"
+                ]
+            }
+        }
+    }
+}

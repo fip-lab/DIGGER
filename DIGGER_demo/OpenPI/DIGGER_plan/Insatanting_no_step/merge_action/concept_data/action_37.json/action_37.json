@@ -1,0 +1,18 @@
+{
+    "cut": [
+        "(:action cut_tape\n    :parameters (?p - player ?tape - duct_tape ?piece - tape_piece)\n    :precondition (and (inventory ?p ?tape) (rolled ?tape))\n    :effect (and (inventory ?p ?piece) (not (rolled ?tape)) (cut ?piece))\n)\n```\n\n### Step 2: Measure it around your head, and cut it off the roll.\n```pddl\n"
+    ],
+    "measure": [
+        "(:action measure_and_cut_tape\n    :parameters (?p - player ?piece - tape_piece)\n    :precondition (and (inventory ?p ?piece) (cut ?piece))\n    :effect (and (measured ?piece) (cut_off ?piece))\n)\n```\n\n### Step 3: Fold it halfway through the middle, like shown.\n```pddl\n"
+    ],
+    "fold": [
+        "(:action fold_tape_halfway\n    :parameters (?p - player ?piece - tape_piece)\n    :precondition (and (inventory ?p ?piece) (measured ?piece) (cut_off ?piece))\n    :effect (and (folded_halfway ?piece) (not (sticky ?piece)))\n)\n```\n\n### Step 4: Fold the other half so there is no sticky part showing.\n```pddl\n",
+        "(:action fold_tape_completely\n    :parameters (?p - player ?piece - tape_piece)\n    :precondition (and (inventory ?p ?piece) (folded_halfway ?piece))\n    :effect (and (folded_completely ?piece) (smooth ?piece))\n)\n```\n\n### Step 5: Tape the ends together.\n```pddl\n"
+    ],
+    "tape": [
+        "(:action tape_ends_together\n    :parameters (?p - player ?piece - tape_piece)\n    :precondition (and (inventory ?p ?piece) (folded_completely ?piece))\n    :effect (and (ends_taped ?piece) (joined ?piece))\n)\n```\n\n### Step 6: And you are done!\n```pddl\n"
+    ],
+    "complete": [
+        "(:action complete_necklace\n    :parameters (?p - player ?piece - tape_piece)\n    :precondition (and (inventory ?p ?piece) (ends_taped ?piece))\n    :effect (and (necklace_completed ?piece) (not (inventory ?p ?piece)))\n)\n```\n\nThese actions should effectively capture the process of making a duct tape necklace, following the steps and descriptions provided, and aligning with the entity states."
+    ]
+}

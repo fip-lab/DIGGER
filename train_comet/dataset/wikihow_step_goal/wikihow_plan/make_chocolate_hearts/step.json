@@ -1,0 +1,358 @@
+{
+    "goal": "Make Chocolate Hearts for Valentine&#x27;s Day",
+    "steps": [
+        "Assemble the ingredients needed.",
+        "Melt the chocolate bars in the microwave until you have no lumps left after stirring.",
+        "Pour the melted chocolate into the heart shaped molds.",
+        "Put the chocolate into the freezer until hardened.",
+        "Leave them out for one minute and pop out of molds, Or, cut heart shapes in the tray.",
+        "Enjoy then and there, or box them up and give away!"
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/8/82/Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-1.jpg/aid1227411-v4-728px-Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/2/28/Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-2.jpg/aid1227411-v4-728px-Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/d/d8/Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-3.jpg/aid1227411-v4-728px-Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/2/28/Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-4.jpg/aid1227411-v4-728px-Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/1/1b/Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-5.jpg/aid1227411-v4-728px-Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/1/11/Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-6.jpg/aid1227411-v4-728px-Make-Chocolate-Hearts-for-Valentine%27s-Day-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "chocolate",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "cost",
+                        "before": "in store",
+                        "after": "purchased for use",
+                        "saliency": 0.32599693941848956,
+                        "attribute_annotation": "cost"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "texture",
+                        "before": "solid | lumpy",
+                        "after": "liquid | smooth | melted",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "texture | form | location | locatio"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "colder | room temperature | cooler",
+                        "after": "warmer | warm | hotter",
+                        "saliency": 0.2459417289284964,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "packaged",
+                        "after": "out of package",
+                        "saliency": 0.354127284183995,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "texture",
+                        "before": "in pot",
+                        "after": "in molds",
+                        "saliency": 0.525879917184265,
+                        "attribute_annotation": "texture | form | location | locatio"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "texture",
+                        "before": "liquid",
+                        "after": "frozen",
+                        "saliency": 0.6035196687370601,
+                        "attribute_annotation": "texture | form | location | locatio"
+                    },
+                    {
+                        "attribute": "hardness",
+                        "before": "liquid",
+                        "after": "solid | hardened",
+                        "saliency": 0.5172832838239266,
+                        "attribute_annotation": "hardness"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer",
+                        "after": "colder",
+                        "saliency": 0.1941818945599664,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "ease of release",
+                        "before": "hard to release from molds",
+                        "after": "easy to release from molds",
+                        "saliency": 0.17123503465658474,
+                        "attribute_annotation": "ease of release"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "texture",
+                        "before": "in molds | in mold",
+                        "after": "on plate | out of molds",
+                        "saliency": 0.44824016563146996,
+                        "attribute_annotation": "texture | form | location | locatio"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "liquid",
+                        "after": "heart shaped",
+                        "saliency": 0.2609865874516158,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "texture",
+                        "before": "in pile | in molds",
+                        "after": "in box",
+                        "saliency": 0.55175983436853,
+                        "attribute_annotation": "texture | form | location | locatio"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "chocolate | chocolates | choclate",
+                "chocolate bars"
+            ]
+        },
+        {
+            "entity": "ingredients",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop",
+                        "saliency": 0.5487892699612926,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "molds, mug, chocolate",
+                "ingredients"
+            ]
+        },
+        {
+            "entity": "mold",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "fuller",
+                        "saliency": 0.47227473219911786,
+                        "attribute_annotation": "container | volume"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full",
+                        "saliency": 0.21757133855432534,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.17167761874756204,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "warm",
+                        "saliency": 0.1487307588441804,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavier",
+                        "saliency": 0.13496264290215143,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "temperature",
+                        "before": "warm",
+                        "after": "cool",
+                        "saliency": 0.09697092447565038,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty",
+                        "saliency": 0.21757133855432534,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter",
+                        "saliency": 0.13496264290215143,
+                        "attribute_annotation": "weight"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "molds | mold"
+            ]
+        },
+        {
+            "entity": "microwave",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.37775677378701955,
+                        "attribute_annotation": "power"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "microwave"
+            ]
+        },
+        {
+            "entity": "spoon",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.16581150418579532,
+                        "attribute_annotation": "cleanness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "spoon"
+            ]
+        }
+    ],
+    "clusters": {
+        "chocolate": {
+            "entity_cluster": [
+                "chocolate bars",
+                "chocolate",
+                "chocolates",
+                "choclate"
+            ],
+            "attribute_cluster": {
+                "cost": [
+                    "cost"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "form": [
+                    "form",
+                    "shape"
+                ],
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "hardness": [
+                    "hardness"
+                ],
+                "ease of release": [
+                    "ease of release"
+                ]
+            }
+        },
+        "ingredients": {
+            "entity_cluster": [
+                "molds, mug, chocolate",
+                "ingredients"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "mold": {
+            "entity_cluster": [
+                "molds",
+                "mold"
+            ],
+            "attribute_cluster": {
+                "container": [
+                    "container"
+                ],
+                "volume": [
+                    "volume"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "microwave": {
+            "entity_cluster": [
+                "microwave"
+            ],
+            "attribute_cluster": {
+                "power": [
+                    "power"
+                ]
+            }
+        },
+        "spoon": {
+            "entity_cluster": [
+                "spoon"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ]
+            }
+        }
+    }
+}

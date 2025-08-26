@@ -1,0 +1,4 @@
+(get screwdriver)
+(get coconut)
+(poke coconut screwdriver)
+; cost = 3 (unit cost)

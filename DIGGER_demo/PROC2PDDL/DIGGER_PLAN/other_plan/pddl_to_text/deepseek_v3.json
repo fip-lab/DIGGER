@@ -1,0 +1,977 @@
+[
+    {
+        "step": [
+            "Put out anime balloons. Draw anime faces on balloons. Alternately, you can call local party supply stores to see if they have any relevant balloons. A third option is to purchase anime balloons online. You can have the balloons filled with helium, or blow them up yourself and place them around.",
+            "Hang paper lanterns. Buy paper lanterns, in the color of your party theme, at a party supply store or online. You can also make paper lanterns using tissue paper and bendable metal wire.",
+            "Ideas for main dishes include teriyaki meat or salmon, and stir fry with chicken or beef, noodles, vegetables, and toasted sesame seed sauce."
+        ],
+        "task": "3-decorate",
+        "goal_state": "putobjectinreceptacle agent1 scissors1",
+        "steps": "```pddl\n(decorate agent1 scissors1)\n```",
+        "similar_task": [
+            {
+                "task": "assembling-disguises",
+                "step": [
+                    "Find supplies for each disguise. Each of your disguises should have at least three parts, so make sure you have enough supplies for each of your characters to have a full costume!"
+                ],
+                "steps_predictions": [
+                    "get_costume npc costume"
+                ],
+                "domain_file": [
+                    "```lisp\n(:action get_costume\n    :parameters (?npc - npc ?c - costume)\n    :precondition (not (has-costume ?npc ?c))\n    :effect (has-costume ?npc ?c)\n)\n\n(:action get\n    :parameters (?entity - entity ?item - item)\n    :precondition (and (available ?entity) (not (has ?entity ?item)))\n    :effect (has ?entity ?item)\n)\n\n(:action clean_clothing\n    :parameters (?c - clothing)\n    :precondition (clothing-dirty ?c)\n    :effect (not (clothing-dirty ?c))\n)\n\n(:action decorate_helmet\n    :parameters (?h - helmet)\n    :precondition (helmet-plain ?h)\n    :effect (not (helmet-plain ?h))\n)\n\n(:action decorate\n    :parameters (?npc - entity ?item - object)\n    :precondition (and \n        (decoratable ?item) \n        (possesses ?npc ?item) \n        (not (decorated ?item))\n    )\n    :effect (and \n        (not (plain ?item))\n        (decorated ?item)\n    )\n)\n\n(:action make\n    :parameters (?npc - entity ?item - object ?state1 - state ?state2 - state)\n    :precondition (and \n        (has ?npc ?item) \n        (?state1 ?item) \n        (not (?state2 ?item))\n    )\n    :effect (and \n        (not (?state1 ?item)) \n        (?state2 ?item)\n    )\n)\n\n(:action make_helmet_invisible\n    :parameters (?npc - npc ?h - helmet)\n    :precondition (and \n        (has ?npc ?h) \n        (helmet-visible ?h) \n        (not (helmet-invisible ?h))\n    )\n    :effect (and \n        (not (helmet-visible ?h)) \n        (helmet-invisible ?h)\n    )\n)\n\n(:action make_clothing_clean\n    :parameters (?npc - npc ?c - clothing)\n    :precondition (and \n        (has ?npc ?c) \n        (dirty ?c) \n        (not (clean ?c))\n    )\n    :effect (and \n        (not (dirty ?c)) \n        (clean ?c)\n    )\n)\n\n(:action make_helmet_camouflaged\n    :parameters (?npc - npc ?h - helmet)\n    :precondition (and \n        (has ?npc ?h) \n        (plain ?h) \n        (not (camouflaged ?h))\n    )\n    :effect (and \n        (not (plain ?h)) \n        (camouflaged ?h)\n    )\n)\n```"
+                ],
+                "similar_entity": {
+                    "costume": {
+                        "clothing": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "Certainly! Below is a Python solution to the task, which involves decorating a function to add additional behavior. The task is likely to create a decorator that can be used to modify or extend the behavior of a function.\n\n### Task: `3-decorate`\n\n#### Objective:\nCreate a decorator that adds additional behavior to a function, such as logging the function's execution time or printing a message before and after the function runs.\n\n#### Solution:\n\n```python\nimport time\n\n# Define the decorator function\ndef decorate(func):\n    def wrapper(*args, **kwargs):\n        # Print a message before the function is called\n        print(f\"Calling {func.__name__} with args: {args}, kwargs: {kwargs}\")\n        \n        # Record the start time\n        start_time = time.time()\n        \n        # Call the original function\n        result = func(*args, **kwargs)\n        \n        # Record the end time\n        end_time = time.time()\n        \n        # Print a message after the function is called\n        print(f\"{func.__name__} executed in {end_time - start_time:.4f} seconds\")\n        \n        # Return the result of the function\n        return result\n    return wrapper\n\n# Example usage of the decorator\n@decorate\ndef add(a, b):\n    time.sleep(1)  # Simulate a time-consuming operation\n    return a + b\n\n# Call the decorated function\nresult = add(3, 5)\nprint(f\"Result: {result}\")\n```\n\n#### Explanation:\n\n1. **Decorator Function (`decorate`)**:\n   - The `decorate` function takes a function `func` as an argument.\n   - Inside `decorate`, a nested function `wrapper` is defined, which will replace the original function.\n   - The `wrapper` function accepts any number of positional (`*args`) and keyword (`**kwargs`) arguments.\n\n2. **Before Function Execution**:\n   - The `wrapper` function prints a message indicating that the function is about to be called, along with its arguments.\n\n3. **Timing the Function**:\n   - The start time is recorded using `time.time()`.\n   - The original function `func` is called with the provided arguments, and its result is stored.\n\n4. **After Function Execution**:\n   - The end time is recorded, and the execution time is calculated and printed.\n\n5. **Returning the Result**:\n   - The result of the original function is returned.\n\n6. **Applying the Decorator**:\n   - The `@decorate` syntax is used to apply the decorator to the `add` function.\n   - When `add(3, 5)` is called, the decorator's `wrapper` function is executed, adding the logging and timing behavior.\n\n7. **Output**:\n   - The output will include messages before and after the function call, along with the execution time and the result of the addition.\n\n#### Example Output:\n```\nCalling add with args: (3, 5), kwargs: {}\nadd executed in 1.0002 seconds\nResult: 8\n```\n\nThis solution demonstrates how to create and apply a decorator to add logging and timing functionality to a function."
+    },
+    {
+        "step": [
+            "",
+            "Create a shelter. Shelters are vital when it comes to keeping you safe and out of the elements. Shelters can also give you a place to rest and recover while you consider your next moves. There are many different types of shelters you can build. The natural material found on the island will dictate what kind of shelter you can create. As an example, you may try to create a simple lean-to shelter, using these steps:"
+        ],
+        "task": "prepare_meat",
+        "goal_state": " ((inventory animal) (cooked animal))",
+        "steps": "```pddl\n1. carve(person muscle prepare_meat)\n2. cook(animal meat prepare_meat)\n```",
+        "similar_task": [
+            {
+                "task": "catch_cook_fish",
+                "step": [
+                    "Heating the water above 185° F (85° C) for three minutes will kill all pathogens in your water.",
+                    "Hunt for fish, insects, and small animals for food. The protein and nutrients from meat and fish will give you energy. Mollusks, clams, oysters, crabs, muscles, and fish are all things that you may be able to find in the shallow waters surrounding or on an island."
+                ],
+                "steps_predictions": [
+                    "hunt_path npc path",
+                    "carve_groove person wood rock"
+                ],
+                "domain_file": [
+                    "[\n  '(:action perform_task ; Perform a task involving resource interaction\\n  :parameters (?person - agent ?resource - object ?tool - tool)\\n  :precondition (and\\n                  (at ?person ?resource)\\n                  (or (and (not (salt_water ?resource)) (not (hydrated ?person))) ; For drinking tasks\\n                      (has_tool ?person ?tool)) ; For carving tasks\\n                )\\n  :effect (and\\n            (or (and (hydrated ?person) (not (thirsty ?person)))\\n                (tool_used ?tool)\\n            )\\n          )\\n)',\n\n  '(:action carve\\n  :parameters (?person - agent ?material - object ?tool - tool)\\n  :precondition (and\\n    (at ?person ?material)\\n    (at ?tool ?material)\\n    (not (carved ?material))\\n  )\\n  :effect (and\\n    (carved ?material)\\n    (material_textured ?material tacky)\\n    (tool_used ?tool)\\n  )\\n)',\n\n  '(:action check\\n    ; Check a resource and update task status\\n    :parameters (?agent - agent ?resource - object ?item - object)\\n    :precondition (and\\n                    (at ?agent ?resource)\\n                    (not (checked ?agent ?item))\\n                  )\\n    :effect (checked ?agent ?item)\\n)',\n\n  '(:action cook ; Prepare a food item using a tool\\n  :parameters (?npc - agent ?food - object ?tool - tool)\\n  :precondition (and\\n    (caught ?npc ?food)\\n    (at ?food ?tool)\\n    (not (cooked ?food))\\n  )\\n  :effect (and\\n    (cooked ?food)\\n  )\\n)',\n\n  '(:action serve ; Serve an item and update its status\\n  :parameters (?item - object ?container - container ?location - location)\\n  :precondition (and\\n    (prepared ?item)\\n    (at ?container ?location)\\n    (not (served ?item))\\n  )\\n  :effect (and\\n    (in ?item ?container)\\n    (served ?item)\\n  )\\n)'\n]"
+                ],
+                "similar_entity": {
+                    "rock": {
+                        "stone": [
+                            {
+                                "attribute": "choice",
+                                "before": "unchosen | unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[rock]] is a type of [[music]]",
+                            "[[stone]] is related to [[rock]]",
+                            "You are likely to find [[a rock]] in [[a mountain]]",
+                            "[[a rock]] can be [[heavy]]"
+                        ]
+                    },
+                    "person": {
+                        "person": [
+                            {
+                                "attribute": "volume",
+                                "before": "silent",
+                                "after": "talking"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unsupported",
+                                "after": "supported"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[person]] is related to [[human]]",
+                            "[[A person]] can [[cross a street]]",
+                            "[[a person]] wants [[a headache]]",
+                            "[[A slave]] is [[a person]]",
+                            "[[a person]] doesn't want to [[be diseased]]",
+                            "[[a person]] is part of [[society]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wood": {
+                        "bare wood": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "smooth",
+                                "after": "tacky"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "color",
+                                "before": "brown",
+                                "after": "white"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "smooth",
+                                "after": "sticky"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[wood]] is related to [[tree]]",
+                            "You can use [[wood]] to [[fence in a property]]",
+                            "[[Wood]] can [[burn]]",
+                            "[[wood]] is [[a material]]",
+                            "[[Wood]] can be [[carved]]",
+                            "You are likely to find [[wood]] in [[a tree]]"
+                        ]
+                    },
+                    "path": {
+                        "routes": [
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "appearance",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "uninvestigated",
+                                "after": "investigated"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[road]] is related to [[path]]"
+                        ]
+                    }
+                }
+            }
+        ],
+        "nl_step": "### Solution: Prepare Meat\n\n**Objective:** To prepare meat for cooking by cleaning, seasoning, and marinating it appropriately.\n\n**Materials Needed:**\n- Fresh meat (e.g., beef, chicken, pork, lamb)\n- Cutting board\n- Sharp knife\n- Paper towels\n- Seasonings (e.g., salt, pepper, herbs, spices)\n- Marinade ingredients (e.g., olive oil, vinegar, soy sauce, garlic, lemon juice)\n- Mixing bowl\n- Plastic wrap or airtight container\n\n**Steps:**\n\n1. **Select the Meat:**\n   - Choose fresh, high-quality meat from a reliable source. Ensure it is within its use-by date and stored at the correct temperature.\n\n2. **Clean the Meat:**\n   - Rinse the meat under cold running water to remove any surface impurities.\n   - Pat the meat dry with paper towels to remove excess moisture, which helps with browning during cooking.\n\n3. **Trim Excess Fat (Optional):**\n   - Use a sharp knife to trim any excess fat from the meat, if desired. Leave a small amount for flavor and moisture.\n\n4. **Season the Meat:**\n   - Sprinkle both sides of the meat with salt and pepper. Add additional seasonings like garlic powder, paprika, or herbs according to your recipe or preference.\n\n5. **Prepare the Marinade (Optional):**\n   - In a mixing bowl, combine marinade ingredients such as olive oil, vinegar, soy sauce, minced garlic, and lemon juice. Adjust the ingredients to suit your taste.\n\n6. **Marinate the Meat (Optional):**\n   - Place the meat in a resealable plastic bag or shallow dish.\n   - Pour the marinade over the meat, ensuring it is fully coated.\n   - Seal the bag or cover the dish with plastic wrap.\n   - Refrigerate for at least 30 minutes, or up to 24 hours, depending on the type of meat and the recipe. Turn the meat occasionally to ensure even marination.\n\n7. **Store or Cook:**\n   - If not cooking immediately, store the seasoned or marinated meat in the refrigerator until ready to use.\n   - When ready to cook, remove the meat from the marinade (if used) and let it come to room temperature for about 20-30 minutes before cooking.\n\n**Tips:**\n- Always handle raw meat with clean hands and sanitize all surfaces and utensils that come into contact with it to prevent cross-contamination.\n- For tougher cuts of meat, consider using a meat tenderizer or marinating for a longer period to enhance tenderness.\n- Adjust seasoning and marinade ingredients based on the type of meat and the desired flavor profile.\n\n**Conclusion:**\nProperly preparing meat by cleaning, seasoning, and marinating ensures that it is flavorful, tender, and ready for cooking. Following these steps will help you achieve the best results in your culinary endeavors."
+    },
+    {
+        "step": [
+            "The tension wrench is made in an “L” shape and is used to apply tension to the bottom of the lock. You can make this by getting an Allen key and filing it flat.",
+            "Make your tools. For weak locks, a pair of paper clips should work; tougher locks might require bobby pins, wire clippers, and a pair of pliers. The key is to use metal firm enough for your pick and your tension wrench, the two components of the tool.",
+            "Insert the pick above the wrench. Use the leg of the pick to find and push each pin up and out of the tumbler. Once all pins have been moved, the lock should open. As previously noted, this skill takes a lot of practice to master, so have plenty of cheap practice locks on hand if you hope to get good at it."
+        ],
+        "task": "pick_hard_lock",
+        "goal_state": "pick_hard_lock keychain npc basement",
+        "steps": "```pddl\n(SlideIntoSideOfDoor agent card lock)\n```",
+        "similar_task": [
+            {
+                "task": "pick_easy_lock",
+                "step": [
+                    "Put the credit card into the side of the door. Slide the long end of a credit card in between the door frame and the locking side of the door, just above where the lock enters the frame."
+                ],
+                "steps_predictions": [
+                    "slide_into_side_of_door user1 creditcard1 lock1"
+                ],
+                "domain_file": [
+                    "[\n  '(:action push\\n    :parameters (?agent - agent ?target - object ?tool - tool)\\n    :precondition (and\\n        (has_tool ?agent ?tool)\\n        (locked ?target)\\n        (intact_state ?target)\\n    )\\n    :effect (and\\n        (tool_applied ?tool ?target)\\n        (not (intact_state ?target))\\n    )\\n)',\n  \n  '(:action hook_latch\\n    :parameters (?agent - agent ?car - vehicle ?tool - tool)\\n    :precondition (and\\n        (hanger_inside_door ?tool ?car)\\n        (has_tool ?agent ?tool)\\n        (locked ?car)\\n    )\\n    :effect (and\\n        (unlocked ?car)\\n        (not (locked ?car))\\n    )\\n)',\n  \n  '(:action hook\\n    :parameters (?agent - agent ?item - object ?tool - tool)\\n    :precondition (and\\n        (has_tool ?agent ?tool)\\n        (not (manipulated ?item))\\n    )\\n    :effect (and\\n        (manipulated ?item)\\n    )\\n)',\n  \n  '(:action straighten\\n    :parameters (?agent - agent ?object - tool)\\n    :precondition (and\\n        (has_tool ?agent ?object)\\n        (not (straight ?object))\\n        (modifiable ?object)\\n    )\\n    :effect (and\\n        (straight ?object)\\n        (not (hooked ?object))\\n    )\\n)',\n  \n  '(:action SlideIntoSideOfDoor\\n    :parameters (?agent - user ?creditcard - tool ?lock - object)\\n    :precondition (and\\n        (userHasCreditCard ?agent ?creditcard)\\n        (lockInDoor ?lock)\\n        (creditCardInHand ?agent ?creditcard)\\n        (doorLocked ?lock)\\n    )\\n    :effect (and\\n        (creditCardInDoorFrame ?creditcard ?lock)\\n        (not (creditCardInHand ?agent ?creditcard))\\n    )\\n)'\n]"
+                ],
+                "similar_entity": {
+                    "lock": {
+                        "cutting board": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the knife block | in the drawer",
+                                "after": "on the cutting board | cutting the velveeta"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a lock]] in [[a door]]",
+                            "[[غَلَقَ]] is a translation of [[lock]]",
+                            "[[a lock]] is used for [[securing a door]]",
+                            "[[safe]] is related to [[lock]]"
+                        ]
+                    },
+                    "creditcard": {
+                        "bank account": [
+                            {
+                                "attribute": "fullness",
+                                "before": "more full",
+                                "after": "more empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in customer's hand",
+                                "after": "in cashier's hand"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "### Solution to the Task: `pick_hard_lock`\n\n#### Overview\nPicking a hard lock is a skill that requires patience, precision, and the right tools. It’s important to note that lock picking should only be done legally, such as when you’ve locked yourself out of your own property. Unauthorized lock picking is illegal and unethical. For this solution, we’ll assume you’re working on a lock you own or have permission to pick.\n\n---\n\n#### Tools Needed:\n1. **Tension Wrench**: Used to apply rotational pressure to the lock.\n2. **Lock Pick**: Used to manipulate the pins inside the lock.\n3. **Optional Tools**: Rake pick, hook pick, or diamond pick for different techniques.\n\n---\n\n#### Step-by-Step Solution:\n\n### 1. **Understand the Lock Mechanism**\n   - Most pin tumbler locks consist of a series of pins that must be lifted to a specific height to allow the lock to turn.\n   - The pins are divided into **driver pins** (top) and **key pins** (bottom).\n\n### 2. **Insert the Tension Wrench**\n   - Insert the tension wrench into the bottom of the keyway.\n   - Apply gentle rotational pressure in the direction the key would turn (usually clockwise).\n   - Maintain consistent tension throughout the process.\n\n### 3. **Insert the Lock Pick**\n   - Insert the lock pick into the top of the keyway.\n   - Use a hook pick or rake pick depending on the lock’s difficulty.\n\n### 4. **Feel for the Pins**\n   - Gently push the pick into the lock to feel the pins.\n   - Start from the back of the lock and work your way forward.\n\n### 5. **Lift the Pins**\n   - Apply upward pressure to each pin with the pick.\n   - When a pin reaches the correct height, you’ll feel a slight click or movement.\n   - The tension wrench will rotate slightly as each pin sets.\n\n### 6. **Repeat for All Pins**\n   - Continue lifting and setting each pin one by one.\n   - If a pin doesn’t set, release tension slightly and try again.\n\n### 7. **Turn the Lock**\n   - Once all pins are set, increase the tension on the wrench to fully rotate the lock cylinder.\n   - The lock should open.\n\n---\n\n#### Tips for Success:\n- **Patience is Key**: Lock picking takes practice. Don’t rush the process.\n- **Use Light Pressure**: Too much force can damage the lock or make it harder to pick.\n- **Practice on Practice Locks**: Use transparent or training locks to understand the mechanics better.\n\n---\n\n#### Legal Disclaimer:\nAlways ensure you have legal permission to pick a lock. Unauthorized lock picking is a criminal offense in most jurisdictions. Use this skill responsibly and ethically.\n\n---\n\nBy following these steps and practicing regularly, you’ll improve your ability to pick hard locks effectively."
+    },
+    {
+        "step": [
+            "Polish the papyrus. This step isn't absolutely necessary, but it will make the papyrus look nicer and more finished. Use a shell or smooth piece of ivory. Any type of shell that is smooth and without ridges will do. Rub the shell or ivory over the sheet of paper until it appears to be shinier than it was.",
+            "Flatten the sheet. The paper may not be completely flat after you remove it from the wooden boards. Put the paper under a stone slab for up to 6 days to make it completely flat.",
+            "Replace the wet linen sheets with dry ones. You should do this every few hours. Be careful when removing the wet linen. Peel it off of the papyrus gently. The drying process should take approximately 72 hours."
+        ],
+        "task": "finishing_papyrus",
+        "goal_state": "put_papyrus_in_order papyrus1",
+        "steps": "```pddl\n1. (cut_stalks(npc papyrus))\n2. (peel_papyrus_strips(npc papyrus))\n3. (lay(npc sheet ridge))\n```",
+        "similar_task": [
+            {
+                "task": "get-papyrus",
+                "step": [
+                    "Polish the papyrus. This step isn't absolutely necessary, but it will make the papyrus look nicer and more finished. Use a shell or smooth piece of ivory. Any type of shell that is smooth and without ridges will do. Rub the shell or ivory over the sheet of paper until it appears to be shinier than it was.",
+                    "Flatten the sheet. The paper may not be completely flat after you remove it from the wooden boards. Put the paper under a stone slab for up to 6 days to make it completely flat.",
+                    "Replace the wet linen sheets with dry ones. You should do this every few hours. Be careful when removing the wet linen. Peel it off of the papyrus gently. The drying process should take approximately 72 hours."
+                ],
+                "steps_predictions": [
+                    "polish_papyrus npc papyrus",
+                    "flatten_sheet npc work_station sheet",
+                    "replace_sheet npc work_station papyrus"
+                ],
+                "domain_file": [
+                    "```lisp\n['(:action replace\n    :parameters (?actor - agent ?location - place ?item - thing)\n    :precondition (and (at ?actor ?location) (not (desired_state ?item)))\n    :effect (and (desired_state ?item) (not (undesired_state ?item))))\n\n(:action lay\n    :parameters (?npc - agent ?item - object ?location - place)\n    :precondition (and\n                    (ready ?item)\n                    (at ?item ?location)\n                    (position ?item ?initial_state))\n    :effect (and\n              (position ?item ?final_state)\n              (not (position ?item ?initial_state))))\n\n(:action dip_strips\n    :parameters (?npc - agent ?s - strip)\n    :precondition (and\n                    (dry ?s)\n                    (laid_out ?s))\n    :effect (and\n              (wet ?s)\n              (soaked ?s)\n              (not (dry ?s))))\n\n(:action dip\n    :parameters (?agent - agent ?item - object)\n    :precondition (and (dry ?item) (laid_out ?item))\n    :effect (and (wet ?item) (soaked ?item) (not (dry ?item))))\n\n(:action cut_stalks\n    :parameters (?npc - agent ?p - papyrus)\n    :precondition (and (has ?npc ?p) (not (stalks_cut ?p)))\n    :effect (stalks_cut ?p))\n\n(:action peel_papyrus_strips\n    :parameters (?npc - agent ?p - papyrus)\n    :precondition (and (stalks_cut ?p) (not (strips_peeled ?p)))\n    :effect (strips_peeled ?p))\n\n(:action cut\n    :parameters (?npc - agent ?item - object ?state_before - predicate ?state_after - predicate)\n    :precondition (and (has ?npc ?item) (not (?state_after ?item)) (?state_before ?item))\n    :effect (?state_after ?item))\n\n(:action peel\n    :parameters (?npc - agent ?item - object)\n    :precondition (and \n      (available ?npc) \n      (or \n        (and (papyrus ?item) (stalks_cut ?item) (not (peeled ?item)))\n        (and (papyrus ?item) (not (polished ?item)) (has-tool ?npc ?shell))))\n    :effect (and \n      (or \n        (peeled ?item)\n        (polished ?item))))\n\n(:action flatten\n    :parameters (?npc - agent ?ws - work_station ?item - object)\n    :precondition (and (not (flattened ?item)) (at ?npc ?ws) (has-tool ?ws))\n    :effect (flattened ?item))\n\n(:action laid\n    :parameters (?npc - agent ?item - object)\n    :precondition (and\n                    (dry ?item)\n                    (on_ground ?item))\n    :effect (and\n              (laid_out ?item)\n              (not (on_ground ?item))))\n]\n```"
+                ],
+                "similar_entity": {
+                    "papyrus": {
+                        "sponge": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on ground",
+                                "after": "in bucket"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "wet | dirty | dirtier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "sheet": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[paper]] is related to [[sheet]]",
+                            "[[sheet]] is for [[covering bed]]",
+                            "You are likely to find [[a sheet]] in [[a linen closet]]",
+                            "[[Lençol]] is a translation of [[sheet]]"
+                        ]
+                    },
+                    "work station": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "To complete the task of \"finishing papyrus,\" we need to understand what \"papyrus\" refers to in this context. Papyrus is an ancient writing material made from the pith of the papyrus plant, used in ancient Egypt and other Mediterranean cultures. If the task involves creating or completing a piece of writing on papyrus, here is a step-by-step solution:\n\n---\n\n### **Solution to Finishing Papyrus**\n\n1. **Gather Materials**  \n   - Obtain a piece of papyrus (either purchased or made from scratch using the papyrus plant).  \n   - Prepare writing tools: a reed pen, ink (typically black or red), and any pigments for illustrations.  \n   - Ensure your workspace is clean and organized.\n\n2. **Plan the Content**  \n   - Decide what you want to write or illustrate on the papyrus. This could be a story, a letter, a religious text, or artwork.  \n   - Sketch a rough outline or draft on a separate sheet to avoid mistakes on the papyrus itself.\n\n3. **Prepare the Papyrus**  \n   - Smooth the surface of the papyrus to ensure it is even and ready for writing.  \n   - If necessary, lightly dampen the papyrus to make it more pliable.\n\n4. **Begin Writing or Drawing**  \n   - Use the reed pen and ink to carefully write or draw on the papyrus.  \n   - Work slowly and deliberately to avoid smudging or errors.  \n   - If adding illustrations, use pigments for color and allow each layer to dry before adding the next.\n\n5. **Review and Edit**  \n   - Once the writing or drawing is complete, review it for any mistakes or areas that need improvement.  \n   - Make corrections if necessary, but be cautious to avoid damaging the papyrus.\n\n6. **Preserve the Papyrus**  \n   - Allow the ink and pigments to dry completely.  \n   - Store the papyrus in a dry, cool place to prevent deterioration.  \n   - If desired, frame or display the finished papyrus for protection and presentation.\n\n---\n\n### **Optional Enhancements**\n- Add decorative borders or embellishments to enhance the visual appeal.  \n- Use traditional hieroglyphs or calligraphy for an authentic ancient Egyptian look.  \n- Research historical papyrus designs for inspiration.\n\n---\n\nBy following these steps, you can successfully finish a piece of papyrus, whether for artistic, educational, or decorative purposes."
+    },
+    {
+        "step": [
+            "Avoid hunting large animals. If you're trying to survive in the woods, you need to be as healthy as you can be. While deer and wild pigs do have nutritious meat, they can injure you if you do not have the right gun to get the animals down humanely. Even if you can kill a deer or pig, you may not have the tools necessary to preserve the massive amount of meat that has come from the once-living animal. Small game and insects are much safer to hunt and gather and can provide you with adequate nutrition to survive in the woods."
+        ],
+        "task": "gather_kindling",
+        "goal_state": " ((inventory agent grass_tinder))",
+        "steps": "```pddl\n(collect agent grass_tinder)\n```",
+        "similar_task": [
+            {
+                "task": "start_a_fire",
+                "step": [
+                    "Find small, dry material to use as tinder. Look for dry grass, leaves, tree bark, pine needles, or any other small flammable materials you can find in the area. Tinder needs to be material that is easy to light and will produce a large flame so you can start your fire.",
+                    "Use dry sticks, branches, or tree bark to serve as your kindling.",
+                    "Avoid using too much energy. It may be difficult for you to find adequate food and water if you're lost in the woods. Try not to sweat or use too much energy by doing things like running around and screaming for help if you're by yourself. Conserve as much energy as you can for doing things like building shelter, fire, and searching for water.",
+                    "Search for a dry, flat area between 2 trees with splits in their trunks. Look around the area to find a relatively flat area with a tree that has a trunk that splits about 3–5 feet (0.91–1.52 m) off of the ground. If possible, try to find 2 trees that have a split in their trunks about 3–5 feet (0.91–1.52 m) off of the ground and are about 10 feet (3.0 m) apart from each other.",
+                    "Gather small twigs and branches to use for kindling. Kindling needs to be material that will catch easily when you light your tinder."
+                ],
+                "steps_predictions": [
+                    "start_fire npc camp teepee_structure",
+                    "cook npc camp teepee_structure campfire",
+                    "build_shelter npc camp teepee_structure",
+                    "search_area area2",
+                    "build_teepee npc camp teepee_structure"
+                ],
+                "domain_file": [
+                    "```lisp\n['(:action collect\n  ; Collect an item and prepare it for use\n  :parameters (?agent - agent ?item - object)\n  :precondition (and (available ?agent) (not (collected ?item)))\n  :effect (and (collected ?item) (prepared ?item))',\n\n '(:action place_sticks_in_formation\n  :parameters (?s - stick)\n  :precondition (bundled ?s)\n  :effect (in_formation ?s))',\n\n '(:action build_shelter\n  :parameters (?component - object)\n  :precondition (available ?component)\n  :effect (part_of_shelter ?component))',\n\n '(:action place\n  :parameters (?entity - object ?location - place)\n  :precondition (and (prepared ?entity) (not (placed ?entity ?location)))\n  :effect (placed ?entity ?location))',\n\n '(:action build\n  ; Universal build action\n  :parameters (?npc - agent ?location - place ?structure - structure ?materials - set)\n  :precondition (and\n                  (available ?npc)\n                  (has_materials ?npc ?materials)\n                  (not (built ?structure))\n                )\n  :effect (built ?structure))',\n\n '(:action gather\n  :parameters (?npc - agent ?resource - resource ?area - area)\n  :precondition (and\n    (available ?resource)\n    (selected_area ?area)\n    (not (has ?npc ?resource))\n  )\n  :effect (and\n    (collected ?resource)\n    (has ?npc ?resource)))',\n\n '(:action search\n  ; Search and gather resources or information\n  :parameters (?agent - agent ?target - object)\n  :precondition (and (not (searched ?agent ?target)))\n  :effect (searched ?agent ?target))',\n\n '(:action start\n  :parameters (?npc - agent ?location - place ?structure - object ?resource - object ?task - task)\n  :precondition (and \n    (available ?npc)\n    (in ?npc ?location)\n    (built ?structure ?location)\n    (has ?npc ?resource)\n    (not (started ?task ?location))\n  )\n  :effect (started ?task ?location))']\n```"
+                ],
+                "similar_entity": {
+                    "camp": {
+                        "room": [
+                            {
+                                "attribute": "sound",
+                                "before": "quiet",
+                                "after": "noisier"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[camp]] is related to [[tent]]",
+                            "[[Camp de réfugiés]] is a translation of [[camp]]"
+                        ]
+                    },
+                    "area": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[area]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "campfire": {
+                        "fire stone": [
+                            {
+                                "attribute": "step",
+                                "before": "unfound",
+                                "after": "found"
+                            },
+                            {
+                                "attribute": "availability",
+                                "before": "on ground",
+                                "after": "in inventory"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[Feu de camp]] is a translation of [[campfire]]"
+                        ]
+                    },
+                    "teepee structure": {
+                        "wreath base": [
+                            {
+                                "attribute": "step",
+                                "before": "unknown",
+                                "after": "chosen"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "### Solution: gather_kindling\n\n**Objective:** Collect small, dry twigs and branches to use as kindling for starting a fire.\n\n**Materials Needed:**\n- A container or sack for collecting kindling\n- Gloves (optional, for protection)\n\n**Steps:**\n\n1. **Choose the Right Location:**\n   - Look for areas with dry, dead wood such as forests, wooded areas, or even your backyard.\n   - Avoid green or wet wood as it won’t burn well.\n\n2. **Identify Suitable Kindling:**\n   - Search for small twigs, branches, and sticks that are dry and brittle.\n   - Ideal kindling should be about the thickness of a pencil or smaller.\n\n3. **Gather the Kindling:**\n   - Collect the twigs and branches from the ground. Avoid breaking branches off living trees.\n   - Ensure the wood is dry by snapping it—dry wood will break easily and make a sharp sound.\n\n4. **Sort the Kindling:**\n   - Separate the kindling by size: smaller twigs for starting the fire and slightly larger pieces to help it grow.\n   - Remove any leaves or bark that may be damp.\n\n5. **Store the Kindling:**\n   - Place the gathered kindling in your container or sack.\n   - Keep the kindling in a dry place until you’re ready to use it.\n\n6. **Safety Tips:**\n   - Be mindful of your surroundings and avoid areas with potential hazards like poisonous plants or uneven terrain.\n   - If using gloves, ensure they are sturdy enough to protect your hands from splinters or sharp edges.\n\n**Additional Tips:**\n- If you’re in a damp environment, look for kindling under trees or in sheltered areas where it’s more likely to be dry.\n- You can also use other materials like dry grass, pine needles, or bark shavings as additional kindling.\n\nBy following these steps, you’ll have a good supply of kindling ready to help you start a fire efficiently and safely."
+    },
+    {
+        "step": [
+            "Weave the strips together. Lay the strips on the cloth. Get a dry sheet of linen cloth or felt. Then, begin to weave them together. You want to create 2 layers of strips, with the top layer strips being perpendicular to the bottom layer strips. It should resemble a placemat. The strips should slightly overlap one another to prevent the papyrus from falling apart later.",
+            "Cut the paper. The sheet may be larger than you want when it is finished. Use a razor, scissors, or paper cutter to cut the papyrus into smaller sheets. Measure the sizes you are cutting so you will have multiple sheets of the same size.",
+            "Roll the excess water and sugar out of the plant. Grab a rolling pin and use it to roll the strips flat. The rolling pin should be squeezing the water out of them and flattening the strips into sheets.",
+            "Cut up the inner portion into strips. Use the knife you used to cut off the outer portion to cut the inner layers of the papyrus plant (pith) into thin strips. Hold the plant in your hand and cut towards you vertically. Make sure that all of the strips have the same size and thickness.",
+            "Cut the stalks. About 12 inches (30 cm) of papyrus plant will make a large piece of paper that will be nearly 24 inches (61 cm) in length. Cut off as many stalks as you will need to make the amount of paper you want. The cuts must be diagonally made. Then, cut the tips of the papyrus. You will not use the tips, which are the thinner, grass-like end of the plant.",
+            "Place the bundle between 2 wooden boards. Make sure that the wooden boards are somewhat heavy. The pressure is necessary to flatten the papyrus strips together. Once the strips have been placed between the boards, press them together. Lay the sandwiched papyrus sheet on a flat surface and allow the wooden boards to flatten the sheet using gravity."
+        ],
+        "task": "make_papyrus",
+        "goal_state": "make_papyrus papyrus",
+        "steps": "```pddl\n1. (collect papyrus river)\n2. (make npc papyrus nursery)\n```",
+        "similar_task": [
+            {
+                "task": "get_papyrus_plant",
+                "step": [
+                    "Obtain a papyrus plant. Papyrus paper is created from the Cyperus papyrus plant, which is a light but strong reed. You can buy them online or in nurseries. A nursery that specializes in papyrus would be your best bet, however.",
+                    "You can also make the paper out of wide grasses, like river reeds."
+                ],
+                "steps_predictions": [
+                    "buy_papyrus npc papyrus",
+                    "make_river_reeds npc papyrus riverside"
+                ],
+                "domain_file": [
+                    "```lisp\n(:action collect\n    :parameters (?item - object ?l - location)\n    :precondition (and\n      (at ?item ?l)\n      (not (collected ?item))\n    )\n    :effect (and\n      (collected ?item)\n      (not (at ?item ?l))\n    )\n)\n\n(:action buy_papyrus\n    :parameters (?npc - agent ?p - papyrus)\n    :precondition (and \n      (not (obtained ?p)) \n      (not (knowledge ?p))\n    )\n    :effect (and \n      (obtained ?p) \n      (knowledge ?p)\n    )\n)\n\n(:action buy\n    :parameters (?npc - agent ?item - object)\n    :precondition (and \n      (not (obtained ?item)) \n      (not (knowledge ?item))\n    )\n    :effect (and \n      (obtained ?item) \n      (knowledge ?item)\n    )\n)\n\n(:action make\n    :parameters (?npc - agent ?resource - object ?location - place)\n    :precondition (and \n      (obtained ?resource) \n      (not (knowledge ?location)) \n      (not (made ?resource))\n    )\n    :effect (and \n      (knowledge ?location) \n      (made ?resource)\n    )\n)\n```"
+                ],
+                "similar_entity": {
+                    "papyrus": {
+                        "sponge": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on ground",
+                                "after": "in bucket"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "wet | dirty | dirtier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "riverside": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "To create a solution for the task `make_papyrus`, we need to understand what \"papyrus\" refers to and what the task entails. Papyrus is an ancient writing material made from the pith of the papyrus plant, which was used in ancient Egypt and other Mediterranean cultures. If the task is to simulate or create a papyrus-like material or document, here’s a possible solution:\n\n### Solution: `make_papyrus`\n\n```python\ndef make_papyrus(text, width=40, height=20):\n    \"\"\"\n    Simulates the creation of a papyrus-like document with the given text.\n\n    Parameters:\n    text (str): The text to be written on the papyrus.\n    width (int): The width of the papyrus in characters (default is 40).\n    height (int): The height of the papyrus in lines (default is 20).\n\n    Returns:\n    str: A string representation of the papyrus document.\n    \"\"\"\n    # Ensure the text fits within the papyrus dimensions\n    wrapped_text = []\n    for line in text.split('\\n'):\n        while len(line) > width:\n            wrapped_text.append(line[:width])\n            line = line[width:]\n        wrapped_text.append(line)\n    \n    # Truncate or pad the text to fit the height\n    wrapped_text = wrapped_text[:height]\n    while len(wrapped_text) < height:\n        wrapped_text.append('')\n    \n    # Create the papyrus document\n    papyrus = []\n    for line in wrapped_text:\n        papyrus.append(line.ljust(width))\n    \n    # Add borders to simulate the edges of the papyrus\n    border = '=' * (width + 4)\n    papyrus = [border] + ['| ' + line + ' |' for line in papyrus] + [border]\n    \n    return '\\n'.join(papyrus)\n\n# Example usage:\ntext = \"In ancient Egypt, papyrus was used as a writing material. It was made from the pith of the papyrus plant, which grew abundantly in the Nile Delta.\"\npapyrus_document = make_papyrus(text)\nprint(papyrus_document)\n```\n\n### Explanation:\n1. **Text Wrapping**: The text is wrapped to fit within the specified `width` of the papyrus. If a line exceeds the width, it is split into multiple lines.\n2. **Height Adjustment**: The text is truncated or padded with empty lines to fit the specified `height` of the papyrus.\n3. **Border Addition**: Borders are added around the text to simulate the edges of a papyrus scroll.\n4. **Output**: The final papyrus document is returned as a string, which can be printed or saved.\n\n### Example Output:\n```\n============================================\n| In ancient Egypt, papyrus was used as a |\n| writing material. It was made from the |\n| pith of the papyrus plant, which grew  |\n| abundantly in the Nile Delta.          |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n|                                        |\n============================================\n```\n\nThis solution provides a simple simulation of a papyrus document, allowing you to input text and specify the dimensions of the papyrus."
+    },
+    {
+        "step": [
+            "Make sure to stock your hide-out with canned food, dried goods, non-perishable foods, and bottled water.",
+            "Move into a bunker or fortified structure and outfit it with an energy source. An underground bunker isn’t only the best for the time of impact; it will also protect you from environmental hazards after the comet has hit. When the comet hits, dust, soot, and water will shoot up into our atmosphere, making it cold for months to years.",
+            "Buy weapons and ammunition for after the impact. You may be more concerned with withstanding the destruction of the comet impact itself, but you also need to be conscious of the possible dangers of other people after the dust settles.",
+            "Purchase enough food, water, medicine, and other supplies. If the comet does hit on land, dust and rock particles flying into our atmosphere will make it too dangerous to go outside for months to years.",
+            "Limit your generator usage and only use it if necessary. Your generator will be a lifesaver for many things while you are in your bunker. You can use it to produce heat, cook food, and power lights. However, because most generators run on fuel, it’s important that you limit its usage because you will likely have a limited amount of fuel in your bunker. If you aren't in a bunker, a generator may still work, but there's a good chance that the main power grid will be down.",
+            "A semi-automatic rifle and a pistol with enough ammunition should be more than enough firepower."
+        ],
+        "task": "move_to_bunker",
+        "goal_state": "gotolocation agent bunker2 npc",
+        "steps": "```pddl\n(get_shelter npc bunker bunker2)\n```",
+        "similar_task": [
+            {
+                "task": "find-shelter",
+                "step": [
+                    "Find a strong, brick building with a basement for shelter. These buildings types can withstand the most damage and remain standing. Look especially for a building with a basement. This provides added protection and a hiding place if you have to stay out of sight. Search your area for suitable buildings like these and move into one as soon as possible."
+                ],
+                "steps_predictions": [
+                    "get_shelter npc brickhouse basement"
+                ],
+                "domain_file": [
+                    "[\n  '(:action get_shelter\\n    :parameters (?npc - person ?building - building ?basement - basement)\\n    :precondition (and\\n                    (strong_building ?building)\\n                    (has_basement ?building ?basement)\\n                    (safe_location ?building))\\n    :effect (and\\n              (in_shelter ?npc ?building)\\n              (protected ?npc)\\n              (hidden ?npc)))',\n\n  '(:action clean_house\\n    :parameters (?cleaner - person ?house - building)\\n    :precondition (and\\n                    (assigned_cleaner ?cleaner ?house)\\n                    (dirty ?house))\\n    :effect (and\\n              (clean ?house)\\n              (satisfied ?cleaner)))',\n\n  '(:action get\\n    :parameters (?entity - object ?resource - object)\\n    :precondition (and\\n                    (not (obtained ?entity ?resource))\\n                    (available ?resource))\\n    :effect (and\\n              (obtained ?entity ?resource)\\n              (processed ?resource ?entity)))',\n\n  '(:action clean\\n  :parameters (?entity - object)\\n  :precondition (and \\n                  (messy ?entity)\\n                  (dusty ?entity))\\n  :effect (and \\n            (not (messy ?entity))\\n            (not (dusty ?entity))))',\n\n  '(:action cover\\n    :parameters (?entity - object ?material - material)\\n    :precondition (and\\n                    (in_location ?material ?entity)\\n                    (not (covered ?entity)))\\n    :effect (and\\n              (covered ?entity)\\n              (secure ?entity)))',\n\n  '(:action camouflage\\n  :parameters (?npc - person ?item - object ?location - place)\\n  :precondition (and\\n                  (at ?npc ?location)\\n                  (usable ?item)\\n                  (not (camouflaged ?item))\\n                  (not (hidden ?npc)))\\n  :effect (and\\n            (camouflaged ?item)\\n            (hidden ?npc)))',\n\n  '(:action drink\\n    :parameters (?npc - person ?liquid - object)\\n    :precondition (and (purified ?liquid) (not (hydrated ?npc)))\\n    :effect (hydrated ?npc))',\n\n  '(:action learn\\n    :parameters (?npc - person ?item - object)\\n    :precondition (has ?npc ?item)\\n    :effect (learned ?npc ?item))',\n\n  '(:action build\\n  :parameters (?npc - person ?resource - object ?item - object)\\n  :precondition (and\\n    (has_skill ?npc)\\n    (has_resource ?resource)\\n    (not (built ?item)))\\n  :effect (and\\n    (built ?item)\\n    (not (has_resource ?resource))))'\n]"
+                ],
+                "similar_entity": {
+                    "brickhouse": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "To solve the task `move_to_bunker`, we need to define a clear and actionable plan to move assets, people, or resources to a bunker. Here’s a step-by-step solution:\n\n---\n\n### **Solution: move_to_bunker**\n\n1. **Define the Objective**  \n   - Clearly identify the purpose of moving to the bunker (e.g., safety during a disaster, storage of critical resources, etc.).  \n   - Determine what needs to be moved (e.g., people, equipment, supplies).\n\n2. **Assess the Bunker’s Capacity**  \n   - Verify the bunker’s size, infrastructure, and available resources (e.g., water, power, ventilation).  \n   - Ensure the bunker can accommodate the intended number of people or items.\n\n3. **Plan the Movement**  \n   - **For People:**  \n     - Create a list of individuals to be moved.  \n     - Assign roles and responsibilities (e.g., leader, medic, logistics coordinator).  \n     - Establish communication protocols.  \n   - **For Resources:**  \n     - Inventory the items to be moved (e.g., food, water, medical supplies, tools).  \n     - Prioritize essential items based on urgency and importance.  \n   - **For Equipment:**  \n     - Identify critical equipment (e.g., generators, communication devices).  \n     - Ensure equipment is functional and ready for transport.  \n\n4. **Determine the Route and Timing**  \n   - Identify the safest and fastest route to the bunker.  \n   - Plan the timing of the move (e.g., during daylight, avoiding hazardous conditions).  \n\n5. **Prepare Transportation**  \n   - Arrange vehicles or transportation methods (e.g., trucks, buses, or manual transport).  \n   - Ensure vehicles are fueled, maintained, and ready for use.  \n\n6. **Execute the Move**  \n   - Follow the plan systematically:  \n     - Load people, resources, and equipment.  \n     - Transport them to the bunker safely.  \n   - Monitor the process to address any issues promptly.  \n\n7. **Secure the Bunker**  \n   - Once inside, lock down the bunker if necessary.  \n   - Verify that all individuals and resources are accounted for.  \n\n8. **Post-Move Actions**  \n   - Conduct a headcount or inventory check.  \n   - Assess the bunker’s functionality and address any immediate needs.  \n   - Establish a routine for monitoring and maintaining the bunker.  \n\n9. **Review and Improve**  \n   - After the move, evaluate the process for any inefficiencies or challenges.  \n   - Update the plan for future use based on lessons learned.  \n\n---\n\n### **Example Implementation**\n\n**Scenario:** Moving a family of four to a bunker during a hurricane.  \n\n1. **Objective:** Ensure the family’s safety and survival during the storm.  \n2. **Bunker Capacity:** The bunker can accommodate 6 people and has supplies for 2 weeks.  \n3. **Plan the Movement:**  \n   - Assign roles: Parent A (leader), Parent B (medic), Children (follow instructions).  \n   - Pack essential items: food, water, first aid kit, flashlights, and blankets.  \n4. **Route and Timing:** Move to the bunker 12 hours before the hurricane hits, using the family car.  \n5. **Transportation:** Ensure the car is fueled and ready.  \n6. **Execute the Move:** Load the car, drive to the bunker, and secure the entrance.  \n7. **Secure the Bunker:** Lock the bunker and verify all family members are inside.  \n8. **Post-Move Actions:** Check supplies, establish a routine, and monitor the storm.  \n9. **Review and Improve:** After the hurricane, discuss what worked well and what could be improved for future emergencies.  \n\n---\n\nThis structured approach ensures a safe and efficient move to the bunker, minimizing risks and ensuring preparedness."
+    },
+    {
+        "step": [
+            "An important thing in secret societies is to meet in secret, that means meeting in a new place every time or having access to a secret room somewhere. You could even figure out a time to chat online.",
+            "Make a dress code. Most small secret societies use robes while large ones, like the Freemasons, have complex aprons.",
+            "Think of a name. You and your closest friend should discuss what your secret society should be called.",
+            "Create a secret or a secret mission. A secret society must have something to protect.",
+            "Read a few clique-like books, like the clique series by Lisi Harrison, for some background information, although, maybe not so mean like they were."
+        ],
+        "task": "ready_sc",
+        "goal_state": " ((not (in anish ss)))",
+        "steps": "```pddl\n(check(agent help ready_sc))\n```",
+        "similar_task": [
+            {
+                "task": "collect-water",
+                "step": [
+                    "Shelter in place and wait for the initial chaos to subside. If all of the electronics suddenly stop working, the immediate loss of electricity will cause a lot of sudden confusion and chaos. If you aren’t home, wait 30-45 minutes for all of the abrupt danger to pass. Then, go home if you’re within a few miles or kilometers. If you’re already home, stay there and do not go outside.",
+                    "Eat anything in your fridge first to minimize food shortages. For the first 1-2 days, eat whatever is in your fridge and hasn’t gone bad immediately. Save the dry stuff for later when you may really need it. The odds are low society will completely collapse and you’ll go without help for super long, but it’s still better to go through everything that’s going to go bad anyway."
+                ],
+                "steps_predictions": [
+                    "fill bathtub bathroom npc",
+                    "get_water npc water"
+                ],
+                "domain_file": [
+                    "```lisp\n(:action fill\n    :parameters (?entity - object ?npc - person ?location - place)\n    :precondition (and\n                    (at_location ?entity ?location)\n                    (not (filled ?entity))\n                    (available ?npc))\n    :effect (and\n              (filled ?entity)\n              (not (empty ?entity))))\n\n(:action get\n    :parameters (?agent - object ?resource - object ?location - place)\n    :precondition (and (at_location ?agent ?location) (available ?resource ?location))\n    :effect (and (possess ?agent ?resource) (not (available ?resource ?location))))\n\n(:action check\n    :parameters (?agent - object ?resource - object ?context - context)\n    :precondition (and\n                    (available ?agent)\n                    (not (checked ?agent ?resource))\n                    (in_context ?agent ?context))\n    :effect (and\n             (checked ?agent ?resource)\n             (updated_status ?resource)\n             (learned_functionality ?agent ?resource)))\n```"
+                ],
+                "similar_entity": {
+                    "bathtub": {
+                        "the towels": [
+                            {
+                                "attribute": "size",
+                                "before": "larger | wider",
+                                "after": "smaller | narrower"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straight | flat",
+                                "after": "folded | now folded"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "relaxed",
+                                "after": "being used"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "holding towel"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "thinner | longer",
+                                "after": "thicker | shorter"
+                            },
+                            {
+                                "attribute": "height",
+                                "before": "low",
+                                "after": "higher"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "laundry room | outside | out",
+                                "after": "in linen closet | in closet"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in closet",
+                                "after": "on rack | on towel rack"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "folded",
+                                "after": "hanging | unfolded"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "opened"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A bathtub]] is for [[bathing]]",
+                            "Something you need to do before you [[have a bath]] is [[a bathtub]]"
+                        ]
+                    },
+                    "bathroom": {
+                        "sink": [
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full of macaroni"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter top",
+                                "after": "under faucet"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | cleaner",
+                                "after": "dirty | dirtier"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "drier",
+                                "after": "wetter"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a toilet]] in [[a bathroom]]",
+                            "[[a bathroom]] is [[room]]",
+                            "[[a bathroom]] is used for [[taking a bath]]"
+                        ]
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "The task \"ready_sc\" is a bit vague, so I'll interpret it as \"Ready for Software Construction\" or \"Ready for Source Code.\" Here’s a structured solution to ensure readiness for software construction or source code development:\n\n---\n\n### Solution: Ready for Software Construction (ready_sc)\n\n#### 1. **Define Requirements**\n   - **Clarify Objectives:** Understand the purpose of the software or feature.\n   - **Gather Requirements:** Collect functional and non-functional requirements from stakeholders.\n   - **Document Specifications:** Create a detailed requirements document or user stories.\n\n#### 2. **Plan the Development Process**\n   - **Choose a Methodology:** Decide on Agile, Waterfall, or another development methodology.\n   - **Set Milestones:** Break down the project into phases with clear deliverables.\n   - **Allocate Resources:** Assign team members and tools for each task.\n\n#### 3. **Design the Architecture**\n   - **Create System Diagrams:** Develop flowcharts, ER diagrams, or UML diagrams.\n   - **Define Modules:** Break the system into smaller, manageable components.\n   - **Choose Technologies:** Select programming languages, frameworks, and libraries.\n\n#### 4. **Set Up the Development Environment**\n   - **Install Tools:** Set up IDEs, version control systems (e.g., Git), and dependency managers.\n   - **Configure CI/CD:** Establish pipelines for continuous integration and deployment.\n   - **Prepare Testing Frameworks:** Set up unit testing, integration testing, and other QA tools.\n\n#### 5. **Establish Coding Standards**\n   - **Define Naming Conventions:** Ensure consistency in variable, function, and class names.\n   - **Set Code Review Guidelines:** Create a checklist for peer reviews.\n   - **Document Best Practices:** Share guidelines for writing clean, maintainable code.\n\n#### 6. **Prepare for Collaboration**\n   - **Set Up Communication Channels:** Use tools like Slack, Microsoft Teams, or email for team communication.\n   - **Organize Project Management:** Use tools like Jira, Trello, or Asana to track progress.\n   - **Schedule Regular Meetings:** Plan daily stand-ups or weekly syncs.\n\n#### 7. **Conduct a Readiness Review**\n   - **Verify Requirements:** Ensure all requirements are clear and approved.\n   - **Check Environment Setup:** Confirm that all tools and systems are ready.\n   - **Confirm Team Readiness:** Ensure all team members understand their roles and responsibilities.\n\n#### 8. **Start Development**\n   - **Begin Coding:** Start writing code based on the design and requirements.\n   - **Follow Iterative Cycles:** Continuously test, review, and refine the code.\n   - **Track Progress:** Regularly update tasks and address any blockers.\n\n#### 9. **Monitor and Adjust**\n   - **Track Metrics:** Measure progress, code quality, and performance.\n   - **Adapt Plans:** Adjust timelines or scope based on feedback and challenges.\n   - **Communicate Updates:** Keep stakeholders informed about progress.\n\n#### 10. **Prepare for Deployment**\n   - **Test Thoroughly:** Conduct end-to-end testing to ensure the software is bug-free.\n   - **Document the Code:** Write clear comments and documentation for future maintenance.\n   - **Plan the Release:** Prepare for deployment to production or distribution.\n\n---\n\n### Conclusion\nBy following these steps, you can ensure readiness for software construction or source code development. This structured approach minimizes risks, improves efficiency, and ensures successful project delivery."
+    },
+    {
+        "step": [
+            "Loot supplies if you have no other choice. Unfortunately, people sometimes have to do desperate things to survive. If you come across supplies or stores that no one is watching or look abandoned, then take everything you need. This might be ethically wrong, but you and your family have to survive.",
+            "Purify any water you drink that isn’t from a sealed bottle. A waterborne illness can be life-threatening in a survival situation. If need to use any unbottled water for drinking, always purify it first. The most common method is boiling the water for 1 minute to kill any pathogens. Then filter out larger objects by pouring the water through a fine net or cloth.",
+            "Eat as healthy as you can. This isn’t always possible and you have to survive on whatever food you can find. But if at all possible, keep your health up with nutritious food. A steady supply of vitamins, minerals, antioxidants, and fatty acids will help keep your immune system up and fight off sickness."
+        ],
+        "task": "heal-old-man",
+        "goal_state": " ((not (is_injured old_man)))",
+        "steps": "```\n(break(man obj tool))\n(wrap(man bit wrapper))\n```",
+        "similar_task": [
+            {
+                "task": "get_coconut_juice",
+                "step": [
+                    "Use a knife to shave off the tender white casing. Position your young coconut on a cutting board, and use a sharp cleaver or a sturdy chef’s knife to slice off the outer casing. Carve at an angle, as if you were removing the skin from an apple, until you expose the hard inner shell. Work to expose as much of the shell as possible.",
+                    "Turn the coconut upside down over a glass and allow it to drain. Let the coconut sit for several minutes or until all of the liquid drains out. You may need to shake the coconut a few times to get the last bit of water out of it."
+                ],
+                "steps_predictions": [
+                    "peel npc",
+                    "drain npc rack"
+                ],
+                "domain_file": [
+                    "```pddl\n[\n  '(:action process_coconut\n    :parameters (?p - person ?c - coconut ?t - tool ?r - rack ?g - glass)\n    :precondition (and \n                    (available ?p)\n                    (on ?c ?r)\n                    (not (drained ?c))\n                    (or (wrapped ?c) (has_casing ?c) (broken ?c))\n                    (or (knife ?t) (sharp ?t) (tool ?t))\n                    (empty ?g)\n                  )\n    :effect (and \n              (peeled ?c)\n              (not (wrapped ?c))\n            )\n  )',\n  '(:action wrap\n    :parameters (?p - person ?item - object ?wrapper - object)\n    :precondition (and\n                    (not (wrapped ?item))\n                    (clean ?wrapper)\n                  )\n    :effect (and\n              (wrapped ?item)\n              (not (clean ?wrapper))\n            )\n  )',\n  '(:action break\n    :parameters (?p - person ?obj - object ?tool - tool)\n    :precondition (and \n                    (not (broken ?obj))\n                    (in_hand ?tool)\n                  )\n    :effect (and \n              (broken ?obj)\n              (not (wrapped ?obj))\n            )\n  )'\n]\n```"
+                ],
+                "similar_entity": {
+                    "rack": {
+                        "the towels": [
+                            {
+                                "attribute": "size",
+                                "before": "larger | wider",
+                                "after": "smaller | narrower"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straight | flat",
+                                "after": "folded | now folded"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "relaxed",
+                                "after": "being used"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "holding towel"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "thinner | longer",
+                                "after": "thicker | shorter"
+                            },
+                            {
+                                "attribute": "height",
+                                "before": "low",
+                                "after": "higher"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "laundry room | outside | out",
+                                "after": "in linen closet | in closet"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in closet",
+                                "after": "on rack | on towel rack"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "folded",
+                                "after": "hanging | unfolded"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "opened"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "### Solution: Heal the Old Man\n\n#### Objective:\nTo heal an old man who is suffering from an illness or injury, restoring his health and well-being.\n\n#### Steps:\n\n1. **Assessment**:\n   - **Initial Examination**: Begin by assessing the old man's condition. Check for visible injuries, symptoms of illness, and gather any relevant medical history.\n   - **Consultation**: Speak with the old man or his caregivers to understand the duration and nature of his ailment. Ask about any medications or treatments he is currently undergoing.\n\n2. **Diagnosis**:\n   - **Identify the Problem**: Based on the assessment, determine the underlying cause of his condition. This could be a physical injury, a chronic illness, or an acute medical issue.\n   - **Professional Diagnosis**: If necessary, consult with a medical professional to confirm the diagnosis and get a detailed understanding of the condition.\n\n3. **Treatment Plan**:\n   - **Medical Treatment**: If the condition requires medical intervention, ensure that he receives the appropriate treatment. This could include medications, physical therapy, or even surgery.\n   - **Natural Remedies**: For less severe conditions, consider natural remedies such as herbal treatments, dietary changes, or lifestyle adjustments.\n   - **Pain Management**: If the old man is in pain, provide pain relief through medication or alternative methods like acupuncture or massage.\n\n4. **Care and Support**:\n   - **Daily Care**: Ensure that the old man receives proper care on a daily basis. This includes assistance with daily activities, proper nutrition, and ensuring he takes his medications as prescribed.\n   - **Emotional Support**: Provide emotional support to the old man. Loneliness and anxiety can exacerbate health issues, so spending time with him, listening to his concerns, and offering companionship can be beneficial.\n   - **Monitoring**: Continuously monitor his condition to ensure that the treatment is effective and that his health is improving. Make adjustments to the treatment plan as needed.\n\n5. **Rehabilitation**:\n   - **Physical Rehabilitation**: If the old man has suffered a physical injury, arrange for physical therapy or exercises to help him regain strength and mobility.\n   - **Mental Rehabilitation**: If the illness has affected his mental health, consider cognitive therapy or activities that stimulate his mind.\n\n6. **Follow-Up**:\n   - **Regular Check-Ups**: Schedule regular follow-up appointments with his healthcare provider to monitor his progress and make any necessary adjustments to his treatment plan.\n   - **Long-Term Care Plan**: Develop a long-term care plan to ensure that the old man remains healthy and that any potential relapses are managed promptly.\n\n7. **Prevention**:\n   - **Health Education**: Educate the old man and his caregivers on how to prevent future health issues. This could include advice on diet, exercise, and lifestyle changes.\n   - **Vaccinations and Screenings**: Ensure that he is up-to-date with vaccinations and regular health screenings to catch any potential issues early.\n\n#### Conclusion:\nBy following these steps, you can effectively heal the old man, improve his quality of life, and ensure that he remains healthy in the long term. The key is to provide comprehensive care that addresses both his physical and emotional needs."
+    }
+]

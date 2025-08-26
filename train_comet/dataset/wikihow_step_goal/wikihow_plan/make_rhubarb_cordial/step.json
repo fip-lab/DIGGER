@@ -1,0 +1,345 @@
+{
+    "goal": "Make Rhubarb Cordial",
+    "steps": [
+        "Simmer the rhubarb with the sugar, cloves and water.",
+        "Simmer until the rhubarb becomes soft.",
+        "Remove from the heat.",
+        "Add the mint leaves for decoration."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/b/ba/Make-Rhubarb-Cordial-Step-1.jpg/aid1718089-v4-728px-Make-Rhubarb-Cordial-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/b/bf/Make-Rhubarb-Cordial-Step-2.jpg/aid1718089-v4-728px-Make-Rhubarb-Cordial-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/8/84/Make-Rhubarb-Cordial-Step-3.jpg/aid1718089-v4-728px-Make-Rhubarb-Cordial-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/c/c8/Make-Rhubarb-Cordial-Step-4.jpg/aid1718089-v4-728px-Make-Rhubarb-Cordial-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "rhubarb",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "combined with sugar and water",
+                        "saliency": 0.5807453416149069,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "raw | room temperature | cold",
+                        "after": "simmered | warm | hot",
+                        "saliency": 0.443064182194617,
+                        "attribute_annotation": "temperature | location"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.24189095928226365,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "consistency",
+                        "before": "hard",
+                        "after": "soft",
+                        "saliency": 0.3863354037267081,
+                        "attribute_annotation": "consistency | hardness"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "raw",
+                        "after": "cooked",
+                        "saliency": 0.37422360248447206,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "temperature",
+                        "before": "hot | on stove | on heat",
+                        "after": "cool | cooler | warm | removed from heat | off heat",
+                        "saliency": 0.375776397515528,
+                        "attribute_annotation": "temperature | location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "appearance",
+                        "before": "unadorned | ungarnished",
+                        "after": "adorned with mint leaves | garnished with mint leaves",
+                        "saliency": 0.3823326432022084,
+                        "attribute_annotation": "appearance | taste"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "rhubarb | rhubarb cordial"
+            ]
+        },
+        {
+            "entity": "cordial",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "composition",
+                        "before": "bare",
+                        "after": "decorated",
+                        "saliency": 0.5031055900621119,
+                        "attribute_annotation": "composition"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "cordial"
+            ]
+        },
+        {
+            "entity": "stove",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "filled with water, rhubarb and ingredients",
+                        "saliency": 0.46169772256728775,
+                        "attribute_annotation": "volume"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "on",
+                        "after": "off",
+                        "saliency": 0.32712215320910976,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "pot",
+                "stove"
+            ]
+        },
+        {
+            "entity": "cloves",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "temperature",
+                        "before": "room temperature | cold",
+                        "after": "warm | hot",
+                        "saliency": 0.41511387163561075,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet",
+                        "saliency": 0.2774327122153209,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "temperature",
+                        "before": "hot",
+                        "after": "cooler",
+                        "saliency": 0.33747412008281574,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on heat",
+                        "after": "off heat",
+                        "saliency": 0.15389924085576262,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "cloves",
+                "sugar"
+            ]
+        },
+        {
+            "entity": "mint leaves",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "away from cordial | on counter",
+                        "after": "on cordial | on rhubarb",
+                        "saliency": 0.3892339544513458,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "mint leaves"
+            ]
+        },
+        {
+            "entity": "water",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "temperature",
+                        "before": "room temperature | cold",
+                        "after": "warm | hot",
+                        "saliency": 0.2670807453416149,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "temperature",
+                        "before": "hot",
+                        "after": "warm",
+                        "saliency": 0.18944099378881987,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "water"
+            ]
+        }
+    ],
+    "clusters": {
+        "water": {
+            "entity_cluster": [
+                "water"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "stove": {
+            "entity_cluster": [
+                "stove",
+                "pot"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "mint leaves": {
+            "entity_cluster": [
+                "mint leaves"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "cordial": {
+            "entity_cluster": [
+                "cordial",
+                "rhubarb cordial"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "taste": [
+                    "taste"
+                ],
+                "location": [
+                    "location"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "hardness": [
+                    "hardness"
+                ],
+                "appearance": [
+                    "appearance"
+                ],
+                "consistency": [
+                    "consistency"
+                ],
+                "texture": [
+                    "texture"
+                ]
+            }
+        },
+        "rhubarb": {
+            "entity_cluster": [
+                "rhubarb"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "taste": [
+                    "taste"
+                ],
+                "location": [
+                    "location"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "hardness": [
+                    "hardness"
+                ],
+                "appearance": [
+                    "appearance"
+                ],
+                "consistency": [
+                    "consistency"
+                ],
+                "texture": [
+                    "texture"
+                ]
+            }
+        },
+        "cloves": {
+            "entity_cluster": [
+                "sugar",
+                "cloves"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ],
+                "wetness": [
+                    "wetness"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        }
+    }
+}

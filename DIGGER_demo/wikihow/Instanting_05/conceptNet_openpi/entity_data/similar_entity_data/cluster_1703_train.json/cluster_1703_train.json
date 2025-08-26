@@ -1,0 +1,2245 @@
+[
+    {
+        "cluster_label": 1703,
+        "task": "How to Get Nail Polish off Just About Any Surface",
+        "step": [
+            "Get nail polish off of your floor surface.",
+            "Remove the excess nail polish right away.",
+            "Use acetone.",
+            "Wash the stain with a soft scrub."
+        ],
+        "steps_predictions": [
+            "get_nail_polish npc",
+            "remove-nail-polish fairy-moss",
+            "use_acetone acetone1 bottle1",
+            "wash_soap_with_clean cloth1"
+        ],
+        "goal_state": " ((polished_with_alk npc) (flattened fairy-moss))",
+        "similar_entity": {
+            "cloth": {
+                "sponge": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in bucket"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "wet | dirty | dirtier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You can use [[cloth]] to [[clean]]",
+                    "[[napkin]] is related to [[cloth]]",
+                    "You are likely to find [[a cloth]] in [[a fabric store]]",
+                    "[[A linen]] is [[a cloth]]",
+                    "[[a cloth]] can [[become wet]]"
+                ],
+                "comet_knowledge": [
+                    "cloth ObjectUse put on the table",
+                    "cloth MadeUpOf cloth",
+                    "cloth HasProperty cloth",
+                    "cloth CapableOf put on"
+                ]
+            },
+            "fairy-moss": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "fairy-moss ObjectUse use as a decoration",
+                    "fairy-moss MadeUpOf moss",
+                    "fairy-moss HasProperty found in fairy tales",
+                    "fairy-moss CapableOf use as a weapon"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "bottle": {
+                "bottle": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a bottle]] is for [[storing liquids]]",
+                    "You are likely to find [[water]] in [[a bottle]]",
+                    "[[Garrafa]] is a translation of [[bottle]]",
+                    "[[a bottle]] is a type of [[container]]",
+                    "[[bottle]] can be made of [[plastic]]"
+                ],
+                "comet_knowledge": [
+                    "bottle ObjectUse hold liquid",
+                    "bottle MadeUpOf bottle cap",
+                    "bottle HasProperty bottle cap",
+                    "bottle CapableOf hold liquid"
+                ]
+            },
+            "acetone": {
+                "solvent": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in  its container",
+                        "after": "on window | out of its container"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottles",
+                        "after": "on floor"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Ac\u00e9tone]] is a translation of [[acetone]]"
+                ],
+                "comet_knowledge": [
+                    "acetone ObjectUse make a paintbrush",
+                    "acetone MadeUpOf acetone",
+                    "acetone HasProperty acetone",
+                    "acetone CapableOf make paint"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Keep Nail Polish from Drying Out",
+        "step": [
+            "Add a few drops of lacquer thinner to the bottle.",
+            "Shake well to combine.",
+            "Alternatively, use clear polish.",
+            "Don't use nail polish remover."
+        ],
+        "steps_predictions": [
+            "add-lacquer-sliplargerbend velveeta",
+            "shake-and-combine you blender-1",
+            "make_polish_with_alk brush_finished",
+            "remove_nail_remover npc"
+        ],
+        "goal_state": " ((polished_with_alk brush_finished))",
+        "similar_entity": {
+            "blender-": {
+                "the blender": [
+                    {
+                        "attribute": "volume",
+                        "before": "less full | lighter",
+                        "after": "fuller | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "soaked in pineapple | covered in pineapple"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty | smelling like nothing",
+                        "after": "full of pineapple | smelling like pineapple"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "less full | lighter",
+                        "after": "fuller | heavier"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "isolated",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "stationary",
+                        "after": "spinning"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller | heavier",
+                        "after": "less full | lighter"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "blender- ObjectUse make smoothies",
+                    "blender- MadeUpOf blender",
+                    "blender- HasProperty found in kitchen",
+                    "blender- CapableOf make smoothies"
+                ]
+            },
+            "brush finished": {
+                "paint brush": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "colored"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "horizontal",
+                        "after": "moving vertically"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "brush finished ObjectUse brush hair",
+                    "brush finished MadeUpOf brush handle",
+                    "brush finished HasProperty brush brush",
+                    "brush finished CapableOf brush hair"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Whiten Nails",
+        "step": [
+            "Wipe your nails down with nail polish remover for polish stains.",
+            "Color your tips white with a whitening nail pencil for a quick fix.",
+            "Use a base coat when painting your nails to prevent yellowing.",
+            "Choose lighter colors of nail polish instead of darker shades."
+        ],
+        "steps_predictions": [
+            "wipe_nails npc",
+            "clean_tinder npc work_station",
+            "clean_nails npc",
+            "choose_lightestick npc"
+        ],
+        "goal_state": " ((clean_tinder npc) (has_weight_heavier linens))",
+        "similar_entity": {
+            "work station": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "work station ObjectUse work at",
+                    "work station MadeUpOf desk",
+                    "work station HasProperty found in office",
+                    "work station CapableOf work on computer"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Remove Gel Nail Polish",
+        "step": [
+            "Wait until the nails are mostly chipped away.",
+            "Insert a cuticle stick under the surface of a gel.",
+            "Peel off the gel.",
+            "Condition your nails."
+        ],
+        "steps_predictions": [
+            "chip_nail npc",
+            "insert_cuticle_stick npc",
+            "peel-gel alice",
+            "Condition_nail npc"
+        ],
+        "goal_state": " ((clean npc razor) (in_order razor))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Get Nail Polish out of Fabric",
+        "step": [
+            "Use hydrogen peroxide.",
+            "Try hairspray.",
+            "Use bug spray.",
+            "Rinse and wash. No matter what method you use, be sure to rinse the previously stained area well to get rid of the traces of the substance you used to remove the nail polish."
+        ],
+        "steps_predictions": [
+            "use_hydrogen_peroxide user1 hydrogen_oxide1 bottle1",
+            "treat_hairspray user1 hanger1",
+            "use_bug_spray bug_clean npc",
+            "clean_area area1"
+        ],
+        "goal_state": " ((clean npc area1))",
+        "similar_entity": {
+            "hanger": {
+                "bubble want": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted | shaped like want | bent into loop"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "in its original shape",
+                        "after": "in wand shape"
+                    },
+                    {
+                        "attribute": "use",
+                        "before": "for hanging",
+                        "after": "for blowing bubbles"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "inside",
+                        "after": "outside"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the closet]] is [[a hanger]]"
+                ],
+                "comet_knowledge": [
+                    "hanger ObjectUse hang clothes on",
+                    "hanger MadeUpOf hanger",
+                    "hanger HasProperty found in closet",
+                    "hanger CapableOf hang clothes on"
+                ]
+            },
+            "hydrogen oxide": {
+                "solvent": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in  its container",
+                        "after": "on window | out of its container"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottles",
+                        "after": "on floor"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "hydrogen oxide ObjectUse hydroxide",
+                    "hydrogen oxide MadeUpOf oxygen",
+                    "hydrogen oxide HasProperty hydroxide",
+                    "hydrogen oxide CapableOf use as fuel"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "user ObjectUse use the computer",
+                    "user MadeUpOf computer",
+                    "user HasProperty found on internet",
+                    "user CapableOf use computer"
+                ]
+            },
+            "bottle": {
+                "bottle": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a bottle]] is for [[storing liquids]]",
+                    "You are likely to find [[water]] in [[a bottle]]",
+                    "[[Garrafa]] is a translation of [[bottle]]",
+                    "[[a bottle]] is a type of [[container]]",
+                    "[[bottle]] can be made of [[plastic]]"
+                ],
+                "comet_knowledge": [
+                    "bottle ObjectUse hold liquid",
+                    "bottle MadeUpOf bottle cap",
+                    "bottle HasProperty bottle cap",
+                    "bottle CapableOf hold liquid"
+                ]
+            },
+            "bug clean": {
+                "spray cleaner": [
+                    {
+                        "attribute": "location",
+                        "before": "inside bottle",
+                        "after": "on windows"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "bug clean ObjectUse get rid of bugs",
+                    "bug clean MadeUpOf bug spray",
+                    "bug clean HasProperty found in bathroom",
+                    "bug clean CapableOf clean up mess"
+                ]
+            },
+            "area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[area]]"
+                ],
+                "comet_knowledge": [
+                    "area ObjectUse place to live",
+                    "area MadeUpOf surface of earth",
+                    "area HasProperty surface of earth",
+                    "area CapableOf travel to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Remove Nail Polish from Around the Nails",
+        "step": [
+            "Gather your materials.",
+            "Paint the glue around your nails.",
+            "Let the glue dry.",
+            "Paint your nails.",
+            "Let your nails dry.",
+            "Peel away the glue."
+        ],
+        "steps_predictions": [
+            "gather_materials you materials",
+            "paint_with_glue npc",
+            "dry_wicks wick1",
+            "paint_nail_with_polish npc",
+            "dry_nail npc",
+            "peel-and-flatten-gremixture glue1 container1"
+        ],
+        "goal_state": " ((clean_wicks wick1) (transparent npc))",
+        "similar_entity": {
+            "glue": {
+                "duct tape": [
+                    {
+                        "attribute": "length",
+                        "before": "rolled",
+                        "after": "unrolled | in pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on roll",
+                        "after": "in pieces"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "longer | rolled | whole",
+                        "after": "shorter | extended | cut | in pieces"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "elongated",
+                        "after": "folded"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "larger",
+                        "after": "smalle"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "elongated | long",
+                        "after": "folded"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "sticky",
+                        "after": "smooth"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "shorter",
+                        "after": "longer"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate pieces",
+                        "after": "one piece"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[paste]] is related to [[glue]]",
+                    "[[Glue]] is [[sticky]]",
+                    "[[glue]] is [[a substance]]",
+                    "[[glue]] can [[hold things together]]",
+                    "You are likely to find [[a glue]] in [[school]]",
+                    "You can use [[glue]] to [[stick thing together]]"
+                ],
+                "comet_knowledge": [
+                    "glue ObjectUse glue things together",
+                    "glue MadeUpOf glue",
+                    "glue HasProperty glue",
+                    "glue CapableOf glue things together"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "materials": {
+                "clothing": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "materials ObjectUse build a house",
+                    "materials MadeUpOf material",
+                    "materials HasProperty made from",
+                    "materials CapableOf build house"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            },
+            "wick": {
+                "wicks": [
+                    {
+                        "attribute": "cost",
+                        "before": "on sale at store",
+                        "after": "purchased from store"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "on lamp",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "burned"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lamp"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "heated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wick ObjectUse use as a weapon",
+                    "wick MadeUpOf car",
+                    "wick HasProperty found in house",
+                    "wick CapableOf wash dishes"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Apply Nail Polish Strips",
+        "step": [
+            "Open the pack carefully and examine what the strips came with.",
+            "Remove existing nail polish.",
+            "Choose the size that fits your nail the best.",
+            "Gently peel the strip off.",
+            "Place the strip onto your nail.",
+            "Smooth the strip down, while applying a lot of pressure.",
+            "Take the file.",
+            "Apply a top coat.",
+            "Enjoy!."
+        ],
+        "steps_predictions": [
+            "open_pack npc",
+            "remove-nail-polish npc",
+            "choose_size npc",
+            " peel_strips npc strip",
+            "place_strips_on_strip npc strip",
+            "smooth_strips strip1",
+            "take_file npc",
+            "apply_top_coathanger velveeta",
+            "make_sliplargerbeads npc"
+        ],
+        "goal_state": " ((selected_strips npc))",
+        "similar_entity": {
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "peel strips": {
+                "peeler": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "dryness",
+                        "before": "moist",
+                        "after": "drier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hotter | hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "soft",
+                        "after": "crunchy"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cupboard",
+                        "after": "on stove"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on stove | in fryer",
+                        "after": "on table | on serving dish"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "was heavy",
+                        "after": "is light"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "bland",
+                        "after": "seasoned"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "peel strips ObjectUse use as a paper weight",
+                    "peel strips MadeUpOf peel",
+                    "peel strips HasProperty used in surgery",
+                    "peel strips CapableOf peel off skin"
+                ]
+            },
+            "strip": {
+                "the clipping": [
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "cut"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "drier | dry",
+                        "after": "wetter | moister | moistened"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "pure",
+                        "after": "dipped into rooting hormone"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "strip ObjectUse use as a belt",
+                    "strip MadeUpOf strip",
+                    "strip HasProperty worn on body",
+                    "strip CapableOf strip off"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Reuse an Old Bottle of Nail Polish",
+        "step": [
+            "Clean the bottle.",
+            "Decide which craft items would benefit from being kept in a small storage container.",
+            "Reuse the bottle as a glue dispenser.",
+            "Keep hobby or modeling paints inside the nail polish bottle."
+        ],
+        "steps_predictions": [
+            "clean_bottle bottle1",
+            "choose_items craft_item container",
+            "reuse_bottle user1 bottle1",
+            "make_horizontal_bar nail_polish bottle"
+        ],
+        "goal_state": " ((inventory_items old_bottle bottle1) (has_shape_rectangular glass_filled))",
+        "similar_entity": {
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "user ObjectUse use the computer",
+                    "user MadeUpOf computer",
+                    "user HasProperty found on internet",
+                    "user CapableOf use computer"
+                ]
+            },
+            "bottle": {
+                "bottle": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a bottle]] is for [[storing liquids]]",
+                    "You are likely to find [[water]] in [[a bottle]]",
+                    "[[Garrafa]] is a translation of [[bottle]]",
+                    "[[a bottle]] is a type of [[container]]",
+                    "[[bottle]] can be made of [[plastic]]"
+                ],
+                "comet_knowledge": [
+                    "bottle ObjectUse hold liquid",
+                    "bottle MadeUpOf bottle cap",
+                    "bottle HasProperty bottle cap",
+                    "bottle CapableOf hold liquid"
+                ]
+            },
+            "craft item": {
+                "straw items": [
+                    {
+                        "attribute": "location",
+                        "before": "around house",
+                        "after": "in waste basket"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "disorganized",
+                        "after": "organized"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "craft item ObjectUse make into a gift",
+                    "craft item MadeUpOf craft item",
+                    "craft item HasProperty made from wood",
+                    "craft item CapableOf use as paperweight"
+                ]
+            },
+            "nail polish": {
+                "coat": [
+                    {
+                        "attribute": "location",
+                        "before": "in tin",
+                        "after": "on wood"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in tin",
+                        "after": "on wood"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "nail polish ObjectUse polish nails",
+                    "nail polish MadeUpOf nail polish",
+                    "nail polish HasProperty fingernail polish",
+                    "nail polish CapableOf polish nails"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ],
+                "comet_knowledge": [
+                    "container ObjectUse put the food in",
+                    "container MadeUpOf container",
+                    "container HasProperty containers",
+                    "container CapableOf put food in"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Dry Gel Nail Polish",
+        "step": [
+            "Select a no-light gel nail polish and top coat set.",
+            "Apply 2 coats of polish, allowing your nails to air-dry between coats.",
+            "Add 1 layer of a clear no-light gel top coat and air-dry it completely."
+        ],
+        "steps_predictions": [
+            "select_gel_polish velveeta",
+            "apply_polish npc",
+            "add_gel_coathanger alice velveeta"
+        ],
+        "goal_state": " ((polished velveeta))",
+        "similar_entity": {
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Dry Nail Polish Quickly",
+        "step": [
+            "Use quick-drying nail polish products.",
+            "Apply a glossy, fast-drying top coat to help your nails dry.",
+            "Try using drying drops or setting spray to cut down on time."
+        ],
+        "steps_predictions": [
+            "use_as_quick_drying nail_polish products",
+            "dry_nail npc",
+            "cut_time npc"
+        ],
+        "goal_state": " ((completed_painting nail_polish))",
+        "similar_entity": {
+            "products": {
+                "straw items": [
+                    {
+                        "attribute": "location",
+                        "before": "around house",
+                        "after": "in waste basket"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "disorganized",
+                        "after": "organized"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "products ObjectUse sell to customers",
+                    "products MadeUpOf products",
+                    "products HasProperty made from plants",
+                    "products CapableOf sell to customers"
+                ]
+            },
+            "nail polish": {
+                "coat": [
+                    {
+                        "attribute": "location",
+                        "before": "in tin",
+                        "after": "on wood"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in tin",
+                        "after": "on wood"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "nail polish ObjectUse polish nails",
+                    "nail polish MadeUpOf nail polish",
+                    "nail polish HasProperty fingernail polish",
+                    "nail polish CapableOf polish nails"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Use Both Regular and UV Gel Nail Polish Together",
+        "step": [
+            "Buff your nails to remove any shine.",
+            "Use an alcohol wipe to clean off the dust.",
+            "Brush on a layer of gel polish foundation.",
+            "Cure the foundation under an LED or UV lamp.",
+            "Wipe the surface of each nail with alcohol to remove the tacky layer.",
+            "Apply 1 or 2 thin coats of regular nail polish.",
+            "Allow the polish to dry completely.",
+            "Add a layer of gel topcoat.",
+            "Cure the topcoat under the lamp for the recommended time.",
+            "Wipe off the tacky layer with an alcohol wipe."
+        ],
+        "steps_predictions": [
+            "remove-shine-from-nail you",
+            "clean_room rug1 cloth1",
+            "brush-and-flatten-gel_polish alice velveeta",
+            "cure_foundation user1 eraser1 lamp1",
+            "remove_tape npc",
+            "apply_nail_polish npc",
+            "dry_polish alice velveeta",
+            "add_gel_coathanger alice velveeta",
+            "cure-wound wick1 lamp1",
+            "wipe_tape_with_alcohol_clean npc"
+        ],
+        "goal_state": " ((polished_room rug1) (flattened wick1))",
+        "similar_entity": {
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "cloth": {
+                "sponge": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in bucket"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "wet | dirty | dirtier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You can use [[cloth]] to [[clean]]",
+                    "[[napkin]] is related to [[cloth]]",
+                    "You are likely to find [[a cloth]] in [[a fabric store]]",
+                    "[[A linen]] is [[a cloth]]",
+                    "[[a cloth]] can [[become wet]]"
+                ],
+                "comet_knowledge": [
+                    "cloth ObjectUse put on the table",
+                    "cloth MadeUpOf cloth",
+                    "cloth HasProperty cloth",
+                    "cloth CapableOf put on"
+                ]
+            },
+            "lamp": {
+                "lamp": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wicked",
+                        "after": "wickless"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find at [[your house]] is [[a lamp]]",
+                    "[[lantern]] is related to [[lamp]]",
+                    "[[\u0633\u0650\u0631\u064e\u0627\u062c]] is a translation of [[lamp]]",
+                    "[[A lamp]] is for [[illuminating an area]]",
+                    "[[A lamp]] can [[illuminate]]."
+                ],
+                "comet_knowledge": [
+                    "lamp ObjectUse use as a flashlight",
+                    "lamp MadeUpOf light bulb",
+                    "lamp HasProperty light bulb",
+                    "lamp CapableOf light way"
+                ]
+            },
+            "rug": {
+                "throw rugs and inside door mats": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean | cleaner"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a rug]] is for [[floor covering]]",
+                    "*Something you find on [[the rug]] is [[a stain]]",
+                    "[[Tapete]] is a translation of [[rug]]",
+                    "[[carpet]] is related to [[rug]]"
+                ],
+                "comet_knowledge": [
+                    "rug ObjectUse use as a blanket",
+                    "rug MadeUpOf bedding",
+                    "rug HasProperty found in house",
+                    "rug CapableOf put on bed"
+                ]
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "user ObjectUse use the computer",
+                    "user MadeUpOf computer",
+                    "user HasProperty found on internet",
+                    "user CapableOf use computer"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "eraser": {
+                "eraser": [
+                    {
+                        "attribute": "location",
+                        "before": "in store | absent | at shop/in drawer | owned by store",
+                        "after": "in home | present | in hand | bought by you"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at store",
+                        "after": "purchased fro store"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on linoleum"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "getting smaller"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find at [[a desk]] is [[eraser]]",
+                    "[[Gomme \u00e0 effacer]] is a translation of [[eraser]]"
+                ],
+                "comet_knowledge": [
+                    "eraser ObjectUse make a paper airplane",
+                    "eraser MadeUpOf eraser",
+                    "eraser HasProperty erasing",
+                    "eraser CapableOf clean up mess"
+                ]
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            },
+            "wick": {
+                "wicks": [
+                    {
+                        "attribute": "cost",
+                        "before": "on sale at store",
+                        "after": "purchased from store"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "on lamp",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "burned"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lamp"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "heated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wick ObjectUse use as a weapon",
+                    "wick MadeUpOf car",
+                    "wick HasProperty found in house",
+                    "wick CapableOf wash dishes"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Open Nail Polish",
+        "step": [
+            "Avoid using force to open a stuck bottle.",
+            "Don't hit the cap against the counter.",
+            "Wrap a rubber band around a cap.",
+            "Use nail polish thinner to dissolve hardened polish.",
+            "Use hot water to soften stuck nail polish."
+        ],
+        "steps_predictions": [
+            "open_bottle user1 bottle1",
+            "set_cap_on_counter user1 ketchup_bottle1",
+            "wrap_rubber_band user1 velveeta",
+            "dissolve_polish npc",
+            "soften_stick npc"
+        ],
+        "goal_state": " ((open_cap1) (in_container ketchup_bottle1))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "user ObjectUse use the computer",
+                    "user MadeUpOf computer",
+                    "user HasProperty found on internet",
+                    "user CapableOf use computer"
+                ]
+            },
+            "ketchup bottle": {
+                "bottle": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "ketchup bottle ObjectUse drink from",
+                    "ketchup bottle MadeUpOf bottle cap",
+                    "ketchup bottle HasProperty filled with liquid",
+                    "ketchup bottle CapableOf drink from"
+                ]
+            },
+            "bottle": {
+                "bottle": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a bottle]] is for [[storing liquids]]",
+                    "You are likely to find [[water]] in [[a bottle]]",
+                    "[[Garrafa]] is a translation of [[bottle]]",
+                    "[[a bottle]] is a type of [[container]]",
+                    "[[bottle]] can be made of [[plastic]]"
+                ],
+                "comet_knowledge": [
+                    "bottle ObjectUse hold liquid",
+                    "bottle MadeUpOf bottle cap",
+                    "bottle HasProperty bottle cap",
+                    "bottle CapableOf hold liquid"
+                ]
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            }
+        }
+    }
+]

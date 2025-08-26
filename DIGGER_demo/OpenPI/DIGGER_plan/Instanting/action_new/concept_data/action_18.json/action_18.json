@@ -1,0 +1,5 @@
+[
+    "(:action set ; Set up an association between entities\n:parameters (?entity1 - agent ?entity2 - agent)\n:precondition (and (not (associated ?entity1 ?entity2)))\n:effect (and (associated ?entity1 ?entity2))",
+    "(:action talk ; Talk to another entity and update interaction status\n  :parameters (?speaker - person ?listener - person ?context - context)\n  :precondition (and (in ?speaker ?context) (in ?listener ?context) (not (talking ?speaker ?listener ?context)))\n  :effect (talking ?speaker ?listener ?context)\n)",
+    "(:action gather ; Gather resources and update task status\n  :parameters (?p - player ?item - object)\n  :precondition (and (not (gathered ?item)))\n  :effect (gathered ?item)\n)"
+]

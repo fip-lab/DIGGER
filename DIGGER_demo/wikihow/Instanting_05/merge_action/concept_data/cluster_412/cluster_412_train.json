@@ -1,0 +1,135 @@
+{
+    "remove": [
+        "(:action remove_plant\n  :parameters (?plant - plant ?container - container)\n  :precondition (and (at ?plant ?container) (not (empty ?container)))\n  :effect (and (not (at ?plant ?container)) (empty ?container))\n)\n\n",
+        "(:action remove_soil\n      :parameters (?fir - fir ?container - container ?loc - location)\n      :precondition (and (at ?fir ?loc) (watered ?fir) (not (soil_removed ?fir)))\n      :effect (and (soil_removed ?fir))\n)\n\n",
+        "(:action remove_root_ball\n      :parameters (?npc - npc ?fir - fir ?loc - location)\n      :precondition (and (at ?npc ?loc) (at ?fir ?loc) (roots_dug ?fir) (not (root_ball_removed ?fir)))\n      :effect (and (root_ball_removed ?fir) (not (at ?fir ?loc)))\n)\n```\n\n### Descriptions of Actions:\n\n1. **water_soil**:\n   - **Action name**: water_soil\n   - **Parameters**: `?fir - fir`, `?container - container`, `?water - water`, `?loc - location`\n   - **Preconditions**: The fir tree is at the location, the container has water, and the fir tree is not watered.\n   - **Effect**: The fir tree becomes watered.\n\n2. **remove_soil**:\n   - **Action name**: remove_soil\n   - **Parameters**: `?fir - fir`, `?container - container`, `?loc - location`\n   - **Preconditions**: The fir tree is at the location, the tree is watered, and the soil is not removed.\n   - **Effect**: The soil around the fir tree is removed.\n\n3. **dig_roots**:\n   - **Action name**: dig_roots\n   - **Parameters**: `?npc - npc`, `?fir - fir`, `?loc - location`\n   - **Preconditions**: The NPC is at the location, the fir tree is at the location, the soil is removed, and the roots are not dug.\n   - **Effect**: The roots of the fir tree are dug out.\n\n4. **remove_root_ball**:\n   - **Action name**: remove_root_ball\n   - **Parameters**: `?npc - npc`, `?fir - fir`, `?loc - location`\n   - **Preconditions**: The NPC is at the location, the fir tree is at the location, the roots are dug, and the root ball is not removed.\n   - **Effect**: The root ball of the fir tree is removed, and the fir tree is no longer at the location.\n\nThese actions should cover the steps involved in removing a tree, focusing on the state changes of the fir tree and the conditions required for each step.",
+        "(:action remove_stake\n    :parameters (?alice - npc ?stake - stake ?loc - location)\n    :precondition (and (at ?alice ?loc) (staked ?stake))\n    :effect (and (not (staked ?stake)) (inventory ?alice ?stake))\n)\n```\n\n### Explanation of Actions:\n1. **unpack_bare_branch**: Unpacks the bare root tree from the container.\n2. **set_tree**: Sets the tree into a bucket filled with water.\n3. **dig_hole**: Digs a hole for the tree.\n4. **check_soil**: Checks the soil in the hole.\n5. **plant_tinder**: Plants the tree in the hole.\n6. **peel_dirt**: Shovels the remaining dirt from the container.\n7. **build_water_basin**: Builds a water basin around the tree.\n8. **add_area**: Adds mulch around the tree base.\n9. **drink_water**: Waters the tree.\n10. **stake_oak**: Stakes the tree.\n11. **remove_stake**: Removes the stake after a year.\n\nThese actions are designed to reflect the changes in the state of entities involved in the task of planting a bare root tree.",
+        "(:action remove_binding\n    :parameters (?p - player ?plant - plant)\n    :precondition (and (at ?p ?l) (tied ?plant))\n    :effect (binding_removed ?plant)\n  )\n\n  ",
+        "(:action remove_branch\n    :parameters (?p - player ?l - location)\n    :precondition (and (at ?p ?l) (cut ?l))\n    :effect (branch_removed ?l)\n  )\n)\n```\n\nIn this PDDL action definition, the following steps and their corresponding actions are captured:\n\n1. **plant_plant**: Plant the rootstock plant in a container.\n2. **graft_plant**: Graft the plant on the clifftop.\n3. **make_cut**: Make a T-shaped cut on the rootstock plant in the container.\n4. **cut_buds**: Cut buds from the nursery.\n5. **insert_bamboo_log**: Insert the bamboo log (this step seems unclear but is assumed to be part of the grafting process).\n6. **tie_plant**: Tie the grafted plant in the container.\n7. **remove_binding**: Remove the binding after the plant has healed.\n8. **cut_branch**: Cut the rootstock branch on the path.\n9. **remove_branch**: Remove the rest of the rootstock branch once the bud has grown.\n\nEach action includes parameters, preconditions, and effects to reflect the state changes of the entities involved in the grafting process.",
+        "(:action peel\n    :parameters (?npc - npc ?clifftop - clifftop)\n    :precondition (and (in_hand ?npc ?clifftop))\n    :effect (peeled ?clifftop)\n)\n\n",
+        "(:action peel_dirt\n    :parameters (?npc - npc ?loc - location)\n    :precondition (and (at ?npc ?loc))\n    :effect (and (peeled_dirt ?loc))\n)\n\n",
+        "(:action prune_stalks\n    :parameters (?npc - npc ?nursery - nursery)\n    :precondition (and (at ?npc ?nursery) (harvested ?kumquat))\n    :effect (and (pruned ?nursery))\n)\n\n"
+    ],
+    "dig": [
+        "(:action prepare_roots\n  :parameters (?root_center - root_center)\n  :precondition (and (at ?root_center) (moisture ?root_center dry))\n  :effect (and (moisture ?root_center wet))\n)\n\n",
+        "(:action dig_hole\n    :parameters (?npc - npc ?garden - garden ?soil - soil)\n    :precondition (and (at ?npc ?garden) (in_bag ?soil))\n    :effect (and (dug_hole ?garden) (not (in_bag ?soil))))\n\n",
+        "(:action dig_roots\n      :parameters (?npc - npc ?fir - fir ?loc - location)\n      :precondition (and (at ?npc ?loc) (at ?fir ?loc) (soil_removed ?fir) (not (roots_dug ?fir)))\n      :effect (and (roots_dug ?fir))\n)\n\n",
+        "(:action dig_area\n  :parameters (?root_ball - root_ball ?area - area)\n  :precondition (and (at ?root_ball ?area) (unselected ?area))\n  :effect (and (selected ?area) (not (unselected ?area)))\n)\n\n",
+        "(:action build_water_basin\n    :parameters (?npc - npc ?loc - location)\n    :precondition (and (at ?npc ?loc))\n    :effect (and (built_water_basin ?loc))\n)\n\n",
+        "(:action make_cut\n    :parameters (?p - player ?plant - plant ?container - container)\n    :precondition (and (at ?p ?container) (at ?plant ?container) (not (cut ?plant)))\n    :effect (cut ?plant)\n  )\n\n  ",
+        "(:action make_contact_with_local_extension_office\n    :parameters (?npc - npc ?loc - location ?track - track)\n    :precondition (and (at ?npc ?loc) (covering_tracks ?track))\n    :effect (and (contacted_extension_office ?npc) (not (covering_tracks ?track))))\n\n",
+        "(:action create_berm\n  :parameters (?berm - berm)\n  :precondition (and (empty ?berm))\n  :effect (and (fuller ?berm) (not (empty ?berm)))\n)\n\n"
+    ],
+    "place": [
+        "(:action situate_shrub\n  :parameters (?shrub - shrub ?location - location)\n  :precondition (and (at ?shrub ?location) (not (in_hole ?shrub)))\n  :effect (and (in_hole ?shrub) (not (at ?shrub ?location)))\n)\n\n",
+        "(:action spread_mulch\n  :parameters (?mulch - mulch ?container1 - container ?container2 - container)\n  :precondition (and (at ?mulch ?container1) (not (at ?mulch ?container2)))\n  :effect (and (at ?mulch ?container2) (not (at ?mulch ?container1)))\n)\n\n",
+        "(:action place_tinder\n    :parameters (?p - player ?boxwood - boxwood ?tinder - tinder)\n    :precondition (and (inventory ?p ?tinder) (loosened ?tinder) (dug ?root_center))\n    :effect (and (not (inventory ?p ?tinder)) (placed ?boxwood ?root_center))\n  )\n\n  ",
+        "(:action place_root_ball_into_hole\n    :parameters (?root_balls - root_balls)\n    :precondition (and (loosened ?root_balls))\n    :effect (in_hole ?root_balls)\n)\n\n",
+        "(:action place_root_of_tree\n  :parameters (?fir - fir ?loc - location)\n  :precondition (and (at ?fir ?loc) (selected ?loc))\n  :effect (and (in_ground ?fir) (not (at ?fir ?loc)))\n)\n\n",
+        "(:action place_reforestation_seeds\n    :parameters (?seed - seed ?container - container)\n    :precondition (and (planned ?seed) (empty ?container))\n    :effect (and (placed ?seed ?container) (full ?container)))\n\n",
+        "(:action place_shelter\n    :parameters (?npc - npc ?nursery - nursery)\n    :precondition (and (at ?npc ?nursery) (not (created ?nursery)))\n    :effect (and (created ?nursery) (placed_shelter ?npc ?nursery)))\n```\n\nThese actions reflect the steps and entity state transitions necessary for the reforestation project. Each action includes parameters, preconditions, and effects that accurately represent the task's requirements.",
+        "(:action fill_planted_soil\n    :parameters (?container - container)\n    :precondition (and (empty ?container))\n    :effect (full_of_soil ?container)\n)\n\n",
+        "(:action fill\n    :parameters (?soil_container - soil_container ?root_ball - root_ball ?container - container)\n    :precondition (and (in_hole ?root_ball) (full_of_soil ?soil_container))\n    :effect (and (filled_with_soil ?root_ball ?container))\n)\n\n",
+        "(:action fill_area\n  :parameters (?area - area ?container - container)\n  :precondition (and (selected ?area) (fuller ?container))\n  :effect (and (filled ?area) (emptier ?container))\n)\n\n",
+        "(:action dip_pot\n    :parameters (?fir - fir ?pot - pot)\n    :precondition (and (in_pot ?fir ?pot) (not (in_soil ?fir)))\n    :effect (in_soil ?fir)\n)\n\n",
+        "(:action water_soil\n      :parameters (?fir - fir ?container - container ?water - water ?loc - location)\n      :precondition (and (at ?fir ?loc) (inventory ?container ?water) (not (watered ?fir)))\n      :effect (and (watered ?fir))\n)\n\n",
+        "(:action set_tree\n    :parameters (?tree - fir ?bucket - bucket ?loc - location)\n    :precondition (and (at ?tree ?loc) (empty ?bucket))\n    :effect (and (in ?tree ?bucket) (not (at ?tree ?loc)) (full ?bucket))\n)\n\n",
+        "(:action insert_bamboo_log\n    :parameters (?p - player)\n    :precondition (at ?p ?l)\n    :effect (grafted ?plant)\n  )\n\n  ",
+        "(:action cover_area\n  :parameters (?area - area)\n  :precondition (and (filled ?area))\n  :effect (and (covered ?area) (not (filled ?area)))\n)\n\n"
+    ],
+    "choose": [
+        "(:action replace_dirt_with_water\n  :parameters (?npc - npc ?garden - garden)\n  :precondition (and (at ?npc ?garden) (wetness ?garden dry))\n  :effect (and (wetness ?garden wetter))\n)\n\n",
+        "(:action choose_correct_time\n    :parameters (?p - player ?plant - plant)\n    :precondition (and (at ?p ?plant) (not (has_knowledge ?p correct_time)))\n    :effect (has_knowledge ?p correct_time)\n  )\n\n  ",
+        "(:action choose_location\n  :parameters (?fir - fir ?loc - location)\n  :precondition (and (at ?fir ?loc) (unselected ?loc))\n  :effect (and (selected ?loc) (not (unselected ?loc)))\n)\n\n",
+        "(:action get_roots\n  :parameters (?npc - npc ?root_of_tree - root_of_tree)\n  :precondition (and (at ?npc ?root_of_tree) (dry ?root_of_tree))\n  :effect (and (wet ?root_of_tree) (not (dry ?root_of_tree)))\n)\n\n",
+        "(:action gather_gems\n  :parameters (?npc - npc ?loc - location)\n  :precondition (and (at ?npc ?loc) (available_gems ?loc))\n  :effect (and (gathered_gems ?npc) (not (available_gems ?loc)))\n)\n```\n\nThese PDDL actions capture the steps involved in the task \"How to Plant\" and reflect the state changes of the entities involved in each step.",
+        "(:action buy_shelter\n    :parameters (?npc - npc ?shelter - shelter)\n    :precondition (and (at ?npc ?shelter))\n    :effect (and (purchased ?shelter) (not (at ?npc ?shelter))))\n\n"
+    ],
+    "drink": [
+        "(:action drink_water\n    :parameters (?person - person ?water - water ?pot - pot)\n    :precondition (and (at ?water ?pot) (not (drank ?person ?water)))\n    :effect (and (drank ?person ?water))\n)\n\n"
+    ],
+    "test": [
+        "(:action test_soil\n    :parameters (?p - player ?soil - soil ?garden_center - location)\n    :precondition (and (at ?p ?garden_center) (not (tested ?soil)))\n    :effect (tested ?soil)\n  )\n\n  ",
+        "(:action check_soil\n    :parameters (?npc - npc ?loc - location)\n    :precondition (and (at ?npc ?loc) (dug ?hole))\n    :effect (and (checked_soil ?loc))\n)\n\n"
+    ],
+    "loosen": [
+        "(:action loosen_tinder\n    :parameters (?npc - npc ?root_ball - root_ball)\n    :precondition (and (in_hand ?npc ?root_ball))\n    :effect (loosened ?root_ball)\n)\n\n",
+        "(:action loosen_branch\n  :parameters (?npc - npc ?root_center - root_center)\n  :precondition (and (at ?npc ?root_center) (dry ?root_center))\n  :effect (and (wet ?root_center) (not (dry ?root_center)))\n)\n\n",
+        "(:action harden_plant\n    :parameters (?fir - fir ?container - container)\n    :precondition (and (in_container ?fir ?container) (before_transplant_date))\n    :effect (hardened ?fir)\n)\n\n",
+        "(:action wet_plant\n    :parameters (?fir - fir ?container - container)\n    :precondition (and (in_container ?fir ?container) (dry ?fir))\n    :effect (and (wet ?fir) (not (dry ?fir)))\n)\n```\n\nIn these actions:\n- `move_plant` moves the plant from the garden to a container.\n- `harden_plant` hardens the plant in the container before the transplant date.\n- `plan_transplant` plans the transplant during the cool part of the day.\n- `fill_planted_soil` fills the container with soil.\n- `dip_pot` dips the plant into the soil.\n- `slide_pot_out` slides the root ball out of the container.\n- `peel` peels the clifftop.\n- `loosen_tinder` loosens the root ball with fingers.\n- `place_root_ball_into_hole` places the root ball into the hole.\n- `fill` fills the space around the root ball with soil.\n- `wet_plant` waters the plant thoroughly.\n\nEach action is designed to reflect the state changes of the entities involved in the transplanting process.",
+        "(:action fertilize_potted_daffodils\n    :parameters (?person - person ?garden - garden)\n    :precondition (and (in_spot ?pot cool_dark_spot) (not (fertilized ?garden)))\n    :effect (fertilized ?garden)\n)\n\n",
+        "(:action stabilize_tree\n  :parameters (?npc - npc ?loc - location)\n  :precondition (and (at ?npc ?loc) (in_ground ?fir))\n  :effect (and (stabilized ?fir) (not (unstabilized ?fir)))\n)\n\n"
+    ],
+    "add": [
+        "(:action add_mulch\n    :parameters (?p - player ?mulch - mulch ?garden_center - location)\n    :precondition (and (at ?p ?garden_center) (not (mulched ?root_center)))\n    :effect (mulched ?root_center)\n  )\n\n  ",
+        "(:action add_area\n    :parameters (?mulch - mulch ?area - area ?loc - location)\n    :precondition (and (at ?mulch ?loc) (not (added ?mulch ?area)))\n    :effect (and (added ?mulch ?area) (not (at ?mulch ?loc)))\n)\n\n",
+        "(:action graft_plant\n    :parameters (?p - player ?l - location ?plant - plant)\n    :precondition (and (at ?p ?l) (at ?plant ?l))\n    :effect (grafted ?plant)\n  )\n\n  ",
+        "(:action tie_plant\n    :parameters (?plant - plant ?container - container)\n    :precondition (and (at ?plant ?container) (grafted ?plant) (cut ?plant))\n    :effect (tied ?plant)\n  )\n\n  ",
+        "(:action mix_soil\n  :parameters (?npc - npc ?loc - location ?soil - soil)\n  :precondition (and (at ?npc ?loc) (at ?soil ?loc) (dry ?soil))\n  :effect (and (wetter ?soil) (not (dry ?soil)))\n)\n\n"
+    ],
+    "move": [
+        "(:action move_plant\n    :parameters (?fir - fir ?container - container)\n    :precondition (and (in_garden ?fir) (empty ?container))\n    :effect (and (in_container ?fir ?container) (not (in_garden ?fir)))\n)\n\n"
+    ],
+    "plan": [
+        "(:action plan_transplant\n    :parameters (?npc - npc)\n    :precondition (and (cool_part_of_day))\n    :effect (transplant_planned)\n)\n\n",
+        "(:action plan_plant\n    :parameters (?seed - seed ?container - container)\n    :precondition (and (ordered ?seed) (full ?container))\n    :effect (and (planned ?seed) (not (full ?container))))\n\n"
+    ],
+    "slide": [
+        "(:action slide_pot_out\n    :parameters (?root_ball - root_ball ?container - container)\n    :precondition (and (in_container ?root_ball ?container))\n    :effect (and (out_of_container ?root_ball ?container) (not (in_container ?root_ball ?container)))\n)\n\n",
+        "(:action pull_container\n  :parameters (?container - container ?root_ball - root_ball)\n  :precondition (and (at ?container ?root_ball) (unused ?root_ball))\n  :effect (and (used ?root_ball) (not (unused ?root_ball)))\n)\n\n"
+    ],
+    "cut": [
+        "(:action cut_buds\n    :parameters (?p - player ?l - location)\n    :precondition (at ?p ?l)\n    :effect (cut ?l)\n  )\n\n  ",
+        "(:action cut_branch\n    :parameters (?p - player ?l - location)\n    :precondition (at ?p ?l)\n    :effect (cut ?l)\n  )\n\n  ",
+        "(:action cut_tinder\n    :parameters (?npc - npc ?path - path ?tinder - tinder)\n    :precondition (and (at ?npc ?path) (not (cut ?tinder)))\n    :effect (and (cut ?tinder))\n)\n\n",
+        "(:action mow_area\n    :parameters (?npc - npc ?area - area)\n    :precondition (and (at ?npc ?area) (reforested ?area))\n    :effect (and (mowed ?area) (not (reforested ?area))))\n\n"
+    ],
+    "use": [
+        "(:action use_bulb_composter\n    :parameters (?person - person)\n    :precondition (not (compost_selected ?person))\n    :effect (compost_selected ?person)\n)\n\n"
+    ],
+    "keep": [
+        "(:action keep_pot_in_spot\n    :parameters (?pot - pot ?spot - location)\n    :precondition (and (dirty ?pot) (not (in_spot ?pot ?spot)))\n    :effect (in_spot ?pot ?spot)\n)\n\n",
+        "(:action keep_kumquat\n    :parameters (?npc - npc ?kumquat - kumquat)\n    :precondition (and (not (inventory ?npc ?kumquat)))\n    :effect (and (inventory ?npc ?kumquat))\n)\n\n"
+    ],
+    "treat": [
+        "(:action treat_soil\n  :parameters (?soil - soil ?loc - location)\n  :precondition (and (at ?soil ?loc) (dry ?soil))\n  :effect (and (wet ?soil) (not (dry ?soil)))\n)\n\n"
+    ],
+    "stop": [
+        "(:action stop\n    :parameters (?npc - npc ?spider_mite - spider_mite)\n    :precondition (and (at ?npc ?spider_mite) (not (stopped ?spider_mite)))\n    :effect (and (stopped ?spider_mite))\n)\n```\n\n### Descriptions:\n- **transplant_oak**: Transplant an oak log from its current location to the path. This action changes the location of the oak log.\n- **keep_kumquat**: The NPC keeps the kumquat in their inventory.\n- **gotolocation**: Move the kumquat to an inside window location, especially during winter to ensure it gets enough sunlight.\n- **drink_water**: The person drinks water from a pot, ensuring that the water is consumed.\n- **harvest_fruit**: Harvest the kumquat fruits when they are bright orange.\n- **prune_stalks**: Prune the growing stems in the nursery after harvesting the fruit.\n- **cut_tinder**: Cut tinder from the path.\n- **stop**: Use neem oil to stop spider mites, ensuring the kumquat plant is free from pests.\n\nThese actions capture the necessary steps and the state changes involved in growing kumquats, ensuring the task is accurately represented in PDDL."
+    ],
+    "order": [
+        "(:action order_seeds\n    :parameters (?seed - seed ?container - container)\n    :precondition (and (empty ?container))\n    :effect (and (ordered ?seed) (full ?container)))\n\n"
+    ],
+    "press": [
+        "(:action press_soil\n    :parameters (?npc - npc ?garden - garden ?soil - soil)\n    :precondition (and (at ?npc ?garden) (dug_hole ?garden) (not (in_bag ?soil)))\n    :effect (and (pressed_soil ?garden) (firmed_soil ?garden)))\n\n"
+    ],
+    "plant": [
+        "(:action plant_shrub\n  :parameters (?shrub - shrub ?container - container)\n  :precondition (and (at ?shrub ?container) (empty ?container))\n  :effect (and (not (at ?shrub ?container)) (planted ?shrub ?container))\n)\n\n",
+        "(:action plant_boxwood\n    :parameters (?p - player ?boxwood - boxwood ?container - container)\n    :precondition (and (at ?p ?container) (not (placed ?boxwood ?container)))\n    :effect (and (placed ?boxwood ?container) (not (at ?boxwood ?container)))\n  )\n\n  ",
+        "(:action plant_tinder\n    :parameters (?npc - npc ?loc - location ?tinder - tinder)\n    :precondition (and (at ?npc ?loc) (inventory ?npc ?tinder))\n    :effect (and (planted ?tinder ?loc) (not (inventory ?npc ?tinder)))\n)\n\n",
+        "(:action plant_plant\n    :parameters (?seed - seed ?garden_center - garden_center)\n    :precondition (and (dug_hole ?garden_center) (placed ?seed ?garden_center))\n    :effect (and (planted ?seed ?garden_center) (not (placed ?seed ?garden_center))))\n\n",
+        "(:action plant_daffodil_in\n    :parameters (?bulb - bulb ?pot - pot)\n    :precondition (and (not (planted ?bulb)) (clean ?pot))\n    :effect (and (planted ?bulb) (dirty ?pot))\n)\n\n"
+    ],
+    "determine": [
+        "(:action determine_where_to_plant\n    :parameters (?p - player ?boxwood - boxwood ?container - container)\n    :precondition (and (at ?p ?container) (placed ?boxwood ?container))\n    :effect (has_knowledge ?p planting_location)\n  )\n\n  "
+    ],
+    "unpack": [
+        "(:action unpack_bare_branch\n    :parameters (?npc - npc ?container - container ?bare_branch - branch)\n    :precondition (and (at ?npc ?container) (in ?bare_branch ?container))\n    :effect (and (inventory ?npc ?bare_branch) (not (in ?bare_branch ?container)))\n)\n\n"
+    ],
+    "stake": [
+        "(:action stake_oak\n    :parameters (?npc - npc ?oak - oaks ?log - oak_log ?loc - location)\n    :precondition (and (at ?npc ?loc) (at ?oak ?loc) (at ?log ?loc))\n    :effect (and (staked ?oak ?log) (not (at ?log ?loc)))\n)\n\n"
+    ],
+    "replant": [
+        "(:action replant_new_bulb\n    :parameters (?bulb - bulb ?garden_center - garden_center)\n    :precondition (and (not (replanted ?bulb)) (selected ?garden_center))\n    :effect (replanted ?bulb)\n)\n\n"
+    ],
+    "transplant": [
+        "(:action transplant_daffodils\n    :parameters (?npc - npc ?garden_center - garden_center)\n    :precondition (and (replanted ?bulb) (not (transplanted ?npc ?garden_center)))\n    :effect (transplanted ?npc ?garden_center)\n)\n```\n\n### Explanation of Actions:\n1. **plant_daffodil_in**:\n   - **Parameters**: A bulb and a pot.\n   - **Preconditions**: The bulb is not yet planted, and the pot is clean.\n   - **Effect**: The bulb gets planted, and the pot becomes dirty.\n\n2. **use_bulb_composter**:\n   - **Parameters**: A person (alice).\n   - **Preconditions**: The person has not yet selected the compost.\n   - **Effect**: The compost is selected by the person.\n\n3. **keep_pot_in_spot**:\n   - **Parameters**: A pot and a location (cool, dark spot).\n   - **Preconditions**: The pot is dirty and not yet in the specified spot.\n   - **Effect**: The pot is placed in the specified spot.\n\n4. **fertilize_potted_daffodils**:\n   - **Parameters**: A person (npc) and a garden.\n   - **Preconditions**: The pot is in a cool, dark spot, and the garden is not yet fertilized.\n   - **Effect**: The garden is fertilized.\n\n5. **replant_new_bulb**:\n   - **Parameters**: A bulb and a garden center.\n   - **Preconditions**: The bulb is not yet replanted, and the garden center is selected.\n   - **Effect**: The bulb is replanted.\n\n6. **transplant_daffodils**:\n   - **Parameters**: An npc and a garden center.\n   - **Preconditions**: The bulb is replanted, and the daffodils are not yet transplanted.\n   - **Effect**: The daffodils are transplanted.\n\nThese actions reflect the steps of the task and the state changes of the entities involved.",
+        "(:action transplant_oak\n    :parameters (?npc - npc ?path - path ?oak_log - oak_log)\n    :precondition (and (at ?npc ?path) (not (at ?oak_log ?path)))\n    :effect (and (at ?oak_log ?path) (not (at ?oak_log ?oak_log)))\n)\n\n"
+    ],
+    "gotolocation": [
+        "(:action gotolocation\n    :parameters (?agent - agent ?kumquat - kumquat ?inside_window - inside_window)\n    :precondition (and (at ?kumquat ?agent) (not (at ?kumquat ?inside_window)))\n    :effect (and (at ?kumquat ?inside_window) (not (at ?kumquat ?agent)))\n)\n\n"
+    ],
+    "harvest": [
+        "(:action harvest_fruit\n    :parameters (?npc - npc ?kumquat - kumquat)\n    :precondition (and (at ?npc ?kumquat) (bright_orange ?kumquat))\n    :effect (and (harvested ?kumquat) (not (at ?kumquat ?npc)))\n)\n\n"
+    ]
+}

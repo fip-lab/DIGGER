@@ -1,0 +1,17 @@
+[
+    {
+        "cluster_label": 722,
+        "task": "How to Know if You Have an Ovarian Cyst",
+        "step": [
+            "Learn the causes of ovarian cysts.",
+            "Know that functional cysts are not serious.",
+            "Identify nonfunctional cysts."
+        ],
+        "steps_predictions": [
+            "learn_instructions npc",
+            "know_not_seriousness cysts",
+            "identify_not_functional_cysts npc"
+        ],
+        "goal_state": " ((not (in anish ss)) (is_knowledge npc)))"
+    }
+]

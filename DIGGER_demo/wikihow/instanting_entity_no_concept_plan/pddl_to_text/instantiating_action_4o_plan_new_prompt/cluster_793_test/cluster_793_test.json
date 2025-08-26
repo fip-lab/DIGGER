@@ -1,0 +1,1619 @@
+[
+    {
+        "step": [
+            "Choose a chalk color that you wish to use.",
+            "Cover the workspace with a large sheet of paper.",
+            "Pour the salt onto the paper.",
+            "Place the piece of chalk on its side, on the salt.",
+            "Using the paper as a funnel, pour the chalk-colored salt into a resealable bag or a storage container.",
+            "Done."
+        ],
+        "task": "How to Make Colored Salt",
+        "goal_state": "make_colored_salt alice",
+        "steps": "```\npurchase(agent resource bag)\nadd(agent entity1 entity2 bag)\ndissolve(agent item bag)\ndecorate(g)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 793,
+                "task": "How to Make a Water Colour Salt Painting",
+                "step": [
+                    "Set up your painting area.",
+                    "Wet your paper.",
+                    "Paint with watercolors.",
+                    "Sprinkle some salt over the still-wet painting.",
+                    "Let the painting dry.",
+                    "When the painting is dry, tip the paper up gently and shake the excess salt off.",
+                    "Finished!."
+                ],
+                "steps_predictions": [
+                    "set_area area",
+                    "wet_paper npc papyrus",
+                    "create_painting watercolors",
+                    "sprinkle-salt painting",
+                    "dry_painting painting",
+                    "tip_paper_add_salt npc",
+                    "finish-wreath wreath-1"
+                ],
+                "goal_state": " ((area area wet_paper npc))",
+                "similar_entity": {
+                    "papyrus": {
+                        "sponge": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on ground",
+                                "after": "in bucket"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "wet | dirty | dirtier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "watercolors": {
+                        "paint": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "stuck on",
+                                "after": "peeling off"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on window",
+                                "after": "on blade | scraped off window | removed"
+                            },
+                            {
+                                "attribute": "wholeness",
+                                "before": "more whole",
+                                "after": "scarped into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on window",
+                                "after": "in trash"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "painting": {
+                        "paint": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "stuck on",
+                                "after": "peeling off"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on window",
+                                "after": "on blade | scraped off window | removed"
+                            },
+                            {
+                                "attribute": "wholeness",
+                                "before": "more whole",
+                                "after": "scarped into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on window",
+                                "after": "in trash"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[art]] is related to [[painting]]",
+                            "*Something you find at [[a museum]] is [[a painting]]",
+                            "[[paint]] is for [[painting]]",
+                            "[[painting]] requires [[a brush]]",
+                            "[[Pintura]] is a translation of [[painting]]"
+                        ]
+                    },
+                    "wreath-": {
+                        "wreath": [
+                            {
+                                "attribute": "status",
+                                "before": "in progress",
+                                "after": "completed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "area": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[area]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 793,
+                "task": "How to Color Sand",
+                "step": [
+                    "Purchase a bag of Epsom salt.",
+                    "Divide the salt into several zippered bags.",
+                    "Add 5 to 10 drops of liquid food coloring into each bag.",
+                    "Zip the bags close, then shake them.",
+                    "Add more food coloring, if desired.",
+                    "Open the bags and let the salt dry.",
+                    "Play with the sand, but don't let it get wet."
+                ],
+                "steps_predictions": [
+                    "purchase_salt bag",
+                    "dissolve_salt salt_bag bag",
+                    "add-ingredient food_colors bag",
+                    "zip-bag bag",
+                    "add-ingredient food_colors alice",
+                    "open_bag bag",
+                    "play_with_sand npc beach"
+                ],
+                "goal_state": " ((inventory bag))",
+                "similar_entity": {
+                    "beach": {
+                        "outside area": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created | made"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[sand]] is related to [[beach]]",
+                            "*Something you find at [[beach]] is [[driftwood]]",
+                            "[[Praias]] is a translation of [[beach]]"
+                        ]
+                    },
+                    "bag": {
+                        "money": [
+                            {
+                                "attribute": "location",
+                                "before": "in purse",
+                                "after": "in cash register"
+                            },
+                            {
+                                "attribute": "value",
+                                "before": "more",
+                                "after": "less"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in possession",
+                                "after": "in center's possesion"
+                            },
+                            {
+                                "attribute": "amount",
+                                "before": "greater",
+                                "after": "less"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in purse",
+                                "after": "in cash register"
+                            },
+                            {
+                                "attribute": "amount",
+                                "before": "more",
+                                "after": "less"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A satchel]] is [[a bag]]",
+                            "[[a bag]] is for [[carrying things]]",
+                            "*Something you find in [[a drawer]] is [[a bag]]",
+                            "[[sack]] is related to [[bag]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "food colors": {
+                        "ingredients": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed in pan"
+                            },
+                            {
+                                "attribute": "mixture",
+                                "before": "less stirred | less cooked",
+                                "after": "more stirred | more cooked"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pan | ready to be served",
+                                "after": "served"
+                            },
+                            {
+                                "attribute": "completion",
+                                "before": "unready",
+                                "after": "ready"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "salt bag": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 793,
+                "task": "How to Prepare a Sea Salt Soak",
+                "step": [
+                    "Pour 453 g (1.9 cups) of fine grain sea salt into a bowl.",
+                    "Consider adding 15 to 30 drops of scented or essential oil to the sea salt.",
+                    "Mix the salts and oils thoroughly then store the mix in a glass container.",
+                    "Add 120 g (1/2 cup) of the salt soak to a warm bath and let it dissolve.",
+                    "Take a bath with the sea salt soak when you need to relax and unwind."
+                ],
+                "steps_predictions": [
+                    "put_ingredients_in_bowl user1 bowl1",
+                    "add-salt-to-leaves alice",
+                    "mix_salt_and_oil mixture1 glass_container1",
+                    "dissolve-salt water faucet",
+                    "take_bath npc"
+                ],
+                "goal_state": " ((in_bowl mixture1) (served_wicks alice))",
+                "similar_entity": {
+                    "faucet": {
+                        "faucet": [
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a faucet]] in [[a bathroom]]"
+                        ]
+                    },
+                    "bowl": {
+                        "batter": [
+                            {
+                                "attribute": "container",
+                                "before": "in bowl",
+                                "after": "in bottle | bottle | in ketchup bottle"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm",
+                                "after": "colder | cold"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "in bottle",
+                                "after": "in pan"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the cupboard]] is [[a bowl]]",
+                            "[[plate]] is related to [[bowl]]",
+                            "[[plate]] is not [[bowl]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "glass container": {
+                        "glasses": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "ungarnished",
+                                "after": "garnished"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "decoration",
+                                "before": "undecorated",
+                                "after": "decorated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "mixture": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Make Colored Salt  \n**Steps in Natural Language**:\n1. Purchase a bag of salt and your chosen coloring materials.\n2. Add the coloring agents to the bag of salt.\n3. Mix the contents of the bag to dissolve the colors into the salt.\n4. Decorate the bag for an attractive presentation."
+    },
+    {
+        "step": [
+            "Mix the Epsom salts, sea salt and baking soda together well.",
+            "Add a few drops of food color for desired color.",
+            "Add 1 tablespoon of skin safe fragrance oil.",
+            "Add 1/2 cup of citric acid.",
+            "Use a funnel to pour the fizzy salts mixture in a jar or container.",
+            "Seal the jar or container."
+        ],
+        "task": "How to Make Fizzy Salts",
+        "goal_state": "make_fizzy_salts alice",
+        "steps": "```pddl\n1. purchase(alice resource jar)\n2. add(alice citric_acid baking_soda jar)\n3. dissolve(alice mixture jar)\n4. shape(fizzy_salts)\n5. store(fizzy_salts jar)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 793,
+                "task": "How to Make Sandalwood Bath Salts",
+                "step": [
+                    "Assemble ingredients.",
+                    "Mix together dry ingredients in a ceramic bowl.",
+                    "Add the essential oils.",
+                    "Stir as you add the drops.",
+                    "Place mixture into a small jar and screw on the lid.",
+                    "Keep in a dry spot out of direct sunlight for 2 - 3 days to allow the oils to blend.",
+                    "Use bath salts."
+                ],
+                "steps_predictions": [
+                    "assemble_ingredients mixture",
+                    "mix_dry_ingredients mixing_bowl pot",
+                    "add-ingredients essential_oil oil1 bottle1",
+                    "add-drops-to-drink mixture",
+                    "place_mixture_in_lid user1 screw1 container1",
+                    "blend_oil npc",
+                    "use_bath_salt alice"
+                ],
+                "goal_state": " ((combined mixture mixing_bowl pot))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "oil": {
+                        "oil": [
+                            {
+                                "attribute": "location",
+                                "before": "in pantry | in its place",
+                                "after": "in water | in boiling water"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bottle | in its place",
+                                "after": "in pan"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[oil]] is related to [[liquid]]",
+                            "You are likely to find [[oil]] in [[the ground]]"
+                        ]
+                    },
+                    "mixture": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "bottle": {
+                        "bottle": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean | dry",
+                                "after": "dirty | wet"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavy"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open | on counter | on table",
+                                "after": "closed with lid | on bottle"
+                            },
+                            {
+                                "attribute": "clarity",
+                                "before": "blank",
+                                "after": "written on"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "refrigerator"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm | room temperature",
+                                "after": "cold"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a bottle]] is for [[storing liquids]]",
+                            "You are likely to find [[water]] in [[a bottle]]",
+                            "[[Garrafa]] is a translation of [[bottle]]",
+                            "[[a bottle]] is a type of [[container]]",
+                            "[[bottle]] can be made of [[plastic]]"
+                        ]
+                    },
+                    "screw": {
+                        "wrench": [
+                            {
+                                "attribute": "location",
+                                "before": "in toolbox",
+                                "after": "in hand"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a screw]] is [[a simple machine]]",
+                            "You are likely to find [[a screw]] in [[a motorcycle]]"
+                        ]
+                    },
+                    "essential oil": {
+                        "oil": [
+                            {
+                                "attribute": "location",
+                                "before": "in pantry | in its place",
+                                "after": "in water | in boiling water"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bottle | in its place",
+                                "after": "in pan"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "pot": {
+                        "pot": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the cupboard | in the cabinet",
+                                "after": "on the stovetop | on the stove top"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[-gryde]] is a translation of [[pot]]",
+                            "You are likely to find [[a ficus]] in [[a pot]]",
+                            "[[a pot]] can be used to [[make soup]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 793,
+                "task": "How to Make Flavored Salt",
+                "step": [
+                    "Select a flavored liquid for your salt.",
+                    "Bring the liquid to a boil.",
+                    "Heat the liquid until it forms a reduction.",
+                    "Add the salt and dry the mixture."
+                ],
+                "steps_predictions": [
+                    "select_flavorful_liquid alice",
+                    "boil_water npc boil water",
+                    "heat_loot npc",
+                    "add_salt_and_dry mixture1"
+                ],
+                "goal_state": " ((flavorful alice))",
+                "similar_entity": {
+                    "boil": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[boil]] is related to [[water]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "mixture": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 793,
+                "task": "How to Make Lemon Salt",
+                "step": [
+                    "Measure 1 cup of lemon juice, and 2 tablespoons of salt together in a small bowl.",
+                    "Place the lemon juice and salt in a pan and boil.",
+                    "Scrape off the crust with a spoon.",
+                    "Place the crust in a clean bowl.",
+                    "Continue to boil.",
+                    "Keep the process going.",
+                    "Drain all of the juice from the crust.",
+                    "Put the crust, now dry, in a small container.",
+                    "Eat little by little, or save to put on top of flavorless crackers."
+                ],
+                "steps_predictions": [
+                    "mix_lemon_juice lemon_salt mixing_bowl",
+                    "place-lemon-juice lemon-salt stove-knob",
+                    "scrape-off-crust crust",
+                    "place-in-bowl crust",
+                    "boiled_water pot water",
+                    "keep_process going process",
+                    "drain_lemon npc",
+                    "put_rusting_in_container velveeta",
+                    "eat_cheese npc"
+                ],
+                "goal_state": " ((in_container mixing_bowl) (thawed lemon_salt))",
+                "similar_entity": {
+                    "crust": {
+                        "dough": [
+                            {
+                                "attribute": "location",
+                                "before": "in bowl | balled",
+                                "after": "on wax paper | flattened"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in refrigerator",
+                                "after": "on counter"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "warm"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in mound on table | round",
+                                "after": "in pan | pan shaped"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "smooth",
+                                "after": "rigid"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "lemon-salt": {
+                        "lemon": [
+                            {
+                                "attribute": "size",
+                                "before": "whole | round | solid",
+                                "after": "cut | half moon shaped | cut in half | halved"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry | plain smelling",
+                                "after": "juicy | fragrant"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "plain smelling",
+                                "after": "strong smelling"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "whole",
+                                "after": "halved"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier",
+                                "after": "lighter"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "whole",
+                                "after": "halved"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "velveeta": {
+                        "velveeta": [
+                            {
+                                "attribute": "granularity",
+                                "before": "whole | a block",
+                                "after": "cubed | cut into cubes | cut into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the fridge | in package | in front of me",
+                                "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "room temperature"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "large | whole",
+                                "after": "small | cut up"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on the cutting board",
+                                "after": "in the sauce pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | room temperature",
+                                "after": "hot | warming"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "thick",
+                                "after": "runny"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "stove-knob": {
+                        "stove knob": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "turned off",
+                                "after": "turned on"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "in the off position",
+                                "after": "in the on position"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "medium-low",
+                                "after": "low"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "process": {
+                        "task": [
+                            {
+                                "attribute": "time",
+                                "before": "earlier",
+                                "after": "later"
+                            },
+                            {
+                                "attribute": "age",
+                                "before": "younger",
+                                "after": "older"
+                            },
+                            {
+                                "attribute": "age",
+                                "before": "younger",
+                                "after": "older"
+                            },
+                            {
+                                "attribute": "completion",
+                                "before": "unfinished",
+                                "after": "finished"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "lemon salt": {
+                        "lemon": [
+                            {
+                                "attribute": "size",
+                                "before": "whole | round | solid",
+                                "after": "cut | half moon shaped | cut in half | halved"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry | plain smelling",
+                                "after": "juicy | fragrant"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "plain smelling",
+                                "after": "strong smelling"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "whole",
+                                "after": "halved"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier",
+                                "after": "lighter"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "whole",
+                                "after": "halved"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "going": {
+                        "routes": [
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "appearance",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "uninvestigated",
+                                "after": "investigated"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[climb]] is related to [[going]]"
+                        ]
+                    },
+                    "pot": {
+                        "pot": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the cupboard | in the cabinet",
+                                "after": "on the stovetop | on the stove top"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[-gryde]] is a translation of [[pot]]",
+                            "You are likely to find [[a ficus]] in [[a pot]]",
+                            "[[a pot]] can be used to [[make soup]]"
+                        ]
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Make Fizzy Salts\n\n**Steps in Natural Language**:\n1. Purchase a clean glass jar.\n2. Add citric acid and baking soda to the jar.\n3. Stir the mixture in the jar until it dissolves.\n4. Shape the dissolved mixture into fizzy salts.\n5. Store the fizzy salts in the jar."
+    }
+]

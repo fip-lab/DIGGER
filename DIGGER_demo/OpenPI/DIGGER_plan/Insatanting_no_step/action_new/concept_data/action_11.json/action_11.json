@@ -1,0 +1,6 @@
+[
+    "(:action remove ; Remove an item from a bike\n    :parameters (?p - person ?b - bike ?item - object)\n    :precondition (and (at ?p ?b) (attached ?item ?b))\n    :effect (and (not (attached ?item ?b))",
+    "(:action screw\n  :parameters (?p - person ?e - entity ?o - object)\n  :precondition (and (at ?p ?e) (removed ?o ?e))\n  :effect (and (attached ?o ?e) (not (removed ?o ?e))",
+    "(:action fill ; Fill or attach a resource to an entity\n  :parameters (?p - person ?entity - object ?resource - resource)\n  :precondition (and (at ?p ?entity) (not (attached ?resource ?entity)))\n  :effect (attached ?resource ?entity)\n)",
+    "(:action recycle\n  :parameters (?p - person ?b - bike ?item - object)\n  :precondition (and \n                 (at ?p ?b) \n                 (or (attached ?item ?b) (removed ?item ?b)))\n  :effect (and \n           (when (attached ?item ?b) (not (attached ?item ?b))"
+]

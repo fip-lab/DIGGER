@@ -1,0 +1,3 @@
+[
+    "```lisp\n(:action collect ; Collect a resource and update its state\n  :parameters (?a - agent ?r - resource ?l - location)\n  :precondition (and\n    (at ?r ?l)\n    (in ?a main_area)\n    (not (collected ?r))\n  )\n  :effect (and\n    (collected ?r)\n    (not (at ?r ?l))\n  )\n)\n\n(:action gather\n  :parameters (?a - agent ?i - item ?l - location)\n  :precondition (and\n    (at ?i ?l)\n    (in ?a main_area)\n  )\n  :effect (and\n    (collected ?i)\n    (not (at ?i ?l))\n  )\n)\n\n(:action lay ; Lay a resource and update its state\n  :parameters (?resource - object ?agent - agent)\n  :precondition (and \n    (prepared ?resource) \n    (ready ?agent)\n  )\n  :effect (and \n    (utilized ?resource) \n    (not (prepared ?resource))\n  )\n)\n```"
+]

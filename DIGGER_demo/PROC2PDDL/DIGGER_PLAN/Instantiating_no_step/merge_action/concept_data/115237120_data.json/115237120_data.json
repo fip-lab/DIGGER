@@ -1,0 +1,15 @@
+{
+    "purify": [
+        "(:action purify_water\n    :parameters (?w - water_source ?c - container)\n    :precondition (and\n      (unbottled ?w)\n      (empty ?c)\n    )\n    :effect (and\n      (purified ?c)\n      (not (unbottled ?w))\n    )\n)\n```\n\n#### Action 2: Boil Water\n```lisp\n",
+        "(:action filter_water\n    :parameters (?c - container ?f - filter)\n    :precondition (and\n      (boiled ?c)\n      (has_filter ?f)\n    )\n    :effect (and\n      (drinkable ?c)\n      (not (boiled ?c))\n    )\n)\n```\n\n#### Action 4: Gather First Aid Supplies\n```lisp\n"
+    ],
+    "boil": [
+        "(:action boil_water\n    :parameters (?c - container)\n    :precondition (and\n      (purified ?c)\n    )\n    :effect (and\n      (boiled ?c)\n      (not (purified ?c))\n    )\n)\n```\n\n#### Action 3: Filter Water\n```lisp\n"
+    ],
+    "gather": [
+        "(:action gather_first_aid_supplies\n    :parameters (?s - supply ?k - kit)\n    :precondition (and\n      (first_aid_supply ?s)\n      (not (in_kit ?s ?k))\n    )\n    :effect (and\n      (in_kit ?s ?k)\n    )\n)\n```\n\n#### Action 5: Build Basic First Aid Kit\n```lisp\n"
+    ],
+    "build": [
+        "(:action build_first_aid_kit\n    :parameters (?k - kit)\n    :precondition (and\n      (not (complete ?k))\n    )\n    :effect (and\n      (complete ?k)\n    )\n)\n```\n\n### Notes\n- **Purify Water**: This action involves taking unbottled water and purifying it in a container.\n- **Boil Water**: Once the water is purified, it needs to be boiled to ensure it's safe for drinking.\n- **Filter Water**: After boiling, the water is filtered to remove any remaining large particles.\n- **Gather First Aid Supplies**: This action involves collecting first aid supplies to build a kit.\n- **Build Basic First Aid Kit**: This action marks the completion of assembling the first aid kit.\n\nThese actions are derived from the task description and entity state, ensuring that the actions are relevant and capture the necessary preconditions and effects."
+    ]
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "cluster_label": 635,
+        "task": "How to Pair Wine with Grilled Steak",
+        "step": [
+            "Drink dry wines with steak.",
+            "Bring out herb flavors with a Bordeaux.",
+            "Match the savory flavors in beef with a Malbec.",
+            "Accentuate sweet and/or spicy flavors with a Zinfandel.",
+            "Pair with a dry riesling when you can't settle on a vintage.",
+            "Select your wine according to how well done the meat is."
+        ],
+        "steps_predictions": [
+            "drink_wines wines",
+            "bend_to_pick npc",
+            "match-flavor beef malbec",
+            "add-ingredient honeydew Zinfandel",
+            "pair_with_dry_riesling velveeta",
+            "select_wine velveeta"
+        ],
+        "goal_state": " ((in_fridge wine) (has_temperature npc velveeta))"
+    }
+]

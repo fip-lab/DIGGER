@@ -1,0 +1,20 @@
+{
+    "acquire": [
+        "(:action acquire_oil_based_painting\n    :parameters (?p - player ?paint - oil_based_paint ?location - location)\n    :precondition (and (at ?p ?location) (at ?paint ?location))\n    :effect (and (inventory ?p ?paint) (not (at ?paint ?location)))\n)\n\n"
+    ],
+    "move": [
+        "(:action move_painting_branch\n    :parameters (?p - player ?brush - paint_brush ?loc - location ?wood - wood)\n    :precondition (and (at ?p ?loc) (inventory ?p ?brush) (at ?wood ?loc))\n    :effect (and (undercoat ?wood) (not (inventory ?p ?brush)))\n)\n\n"
+    ],
+    "paint": [
+        "(:action paint_second_coat\n    :parameters (?p - player ?brush - paint_brush ?loc - location ?wood - wood)\n    :precondition (and (at ?p ?loc) (inventory ?p ?brush) (undercoat ?wood))\n    :effect (and (second_coat ?wood) (not (inventory ?p ?brush)))\n)\n\n"
+    ],
+    "clean": [
+        "(:action clean_room\n    :parameters (?p - player ?loc - location)\n    :precondition (at ?p ?loc)\n    :effect (clean ?loc)\n)\n\n"
+    ],
+    "finish": [
+        "(:action finish_wreath\n    :parameters (?p - player ?wreath - wreath)\n    :precondition (and (inventory ?p ?wreath) (amazed ?p))\n    :effect (finished ?wreath)\n)\n```\n\nExplanation:\n1. `acquire_oil_based_painting`: This action represents acquiring oil-based paint.\n   - Preconditions: The player and the paint must be at the same location.\n   - Effects: The player will have the paint in their inventory, and the paint will no longer be at the location.\n\n2. `move_painting_branch`: This action represents applying the undercoat using a paint brush.\n   - Preconditions: The player must be at the location with the wood and have a paint brush in their inventory.\n   - Effects: The wood will have an undercoat, and the player will no longer have the brush in their inventory.\n\n3. `paint_second_coat`: This action represents applying the second coat of paint.\n   - Preconditions: The player must be at the location with the wood, have a paint brush in their inventory, and the wood must have an undercoat.\n   - Effects: The wood will have a second coat, and the player will no longer have the brush in their inventory.\n\n4. `clean_room`: This action represents cleaning the room.\n   - Preconditions: The player must be at the location.\n   - Effects: The room will be clean.\n\n5. `be_amazed`: This action represents the player being amazed by the finished paint job.\n   - Preconditions: The player must be at the location, and the wood must have a second coat.\n   - Effects: The player will be amazed.\n\n6. `finish_wreath`: This action represents finishing the wreath.\n   - Preconditions: The player must have the wreath in their inventory and be amazed.\n   - Effects: The wreath will be finished."
+    ],
+    "be": [
+        "(:action be_amazed\n    :parameters (?p - player ?loc - location)\n    :precondition (and (at ?p ?loc) (second_coat ?wood))\n    :effect (amazed ?p)\n)\n\n"
+    ]
+}

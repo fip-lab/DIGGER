@@ -1,0 +1,18 @@
+[
+    {
+        "task": "assembling-disguises",
+        "step": [
+            "go west npc house bus_stop",
+            "go north npc bus_stop costume_store",
+            "get_costume npc costume_store costume"
+        ],
+        "desc": [
+            "Find supplies for each disguise. Each of your disguises should have at least three parts, so make sure you have enough supplies for each of your characters to have a full costume!"
+        ],
+        "action": [
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action get_costume ; get costume from a store.\n      :parameters (?p - player ?loc - location ?costume - costume) \n      :precondition (and (at ?p ?loc) (sells_costume ?loc))\n      :effect (and (inventory ?p ?costume))\n   )"
+        ],
+        "goal_state": "((inventory npc costume))"
+    }
+]

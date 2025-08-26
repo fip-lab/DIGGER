@@ -1,0 +1,94 @@
+[
+    {
+        "task": "escape",
+        "step": [
+            "get stone npc basecamp",
+            "create_sos_sign npc",
+            "go west npc basecamp bamboo_forrest",
+            "get stone npc bamboo_forrest",
+            "get_bamboo_container npc bamboo_forrest",
+            "go east npc bamboo_forrest basecamp",
+            "go east npc basecamp jungle",
+            "collect_rain_water npc jungle",
+            "get wood npc jungle",
+            "create_fire npc jungle",
+            "treat_water npc jungle",
+            "drink_water npc",
+            "pick_fruit npc jungle",
+            "eat_fruit npc",
+            "go west npc jungle basecamp",
+            "escape npc"
+        ],
+        "desc": [
+            "",
+            "Stop, think, observe, and plan. Remember the acronym STOP and follow it when you get lost in the jungle. Stop to rest and think about where you came from, observe your surroundings, try to orient yourself, then plan how you are going to get out or get rescued.",
+            "Boil water from streams to kill any bacteria. Look for running streams to find fresh water.",
+            "Collect rainfall from leaves and bamboo stalks. Look for large leaves that collect rainfall and bend them into a funnel to pour the water into a bottle or straight into your mouth. Bend bamboo stalks to let the water that collects in the compartments flow out into a container or break the bamboo compartment off at the line that goes across the stalk to use it as a water bottle.",
+            "Look for fruits and plants that you recognize and are safe to eat. Jungles are full of tropical fruits and edible plants if you know what to look for. Don\u2019t try eating any plants that you don\u2019t recognize because they could be poisonous.",
+            "Filter out any particles through a sock, shirt, or other fabric, then start a fire and boil the water to kill bacteria that can make you sick.",
+            "Make a solar water still with a container and a plastic sheet. Dig a hole in an area that receives at least some direct sunlight and put a container, such as a water bottle or can, in the middle of the hole. Fill the space between the sides of the hole and the container with wet leaves. Place a plastic sheet over the top of the hole and put rocks or other heavy objects around the edges to hold it in place. Put a small stone in the middle of the sheet above the container."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action treat_water\n      :parameters (?p - player ?loc - location)\n      :precondition (and (inventory ?p water) (not (treated water)) (at fire ?loc))\n      :effect (and (treated water))\n   )",
+            "(:action drink_water\n      :parameters (?p - player)\n      :precondition (and (inventory ?p water) (treated water))\n      :effect (not (is dehydrated ?p))\n   )",
+            "(:action eat_fruit\n      :parameters (?p - player)\n      :precondition (and (is hungry ?p) (inventory ?p fruit))\n      :effect (and (not (inventory ?p fruit)) (not (is hungry ?p)))\n   )",
+            "(:action escape\n      :parameters (?p - player)\n      :precondition (and (at ?p basecamp) (at sos_sign basecamp) (not (is hungry ?p)) (not (is dehydrated ?p)) (not (is ill ?p)))\n      :effect (not (at ?p basecamp))\n   )\n)",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action create_sos_sign\n      :parameters (?p - player)\n      :precondition (and (inventory ?p stone) (at ?p basecamp))\n      :effect (and (not (inventory ?p stone)) (at sos_sign basecamp))\n   )",
+            "(:action collect_rain_water\n      :parameters (?p - player ?loc - location)\n      :precondition (and (at ?p ?loc) (inventory ?p bamboo_container) (has_rainfall ?loc))\n      :effect (and (inventory ?p water) (not (treated water)))\n   )",
+            "(:action pick_fruit\n      :parameters (?p - player ?loc - location)\n      :precondition (and (at ?p ?loc) (has_fruit ?loc))\n      :effect (inventory ?p fruit)\n   )",
+            "(:action create_fire\n      :parameters (?p - player ?loc - location)\n      :precondition (and (at ?p ?loc) (inventory ?p stone) (inventory ?p wood))\n      :effect (and (at fire ?loc) (not (inventory ?p stone)) (not (inventory ?p wood)))\n   )",
+            "(:action get_bamboo_container; get a bamboo container using surrounding bamboo\n      :parameters (?p - player ?loc - location)\n      :precondition (and (at ?p ?loc) (has_bamboo ?loc))\n      :effect (inventory ?p bamboo_container)\n   )"
+        ],
+        "goal_state": "((not (at npc basecamp)) (not (at npc bamboo_forrest)) (not (at npc jungle)))"
+    },
+    {
+        "task": "hunger",
+        "step": [
+            "go east npc basecamp jungle",
+            "pick_fruit npc jungle",
+            "eat_fruit npc"
+        ],
+        "desc": [
+            "Look for fruits and plants that you recognize and are safe to eat. Jungles are full of tropical fruits and edible plants if you know what to look for. Don\u2019t try eating any plants that you don\u2019t recognize because they could be poisonous.",
+            "Make a solar water still with a container and a plastic sheet. Dig a hole in an area that receives at least some direct sunlight and put a container, such as a water bottle or can, in the middle of the hole. Fill the space between the sides of the hole and the container with wet leaves. Place a plastic sheet over the top of the hole and put rocks or other heavy objects around the edges to hold it in place. Put a small stone in the middle of the sheet above the container."
+        ],
+        "action": [
+            "(:action eat_fruit\n      :parameters (?p - player)\n      :precondition (and (is hungry ?p) (inventory ?p fruit))\n      :effect (and (not (inventory ?p fruit)) (not (is hungry ?p)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action pick_fruit\n      :parameters (?p - player ?loc - location)\n      :precondition (and (at ?p ?loc) (has_fruit ?loc))\n      :effect (inventory ?p fruit)\n   )"
+        ],
+        "goal_state": "((not (is hungry npc)))"
+    },
+    {
+        "task": "dehydration",
+        "step": [
+            "go west npc basecamp bamboo_forrest",
+            "get_bamboo_container npc bamboo_forrest",
+            "go east npc bamboo_forrest basecamp",
+            "get stone npc basecamp",
+            "go east npc basecamp jungle",
+            "get wood npc jungle",
+            "collect_rain_water npc jungle",
+            "create_fire npc jungle",
+            "treat_water npc jungle",
+            "drink_water npc"
+        ],
+        "desc": [
+            "Collect rainfall from leaves and bamboo stalks. Look for large leaves that collect rainfall and bend them into a funnel to pour the water into a bottle or straight into your mouth. Bend bamboo stalks to let the water that collects in the compartments flow out into a container or break the bamboo compartment off at the line that goes across the stalk to use it as a water bottle.",
+            "Filter out any particles through a sock, shirt, or other fabric, then start a fire and boil the water to kill bacteria that can make you sick.",
+            "Boil water from streams to kill any bacteria. Look for running streams to find fresh water."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?item - item ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?item ?l1))\n      :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n   )",
+            "(:action treat_water\n      :parameters (?p - player ?loc - location)\n      :precondition (and (inventory ?p water) (not (treated water)) (at fire ?loc))\n      :effect (and (treated water))\n   )",
+            "(:action drink_water\n      :parameters (?p - player)\n      :precondition (and (inventory ?p water) (treated water))\n      :effect (not (is dehydrated ?p))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action collect_rain_water\n      :parameters (?p - player ?loc - location)\n      :precondition (and (at ?p ?loc) (inventory ?p bamboo_container) (has_rainfall ?loc))\n      :effect (and (inventory ?p water) (not (treated water)))\n   )",
+            "(:action create_fire\n      :parameters (?p - player ?loc - location)\n      :precondition (and (at ?p ?loc) (inventory ?p stone) (inventory ?p wood))\n      :effect (and (at fire ?loc) (not (inventory ?p stone)) (not (inventory ?p wood)))\n   )",
+            "(:action get_bamboo_container; get a bamboo container using surrounding bamboo\n      :parameters (?p - player ?loc - location)\n      :precondition (and (at ?p ?loc) (has_bamboo ?loc))\n      :effect (inventory ?p bamboo_container)\n   )"
+        ],
+        "goal_state": "((not (is dehydrated npc)))"
+    }
+]

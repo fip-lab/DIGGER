@@ -1,0 +1,4 @@
+(pickupobjectnoreceptacle agent1 creditcard2 sofa1)
+(gotolocation agent1 sofa1 desk1)
+(putobjectinreceptacle agent1 creditcard2 desk1)
+; cost = 3 (unit cost)

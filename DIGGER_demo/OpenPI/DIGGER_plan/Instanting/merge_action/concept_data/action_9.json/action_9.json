@@ -1,0 +1,14 @@
+{
+    "knit": [
+        "(:action knit_web\n    :parameters (?p - player ?web - web)\n    :precondition (and (at ?p ?web))\n    :effect (and (knit ?web 84))) ; 84 inches of flat web knitted\n\n"
+    ],
+    "join": [
+        "(:action join_ends\n    :parameters (?p - player ?ends - ends ?needle - needle ?material - material)\n    :precondition (and (at ?p ?ends) (inventory ?p ?needle) (inventory ?p ?material))\n    :effect (and (joined ?ends))) ; joined the five-inch ends\n\n"
+    ],
+    "wrap": [
+        "(:action wrap_with_tassel\n    :parameters (?p - player ?yarn - yarn ?npc - npc)\n    :precondition (and (at ?p ?yarn) (joined ?ends))\n    :effect (and (wrapped ?npc ?yarn))) ; wrapped the top with a tassel\n```\n\nExplanation of Actions:\n1. **knit_web**: This action represents knitting eighty-four inches of flat web.\n2. **sliplargerbeads**: This action represents turning and sewing the web into a rectangular form five inches wide and eight inches long.\n3. **join_ends**: This action represents joining the five-inch ends with a needle and a piece of the material from which the cap was made.\n4. **wrap_with_tassel**: This action represents securing the top, twisting, and folding the remaining piece of yarn to create a cord and fastening strands of yarn through the loop for a tassel.\n\nThese actions capture the steps and intent described for spool knitting a winter hat."
+    ],
+    "sliplargerbeads": [
+        "(:action sliplargerbeads\n    :parameters (?p - player ?web - web)\n    :precondition (and (at ?p ?web) (knit ?web 84))\n    :effect (and (sew ?web 5 8))) ; sewed into a rectangular form five inches wide and eight inches long\n\n"
+    ]
+}

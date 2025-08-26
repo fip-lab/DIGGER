@@ -1,0 +1,19 @@
+[
+    {
+        "cluster_label": 793,
+        "task": "How to Salt\u2010Speckle Paper",
+        "step": [
+            "Vary the grain size to get different effects.",
+            "Add the salt immediately to the wet paint for a more wide-spread effect.",
+            "Wait 1-2 minutes for the paint to dry for more concentrated speckles.",
+            "Try adding salt to water to get bursts of color."
+        ],
+        "steps_predictions": [
+            "vary_grain_size grass_tinder",
+            "add_salt_to_painting canola_oil paint",
+            "wait1-2 minutes for_painting paint1",
+            "add-salt water water"
+        ],
+        "goal_state": " ((painting canola_oil paint1))"
+    }
+]

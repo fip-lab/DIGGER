@@ -1,0 +1,14 @@
+{
+    "cook": [
+        "(:action cook\n    :parameters (?npc - player ?meat - item ?onion - item ?pan - item ?stove - item)\n    :precondition (and (at ?npc ?stove) (at ?meat ?stove) (at ?onion ?stove) (is_pan ?pan) (is_stove ?stove) (is_raw_meat ?meat) (is_raw_vegetable ?onion))\n    :effect (and (is_cooked ?meat) (is_cooked ?onion) (dirty ?pan))\n)\n```\n\n2. **Action: drink_water**\n```pddl\n"
+    ],
+    "drink": [
+        "(:action drink_water\n    :parameters (?npc - player ?faucet - item ?water - item)\n    :precondition (and (at ?npc ?faucet) (is_faucet ?faucet) (is_water ?water) (power_on ?faucet))\n    :effect (and (hydrated ?npc))\n)\n```\n\n3. **Action: add_ingredients_to_sauce**\n```pddl\n"
+    ],
+    "add": [
+        "(:action add_ingredients_to_sauce\n    :parameters (?npc - player ?oil - item ?stove - item ?pot - item)\n    :precondition (and (at ?npc ?stove) (at ?oil ?stove) (at ?pot ?stove) (is_oil ?oil) (is_pot ?pot) (is_stove ?stove) (clean ?pot) (hot ?stove))\n    :effect (and (ingredient_in_pot ?oil ?pot) (dirty ?pot) (hot ?pot))\n)\n```\n\n4. **Action: finish_wreath**\n```pddl\n"
+    ],
+    "finish": [
+        "(:action finish_wreath\n    :parameters (?npc - player ?wreath - item)\n    :precondition (and (at ?npc ?wreath) (in_progress ?wreath))\n    :effect (and (completed ?wreath))\n)\n```\n\n### Entity States:\n- **Pot:** \n  - **Attributes:** cleanness (clean -> dirty), location (in the cupboard | in the cabinet -> on the stovetop | on the stove top), temperature (cool -> hot)\n- **Wreath:** \n  - **Attributes:** status (in progress -> completed)\n- **Faucet:** \n  - **Attributes:** power (off -> on)\n- **Water:** \n  - **Attributes:** temperature (cold -> hot), fullness (emptier -> fuller), location (in pipes -> out of faucet)\n- **Canola oil:** \n  - **Attributes:** location (in drawer | in cupboard | on table -> on bottle | in bottle | over mouth of bottle), cleanness (clean -> dirty), wetness (dry -> wet)\n- **Stove:** \n  - **Attributes:** temperature (cool | cold -> hot), power (off -> on), electric conductivity (turned off -> turned on), orientation (in the off position -> in the on position), temperature (medium-low -> low)\n- **NPC:** \n  - **Attributes:** helmet decoration (bare | plain -> camouflaged), visibility (visible -> invisible)\n\nThese actions and conditions reflect the steps and descriptions provided for the task of making taco filling. Each action is designed to ensure that the necessary preconditions are met and the appropriate effects are achieved, based on the entity states."
+    ]
+}

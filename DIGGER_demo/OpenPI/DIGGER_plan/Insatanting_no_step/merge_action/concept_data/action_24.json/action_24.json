@@ -1,0 +1,13 @@
+{
+    "scrub": [
+        "(:action scrub\n    :parameters (?p - player ?b - bottle)\n    :precondition (and (at ?p ?b) (cleanness ?b dirty))\n    :effect (and (cleanness ?b clean) (wetness ?b wet))\n)\n```\n\n#### Action 2: Place the Funnel\n```lisp\n"
+    ],
+    "place": [
+        "(:action place_funnel\n    :parameters (?p - player ?f - funnel ?b - bottle)\n    :precondition (and (at ?p ?f) (at ?p ?b) (location ?f in_drawer))\n    :effect (location ?f over_mouth_of_bottle)\n)\n```\n\n#### Action 3: Pour Pancake Batter\n```lisp\n",
+        "(:action place_in_refrigerator\n    :parameters (?p - player ?b - bottle ?r - refrigerator)\n    :precondition (and (at ?p ?b) (location ?b on_counter) (orientation ?b closed_with_lid))\n    :effect (and (location ?b in_refrigerator) (temperature ?b cold))\n)\n```\n\n### Summary\nThe steps have been translated into PDDL actions with defined parameters, preconditions, and effects based on the entity states provided. Each action captures the necessary conditions and outcomes to complete the task of making a pancake mix container from a recycled ketchup bottle.",
+        "(:action pour_batter\n    :parameters (?p - player ?f - funnel ?b - bottle ?batter - batter)\n    :precondition (and (at ?p ?b) (location ?f over_mouth_of_bottle) (emptiness ?b empty))\n    :effect (and (emptiness ?b full) (weight ?b heavy))\n)\n```\n\n#### Action 4: Replace Lid and Label Bottle\n```lisp\n"
+    ],
+    "replace": [
+        "(:action replace_lid_and_label\n    :parameters (?p - player ?b - bottle ?lid - lid)\n    :precondition (and (at ?p ?b) (emptiness ?b full) (orientation ?b open))\n    :effect (and (orientation ?b closed_with_lid) (clarity ?b written_on))\n)\n```\n\n#### Action 5: Place Bottle in Refrigerator\n```lisp\n"
+    ]
+}

@@ -1,0 +1,6 @@
+[
+    "(:action select ; Select an item and update its status\n  :parameters (?p - person ?item - object)\n  :precondition (and (inventory ?p ?item) (suitable ?item))\n  :effect (selected ?item)\n)",
+    "(:action make\n    ; Combine various tasks involving creation, assembly, or modification of items\n    :parameters (?p - player ?item1 - object ?item2 - object ?final_item - object)\n    :precondition (and \n        (or (selected ?item1) (inventory ?p ?item1) (found ?item2))\n        (or (not (inventory ?p ?item1)) (not (assembled ?item1 ?item2)))\n    )\n    :effect (and \n        (or (inventory ?p ?final_item) (completed ?final_item))",
+    "(:action add\n    ; Add or attach an item to another item\n    :parameters (?agent - person ?item1 - object ?item2 - object)\n    :precondition (and (possessed ?agent ?item2) (not (attached ?item1 ?item2)))\n    :effect (attached ?item1 ?item2)\n)",
+    "(:action finish\n    :parameters (?p - player ?item - object ?task - task)\n    :precondition (and (available ?p) (in_progress ?task) (not (completed ?task)))\n    :effect (and (completed ?task) (not (in_progress ?task))"
+]

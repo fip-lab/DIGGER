@@ -1,0 +1,44 @@
+[
+    {
+        "cluster_label": 793,
+        "task": "How to Make Fizzy Salts",
+        "step": [
+            "Mix the Epsom salts, sea salt and baking soda together well.",
+            "Add a few drops of food color for desired color.",
+            "Add 1 tablespoon of skin safe fragrance oil.",
+            "Add 1/2 cup of citric acid.",
+            "Use a funnel to pour the fizzy salts mixture in a jar or container.",
+            "Seal the jar or container."
+        ],
+        "steps_predictions": [
+            "mix_ingredients alice mixing_bowl",
+            "add-ingredient food_color",
+            "add_ingredients_to_frume_oil user1 alice",
+            "add-ingredients citric acid1 cup1",
+            "pour_salt_into_glass fizzy_drink faucet",
+            "sliplargerbeads container"
+        ],
+        "goal_state": " ((in_container mixing_bowl))"
+    },
+    {
+        "cluster_label": 793,
+        "task": "How to Make Colored Salt",
+        "step": [
+            "Choose a chalk color that you wish to use.",
+            "Cover the workspace with a large sheet of paper.",
+            "Pour the salt onto the paper.",
+            "Place the piece of chalk on its side, on the salt.",
+            "Using the paper as a funnel, pour the chalk-colored salt into a resealable bag or a storage container.",
+            "Done."
+        ],
+        "steps_predictions": [
+            "choose_chalk_color alice",
+            "cover_with_sheet npc covering_tracks track",
+            "pour_salt_into_paper canola_oil table",
+            "place_chalk_on_table chalk1 table1",
+            "pour_salt_into_bag bag",
+            "get_done npc"
+        ],
+        "goal_state": " ((selected_as_appropriate alice))"
+    }
+]

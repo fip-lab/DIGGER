@@ -1,0 +1,6 @@
+(record_crosses paper npc hallway)
+(record_tosses paper npc hallway)
+(divide_crosses paper npc)
+(calculate_pi paper npc)
+(be_amazed npc)
+; cost = 5 (unit cost)

@@ -1,0 +1,311 @@
+[
+    {
+        "cluster_label": 1703,
+        "task": "How to Get Nail Polish off Just About Any Surface",
+        "step": [
+            "Get nail polish off of your floor surface.",
+            "Remove the excess nail polish right away.",
+            "Use acetone.",
+            "Wash the stain with a soft scrub."
+        ],
+        "steps_predictions": [
+            "get_nail_polish npc",
+            "remove-nail-polish fairy-moss",
+            "use_acetone acetone1 bottle1",
+            "wash_soap_with_clean cloth1"
+        ],
+        "goal_state": " ((polished_with_alk npc) (flattened fairy-moss))",
+        "similar_entity": {
+            "cloth": "cloth",
+            "fairy-moss": "fairy moss",
+            "npc": "hat",
+            "bottle": "bottle",
+            "acetone": "solvent"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Keep Nail Polish from Drying Out",
+        "step": [
+            "Add a few drops of lacquer thinner to the bottle.",
+            "Shake well to combine.",
+            "Alternatively, use clear polish.",
+            "Don't use nail polish remover."
+        ],
+        "steps_predictions": [
+            "add-lacquer-sliplargerbend velveeta",
+            "shake-and-combine you blender-1",
+            "make_polish_with_alk brush_finished",
+            "remove_nail_remover npc"
+        ],
+        "goal_state": " ((polished_with_alk brush_finished))",
+        "similar_entity": {
+            "blender-": "blender",
+            "brush finished": "brush",
+            "you": "you",
+            "npc": "hat",
+            "velveeta": "velveeta"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Whiten Nails",
+        "step": [
+            "Wipe your nails down with nail polish remover for polish stains.",
+            "Color your tips white with a whitening nail pencil for a quick fix.",
+            "Use a base coat when painting your nails to prevent yellowing.",
+            "Choose lighter colors of nail polish instead of darker shades."
+        ],
+        "steps_predictions": [
+            "wipe_nails npc",
+            "clean_tinder npc work_station",
+            "clean_nails npc",
+            "choose_lightestick npc"
+        ],
+        "goal_state": " ((clean_tinder npc) (has_weight_heavier linens))",
+        "similar_entity": {
+            "work station": "living room",
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Remove Gel Nail Polish",
+        "step": [
+            "Wait until the nails are mostly chipped away.",
+            "Insert a cuticle stick under the surface of a gel.",
+            "Peel off the gel.",
+            "Condition your nails."
+        ],
+        "steps_predictions": [
+            "chip_nail npc",
+            "insert_cuticle_stick npc",
+            "peel-gel alice",
+            "Condition_nail npc"
+        ],
+        "goal_state": " ((clean npc razor) (in_order razor))",
+        "similar_entity": {
+            "npc": "hat",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Get Nail Polish out of Fabric",
+        "step": [
+            "Use hydrogen peroxide.",
+            "Try hairspray.",
+            "Use bug spray.",
+            "Rinse and wash. No matter what method you use, be sure to rinse the previously stained area well to get rid of the traces of the substance you used to remove the nail polish."
+        ],
+        "steps_predictions": [
+            "use_hydrogen_peroxide user1 hydrogen_oxide1 bottle1",
+            "treat_hairspray user1 hanger1",
+            "use_bug_spray bug_clean npc",
+            "clean_area area1"
+        ],
+        "goal_state": " ((clean npc area1))",
+        "similar_entity": {
+            "hanger": "hanger",
+            "hydrogen oxide": "chemicals",
+            "npc": "hat",
+            "user": "player",
+            "bottle": "bottle",
+            "bug clean": "spray cleaner",
+            "area": "area"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Remove Nail Polish from Around the Nails",
+        "step": [
+            "Gather your materials.",
+            "Paint the glue around your nails.",
+            "Let the glue dry.",
+            "Paint your nails.",
+            "Let your nails dry.",
+            "Peel away the glue."
+        ],
+        "steps_predictions": [
+            "gather_materials you materials",
+            "paint_with_glue npc",
+            "dry_wicks wick1",
+            "paint_nail_with_polish npc",
+            "dry_nail npc",
+            "peel-and-flatten-gremixture glue1 container1"
+        ],
+        "goal_state": " ((clean_wicks wick1) (transparent npc))",
+        "similar_entity": {
+            "glue": "duct tape",
+            "you": "you",
+            "materials": "clothing",
+            "npc": "hat",
+            "container": "container",
+            "wick": "wick"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Apply Nail Polish Strips",
+        "step": [
+            "Open the pack carefully and examine what the strips came with.",
+            "Remove existing nail polish.",
+            "Choose the size that fits your nail the best.",
+            "Gently peel the strip off.",
+            "Place the strip onto your nail.",
+            "Smooth the strip down, while applying a lot of pressure.",
+            "Take the file.",
+            "Apply a top coat.",
+            "Enjoy!."
+        ],
+        "steps_predictions": [
+            "open_pack npc",
+            "remove-nail-polish npc",
+            "choose_size npc",
+            " peel_strips npc strip",
+            "place_strips_on_strip npc strip",
+            "smooth_strips strip1",
+            "take_file npc",
+            "apply_top_coathanger velveeta",
+            "make_sliplargerbeads npc"
+        ],
+        "goal_state": " ((selected_strips npc))",
+        "similar_entity": {
+            "velveeta": "velveeta",
+            "npc": "hat",
+            "peel strips": "peels",
+            "strip": "cutting"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Reuse an Old Bottle of Nail Polish",
+        "step": [
+            "Clean the bottle.",
+            "Decide which craft items would benefit from being kept in a small storage container.",
+            "Reuse the bottle as a glue dispenser.",
+            "Keep hobby or modeling paints inside the nail polish bottle."
+        ],
+        "steps_predictions": [
+            "clean_bottle bottle1",
+            "choose_items craft_item container",
+            "reuse_bottle user1 bottle1",
+            "make_horizontal_bar nail_polish bottle"
+        ],
+        "goal_state": " ((inventory_items old_bottle bottle1) (has_shape_rectangular glass_filled))",
+        "similar_entity": {
+            "user": "player",
+            "bottle": "bottle",
+            "craft item": "items",
+            "nail polish": "coat",
+            "container": "container"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Dry Gel Nail Polish",
+        "step": [
+            "Select a no-light gel nail polish and top coat set.",
+            "Apply 2 coats of polish, allowing your nails to air-dry between coats.",
+            "Add 1 layer of a clear no-light gel top coat and air-dry it completely."
+        ],
+        "steps_predictions": [
+            "select_gel_polish velveeta",
+            "apply_polish npc",
+            "add_gel_coathanger alice velveeta"
+        ],
+        "goal_state": " ((polished velveeta))",
+        "similar_entity": {
+            "velveeta": "velveeta",
+            "npc": "hat",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Dry Nail Polish Quickly",
+        "step": [
+            "Use quick-drying nail polish products.",
+            "Apply a glossy, fast-drying top coat to help your nails dry.",
+            "Try using drying drops or setting spray to cut down on time."
+        ],
+        "steps_predictions": [
+            "use_as_quick_drying nail_polish products",
+            "dry_nail npc",
+            "cut_time npc"
+        ],
+        "goal_state": " ((completed_painting nail_polish))",
+        "similar_entity": {
+            "products": "items",
+            "nail polish": "coat",
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Use Both Regular and UV Gel Nail Polish Together",
+        "step": [
+            "Buff your nails to remove any shine.",
+            "Use an alcohol wipe to clean off the dust.",
+            "Brush on a layer of gel polish foundation.",
+            "Cure the foundation under an LED or UV lamp.",
+            "Wipe the surface of each nail with alcohol to remove the tacky layer.",
+            "Apply 1 or 2 thin coats of regular nail polish.",
+            "Allow the polish to dry completely.",
+            "Add a layer of gel topcoat.",
+            "Cure the topcoat under the lamp for the recommended time.",
+            "Wipe off the tacky layer with an alcohol wipe."
+        ],
+        "steps_predictions": [
+            "remove-shine-from-nail you",
+            "clean_room rug1 cloth1",
+            "brush-and-flatten-gel_polish alice velveeta",
+            "cure_foundation user1 eraser1 lamp1",
+            "remove_tape npc",
+            "apply_nail_polish npc",
+            "dry_polish alice velveeta",
+            "add_gel_coathanger alice velveeta",
+            "cure-wound wick1 lamp1",
+            "wipe_tape_with_alcohol_clean npc"
+        ],
+        "goal_state": " ((polished_room rug1) (flattened wick1))",
+        "similar_entity": {
+            "you": "you",
+            "cloth": "cloth",
+            "lamp": "lamp",
+            "rug": "rugs",
+            "user": "player",
+            "npc": "hat",
+            "eraser": "eraser",
+            "velveeta": "velveeta",
+            "wick": "wick",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Open Nail Polish",
+        "step": [
+            "Avoid using force to open a stuck bottle.",
+            "Don't hit the cap against the counter.",
+            "Wrap a rubber band around a cap.",
+            "Use nail polish thinner to dissolve hardened polish.",
+            "Use hot water to soften stuck nail polish."
+        ],
+        "steps_predictions": [
+            "open_bottle user1 bottle1",
+            "set_cap_on_counter user1 ketchup_bottle1",
+            "wrap_rubber_band user1 velveeta",
+            "dissolve_polish npc",
+            "soften_stick npc"
+        ],
+        "goal_state": " ((open_cap1) (in_container ketchup_bottle1))",
+        "similar_entity": {
+            "npc": "hat",
+            "user": "player",
+            "ketchup bottle": "ketchup bottle",
+            "bottle": "bottle",
+            "velveeta": "velveeta"
+        }
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "train": [
+        "(:action train_wailmer\n    :parameters (?npc - npc ?wailmer - wailmer)\n    :precondition (and (npc ?npc) (untrained ?wailmer))\n    :effect (and (trained ?wailmer) (not (untrained ?wailmer)))\n)\n\n"
+    ],
+    "evolve": [
+        "(:action evolve\n    :parameters (?npc - npc ?wailmer - wailmer)\n    :precondition (and (npc ?npc) (trained ?wailmer) (unevolved ?wailmer))\n    :effect (and (evolved ?wailmer) (not (unevolved ?wailmer)))\n)\n\n",
+        "(:action evolve_wailmer\n    :parameters (?npc - npc ?wailmer - wailmer ?candies - rare_candies)\n    :precondition (and (npc ?npc) (has_candies ?wailmer ?candies) (unevolved ?wailmer))\n    :effect (and (evolved ?wailmer) (not (unevolved ?wailmer)) (not (has_candies ?wailmer ?candies)))\n)\n```\n\nThese actions reflect the steps and descriptions provided in the task, ensuring that the necessary conditions and resulting changes are accurately captured in the PDDL format."
+    ],
+    "copy": [
+        "(:action copy_rare_candies\n    :parameters (?npc - npc ?wailmer - wailmer ?candies - rare_candies)\n    :precondition (and (npc ?npc) (at_battle_frontier ?npc) (not (copied ?candies)))\n    :effect (and (copied ?candies) (has_candies ?wailmer ?candies))\n)\n\n"
+    ],
+    "evolution": [
+        "(:action evolution_of_wailord\n    :parameters (?npc - npc ?wailmer - wailmer)\n    :precondition (and (npc ?npc) (pre_evolution ?wailmer))\n    :effect (and (evolution_of_wailord ?wailmer) (not (pre_evolution ?wailmer)))\n)\n\n"
+    ]
+}

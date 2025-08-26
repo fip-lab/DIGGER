@@ -1,0 +1,5 @@
+[
+    "(:action create ; Create a setup and update its status\n    :parameters (?p - person ?item - object)\n    :precondition (and \n        (available ?p)\n        (not (set_up ?item))\n        (or (available_space ?item) (reflector_available ?item))\n        (has_knowledge ?p setup_item)\n    )\n    :effect (and \n        (set_up ?item)\n        (or (ready_for_photography ?item) (light_diffused ?item))",
+    "(:action attach ; Attach an item and update the state accordingly\n    :parameters (?p - person ?subject - object ?target - object)\n    :precondition (and (available ?subject) (ready ?target) (not (attached ?target ?subject)) (has_knowledge ?p attach_subject))\n    :effect (and (attached ?target ?subject) (ready_for_use ?target))",
+    "(:action experiment\n    ; Experiment with various setups and subjects\n    :parameters (?p - person ?setup - setup ?subject - subject ?tool - tool)\n    :precondition (and\n        (setup_ready ?setup)\n        (tool_prepared ?tool)\n        (subject_available ?subject)\n        (has_knowledge ?p experiment_knowledge)\n    )\n    :effect (experiment_done ?p ?subject ?tool)\n)"
+]

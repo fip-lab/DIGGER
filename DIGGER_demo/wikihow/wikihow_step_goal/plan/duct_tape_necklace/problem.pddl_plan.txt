@@ -1,0 +1,5 @@
+(unroll_tape tape1)
+(fold_tape tape1)
+(smooth_tape tape1)
+(tape_ends_together tape1 ends1)
+; cost = 4 (unit cost)

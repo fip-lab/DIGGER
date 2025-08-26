@@ -1,0 +1,2141 @@
+[
+    {
+        "cluster_label": 863,
+        "task": "How to Remove Hair from Your Bikini Area with Nair",
+        "step": [
+            "Decide how much hair you want to remove.",
+            "Clean up down south.",
+            "Trim your hair.",
+            "Wet the skin.",
+            "Apply the Nair.",
+            "Give it time to work.",
+            "Rinse off the Nair in a test patch.",
+            "Wash off all the Nair.",
+            "Wait 24 to moisturize your skin.",
+            "Maintain your bikini."
+        ],
+        "steps_predictions": [
+            "remove_wailmer npc",
+            "clean_shelter npc",
+            "trim_hair npc",
+            "wet_skin npc",
+            "apply_nair nair",
+            "gather_time npc",
+            "in_test_patch npc",
+            "wash_all npc",
+            "wait_for_loot npc",
+            "maintain_bikini npc"
+        ],
+        "goal_state": " ((not (in_area npc)))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "nair": {
+                "razor blade": [
+                    {
+                        "attribute": "location",
+                        "before": "in box",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "contact",
+                        "before": "in contact with box",
+                        "after": "in contact with window"
+                    },
+                    {
+                        "attribute": "sharpness",
+                        "before": "sharper",
+                        "after": "more dull"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty | dirtier"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "nair ObjectUse moisturize skin",
+                    "nair MadeUpOf water",
+                    "nair HasProperty good for skin",
+                    "nair CapableOf apply to skin"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Remove Butt Hair",
+        "step": [
+            "Use an epilator to pull out the hairs.",
+            "Apply a depilatory cream to get rid of hairs at the surface.",
+            "Trim your butt hair using an electric clipper.",
+            "Consider laser hair removal for a permanent fix."
+        ],
+        "steps_predictions": [
+            "pull_hairs npc",
+            "apply_depilatory_cream npc",
+            "trim_butt_hair npc",
+            "remove_lock npc laser_removed"
+        ],
+        "goal_state": " ((not (stuck npc razor_removed)))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "laser removed": {
+                "pistol": [
+                    {
+                        "attribute": "location",
+                        "before": "hidden | concealed",
+                        "after": "out | exposed"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "in inventory",
+                        "after": "equipped"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "laser removed ObjectUse use as a weapon",
+                    "laser removed MadeUpOf laser",
+                    "laser removed HasProperty found in laser",
+                    "laser removed CapableOf remove from eye"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Wash Coconut Oil Out of Hair",
+        "step": [
+            "Choose a dry shampoo or powder to soak up the oil.",
+            "Apply the powder to your roots.",
+            "Comb through your hair until the powder soaks up the oil."
+        ],
+        "steps_predictions": [
+            "choose_oil alice",
+            "apply_powder_to_roots alice",
+            "comb_through_hair my_equipment"
+        ],
+        "goal_state": " ((clean coconut_oil_out_of_air))",
+        "similar_entity": {
+            "my equipment": {
+                "equipment": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered | laying sporadically",
+                        "after": "organized | gathered"
+                    },
+                    {
+                        "attribute": "equipment",
+                        "before": "unorganized",
+                        "after": "laid in pattern"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "my equipment ObjectUse use as a weapon",
+                    "my equipment MadeUpOf my hands",
+                    "my equipment HasProperty used in the military",
+                    "my equipment CapableOf use as a weapon"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Wax With Honey",
+        "step": [
+            "Wash and dry your skin beforehand.",
+            "Grow your hair out first.",
+            "Plan to wax often in the beginning."
+        ],
+        "steps_predictions": [
+            "wash_and_dry you skin",
+            "grow_hair npc",
+            "plan_wax wick1"
+        ],
+        "goal_state": " ((on_skin npc plan_wax wick1))",
+        "similar_entity": {
+            "skin": {
+                "person": [
+                    {
+                        "attribute": "volume",
+                        "before": "silent",
+                        "after": "talking"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unsupported",
+                        "after": "supported"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[skin]] is for [[covering the body]]",
+                    "[[Pele]] is a translation of [[skin]]",
+                    "[[mole]] is related to [[skin]]"
+                ],
+                "comet_knowledge": [
+                    "skin ObjectUse skin",
+                    "skin MadeUpOf skin",
+                    "skin HasProperty skin",
+                    "skin CapableOf skin cells"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "wick": {
+                "wicks": [
+                    {
+                        "attribute": "cost",
+                        "before": "on sale at store",
+                        "after": "purchased from store"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "on lamp",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "burned"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lamp"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "heated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wick ObjectUse use as a weapon",
+                    "wick MadeUpOf car",
+                    "wick HasProperty found in house",
+                    "wick CapableOf wash dishes"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Get Wax Off a Tablecloth",
+        "step": [
+            "Freeze the dripped wax.",
+            "Use a dull knife, such as a butter knife, or your fingernail to carefully scrape the frozen wax off the tablecloth.",
+            "Remove the wax with heat."
+        ],
+        "steps_predictions": [
+            "free_wicks wick1",
+            "scrash-wicks npc",
+            "remove_wicks wick1 heat1"
+        ],
+        "goal_state": "gotolocation wick1 tablecloth1",
+        "similar_entity": {
+            "heat": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[fire]] is related to [[heat]]",
+                    "[[heat]] is a kind of [[energy]]",
+                    "*Something you find in [[the oven]] is [[heat]]",
+                    "[[the sun]] is for [[heat]]",
+                    "The effect of [[lighting a fire]] is [[heat]]",
+                    "[[heat]] is not [[cold]]",
+                    "[[heat]] is the opposite of [[cold]]"
+                ],
+                "comet_knowledge": [
+                    "heat ObjectUse heat food",
+                    "heat MadeUpOf heat",
+                    "heat HasProperty heat",
+                    "heat CapableOf heat up"
+                ]
+            },
+            "wick": {
+                "wicks": [
+                    {
+                        "attribute": "cost",
+                        "before": "on sale at store",
+                        "after": "purchased from store"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "on lamp",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "burned"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lamp"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "heated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wick ObjectUse use as a weapon",
+                    "wick MadeUpOf car",
+                    "wick HasProperty found in house",
+                    "wick CapableOf wash dishes"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Use Veet on Your Bikini Area",
+        "step": [
+            "Lay out a towel for you to sit on while you wax.",
+            "Sit in a comfortable position with your legs spread open.",
+            "Rub a Veet wax strip between your hands to warm it up.",
+            "Peel the strips apart and set them on the towel wax-side up.",
+            "Apply 1 of the strips to your skin.",
+            "Rub the strip 3-4 times in the direction of your hair growth.",
+            "Hold your skin taut so that it\u2019s easy to pull off the strip.",
+            "Grasp the end of the wax strip and rip it off.",
+            "Continue applying wax strips until your entire bikini area is hair-free.",
+            "Wipe off the excess wax using the cloths provided in the box."
+        ],
+        "steps_predictions": [
+            "lay_out_tape towel1",
+            "sliplargerbend npc",
+            "rub_wicks_with_leaves velveeta",
+            "peel_strips npc strip",
+            "apply_strips_to_skin npc strip",
+            "rub_strip npc strip",
+            "pull_strips npc strip",
+            "grasp_end_strips end_strip",
+            "apply_wax_strips alice",
+            "wipe_wicks npc"
+        ],
+        "goal_state": " ((on_rack npc strip))",
+        "similar_entity": {
+            "end strip": {
+                "ends": [
+                    {
+                        "attribute": "organization",
+                        "before": "seperate",
+                        "after": "touching"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "bare",
+                        "after": "joined together"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "end strip ObjectUse use as a paper weight",
+                    "end strip MadeUpOf strip",
+                    "end strip HasProperty end of strip",
+                    "end strip CapableOf use as tape"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "velveeta ObjectUse use as a weapon",
+                    "velveeta MadeUpOf food",
+                    "velveeta HasProperty one of the most popular foods in Mexico",
+                    "velveeta CapableOf throw at someone"
+                ]
+            },
+            "towel": {
+                "towel": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | smooth",
+                        "after": "dirty | sticky"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "white",
+                        "after": "orange"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[napkin]] is related to [[towel]]",
+                    "[[a towel]] can [[dry hair]]",
+                    "*Something you find at [[at hotel]] is [[a towel]]"
+                ],
+                "comet_knowledge": [
+                    "towel ObjectUse clean up the mess",
+                    "towel MadeUpOf water",
+                    "towel HasProperty wet",
+                    "towel CapableOf wash hands"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            },
+            "strip": {
+                "the clipping": [
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "cut"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "drier | dry",
+                        "after": "wetter | moister | moistened"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "pure",
+                        "after": "dipped into rooting hormone"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "strip ObjectUse use as a belt",
+                    "strip MadeUpOf strip",
+                    "strip HasProperty worn on body",
+                    "strip CapableOf strip off"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Remove Hair Using Organic Ganda Beroza",
+        "step": [
+            "Exfoliate your skin before removing hair.",
+            "Wash your hands with soap and water.",
+            "Take a small amount of solid ganda beroza.",
+            "Take a pinch of the hair removal agent.",
+            "Apply the pinch of ganda beroza to your body hair.",
+            "Hold the unwanted hair between your thumb and index finger where you have already applied the ganda beroza.",
+            "Keep repeating the procedure until all unwanted hairs are removed.",
+            "Clean the skin gently.",
+            "Remove ganda beroza from you fingers.",
+            "Wash your hands with soap and water."
+        ],
+        "steps_predictions": [
+            "remove_wicks npc",
+            "wash_hand soap2 water1",
+            "take_ganda_beroza npc",
+            "take_pinch npc",
+            "apply_gandas_painting user1 ganda beroza1",
+            "apply_ganda_beroza npc",
+            "remove_wailmer npc",
+            "clean_skin npc",
+            "remove-ganda beroza",
+            "wash_hand soap2 water1"
+        ],
+        "goal_state": " ((not (wailmer npc)))",
+        "similar_entity": {
+            "soap": {
+                "soap bottle": [
+                    {
+                        "attribute": "fullness",
+                        "before": "more full | heavier",
+                        "after": "less full | lighter"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle",
+                        "after": "in bucket"
+                    },
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed together"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bucket",
+                        "after": "on window"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[soap]] is related to [[cleaning]]",
+                    "[[a soap]] can be used to [[clean something]]",
+                    "*Something you find at [[the supermarket]] is [[soap]]"
+                ],
+                "comet_knowledge": [
+                    "soap ObjectUse clean a wound",
+                    "soap MadeUpOf soap",
+                    "soap HasProperty soap",
+                    "soap CapableOf wash hands"
+                ]
+            },
+            "ganda": {
+                "potato": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "cleaner | clean | wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "on counter"
+                    },
+                    {
+                        "attribute": "thickness",
+                        "before": "thicker",
+                        "after": "thinner"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "short",
+                        "after": "long"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "peeled"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on cloth"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | on stove",
+                        "after": "in dish | on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "ganda ObjectUse use as a weapon",
+                    "ganda MadeUpOf michigan",
+                    "ganda HasProperty germany",
+                    "ganda CapableOf go to"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "user ObjectUse use the computer",
+                    "user MadeUpOf computer",
+                    "user HasProperty found on internet",
+                    "user CapableOf use computer"
+                ]
+            },
+            "beroza": {
+                "potato": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "cleaner | clean | wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "on counter"
+                    },
+                    {
+                        "attribute": "thickness",
+                        "before": "thicker",
+                        "after": "thinner"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "short",
+                        "after": "long"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "peeled"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on cloth"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | on stove",
+                        "after": "in dish | on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "beroza ObjectUse use as a weapon",
+                    "beroza MadeUpOf water",
+                    "beroza HasProperty used as a weapon in war",
+                    "beroza CapableOf drink beer"
+                ]
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ],
+                "comet_knowledge": [
+                    "water ObjectUse water plants",
+                    "water MadeUpOf water",
+                    "water HasProperty found in ocean",
+                    "water CapableOf water plants"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Wax",
+        "step": [
+            "Avoid ingrown hairs.",
+            "Use baby powder.",
+            "Avoid burning yourself with the wax.",
+            "Make sure hair is long enough before you attempt to wax it.",
+            "Don't wax the same area twice."
+        ],
+        "steps_predictions": [
+            "break_ingrown_hairs npc",
+            "use_baby_powder npc",
+            "burn_wicks you wick1",
+            "wax_hair npc",
+            "wax_area area2"
+        ],
+        "goal_state": " ((wax_area area2))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[garden]] is related to [[area]]"
+                ],
+                "comet_knowledge": [
+                    "area ObjectUse place to live",
+                    "area MadeUpOf surface of earth",
+                    "area HasProperty surface of earth",
+                    "area CapableOf travel to"
+                ]
+            },
+            "wick": {
+                "wicks": [
+                    {
+                        "attribute": "cost",
+                        "before": "on sale at store",
+                        "after": "purchased from store"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "on lamp",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "burned"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lamp"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "heated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wick ObjectUse use as a weapon",
+                    "wick MadeUpOf car",
+                    "wick HasProperty found in house",
+                    "wick CapableOf wash dishes"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Use Wax on Your Hair",
+        "step": [
+            "Start with dry, combed hair.",
+            "Warm a pea-sized amount of wax between your palms.",
+            "Run your fingers through your hair to tousle it.",
+            "Apply another pea-sized amount to create additional volume.",
+            "Use a small amount to add definition and texture to particular pieces."
+        ],
+        "steps_predictions": [
+            "comb_hair_with_dry_wicks npc",
+            "wick_pea_sized alice",
+            "run_fingers_through_hair tousle",
+            "create_add_pea_size_to_volume pc2",
+            "add-texture-to-piece work_station"
+        ],
+        "goal_state": " ((completed_wicks npc wick_peeled))",
+        "similar_entity": {
+            "work station": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "work station ObjectUse work at",
+                    "work station MadeUpOf desk",
+                    "work station HasProperty found in office",
+                    "work station CapableOf work on computer"
+                ]
+            },
+            "tousle": {
+                "mortar and pestle": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "status",
+                        "before": "idle | on table | absent",
+                        "after": "used | in mortar | present"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "tousle ObjectUse use as a weapon",
+                    "tousle MadeUpOf hair",
+                    "tousle HasProperty hair",
+                    "tousle CapableOf brush hair"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "pc": {
+                "window": [
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler | warmer",
+                        "after": "warmer | cooler"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "transparency",
+                        "before": "more opaque | more covered",
+                        "after": "more transparent | more bare"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet | dry",
+                        "after": "dry | wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "transparency",
+                        "before": "more opaque | more covered",
+                        "after": "more transparent | more bare"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirtier",
+                        "after": "cleaner"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "pc ObjectUse play video games on",
+                    "pc MadeUpOf computer",
+                    "pc HasProperty found in computer",
+                    "pc CapableOf play video games"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Shave Your Legs Out of Water",
+        "step": [
+            "Spray your legs with water or use a wet towel to wet your legs.",
+            "Add some stick deodorant, (NOT antiperspirant!).",
+            "Squirt just a little bit of water on top of your gel/foamburst/deodrant.",
+            "Now shave your legs as you normally do if you were in a shower.",
+            "Use a dry cloth or towel to dry your legs and get any hair off.",
+            "Once your finished use a after-shaving lotion or a body lotion to make your legs even smoother and moisturizer."
+        ],
+        "steps_predictions": [
+            "drink_water npc",
+            "add-stick deodorant stick1",
+            "squirt-lemon water",
+            "shave_legs you towel1",
+            "dry_legs you towel",
+            "make_smooth_legs you lotion"
+        ],
+        "goal_state": " ((on_legs you towel1))",
+        "similar_entity": {
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ],
+                "comet_knowledge": [
+                    "you ObjectUse have a good time",
+                    "you MadeUpOf you have a job",
+                    "you HasProperty none",
+                    "you CapableOf get out of bed"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "lotion": {
+                "the marshmallow cream": [
+                    {
+                        "attribute": "location",
+                        "before": "in continer",
+                        "after": "in bowl"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "by itself | solid",
+                        "after": "blended with marshmellow cream | blended with cream cheese | blended"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "lotion ObjectUse moisturize skin",
+                    "lotion MadeUpOf lather",
+                    "lotion HasProperty moisturizing",
+                    "lotion CapableOf moisturize skin"
+                ]
+            },
+            "deodorant": {
+                "detergent": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle",
+                        "after": "in drain"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "deodorant ObjectUse smell good",
+                    "deodorant MadeUpOf deodorant",
+                    "deodorant HasProperty deodorize",
+                    "deodorant CapableOf put on body"
+                ]
+            },
+            "stick": {
+                "sticks": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered",
+                        "after": "bundled"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "all over place",
+                        "after": "collected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "bunched up",
+                        "after": "in formation"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "bundled",
+                        "after": "stacked"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "stand-alone",
+                        "after": "fortified"
+                    },
+                    {
+                        "attribute": "tightness",
+                        "before": "untied",
+                        "after": "tired with bark"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[stick]] is related to [[branch]]",
+                    "You are likely to find [[a stick]] in [[a forest]]"
+                ],
+                "comet_knowledge": [
+                    "stick ObjectUse use as a weapon",
+                    "stick MadeUpOf stick handle",
+                    "stick HasProperty sticky",
+                    "stick CapableOf use as weapon"
+                ]
+            },
+            "towel": {
+                "towel": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | smooth",
+                        "after": "dirty | sticky"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "white",
+                        "after": "orange"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[napkin]] is related to [[towel]]",
+                    "[[a towel]] can [[dry hair]]",
+                    "*Something you find at [[at hotel]] is [[a towel]]"
+                ],
+                "comet_knowledge": [
+                    "towel ObjectUse clean up the mess",
+                    "towel MadeUpOf water",
+                    "towel HasProperty wet",
+                    "towel CapableOf wash hands"
+                ]
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ],
+                "comet_knowledge": [
+                    "water ObjectUse water plants",
+                    "water MadeUpOf water",
+                    "water HasProperty found in ocean",
+                    "water CapableOf water plants"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Get Gum Out of Your Hair",
+        "step": [
+            "Try ice.",
+            "Use an ice wrap to harden the gum.",
+            "Chip the hardened gum out of your hair."
+        ],
+        "steps_predictions": [
+            "freeze-mixture mixture",
+            "make_gum_harden alice",
+            "chip_gems alice"
+        ],
+        "goal_state": " ((not (gum_harden alice)))",
+        "similar_entity": {
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            },
+            "mixture": {
+                "oil/macaroni": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed into water | mixed in water | mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on stove top"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner | clean",
+                        "after": "dirtier | dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty | emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in pan"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in containter | in its place | in  its place",
+                        "after": "on macaroni | in pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter | warmer"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "mixture ObjectUse add to a recipe",
+                    "mixture MadeUpOf mixtures",
+                    "mixture HasProperty mixed with water",
+                    "mixture CapableOf put in blender"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Use Hair Removing Wax",
+        "step": [
+            "Warm the wax.",
+            "Dip the applicator into the warm wax.",
+            "Apply the fabric over the wax in the direction of hair growth, leaving enough free fabric at the end to grasp the strip firmly."
+        ],
+        "steps_predictions": [
+            "warm_wicks wick1",
+            "dip_in_wicks user1 wick1",
+            "apply_fabric npc strip"
+        ],
+        "goal_state": " ((clean wick1))",
+        "similar_entity": {
+            "wick": {
+                "wicks": [
+                    {
+                        "attribute": "cost",
+                        "before": "on sale at store",
+                        "after": "purchased from store"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "on lamp",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "burned"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lamp"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "heated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wick ObjectUse use as a weapon",
+                    "wick MadeUpOf car",
+                    "wick HasProperty found in house",
+                    "wick CapableOf wash dishes"
+                ]
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "user ObjectUse use the computer",
+                    "user MadeUpOf computer",
+                    "user HasProperty found on internet",
+                    "user CapableOf use computer"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "strip": {
+                "the clipping": [
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "cut"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "drier | dry",
+                        "after": "wetter | moister | moistened"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "pure",
+                        "after": "dipped into rooting hormone"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "attached",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "strip ObjectUse use as a belt",
+                    "strip MadeUpOf strip",
+                    "strip HasProperty worn on body",
+                    "strip CapableOf strip off"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Apply Hair Wax",
+        "step": [
+            "Purchase hair wax.",
+            "Apply hair wax to dry or slightly-damp hair.",
+            "Make sure that you are fully-clothed when you apply the wax.",
+            "Scoop out a bit of wax with your index, middle, and ring finger.",
+            "Rub the wax between the tips of your fingers.",
+            "Restyle your wax when necessary.",
+            "Wash the wax out of your hair."
+        ],
+        "steps_predictions": [
+            "purchase_wailmer alice wand1",
+            "add_wicks_to_hair_machine alice wand1",
+            "apply_wax npc covering_tracks",
+            "scoop_wax npc",
+            "rub_wicks npc",
+            "restyle_wax alice wand1",
+            "wash_wicks npc"
+        ],
+        "goal_state": " ((completed_wax npc covering_tracks))",
+        "similar_entity": {
+            "covering tracks": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "covering tracks ObjectUse cover up a hole",
+                    "covering tracks MadeUpOf cover",
+                    "covering tracks HasProperty covering tracks",
+                    "covering tracks CapableOf cover tracks"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "alice ObjectUse make a cake",
+                    "alice MadeUpOf aloe",
+                    "alice HasProperty aloe",
+                    "alice CapableOf drink coffee"
+                ]
+            },
+            "wand": {
+                "twine": [
+                    {
+                        "attribute": "location",
+                        "before": "on spool",
+                        "after": "on wreath base"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "loose",
+                        "after": "attached"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "wand ObjectUse use as a weapon",
+                    "wand MadeUpOf wands",
+                    "wand HasProperty found in garden",
+                    "wand CapableOf use as weapon"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Remove Wax from Wool",
+        "step": [
+            "Place a plain paper bag over the wax spill area.",
+            "Run an iron over the bag on medium heat.",
+            "Remove the paper bag.",
+            "Repeat with clean paper bags until the wax is removed."
+        ],
+        "steps_predictions": [
+            "place_plain_bag passenger1 paperbag1",
+            "run_in_oven npc",
+            "remove-paper-bag bag",
+            "remove_wicks npc"
+        ],
+        "goal_state": " ((clean wick1) (transparent npc))",
+        "similar_entity": {
+            "passenger": {
+                "passenger": [
+                    {
+                        "attribute": "speed",
+                        "before": "moving quickly",
+                        "after": "moving slowly"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from boat",
+                        "after": "near boat"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A passenger]] can [[board a plane]]",
+                    "*Something you find at [[a bus stop]] is [[a passenger]]"
+                ],
+                "comet_knowledge": [
+                    "passenger ObjectUse board plane",
+                    "passenger MadeUpOf passenger seat",
+                    "passenger HasProperty board plane",
+                    "passenger CapableOf board plane"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "paperbag": {
+                "money": [
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register"
+                    },
+                    {
+                        "attribute": "value",
+                        "before": "more",
+                        "after": "less"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in possession",
+                        "after": "in center's possesion"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "greater",
+                        "after": "less"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "more",
+                        "after": "less"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "paperbag ObjectUse put food in",
+                    "paperbag MadeUpOf paper",
+                    "paperbag HasProperty found in grocery store",
+                    "paperbag CapableOf put food in"
+                ]
+            },
+            "bag": {
+                "money": [
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register"
+                    },
+                    {
+                        "attribute": "value",
+                        "before": "more",
+                        "after": "less"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in possession",
+                        "after": "in center's possesion"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "greater",
+                        "after": "less"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "more",
+                        "after": "less"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A satchel]] is [[a bag]]",
+                    "[[a bag]] is for [[carrying things]]",
+                    "*Something you find in [[a drawer]] is [[a bag]]",
+                    "[[sack]] is related to [[bag]]"
+                ],
+                "comet_knowledge": [
+                    "bag ObjectUse carry their belongings",
+                    "bag MadeUpOf bag handle",
+                    "bag HasProperty carried in",
+                    "bag CapableOf carry clothes"
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 863,
+        "task": "How to Wax Your Legs",
+        "step": [
+            "Search for leg wax services in your area.",
+            "Call to make an appointment.",
+            "Show up for your appointment."
+        ],
+        "steps_predictions": [
+            "search_for_leg_wax npc basement",
+            "make_appointment npc",
+            "check_appointment npc"
+        ],
+        "goal_state": " ((completed npc wax_wax))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": [],
+                "comet_knowledge": [
+                    "npc ObjectUse use as a paperweight",
+                    "npc MadeUpOf computer",
+                    "npc HasProperty computer",
+                    "npc CapableOf log on to"
+                ]
+            },
+            "basement": {
+                "drop cloth": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "coverage",
+                        "before": "uncovered",
+                        "after": "covered"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "present",
+                        "after": "removed"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the basement]] is [[the furnace]]",
+                    "[[cellar]] is related to [[basement]]",
+                    "[[a house]] has [[a basement]]",
+                    "[[A basement]] is [[a room under a house]]",
+                    "[[Something you find downstairs]] is the [[basement]]"
+                ],
+                "comet_knowledge": [
+                    "basement ObjectUse storing things",
+                    "basement MadeUpOf basement",
+                    "basement HasProperty basement",
+                    "basement CapableOf hide in"
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "cut": [
+        "(:action cut_strip ; cut a strip of elastic\n      :parameters (?p - player ?elastic - elastic ?strip - strip)\n      :precondition (and (inventory ?p ?elastic))\n      :effect (and (inventory ?p ?strip) (not (inventory ?p ?elastic)))\n)\n\n"
+    ],
+    "slip": [
+        "(:action slip_larger_beads ; slip two larger beads on either side of the small bead\n      :parameters (?p - player ?strip - strip ?bead1 - bead ?bead2 - bead ?small_bead - bead)\n      :precondition (and (inventory ?p ?strip) (inventory ?p ?bead1) (inventory ?p ?bead2) (inventory ?p ?small_bead))\n      :effect (and (on_strip ?strip ?bead1) (on_strip ?strip ?bead2) (on_strip ?strip ?small_bead))\n)\n\n",
+        "(:action slip_small_bead ; slip a small bead on one tail\n      :parameters (?p - player ?strip - strip ?small_bead - bead)\n      :precondition (and (inventory ?p ?strip) (inventory ?p ?small_bead))\n      :effect (and (on_strip ?strip ?small_bead))\n)\n\n"
+    ],
+    "continue": [
+        "(:action continue_pattern ; continue slipping beads until the ring fits\n      :parameters (?p - player ?strip - strip ?bead - bead)\n      :precondition (and (inventory ?p ?strip) (inventory ?p ?bead))\n      :effect (and (on_strip ?strip ?bead))\n)\n\n",
+        "(:action finish_ring ; finish the ring by slipping the loose tails through the first small bead\n      :parameters (?p - player ?strip - strip ?small_bead - bead ?ring - ring)\n      :precondition (and (on_strip ?strip ?small_bead))\n      :effect (and (inventory ?p ?ring) (not (inventory ?p ?strip)))\n)\n```\n\nThese actions should help in creating a bead ring as described in the task and steps."
+    ]
+}

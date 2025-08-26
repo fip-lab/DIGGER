@@ -1,0 +1,14 @@
+{
+    "cut": [
+        "(:action cut_velveeta\n    :parameters (?p - player ?velveeta - cheese ?board - cutting_board)\n    :precondition (and (at ?p ?board) (at ?velveeta ?board) (not (cut ?velveeta)))\n    :effect (and (cut ?velveeta) (prepared ?velveeta))\n)\n\n"
+    ],
+    "set": [
+        "(:action set_burner_add_cheese\n    :parameters (?p - player ?velveeta - cheese ?burner - stove_knob ?pot - pot)\n    :precondition (and (at ?p ?burner) (cut ?velveeta) (at ?velveeta ?p) (at ?pot ?burner))\n    :effect (and (melted ?velveeta) (in ?velveeta ?pot) (burner_on ?burner medium))\n)\n\n"
+    ],
+    "add": [
+        "(:action add_peppers_and_olives\n    :parameters (?p - player ?peppers - peppers ?pot - pot ?olives - olives)\n    :precondition (and (at ?p ?pot) (melted ?velveeta) (at ?peppers ?p) (at ?olives ?p))\n    :effect (and (in ?peppers ?pot) (in ?olives ?pot))\n)\n\n"
+    ],
+    "serve": [
+        "(:action serve_cheese_sauce\n    :parameters (?p - player ?burner - stove_knob ?pot - pot)\n    :precondition (and (at ?p ?burner) (melted ?velveeta) (in ?peppers ?pot) (in ?olives ?pot) (burner_on ?burner low))\n    :effect (and (served ?cheese_sauce) (burner_off ?burner))\n)\n```\n\nExplanation of the PDDL Actions:\n\n1. **cut_velveeta**:\n   - **Parameters**: The player, the Velveeta cheese, and the cutting board.\n   - **Preconditions**: The player and the Velveeta cheese must be at the cutting board, and the Velveeta cheese must not be cut yet.\n   - **Effects**: The Velveeta cheese is cut and prepared.\n\n2. **set_burner_add_cheese**:\n   - **Parameters**: The player, the Velveeta cheese, the stove knob, and the pot.\n   - **Preconditions**: The player must be at the stove knob, the Velveeta cheese must be cut and in the player's possession, and the pot must be at the burner.\n   - **Effects**: The Velveeta cheese is melted and added to the pot, and the burner is set to medium heat.\n\n3. **add_peppers_and_olives**:\n   - **Parameters**: The player, the Jalapeno peppers, the pot, and the black olives.\n   - **Preconditions**: The player must be at the pot, the Velveeta cheese must be melted, and the peppers and olives must be in the player's possession.\n   - **Effects**: The peppers and olives are added to the pot.\n\n4. **serve_cheese_sauce**:\n   - **Parameters**: The player, the stove knob, and the pot.\n   - **Preconditions**: The player must be at the stove knob, the Velveeta cheese must be melted, the peppers and olives must be in the pot, and the burner must be on low heat.\n   - **Effects**: The cheese sauce is served, and the burner is turned off.\n\nThese actions capture the steps and conditions needed to make cheese sauce with Jalape\u00f1o peppers according to the given task and descriptions."
+    ]
+}

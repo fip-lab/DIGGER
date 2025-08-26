@@ -1,0 +1,8 @@
+[
+    "(:action acquire ; Acquire an item and update its possession status\n  :parameters (?p - person ?item - object ?location - location)\n  :precondition (and (at ?p ?location) (at ?item ?location))\n  :effect (and (inventory ?p ?item) (not (at ?item ?location))",
+    "(:action move ; Move an item and update its state\n  :parameters (?agent - agent ?item - object ?from - location ?to - location)\n  :precondition (and (at ?agent ?from) (at ?item ?from) (not (at ?item ?to)))\n  :effect (and (at ?item ?to) (not (at ?item ?from))",
+    "(:action paint\n    :parameters (?p - player ?tool - tool ?loc - location ?surface - surface)\n    :precondition (and (at ?p ?loc) (inventory ?p ?tool) (prepared ?surface))\n    :effect (and (painted ?surface) (not (inventory ?p ?tool))",
+    "(:action clean ; Clean a specified area and update its status\n  :parameters (?agent - agent ?target - location)\n  :precondition (at ?agent ?target)\n  :effect (clean ?target))",
+    "(:action finish\n  ; Complete a task involving an item, ensuring appropriate steps and states are achieved\n  :parameters (?p - person ?item - object ?location - place)\n  :precondition (and\n    (at ?p ?location)\n    (inventory ?p ?item)\n    (or (and (instance ?item wreath) (amazed ?p))\n        (and (instance ?item painting) (at ?paint ?location) (inventory ?p ?paint_brush) (undercoat ?item)))\n    (or (instance ?location room)\n        (instance ?location wood))\n  )\n  :effect (and\n    (or (and (instance ?item wreath) (finished ?item))",
+    "(:action be \n    :parameters (?p - player ?loc - location ?cond - condition)\n    :precondition (and (at ?p ?loc) ?cond)\n    :effect (state_updated ?p ?cond))"
+]

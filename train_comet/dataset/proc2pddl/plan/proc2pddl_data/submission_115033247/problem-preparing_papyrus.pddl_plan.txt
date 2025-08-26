@@ -1,0 +1,4 @@
+(get scissors npc kitchen)
+(cut_stalks npc papyrus_tree kitchen papyrus_stalks)
+(papyrus_strips npc papyrus_tree kitchen papyrus_stalks papyrus_strips)
+; cost = 3 (unit cost)

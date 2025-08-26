@@ -1,0 +1,213 @@
+[
+    {
+        "cluster_label": 339,
+        "task": "How to Teach Your Kid to Use a Zipper",
+        "step": [
+            "Model zipper use.",
+            "Have your child practice zipping with your help.",
+            "Remove any unnecessary challenges.",
+            "Give your child opportunities to practice zipping.",
+            "Give positive reinforcement.",
+            "Reward your child for a job well done."
+        ],
+        "steps_predictions": [
+            "put_zipper_in_machine velveeta",
+            "teach-child zipping",
+            "remove_add_unnecessary_challenges npc",
+            "teach-child zipping",
+            "gather_reinforced person npc",
+            "receptacle agent child npc"
+        ],
+        "goal_state": " ((teach_kid_new_member npc))",
+        "similar_entity": {
+            "zipping": "bag",
+            "person": "person",
+            "npc": "hat",
+            "agent": "game character",
+            "child": "person",
+            "velveeta": "velveeta"
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Teach Your Children to Do Laundry",
+        "step": [
+            "Make the laundry area child-friendly.",
+            "Have young children participate with safe tasks.",
+            "Make laundry fun for older kids.",
+            "Encourage teenagers to be more independent."
+        ],
+        "steps_predictions": [
+            "make_child_friendly area",
+            "participate_with_children npc",
+            "make_fun kids laundry",
+            "encourage_teenagers npc"
+        ],
+        "goal_state": " ((teach_new_member_secret npc) (in_home laundry))",
+        "similar_entity": {
+            "laundry": "washing machine",
+            "area": "area",
+            "kids": "kids room",
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Teach Your Child to Wash Dishes",
+        "step": [
+            "Load the dishwasher with pre-rinsed plates.",
+            "Instruct your child how to put soap in the dishwasher and how to begin the wash cycle.",
+            "Complete the wash cycle."
+        ],
+        "steps_predictions": [
+            "load-dishwasher-with-pre-rinsed plates",
+            "initiate_child npc",
+            "clean_machine npc washing_cycle"
+        ],
+        "goal_state": " ((instructions npc washing_cycle))",
+        "similar_entity": {
+            "plates": "plate",
+            "washing cycle": "washing machine",
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Clean a Clothes Dryer Vent",
+        "step": [
+            "Learn the signs your vent needs cleaning.",
+            "Keep the floor around the dryer clean.",
+            "Limit the use of dryer sheets.",
+            "Stick to brief dry cycles."
+        ],
+        "steps_predictions": [
+            "learn_signal npc",
+            "clean_floor rug rug1",
+            "check_sheets dryer_sheet1",
+            "stick_to_dry_cycles npc"
+        ],
+        "goal_state": " ((knowledge npc) (not (cleanness cloth1)))",
+        "similar_entity": {
+            "dryer sheet": "dry and wet ingredients",
+            "npc": "hat",
+            "rug": "rugs"
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Get a Toddler to Wear Winter Clothes",
+        "step": [
+            "Choose clothes that are easy to pull on.",
+            "Get your toddler to practice wearing their winter clothes.",
+            "Pack their summer clothes.",
+            "Make getting dressed a familiar routine.",
+            "Avoid forcing your toddler to wear the winter clothes."
+        ],
+        "steps_predictions": [
+            "choose_clothes npc",
+            "practice wearing_winter_clothes npc",
+            "pack_clothes npc",
+            "make_comamiliar_routes npc",
+            "break_child npc basement"
+        ],
+        "goal_state": " ((not (at npc basement)))",
+        "similar_entity": {
+            "npc": "hat",
+            "wearing winter clothes": "clothing",
+            "basement": "floor"
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Clean Toddler's Teeth",
+        "step": [
+            "Start in infancy.",
+            "Use toddler tooth care products.",
+            "Floss.",
+            "Start brushing your toddler's teeth!.",
+            "Go to the dentist.",
+            "Give your child drinking water that is fluoridated.",
+            "Make sure your toddler is getting a well-balanced diet."
+        ],
+        "steps_predictions": [
+            "start_in infancy npc",
+            "use_others_as_gerbix npc",
+            "floss_with_faucet fairy_moss",
+            "brush-tied toddler's teeth",
+            "go_to_dentist npc",
+            "drink_water npc",
+            "get_tinder npc"
+        ],
+        "goal_state": " ((clean_teeth npc))",
+        "similar_entity": {
+            "infancy": "kids room",
+            "teeth": "cloves",
+            "npc": "hat",
+            "fairy moss": "fairy moss",
+            "toddler's": "kids room"
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Clean a Toddler's Ears",
+        "step": [
+            "Look into your child's ears to check for foreign objects.",
+            "Never insert a cotton swab or other item into your child's ear.",
+            "Watch for signs that your child may be having ear pain."
+        ],
+        "steps_predictions": [
+            "check_child_ears npc",
+            "insert_cotton_swab npc",
+            "watch_child npc"
+        ],
+        "goal_state": " ((clean_ears npc))",
+        "similar_entity": {
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Wash an Electric Blanket",
+        "step": [
+            "Do not dry clean your electric blanket.",
+            "Do not iron an electric blanket.",
+            "Inspect the blanket after washing and drying.",
+            "Take care at the laundromat."
+        ],
+        "steps_predictions": [
+            "dry_blanket npc",
+            "make_oven npc cordial",
+            "inspect_blanket npc",
+            "take_care npc"
+        ],
+        "goal_state": " ((cleanness npc) (flattened nintendo))",
+        "similar_entity": {
+            "npc": "hat",
+            "cordial": "cordial"
+        }
+    },
+    {
+        "cluster_label": 339,
+        "task": "How to Wash a Toddler's Clothes",
+        "step": [
+            "Determine what temperature of water you will use.",
+            "Choose a detergent.",
+            "Figure out how you should dry the clothes.",
+            "Add dryer sheets if so desired."
+        ],
+        "steps_predictions": [
+            "determine_temperature water",
+            "choose_detergent detergent",
+            "dry_clothes npc work_station",
+            "add-dryer-sheets dryer_sheets"
+        ],
+        "goal_state": " ((on_rack npc cloth))",
+        "similar_entity": {
+            "work station": "living room",
+            "dryer sheets": "dry and wet ingredients",
+            "npc": "hat",
+            "detergent": "detergent",
+            "water": "water"
+        }
+    }
+]

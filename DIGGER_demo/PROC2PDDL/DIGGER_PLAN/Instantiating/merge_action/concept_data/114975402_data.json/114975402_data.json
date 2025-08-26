@@ -1,0 +1,14 @@
+{
+    "get": [
+        "(:action get_costume\n    :parameters (?npc - npc ?c - costume)\n    :precondition (and\n                    (not (has-costume ?npc ?c)))\n    :effect (has-costume ?npc ?c)\n)\n\n;; Action 2: Clean Clothing\n"
+    ],
+    "clean": [
+        "(:action clean_clothing\n    :parameters (?c - clothing)\n    :precondition (and\n                    (clothing-dirty ?c))\n    :effect (and\n              (not (clothing-dirty ?c))\n              (clothing-clean ?c))\n)\n\n;; Action 3: Decorate Helmet\n"
+    ],
+    "decorate": [
+        "(:action decorate_helmet\n    :parameters (?npc - npc ?h - helmet)\n    :precondition (and\n                    (helmet-plain ?h)\n                    (has-helmet ?npc ?h))\n    :effect (and\n              (not (helmet-plain ?h))\n              (helmet-camouflaged ?h))\n)\n\n;; Action 4: Make Helmet Invisible\n"
+    ],
+    "make": [
+        "(:action make_helmet_invisible\n    :parameters (?npc - npc ?h - helmet)\n    :precondition (and\n                    (helmet-visible ?h)\n                    (has-helmet ?npc ?h))\n    :effect (and\n              (not (helmet-visible ?h))\n              (helmet-invisible ?h))\n)\n```\n\nExplanation:\n1. **get_costume**: This action assigns a costume to an NPC.\n   - Preconditions: The NPC does not already have the costume.\n   - Effects: The NPC now has the costume.\n\n2. **clean_clothing**: This action cleans the clothing item.\n   - Preconditions: The clothing is dirty.\n   - Effects: The clothing is no longer dirty and is clean.\n\n3. **decorate_helmet**: This action decorates the helmet of an NPC.\n   - Preconditions: The helmet is plain and the NPC has the helmet.\n   - Effects: The helmet is no longer plain and is camouflaged.\n\n4. **make_helmet_invisible**: This action makes the helmet invisible.\n   - Preconditions: The helmet is visible and the NPC has the helmet.\n   - Effects: The helmet is no longer visible and is invisible."
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "assemble": [
+        "(:action assemble_ingredients\n    :parameters (?p - person ?i - ingredient ?l - location)\n    :precondition (and (at ?p ?l) (at ?i ?l) (not (inventory ?p ?i)))\n    :effect (and (inventory ?p ?i) (not (at ?i ?l)))\n)\n```\n\n#### Step 2: Melt the chocolate bars in the microwave until you have no lumps left after stirring.\n\n```lisp\n",
+        "(:action melt_chocolate\n    :parameters (?p - person ?c - chocolate ?m - microwave)\n    :precondition (and (inventory ?p ?c) (at ?m ?p) (power ?m off))\n    :effect (and (melted ?c) (power ?m on) (not (inventory ?p ?c)))\n)\n```\n\n#### Step 3: Pour the melted chocolate into the heart-shaped molds.\n\n```lisp\n"
+    ],
+    "pour": [
+        "(:action pour_chocolate_into_molds\n    :parameters (?p - person ?c - chocolate ?mold - mold)\n    :precondition (and (melted ?c) (inventory ?p ?c) (empty ?mold))\n    :effect (and (filled ?mold ?c) (not (melted ?c)) (not (inventory ?p ?c)))\n)\n```\n\n#### Step 4: Put the chocolate into the freezer until hardened.\n\n```lisp\n",
+        "(:action box_chocolates\n    :parameters (?p - person ?c - chocolate)\n    :precondition (and (released ?c) (at ?p ?l))\n    :effect (and (boxed ?c) (not (released ?c)))\n)\n```\n\nThese actions capture the steps necessary to make chocolate hearts, ensuring that each step is logically connected with the conditions and effects as described in the task."
+    ],
+    "harden": [
+        "(:action harden_chocolate\n    :parameters (?p - person ?mold - mold ?f - freezer)\n    :precondition (and (filled ?mold ?c) (at ?f ?p))\n    :effect (and (hardened ?mold) (not (filled ?mold ?c)))\n)\n```\n\n#### Step 5: Leave them out for one minute and pop out of molds, Or, cut heart shapes in the tray.\n\n```lisp\n"
+    ],
+    "pop": [
+        "(:action pop_chocolate_out_of_molds\n    :parameters (?p - person ?mold - mold)\n    :precondition (and (hardened ?mold) (filled ?mold ?c))\n    :effect (and (released ?c) (not (hardened ?mold)))\n)\n```\n\n#### Step 6: Enjoy then and there, or box them up and give away!\n\n```lisp\n"
+    ]
+}

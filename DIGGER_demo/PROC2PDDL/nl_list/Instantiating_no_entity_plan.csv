@@ -1,0 +1,42 @@
+task,nl_step
+3-decorate,"**Task**: 3-decorate  
+**Steps in Natural Language**:
+1. Get the necessary materials from the chef to begin decorating."
+prepare_meat,"**Task**: prepare_meat
+
+**Steps in Natural Language**:
+1. Hunt for an animal in your chosen location.
+2. Use a knife and saucepan, along with a heat source, to prepare and cook the hunted animal."
+pick_hard_lock,"**Task**: pick_hard_lock  
+**Steps in Natural Language**:
+1. Use a hook tool to engage and manipulate the latch on the car's door lock."
+finishing_papyrus,"**Task**: finishing_papyrus
+
+**Steps in Natural Language**:
+1. **Process the papyrus.** Begin by preparing the papyrus sheet at your workstation. Carefully handle the papyrus to ensure it is free from any impurities or irregularities before moving to the next step.
+2. **Flatten the papyrus at your workstation.** Use a smooth surface to carefully remove any wrinkles or folds from the papyrus. Apply even pressure across the sheet to ensure it becomes completely flat and uniform.
+3. **Lay the papyrus flat on the workstation.** Spread the processed and flattened papyrus evenly on your workstation. Ensure there are no remaining creases or bumps, allowing the papyrus to dry in a smooth and finished state."
+gather_kindling,"**Task**: gather_kindling  
+**Steps in Natural Language**:
+1. Search the area for dry grass that can be used as tinder.
+2. Collect the dry grass tinder from the first location.
+3. Arrange the collected grass into a tinder structure at the first location.
+4. Gather small twigs from the second location.
+5. Build a kindling structure with the gathered twigs at the second location."
+make_papyrus,"**Task**: make_papyrus
+
+**Steps in Natural Language**:
+1. Purchase a papyrus plant from a nursery. Nurseries that specialize in papyrus plants offer high-quality reeds ideal for making papyrus paper.
+2. Alternatively, gather reeds from a nearby river. River reeds can also be used to create papyrus paper if a nursery is not accessible."
+move_to_bunker,"**Task**: move_to_bunker
+**Steps in Natural Language**:
+1. Move the person to Bunker 2."
+ready_sc,"**Task**: ready_sc
+
+**Steps in Natural Language**:
+1. Obtain food from the designated source.
+2. Place the saucepan on the stove and fill it with the acquired food."
+heal-old-man,"**Task**: heal-old-man
+**Steps in Natural Language**:
+1. Use a knife to smash the protein.
+2. Wrap the protein in skin."

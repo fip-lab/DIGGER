@@ -1,0 +1,8 @@
+[
+    "(:action insert ; Insert an item into a structure\n    :parameters (?item - object ?structure1 - structure ?structure2 - structure)\n    :precondition (and\n                    (found ?item)\n                    (has_split ?structure1)\n                    (not (inserted ?item ?structure1))\n                  )\n    :effect (and\n             (inserted ?item ?structure1)\n             (horizontal_frame_formed ?item ?structure1 ?structure2))",
+    "(:action dig ; Digging action and other related assembly tasks\n    :parameters (?entity - entity ?task - task)\n    :precondition (and (not (task_completed ?entity ?task)))\n    :effect (task_completed ?entity ?task)\n)",
+    "(:action find\n    :parameters (?agent - agent ?target - entity)\n    :precondition (and\n                    (not (found ?target))\n                    (suitable ?target)\n                   )\n    :effect (found ?target)\n)",
+    "(:action search\n  :parameters (?agent - person ?target - entity ?location - place)\n  :precondition (and\n                  (at ?agent ?location)\n                  (not (found ?agent ?target))\n                  (search_conditions ?target ?location)\n                )\n  :effect (found ?agent ?target)\n)",
+    "(:action pick\n    :parameters (?agent - person ?source - entity ?item - object)\n    :precondition (and\n      (at ?agent ?source)\n      (identifiable ?source)\n      (available ?source ?item)\n      (desirable ?item ?agent)\n    )\n    :effect (and\n      (picked ?agent ?item)\n      (not (available ?source ?item))",
+    "(:action collect ; Collect a resource or item\n  :parameters (?agent - person ?resource - object)\n  :precondition (and (available ?resource) (not (collected ?resource)))\n  :effect (collected ?resource)\n)"
+]

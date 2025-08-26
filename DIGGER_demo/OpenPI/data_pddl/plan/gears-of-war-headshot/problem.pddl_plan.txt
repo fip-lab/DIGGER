@@ -1,0 +1,5 @@
+(sniper_shot weapon1 player1)
+(shotgun_shot player2)
+(pistol_shot player3)
+(boomshot_shot weapon2 player4)
+; cost = 4 (unit cost)

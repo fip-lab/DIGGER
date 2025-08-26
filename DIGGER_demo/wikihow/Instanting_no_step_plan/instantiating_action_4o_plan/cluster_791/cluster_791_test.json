@@ -1,0 +1,2731 @@
+[
+    {
+        "step": [
+            "Find a tall, thick candle, a sharp steak knife, or other medium sized knife, and drill with a thick bit, a lighter of any sort, and a sponge or other squishy item in a color relatively close to your candle, and of course, something to hide.",
+            "Use the drill to make some holes as far into the candle as possible, while staying far enough away from the edge of the candle to leave a strong outside wall.",
+            "Cut out the rest of the inside with the knife, using the holes from the drill to get the it inside.",
+            "Spark the lighter and hover the flame below the hole in the candle to melt the wax.",
+            "Cut the squishy object into a circle about one half inch bigger than the hole in the candle.",
+            "Use the hole to store whatever you want.",
+            "Close off the stash by stuffing the squishy item in the candle.",
+            "Place somewhere inconspicuous.",
+            "Enjoy your privacy!."
+        ],
+        "task": "How to Create a Secret Candle Stash",
+        "goal_state": "create_secret candle_stash npc",
+        "steps": "```pddl\n; PDDL Steps for \"How to Create a Secret Candle Stash\"\n\n1. (gather npc wax storage_room)\n2. (melt wax double_boiler stove)\n3. (pour npc melted_wax mold container)\n4. (wick npc mold wick)\n5. (measure npc mold)\n6. (locate npc secret_location candle_stash)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 791,
+                "task": "How to Make a Tye Dye Candle",
+                "step": [
+                    "Prepare your entire work area, set out all materials beforehand.",
+                    "Melt a small amount of wax in a double boiler or wax melter, to at least 160ºF.",
+                    "Pour wax into cube trays, wax button molds, or pour a thin layer into a pan.",
+                    "When the cubes have hardened, remove them from the mold.",
+                    "Wick the mold and place the white wax chunks into the mold,  Make sure the wick is centered.",
+                    "Melt a smaller amount of wax than you normally would to fill the mold.",
+                    "Add any additives at this time.",
+                    "Add scent if you wish.",
+                    "Pour the liquid wax into the mold.",
+                    "Take your liquid dye, or melted dye, and drop a small amount around the edges of the mold, so the dye travels down the sides of the candle.",
+                    "Place the candle in the freezer.",
+                    "Top off the well that forms, if one does.",
+                    "Remove your candle from the mold when it is completely hard, and enjoy the unique swirled patterns on your candle."
+                ],
+                "steps_predictions": [
+                    "prepare_area work area",
+                    "burn_wicks npc",
+                    "pour_wax_into_pan velveeta",
+                    "remove-from-mixture cubes",
+                    " ((in_machine wick1) (center_of_mixture w1))",
+                    "melt_wailmer wick1",
+                    "add-ingredients additives to alice mixture1",
+                    "add-scenting_sauce alice",
+                    "pour-wand wick-1",
+                    "dip_candle_in_dye npc",
+                    "free_candle npc",
+                    "make_drill npc wood drill",
+                    "remove_candle_from_mixture velveeta"
+                ],
+                "goal_state": " ((in_container wick1))",
+                "similar_entity": {
+                    "cubes": {
+                        "mold": [
+                            {
+                                "attribute": "container",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "warm"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm",
+                                "after": "cool"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "heavier",
+                                "after": "lighter"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "w))": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "((in machine": {
+                        "the blender": [
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry | clean",
+                                "after": "soaked in pineapple | covered in pineapple"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "empty | smelling like nothing",
+                                "after": "full of pineapple | smelling like pineapple"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "less full | lighter",
+                                "after": "fuller | heavier"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "isolated",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "stationary",
+                                "after": "spinning"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "fuller | heavier",
+                                "after": "less full | lighter"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "full",
+                                "after": "empty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "work": {
+                        "task": [
+                            {
+                                "attribute": "time",
+                                "before": "earlier",
+                                "after": "later"
+                            },
+                            {
+                                "attribute": "age",
+                                "before": "younger",
+                                "after": "older"
+                            },
+                            {
+                                "attribute": "age",
+                                "before": "younger",
+                                "after": "older"
+                            },
+                            {
+                                "attribute": "completion",
+                                "before": "unfinished",
+                                "after": "finished"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[work]] is related to [[job]]",
+                            "[[Computers]] are used to [[work]]",
+                            "You would [[work]] because [[you need money]]",
+                            "If you want to [[get paid]] then you should [[work]]",
+                            "*Something you find on [[a desk]] is [[work]]",
+                            "[[needing money]] would make you want to [[work]]",
+                            "[[play]] is not [[work]]"
+                        ]
+                    },
+                    "(center of mixture": {
+                        "sherbet": [
+                            {
+                                "attribute": "location",
+                                "before": "in blender",
+                                "after": "in baking dish"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "outside of freezer",
+                                "after": "inside freezer"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "room temperature",
+                                "after": "frozen"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in baking dish",
+                                "after": "on plate"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "whole",
+                                "after": "in pieces | in slices"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "uniform",
+                                "after": "cut"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "to": {
+                        "routes": [
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "appearance",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "uninvestigated",
+                                "after": "investigated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wood": {
+                        "bare wood": [
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "smooth",
+                                "after": "tacky"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "color",
+                                "before": "brown",
+                                "after": "white"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "smooth",
+                                "after": "sticky"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[wood]] is related to [[tree]]",
+                            "You can use [[wood]] to [[fence in a property]]",
+                            "[[Wood]] can [[burn]]",
+                            "[[wood]] is [[a material]]",
+                            "[[Wood]] can be [[carved]]",
+                            "You are likely to find [[wood]] in [[a tree]]"
+                        ]
+                    },
+                    "wick)": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "additives": {
+                        "celery salt": [
+                            {
+                                "attribute": "composition",
+                                "before": "stratified | separate",
+                                "after": "thoroughly mixed | mixed"
+                            },
+                            {
+                                "attribute": "organization",
+                                "before": "separate",
+                                "after": "mixed together"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containers",
+                                "after": "in bowl"
+                            },
+                            {
+                                "attribute": "complexity",
+                                "before": "plain",
+                                "after": "mixed with spice"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl | in mixing bowl",
+                                "after": "in container | air-tight container"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "unmixed",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "untasted",
+                                "after": "tasted"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in container",
+                                "after": "on food"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "coarse",
+                                "after": "ground finely"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in container",
+                                "after": "in mortar"
+                            },
+                            {
+                                "attribute": "wholeness",
+                                "before": "whole",
+                                "after": "ground"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "in larger pieces",
+                                "after": "ground fine"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in mortar",
+                                "after": "in storage container | storage container"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "drill": {
+                        "shovel": [
+                            {
+                                "attribute": "weight",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on ground",
+                                "after": "in hand"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a drill]] is used for [[drilling holes in things]]",
+                            "Something you need to do before you [[drill a hole]] is [[drill]]",
+                            "[[bit]] is related to [[drill]]"
+                        ]
+                    },
+                    "mixture": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "velveeta": {
+                        "velveeta": [
+                            {
+                                "attribute": "granularity",
+                                "before": "whole | a block",
+                                "after": "cubed | cut into cubes | cut into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the fridge | in package | in front of me",
+                                "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "room temperature"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "large | whole",
+                                "after": "small | cut up"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on the cutting board",
+                                "after": "in the sauce pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | room temperature",
+                                "after": "hot | warming"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "thick",
+                                "after": "runny"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "area": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[area]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wick-": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 791,
+                "task": "How to Add Scent to a Candle",
+                "step": [
+                    "Gather materials.",
+                    "Set the wick.",
+                    "Measure your wax flakes.",
+                    "Melt the wax.",
+                    "Add scent.",
+                    "Pour the wax into the container.",
+                    "Burn the candle."
+                ],
+                "steps_predictions": [
+                    "gather_materials materials",
+                    "set_wick wick1",
+                    "measure_wailmer wick1",
+                    "melt_wand alice wand1",
+                    "add-scenting_sauce alice",
+                    "pour_wax_into_container alice container1",
+                    "burn_candle user1 candle1"
+                ],
+                "goal_state": " ((completed candle1) (has_scented wick1))",
+                "similar_entity": {
+                    "wand": {
+                        "twine": [
+                            {
+                                "attribute": "location",
+                                "before": "on spool",
+                                "after": "on wreath base"
+                            },
+                            {
+                                "attribute": "organization",
+                                "before": "loose",
+                                "after": "attached"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "materials": {
+                        "clothing": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "candle": {
+                        "lamp": [
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wicked",
+                                "after": "wickless"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[wax]] is related to [[candle]]",
+                            "You can use [[a candle]] to [[light a room]]",
+                            "*Something you find on [[the table]] is [[a candle]]",
+                            "[[Vela]] is a translation of [[candle]]"
+                        ]
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Use an electric stove if possible.",
+            "Set up a double boiler.",
+            "Fill the pan halfway with water and bring it to the boil.",
+            "Place the bowl with the wax in it into the pan.",
+            "Take the bowl with the melted wax from the pan."
+        ],
+        "task": "How to Melt Candles",
+        "goal_state": "build_candle npc campfire",
+        "steps": "```\n1. (gather npc candle location)\n2. (move candle campfire)\n3. (use npc campfire)\n4. (melt candle campfire heat_source)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 791,
+                "task": "How to Reuse an Old Candle",
+                "step": [
+                    "Take out the candle you'd like to reuse.",
+                    "Plug the candle warmer in the socket and turn it on.",
+                    "Place the candle in a jar, if it's  not already in one.",
+                    "Put the candle on the candle warmer hot plate.",
+                    "Allow time for the old candle to completely melt.",
+                    "Dip the new wick into the melted wax.",
+                    "Give it a few minutes to dry.",
+                    "Dip the wick again in the melted wax.",
+                    "Let it dry for a few minutes.",
+                    "Place the wick into the empty jar.",
+                    "Pour the wax into the jar with the wick.",
+                    "Take the wick out of the jar carefully.",
+                    "Allow to dry and harden.",
+                    "Place it in a safe area.",
+                    "Take a lighter, light the candle, and enjoy its fragrance."
+                ],
+                "steps_predictions": [
+                    "take_out_of_candle npc",
+                    "plug_candle_wicks_into_socket npc",
+                    "place_candle_in_jar user1 candle1 jar1",
+                    "put_candle_on_table candle1 hot_plate1",
+                    "set_burner_add_candle npc",
+                    "dip_wick wick1",
+                    "dry_wicks wick1",
+                    "dip_wick wick1",
+                    "dry_wicks wick1",
+                    "place_wick_in_empty_jar wick1",
+                    "pour_wicks_into_machine wick1",
+                    "take_wick_out_of_jar wick1 jar1",
+                    "dry_wicks wick1",
+                    "place_safe_area npc basement",
+                    "light_candle npc"
+                ],
+                "goal_state": " ((in_candle npc))",
+                "similar_entity": {
+                    "hot plate": {
+                        "plate": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "candle": {
+                        "lamp": [
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wicked",
+                                "after": "wickless"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[wax]] is related to [[candle]]",
+                            "You can use [[a candle]] to [[light a room]]",
+                            "*Something you find on [[the table]] is [[a candle]]",
+                            "[[Vela]] is a translation of [[candle]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "jar": {
+                        "mixture": [
+                            {
+                                "attribute": "location",
+                                "before": "in container | in containers",
+                                "after": "in pitcher"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "just put in pitcher | separate | unmixed",
+                                "after": "mixed | mixed thoroughly"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "outside of refrigerator",
+                                "after": "inside refrigerator"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm | warmer | room temperature",
+                                "after": "chilled | cold | colder"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pitcher",
+                                "after": "in glass | in glasses"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the jar]] is [[peanut butter]]"
+                        ]
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 791,
+                "task": "How to Make a Chocolate Candle",
+                "step": [
+                    "Get the old candles and place them on a table that is not used for eating.",
+                    "Add water to your saucepan about a quarter way up and turn on the hob.",
+                    "While it is heating, add your chopped-up candle pieces into the the bowl not intended for eating purposes.",
+                    "Add a spoon full or more of chocolate spread in the bowl.",
+                    "Place the bowl in the saucepan most likely when it is not boiling.",
+                    "While the wax and the chocolate spread is melting, prepare the container for the candle.",
+                    "Quickly check to see if the wax had melted.",
+                    "Just wait until it sets.",
+                    "Enjoy your lovely chocolate candle!."
+                ],
+                "steps_predictions": [
+                    "place_candle_on_table table",
+                    "add_water_to_hob stove water",
+                    "cook npc kitchen",
+                    "add-chocolate-sauce mixing_bowl chocolate",
+                    "place_bowl_in_saupan bowl",
+                    "prepare_container chocolate_comb container",
+                    "check_wicks wick1",
+                    "wait until it sets",
+                    "get_chocolates chocolate candle1"
+                ],
+                "goal_state": " ((at_location chocolate_comb container))",
+                "similar_entity": {
+                    "chocolate": {
+                        "chocolate": [
+                            {
+                                "attribute": "cost",
+                                "before": "in store",
+                                "after": "purchased for use"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "solid | lumpy",
+                                "after": "liquid | smooth | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "colder | room temperature | cooler",
+                                "after": "warmer | warm | hotter"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "packaged",
+                                "after": "out of package"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in pot",
+                                "after": "in molds"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "liquid",
+                                "after": "frozen"
+                            },
+                            {
+                                "attribute": "hardness",
+                                "before": "liquid",
+                                "after": "solid | hardened"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer",
+                                "after": "colder"
+                            },
+                            {
+                                "attribute": "ease of release",
+                                "before": "hard to release from molds",
+                                "after": "easy to release from molds"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in molds | in mold",
+                                "after": "on plate | out of molds"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "liquid",
+                                "after": "heart shaped"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in pile | in molds",
+                                "after": "in box"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[chocolate]] is a [[food]]",
+                            "*Something you find in [[a box]] is [[a chocolate]]",
+                            "[[Chocolate]] is a translation of [[chocolate]]",
+                            "[[Chocolate]] can be [[eaten]]",
+                            "[[chocolate]] can [[melt]].",
+                            "[[chocolate]] is created by [[mixing sugar, cocoa butter  and cocoa liquor]].",
+                            "[[chocolate]] is related to [[candy]]"
+                        ]
+                    },
+                    "table": {
+                        "table": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clear",
+                                "after": "cluttered"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a table]] is [[a tablecloth]]",
+                            "[[desk]] is related to [[table]]",
+                            "[[a table]] is for [[Putting things on]]"
+                        ]
+                    },
+                    "chocolate comb": {
+                        "chocolate": [
+                            {
+                                "attribute": "cost",
+                                "before": "in store",
+                                "after": "purchased for use"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "solid | lumpy",
+                                "after": "liquid | smooth | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "colder | room temperature | cooler",
+                                "after": "warmer | warm | hotter"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "packaged",
+                                "after": "out of package"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in pot",
+                                "after": "in molds"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "liquid",
+                                "after": "frozen"
+                            },
+                            {
+                                "attribute": "hardness",
+                                "before": "liquid",
+                                "after": "solid | hardened"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer",
+                                "after": "colder"
+                            },
+                            {
+                                "attribute": "ease of release",
+                                "before": "hard to release from molds",
+                                "after": "easy to release from molds"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in molds | in mold",
+                                "after": "on plate | out of molds"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "liquid",
+                                "after": "heart shaped"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in pile | in molds",
+                                "after": "in box"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "bowl": {
+                        "batter": [
+                            {
+                                "attribute": "container",
+                                "before": "in bowl",
+                                "after": "in bottle | bottle | in ketchup bottle"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm",
+                                "after": "colder | cold"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "in bottle",
+                                "after": "in pan"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the cupboard]] is [[a bowl]]",
+                            "[[plate]] is related to [[bowl]]",
+                            "[[plate]] is not [[bowl]]"
+                        ]
+                    },
+                    "candle": {
+                        "lamp": [
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wicked",
+                                "after": "wickless"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[wax]] is related to [[candle]]",
+                            "You can use [[a candle]] to [[light a room]]",
+                            "*Something you find on [[the table]] is [[a candle]]",
+                            "[[Vela]] is a translation of [[candle]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "kitchen": {
+                        "kitchen counter": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "messy"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[food]]",
+                            "[[a kitchen]] is used for [[cooking food]]",
+                            "[[table]] is related to [[kitchen]]"
+                        ]
+                    },
+                    "it": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[it]] is related to [[pronoun]]"
+                        ]
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "stove": {
+                        "stove knob": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "turned off",
+                                "after": "turned on"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "in the off position",
+                                "after": "in the on position"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "medium-low",
+                                "after": "low"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a stove]] can [[heat food]]",
+                            "You can use [[a stove]] to [[cook]]",
+                            "You are likely to find [[a stove]] in [[a house]]",
+                            "[[Stove]] is [[hot]]",
+                            "[[range]] is related to [[stove]]"
+                        ]
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "sets": {
+                        "pieces": [
+                            {
+                                "attribute": "location",
+                                "before": "around asparagus",
+                                "after": "discarded"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "unwrapped",
+                                "after": "wrapped"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "until": {
+                        "task": [
+                            {
+                                "attribute": "time",
+                                "before": "earlier",
+                                "after": "later"
+                            },
+                            {
+                                "attribute": "age",
+                                "before": "younger",
+                                "after": "older"
+                            },
+                            {
+                                "attribute": "age",
+                                "before": "younger",
+                                "after": "older"
+                            },
+                            {
+                                "attribute": "completion",
+                                "before": "unfinished",
+                                "after": "finished"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Obtain some old candles.",
+            "Find an old saucepan or something similar that can get wax on it.",
+            "Break up the old wax and stick a few pieces in the saucepan over low heat.",
+            "Stir the candles until they have melted.",
+            "Prepare the container for the wax while you are waiting for the candles to melt.",
+            "Pour.",
+            "Take the little bit of wax that you left in the saucepan and make sure that it is completely melted.",
+            "Pour the extra wax into the dip to make the dip fill in.",
+            "Let this little bit of wax completely harden.",
+            "Remember depending on what type of container you used, either light the candle directly in the container or you can slip it right out of the container.",
+            "Keep in mind that if you are having a hard time getting the candle out of the container, stick the container in the freezer for about five to ten minutes.",
+            "Decorate your new candle with glitter, sand, flowers or any other idea you might have to make your candle pretty.",
+            "Finished."
+        ],
+        "task": "How to Make the Most from Your Old Candles",
+        "goal_state": "make_most_amazing old_candle1",
+        "steps": "```pddl\n0: (gather(agent old_candle1 table))\n1: (cut(agent knife holder old_candle1))\n2: (melt(agent holder stove))\n3: (add(agent candle chunk holder))\n4: (pour(agent source candle wax mold))\n5: (wick(worker jar wax filler))\n6: (wait(agent time state_end))\n7: (pour(agent source candle fragrance mold))\n8: (wait(agent time state_end))\n9: (enjoy(agent person))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 791,
+                "task": "How to Reuse an Old Candle",
+                "step": [
+                    "Take out the candle you'd like to reuse.",
+                    "Plug the candle warmer in the socket and turn it on.",
+                    "Place the candle in a jar, if it's  not already in one.",
+                    "Put the candle on the candle warmer hot plate.",
+                    "Allow time for the old candle to completely melt.",
+                    "Dip the new wick into the melted wax.",
+                    "Give it a few minutes to dry.",
+                    "Dip the wick again in the melted wax.",
+                    "Let it dry for a few minutes.",
+                    "Place the wick into the empty jar.",
+                    "Pour the wax into the jar with the wick.",
+                    "Take the wick out of the jar carefully.",
+                    "Allow to dry and harden.",
+                    "Place it in a safe area.",
+                    "Take a lighter, light the candle, and enjoy its fragrance."
+                ],
+                "steps_predictions": [
+                    "take_out_of_candle npc",
+                    "plug_candle_wicks_into_socket npc",
+                    "place_candle_in_jar user1 candle1 jar1",
+                    "put_candle_on_table candle1 hot_plate1",
+                    "set_burner_add_candle npc",
+                    "dip_wick wick1",
+                    "dry_wicks wick1",
+                    "dip_wick wick1",
+                    "dry_wicks wick1",
+                    "place_wick_in_empty_jar wick1",
+                    "pour_wicks_into_machine wick1",
+                    "take_wick_out_of_jar wick1 jar1",
+                    "dry_wicks wick1",
+                    "place_safe_area npc basement",
+                    "light_candle npc"
+                ],
+                "goal_state": " ((in_candle npc))",
+                "similar_entity": {
+                    "hot plate": {
+                        "plate": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "candle": {
+                        "lamp": [
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wicked",
+                                "after": "wickless"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[wax]] is related to [[candle]]",
+                            "You can use [[a candle]] to [[light a room]]",
+                            "*Something you find on [[the table]] is [[a candle]]",
+                            "[[Vela]] is a translation of [[candle]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "jar": {
+                        "mixture": [
+                            {
+                                "attribute": "location",
+                                "before": "in container | in containers",
+                                "after": "in pitcher"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "just put in pitcher | separate | unmixed",
+                                "after": "mixed | mixed thoroughly"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "outside of refrigerator",
+                                "after": "inside refrigerator"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm | warmer | room temperature",
+                                "after": "chilled | cold | colder"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pitcher",
+                                "after": "in glass | in glasses"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the jar]] is [[peanut butter]]"
+                        ]
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 791,
+                "task": "How to Recycle Candles",
+                "step": [
+                    "Collect partially used candles.",
+                    "Purchase needed supplies and containers.",
+                    "Find a large saucepan that will accommodate the amount of wax you will use.",
+                    "Place the saucepan on the stove on low heat.",
+                    "Prepare the candle holders while you are waiting for the wax to melt.",
+                    "Check the wax and stir until any remaining chunks are dissolved.",
+                    "Use a mesh strainer and pour the hot wax through into another pan.",
+                    "Pour the hot wax into your candle holders.",
+                    "Place the full candle holders or molds on a flat surface out of the way of foot traffic so the wax can harden evenly."
+                ],
+                "steps_predictions": [
+                    "collect_candle npc",
+                    "purchase_supplies npc store",
+                    "find_saupan stove_knob velveeta",
+                    "place_saupan stove_knob velveeta",
+                    "prepare_candle_holders user1 wick1",
+                    "check_wax wick1",
+                    "pour_wicks_into_pan wick1 pan1",
+                    "pour_wand npc",
+                    "place_full_candle_holders npc hallway"
+                ],
+                "goal_state": " ((inventory npc wick1))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "store": {
+                        "bank account": [
+                            {
+                                "attribute": "fullness",
+                                "before": "more full",
+                                "after": "more empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in customer's hand",
+                                "after": "in cashier's hand"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[department]] is related to [[store]]",
+                            "*Something you find at [[a store]] is [[clothes]]",
+                            "[[خَزَن]] is a translation of [[store]]",
+                            "[[a store]] is for [[buying things]]"
+                        ]
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "stove knob": {
+                        "stove knob": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "turned off",
+                                "after": "turned on"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "in the off position",
+                                "after": "in the on position"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "medium-low",
+                                "after": "low"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "hallway": {
+                        "house": [
+                            {
+                                "attribute": "messiness",
+                                "before": "messy",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "messiness",
+                                "before": "dusty",
+                                "after": "clean"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dusty | clean",
+                                "after": "dusted | dusty"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[a building]] is [[a hallway]]"
+                        ]
+                    },
+                    "pan": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A pan]] can be used for [[cooking]]",
+                            null,
+                            "You are likely to find [[a pan]] in [[the pantry]]"
+                        ]
+                    },
+                    "velveeta": {
+                        "velveeta": [
+                            {
+                                "attribute": "granularity",
+                                "before": "whole | a block",
+                                "after": "cubed | cut into cubes | cut into pieces"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the fridge | in package | in front of me",
+                                "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "room temperature"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "large | whole",
+                                "after": "small | cut up"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on the cutting board",
+                                "after": "in the sauce pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | room temperature",
+                                "after": "hot | warming"
+                            },
+                            {
+                                "attribute": "granularity",
+                                "before": "solid",
+                                "after": "liquid | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "thick",
+                                "after": "runny"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 791,
+                "task": "How to Make a Chocolate Candle",
+                "step": [
+                    "Get the old candles and place them on a table that is not used for eating.",
+                    "Add water to your saucepan about a quarter way up and turn on the hob.",
+                    "While it is heating, add your chopped-up candle pieces into the the bowl not intended for eating purposes.",
+                    "Add a spoon full or more of chocolate spread in the bowl.",
+                    "Place the bowl in the saucepan most likely when it is not boiling.",
+                    "While the wax and the chocolate spread is melting, prepare the container for the candle.",
+                    "Quickly check to see if the wax had melted.",
+                    "Just wait until it sets.",
+                    "Enjoy your lovely chocolate candle!."
+                ],
+                "steps_predictions": [
+                    "place_candle_on_table table",
+                    "add_water_to_hob stove water",
+                    "cook npc kitchen",
+                    "add-chocolate-sauce mixing_bowl chocolate",
+                    "place_bowl_in_saupan bowl",
+                    "prepare_container chocolate_comb container",
+                    "check_wicks wick1",
+                    "wait until it sets",
+                    "get_chocolates chocolate candle1"
+                ],
+                "goal_state": " ((at_location chocolate_comb container))",
+                "similar_entity": {
+                    "chocolate": {
+                        "chocolate": [
+                            {
+                                "attribute": "cost",
+                                "before": "in store",
+                                "after": "purchased for use"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "solid | lumpy",
+                                "after": "liquid | smooth | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "colder | room temperature | cooler",
+                                "after": "warmer | warm | hotter"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "packaged",
+                                "after": "out of package"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in pot",
+                                "after": "in molds"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "liquid",
+                                "after": "frozen"
+                            },
+                            {
+                                "attribute": "hardness",
+                                "before": "liquid",
+                                "after": "solid | hardened"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer",
+                                "after": "colder"
+                            },
+                            {
+                                "attribute": "ease of release",
+                                "before": "hard to release from molds",
+                                "after": "easy to release from molds"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in molds | in mold",
+                                "after": "on plate | out of molds"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "liquid",
+                                "after": "heart shaped"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in pile | in molds",
+                                "after": "in box"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[chocolate]] is a [[food]]",
+                            "*Something you find in [[a box]] is [[a chocolate]]",
+                            "[[Chocolate]] is a translation of [[chocolate]]",
+                            "[[Chocolate]] can be [[eaten]]",
+                            "[[chocolate]] can [[melt]].",
+                            "[[chocolate]] is created by [[mixing sugar, cocoa butter  and cocoa liquor]].",
+                            "[[chocolate]] is related to [[candy]]"
+                        ]
+                    },
+                    "table": {
+                        "table": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clear",
+                                "after": "cluttered"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a table]] is [[a tablecloth]]",
+                            "[[desk]] is related to [[table]]",
+                            "[[a table]] is for [[Putting things on]]"
+                        ]
+                    },
+                    "chocolate comb": {
+                        "chocolate": [
+                            {
+                                "attribute": "cost",
+                                "before": "in store",
+                                "after": "purchased for use"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "solid | lumpy",
+                                "after": "liquid | smooth | melted"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "colder | room temperature | cooler",
+                                "after": "warmer | warm | hotter"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "packaged",
+                                "after": "out of package"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in pot",
+                                "after": "in molds"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "liquid",
+                                "after": "frozen"
+                            },
+                            {
+                                "attribute": "hardness",
+                                "before": "liquid",
+                                "after": "solid | hardened"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer",
+                                "after": "colder"
+                            },
+                            {
+                                "attribute": "ease of release",
+                                "before": "hard to release from molds",
+                                "after": "easy to release from molds"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in molds | in mold",
+                                "after": "on plate | out of molds"
+                            },
+                            {
+                                "attribute": "form",
+                                "before": "liquid",
+                                "after": "heart shaped"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "in pile | in molds",
+                                "after": "in box"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "bowl": {
+                        "batter": [
+                            {
+                                "attribute": "container",
+                                "before": "in bowl",
+                                "after": "in bottle | bottle | in ketchup bottle"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warm",
+                                "after": "colder | cold"
+                            },
+                            {
+                                "attribute": "container",
+                                "before": "in bottle",
+                                "after": "in pan"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the cupboard]] is [[a bowl]]",
+                            "[[plate]] is related to [[bowl]]",
+                            "[[plate]] is not [[bowl]]"
+                        ]
+                    },
+                    "candle": {
+                        "lamp": [
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wicked",
+                                "after": "wickless"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[wax]] is related to [[candle]]",
+                            "You can use [[a candle]] to [[light a room]]",
+                            "*Something you find on [[the table]] is [[a candle]]",
+                            "[[Vela]] is a translation of [[candle]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "kitchen": {
+                        "kitchen counter": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "messy"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[food]]",
+                            "[[a kitchen]] is used for [[cooking food]]",
+                            "[[table]] is related to [[kitchen]]"
+                        ]
+                    },
+                    "it": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[it]] is related to [[pronoun]]"
+                        ]
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    },
+                    "stove": {
+                        "stove knob": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cool | cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "turned off",
+                                "after": "turned on"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "in the off position",
+                                "after": "in the on position"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "medium-low",
+                                "after": "low"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[a stove]] can [[heat food]]",
+                            "You can use [[a stove]] to [[cook]]",
+                            "You are likely to find [[a stove]] in [[a house]]",
+                            "[[Stove]] is [[hot]]",
+                            "[[range]] is related to [[stove]]"
+                        ]
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    },
+                    "sets": {
+                        "pieces": [
+                            {
+                                "attribute": "location",
+                                "before": "around asparagus",
+                                "after": "discarded"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "unwrapped",
+                                "after": "wrapped"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "until": {
+                        "task": [
+                            {
+                                "attribute": "time",
+                                "before": "earlier",
+                                "after": "later"
+                            },
+                            {
+                                "attribute": "age",
+                                "before": "younger",
+                                "after": "older"
+                            },
+                            {
+                                "attribute": "age",
+                                "before": "younger",
+                                "after": "older"
+                            },
+                            {
+                                "attribute": "completion",
+                                "before": "unfinished",
+                                "after": "finished"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    }
+]

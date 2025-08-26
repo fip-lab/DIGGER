@@ -1,0 +1,17 @@
+{
+    "peel": [
+        "(:action peel_coconut\n    :parameters (?c - coconut ?k - knife)\n    :precondition (and (has_outer_casing ?c) (sharp ?k))\n    :effect (and (exposed_shell ?c) (not (has_outer_casing ?c)))\n)\n\n",
+        "(:action peel-coconut\n    :parameters (?npc - person ?c - coconut ?k - knife)\n    :precondition (and\n                    (wrapped ?c ?t)\n                    (not (peeled ?c))\n                    (knife_sharp ?k)\n                   )\n    :effect (peeled ?c)\n)\n\n;; Action to drain the coconut\n",
+        "(:action drain_coconut\n    :parameters (?c - coconut ?g - glass)\n    :precondition (and (exposed_shell ?c) (empty ?g))\n    :effect (and (drained ?c) (filled ?g) (not (empty ?g)))\n)\n\n",
+        "(:action drain-coconut\n    :parameters (?npc - person ?c - coconut ?r - rack)\n    :precondition (and\n                    (peeled ?c)\n                    (not (drained ?c))\n                   )\n    :effect (drained ?c)\n)\n\n;; Action to open the coconut after wrapping it\n",
+        "(:action remove_coconut_meat\n    :parameters (?c - coconut ?k - knife)\n    :precondition (and (broken ?c) (sharp ?k))\n    :effect (and (meat_separated ?c) (not (broken ?c)))\n)\n```\n\nThis set of PDDL actions captures the steps and descriptions provided for the task \"get_coconut_meat_with_oven.\" Each action includes parameters, preconditions, and effects that reflect the logic and intent of the corresponding step."
+    ],
+    "wrap": [
+        "(:action wrap-coconut\n    :parameters (?c - coconut ?t - towel)\n    :precondition (and\n                    (not (wrapped ?c ?t))\n                    (coconut_intact ?c)\n                   )\n    :effect (wrapped ?c ?t)\n)\n\n;; Action to peel the coconut using a knife\n",
+        "(:action wrap_coconut\n    :parameters (?c - coconut ?t - towel)\n    :precondition (and (drained ?c) (clean ?t))\n    :effect (and (wrapped ?c ?t) (not (clean ?t)))\n)\n\n"
+    ],
+    "smash": [
+        "(:action smash-coconut\n    :parameters (?npc - person ?c - coconut ?h - hammer)\n    :precondition (and\n                    (wrapped ?c ?t)\n                    (drained ?c)\n                    (not (smashed ?c))\n                   )\n    :effect (smashed ?c)\n)\n```\n\n### Explanation:\n\n1. **wrap-coconut**: This action wraps the coconut in a towel, ensuring that bits do not fly when smashed.\n   - **Preconditions**: The coconut is intact and not yet wrapped.\n   - **Effects**: The coconut becomes wrapped in the towel.\n\n2. **peel-coconut**: This action involves peeling off the outer casing of the coconut with a knife.\n   - **Preconditions**: The coconut is wrapped, the knife is sharp, and the coconut is not yet peeled.\n   - **Effects**: The coconut becomes peeled.\n\n3. **drain-coconut**: This action drains the liquid from the coconut by placing it upside down on a rack.\n   - **Preconditions**: The coconut is peeled and not yet drained.\n   - **Effects**: The coconut becomes drained.\n\n4. **smash-coconut**: This action breaks open the coconut using a hammer while it is still wrapped.\n   - **Preconditions**: The coconut is wrapped, drained, and not yet smashed.\n   - **Effects**: The coconut becomes smashed, making the meat accessible.",
+        "(:action break_coconut\n    :parameters (?c - coconut ?t - towel ?h - hammer)\n    :precondition (and (wrapped ?c ?t) (heavy ?h))\n    :effect (and (broken ?c) (not (wrapped ?c ?t)))\n)\n\n"
+    ]
+}

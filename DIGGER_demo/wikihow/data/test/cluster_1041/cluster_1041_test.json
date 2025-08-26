@@ -1,0 +1,81 @@
+[
+    {
+        "cluster_label": 1041,
+        "task": "How to Write a Novel Using Your Journal",
+        "step": [
+            "Look for entries about traveling to a foreign country.",
+            "Describe a certain place using notes from your journal.",
+            "Include sensory details from your journal."
+        ],
+        "steps_predictions": [
+            "check_in npc covering_tracks track",
+            "describe_place npc",
+            "initiate_sensibility agent1 journal1"
+        ],
+        "goal_state": " ((in npc covering_tracks))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Keep a Summer Journal",
+        "step": [
+            "Purchase a suitable journal that you can carry about with you.",
+            "Start carrying the journal about with you.",
+            "Keep a record of the day's weather.",
+            "Take photos.",
+            "Attach small paper or cloth mementos.",
+            "Do WordPress of the things you enjoyed the most during summer months.",
+            "Have friends contribute to your summer journal.",
+            "Add a summer bucket list at the front of the journal.",
+            "Use the journal as a writing prompt.",
+            "Keep a note of your travels.",
+            "Draw in your summer journal.",
+            "Finish the summer journal at the end of summer."
+        ],
+        "steps_predictions": [
+            "purchase_journal npc",
+            "start_journal about_with you journal",
+            "record_weather npc",
+            "take_photos camera",
+            "attach-small-mementos paper npc",
+            "create_memebers_know npc",
+            "create_memebers_know npc",
+            "add-bucket-list items to the journal",
+            "use_as_writing_ prompt journal",
+            "keep_note npc",
+            "draw_in_journal npc",
+            "finish_journal npc"
+        ],
+        "goal_state": " ((not (in npc)))"
+    },
+    {
+        "cluster_label": 1041,
+        "task": "How to Make a Nature Journal",
+        "step": [
+            "Decide what kind of nature journal you'd like to make.",
+            "Make or buy a suitable journal of you choice.",
+            "Get any other equipment you'll need.",
+            "Dedicate time to journaling.",
+            "Observe the world around you.",
+            "Do your writing on location.",
+            "Begin each entry with the location, date, and time.",
+            "Record your observations with drawings or paintings.",
+            "Write about what you observe.",
+            "Learn more about what you've seen.",
+            "Revisit your past entries."
+        ],
+        "steps_predictions": [
+            "choose_journal npc jungle",
+            "buy_journal npc",
+            "get_equipment you camera you binoculars",
+            "dedicate-time journaling",
+            "observe_world npc",
+            "create_location npc covering_tracks",
+            "start_with_location npc covering_tracks track",
+            "record_observations you",
+            "create_sos_observer npc",
+            "learn npc home",
+            "revisit_past_completed entries"
+        ],
+        "goal_state": " ((not (in npc Salt_Lake)))"
+    }
+]

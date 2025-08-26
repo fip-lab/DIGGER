@@ -1,0 +1,8 @@
+(go east npc shore forest_edge)
+(go east npc forest_edge forest)
+(gather_tinder npc forest tinder)
+(get softwood npc forest)
+(build_campfire npc forest tinder campfire)
+(get hardwood_stick npc forest)
+(light_campfire npc forest softwood hardwood_stick campfire)
+; cost = 7 (unit cost)

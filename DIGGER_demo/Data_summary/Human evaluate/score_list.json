@@ -1,0 +1,176 @@
+[
+    {
+        "wikihow": [
+            {
+                "gpt-4": {
+                    "Average Score": 0.7633333333333333,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "clap": {
+                    "Average Score": 0.07,
+                    "Average Pass Rate": 0.0,
+                    "Sheet Length": 10
+                },
+                "no_entity_Instanting_plan": {
+                    "Average Score": 0.6299999999999999,
+                    "Average Pass Rate": 0.9,
+                    "Sheet Length": 10
+                },
+                "open_pred_data": {
+                    "Average Score": 0.65,
+                    "Average Pass Rate": 0.9,
+                    "Sheet Length": 10
+                },
+                "plan_Instanting": {
+                    "Average Score": 0.7466666666666667,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "Instanting_no_step_plan": {
+                    "Average Score": 0.6366666666666666,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "gpt-4o": {
+                    "Average Score": 0.7366666666666667,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "no_Instantiating_plan": {
+                    "Average Score": 0.6466666666666666,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "deepseek_v3": {
+                    "Average Score": 0.7233333333333333,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                }
+            }
+        ]
+    },
+    {
+        "proc2pddl": [
+            {
+                "Instanting_no_step_plan": {
+                    "Average Score": 0.49629629629629624,
+                    "Average Pass Rate": 0.7777777777777778,
+                    "Sheet Length": 9
+                },
+                "plan_Instanting": {
+                    "Average Score": 0.5185185185185185,
+                    "Average Pass Rate": 0.6666666666666666,
+                    "Sheet Length": 9
+                },
+                "no_entity_Instanting_plan": {
+                    "Average Score": 0.47777777777777786,
+                    "Average Pass Rate": 0.7777777777777778,
+                    "Sheet Length": 9
+                },
+                "no_Instantiating_plan": {
+                    "Average Score": 0.48888888888888893,
+                    "Average Pass Rate": 0.5555555555555556,
+                    "Sheet Length": 9
+                },
+                "gpt-4o": {
+                    "Average Score": 0.4259259259259259,
+                    "Average Pass Rate": 0.4444444444444444,
+                    "Sheet Length": 9
+                },
+                "deepseek_v3": {
+                    "Average Score": 0.4407407407407407,
+                    "Average Pass Rate": 0.5555555555555556,
+                    "Sheet Length": 9
+                },
+                "gpt-4": {
+                    "Average Score": 0.3814814814814815,
+                    "Average Pass Rate": 0.3333333333333333,
+                    "Sheet Length": 9
+                }
+            }
+        ]
+    },
+    {
+        "openpi": [
+            {
+                "Instanting_no_step_plan": {
+                    "Average Score": 0.561111111111111,
+                    "Average Pass Rate": 0.8333333333333334,
+                    "Sheet Length": 6
+                },
+                "no_entity_Instanting_plan": {
+                    "Average Score": 0.6277777777777778,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 6
+                },
+                "plan_Instanting": {
+                    "Average Score": 0.6555555555555556,
+                    "Average Pass Rate": 0.8333333333333334,
+                    "Sheet Length": 6
+                },
+                "no_Instantiating_plan": {
+                    "Average Score": 0.5222222222222221,
+                    "Average Pass Rate": 0.6666666666666666,
+                    "Sheet Length": 6
+                },
+                "gpt-4o": {
+                    "Average Score": 0.6666666666666666,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 6
+                },
+                "deepseek_v3": {
+                    "Average Score": 0.7111111111111111,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 6
+                },
+                "gpt-4": {
+                    "Average Score": 0.6,
+                    "Average Pass Rate": 0.8333333333333334,
+                    "Sheet Length": 6
+                }
+            }
+        ]
+    },
+    {
+        "alfred_l": [
+            {
+                "Instanting_no_step_plan": {
+                    "Average Score": 0.6999999999999998,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "no_entity_Instanting_plan": {
+                    "Average Score": 0.7133333333333334,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "no_Instantiating_plan": {
+                    "Average Score": 0.71,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "plan_Instanting": {
+                    "Average Score": 0.7666666666666666,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "gpt-4o": {
+                    "Average Score": 0.63,
+                    "Average Pass Rate": 0.9,
+                    "Sheet Length": 10
+                },
+                "deepseek_v3": {
+                    "Average Score": 0.6866666666666666,
+                    "Average Pass Rate": 1.0,
+                    "Sheet Length": 10
+                },
+                "gpt-4": {
+                    "Average Score": 0.63,
+                    "Average Pass Rate": 0.9,
+                    "Sheet Length": 10
+                }
+            }
+        ]
+    }
+]

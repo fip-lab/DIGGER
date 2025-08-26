@@ -1,0 +1,18 @@
+{
+    "make": [
+        "(:action make_cocoa_mixture\n    :parameters (?mixture - mixture ?p - player)\n    :precondition (and (inventory ?p ?mixture) (is_empty ?mixture))\n    :effect (and (not (is_empty ?mixture)) (has_cocoa_mixture ?mixture))\n)\n\n",
+        "(:action cook\n    :parameters (?slow_cooker - slow_cooker ?p - player)\n    :precondition (and (heating ?slow_cooker) (at ?p ?slow_cooker))\n    :effect (and (cooked ?slow_cooker))\n)\n\n"
+    ],
+    "add": [
+        "(:action add_ingredients_to_slow_cooker\n    :parameters (?mixture - mixture ?slow_cooker - slow_cooker ?p - player)\n    :precondition (and (has_cocoa_mixture ?mixture) (inventory ?p ?mixture) (at ?p ?slow_cooker) (is_empty ?slow_cooker))\n    :effect (and (not (is_empty ?slow_cooker)) (ingredients_added ?slow_cooker))\n)\n\n"
+    ],
+    "heat": [
+        "(:action heat_mixture\n    :parameters (?slow_cooker - slow_cooker ?stove - stove ?p - player)\n    :precondition (and (ingredients_added ?slow_cooker) (at ?p ?stove) (connected ?slow_cooker ?stove))\n    :effect (and (heating ?slow_cooker))\n)\n\n"
+    ],
+    "serve": [
+        "(:action serve_hot_cocoa\n    :parameters (?slow_cooker - slow_cooker ?cup - cup ?p - player)\n    :precondition (and (cooked ?slow_cooker) (inventory ?p ?cup) (at ?p ?slow_cooker))\n    :effect (and (served ?cup) (not (empty ?cup)))\n)\n\n"
+    ],
+    "keep": [
+        "(:action keep_warm\n    :parameters (?slow_cooker - slow_cooker ?p - player)\n    :precondition (and (cooked ?slow_cooker) (at ?p ?slow_cooker))\n    :effect (and (keeping_warm ?slow_cooker))\n)\n```"
+    ]
+}

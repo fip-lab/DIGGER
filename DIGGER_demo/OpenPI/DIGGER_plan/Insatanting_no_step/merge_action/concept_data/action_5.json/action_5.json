@@ -1,0 +1,12 @@
+{
+    "obtain": [
+        "(:action obtain_eraser\n    :parameters (?p - player ?e - eraser ?store - location ?home - location)\n    :precondition (and (at ?p ?store) (at ?e ?store) (for_sale ?e))\n    :effect (and (inventory ?p ?e) (not (at ?e ?store)) (at ?e ?home) (purchased ?e))\n)\n\n"
+    ],
+    "kneel": [
+        "(:action kneel_next_to_linoleum\n    :parameters (?p - player ?linoleum - location)\n    :precondition (and (at ?p ?linoleum))\n    :effect (kneeling ?p)\n)\n\n"
+    ],
+    "rub": [
+        "(:action rub_skid_mark\n    :parameters (?p - player ?e - eraser ?linoleum - location)\n    :precondition (and (kneeling ?p) (inventory ?p ?e) (at ?p ?linoleum) (stained ?linoleum))\n    :effect (and (clean ?linoleum) (not (stained ?linoleum)) (smaller ?e))\n)\n\n",
+        "(:action wash_and_dry_linoleum\n    :parameters (?p - player ?linoleum - location)\n    :precondition (and (at ?p ?linoleum) (clean ?linoleum))\n    :effect (and (wet ?linoleum) (dry ?linoleum))\n)\n```\n\nExplanation of PDDL Actions:\n1. `obtain_eraser`: This action represents obtaining an eraser from the store. Preconditions include the player being at the store, the eraser being at the store, and the eraser being for sale. The effects include the eraser being in the player's inventory, not at the store, and marked as purchased.\n2. `kneel_next_to_linoleum`: This action represents the player kneeling next to the linoleum. The precondition is that the player is at the linoleum location. The effect is that the player is kneeling.\n3. `rub_skid_mark`: This action represents the player using the eraser to rub along the skid mark on the linoleum. Preconditions include the player kneeling, having the eraser in their inventory, being at the linoleum, and the linoleum being stained. The effects include the linoleum becoming clean and the eraser getting smaller.\n4. `wash_and_dry_linoleum`: This action represents washing and drying the linoleum. Preconditions include the player being at the linoleum and the linoleum being clean. The effects include the linoleum being wet and then dry.\n\nThis set of actions should accurately represent the task of removing black skid marks from linoleum using PDDL."
+    ]
+}

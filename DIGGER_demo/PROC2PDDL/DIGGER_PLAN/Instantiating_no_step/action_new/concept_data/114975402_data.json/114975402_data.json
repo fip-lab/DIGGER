@@ -1,0 +1,8 @@
+[
+    "(:action find_supplies ; Find supplies and update the person's inventory\n    :parameters (?p - person ?s - supply)\n    :precondition (and (not (has-supply ?p ?s)))\n    :effect (has-supply ?p ?s)\n)",
+    "(:action find_clean_clothing ; Find clean clothing and update the person's inventory\n    :parameters (?p - person ?c - clothing)\n    :precondition (and (not (has-clothing ?p ?c)))\n    :effect (has-clothing ?p ?c)\n)",
+    "(:action find ; Find an item and update the person's inventory\n    :parameters (?p - person ?item - object)\n    :precondition (and (not (has-item ?p ?item)))\n    :effect (has-item ?p ?item)\n)",
+    "(:action clean\n    :parameters (?agent - person ?item - object)\n    :precondition (and\n                    (has-supply ?agent ?item)\n                    (dirty ?item))\n    :effect (and\n             (not (dirty ?item))",
+    "(:action camouflage ; Camouflage an item by transforming its state\n    :parameters (?p - person ?i - item)\n    :precondition (and\n                    (has-supply ?p ?i)\n                    (not (camouflaged ?i)))\n    :effect (and\n             (not (bare ?i))",
+    "(:action make ; Create or modify an element to achieve a desired state\n  :parameters (?p - person ?item - object ?state - state)\n  :precondition (and\n                 (has-supply ?p ?item)\n                 (not (in-state ?item ?state)))\n  :effect (and\n           (not (in-state ?item (opposite ?state))"
+]

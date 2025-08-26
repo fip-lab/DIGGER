@@ -1,0 +1,164 @@
+{
+    "goal": "Spool Knit a Winter Hat",
+    "steps": [
+        "Knit eighty-four inches of flat web.",
+        "Begin five inches from the end of the web, turn and sew into a rectangular form five inches wide and eight inches long.",
+        "Join the five-inch ends, and draw in the top with the needle and a piece of the material from which the cap was made.",
+        "After securing the top, twist and fold the piece of yarn remaining for a cord and fasten a number of strands of yarn through the loop for a tassel."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/0/01/Spool-Knit-a-Winter-Hat-Step-1.jpg/aid535925-v4-728px-Spool-Knit-a-Winter-Hat-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/b/bf/Spool-Knit-a-Winter-Hat-Step-2.jpg/aid535925-v4-728px-Spool-Knit-a-Winter-Hat-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/9/96/Spool-Knit-a-Winter-Hat-Step-3.jpg/aid535925-v4-728px-Spool-Knit-a-Winter-Hat-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/a/ab/Spool-Knit-a-Winter-Hat-Step-4.jpg/aid535925-v4-728px-Spool-Knit-a-Winter-Hat-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "the webbing",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "composition",
+                        "before": "in line",
+                        "after": "knitted together",
+                        "saliency": 0.3694711086015434,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight | flat",
+                        "after": "rectangular",
+                        "saliency": 0.474120082815735,
+                        "attribute_annotation": "shape"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "shape",
+                        "before": "wider",
+                        "after": "narrower",
+                        "saliency": 0.7153209109730849,
+                        "attribute_annotation": "width"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the webbing | the yarn"
+            ]
+        },
+        {
+            "entity": "the hat",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.512987012987013,
+                        "attribute_annotation": "weight"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "the hat"
+            ]
+        },
+        {
+            "entity": "the piece of yarn",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "shape",
+                        "before": "straight",
+                        "after": "twisted and folded",
+                        "saliency": 0.4753434970826275,
+                        "attribute_annotation": "shape"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "the piece of yarn"
+            ]
+        },
+        {
+            "entity": "the ends",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "connection",
+                        "before": "unattached | unjoined",
+                        "after": "joined",
+                        "saliency": 0.44711086015433843,
+                        "attribute_annotation": "connection"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "the ends"
+            ]
+        }
+    ],
+    "clusters": {
+        "the hat": {
+            "entity_cluster": [
+                "the hat"
+            ],
+            "attribute_cluster": {
+                "weight": [
+                    "weight"
+                ]
+            }
+        },
+        "the piece of yarn": {
+            "entity_cluster": [
+                "the yarn",
+                "the piece of yarn"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "shape": [
+                    "shape"
+                ]
+            }
+        },
+        "the webbing": {
+            "entity_cluster": [
+                "the webbing"
+            ],
+            "attribute_cluster": {
+                "composition": [
+                    "composition"
+                ],
+                "shape": [
+                    "shape",
+                    "width"
+                ]
+            }
+        },
+        "the ends": {
+            "entity_cluster": [
+                "the ends"
+            ],
+            "attribute_cluster": {
+                "connection": [
+                    "connection"
+                ]
+            }
+        }
+    }
+}

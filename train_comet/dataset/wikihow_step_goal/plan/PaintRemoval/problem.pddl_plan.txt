@@ -1,0 +1,8 @@
+(mix_soap_and_water bucket01 soap_bottle01)
+(wet_window window01 bucket01 sponge01)
+(open_razor_blade_package razor_blade_package01 razor_blade01)
+(scrape_paint window01 razor_blade01)
+(buff_window window01 cloth01)
+(remove_splatters_with_solvent window01 solvent01)
+(spritz_glass_cleaner window01 glass_cleaner_bottle01)
+; cost = 7 (unit cost)

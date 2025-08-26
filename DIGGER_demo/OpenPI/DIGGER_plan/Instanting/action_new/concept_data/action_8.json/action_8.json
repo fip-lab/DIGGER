@@ -1,0 +1,6 @@
+[
+    "(:action start\n    ; Start an activity and update its state\n    :parameters (?entity - thing ?activity - activity)\n    :precondition (and (knowledge ?activity unstarted))\n    :effect (knowledge ?activity started)\n)",
+    "(:action select ; Select and transition the state of an entity\n    :parameters (?entity - object)\n    :precondition (and (step ?entity unselected))\n    :effect (and (step ?entity selected))",
+    "(:action save_and_exit ; Save the state and complete the process for an entity\n    :parameters (?entity - object)\n    :precondition (and (step ?entity selected) (choice ?entity nameless))\n    :effect (and (choice ?entity named))",
+    "(:action turn ; Turn a state of an item based on its current status\n  :parameters (?entity - object ?state - state)\n  :precondition (and (knowledge ?entity ?state))\n  :effect (and (turned ?entity on))"
+]

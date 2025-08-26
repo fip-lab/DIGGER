@@ -1,0 +1,52 @@
+(define (problem move_AlarmClock1_to_Box1_with_two_object_18)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    CellPhone1 - object
+    Pen2 - object
+    Watch1 - object
+    KeyChain1 - object
+    Pencil1 - object
+    CD1 - object
+    AlarmClock1 - object
+    Book1 - object
+    Pen1 - object
+    CreditCard1 - object
+    Drawer1 - receptacle
+    Box1 - receptacle
+    Box2 - receptacle
+    Desk3 - receptacle
+    Drawer4 - receptacle
+    Desk1 - receptacle
+    GarbageCan1 - receptacle
+    Drawer3 - receptacle
+    Drawer2 - receptacle
+    Desk2 - receptacle
+    KeyChain2 - object
+    KeyChain3 - object
+    Book2 - object
+    Sofa1 - receptacle
+    Sofa2 - receptacle
+  )
+
+  (:init
+    (atLocation agent1 GarbageCan1)
+    (objectAtLocation Book1 Desk1)
+    (objectAtLocation AlarmClock1 Desk2)
+    (objectAtLocation Pen1 GarbageCan1)
+    (objectAtLocation CreditCard1 Drawer1)
+    (objectAtLocation CD1 Drawer2)
+    (objectAtLocation Watch1 Drawer3)
+    (objectAtLocation Pencil1 Drawer4)
+    (objectAtLocation Book2 Desk1)
+    (objectAtLocation KeyChain2 Box1)
+    (objectAtLocation KeyChain3 Box1)
+    (objectAtLocation KeyChain1 Box2)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation AlarmClock1 Box1)
+    )
+  )
+)

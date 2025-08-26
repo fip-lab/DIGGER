@@ -1,0 +1,796 @@
+{
+    "goal": "Make Chinese Macaroni in Just 20 Minutes",
+    "steps": [
+        "Boil macaroni in hot boiling water with some salt and oil for 10-15 minutes.",
+        "After the macaroni has boiled put under running water for about 15 seconds to prevent over cooking.",
+        "In another pan add some oil and toss in the macaroni.",
+        "Add salt, red chilli powder ,soy sauce,white vinegar and ajino moto.",
+        "Cook for some seconds.",
+        "Serve hot with chilled drinks."
+    ],
+    "topics": "Food and Entertaining",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/e/e1/Make-Chinese-Macaroni-in-Just-20-Minutes-Step-1.jpg/aid1537153-v4-728px-Make-Chinese-Macaroni-in-Just-20-Minutes-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/0/06/Make-Chinese-Macaroni-in-Just-20-Minutes-Step-2.jpg/aid1537153-v4-728px-Make-Chinese-Macaroni-in-Just-20-Minutes-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/3/3a/Make-Chinese-Macaroni-in-Just-20-Minutes-Step-3.jpg/aid1537153-v4-728px-Make-Chinese-Macaroni-in-Just-20-Minutes-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/8/8b/Make-Chinese-Macaroni-in-Just-20-Minutes-Step-4.jpg/aid1537153-v4-728px-Make-Chinese-Macaroni-in-Just-20-Minutes-Step-4.jpg",
+        "https://www.wikihow.com/images/thumb/8/81/Make-Chinese-Macaroni-in-Just-20-Minutes-Step-5.jpg/aid1537153-v4-728px-Make-Chinese-Macaroni-in-Just-20-Minutes-Step-5.jpg",
+        "https://www.wikihow.com/images/thumb/0/0d/Make-Chinese-Macaroni-in-Just-20-Minutes-Step-6.jpg/aid1537153-v4-728px-Make-Chinese-Macaroni-in-Just-20-Minutes-Step-6.jpg"
+    ],
+    "states": [
+        {
+            "entity": "macaroni",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in bag | in its bag",
+                        "after": "in water | in boiling water",
+                        "saliency": 0.541555752735877,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cooking",
+                        "before": "less cooked | raw",
+                        "after": "more cooked | cooked",
+                        "saliency": 0.36167800453514737,
+                        "attribute_annotation": "cooking | thermal conductivity"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "bland",
+                        "after": "salted",
+                        "saliency": 0.32866015971606033,
+                        "attribute_annotation": "taste | odor | color"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "cooking",
+                        "before": "hot | hotter",
+                        "after": "cool | cooler | cold",
+                        "saliency": 0.35211475894705707,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "soft",
+                        "after": "firmer",
+                        "saliency": 0.1797545104998521,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "in strainer | out of pan",
+                        "after": "in pan",
+                        "saliency": 0.541555752735877,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cooking",
+                        "before": "cool",
+                        "after": "hot",
+                        "saliency": 0.40387459331558706,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "less oily",
+                        "after": "more oily",
+                        "saliency": 0.2344474021492655,
+                        "attribute_annotation": "oiliness"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "taste",
+                        "before": "bland | normal smelling | white",
+                        "after": "spicy | spicy smelling | reddish/pink",
+                        "saliency": 0.2769003253475303,
+                        "attribute_annotation": "taste | odor | color"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "cooking",
+                        "before": "less cooked",
+                        "after": "more cooked",
+                        "saliency": 0.38755792171941233,
+                        "attribute_annotation": "cooking | thermal conductivity"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "location",
+                        "before": "in pan",
+                        "after": "on plate",
+                        "saliency": 0.4897959183673469,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cooking",
+                        "before": "hot",
+                        "after": "cooling",
+                        "saliency": 0.35211475894705707,
+                        "attribute_annotation": "temperature"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "macaroni"
+            ]
+        },
+        {
+            "entity": "oil",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "location",
+                        "before": "in pantry | in its place",
+                        "after": "in water | in boiling water",
+                        "saliency": 0.36690328305235137,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot",
+                        "saliency": 0.5045844424726412,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in its place",
+                        "after": "in pan",
+                        "saliency": 0.36690328305235137,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "oil"
+            ]
+        },
+        {
+            "entity": "drinking glass",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet | in fridge",
+                        "after": "on table | in drinking glass",
+                        "saliency": 0.600709849157054,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "drinking glass | drinks",
+                "chilled drinks"
+            ]
+        },
+        {
+            "entity": "oil/macaroni",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed into water | mixed in water | mixed",
+                        "saliency": 0.5859213250517599,
+                        "attribute_annotation": "mixture | composition"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on stove top",
+                        "saliency": 0.4897959183673469,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west",
+                        "saliency": 0.29754510499852116,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner | clean",
+                        "after": "dirtier | dirty",
+                        "saliency": 0.4269446909198462,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier",
+                        "saliency": 0.36690328305235137,
+                        "attribute_annotation": "weight"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "empty | emptier",
+                        "after": "fuller",
+                        "saliency": 0.24336981169279306,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed",
+                        "saliency": 0.3640934634723455,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "in pan",
+                        "saliency": 0.3447204968944099,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller",
+                        "saliency": 0.26924972887705806,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate",
+                        "after": "mixed",
+                        "saliency": 0.41585329784087544,
+                        "attribute_annotation": "composition"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in containter | in its place | in  its place",
+                        "after": "on macaroni | in pan",
+                        "saliency": 0.3225377107364685,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter | warmer",
+                        "saliency": 0.5711328009464655,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier",
+                        "saliency": 0.3890860692102928,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "farther east",
+                        "after": "farther west",
+                        "saliency": 0.29754510499852116,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty",
+                        "saliency": 0.3225377107364685,
+                        "attribute_annotation": "cleanness"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "salt and oil | oil/water/pasta/salt",
+                "pan | stirring tool",
+                "saucepan",
+                "fork",
+                "flavorings macaroni",
+                "salt",
+                "oil/macaroni",
+                "spatula",
+                "sun",
+                "mixture"
+            ]
+        },
+        {
+            "entity": "boiling pot",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote",
+                        "saliency": 0.38169180715764567,
+                        "attribute_annotation": "temperature"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller",
+                        "saliency": 0.3566992014196983,
+                        "attribute_annotation": "fullness"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet",
+                        "saliency": 0.5193729665779356,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "water",
+                "boiling pot"
+            ]
+        },
+        {
+            "entity": "plate",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "cleaner",
+                        "after": "dirtier",
+                        "saliency": 0.5193729665779356,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller",
+                        "saliency": 0.3357980873508824,
+                        "attribute_annotation": "fullness"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on table",
+                        "saliency": 0.46761313220940554,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "serving dish",
+                "plate"
+            ]
+        },
+        {
+            "entity": "red chilli powder",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in its container | in  its place",
+                        "after": "on macaroni | in pan",
+                        "saliency": 0.5045844424726412,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "red chilli powder",
+                "white vinegar",
+                "ajino moto",
+                "soy sauce"
+            ]
+        },
+        {
+            "entity": "sink",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full of macaroni",
+                        "saliency": 0.4897959183673469,
+                        "attribute_annotation": "volume"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter top",
+                        "after": "under faucet",
+                        "saliency": 0.35211475894705707,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | cleaner",
+                        "after": "dirty | dirtier",
+                        "saliency": 0.30622103914029375,
+                        "attribute_annotation": "cleanness"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "drier",
+                        "after": "wetter",
+                        "saliency": 0.2832741792369121,
+                        "attribute_annotation": "wetness"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "strainer",
+                "sink"
+            ]
+        },
+        {
+            "entity": "task",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "time",
+                        "before": "earlier",
+                        "after": "later",
+                        "saliency": 0.4897959183673469,
+                        "attribute_annotation": "time"
+                    },
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older",
+                        "saliency": 0.04721572423435778,
+                        "attribute_annotation": "age"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "age",
+                        "before": "younger",
+                        "after": "older",
+                        "saliency": 0.04721572423435778,
+                        "attribute_annotation": "age"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "completion",
+                        "before": "unfinished",
+                        "after": "finished",
+                        "saliency": 0.46021887015675833,
+                        "attribute_annotation": "completion"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "the time",
+                "task",
+                "you"
+            ]
+        },
+        {
+            "entity": "stove burner",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on",
+                        "saliency": 0.38169180715764567,
+                        "attribute_annotation": "power"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "stove burner"
+            ]
+        },
+        {
+            "entity": "ingredients",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed in pan",
+                        "saliency": 0.10887311446317656,
+                        "attribute_annotation": "mixture"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "mixture",
+                        "before": "less stirred | less cooked",
+                        "after": "more stirred | more cooked",
+                        "saliency": 0.17605737947352854,
+                        "attribute_annotation": "mixture"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter",
+                        "saliency": 0.16725820763087842,
+                        "attribute_annotation": "temperature"
+                    }
+                ],
+                "step6": [
+                    {
+                        "attribute": "location",
+                        "before": "in pan | ready to be served",
+                        "after": "served",
+                        "saliency": 0.3825791186039633,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unready",
+                        "after": "ready",
+                        "saliency": 0.23992901508429457,
+                        "attribute_annotation": "completion"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "food",
+                "ingredients"
+            ]
+        }
+    ],
+    "clusters": {
+        "oil": {
+            "entity_cluster": [
+                "oil"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "temperature": [
+                    "temperature"
+                ]
+            }
+        },
+        "red chilli powder": {
+            "entity_cluster": [
+                "soy sauce",
+                "ajino moto",
+                "white vinegar",
+                "red chilli powder"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "task": {
+            "entity_cluster": [
+                "task",
+                "the time",
+                "you"
+            ],
+            "attribute_cluster": {
+                "time": [
+                    "time"
+                ],
+                "completion": [
+                    "completion"
+                ],
+                "age": [
+                    "age"
+                ]
+            }
+        },
+        "plate": {
+            "entity_cluster": [
+                "serving dish",
+                "plate"
+            ],
+            "attribute_cluster": {
+                "cleanness": [
+                    "cleanness"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "sink": {
+            "entity_cluster": [
+                "sink",
+                "strainer"
+            ],
+            "attribute_cluster": {
+                "volume": [
+                    "volume"
+                ],
+                "location": [
+                    "location"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "wetness": [
+                    "wetness"
+                ]
+            }
+        },
+        "drinking glass": {
+            "entity_cluster": [
+                "chilled drinks",
+                "drinking glass",
+                "drinks"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "stove burner": {
+            "entity_cluster": [
+                "stove burner"
+            ],
+            "attribute_cluster": {
+                "power": [
+                    "power"
+                ]
+            }
+        },
+        "ingredients": {
+            "entity_cluster": [
+                "ingredients",
+                "food"
+            ],
+            "attribute_cluster": {
+                "mixture": [
+                    "mixture"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "completion": [
+                    "completion"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "macaroni": {
+            "entity_cluster": [
+                "oil/water/pasta/salt",
+                "macaroni"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "cooking": [
+                    "temperature",
+                    "speed",
+                    "thermal conductivity",
+                    "time",
+                    "cooking"
+                ],
+                "taste": [
+                    "odor",
+                    "texture",
+                    "taste",
+                    "oiliness",
+                    "color"
+                ],
+                "mixture": [
+                    "composition",
+                    "mixture"
+                ]
+            }
+        },
+        "boiling pot": {
+            "entity_cluster": [
+                "water",
+                "boiling pot"
+            ],
+            "attribute_cluster": {
+                "temperature": [
+                    "temperature"
+                ],
+                "location": [
+                    "location"
+                ],
+                "fullness": [
+                    "fullness"
+                ]
+            }
+        },
+        "oil/macaroni": {
+            "entity_cluster": [
+                "sun",
+                "spatula",
+                "fork",
+                "pan",
+                "oil/macaroni",
+                "flavorings macaroni",
+                "salt",
+                "mixture",
+                "salt and oil",
+                "saucepan",
+                "stirring tool"
+            ],
+            "attribute_cluster": {
+                "mixture": [
+                    "composition",
+                    "mixture"
+                ],
+                "cleanness": [
+                    "cleanness"
+                ],
+                "weight": [
+                    "weight"
+                ],
+                "fullness": [
+                    "fullness"
+                ],
+                "temperature": [
+                    "temperature"
+                ],
+                "location": [
+                    "location"
+                ],
+                "composition": [
+                    "composition"
+                ]
+            }
+        }
+    }
+}

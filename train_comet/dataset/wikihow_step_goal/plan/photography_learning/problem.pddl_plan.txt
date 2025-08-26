@@ -1,0 +1,6 @@
+(create_small_studio studio)
+(diffuse_light light)
+(have_appropriate_reflectors reflector)
+(have_closeup_lens lens)
+(start_experimenting experiment)
+; cost = 5 (unit cost)

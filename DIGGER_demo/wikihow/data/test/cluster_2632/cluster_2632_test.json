@@ -1,0 +1,21 @@
+[
+    {
+        "cluster_label": 2632,
+        "task": "How to Boil Corned Beef",
+        "step": [
+            "Make your corned beef into hash and get ready for some serious flavor.",
+            "Spice up your corned beef hash by making baked eggs in hash nests.",
+            "Get traditional by making a New England boiled dinner.",
+            "Make your corned beef into a pie.",
+            "Try something totally different by making Scotch eggs covered in corned beef."
+        ],
+        "steps_predictions": [
+            "make_horizontal_bar beef",
+            "make_cheese npc",
+            "make_boiled_dish pot stove",
+            "make_cheese beef_cooked beef",
+            "make_cheese npc"
+        ],
+        "goal_state": " ((cooked beef))"
+    }
+]

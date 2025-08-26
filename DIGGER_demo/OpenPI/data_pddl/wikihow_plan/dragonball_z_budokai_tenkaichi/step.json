@@ -1,0 +1,229 @@
+{
+    "goal": "Get Under the Stage in Dragonball Z Budokai Tenkaichi 2",
+    "steps": [
+        "Choose VS Duel, 2 players.",
+        "Choose Goku as player one, as well as player two.",
+        "Choose Mountain Road as the stage.",
+        "Move to opposite ends of the street so that you are both against the Wall that keeps you in the stage."
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/images/thumb/8/88/Get-Under-the-Stage-in-Dragonball-Z-Budokai-Tenkaichi-2-Step-1.jpg/aid370398-v4-728px-Get-Under-the-Stage-in-Dragonball-Z-Budokai-Tenkaichi-2-Step-1.jpg",
+        "https://www.wikihow.com/images/thumb/a/ac/Get-Under-the-Stage-in-Dragonball-Z-Budokai-Tenkaichi-2-Step-2.jpg/aid370398-v4-728px-Get-Under-the-Stage-in-Dragonball-Z-Budokai-Tenkaichi-2-Step-2.jpg",
+        "https://www.wikihow.com/images/thumb/c/cc/Get-Under-the-Stage-in-Dragonball-Z-Budokai-Tenkaichi-2-Step-3.jpg/aid370398-v4-728px-Get-Under-the-Stage-in-Dragonball-Z-Budokai-Tenkaichi-2-Step-3.jpg",
+        "https://www.wikihow.com/images/thumb/6/6d/Get-Under-the-Stage-in-Dragonball-Z-Budokai-Tenkaichi-2-Step-4.jpg/aid370398-v4-728px-Get-Under-the-Stage-in-Dragonball-Z-Budokai-Tenkaichi-2-Step-4.jpg"
+    ],
+    "states": [
+        {
+            "entity": "players",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected",
+                        "saliency": 0.5859213250517599,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected",
+                        "saliency": 0.6376811594202899,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall",
+                        "saliency": 0.40618530020703936,
+                        "attribute_annotation": "location"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated",
+                        "saliency": 0.36029158040027603,
+                        "attribute_annotation": "division"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "players | player",
+                "you"
+            ]
+        },
+        {
+            "entity": "stage",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [
+                    {
+                        "attribute": "location",
+                        "before": "unspecified",
+                        "after": "specified",
+                        "saliency": 0.5632763975155279,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step4": []
+            },
+            "entity_annotation": [
+                "stage"
+            ]
+        },
+        {
+            "entity": "character",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "availability",
+                        "before": "absent",
+                        "after": "present",
+                        "saliency": 0.5762163561076604,
+                        "attribute_annotation": "availability"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "availability",
+                        "before": "party member",
+                        "after": "goku",
+                        "saliency": 0.592391304347826,
+                        "attribute_annotation": "availability"
+                    },
+                    {
+                        "attribute": "count",
+                        "before": "single player",
+                        "after": "multiple players",
+                        "saliency": 0.5471014492753623,
+                        "attribute_annotation": "count"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected",
+                        "saliency": 0.1564872325741891,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step3": [],
+                "step4": [
+                    {
+                        "attribute": "location",
+                        "before": "on middle of street",
+                        "after": "on end of street",
+                        "saliency": 0.4209368530020704,
+                        "attribute_annotation": "location"
+                    }
+                ]
+            },
+            "entity_annotation": [
+                "player two",
+                "companion",
+                "goku",
+                "character"
+            ]
+        },
+        {
+            "entity": "vs duel",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "option",
+                        "before": "deselected",
+                        "after": "selected",
+                        "saliency": 0.5438664596273292,
+                        "attribute_annotation": "option"
+                    },
+                    {
+                        "attribute": "population",
+                        "before": "one player",
+                        "after": "two player",
+                        "saliency": 0.4953416149068323,
+                        "attribute_annotation": "population"
+                    }
+                ],
+                "step2": [],
+                "step3": [],
+                "step4": []
+            },
+            "entity_annotation": [
+                "vs duel",
+                "mode"
+            ]
+        }
+    ],
+    "clusters": {
+        "character": {
+            "entity_cluster": [
+                "character",
+                "goku",
+                "companion",
+                "player two"
+            ],
+            "attribute_cluster": {
+                "availability": [
+                    "availability"
+                ],
+                "count": [
+                    "count"
+                ],
+                "knowledge": [
+                    "knowledge"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "players": {
+            "entity_cluster": [
+                "player",
+                "players",
+                "you"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ],
+                "division": [
+                    "division"
+                ],
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        },
+        "vs duel": {
+            "entity_cluster": [
+                "vs duel",
+                "mode"
+            ],
+            "attribute_cluster": {
+                "option": [
+                    "option"
+                ],
+                "population": [
+                    "population"
+                ]
+            }
+        },
+        "stage": {
+            "entity_cluster": [
+                "stage"
+            ],
+            "attribute_cluster": {
+                "location": [
+                    "location"
+                ]
+            }
+        }
+    }
+}

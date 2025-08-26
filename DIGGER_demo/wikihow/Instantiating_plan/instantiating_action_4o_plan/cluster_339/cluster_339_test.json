@@ -1,0 +1,544 @@
+[
+    {
+        "step": [
+            "Lay out any items and clothing that you need ahead of time.",
+            "Dress your child first thing in the morning.",
+            "Leave plenty of time to change your child.",
+            "Pick clothes that are comfortable and easy."
+        ],
+        "task": "How to Change Your Toddler's Clothes Without a Tantrum",
+        "goal_state": "gotolocation agent Toddler_clothes",
+        "steps": "```pddl\n(choose agent Toddler_clothes)\n(participate agent changing_clothes_activity)\n(make Toddler_clothes dirty clean)\n(dry Toddler_clothes location agent)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 339,
+                "task": "How to Get a Toddler to Wear Winter Clothes",
+                "step": [
+                    "Choose clothes that are easy to pull on.",
+                    "Get your toddler to practice wearing their winter clothes.",
+                    "Pack their summer clothes.",
+                    "Make getting dressed a familiar routine.",
+                    "Avoid forcing your toddler to wear the winter clothes."
+                ],
+                "steps_predictions": [
+                    "choose_clothes npc",
+                    "practice wearing_winter_clothes npc",
+                    "pack_clothes npc",
+                    "make_comamiliar_routes npc",
+                    "break_child npc basement"
+                ],
+                "goal_state": " ((not (at npc basement)))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wearing winter clothes": {
+                        "clothing": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty",
+                                "after": "clean"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 339,
+                "task": "How to Wash a Toddler's Clothes",
+                "step": [
+                    "Determine what temperature of water you will use.",
+                    "Choose a detergent.",
+                    "Figure out how you should dry the clothes.",
+                    "Add dryer sheets if so desired."
+                ],
+                "steps_predictions": [
+                    "determine_temperature water",
+                    "choose_detergent detergent",
+                    "dry_clothes npc work_station",
+                    "add-dryer-sheets dryer_sheets"
+                ],
+                "goal_state": " ((on_rack npc cloth))",
+                "similar_entity": {
+                    "work station": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "dryer sheets": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "detergent": {
+                        "detergent": [
+                            {
+                                "attribute": "location",
+                                "before": "in bottle",
+                                "after": "in drain"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[cleaning your clothes]] requires [[some detergent]]",
+                            "[[soap]] is related to [[detergent]]"
+                        ]
+                    },
+                    "water": {
+                        "boiling pot": [
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hote"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pipes",
+                                "after": "out of faucet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[river]] is related to [[water]]",
+                            "[[rain]] is [[water]]",
+                            "You can use [[water]] to [[drink]]",
+                            "[[Water]] is [[liquid]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 339,
+                "task": "How to Teach Your Children to Do Laundry",
+                "step": [
+                    "Make the laundry area child-friendly.",
+                    "Have young children participate with safe tasks.",
+                    "Make laundry fun for older kids.",
+                    "Encourage teenagers to be more independent."
+                ],
+                "steps_predictions": [
+                    "make_child_friendly area",
+                    "participate_with_children npc",
+                    "make_fun kids laundry",
+                    "encourage_teenagers npc"
+                ],
+                "goal_state": " ((teach_new_member_secret npc) (in_home laundry))",
+                "similar_entity": {
+                    "laundry": {
+                        "washing machine": [
+                            {
+                                "attribute": "fullness",
+                                "before": "empty",
+                                "after": "full with polar fleece"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "off",
+                                "after": "on"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[wash]] is related to [[laundry]]"
+                        ]
+                    },
+                    "area": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[area]]"
+                        ]
+                    },
+                    "kids": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[children]] is related to [[kids]]",
+                            "[[Kids]] like to [[play with them]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Avoid sharing.",
+            "Ensure hair hygiene.",
+            "Teach your children steps to avoid lice.",
+            "Make sure your child's school or organization checks for lice.",
+            "Look for the telltale signs of a louse.",
+            "Check your child’s hair."
+        ],
+        "task": "How to Free Your Child from Lice",
+        "goal_state": "free_child npc lice",
+        "steps": "```pddl\nlearn_signal npc\nchoose(agent comb)\ngo(npc bathroom)\ndry(npc bathroom agent)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 339,
+                "task": "How to Teach Your Children to Do Laundry",
+                "step": [
+                    "Make the laundry area child-friendly.",
+                    "Have young children participate with safe tasks.",
+                    "Make laundry fun for older kids.",
+                    "Encourage teenagers to be more independent."
+                ],
+                "steps_predictions": [
+                    "make_child_friendly area",
+                    "participate_with_children npc",
+                    "make_fun kids laundry",
+                    "encourage_teenagers npc"
+                ],
+                "goal_state": " ((teach_new_member_secret npc) (in_home laundry))",
+                "similar_entity": {
+                    "laundry": {
+                        "washing machine": [
+                            {
+                                "attribute": "fullness",
+                                "before": "empty",
+                                "after": "full with polar fleece"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "off",
+                                "after": "on"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[wash]] is related to [[laundry]]"
+                        ]
+                    },
+                    "area": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[area]]"
+                        ]
+                    },
+                    "kids": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[children]] is related to [[kids]]",
+                            "[[Kids]] like to [[play with them]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 339,
+                "task": "How to Clean Toddler's Teeth",
+                "step": [
+                    "Start in infancy.",
+                    "Use toddler tooth care products.",
+                    "Floss.",
+                    "Start brushing your toddler's teeth!.",
+                    "Go to the dentist.",
+                    "Give your child drinking water that is fluoridated.",
+                    "Make sure your toddler is getting a well-balanced diet."
+                ],
+                "steps_predictions": [
+                    "start_in infancy npc",
+                    "use_others_as_gerbix npc",
+                    "floss_with_faucet fairy_moss",
+                    "brush-tied toddler's teeth",
+                    "go_to_dentist npc",
+                    "drink_water npc",
+                    "get_tinder npc"
+                ],
+                "goal_state": " ((clean_teeth npc))",
+                "similar_entity": {
+                    "infancy": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "teeth": {
+                        "cloves": [
+                            {
+                                "attribute": "temperature",
+                                "before": "room temperature | cold",
+                                "after": "warm | hot"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "hot",
+                                "after": "cooler"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on heat",
+                                "after": "off heat"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[your mouth]] is [[teeth]]",
+                            "[[mouth]] is related to [[teeth]]",
+                            "[[chewing your food]] requires [[teeth]]",
+                            "[[A dog]] has [[teeth]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "fairy moss": {
+                        "moss": [
+                            {
+                                "attribute": "cost",
+                                "before": "for sale at nursery",
+                                "after": "purchased from nursery"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter"
+                            },
+                            {
+                                "attribute": "position",
+                                "before": "outside of bowl",
+                                "after": "inside of bowl"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "mess",
+                                "after": "pruned"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "toddler's": {
+                        "kids room": [
+                            {
+                                "attribute": "availability",
+                                "before": "unmade | non-existent",
+                                "after": "created"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 339,
+                "task": "How to Clean a Toddler's Ears",
+                "step": [
+                    "Look into your child's ears to check for foreign objects.",
+                    "Never insert a cotton swab or other item into your child's ear.",
+                    "Watch for signs that your child may be having ear pain."
+                ],
+                "steps_predictions": [
+                    "check_child_ears npc",
+                    "insert_cotton_swab npc",
+                    "watch_child npc"
+                ],
+                "goal_state": " ((clean_ears npc))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    }
+]

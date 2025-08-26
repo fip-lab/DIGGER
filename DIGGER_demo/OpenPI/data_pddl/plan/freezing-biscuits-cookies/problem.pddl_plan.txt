@@ -1,0 +1,5 @@
+(place-in-container cookies)
+(separate-using-paper cookies)
+(place-in-freezer cookies)
+(thaw cookies)
+; cost = 4 (unit cost)

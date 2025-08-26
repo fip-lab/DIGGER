@@ -1,0 +1,6 @@
+[
+    "(:action place\n  :parameters (?actor - agent ?item - object ?location - location)\n  :precondition (and (has ?actor ?item) (at ?item ?location) (not (placed ?item ?location)))\n  :effect (placed ?item ?location)\n)",
+    "(:action remove ; Remove an item from a location and update its status\n:parameters (?item - object ?location - place)\n:precondition (and (in ?item ?location) (not (removed ?item ?location)))\n:effect (and (removed ?item ?location))",
+    "(:action press\n    :parameters (?entity - object ?surface - object)\n    :precondition (and (contains ?holder ?entity) (at ?holder ?surface) (not (pressed ?entity)))\n    :effect (pressed ?entity)\n)",
+    "(:action create ; Create a new entity or status based on specific conditions\n:parameters (?creator - agent ?item - resource ?location - place)\n:precondition (and (available ?creator) (at ?item ?location) (not (created ?item)))\n:effect (created ?item))"
+]

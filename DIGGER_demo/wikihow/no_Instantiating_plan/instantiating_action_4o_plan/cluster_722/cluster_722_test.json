@@ -1,0 +1,725 @@
+[
+    {
+        "step": [
+            "Understand that some health conditions can lead to the create of baker’s cysts.",
+            "Know that some knee injuries can increase your chances of developing these cysts.",
+            "Be aware that previous surgeries can predispose you to getting these cysts."
+        ],
+        "task": "How to Know if You Have a Baker's Cyst",
+        "goal_state": "make_baker_know npc kitchen",
+        "steps": "```lisp\n(:action see\n    :parameters (?npc - agent ?target - object)\n    :precondition (and (available ?npc) (not (consulted ?npc ?target)) (has_issue ?npc))\n    :effect (consulted ?npc ?target))\n\n(:action ask\n    :parameters (?npc - agent ?topic - topic)\n    :precondition (and (consulted ?npc) (not (discussed ?npc ?topic)))\n    :effect (discussed ?npc ?topic))\n\n(:action understand\n    :parameters (?entity - agent ?concept - knowledge)\n    :precondition (not (understood ?entity ?concept))\n    :effect (understood ?entity ?concept))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 722,
+                "task": "How to Prevent Cysts",
+                "step": [
+                    "Use heat to treat small skin cysts.",
+                    "Visit your doctor if you have a lump on your hand or wrist.",
+                    "Check for a Baker’s cyst if your knee hurts."
+                ],
+                "steps_predictions": [
+                    "reat_small_scysts person_treated",
+                    "visibility agent1 lump1 wrist1",
+                    "check_knee_is_injured you"
+                ],
+                "goal_state": " ((not (injured you)))",
+                "similar_entity": {
+                    "you": {
+                        "you": [
+                            {
+                                "attribute": "focus",
+                                "before": "focused on making bracelet",
+                                "after": "admiring bracelet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[me]] is not [[you]]",
+                            "[[body]] is related to [[you]]"
+                        ]
+                    },
+                    "lump": {
+                        "pieces": [
+                            {
+                                "attribute": "location",
+                                "before": "around asparagus",
+                                "after": "discarded"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "unwrapped",
+                                "after": "wrapped"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "person treated": {
+                        "person": [
+                            {
+                                "attribute": "volume",
+                                "before": "silent",
+                                "after": "talking"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unsupported",
+                                "after": "supported"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "agent": {
+                        "game character": [
+                            {
+                                "attribute": "location",
+                                "before": "further out",
+                                "after": "in"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "out",
+                                "after": "hidden"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "pulling out pistol",
+                                "after": "investigating"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "investigating routes",
+                                "after": "waiting"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hiding spot",
+                                "after": "now at bomb"
+                            },
+                            {
+                                "attribute": "focus",
+                                "before": "hiding",
+                                "after": "defusing"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[agent]] is related to [[secret]]"
+                        ]
+                    },
+                    "wrist": {
+                        "the towels": [
+                            {
+                                "attribute": "size",
+                                "before": "larger | wider",
+                                "after": "smaller | narrower"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straight | flat",
+                                "after": "folded | now folded"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "relaxed",
+                                "after": "being used"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "holding towel"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "thinner | longer",
+                                "after": "thicker | shorter"
+                            },
+                            {
+                                "attribute": "height",
+                                "before": "low",
+                                "after": "higher"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "laundry room | outside | out",
+                                "after": "in linen closet | in closet"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in closet",
+                                "after": "on rack | on towel rack"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "folded",
+                                "after": "hanging | unfolded"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "opened"
+                            },
+                            {
+                                "attribute": "emptiness",
+                                "before": "empty",
+                                "after": "full"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[watch]] is related to [[wrist]]",
+                            "[[Punho]] is a translation of [[wrist]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 722,
+                "task": "How to Drain a Cyst",
+                "step": [
+                    "Apply a warm compress.",
+                    "Keep the area clean.",
+                    "Place a bandage over the cyst if it starts to drain.",
+                    "Leave it alone."
+                ],
+                "steps_predictions": [
+                    "apply_warm_compress alice",
+                    "clean_area area1",
+                    "place_bandage_over_cyst user1 bike1 oil1",
+                    "be_in_loot npc"
+                ],
+                "goal_state": " ((thrown_away alice))",
+                "similar_entity": {
+                    "bike": {
+                        "bike": [
+                            {
+                                "attribute": "location",
+                                "before": "beside person's body | absent",
+                                "after": "now between person's legs | present"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unstable",
+                                "after": "stable"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unbalanced",
+                                "after": "balanced"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "crooked",
+                                "after": "straight"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "moving"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "stationary",
+                                "after": "in motion"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "in motion | moving",
+                                "after": "stopped | stationary"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[riding a bike]] requires [[a bike]]",
+                            "[[a bike]] has [[two wheels]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "oil": {
+                        "oil": [
+                            {
+                                "attribute": "location",
+                                "before": "in pantry | in its place",
+                                "after": "in water | in boiling water"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bottle | in its place",
+                                "after": "in pan"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[oil]] is related to [[liquid]]",
+                            "You are likely to find [[oil]] in [[the ground]]"
+                        ]
+                    },
+                    "area": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[area]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 722,
+                "task": "How to Treat Ovarian Cysts",
+                "step": [
+                    "Monitor pelvic pain.",
+                    "Look for other symptoms of ovarian cysts.",
+                    "Be aware of the risk factors.",
+                    "Schedule a doctor’s appointment."
+                ],
+                "steps_predictions": [
+                    "monitor_painter npc",
+                    "check_symptoms ovarian_customies",
+                    "be_informed npc",
+                    "schedule_check npc"
+                ],
+                "goal_state": " ((not (is_injured npc)))",
+                "similar_entity": {
+                    "ovarian customies": {
+                        "asparagus": [
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "out on table"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "cut up | cut"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "exposed",
+                                "after": "mostly covered"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "longer",
+                                "after": "shorter"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "pointier",
+                                "after": "duller"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "raw | cold",
+                                "after": "cooked | warm"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "crispy",
+                                "after": "softened"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "cooking",
+                                "after": "cooling"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in oven | in pan",
+                                "after": "on platter | in serving dish"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Go to your doctor or the emergency room.",
+            "Get a physical exam.",
+            "Test for a ruptured cyst."
+        ],
+        "task": "How to Treat a Ruptured Ovarian Cyst",
+        "goal_state": "gotolocation agent Ovarian_Cyst_treated",
+        "steps": "```lisp\n(:action see\n    :parameters (?npc - agent ?target - object)\n    :precondition (and (available ?npc) (not (consulted ?npc ?target)) (has_issue ?npc))\n    :effect (consulted ?npc ?target))\n\n(:action apply\n    :parameters (?entity - agent ?resource - object ?effect - state)\n    :precondition (and (inventory ?entity ?resource) (not (applied ?resource)))\n    :effect (and (applied ?resource) (?effect ?entity)))\n\n(:action place\n    :parameters (?agent - person ?item - object ?target - object)\n    :precondition (and (inventory ?agent ?item) (not (placed ?item ?target)))\n    :effect (placed ?item ?target))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 722,
+                "task": "How to Treat Ovarian Cysts",
+                "step": [
+                    "Monitor pelvic pain.",
+                    "Look for other symptoms of ovarian cysts.",
+                    "Be aware of the risk factors.",
+                    "Schedule a doctor’s appointment."
+                ],
+                "steps_predictions": [
+                    "monitor_painter npc",
+                    "check_symptoms ovarian_customies",
+                    "be_informed npc",
+                    "schedule_check npc"
+                ],
+                "goal_state": " ((not (is_injured npc)))",
+                "similar_entity": {
+                    "ovarian customies": {
+                        "asparagus": [
+                            {
+                                "attribute": "location",
+                                "before": "in fridge",
+                                "after": "out on table"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "cut up | cut"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "exposed",
+                                "after": "mostly covered"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "longer",
+                                "after": "shorter"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "pointier",
+                                "after": "duller"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "raw | cold",
+                                "after": "cooked | warm"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "crispy",
+                                "after": "softened"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "cooking",
+                                "after": "cooling"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in oven | in pan",
+                                "after": "on platter | in serving dish"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 722,
+                "task": "How to Drain a Cyst",
+                "step": [
+                    "Apply a warm compress.",
+                    "Keep the area clean.",
+                    "Place a bandage over the cyst if it starts to drain.",
+                    "Leave it alone."
+                ],
+                "steps_predictions": [
+                    "apply_warm_compress alice",
+                    "clean_area area1",
+                    "place_bandage_over_cyst user1 bike1 oil1",
+                    "be_in_loot npc"
+                ],
+                "goal_state": " ((thrown_away alice))",
+                "similar_entity": {
+                    "bike": {
+                        "bike": [
+                            {
+                                "attribute": "location",
+                                "before": "beside person's body | absent",
+                                "after": "now between person's legs | present"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unstable",
+                                "after": "stable"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "unbalanced",
+                                "after": "balanced"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "crooked",
+                                "after": "straight"
+                            },
+                            {
+                                "attribute": "movement",
+                                "before": "still",
+                                "after": "moving"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "stationary",
+                                "after": "in motion"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "in motion | moving",
+                                "after": "stopped | stationary"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[riding a bike]] requires [[a bike]]",
+                            "[[a bike]] has [[two wheels]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "user": {
+                        "players": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "away from wall",
+                                "after": "against wall"
+                            },
+                            {
+                                "attribute": "division",
+                                "before": "together",
+                                "after": "separated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "oil": {
+                        "oil": [
+                            {
+                                "attribute": "location",
+                                "before": "in pantry | in its place",
+                                "after": "in water | in boiling water"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bottle | in its place",
+                                "after": "in pan"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[oil]] is related to [[liquid]]",
+                            "You are likely to find [[oil]] in [[the ground]]"
+                        ]
+                    },
+                    "area": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[area]]"
+                        ]
+                    },
+                    "alice": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 722,
+                "task": "How to Shrink Ovarian Cysts",
+                "step": [
+                    "See your doctor if you have symptoms of an ovarian cyst.",
+                    "Discuss surgery to remove large, painful, or complicated cysts.",
+                    "Ask about using hormone treatments to prevent future cysts."
+                ],
+                "steps_predictions": [
+                    "check_symptoms npc",
+                    "remov_surgery npc",
+                    "ask_about_hormonal_treat npc"
+                ],
+                "goal_state": " ((not (vulnerable npc)))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    }
+]

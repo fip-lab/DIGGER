@@ -1,0 +1,15 @@
+{
+    "read": [
+        "(:action read_instructions\n  :parameters (?p - player ?i - instructions)\n  :precondition (and (at ?p ?i) (attribute ?i knowledge unread))\n  :effect (and (attribute ?i knowledge read))\n)\n\n"
+    ],
+    "wash": [
+        "(:action wash_gore_tex\n  :parameters (?p - player ?cl - clothing ?i - instructions)\n  :precondition (and (attribute ?cl type gore_tex) (attribute ?cl cleanness dirty) (attribute ?i knowledge read))\n  :effect (and (attribute ?cl cleanness clean))\n)\n\n",
+        "(:action wash_polar_fleece\n  :parameters (?p - player ?cl - clothing ?wm - washing_machine)\n  :precondition (and (attribute ?cl type polar_fleece) (attribute ?cl cleanness dirty) (attribute ?wm fullness empty) (attribute ?wm electric conductivity off))\n  :effect (and (attribute ?cl cleanness clean) (attribute ?wm fullness full with polar fleece) (attribute ?wm electric conductivity on))\n)\n```\n\nThese actions capture the steps and descriptions provided for cleaning synthetic hiking gear, ensuring that each action has appropriate preconditions and effects based on the entity states."
+    ],
+    "handle": [
+        "(:action handle_synthetic_boots\n  :parameters (?p - player ?b - boots)\n  :precondition (and (attribute ?b type synthetic) (attribute ?b condition intact))\n  :effect (and (attribute ?b condition maintained))\n)\n\n"
+    ],
+    "clean": [
+        "(:action clean_down_jackets\n  :parameters (?p - player ?j - jacket ?i - instructions)\n  :precondition (and (attribute ?j type down) (attribute ?j cleanness dirty) (attribute ?i knowledge read))\n  :effect (and (attribute ?j cleanness clean))\n)\n\n"
+    ]
+}

@@ -1,0 +1,7 @@
+(choose_container container1 garden_center)
+(choose_soil soil1 garden_center)
+(choose_plant fir1 nursery)
+(plant_fir fir1 container1 soil1)
+(establish_plant fir1 container1)
+(re_pot fir1 container1 container2)
+; cost = 6 (unit cost)

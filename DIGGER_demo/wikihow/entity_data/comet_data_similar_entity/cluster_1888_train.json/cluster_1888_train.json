@@ -1,0 +1,247 @@
+[
+    {
+        "cluster_label": 1888,
+        "task": "How to Fry an Egg on the Sidewalk",
+        "step": [
+            "Wait for a very hot day.",
+            "Place tin foil or metal pan in direct sunlight to heat up.",
+            "Crack an egg onto the metal surface.",
+            "Crack a second egg onto the sidewalk.",
+            "Discard the eggs when you're finished."
+        ],
+        "steps_predictions": [
+            "wait npc",
+            "place-in-lamp npc heat",
+            "break_egg npc",
+            "crack_egg npc",
+            "dissolve_eggs npc"
+        ],
+        "goal_state": " ((at npc place-in-lamp))",
+        "similar_entity": {
+            "heat": "temperature",
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Crispy Vegetable Spring Rolls",
+        "step": [
+            "Cook the vegetables.",
+            "Add the wet ingredients.",
+            "Make the spring rolls.",
+            "Lift the wrapper over the top and tuck it in under the filling.",
+            "Repeat until all the rolls are finished.",
+            "Fry the egg rolls.",
+            "Serve."
+        ],
+        "steps_predictions": [
+            "cook npc kitchen",
+            "add_wet_ingredients wick1",
+            "make_spring_roll velveeta",
+            "loot_wrapped npc",
+            "repeat_roll npc rolling_board",
+            "fry_ingredients egg_roll mixing_bowl",
+            "cook npc kitchen"
+        ],
+        "goal_state": " ((at stirfry mixing_bowl) (has_temperature npc rolling_board))",
+        "similar_entity": {
+            "rolling board": "cutting board",
+            "npc": "hat",
+            "kitchen": "kitchen counter",
+            "mixing bowl": "mixing bowl",
+            "velveeta": "velveeta",
+            "wick": "wick",
+            "egg roll": "dough"
+        }
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make an Egg Wash",
+        "step": [
+            "Brush the egg wash over your bread.",
+            "Spread egg wash over the bottom of an unbaked pie crust.",
+            "Seal the edges of pastry with egg wash.",
+            "Cover the top of the baked goods.",
+            "Use the egg wash to secure seeds, sugar, or pastry."
+        ],
+        "steps_predictions": [
+            "brush-and-flatten-bread bread",
+            "put_ingredients_in_oven mixing_bowl table",
+            "sliplargerbeads velveeta",
+            "cover_baked_items cookies",
+            "secure_seeds npc"
+        ],
+        "goal_state": " ((in_oven mixing_bowl) (thawed bread))",
+        "similar_entity": {
+            "bread": "dough",
+            "table": "table",
+            "cookies": "cookies",
+            "npc": "hat",
+            "mixing bowl": "mixing bowl",
+            "velveeta": "velveeta"
+        }
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Egg Strips",
+        "step": [
+            "Place 1 to 2 eggs into a bowl.",
+            "Add a tablespoon of milk.",
+            "Lightly beat the eggs together.",
+            "Pour the mixture into a frying pan with butter or oil.",
+            "Turn over the egg, remove from the heat, and set aside to cool.",
+            "Roll the cooled egg into a cylinder shape.",
+            "Cut across the cylinder horizontally.",
+            "Put the egg strips onto your dish as required."
+        ],
+        "steps_predictions": [
+            "place-ingredients eggs-in-bowl mixing_bowl",
+            "add-ingredients-into-glass milk",
+            "light_beat_with_oven npc",
+            "pour_into_frying_pan mixture1 oil1 mixing_bowl1",
+            "turn_off_oven npc",
+            "roll_oven npc",
+            "cut_cylinder npc",
+            "put_ingredients_in_dish velveeta"
+        ],
+        "goal_state": " ((in_container mixture1) (served_dish mixing_bowl1))",
+        "similar_entity": {
+            "npc": "hat",
+            "milk": "milk",
+            "mixture": "mixture",
+            "oil": "oil",
+            "eggs-in-bowl": "bowl",
+            "mixing bowl": "mixing bowl",
+            "velveeta": "velveeta"
+        }
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Indian Potato Bread Rolls",
+        "step": [
+            "Peel and boil the potatoes.",
+            "Pour a little oil into the frying pan or skillet.",
+            "Remove from the heat.",
+            "Shape the lemony filling mixture into cylinder or ball shapes.",
+            "Cut the edges off the bread slices.",
+            "Wrap the dampened bread around the filling balls or cylinders.",
+            "Deep fry the rolls in oil in a pan or pot.",
+            "Serve the lemony potato bread rolls with the sauce of your choice."
+        ],
+        "steps_predictions": [
+            "peel_potatoes potato1 stove1",
+            "pour_oil_into_faucet oil_pan stove_knob velveeta",
+            "remove_from_heat stove_knob velveeta",
+            "shape_into_ball_shape mixture",
+            "cut_bread_sliplargerbeads velveeta",
+            "wrap_bread npc",
+            "deep_fry potato1 pan1 oil1",
+            "serve_potatoes potato_rolls sauce"
+        ],
+        "goal_state": " ((at_location potato1 oil1) (has_temperature potato2 serving_d",
+        "similar_entity": {
+            "sauce": "hot sauce",
+            "potato": "potato",
+            "potato rolls": "potatoes",
+            "npc": "hat",
+            "stove knob": "stove knob",
+            "mixture": "mixture",
+            "oil": "oil",
+            "pan": "pan",
+            "velveeta": "velveeta",
+            "stove": "stove",
+            "oil pan": "pan"
+        }
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Egg Rolls",
+        "step": [
+            "Place an egg roll wrap on a flat surface in front of you with a corner facing you.",
+            "Use a spoon to put a scoop of the filling in the middle of the wrap.",
+            "Fold the bottom of the wrap up, fold the left and right sides in, then roll it up.",
+            "Beat an egg with a fork or whisk in a bowl and use it to seal the egg rolls.",
+            "Heat up 1 qt (946 ml) of peanut oil in a pot or deep fryer.",
+            "Place the egg rolls into the heated oil and fry them until they are brown.",
+            "Drain the cooked egg rolls on a paper towel or a rack and serve them hot."
+        ],
+        "steps_predictions": [
+            "place-in-container eggroll wrap",
+            "put_ingredients_in_container mixing_bowl table",
+            "fold-and-roll-wrapped towel1",
+            "be_amazed npc",
+            "heat_peanut_oil npc",
+            "cook npc",
+            "drain_cooked egg_roll npc"
+        ],
+        "goal_state": " ((at_location mixing_bowl table) (has_temperature npc))",
+        "similar_entity": {
+            "table": "table",
+            "npc": "hat",
+            "eggroll": "tails",
+            "wrap": "foil",
+            "mixing bowl": "mixing bowl",
+            "towel": "towel",
+            "egg roll": "dough"
+        }
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Fry an Egg",
+        "step": [
+            "Fry your egg in hot oil for a decadent, golden brown crust and runny yolk.",
+            "Flip eggs halfway through to make them over-easy.",
+            "Serve an egg with toast for a simple breakfast.",
+            "Serve a fried egg over leftovers to make a filling meal.",
+            "Place a fried egg on sandwiches or burgers for a rich, protein filled option.",
+            "Make Huevos Rancheros."
+        ],
+        "steps_predictions": [
+            "fry_eraser npc",
+            "flip-and-eat you",
+            "cook npc kitchen",
+            "cook npc kitchen",
+            "place-in-fridge fried egg1",
+            "make_huevos_rancheros alice"
+        ],
+        "goal_state": " ((cooked egg1) (cooked hues_rancheros))",
+        "similar_entity": {
+            "you": "you",
+            "npc": "hat",
+            "kitchen": "kitchen counter",
+            "egg": "milk",
+            "fried": "frying pan",
+            "alice": "character"
+        }
+    },
+    {
+        "cluster_label": 1888,
+        "task": "How to Make Sunny Side Down Eggs",
+        "step": [
+            "Put 2 tbsp vegetable oil or butter on the frying pan while the heat is on.",
+            "After the oil or butter has been melted or what not, make sure it's all over the pan so it won't stick.",
+            "Crack the egg(s) open and make sure you crack the eggs lower to the pan or else the yolks will break.",
+            "Just as the whites are starting to turn white, turn the stove off and wait until the eggs are pure white and the yolk has a little bit of a skin over it.",
+            "Flip the egg over with a spatula gently.",
+            "After a minute or two, flip it over again gently.",
+            "Make toast to sweep up the yolk if you like."
+        ],
+        "steps_predictions": [
+            "put_ingredients_in_oven stove_knob velveeta",
+            "set_burner_add_oil stove_knob velveeta",
+            "break_eraser npc",
+            "turn_off_oven npc",
+            "flip-over-and-scrifftop egg1",
+            "flip-over-twice npc",
+            "sweep_yolk npc kitchen"
+        ],
+        "goal_state": " ((in_oven npc) (flattened egg1))",
+        "similar_entity": {
+            "npc": "hat",
+            "stove knob": "stove knob",
+            "egg": "milk",
+            "kitchen": "kitchen counter",
+            "velveeta": "velveeta"
+        }
+    }
+]

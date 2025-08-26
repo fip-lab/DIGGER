@@ -1,0 +1,6 @@
+[
+    "(:action fold ; Combine actions related to folding to transform items\n  :parameters (?npc - player ?item - object ?status_item - object)\n  :precondition (and \n    (inventory ?npc ?item) \n    (or (rolled ?item) (cut ?item) (folded ?item))\n  )\n  :effect (and \n    (or \n      (and (not (rolled ?item))",
+    "(:action cut ; Cut an object and update its state\n  :parameters (?npc - agent ?item - object ?target - target_type)\n  :precondition (and (inventory ?npc ?item) (modifiable ?item))\n  :effect (and (cut ?item ?target) (not (modifiable ?item))",
+    "(:action tape_ends\n  :parameters (?npc - player ?tape - duct_tape ?ends - ends)\n  :precondition (and (half_folded ?tape) (inventory ?npc ?tape))\n  :effect (and (ends_taped ?tape ?ends) (organization ?ends touching) (form ?ends joined_together))",
+    "(:action tape\n  :parameters (?npc - person ?item - object ?target - entity)\n  :precondition (and (prepared ?item) (inventory ?npc ?item))\n  :effect (and (applied ?item ?target) (organization ?target improved) (status ?target modified))"
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "cluster_label": 10,
+        "task": "How to Start a Women's Book Club",
+        "step": [
+            "Look for books that cover women\u2019s issues.",
+            "Search out books with strong female protagonists.",
+            "Study the works of female authors.",
+            "Start with books you\u2019ve been dying to read.",
+            "Allow other members to make suggestions.",
+            "Come with discussion questions.",
+            "Ask the other members to come with questions.",
+            "Nudge the group back on track if the discussion gets derailed."
+        ],
+        "steps_predictions": [
+            "check_books npc book",
+            "search_for_book npc book",
+            "study_female_authors npc book",
+            "start_reading npc book",
+            "make_suggestions npc ss",
+            "listen_to_conversation_question",
+            "ask_others_with_questions npc ss",
+            "nudge_group_back_on_tracks npc"
+        ],
+        "goal_state": " ((in npc book))"
+    }
+]

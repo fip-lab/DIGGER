@@ -1,0 +1,61 @@
+(define (problem put_KeyChain1_to_Box2_72)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    KeyChain1 - object
+    AlarmClock1 - object
+    Laptop1 - object
+    Book1 - object
+    KeyChain2 - object
+    Book2 - object
+    CreditCard1 - object
+    Box1 - receptacle
+    Pencil1 - object
+    CellPhone1 - object
+    Pen2 - object
+    Pen1 - object
+    Drawer1 - receptacle
+    Bed1 - receptacle
+    Box2 - receptacle
+    Desk2 - receptacle
+    GarbageCan1 - receptacle
+    Desk3 - receptacle
+    Desk1 - receptacle
+    Desk4 - receptacle
+    Bed2 - receptacle
+    Drawer2 - receptacle
+    Desk5 - receptacle
+    Pencil2 - object
+    Pencil3 - object
+    Pencil4 - object
+    Pencil5 - object
+    Pencil6 - object
+    Box3 - receptacle
+    Sofa1 - receptacle
+    Sofa2 - receptacle
+  )
+
+  (:init
+    (atLocation agent1 Bed1)
+    (objectAtLocation KeyChain1 Desk1)
+    (objectAtLocation CellPhone1 Bed1)
+    (objectAtLocation Pen1 Drawer1)
+    (objectAtLocation Pen2 GarbageCan1)
+    (objectAtLocation Laptop1 Desk4)
+    (objectAtLocation Book1 Bed2)
+    (objectAtLocation AlarmClock1 Desk5)
+    (objectAtLocation KeyChain2 Drawer2)
+    (objectAtLocation Pencil4 Box2)
+    (objectAtLocation Pencil6 Box2)
+    (objectAtLocation Pencil2 Box2)
+    (objectAtLocation Pencil3 Box1)
+    (objectAtLocation Pencil5 Box3)
+    (objectAtLocation Pencil1 Box3)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation KeyChain1 Box2)
+    )
+  )
+)

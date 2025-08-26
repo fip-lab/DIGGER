@@ -1,0 +1,4 @@
+(cut-lemon water)
+(squeeze-lemon water faucet)
+(rub-faucet faucet water faucet)
+; cost = 3 (unit cost)

@@ -1,0 +1,71 @@
+[
+    {
+        "task": "build_fire",
+        "step": [
+            "go east npc shore forest_edge",
+            "go east npc forest_edge forest",
+            "gather_tinder npc forest tinder",
+            "get softwood npc forest",
+            "build_campfire npc forest tinder campfire",
+            "get hardwood_stick npc forest",
+            "light_campfire npc forest softwood hardwood_stick campfire"
+        ],
+        "desc": [
+            "Create a shelter. Shelters are vital when it comes to keeping you safe and out of the elements. Shelters can also give you a place to rest and recover while you consider your next moves. There are many different types of shelters you can build. The natural material found on the island will dictate what kind of shelter you can create. As an example, you may try to create a simple lean-to shelter, using these steps:",
+            "You can also try a swim-float-swim technique, where you swim and then roll and float on your back."
+        ],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n        :parameters (?item - item ?p - player ?l1 - location) \n        :precondition (and (at ?p ?l1) (at ?item ?l1))\n        :effect (and (inventory ?p ?item) (not (at ?item ?l1)))\n    )",
+            "(:action go ; navigate to an adjacent location \n        :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n        :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n        :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n    )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n        :parameters (?p - player ?loc - location ?water - water) \n        :precondition (and (at ?p ?loc) (has_freshwater_source ?loc))\n        :effect (and (inventory ?p ?water) (not (treated ?water)))\n    )",
+            "(:action build_campfire\n        :parameters (?p -player ?loc - location ?tinder - tinder ?campfire - campfire)\n        :precondition (and (at ?p ?loc) (inventory ?p ?tinder))\n        :effect (and (at ?campfire ?loc) (not (inventory ?p ?tinder)))\n    )",
+            "(:action gather_tinder\n        :parameters (?p - player ?loc - location ?tinder - tinder)\n        :precondition (and (at ?p ?loc) (has_tinder ?loc))\n        :effect (and (inventory ?p ?tinder))\n    )",
+            "(:action light_campfire\n        :parameters (?p -player ?loc - location ?softwood - softwood ?hardwood - hardwood_stick ?campfire - campfire)\n        :precondition (and (at ?p ?loc) (at ?campfire ?loc) (not (lit ?campfire)) (inventory ?p ?softwood) (inventory ?p ?hardwood))\n        :effect (and (lit ?campfire))\n    )"
+        ],
+        "goal_state": "((lit campfire))"
+    },
+    {
+        "task": "find_water",
+        "step": [
+            "go east npc shore forest_edge",
+            "go east npc forest_edge forest",
+            "go north npc forest river",
+            "get_water npc river water"
+        ],
+        "desc": [
+            "Scavenge anything you can. Before you head to shore, it can be a good idea to gather up any supplies or materials near you. There may be useful items floating on the waters surface that will help you survive and await rescue. Try to look for anything you can use before heading to shore."
+        ],
+        "action": [
+            "(:action go ; navigate to an adjacent location \n        :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n        :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n        :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n    )",
+            "(:action get_water ; get water from a location that has a water source like a lake.\n        :parameters (?p - player ?loc - location ?water - water) \n        :precondition (and (at ?p ?loc) (has_freshwater_source ?loc))\n        :effect (and (inventory ?p ?water) (not (treated ?water)))\n    )"
+        ],
+        "goal_state": "((inventory npc water) ;todo: put the goal condition here)"
+    },
+    {
+        "task": "make_smoke_signal",
+        "step": [
+            "go east npc shore forest_edge",
+            "go east npc forest_edge forest",
+            "gather_tinder npc forest tinder",
+            "go west npc forest forest_edge",
+            "go west npc forest_edge shore",
+            "wet_tinder npc shore tinder",
+            "build_campfire npc forest tinder campfire",
+            "make_smoke_signal npc forest campfire tinder"
+        ],
+        "desc": [
+            "",
+            "You can float in water by laying on your back and keeping your lungs full.",
+            "Create a shelter. Shelters are vital when it comes to keeping you safe and out of the elements. Shelters can also give you a place to rest and recover while you consider your next moves. There are many different types of shelters you can build. The natural material found on the island will dictate what kind of shelter you can create. As an example, you may try to create a simple lean-to shelter, using these steps:",
+            "You can also try a swim-float-swim technique, where you swim and then roll and float on your back."
+        ],
+        "action": [
+            "(:action go ; navigate to an adjacent location \n        :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n        :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n        :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n    )",
+            "(:action wet_tinder\n        :parameters (?p - player ?loc - location ?tinder - tinder)\n        :precondition (and (at ?p ?loc)(has_water ?loc)(inventory ?p ?tinder))\n        :effect (and (wet ?tinder))\n    )",
+            "(:action build_campfire\n        :parameters (?p -player ?loc - location ?tinder - tinder ?campfire - campfire)\n        :precondition (and (at ?p ?loc) (inventory ?p ?tinder))\n        :effect (and (at ?campfire ?loc) (not (inventory ?p ?tinder)))\n    )",
+            "(:action gather_tinder\n        :parameters (?p - player ?loc - location ?tinder - tinder)\n        :precondition (and (at ?p ?loc) (has_tinder ?loc))\n        :effect (and (inventory ?p ?tinder))\n    )",
+            "(:action make_smoke_signal\n        :parameters (?p - player ?loc - location ?campfire - campfire ?tinder - tinder)\n        :precondition (and (at ?p ?loc)(at ?campfire ?loc)(inventory ?p ?tinder)(wet ?tinder))\n        :effect (and (signaling ?campfire)(not (wet ?tinder))(not (inventory ?p ?tinder)))\n    )\n    \n    \n    \n    \n    \n)"
+        ],
+        "goal_state": "(;todo: put the goal condition here (signaling campfire))"
+    }
+]

@@ -1,0 +1,24 @@
+{
+    "gather": [
+        "(:action gather_branches\n    :parameters (?b - branch)\n    :precondition (not (gathered ?b))\n    :effect (gathered ?b)\n  )\n\n;; Action 2: Prop Up Branches\n",
+        "(:action gather_tinder\n    :parameters (?t - tinder)\n    :precondition (not (collected ?t))\n    :effect (collected ?t)\n)\n\n;; Action 3: Gather kindling\n",
+        "(:action gather_kindling\n    :parameters (?k - kindling)\n    :precondition (not (collected ?k))\n    :effect (collected ?k)\n)\n\n;; Action 4: Build a teepee structure\n",
+        "(:action get_water\n    :parameters (?npc - agent ?water - resource ?location - place)\n    :precondition (and\n      (at ?npc ?location)\n      (found_water_source ?location)\n      (not (has_water ?npc))\n    )\n    :effect (and\n      (has_water ?npc)\n      (collected ?water)\n    )\n)\n```\n\nExplanation:\n1. **search_water_source**: This action represents the NPC searching for a source of fresh water.\n   - **Parameters**: `?npc` (the agent performing the action), `?location` (the place where the search happens).\n   - **Preconditions**: The NPC must be at the location and the water source must not have been found yet.\n   - **Effects**: After the action, the water source is found at the location.\n\n2. **get_water**: This action represents the NPC collecting the water from the found source.\n   - **Parameters**: `?npc` (the agent performing the action), `?water` (the resource to be collected), `?location` (the place where the water is collected).\n   - **Preconditions**: The NPC must be at the location, the water source must have been found, and the NPC must not already have water.\n   - **Effects**: After the action, the NPC has water, and the water is marked as collected.\n\nThese actions capture the described task and steps effectively."
+    ],
+    "prop": [
+        "(:action prop_up_branches\n    :parameters (?b - branch ?m - main_branch)\n    :precondition (and\n                    (gathered ?b)\n                    (not (propped_up ?b ?m))\n                  )\n    :effect (propped_up ?b ?m)\n  )\n\n;; Action 3: Form Shelter Structure\n"
+    ],
+    "build": [
+        "(:action form_shelter_structure\n    :parameters (?s - shelter ?m - main_branch)\n    :precondition (and\n                    (forall (?b - branch) (propped_up ?b ?m))\n                    (not (shelter_formed ?s))\n                  )\n    :effect (shelter_formed ?s)\n  )\n\n;; Action 4: Build Shelter\n",
+        "(:action build_shelter\n    :parameters (?n - npc ?c - camp ?t - teepee_structure)\n    :precondition (not (shelter_built ?c))\n    :effect (shelter_built ?c)\n)\n```\n\nThese actions are designed to reflect the task of starting a fire and related activities such as gathering materials, building a teepee structure, and cooking. The preconditions and effects are defined to ensure logical progression through the task.",
+        "(:action build_teepee\n    :parameters (?n - npc ?c - camp ?t - teepee_structure)\n    :precondition (and\n                    (searched_area ?c)\n                    (not (built_teepee ?t))\n                  )\n    :effect (built_teepee ?t)\n)\n\n;; Action 5: Start a fire\n",
+        "(:action cook\n    :parameters (?n - npc ?c - camp ?t - teepee_structure ?f - campfire)\n    :precondition (fire_started ?c)\n    :effect (cooked_meal ?n)\n)\n\n;; Action 7: Build shelter\n"
+    ],
+    "search": [
+        "(:action search_water_source\n    :parameters (?npc - agent ?location - place)\n    :precondition (and\n      (at ?npc ?location)\n      (not (found_water_source ?location))\n    )\n    :effect (and\n      (found_water_source ?location)\n    )\n)\n\n;; Action 2: Get water\n",
+        "(:action search_area\n    :parameters (?a - area)\n    :precondition (not (searched_area ?a))\n    :effect (searched_area ?a)\n)\n\n;; Action 2: Gather tinder\n"
+    ],
+    "start": [
+        "(:action start_fire\n    :parameters (?n - npc ?c - camp ?t - teepee_structure)\n    :precondition (and\n                    (collected ?tinder)\n                    (collected ?kindling)\n                    (built_teepee ?t)\n                    (not (fire_started ?c))\n                  )\n    :effect (fire_started ?c)\n)\n\n;; Action 6: Cook using the campfire\n"
+    ]
+}

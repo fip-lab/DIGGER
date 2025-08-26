@@ -1,0 +1,9 @@
+[
+    "(:action choose_boat\n    :parameters (?passenger - passenger ?boat - boat)\n    :precondition (and (at ?passenger near_boat) (not (in ?passenger ?boat)))\n    :effect (and (chosen ?passenger ?boat) (not (at ?passenger near_boat))",
+    "(:action hold_rails\n    :parameters (?passenger - passenger ?boat - boat)\n    :precondition (and (chosen ?passenger ?boat) (not (holding_rails ?passenger ?boat)))\n    :effect (holding_rails ?passenger ?boat)\n)",
+    "(:action choose ; Choose an item and update the state accordingly\n    :parameters (?agent - agent ?item - object ?context - context)\n    :precondition (and (in_context ?agent ?context) (not (chosen ?agent ?item)))\n    :effect (and (chosen ?agent ?item) (updated_context ?agent ?context))",
+    "(:action choose_boat\n    :parameters (?passenger - passenger ?boat - boat ?context - boat_context)\n    :precondition (and (in_context ?passenger ?context) (not (chosen ?passenger ?boat)))\n    :effect (and (chosen ?passenger ?boat) (updated_context ?passenger ?context))",
+    "(:action hold_rails\n    :parameters (?passenger - passenger ?boat - boat ?context - boat_context)\n    :precondition (and (chosen ?passenger ?boat) (not (holding_rails ?passenger ?boat)))\n    :effect (holding_rails ?passenger ?boat)\n)",
+    "(:action hold\n    :parameters (?entity - entity ?item - object)\n    :precondition (and (chosen ?entity ?item) (at ?entity near_item))\n    :effect (holding ?entity ?item)\n)",
+    "(:action stabilize\n    :parameters (?entity - object ?environment - location)\n    :precondition (and (in_contact ?entity ?environment) (at ?entity near_stabilization_point) (not (stabilized ?entity)))\n    :effect (stabilized ?entity)\n)"
+]

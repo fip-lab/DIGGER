@@ -1,0 +1,7 @@
+[
+    "(:action obtain\n  :parameters (?p - player ?item - object ?place - location)\n  :precondition (and (at ?p ?place) (obtainable ?item ?place) (not (in_inventory ?p ?item)))\n  :effect (and (in_inventory ?p ?item))",
+    "(:action replace\n  :parameters (?p - player ?object - object ?target - object)\n  :precondition (and (at ?p ?target) (ready_to_replace ?target))\n  :effect (and (not (ready_to_replace ?target))",
+    "(:action pour\n   :parameters (?p - person ?target - object ?item - object)\n   :precondition (and (at ?p ?target) (inventory ?p ?item) (not (clean ?target)))\n   :effect (and (not (inventory ?p ?item))",
+    "(:action clean\n   :parameters (?p - person ?target - object ?tool - object)\n   :precondition (and (at ?p ?target) (applied ?item ?target) (inventory ?p ?tool))\n   :effect (and (not (applied ?item ?target))",
+    "(:action dissolve ; Dissolve a material or entity and update its state\n  :parameters (?actor - agent ?target - entity)\n  :precondition (and (at ?actor ?target) (exists (condition ?target)))\n  :effect (and (not (condition ?target))"
+]

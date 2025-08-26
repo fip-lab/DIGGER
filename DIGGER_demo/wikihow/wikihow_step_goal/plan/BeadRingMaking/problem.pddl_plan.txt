@@ -1,0 +1,7 @@
+(sliplargerbeads bead3)
+(sliplargerbeads bead2)
+(sliplargerbeads bead1)
+(cutelastic elastic1)
+(finishring elastic1 tail1)
+(admirering you)
+; cost = 6 (unit cost)

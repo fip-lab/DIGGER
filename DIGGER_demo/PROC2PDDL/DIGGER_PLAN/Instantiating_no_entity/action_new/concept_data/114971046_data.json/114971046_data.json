@@ -1,0 +1,5 @@
+[
+    "(:action stay\n    :parameters (?npc - agent ?location - place ?resource - object)\n    :precondition (and (available ?npc) (in ?npc ?location) (stocked ?npc ?resource))\n    :effect (and (sheltered ?npc) (not (exposed ?npc))",
+    "(:action get_food\n       :parameters (?npc - agent ?food - item)\n       :precondition (and (non_perishable ?food) (inStorage ?food) (available ?npc))\n       :effect (and (stocked ?npc ?food) (not (inStorage ?food))",
+    "(:action get\n    :parameters (?actor - agent ?resource - object)\n    :precondition (and (inStorage ?resource) (available ?actor))\n    :effect (and (obtained ?actor ?resource) (not (inStorage ?resource))"
+]

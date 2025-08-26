@@ -1,0 +1,23 @@
+[
+    {
+        "cluster_label": 412,
+        "task": "How to Promote Root Growth",
+        "step": [
+            "Apply a root stimulator when you plant the tree or shrub.",
+            "Do a soil test to learn about the health of the soil around the plant.",
+            "Adjust the pH of the soil so it's between 6 and 7.",
+            "Spread fertilizer that's high in phosphorus or potassium.",
+            "Water the plants with willow water to encourage root growth.",
+            "Move potted plants to larger pots."
+        ],
+        "steps_predictions": [
+            "apply_soil fir1 container1 soil1",
+            "learn_soil npc soil_test",
+            "adjust_ pH_of_soil soil water",
+            "plant_plant fir1 pot1",
+            "water_plant fir1 container1 water1",
+            "gotolocation agent potted_plant fir1 container1"
+        ],
+        "goal_state": " ((planted_in fir1 container1))"
+    }
+]

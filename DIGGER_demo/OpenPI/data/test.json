@@ -1,0 +1,111 @@
+[
+    {
+        "goal": "Make a Pipe Cleaner Bird",
+        "steps": [
+            "Bend one pipe cleaner in half to form the legs.",
+            "Shape another pipe cleaner to form the body.",
+            "Move 1.5 inches (3.8 cm) from the tip of where the beak should be.",
+            "Use 2 pipe cleaners to enlarge the torso."
+        ],
+        "pddl": [
+            "bend_to_form_legs pc1",
+            "enlarge_torso torso",
+            "move_for_beak tip",
+            "shape_to_form_body pc2"
+        ],
+        "goal_state": "((position pc1 bent) (location pc1 partially_in_air) (position pc2 bent) (location pc2 on_pipe_cleaner) (shape tip shaped_to_form_beak) (location tip now_away_from_tip) (width torso now_wider) (weight torso heavier))"
+    },
+    {
+        "goal": "Make Marshmallow Cream Cheese Fruit Dip",
+        "steps": [
+            "Blend the cream cheese and marshmallow cream until combined.",
+            "Pour the mixture into a clean bowl.",
+            "Serve with fruit or whatever else you like.",
+            "Finished."
+        ],
+        "pddl": [
+            "blend_ingredients cream_cheese marshmallow_cream blender",
+            "pour_combined_into_bowl cream_cheese marshmallow_cream blender mixing_bowl",
+            "serve_with_fruit fruit mixing_bowl marshmallow_cream marshmallow_cream"
+        ],
+        "goal_state": "((combined cream_cheese marshmallow_cream) (in_container cream_cheese mixing_bowl) (in_container marshmallow_cream mixing_bowl) (full mixing_bowl) (sliced fruit))"
+    },
+    {
+        "goal": "Camouflage Equipment",
+        "steps": [
+            "Firstly, lay out all the equipment you are going to use-whatever pattern it is.",
+            "Start with your rucksack, this is the biggest piece of your personal kit so needs the most camouflage.",
+            "Next, move on to the helmet.",
+            "Be careful with webbing.",
+            "Be extremely cautious when disguising your weapon.",
+            "Vehicles really need a vehicle camouflage net."
+        ],
+        "pddl": [
+            "lay_out_equipment my_equipment ground_surface",
+            "organize_webbing my_equipment ground_surface my_webbing",
+            "organize_weapon my_equipment ground_surface my_weapon",
+            "organize_rucksack my_equipment ground_surface my_rucksack",
+            "organize_helmet my_equipment ground_surface my_helmet",
+            "camouflage_vehicle my_vehicle my_camouflage_net",
+            "camouflage_webbing my_webbing",
+            "camouflage_weapon my_weapon",
+            "camouflage_rucksack my_rucksack",
+            "camouflage_helmet my_helmet"
+        ],
+        "goal_state": "((laid_out my_equipment ground_surface) (organized my_rucksack) (organized my_helmet) (organized my_webbing) (organized my_weapon) (camouflaged my_rucksack) (camouflaged my_helmet) (camouflaged my_webbing) (camouflaged my_weapon) (carefully_disguised my_weapon) (netted my_vehicle my_camouflage_net))"
+    },
+    {
+        "goal": "Make Rhubarb Cordial",
+        "steps": [
+            "Simmer the rhubarb with the sugar, cloves and water.",
+            "Simmer until the rhubarb becomes soft.",
+            "Remove from the heat.",
+            "Add the mint leaves for decoration."
+        ],
+        "pddl": [
+            "place_ingredients cloves rhubarb sugar water pot stove",
+            "simmer_pot pot stove cordial",
+            "remove_from_heat pot stove",
+            "garnish_with_mint cordial mint_leaves pot"
+        ],
+        "goal_state": "((garnished_with cordial mint_leaves))"
+    },
+    {
+        "goal": "Make a Pitcher of Melon Pina Coladas",
+        "steps": [
+            "Pour the ingredients (except the garnish) into a pitcher that can hold 100 ounces.",
+            "Ensure everything is mixed thoroughly.",
+            "Allow the mixture to chill in the refrigerator until ready to serve.",
+            "Pour the mixture into tall glasses.",
+            "Add a chunk of honeydew melon on the side of each glass.",
+            "Finished."
+        ],
+        "pddl": [
+            "pour_ingredients_into_pitcher mixture1 pitcher1 kitchen_counter",
+            "mix_pitcher pitcher1 mixture1",
+            "chill_mixture pitcher1 refrigerator1",
+            "pour_into_glass mixture1 pitcher1 glass1",
+            "add_garnish honeydew1 glass1 mixture1"
+        ],
+        "goal_state": "((in_glass mixture1 glass1) (garnished honeydew1 glass1) (on_table glass1) (empty pitcher1))"
+    },
+    {
+        "goal": "Make Soap Bubbles for Your Children",
+        "steps": [
+            "Mix soap and water.",
+            "Enhance your bubble solution.",
+            "Make a little bubble wand.",
+            "Make a giant bubble wand.",
+            "First go outside, since bubbles look most beautiful when the sun shines through their iridescent swirls.",
+            "Make giant bubbles."
+        ],
+        "pddl": [
+            "mix_soap_and_water alice soap1 soap1 bowl1 mixture1",
+            "enhance_solution alice mixture1",
+            "go_outside alice",
+            "make_bubble_wand alice wand1",
+            "make_bubble alice wand1 bubble1"
+        ],
+        "goal_state": "((in_air bubble1) (served_bubble bubble1) (wet wand1) (outside alice))"
+    }
+]

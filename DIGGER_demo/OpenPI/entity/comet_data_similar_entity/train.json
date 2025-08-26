@@ -1,0 +1,1057 @@
+[
+    {
+        "task": "Connect a Wii to HD TV",
+        "step": [
+            "Plug in your HDMI cord to the cable.",
+            "Plug it into your TV's HDMI input.",
+            "Plug it into your wii's AV Composite Output instead of putting in the Composite cord that comes with the Wii.",
+            "Plug your HDMI cord (assuming you have one) into the converter and your TV."
+        ],
+        "steps_predictions": [
+            "plug_in_converter_tv npc tv",
+            "plug_into_converter_tv tv",
+            "plug_in_converter_tv wii_connected",
+            "plug_in_converter_tv tv"
+        ],
+        "similar_entity": {
+            "tv": "tv",
+            "wii connected": "wii",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Make Cheese Sauce with Jalapeño Peppers",
+        "step": [
+            "First cut the Velveeta in to tiny squares and set aside.",
+            "Set the burner on a medium to low setting, before that you begin adding the cheese product.",
+            "Wait until the Velveeta has melted lower the heat somewhat and add in the (Rotel) tomatoes.",
+            "Add in the Jalapeno peppers, and black olives if desired.",
+            "Cheese sauce is at its best if served very warm."
+        ],
+        "steps_predictions": [
+            "cut velveeta cutting_board",
+            "set_burner_add_cheese velveeta",
+            "set_burner_add_cheese velveeta pot",
+            "add_peppers_and_olives peppers pot",
+            "serve_cheese_sauce stove_knob"
+        ],
+        "similar_entity": {
+            "peppers": "peppers",
+            "velveeta": "velveeta",
+            "stove knob": "stove knob",
+            "cutting board": "cutting board",
+            "pot": "pot"
+        }
+    },
+    {
+        "task": "Board a Small Boat",
+        "step": [
+            "Prefer boarding across a solid platform if possible.",
+            "If you are crossing using a platform, hold on to the rails provided.",
+            "Avoid plonking one leg in the boat and leaving one on the jetty - this will cause wobbling and you might fall into the water.",
+            "Once in the boat, always remain in the centre line to move around it and lower yourself to a crouch level so that you reduce your centre of gravity and keep the craft as still as possible.",
+            "Keep the craft steady as others board."
+        ],
+        "steps_predictions": [
+            "choose_boat passenger1 boat1",
+            "hold_rails passenger1 boat1",
+            "stabilize_boat passenger1 boat1",
+            "stabilize_boat passenger1 boat1",
+            "stabilize_boat passenger1 boat1"
+        ],
+        "similar_entity": {
+            "passenger": "passenger",
+            "boat": "boat"
+        }
+    },
+    {
+        "task": "Make Slow Cooker Hot Cocoa",
+        "step": [
+            "Make the initial cocoa mixture.",
+            "Add all the ingredients in a slow cooker.",
+            "Allow the mixture to heat for 3 hours on a low setting.",
+            "Serve immediately or keep the slow cooker on a \"Keep Warm\" setting."
+        ],
+        "steps_predictions": [
+            "make_cocoa_mixture mixture",
+            "add_ingredients_to_slow_cooker mixture",
+            "heat_mixture mixture1 stove1 heat1",
+            "cook npc kitchen"
+        ],
+        "similar_entity": {
+            "heat": "temperature",
+            "kitchen": "kitchen counter",
+            "mixture": "mixture",
+            "stove": "stove",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Grow Fairy Moss Indoors",
+        "step": [
+            "Ask for it at a nursery or garden center that specializes in pond plant varieties.",
+            "Find a suitable container.",
+            "Fill the bowl with water.",
+            "Add the fairy moss.",
+            "Place in a suitable position.",
+            "Prune."
+        ],
+        "steps_predictions": [
+            "ask-for-moss pond_center",
+            "find_container container1",
+            "fill-bowl water",
+            "add_fairy_moss fairy_materials pot",
+            "place-suitable-position sofa",
+            "prune fairy-moss"
+        ],
+        "similar_entity": {
+            "sofa": "wood",
+            "water": "water",
+            "container": "container",
+            "fairy materials": "fairy moss",
+            "fairy-moss": "fairy moss",
+            "pond center": "pools",
+            "pot": "pot"
+        }
+    },
+    {
+        "task": "Remove Black Skid Marks from Linoleum",
+        "step": [
+            "Obtain a decent sized eraser that you can hold comfortable in your fingers.",
+            "Kneel down next to the linoleum and use the eraser to rub along the skid mark.",
+            "Continue rubbing until the black mark lifts.",
+            "Wash and dry as usual."
+        ],
+        "steps_predictions": [
+            "obtain_eraser you eraser",
+            "kneel_and_rub you eraser linoleum_floor",
+            "rub_with_rubber user1 user2 user3",
+            "wash_wicks wick1"
+        ],
+        "similar_entity": {
+            "wick": "wick",
+            "linoleum floor": "linoleum",
+            "user": "player",
+            "you": "you",
+            "eraser": "eraser"
+        }
+    },
+    {
+        "task": "Make a Simple Inside Windshield Cleaner",
+        "step": [
+            "Purchase a blackboard eraser.",
+            "Keep the blackboard eraser in the glove box or attach it to a spot on or near the car door for easy access.",
+            "Use the eraser to clean the inner side of the windshield.",
+            "Replace after use."
+        ],
+        "steps_predictions": [
+            "purchase_eraser user1 eraser1 store_location",
+            "attach_eraser user1 eraser1 car_spot1",
+            "clean_inner_side_of_vehicle eraser windshield_clean",
+            "replace_wicks user1 wick1"
+        ],
+        "similar_entity": {
+            "wick": "wick",
+            "windshield clean": "windshield",
+            "car spot": "vehicle",
+            "store location": "storage container",
+            "user": "player",
+            "eraser": "eraser"
+        }
+    },
+    {
+        "task": "Paint Bare Wood",
+        "step": [
+            "Acquire oil based paints, which air dry slowly.",
+            "The under-coat should be thin, and smooth, move your paint brush down the wood, don't paint up or horizontally.",
+            "Paint the second coat, but be much more careful this time, make sure there are no paint bubbles appearing and smooth out any drips or pools left over from the under-coat.",
+            "Be the most precise with this.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "acquire_oil_based_painting oil_floor roller_finished",
+            "move_painting_branch npc work_station wood",
+            "clean_room npc",
+            "be_amazed npc",
+            "finish-wreath wreath"
+        ],
+        "similar_entity": {
+            "wreath": "wreath",
+            "wood": "wood",
+            "oil floor": "oil container",
+            "work station": "living room",
+            "roller finished": "the wax paper",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Create a Character in Lego Star Wars",
+        "step": [
+            "When you begin the game, you will start as Princess Leia and Captain Antilles in the Star Wars cantina.",
+            "Use the up and down arrows to select the part of the character (hat, head, shirt, arms, hands, weapon, belt, and legs) and the left and right arrows to select through a selection of the body part you are on.",
+            "Press \"triangle\" to name it, and \"O\" to save and exit.",
+            "Now enter a completed level and turn on free play."
+        ],
+        "steps_predictions": [
+            "start_game game",
+            "select_character character",
+            "save_name_and_exit character",
+            "turn_on_free_game game"
+        ],
+        "similar_entity": {
+            "game": "game",
+            "character": "character"
+        }
+    },
+    {
+        "task": "Spool Knit a Winter Hat",
+        "step": [
+            "Knit eighty-four inches of flat web.",
+            "Begin five inches from the end of the web, turn and sew into a rectangular form five inches wide and eight inches long.",
+            "Join the five-inch ends, and draw in the top with the needle and a piece of the material from which the cap was made.",
+            "After securing the top, twist and fold the piece of yarn remaining for a cord and fasten a number of strands of yarn through the loop for a tassel."
+        ],
+        "steps_predictions": [
+            "knit_web web",
+            "sliplargerbeads web",
+            "join_ends ends",
+            "wrap_with_tassel npc"
+        ],
+        "similar_entity": {
+            "ends": "ends",
+            "npc": "hat",
+            "web": "webbing"
+        }
+    },
+    {
+        "task": "Get on a Bike",
+        "step": [
+            "To get on the bike, swing your non-dominant leg over the shaft of the bike.",
+            "Put your dominant foot on the pedal.",
+            "Hold on to the handlebars for support and to keep the bike straight.",
+            "Keeping your weight center and even, pedal with your feet.",
+            "Stopping."
+        ],
+        "steps_predictions": [
+            "swing-leg-over-bike bike",
+            "put_foot_on_pedal you pedals",
+            "hold_handbrakes bike",
+            "pedal-with-feet you",
+            "stop you bike"
+        ],
+        "similar_entity": {
+            "bike": "bike",
+            "you": "you",
+            "pedals": "pedals"
+        }
+    },
+    {
+        "task": "Change the Oil on a Yamaha Virago XV250",
+        "step": [
+            "Remove the bung to let the oil out to drain.",
+            "Remove the oil cap to let the oil drain fully and let air in to help drain the old oil out.",
+            "Remove the oil filter.",
+            "Screw the bung back on.",
+            "Fill the oil back up.",
+            "Recycle the old oil."
+        ],
+        "steps_predictions": [
+            "remove-bung oil_tank bung1 oil1",
+            "remove-oil-cap oil_cap1 bottle1 bike1 oil1",
+            "remove-oil-filter oil_filter1 bottle1",
+            "screw_bung bung1",
+            "fill-oil oil_bottle faucet",
+            "get_oil npc oil"
+        ],
+        "similar_entity": {
+            "oil tank": "oil tank",
+            "bung": "bung",
+            "oil cap": "oil cap",
+            "bike": "bike",
+            "oil": "oil",
+            "faucet": "faucet",
+            "bottle": "bottle",
+            "oil bottle": "oil bottle",
+            "oil filter": "oil filter",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Open a Rusty Bolt",
+        "step": [
+            "Obtain some fizzy drink.",
+            "Pour the fizzy drink over the bolt.",
+            "Wipe it clean with kitchen towel.",
+            "The fizzy drink should have dissolved the rust build-up causing the bolt to stick.",
+            "Replace the rusty bolt."
+        ],
+        "steps_predictions": [
+            "obtain-fizzy-drink faucet",
+            "pour-fizzy-drink faucet1",
+            "wipe_clean towel1",
+            "dissolve_rust old_bolt1 fizzy_drink1",
+            "replace-bolt old_bolt1"
+        ],
+        "similar_entity": {
+            "towel": "towel",
+            "faucet": "faucet",
+            "fizzy drink": "fizzy drink",
+            "old bolt": "old bolt"
+        }
+    },
+    {
+        "task": "Evolve Vulpix in Pokémon",
+        "step": [
+            "######Catch or trade for a Vulpix.",
+            "######Find a fire stone (or Ice Stone in Sun/Moon to evolve Alolan Vulpix).",
+            "Go to your bag and select the stone required.",
+            "######Wait for the evolution animation to pop up."
+        ],
+        "steps_predictions": [
+            "catch_or_trade vulpix",
+            "evolve Alolan Vulpix))",
+            "select_bag bag",
+            "wait_for_evolution vulpix"
+        ],
+        "similar_entity": {
+            "Vulpix))": "vulpix",
+            "Alolan": "macaroni",
+            "vulpix": "vulpix",
+            "bag": "bag"
+        }
+    },
+    {
+        "task": "Get Under the Stage in Dragonball Z Budokai Tenkaichi 2",
+        "step": [
+            "Choose VS Duel, 2 players.",
+            "Choose Goku as player one, as well as player two.",
+            "Choose Mountain Road as the stage.",
+            "Move to opposite ends of the street so that you are both against the Wall that keeps you in the stage."
+        ],
+        "steps_predictions": [
+            "choose_vs_duel duel",
+            "choose_goku player1",
+            "choose_stage stage1",
+            "move_to_wall player1 player2 player3"
+        ],
+        "similar_entity": {
+            "duel": "vs duel",
+            "player": "player",
+            "stage": "stage"
+        }
+    },
+    {
+        "task": "Grow a Rose Bush from Rose Bush Cuttings",
+        "step": [
+            "Prepare the pot or area in your yard where you plan to plant your clipping.",
+            "Take a cutting from the rose bush you would like to grow your new bush from.",
+            "Moisten the part of the clipping that you just scraped and dip it into rooting hormone.",
+            "Immediately plant the cutting."
+        ],
+        "steps_predictions": [
+            "prepare_area clipping",
+            "take_cutting clipping",
+            "dip_in_hormide npc",
+            "plant_cutting clipping"
+        ],
+        "similar_entity": {
+            "clipping": "clipping",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Make a Fairy House in the Woods",
+        "step": [
+            "Find a small area with slightly damp dirt.",
+            "Collect many twigs and sticks.",
+            "Using the sticks, create either a square formation, circle formation, or a Teepee formation.",
+            "Build your exterior walls.",
+            "You can use either a leaf or a wide strip of bark.",
+            "Decorate."
+        ],
+        "steps_predictions": [
+            "find_area area1 garden_center",
+            "collect_sticks stick1",
+            "create_formation stick1",
+            "build_walls npc basement",
+            "use_as_leaves npc path",
+            "create_decorations fairy_moss"
+        ],
+        "similar_entity": {
+            "fairy moss": "fairy moss",
+            "garden center": "area",
+            "area": "area",
+            "stick": "sticks",
+            "path": "route",
+            "basement": "floor",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Make a Pinwheel Wreath",
+        "step": [
+            "Select suitable paper to make the pinwheels.",
+            "Make enough pinwheels to create a wreath.",
+            "Find a suitable base, such as a Styrofoam/cane/cardboard wreath base.",
+            "If the wreath base lacks a hanger, add some twine or ribbon to create one.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "select-papyrus p1",
+            "create_wreath p1",
+            "find_wreath_base w1",
+            "create_wreath_base w1",
+            "finish-wreath wreath"
+        ],
+        "similar_entity": {
+            "p": "you",
+            "wreath": "wreath",
+            "w": "whisk"
+        }
+    },
+    {
+        "task": "Be a Spy With Friends",
+        "step": [
+            "Set-up your spy group You will need a trustworthy 2-5 person group.",
+            "It's good to have a place to keep your gear when not in use, hold meetings, and just talk in private without worrying about the nosiness of certain people in public places.",
+            "Get some gear To be a good spy, you and your friends must have gear that will help with missions.",
+            "Find your first \"victim\" The victim is the person you will be watching and spying on."
+        ],
+        "steps_predictions": [
+            "set_spy_group co_conspirator1 co",
+            "talk_in_private npc",
+            "gather_gear you camera, gather_equipment you binoculars",
+            "find_victim victim1"
+        ],
+        "similar_entity": {
+            "gather equipment": "equipment",
+            "co conspirator": "co-conspirators",
+            "co": "team",
+            "camera,": "tv",
+            "binoculars": "glasses",
+            "you": "you",
+            "npc": "hat",
+            "victim": "person"
+        }
+    },
+    {
+        "task": "Polish a Faucet With a Lemon",
+        "step": [
+            "######Cut a lemon in half.",
+            "######Squeeze out the juice.",
+            "######Take the squeezed out lemon half and rub vigorously over the faucets.",
+            "######Wash the tap after scouring with the lemon half."
+        ],
+        "steps_predictions": [
+            "cut_lemon npc",
+            "squeeze-lemon water",
+            "rub_lemon_half faucet1",
+            "wash_tap_with_lemon_half water faucet"
+        ],
+        "similar_entity": {
+            "faucet": "faucet",
+            "npc": "hat",
+            "water": "water"
+        }
+    },
+    {
+        "task": "Make a Wreath with Clothes Hangers",
+        "step": [
+            "Untwist wire hanger and shape into a circle, using pliers as needed.",
+            "Gently crumple 3\" squares of wax paper or crepe paper and thread hanger through center of each square.",
+            "When you have threaded enough squares to fill length of hanger, gently push squares away from ends and use pliers to twist ends together.",
+            "Gently slide squares of paper back toward the joined ends of wire hanger, scrunching paper more for additional fullness.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "unwist-hanger hanger1 pliers1",
+            "gather_squares velveeta",
+            "push_squares_away npc",
+            "slide-squares hanger-1",
+            "finish-wreath wreath"
+        ],
+        "similar_entity": {
+            "wreath": "wreath",
+            "hanger-": "hanger",
+            "velveeta": "velveeta",
+            "pliers": "pliers",
+            "hanger": "hanger",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Grow Dwarf Balsam Fir",
+        "step": [
+            "Choose the plant from a nursery or garden center.",
+            "This plant spreads and flattens as it grows, so select a broad sized container, preferably with a rounded shape.",
+            "Choose the potting soil.",
+            "Plant the fir in the container.",
+            "Keep this up until the tree is well established.",
+            "Re-pot occasionally."
+        ],
+        "steps_predictions": [
+            "choose_plant fir1 nursery",
+            "select_container container1 garden_center",
+            "choose_soil soil1 garden_center",
+            "plant_fir fir1 container1",
+            "establish_plant fir1 container1",
+            "re_pot fir1 container1"
+        ],
+        "similar_entity": {
+            "container": "container",
+            "garden center": "area",
+            "fir": "fir",
+            "nursery": "kids room",
+            "soil": "soil"
+        }
+    },
+    {
+        "task": "Fold Bath Towels for Quick Hanging at Home",
+        "step": [
+            "Fold the towel in thirds lengthwise.",
+            "Fold in half, and then in half again.",
+            "Store the towel in the linen closet.",
+            "To go from the closet for hanging, simply unfold the final fold and hang on the towel rack."
+        ],
+        "steps_predictions": [
+            "fold-twice towel1",
+            "fold-half-twice towel1",
+            "store-item towel1",
+            "hang-on-rack towel1"
+        ],
+        "similar_entity": {
+            "towel": "towel"
+        }
+    },
+    {
+        "task": "Make Seasoned Salt",
+        "step": [
+            "Mix the ingredients together thoroughly.",
+            "Pour into an air-tight container with a lid.",
+            "It goes well in dips, salad dressings, soups and on sandwiches.",
+            "Grind the ingredients together in a mortar and pestle.",
+            "Transfer to a storage container as needed."
+        ],
+        "steps_predictions": [
+            "mix_ingredients mixture",
+            "pour-into-container container1",
+            "dip_sand npc",
+            "grind-ingredients alice mortar_and_pestle",
+            "gotolocation agent container"
+        ],
+        "similar_entity": {
+            "container": "container",
+            "agent": "game character",
+            "mortar and pestle": "mortar and pestle",
+            "alice": "character",
+            "mixture": "mixture",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Make a Pancake Mix Container from a Recycled Ketchup Bottle",
+        "step": [
+            "Scrub the ketchup bottle thoroughly.",
+            "Place the funnel over the mouth of the bottle.",
+            "Pour pancake batter through the funnel into the empty ketchup bottle.",
+            "Replace the lid and label the bottle.",
+            "Place the bottle in refrigerator.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "scrub_ketchup_bottle ketchup bottle1",
+            "place_funnel user1 funnel1 bottle1",
+            "pour_into_fridge ketchup_bottle",
+            "replace_lid_and_label user1 ketchup_bottle1",
+            "place_in_fridge bottle1 refrigerator1",
+            "finish-wreath wreath"
+        ],
+        "similar_entity": {
+            "wreath": "wreath",
+            "ketchup bottle": "ketchup bottle",
+            "ketchup": "ketchup bottle",
+            "user": "player",
+            "refrigerator": "refrigerator",
+            "bottle": "bottle",
+            "funnel": "funnel"
+        }
+    },
+    {
+        "task": "Make a Banana Strawberry Rum Smoothie",
+        "step": [
+            "Place the yogurt, bananas, and sorbet in a blender.",
+            "Blend the mixture until it's smooth in texture.",
+            "Pour the rum in and quickly blend again.",
+            "Pour the smoothie into chilled glasses.",
+            "Garnish each glass with a strawberry."
+        ],
+        "steps_predictions": [
+            "place-ingredients bananas sorbet yogurt blender-1",
+            "blend_into_texture blender",
+            "add-rum-and-blend rum blender",
+            "pour-into-glass blender-1 glass-filled",
+            "garnish-glass glass-1"
+        ],
+        "similar_entity": {
+            "blender-": "blender",
+            "glass-": "glass",
+            "glass-filled": "glass",
+            "yogurt": "yogurt",
+            "rum": "rum",
+            "sorbet": "sorbet",
+            "bananas": "bananas",
+            "blender": "blender"
+        }
+    },
+    {
+        "task": "Make Your Den Look Like a Home on Animal Jam (Non Members)",
+        "step": [
+            "Get lots of gems.",
+            "for a family home you will need quite a lot of stuff.",
+            "Try to get room shoji screens so you can section things off into smaller rooms.",
+            "If you can get shoji screens, try making a kids room, a master bedroom, and a living/dining room.",
+            "Make an outside area.",
+            "Keep your family safe."
+        ],
+        "steps_predictions": [
+            "get_gems gems",
+            "buy_stuff stuff",
+            "build_rooms npc basement",
+            "create-rooms kids-room",
+            "make_area area1",
+            "keep-family-safe kids"
+        ],
+        "similar_entity": {
+            "gems": "gems",
+            "area": "area",
+            "kids": "kids room",
+            "basement": "floor",
+            "stuff": "stuff",
+            "kids-room": "kids room",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Make Taco Filling",
+        "step": [
+            "Brown the meat and the onion in a medium sized frying pan.",
+            "Drain the excess fat.",
+            "Add the remaining ingredients (except for the hot sauce) and simmer for fifteen minutes.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "cook npc",
+            "drink_water faucet water",
+            "add_ingredients_to_sauce canola_oil stove pot",
+            "finish-wreath wreath"
+        ],
+        "similar_entity": {
+            "pot": "pot",
+            "wreath": "wreath",
+            "faucet": "faucet",
+            "water": "water",
+            "canola oil": "oil can",
+            "stove": "stove",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Make a Bead Ring",
+        "step": [
+            "Cut a strip of elastic.",
+            "Slip two larger beads at either side of the small bead.",
+            "Slip a small bead on one tail.",
+            "Continue this pattern until you have enough beads to fit around the finger.",
+            "Finish the ring by slipping the loose tails through the first small bead you placed on the elastic.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "cut_strips elastic1",
+            "sliplargerbeads bead1",
+            "sliplargerbeads bead1",
+            "sliplargerbeads bead1",
+            "finish_ring npc",
+            "finish-wreath wreath"
+        ],
+        "similar_entity": {
+            "bead": "bead",
+            "wreath": "wreath",
+            "npc": "hat",
+            "elastic": "elastic"
+        }
+    },
+    {
+        "task": "Make Chocolate Hearts for Valentine&#x27;s Day",
+        "step": [
+            "Assemble the ingredients needed.",
+            "Melt the chocolate bars in the microwave until you have no lumps left after stirring.",
+            "Pour the melted chocolate into the heart shaped molds.",
+            "Put the chocolate into the freezer until hardened.",
+            "Leave them out for one minute and pop out of molds, Or, cut heart shapes in the tray.",
+            "Enjoy then and there, or box them up and give away!"
+        ],
+        "steps_predictions": [
+            "build_ingredients mixture",
+            "melt-chocolate chocolate microwave",
+            "pour-chocolate chocolate mixing_bowl",
+            "freeze-chocolate chocolate",
+            "cut_heart_shape velveeta",
+            "box-chocolates chocolate"
+        ],
+        "similar_entity": {
+            "velveeta": "velveeta",
+            "mixture": "mixture",
+            "microwave": "microwave",
+            "mixing bowl": "mixing bowl",
+            "chocolate": "chocolate"
+        }
+    },
+    {
+        "task": "Make Chinese Macaroni in Just 20 Minutes",
+        "step": [
+            "Boil macaroni in hot boiling water with some salt and oil for 10-15 minutes.",
+            "After the macaroni has boiled put under running water for about 15 seconds to prevent over cooking.",
+            "In another pan add some oil and toss in the macaroni.",
+            "Add salt, red chilli powder ,soy sauce,white vinegar and ajino moto.",
+            "Cook for some seconds.",
+            "Serve hot with chilled drinks."
+        ],
+        "steps_predictions": [
+            "boil_water macaroni hot water",
+            "boiled_water macaroni water",
+            "add-oil macaroni1 pan1",
+            "add-chill_sauce vinegar_and_cheese hot sauce",
+            "cook npc kitchen",
+            "cook npc kitchen stirfry"
+        ],
+        "similar_entity": {
+            "pan": "pan",
+            "water": "water",
+            "stirfry": "stirring tool",
+            "macaroni": "macaroni",
+            "kitchen": "kitchen counter",
+            "hot": "hot sauce",
+            "npc": "hat",
+            "sauce": "hot sauce",
+            "vinegar and cheese": "vinegar"
+        }
+    },
+    {
+        "task": "Get Wailord in Pokémon Emerald",
+        "step": [
+            "This is the pre-evolution of Wailord.",
+            "This Wailmer can be pretty annoying to train, so be patient.",
+            "Train it until it evolves.",
+            "Go to battle frontier and copy some rare candies.",
+            "Give the rare candies to a Wailmer and evolve it into a Wailord using them."
+        ],
+        "steps_predictions": [
+            "evolution_of_wailord npc",
+            "train_wailmer npc",
+            "evolve npc",
+            "copy-rare-candies wailmer",
+            "evolve wailmer"
+        ],
+        "similar_entity": {
+            "wailmer": "wailmer",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Clean Your Home Efficiently",
+        "step": [
+            "######Pick up and put away stray items and throw trash into waste baskets.",
+            "######Dust, again going through the entire house room by room.",
+            "######Take a large trash bag and go through each room emptying the waste baskets and trash cans.",
+            "######Use a spray cleaner and rags or paper towels to clean any glass surfaces, including the TV screens.",
+            "First pick up any throw rugs and inside door mats and shake them outside.",
+            "######Enjoy your clean home!"
+        ],
+        "steps_predictions": [
+            "pickup_items item1 basket1",
+            "get_dust_room rug1",
+            "empty_trash basket1 trash_bag1",
+            "clean_surface tv cleaner1",
+            "pickup_throw_rugs rug1",
+            "clean_room npc basement"
+        ],
+        "similar_entity": {
+            "basket": "waste basket",
+            "trash bag": "trash bag",
+            "rug": "rugs",
+            "cleaner": "spray cleaner",
+            "item": "items",
+            "tv": "tv",
+            "basement": "floor",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Learn Photography by Shooting Macro",
+        "step": [
+            "Create a very small studio.",
+            "Have the appropriate sized reflectors.",
+            "Have a closeup lens.",
+            "Again, they don't need to be that big, but big enough to diffuse light for your small subject.",
+            "Start experimenting."
+        ],
+        "steps_predictions": [
+            "create_small_studio studio",
+            "have_appropriate_reflector reflector",
+            "closeup_lens lens",
+            "diffuse_light light",
+            "start_experimenting experiment"
+        ],
+        "similar_entity": {
+            "reflector": "light",
+            "lens": "glasses",
+            "experiment": "light",
+            "light": "light",
+            "studio": "studio"
+        }
+    },
+    {
+        "task": "Recycle Underpants",
+        "step": [
+            "Turn the underpants into cleaning rags.",
+            "Use the underwear as garden ties.",
+            "Turn quality undies into craft items.",
+            "Use a bundle of old underwear as stuffing.",
+            "Children can wear old underwear on the outside of their pants to play superhero.",
+            "Donate the underpants."
+        ],
+        "steps_predictions": [
+            "clean_underpants underpants1",
+            "use_as_garden_ties underpants1",
+            "make_craft_item underpants3 scissors1",
+            "use_as_stuffing underpants3",
+            "wear_underpants underpants1",
+            "donate_underpants underpants1"
+        ],
+        "similar_entity": {
+            "scissors": "cutting",
+            "underpants": "clothing"
+        }
+    },
+    {
+        "task": "Make Whole Wheat Pastry With Canola",
+        "step": [
+            "Place the whole wheat flour and salt into the mixing bowl.",
+            "Pour in the oil.",
+            "Place the pastry onto a sheet of wax paper.",
+            "Remove from the fridge.",
+            "Press the pastry into the pie dish.",
+            "Create an edge with the sides of a fork."
+        ],
+        "steps_predictions": [
+            "place-ingredients whole wheat mixing bowl",
+            "pour_ingredients_into_oil user1 bottle1 oil1 container1",
+            "place_pastry_on_sheet pastry1 sheet1",
+            "remove-from-fridge water faucet",
+            "press_into_pie_dish mixing_bowl table",
+            "create_edge canola_oil table"
+        ],
+        "similar_entity": {
+            "faucet": "faucet",
+            "wheat": "flour and salt",
+            "oil": "oil",
+            "container": "container",
+            "water": "water",
+            "pastry": "pastry",
+            "user": "player",
+            "mixing": "the mixing bowl",
+            "sheet": "paper",
+            "bowl": "bowl",
+            "canola oil": "oil can",
+            "bottle": "bottle",
+            "table": "table",
+            "mixing bowl": "mixing bowl",
+            "whole": "pieces"
+        }
+    },
+    {
+        "task": "Freeze Baked Cookies or Biscuits",
+        "step": [
+            "Place the biscuits or cookies into a rigid, airtight container.",
+            "Separate the biscuits and cookies using freezer paper, baking paper, or foil.",
+            "Place biscuits in freezer.",
+            "Thaw."
+        ],
+        "steps_predictions": [
+            "place-in-container cookies",
+            "separate-using-paper cookies",
+            "free-biscuits cookies",
+            "thaw cookies"
+        ],
+        "similar_entity": {
+            "cookies": "cookies"
+        }
+    },
+    {
+        "task": "Make a Duct Tape Necklace",
+        "step": [
+            "Take one roll of duct tape and make a piece about a little bigger than your head.",
+            "Measure it around your head, and cut it off the roll.",
+            "Fold it halfway through the middle, like shown.",
+            "Fold the other half so there is no sticky part showing.",
+            "Tape the ends together.",
+            "And you are done!"
+        ],
+        "steps_predictions": [
+            "make_horizontal_bar npc",
+            "cut_roll npc",
+            "fold-wreath wreath-1",
+            "fold-half-tape tape1",
+            "tape-ends ends",
+            "put_in_machine npc"
+        ],
+        "similar_entity": {
+            "ends": "ends",
+            "wreath-": "wreath",
+            "npc": "hat",
+            "tape": "tape"
+        }
+    },
+    {
+        "task": "Get a Headshot in Gears of War",
+        "step": [
+            "Sniper — Simply aim at the head and pull the trigger, unless you're the host, in which case you will need to aim in front of where they're going.",
+            "Shotgun — The aim on the shotgun is almost like a rectangle.",
+            "Pistol — I'm not sure because I haven't played in a while, but it's either six or seven shots to the head with the standard-issue pistol for a headshot.",
+            "BoomShot — BoomShot headshots are possible — don't let anyone tell you they're not but the chance of one happening is about a million to one."
+        ],
+        "steps_predictions": [
+            "shotgun_shot player1 player2",
+            "shotgun_shot player1",
+            "pistol_shot player1 player2",
+            "boomshot_shot weapon1 player1"
+        ],
+        "similar_entity": {
+            "weapon": "weapon",
+            "player": "player"
+        }
+    },
+    {
+        "task": "Prevent a Wick Lamp or Stove from Smoking",
+        "step": [
+            "Pour some white vinegar into a small container deep enough for dipping.",
+            "Remove the wick from the lamp or stove, or use wicks yet to be inserted.",
+            "Dip each wick into the vinegar.",
+            "Allow to dry thoroughly.",
+            "Use once dry."
+        ],
+        "steps_predictions": [
+            "pour_vinegar_into_container vinegar1 container1",
+            "remove_wick wick1 lamp1 stove1",
+            "dip_wicks_in_vinegar wick1 vinegar1 container1",
+            "dry_wicks wick1",
+            "make_wicks_dry wick1"
+        ],
+        "similar_entity": {
+            "wick": "wick",
+            "lamp": "lamp",
+            "container": "container",
+            "vinegar": "vinegar",
+            "stove": "stove"
+        }
+    },
+    {
+        "task": "Defeat a Thug on Dead Island",
+        "step": [
+            "There is no chance in hell you will kill a Thug using just your bear hands and feet.",
+            "Incendiary Weapons - Grenades or Molotov Cocktails *WARNING* You may need to use a couple of these, so it is recommended that you only use one when a Thugs' health is below 50%.",
+            "Make sure your guns have enough ammo, and your knives are up to scratch.",
+            "Attack!"
+        ],
+        "steps_predictions": [
+            "make_horizontal_bar branch_piece",
+            "get_weapon npc weapon",
+            "check_weapons pistol ammunition",
+            "attack_wailmer npc"
+        ],
+        "similar_entity": {
+            "pistol": "pistol",
+            "ammunition": "gun",
+            "branch piece": "pieces",
+            "weapon": "weapon",
+            "npc": "hat"
+        }
+    },
+    {
+        "task": "Clean Synthetic Hiking Gear",
+        "step": [
+            "Read all of the instructions first.",
+            "Wash Gore-Tex and other breathable, waterproof synthetic outer shell clothing following the instructions on the label.",
+            "Be careful with synthetic boots.",
+            "Take care cleaning synthetic jackets containing down.",
+            "Wash polar fleece (microfleece or micrafleece) in the washing machine."
+        ],
+        "steps_predictions": [
+            "read_instructions instructions",
+            "wash_gore_Tex clothing",
+            "check_boots npc",
+            "clean_sliplargerbund npc",
+            "wash_polar_fleece washing_machine"
+        ],
+        "similar_entity": {
+            "washing machine": "washing machine",
+            "npc": "hat",
+            "clothing": "clothing",
+            "instructions": "instructions"
+        }
+    },
+    {
+        "task": "Remove Paint from Windows",
+        "step": [
+            "You will need a bucket of hot water mixed with dish soap, a clean cloth or sponge, a new safety razor blade and some glass cleaner.",
+            "Wet the window with the water and dish soap.",
+            "Position the razor blade.",
+            "Using slow, smooth motions, start scraping the paint from the window.",
+            "Once all of the paint has been scraped away, spritz the window with some glass cleaner and use a clean, dry cloth to buff the windows clean.",
+            "Remove small paint splatters with chemical solvents."
+        ],
+        "steps_predictions": [
+            "clean_cloth cloth1 sponge1",
+            "wet_window_with_water water",
+            "position-raazor blade1 razor1",
+            "scrash_window_with_painting window_clean",
+            "clean_window window",
+            "remove-small-splatter paint_splatters"
+        ],
+        "similar_entity": {
+            "razor": "razor blade",
+            "water": "water",
+            "cloth": "cloth",
+            "window": "window",
+            "sponge": "sponge",
+            "window clean": "window",
+            "paint splatters": "paint splatter",
+            "blade": "blade"
+        }
+    },
+    {
+        "task": "Use a Mic in Team Fortress 2",
+        "step": [
+            "Make sure that your microphone is working and connected first.",
+            "Find various panels at the top like \"Multiplayer\", \"Mouse\", \"Audio\", etc.",
+            "Click on the Voice panel.",
+            "Start talking with other players using your microphone!",
+            "Use the microphone to communicate with your team in a more efficient manner and demand that your voice is heard!",
+            "Advise teammates as well as make game plans to help and support your team."
+        ],
+        "steps_predictions": [
+            "make_microphone_connected mic",
+            "find_panel panel",
+            "check_panel panel",
+            "talk_using_microphone mic voice",
+            "use_microphone voice",
+            "advise_teammates advice"
+        ],
+        "similar_entity": {
+            "panel": "panel",
+            "voice": "voice",
+            "advice": "advice",
+            "mic": "microphone"
+        }
+    }
+]

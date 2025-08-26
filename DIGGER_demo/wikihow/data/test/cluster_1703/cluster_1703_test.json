@@ -1,0 +1,38 @@
+[
+    {
+        "cluster_label": 1703,
+        "task": "How to Remove Old Nail Polish",
+        "step": [
+            "Choose a nail polish you don't like very much.",
+            "Paint polish over one of your nails.",
+            "Use a paper towel to wipe it off after five seconds.",
+            "Repeat with remaining nails."
+        ],
+        "steps_predictions": [
+            "choose_nail_polish alice",
+            "paint_polish npc",
+            "clean_wicks npc",
+            "repeat_with_nail npc"
+        ],
+        "goal_state": " ((polished_wicks npc) (flattened wick))"
+    },
+    {
+        "cluster_label": 1703,
+        "task": "How to Remove Nail Polish Without Using Remover",
+        "step": [
+            "Make a base coat with glue and water.",
+            "Apply and dry the glue base coat before putting on polish.",
+            "Apply nail polish.",
+            "Soak your nails when you're ready to remove your polish.",
+            "Peel off your old nail polish."
+        ],
+        "steps_predictions": [
+            "make_base_coathanger alice",
+            "dry_gems velveeta glue_base_coathanger1",
+            "apply_nail_polish npc",
+            "remove-polish your nails",
+            "peel_old_polish npc"
+        ],
+        "goal_state": " ((polished_npc nails))"
+    }
+]

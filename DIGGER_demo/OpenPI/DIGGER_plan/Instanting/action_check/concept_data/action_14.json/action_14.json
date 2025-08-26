@@ -1,0 +1,3 @@
+[
+    "```pddl\n[\n  (:action choose ; Choose an option and update its status\n    :parameters (?agent - agent ?option - object ?context - context)\n    :precondition (and (not (selected ?option)) (context_applicable ?context ?option))\n    :effect (and (selected ?option) (context_updated ?context))\n  ),\n  \n  (:action move\n    :parameters (?agent - agent ?destination - location)\n    :precondition (and (location ?agent ?current_location) (not (location ?agent ?destination)))\n    :effect (and (not (location ?agent ?current_location)) (location ?agent ?destination))\n  )\n]\n```"
+]

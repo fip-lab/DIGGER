@@ -1,0 +1,8 @@
+(get screwdriver)
+(get coconut)
+(poke coconut screwdriver)
+(get glass)
+(get towel)
+(flip coconut glass glass_filled)
+(wrap coconut glass_filled coconut_wrapped towel)
+; cost = 7 (unit cost)

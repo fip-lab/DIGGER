@@ -1,0 +1,729 @@
+[
+    {
+        "step": [
+            "Rinse the fish when you remove it from the freezer.",
+            "Cook the fish right away.",
+            "Know which recipes require thawed fish."
+        ],
+        "task": "How to Thaw Frozen Fish",
+        "goal_state": "thaw_fish person wood",
+        "steps": "```pddl\n(use person fish container freezer)\n(process_ingredient fish microwave person kitchen)\n```",
+        "similar_task": [
+            {
+                "cluster_label": 1208,
+                "task": "How to Cook Frozen Fish",
+                "step": [
+                    "Learn basic fish-cooking techniques.",
+                    "Get ideas for your specific type of fish.",
+                    "Try new marinades and seasoning.",
+                    "Learn unique recipes."
+                ],
+                "steps_predictions": [
+                    "learn_fish_cooking techniques",
+                    "get_ideas npc spear fish",
+                    "treat_new_member_with_salt marshmallow_cream",
+                    "learn_new_recipe npc kitchen"
+                ],
+                "goal_state": " ((learned npc sushi) (in sherbet plate))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "spear": {
+                        "weapon": [
+                            {
+                                "attribute": "location",
+                                "before": "in vehicle",
+                                "after": "on ground"
+                            },
+                            {
+                                "attribute": "attention",
+                                "before": "carelessly disguised | visible",
+                                "after": "carefully disguised | disguised"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "absent",
+                                "after": "on weapon"
+                            },
+                            {
+                                "attribute": "decoration",
+                                "before": "bare",
+                                "after": "camouflaged"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[A spear]] is [[a weapon]]",
+                            "[[رمْح]] is a translation of [[spear]]"
+                        ]
+                    },
+                    "kitchen": {
+                        "kitchen counter": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "messy"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the kitchen]] is [[food]]",
+                            "[[a kitchen]] is used for [[cooking food]]",
+                            "[[table]] is related to [[kitchen]]"
+                        ]
+                    },
+                    "marshmallow cream": {
+                        "the marshmallow cream": [
+                            {
+                                "attribute": "location",
+                                "before": "in continer",
+                                "after": "in bowl"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "by itself | solid",
+                                "after": "blended with marshmellow cream | blended with cream cheese | blended"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "fish": {
+                        "boat": [
+                            {
+                                "attribute": "location",
+                                "before": "in open water | on dock",
+                                "after": "at dock | on boat"
+                            },
+                            {
+                                "attribute": "motion",
+                                "before": "standing",
+                                "after": "walking"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on dock",
+                                "after": "in boat"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "in motion",
+                                "after": "still"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "action",
+                                "before": "still",
+                                "after": "moving"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "standing",
+                                "after": "crouching"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "docked",
+                                "after": "in motion"
+                            },
+                            {
+                                "attribute": "stability",
+                                "before": "rocking",
+                                "after": "steadied"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "perpendicular to dock",
+                                "after": "parallel to shore"
+                            },
+                            {
+                                "attribute": "motion",
+                                "before": "moving",
+                                "after": "stationary"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a fish]] in [[water]].",
+                            "[[fish]] is related to [[animal]]",
+                            "[[A bass]] is a kind of [[fish]]",
+                            "Something that might happen when you [[fish]] is [[you catch fish]]",
+                            "If you want to [[fish]] then you should [[go to the lake]]",
+                            "[[Fish]] have [[gills]]"
+                        ]
+                    },
+                    "techniques": {
+                        "instructions": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unread | avalable",
+                                "after": "known | read"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1208,
+                "task": "How to Freeze Mashed Potatoes",
+                "step": [
+                    "Use a good mashing variety of potato.",
+                    "Use full fat milk and butter when mashing.",
+                    "Peel the potatoes.",
+                    "Boil to preference.",
+                    "Mash.",
+                    "Allow the mashed potatoes to cool thoroughly."
+                ],
+                "steps_predictions": [
+                    "use_potatoes potato1 mixing_bowl1 pot1",
+                    "use_full_of_milk milk_and_butter mixing_bowl",
+                    "peel potato peeler",
+                    "boil_wicks wick1",
+                    "mix_mixture mixing_bowl canola_oil table",
+                    "cool_potatoes potato1 oven1"
+                ],
+                "goal_state": " ((thawed potato1 mixing_bowl1))",
+                "similar_entity": {
+                    "table": {
+                        "table": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clear",
+                                "after": "cluttered"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find on [[a table]] is [[a tablecloth]]",
+                            "[[desk]] is related to [[table]]",
+                            "[[a table]] is for [[Putting things on]]"
+                        ]
+                    },
+                    "potato": {
+                        "potato": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "dirty | dry",
+                                "after": "cleaner | clean | wet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bag",
+                                "after": "on counter"
+                            },
+                            {
+                                "attribute": "thickness",
+                                "before": "thicker",
+                                "after": "thinner"
+                            },
+                            {
+                                "attribute": "length",
+                                "before": "short",
+                                "after": "long"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "peeled"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "moisture",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in hand",
+                                "after": "on cloth"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "raw",
+                                "after": "cooked"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in pan | on stove",
+                                "after": "in dish | on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "You are likely to find [[a potato]] in [[kitchen]]",
+                            "[[gnocchi]] is made of [[potato]]."
+                        ]
+                    },
+                    "oven": {
+                        "heating element": [
+                            {
+                                "attribute": "color",
+                                "before": "black",
+                                "after": "red"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cold",
+                                "after": "hot | hotter | warm"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off",
+                                "after": "on"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "open",
+                                "after": "closed"
+                            },
+                            {
+                                "attribute": "electric conductivity",
+                                "before": "unused",
+                                "after": "active"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "heating"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "full"
+                            },
+                            {
+                                "attribute": "power",
+                                "before": "off | on",
+                                "after": "on | off"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "full",
+                                "after": "empty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "on hands"
+                            },
+                            {
+                                "attribute": "openness",
+                                "before": "closed",
+                                "after": "open"
+                            },
+                            {
+                                "attribute": "sound",
+                                "before": "making noise",
+                                "after": "quiet"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the oven]] is [[food]]",
+                            "[[baking a cake]] requires [[an oven]]",
+                            "[[an oven]] is used for [[cooking]]",
+                            "[[An oven]] is [[very hot]]",
+                            "[[An oven]] can [[brown chicken]]",
+                            "[[oven]] is related to [[stove]]"
+                        ]
+                    },
+                    "milk and butter": {
+                        "the milk": [
+                            {
+                                "attribute": "location",
+                                "before": "in container | in bottle",
+                                "after": "in blender"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "peeler": {
+                        "peeler": [
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in hand"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "dryness",
+                                "before": "moist",
+                                "after": "drier"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hotter | hot"
+                            },
+                            {
+                                "attribute": "texture",
+                                "before": "soft",
+                                "after": "crunchy"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cupboard",
+                                "after": "on stove"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on stove | in fryer",
+                                "after": "on table | on serving dish"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "was heavy",
+                                "after": "is light"
+                            },
+                            {
+                                "attribute": "taste",
+                                "before": "bland",
+                                "after": "seasoned"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "canola oil": {
+                        "funnel": [
+                            {
+                                "attribute": "location",
+                                "before": "in drawer | in cupboard | on table",
+                                "after": "on bottle | in bottle | over mouth of bottle"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wet"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "mixing bowl": {
+                        "mixing bowl": [
+                            {
+                                "attribute": "location",
+                                "before": "in separate packages | in pantry | in cupboard | separate",
+                                "after": "in bowl | in mixing bowl | mixed"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "holding flour and salt"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "light",
+                                "after": "slightly heavier"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separatee",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter | wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separated",
+                                "after": "blended"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in bowl",
+                                "after": "on baking sheet"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "put in fridge",
+                                "after": "removed from fridge"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "warmer | room temperature",
+                                "after": "cooler | chilled"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "wick": {
+                        "wicks": [
+                            {
+                                "attribute": "cost",
+                                "before": "on sale at store",
+                                "after": "purchased from store"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "on lamp",
+                                "after": "removed"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "dry",
+                                "after": "wet"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "wet",
+                                "after": "dry"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "whole",
+                                "after": "burned"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on counter",
+                                "after": "in lamp"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "heated"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "pot": {
+                        "pot": [
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in the cupboard | in the cabinet",
+                                "after": "on the stovetop | on the stove top"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cool",
+                                "after": "hot"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[-gryde]] is a translation of [[pot]]",
+                            "You are likely to find [[a ficus]] in [[a pot]]",
+                            "[[a pot]] can be used to [[make soup]]"
+                        ]
+                    }
+                }
+            },
+            {
+                "cluster_label": 1208,
+                "task": "How to Use Egg Yolks",
+                "step": [
+                    "Put your yolks in an airtight container to save for later.",
+                    "Freeze your egg yolks with a simple syrup so they don’t crystalize.",
+                    "Cure your egg yolks in salt."
+                ],
+                "steps_predictions": [
+                    "save-yolks container",
+                    "free_eraser npc",
+                    "cure-eraser egg yolks salt"
+                ],
+                "goal_state": " ((in_container egg_yolks container) (served_ingredients container))",
+                "similar_entity": {
+                    "salt": {
+                        "oil/macaroni": [
+                            {
+                                "attribute": "mixture",
+                                "before": "separate",
+                                "after": "mixed into water | mixed in water | mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on stove top"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner | clean",
+                                "after": "dirtier | dirty"
+                            },
+                            {
+                                "attribute": "weight",
+                                "before": "lighter",
+                                "after": "heavier"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "empty | emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in drawer",
+                                "after": "in pan"
+                            },
+                            {
+                                "attribute": "fullness",
+                                "before": "emptier",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "composition",
+                                "before": "separate",
+                                "after": "mixed"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "in containter | in its place | in  its place",
+                                "after": "on macaroni | in pan"
+                            },
+                            {
+                                "attribute": "temperature",
+                                "before": "cooler",
+                                "after": "hotter | warmer"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "cleaner",
+                                "after": "dirtier"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "farther east",
+                                "after": "farther west"
+                            },
+                            {
+                                "attribute": "cleanness",
+                                "before": "clean",
+                                "after": "dirty"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[salt]] is related to [[white]]",
+                            "You are likely to find [[salt]] in [[ocean]]",
+                            "[[salt]] can be used to [[melt ice]]",
+                            "[[Sal-de-cozinha]] is a translation of [[salt]]",
+                            "[[salt]] is [[a spice]]",
+                            "[[salt]] is not [[pepper]]",
+                            "[[Salt]] can [[season food]]"
+                        ]
+                    },
+                    "yolks": {
+                        "yogurt": [
+                            {
+                                "attribute": "location",
+                                "before": "in tub | in container",
+                                "after": "in blender"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "egg": {
+                        "the milk": [
+                            {
+                                "attribute": "location",
+                                "before": "in container | in bottle",
+                                "after": "in blender"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[egg]] is related to [[chicken]]",
+                            "You are likely to find [[an egg]] in [[a grocery store]]",
+                            "[[a chicken egg]] is [[a egg]]"
+                        ]
+                    },
+                    "container": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[box]] is related to [[container]]",
+                            "[[a box]] is [[a container]]",
+                            "[[a container]] is used for [[holding something]]",
+                            "[[a]] can [[is a container]]",
+                            "You are likely to find [[a container]] in [[a pantry]]"
+                        ]
+                    }
+                }
+            }
+        ],
+        "nl_step": "**Task**: How to Thaw Frozen Fish\n\n**Steps in Natural Language**:\n1. Remove the frozen fish from the freezer and place it in a container.\n2. Use the microwave in the kitchen to thaw the fish."
+    }
+]

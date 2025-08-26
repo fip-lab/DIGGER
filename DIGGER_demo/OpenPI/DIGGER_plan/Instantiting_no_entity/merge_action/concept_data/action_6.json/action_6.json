@@ -1,0 +1,12 @@
+{
+    "purchase": [
+        "(:action purchase_eraser\n      :parameters (?user - user ?eraser - eraser ?store - location)\n      :precondition (and (at ?user ?store) (available ?eraser ?store))\n      :effect (and (inventory ?user ?eraser) (not (available ?eraser ?store)))\n)\n```\n\n#### Step 2: Attach the blackboard eraser to a spot in the car\n```pddl\n",
+        "(:action replace_wicks\n      :parameters (?user - user ?wick - wick ?eraser - eraser)\n      :precondition (and (inventory ?user ?wick) (attached ?eraser ?spot) (used ?eraser))\n      :effect (and (not (used ?eraser)) (clean ?eraser) (not (inventory ?user ?wick)))\n)\n```\n\n### Descriptions:\n1. **Purchase a blackboard eraser.**\n   - This action allows the user to buy an eraser from a store.\n   \n2. **Keep the blackboard eraser in the glove box or attach it to a spot on or near the car door for easy access.**\n   - This action attaches the purchased eraser to a designated spot in the car for easy access.\n\n3. **Use the eraser to clean the inner side of the windshield.**\n   - This action uses the attached eraser to clean the inner side of the vehicle's windshield.\n\n4. **Replace after use.**\n   - This action replaces the used wicks of the eraser after cleaning.\n\nThese actions should help achieve the task of making a simple inside windshield cleaner by following the described steps and conditions."
+    ],
+    "attach": [
+        "(:action attach_eraser\n      :parameters (?user - user ?eraser - eraser ?spot - location)\n      :precondition (and (inventory ?user ?eraser) (in_car ?spot))\n      :effect (and (attached ?eraser ?spot) (not (inventory ?user ?eraser)))\n)\n```\n\n#### Step 3: Use the eraser to clean the inner side of the windshield\n```pddl\n"
+    ],
+    "clean": [
+        "(:action clean_inner_side_of_vehicle\n      :parameters (?eraser - eraser ?windshield - part)\n      :precondition (and (attached ?eraser ?spot) (in_car ?windshield) (part_of ?windshield vehicle))\n      :effect (clean ?windshield)\n)\n```\n\n#### Step 4: Replace the eraser wicks after use\n```pddl\n"
+    ]
+}

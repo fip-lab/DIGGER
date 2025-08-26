@@ -1,0 +1,16 @@
+{
+    "remove": [
+        "(:action remove_bung\n    :parameters (?ot - oil_tank ?b - bung ?o - oil)\n    :precondition (and (at ?b ?ot) (attached ?b ?ot) (contains ?ot ?o))\n    :effect (and (not (attached ?b ?ot)) (not (contains ?ot ?o)) (drained ?o))\n)\n\n",
+        "(:action remove_oil_cap\n    :parameters (?oc - oil_cap ?b - bottle ?bk - bike ?o - oil)\n    :precondition (and (at ?oc ?bk) (on ?oc ?bk) (contains ?bk ?o) (drained ?o))\n    :effect (and (not (on ?oc ?bk)) (removed ?oc ?bk) (air_in ?bk))\n)\n\n",
+        "(:action remove_oil_filter\n    :parameters (?of - oil_filter ?b - bottle)\n    :precondition (and (at ?of ?b) (attached ?of ?b))\n    :effect (and (not (attached ?of ?b)) (removed ?of ?b))\n)\n\n"
+    ],
+    "screw": [
+        "(:action screw_bung\n    :parameters (?b - bung)\n    :precondition (and (removed ?b))\n    :effect (and (attached ?b) (not (removed ?b)))\n)\n\n"
+    ],
+    "fill": [
+        "(:action fill_oil\n    :parameters (?ob - oil_bottle ?f - faucet)\n    :precondition (and (contains ?ob) (off ?f))\n    :effect (and (filled ?ob) (on ?f))\n)\n\n"
+    ],
+    "get": [
+        "(:action get_oil\n    :parameters (?p - npc ?o - oil)\n    :precondition (and (at ?p) (available ?o))\n    :effect (and (has ?p ?o))\n)\n```\n\n### Explanation of Actions:\n\n1. **remove_bung**:\n   - **Parameters**: Oil tank (`?ot`), bung (`?b`), oil (`?o`).\n   - **Preconditions**: The bung is attached to the oil tank and the oil tank contains oil.\n   - **Effects**: The bung is no longer attached to the oil tank, and the oil is drained from the tank.\n\n2. **remove_oil_cap**:\n   - **Parameters**: Oil cap (`?oc`), bottle (`?b`), bike (`?bk`), oil (`?o`).\n   - **Preconditions**: The oil cap is on the bike, the bike contains oil, and the oil is drained.\n   - **Effects**: The oil cap is removed from the bike, allowing air to enter the bike.\n\n3. **remove_oil_filter**:\n   - **Parameters**: Oil filter (`?of`), bottle (`?b`).\n   - **Preconditions**: The oil filter is attached to the bottle.\n   - **Effects**: The oil filter is removed from the bottle.\n\n4. **screw_bung**:\n   - **Parameters**: Bung (`?b`).\n   - **Preconditions**: The bung has been removed.\n   - **Effects**: The bung is attached again.\n\n5. **fill_oil**:\n   - **Parameters**: Oil bottle (`?ob`), faucet (`?f`).\n   - **Preconditions**: The oil bottle contains oil, and the faucet is off.\n   - **Effects**: The oil bottle is filled, and the faucet is turned on.\n\n6. **get_oil**:\n   - **Parameters**: NPC (`?p`), oil (`?o`).\n   - **Preconditions**: The NPC is at the location and the oil is available.\n   - **Effects**: The NPC has the oil.\n\nThese actions capture the intent and logic of each step in changing the oil on a Yamaha Virago XV250 based on the provided descriptions and entity states."
+    ]
+}

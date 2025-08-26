@@ -1,0 +1,5 @@
+[
+    "(:action hunt_for_food\n    :parameters (?hunter - agent ?prey - animal ?location - place)\n    :precondition (and\n      (at ?hunter ?location)\n      (at ?prey ?location)\n      (not (captured ?prey))\n    )\n    :effect (and\n      (captured ?prey)\n      (food_available ?hunter)\n    )",
+    "(:action heat ; General action to process resources or obtain necessities\n    :parameters (?agent - agent ?resource - resource ?location - place ?source - source)\n    :precondition (and\n      (at ?agent ?location)\n      (at ?resource ?location)\n      (at ?source ?location)\n      (not (processed ?resource))\n    )\n    :effect (and\n      (processed ?resource)\n      (available ?agent)\n    )",
+    "(:action hunt\n  ; Hunt for resources, test them, and ensure they are safe for consumption\n  :parameters (?person - person ?location - place ?resource - object ?food - food)\n  \n  :precondition (and\n    (at ?person ?location)\n    (not (captured ?resource))\n    (not (tested ?food))\n    (has ?person ?resource)\n  )\n  \n  :effect (and\n    (captured ?resource)\n    (has ?person ?resource)\n    (tested ?food)\n    (if (poisonous ?food) (alert ?person))"
+]

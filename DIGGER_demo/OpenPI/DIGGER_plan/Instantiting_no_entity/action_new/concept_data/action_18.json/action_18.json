@@ -1,0 +1,7 @@
+[
+    "(:action set ; Set up a group or assign roles\n  :parameters (?entity1 - entity ?entity2 - entity ?group - group)\n  :precondition (and (not (in ?entity1 ?group)) (not (in ?entity2 ?group)))\n  :effect (and (in ?entity1 ?group) (in ?entity2 ?group))",
+    "(:action talk_in_private ; find a private place to talk and hold meetings\n  :parameters (?p - player ?npc - non_player_character ?sg - spy_group)\n  :precondition (and (in ?p ?sg) (in ?npc ?sg) (not (has_private_place ?sg)))\n  :effect (and (has_private_place ?sg))",
+    "(:action talk ;  Engage in a conversation or meeting and update the state of the group\n  :parameters (?p - person ?npc - non_player_character ?grp - group)\n  :precondition (and (in ?p ?grp) (in ?npc ?grp) (not (has_private_place ?grp)))\n  :effect (has_private_place ?grp)\n)",
+    "(:action gather ; Gather resources or identify targets for a group\n    :parameters (?p - player ?item - object ?sg - group)\n    :precondition (and (in ?p ?sg) (not (has_item ?sg ?item)))\n    :effect (has_item ?sg ?item))",
+    "(:action spy\n  ; Establish and prepare a spy group, and check that all prerequisites are complete\n  :parameters (?p - player ?sg - spy_group ?gear - object ?equipment - object ?victim - victim ?place - location)\n  :precondition (and \n    (not (group_is_ready ?sg))\n    (in ?p ?sg)\n    (has_private_place ?sg ?place)\n    (has_gear ?sg ?gear)\n    (has_equipment ?sg ?equipment)\n    (has_victim ?sg ?victim))\n  :effect (and\n    (group_is_ready ?sg))"
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "cluster_label": 791,
+        "task": "How to Make Candle Wall Art with Reclaimed Wood",
+        "step": [
+            "Select and prepare your reclaimed wood plank.",
+            "Prepare spoons.",
+            "Attach spoons to wood.",
+            "Mount on the wall and add candles."
+        ],
+        "steps_predictions": [
+            "select_wood_papyrus npc wood_floor",
+            "prepare_spoons mixing_bowl",
+            "attach_spoons_to_wood spoon1 wood1",
+            "mount_candle npc hallway"
+        ],
+        "goal_state": " ((selected_area npc wood_floor))"
+    }
+]

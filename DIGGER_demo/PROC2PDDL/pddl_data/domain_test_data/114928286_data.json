@@ -1,0 +1,66 @@
+[
+    {
+        "task": "be-amazed",
+        "step": [
+            "record_crosses paper npc hallway",
+            "record_tosses paper npc hallway",
+            "divide_crosses paper npc",
+            "calculate_pi paper npc",
+            "be_amazed npc"
+        ],
+        "desc": [
+            "When you\u2019re done, divide the number of crosses by 2 and divide the number of tosses by that. For example, if you threw 300 times, and it crossed 191 times, you would calculate 300/(191/2). And, to your amazement, you will now have an approximation for pi!",
+            "Get into position and THROW YOUR FOOD! Throw just one item at a time. Once it is at rest, observe whether or not it is crossing one of the lines. If it is, put a tick under \"Crosses\" and a tick under \"Tosses.\" If it isn't, just put a tick under \"Tosses.\" When you\u2019ve run out of hot dogs, pick them up and re-use them, making sure to throw from the same position. Repeat this as many times as you like. You should start seeing some interesting results by around 100 to 200 throws. (This doesn't take as long as it sounds.)"
+        ],
+        "action": [
+            "(:action divide_crosses ; divide crosses\n      :parameters (?object - paper ?p - player)\n      :precondition (and (inventory ?p ?object) (crosses_recorded ?object) (not (crosses_divided ?object)))\n      :effect (crosses_divided ?object)\n   )",
+            "(:action be_amazed ; divide tosses\n      :parameters (?p - player)\n      :precondition (and (calculated_pi ?p) (not (amazed ?p)))\n      :effect (amazed ?p)\n   )\n\n)",
+            "(:action record_crosses ; record crosses\n      :parameters (?object - paper ?p - player ?l1 - location)\n      :precondition (and (inventory ?p ?object) (not (crosses_recorded ?object)) (at ?p ?l1) (thrown_food_items ?l1))\n      :effect (crosses_recorded ?object)\n   )",
+            "(:action calculate_pi ; divide tosses\n      :parameters (?object - paper ?p - player)\n      :precondition (and (inventory ?p ?object) (crosses_recorded ?object) (tosses_recorded ?object) (crosses_divided ?object) (not (calculated_pi ?p)))\n      :effect (calculated_pi ?p)\n   )",
+            "(:action record_tosses ; record tosses\n      :parameters (?object - paper ?p - player ?l1 - location)\n      :precondition (and (inventory ?p ?object) (not (tosses_recorded ?object)) (at ?p ?l1) (thrown_food_items ?l1))\n      :effect (tosses_recorded ?object)\n   )"
+        ],
+        "goal_state": "((amazed npc))"
+    },
+    {
+        "task": "get-materials",
+        "step": [
+            "go north npc foyer hallway",
+            "go west npc hallway kitchen",
+            "get items npc kitchen",
+            "go east npc kitchen hallway",
+            "go east npc hallway study",
+            "get pen npc study",
+            "get paper npc study",
+            "thaw_food items npc"
+        ],
+        "desc": [],
+        "action": [
+            "(:action get ; pick up an item and put it in the inventory\n      :parameters (?object - object ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (at ?object ?l1) (is_gettable ?object))\n      :effect (and (inventory ?p ?object) (not (at ?object ?l1)))\n   )",
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action thaw_food ; thaw food items\n      :parameters (?object - items ?p - player)\n      :precondition (and (inventory ?p ?object) (is_food_item ?object) (frozen ?object))\n      :effect (not (frozen ?object))\n   )"
+        ],
+        "goal_state": "((inventory npc paper) (inventory npc pen) (inventory npc items) (not (frozen items)))"
+    },
+    {
+        "task": "throw-hotdogs",
+        "step": [
+            "go east npc kitchen hallway",
+            "thaw_food items npc",
+            "lay_masking_tape masking_tape npc hallway",
+            "throw items npc hallway"
+        ],
+        "desc": [
+            "Select a food item to throw. There are a couple of qualifications. First, it must be long, thin, hard, and straight, like a frozen hot dog, for example. Second, it must be a reasonably stiff item. Third, it should be somewhere between 15 and 20 cm (6-8 inches) long; the experiment can be performed otherwise, but read on, and you will see why this size is optimal. There are lots of other items that fit these criteria including Otter Pops, celery, and churros. (If you simply can't come to grips with throwing perfectly good food, see the Tips section for some additional ideas.)",
+            "Lay down masking tape in parallel strips across the floor as far apart as your projectile is long. The strips should be perpendicular to the direction you will be throwing. If your item is 15-45 cm (6-18 inches) long, lay down about 6-10 strips; lay down fewer if longer and more if shorter."
+        ],
+        "action": [
+            "(:action go ; navigate to an adjacent location \n      :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n      :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n      :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n   )",
+            "(:action record_crosses ; record crosses\n      :parameters (?object - paper ?p - player ?l1 - location)\n      :precondition (and (inventory ?p ?object) (not (crosses_recorded ?object)) (at ?p ?l1) (thrown_food_items ?l1))\n      :effect (crosses_recorded ?object)\n   )",
+            "(:action throw ; throw food items\n      :parameters (?object - items ?p - player ?l1 - location) \n      :precondition (and \n      (at ?p ?l1)\n      (has_throwing_distance ?l1) \n      (is_clear ?l1) \n      (is_food_item ?object) \n      (is_long ?object) \n      (is_thin ?object) \n      (is_hard ?object) \n      (is_straight ?object) \n      (is_stiff ?object) \n      (has_ten_strips ?l1) \n      (not (frozen ?object))\n      )\n      :effect (thrown_food_items ?l1)\n   )",
+            "(:action record_tosses ; record tosses\n      :parameters (?object - paper ?p - player ?l1 - location)\n      :precondition (and (inventory ?p ?object) (not (tosses_recorded ?object)) (at ?p ?l1) (thrown_food_items ?l1))\n      :effect (tosses_recorded ?object)\n   )",
+            "(:action thaw_food ; thaw food items\n      :parameters (?object - items ?p - player)\n      :precondition (and (inventory ?p ?object) (is_food_item ?object) (frozen ?object))\n      :effect (not (frozen ?object))\n   )",
+            "(:action lay_masking_tape ; lay masking tape\n      :parameters (?object - masking_tape ?p - player ?l1 - location) \n      :precondition (and (at ?p ?l1) (inventory ?p ?object) (has_ten_strips ?object))\n      :effect (and (not (has_ten_strips ?object)) (has_ten_strips ?l1))\n   )"
+        ],
+        "goal_state": "((thrown_food_items hallway))"
+    }
+]

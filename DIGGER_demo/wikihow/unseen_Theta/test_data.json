@@ -1,0 +1,1588 @@
+[
+    {
+        "cluster_label": 1561,
+        "task": "How to Make a Fairy Wand",
+        "step": [
+            "Make a natural fairy wand.",
+            "Make an embossed fairy wand.",
+            "Make a simple wand out of several pipe cleaners.",
+            "Make a wand using a glowstick instead of a dowel."
+        ],
+        "steps_predictions": [
+            "make_fairy_wand alice wand1",
+            "make_emobjectinreceptacle agent1 fairy wand1",
+            "make_simple_wand alice wand1",
+            "make_wand alice wand1"
+        ]
+    },
+    {
+        "cluster_label": 1561,
+        "task": "How to Make Fairy Dust",
+        "step": [
+            "Gather the materials you will need.",
+            "Mix the sugar and food coloring in a bowl.",
+            "Pour the colored sugar onto a pan and put it into an oven preheated to 350 degrees.",
+            "Pull the sugar out of the oven and let cool to room temperature.",
+            "Put the sugar in a container, such as a sugar or salt shaker.",
+            "Shake the \"fairy dust\" onto your kids favorite food."
+        ],
+        "steps_predictions": [
+            "gather_materials you will need",
+            "mix-ingredients sugar mixing_bowl",
+            "pour-sugar sugar mixing_bowl canola_oil table",
+            "pull_sugar_out_of_oven npc",
+            "put_sugar_in_container sugar1 container1",
+            "shake-fairy-dust fairy-dish"
+        ],
+        "goal_state": " ((in_container fairy-dish) (served_sugar mixing_bowl))",
+        "similar_entity": {
+            "fairy-dish": {
+                "main dish": [
+                    {
+                        "attribute": "temperature",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "accompaniment",
+                        "before": "unaccompanied",
+                        "after": "accompanied"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on table"
+                    }
+                ]
+            },
+            "canola oil": {
+                "funnel": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer | in cupboard | on table",
+                        "after": "on bottle | in bottle | over mouth of bottle"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ]
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ]
+            },
+            "need": {
+                "items needed": [
+                    {
+                        "attribute": "location",
+                        "before": "in places",
+                        "after": "ready for use"
+                    }
+                ]
+            },
+            "table": {
+                "table": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clear",
+                        "after": "cluttered"
+                    }
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ]
+            },
+            "will": {
+                "cheese": [
+                    {
+                        "attribute": "location",
+                        "before": "to the side",
+                        "after": "in the pot"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    }
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2404,
+        "task": "How to Make a Candy Wreath",
+        "step": [
+            "Hot glue the candy canes together to form heart shapes.",
+            "Arrange the candy cane hearts to form a circle, with the points facing inwards.",
+            "Glue the candy cane hearts together where they touch.",
+            "Make a smaller wreath in the same fashion using 12 mini candy canes.",
+            "Glue the mini wreath on top of the larger wreath, right in the middle.",
+            "Glue a round peppermint to the center of the wreath.",
+            "Spray the wreath with clear, glossy sealant to make it last longer.",
+            "Tie a ribbon to the top of the wreath to make a hanger.",
+            "Hang the wreath up when you are done."
+        ],
+        "steps_predictions": [
+            "gather_canes canes",
+            "create-shape-rectangular candy_canes",
+            "glue-cocoa-filled marshmallow-cream",
+            "make_wreath wreath1",
+            "glue_wreath wreath1",
+            "glue_peppermint_to_center wreath",
+            "salt_wreath wreath1",
+            "make_hanger npc wreath",
+            "hang_wreath wreath1"
+        ],
+        "goal_state": " ((completed wreath1) (joined_ends ends1))",
+        "similar_entity": {
+            "canes": {
+                "sticks": [
+                    {
+                        "attribute": "organization",
+                        "before": "scattered",
+                        "after": "bundled"
+                    },
+                    {
+                        "attribute": "availability",
+                        "before": "all over place",
+                        "after": "collected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "bunched up",
+                        "after": "in formation"
+                    },
+                    {
+                        "attribute": "organization",
+                        "before": "bundled",
+                        "after": "stacked"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "stand-alone",
+                        "after": "fortified"
+                    },
+                    {
+                        "attribute": "tightness",
+                        "before": "untied",
+                        "after": "tired with bark"
+                    }
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "candy canes": {
+                "wailmer": [
+                    {
+                        "attribute": "action",
+                        "before": "unused",
+                        "after": "used"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained"
+                    },
+                    {
+                        "attribute": "going",
+                        "before": "still",
+                        "after": "going"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "untrained",
+                        "after": "trained"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved | still wailmer",
+                        "after": "evolved | evolving"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "unattained",
+                        "after": "now attained"
+                    },
+                    {
+                        "attribute": "items",
+                        "before": "uncopied",
+                        "after": "copied"
+                    },
+                    {
+                        "attribute": "full",
+                        "before": "hungry",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "change",
+                        "before": "unevolved",
+                        "after": "evolved"
+                    },
+                    {
+                        "attribute": "action",
+                        "before": "without rare candies",
+                        "after": "now holder of rare candy"
+                    }
+                ]
+            },
+            "wreath": {
+                "wreath": [
+                    {
+                        "attribute": "status",
+                        "before": "in progress",
+                        "after": "completed"
+                    }
+                ]
+            },
+            "marshmallow-cream": {
+                "the marshmallow cream": [
+                    {
+                        "attribute": "location",
+                        "before": "in continer",
+                        "after": "in bowl"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "by itself | solid",
+                        "after": "blended with marshmellow cream | blended with cream cheese | blended"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2404,
+        "task": "How to Hang a Wreath on a Door",
+        "step": [
+            "Open the door.",
+            "Add a protective pad to the magnet.",
+            "Place the magnets on the door.",
+            "Hang your wreath."
+        ],
+        "steps_predictions": [
+            "open_door user1 door1",
+            "add_protection_pad_to_magnet user1 velveeta",
+            "place-mixture magnets on-door",
+            "hang_wreath w1"
+        ],
+        "goal_state": " ((on_door w1))",
+        "similar_entity": {
+            "magnets": {
+                "carob fruit balls": [
+                    {
+                        "attribute": "location",
+                        "before": "in hand | on counter",
+                        "after": "in freezer | on plate"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "room temperature | room temp",
+                        "after": "cold | freezing"
+                    },
+                    {
+                        "attribute": "readiness",
+                        "before": "unprepared",
+                        "after": "prepared"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in freezer",
+                        "after": "on table"
+                    },
+                    {
+                        "attribute": "hardness",
+                        "before": "soft",
+                        "after": "firm"
+                    }
+                ]
+            },
+            "w": {
+                "bowl": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavy",
+                        "after": "light"
+                    }
+                ]
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ]
+            },
+            "on-door": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ]
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ]
+            },
+            "door": {
+                "fridge door": [
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 2404,
+        "task": "How to Make a Wreath",
+        "step": [
+            "Try a candy wreath for a tasty treat.",
+            "Create a deco mesh wreath using a wire wreath frame as a base.",
+            "Use non-floral items such as pinecones or succulents.",
+            "Wrap ribbon or burlap around a Styrofoam wreath for a unique base."
+        ],
+        "steps_predictions": [
+            "treat-wreath wreath",
+            "create_wreath wreath1",
+            "use_as_shelter npc",
+            "wrap-wreath wreath1"
+        ],
+        "goal_state": "make_wreath wreath1 use_as_shelter npc",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "wreath": {
+                "wreath": [
+                    {
+                        "attribute": "status",
+                        "before": "in progress",
+                        "after": "completed"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1030,
+        "task": "How to Make Syrup",
+        "step": [
+            "Flavor a basic syrup with vanilla.",
+            "Prepare ginger-flavored syrup.",
+            "Make a fruit syrup.",
+            "Use edible flowers to create a sweet, fragrant syrup.",
+            "Tap authentic maple syrup from nearby maple trees.",
+            "Try mixing up some coffee-flavored syrup.",
+            "Prepare chocolate syrup.",
+            "Use tea leaves to create a syrup for your iced tea.",
+            "Make orgeat syrup.",
+            "Serve homemade spiced cider syrup."
+        ],
+        "steps_predictions": [
+            "flavorful_sauce alice",
+            "prepare_sauce ginger_flavored syrup1",
+            "make_fruit_sauce canola_oil blender",
+            "create_sauce npc",
+            "treat_mixture npc",
+            "mix_ingredients coffee_flavored syrup blender",
+            "prepare_chocolate_sauce marshmallow",
+            "create_sauce tea_leaves blender",
+            "make_orgeat_sauce alice",
+            "cook npc kitchen"
+        ],
+        "goal_state": " ((in_container npc honeydew1) (served_rug canola_oil blender))",
+        "similar_entity": {
+            "canola oil": {
+                "funnel": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer | in cupboard | on table",
+                        "after": "on bottle | in bottle | over mouth of bottle"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ]
+            },
+            "marshmallow": {
+                "the marshmallow cream": [
+                    {
+                        "attribute": "location",
+                        "before": "in continer",
+                        "after": "in bowl"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "by itself | solid",
+                        "after": "blended with marshmellow cream | blended with cream cheese | blended"
+                    }
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "ginger flavored": {
+                "hot sauce": [
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in bowl"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "mild",
+                        "after": "spicy"
+                    }
+                ]
+            },
+            "syrup": {
+                "ingredients": [
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed in pan"
+                    },
+                    {
+                        "attribute": "mixture",
+                        "before": "less stirred | less cooked",
+                        "after": "more stirred | more cooked"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "hotter"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | ready to be served",
+                        "after": "served"
+                    },
+                    {
+                        "attribute": "completion",
+                        "before": "unready",
+                        "after": "ready"
+                    }
+                ]
+            },
+            "tea leaves": {
+                "leaves": [
+                    {
+                        "attribute": "location",
+                        "before": "elsewhere",
+                        "after": "on rucksaks"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "elsewhere",
+                        "after": "on helmet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "on webbing"
+                    }
+                ]
+            },
+            "coffee flavored": {
+                "hot sauce": [
+                    {
+                        "attribute": "location",
+                        "before": "in fridge",
+                        "after": "in bowl"
+                    },
+                    {
+                        "attribute": "taste",
+                        "before": "mild",
+                        "after": "spicy"
+                    }
+                ]
+            },
+            "blender": {
+                "the blender": [
+                    {
+                        "attribute": "volume",
+                        "before": "less full | lighter",
+                        "after": "fuller | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "soaked in pineapple | covered in pineapple"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty | smelling like nothing",
+                        "after": "full of pineapple | smelling like pineapple"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "less full | lighter",
+                        "after": "fuller | heavier"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "isolated",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "stationary",
+                        "after": "spinning"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller | heavier",
+                        "after": "less full | lighter"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    }
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ]
+            },
+            "kitchen": {
+                "kitchen counter": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "messy"
+                    }
+                ]
+            }
+        }
+    },
+        {
+            "cluster_label": 1753,
+            "task": "How to Lend Money to Family",
+            "step": [
+                "Determine whether the family member asking for money is responsible enough to return it.",
+                "Make sure that you have the money to spare before lending money to family.",
+                "Discuss your expectations regarding a family loan before coming to a final decision.",
+                "Establish a payment plan that meets the budget of both you and your family member.",
+                "Write up a family loan contract with all the details of the loan and make it official by having you both sign it."
+            ],
+            "steps_predictions": [
+                "determine_objectinreceptacle agent1 creditcard1",
+                "make_lending_money_to_family credit card",
+                "listen_to_family_loans npc basement",
+                "set_payment_planner npc basement",
+                "sign_family_loans npc basement"
+            ],
+            "goal_state": " ((objectAtLocation npc basement))",
+            "similar_entity": {
+                "basement": {
+                    "drop cloth": [
+                        {
+                            "attribute": "availability",
+                            "before": "absent",
+                            "after": "present"
+                        },
+                        {
+                            "attribute": "coverage",
+                            "before": "uncovered",
+                            "after": "covered"
+                        },
+                        {
+                            "attribute": "location",
+                            "before": "present",
+                            "after": "removed"
+                        }
+                    ]
+                },
+                "credit": {
+                    "money": [
+                        {
+                            "attribute": "location",
+                            "before": "in purse",
+                            "after": "in cash register"
+                        },
+                        {
+                            "attribute": "value",
+                            "before": "more",
+                            "after": "less"
+                        },
+                        {
+                            "attribute": "location",
+                            "before": "in possession",
+                            "after": "in center's possesion"
+                        },
+                        {
+                            "attribute": "amount",
+                            "before": "greater",
+                            "after": "less"
+                        },
+                        {
+                            "attribute": "location",
+                            "before": "in purse",
+                            "after": "in cash register"
+                        },
+                        {
+                            "attribute": "amount",
+                            "before": "more",
+                            "after": "less"
+                        }
+                    ]
+                },
+                "card": {
+                    "game": [
+                        {
+                            "attribute": "knowledge",
+                            "before": "unplayed",
+                            "after": "played"
+                        }
+                    ]
+                },
+                "agent": {
+                    "game character": [
+                        {
+                            "attribute": "location",
+                            "before": "further out",
+                            "after": "in"
+                        },
+                        {
+                            "attribute": "location",
+                            "before": "out",
+                            "after": "hidden"
+                        },
+                        {
+                            "attribute": "focus",
+                            "before": "pulling out pistol",
+                            "after": "investigating"
+                        },
+                        {
+                            "attribute": "focus",
+                            "before": "investigating routes",
+                            "after": "waiting"
+                        },
+                        {
+                            "attribute": "location",
+                            "before": "in hiding spot",
+                            "after": "now at bomb"
+                        },
+                        {
+                            "attribute": "focus",
+                            "before": "hiding",
+                            "after": "defusing"
+                        }
+                    ]
+                },
+                "npc": {
+                    "helmet": [
+                        {
+                            "attribute": "decoration",
+                            "before": "bare | plain",
+                            "after": "camouflaged"
+                        },
+                        {
+                            "attribute": "visibility",
+                            "before": "visible",
+                            "after": "invisible"
+                        }
+                    ]
+                },
+                "creditcard": {
+                    "bank account": [
+                        {
+                            "attribute": "fullness",
+                            "before": "more full",
+                            "after": "more empty"
+                        },
+                        {
+                            "attribute": "location",
+                            "before": "in customer's hand",
+                            "after": "in cashier's hand"
+                        }
+                    ]
+                }
+            }
+        },
+    {
+        "cluster_label": 2719,
+        "task": "How to Teach Sequencing to Preschool Children",
+        "step": [
+            "Use sequence words to describe the arrangement of items.",
+            "Ask your child to sequence toys and items according to your directions.",
+            "Put pictures out of order for a tougher exercise.",
+            "Use family photos to teach sequencing."
+        ],
+        "steps_predictions": [
+            "use_sequential_word npc",
+            "equip-child-with-knowledge you",
+            "put_pictures_out_of_order npc",
+            "teach_family_solution npc"
+        ],
+        "goal_state": " ((teach_sequential_word npc))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 801,
+        "task": "How to Start Rock Climbing",
+        "step": [
+            "Search online for outdoor rock climbing classes in your area.",
+            "Hire a personal guide if you don't like group classes.",
+            "Practice with a partner in areas with minimal drops as your skills progress."
+        ],
+        "steps_predictions": [
+            "search_through_social_media rock_cluster_classes",
+            "hire_guideline npc ss",
+            "practice_skills you skills"
+        ],
+        "goal_state": " ((knowledge you can rock_cluster))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "skills": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ]
+            },
+            "ss": {
+                "main dish": [
+                    {
+                        "attribute": "temperature",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "accompaniment",
+                        "before": "unaccompanied",
+                        "after": "accompanied"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on table"
+                    }
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1414,
+        "task": "How to Decorate Your Nails",
+        "step": [
+            "Apply rhinestones or gems.",
+            "Add glitter to your nails.",
+            "Use nail stickers for an alternative manicure."
+        ],
+        "steps_predictions": [
+            "apply-rhinestones rhinestone gems",
+            "add-glitter-to-nail fairy-moss",
+            "use_as_alternative_manicure npc"
+        ],
+        "goal_state": " ((completed_manicure npc))",
+        "similar_entity": {
+            "gems": {
+                "gems": [
+                    {
+                        "attribute": "availability",
+                        "before": "unacquired",
+                        "after": "acquired"
+                    }
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "fairy-moss": {
+                "moss": [
+                    {
+                        "attribute": "cost",
+                        "before": "for sale at nursery",
+                        "after": "purchased from nursery"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter"
+                    },
+                    {
+                        "attribute": "position",
+                        "before": "outside of bowl",
+                        "after": "inside of bowl"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "mess",
+                        "after": "pruned"
+                    }
+                ]
+            },
+            "rhinestone": {
+                "stone": [
+                    {
+                        "attribute": "choice",
+                        "before": "unchosen | unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 1414,
+        "task": "How to Make Your Nail Polish Matte",
+        "step": [
+            "Paint your nails with regular nail polish.",
+            "Pour some water into a pan.",
+            "Place your hand above the steam."
+        ],
+        "steps_predictions": [
+            "paint_nail_polish npc",
+            "pour-water water",
+            "place-handbrakes-in-oven stove-knob velveeta"
+        ],
+        "goal_state": " ((polished_nail_polish npc) (flattened nails))",
+        "similar_entity": {
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "stove-knob": {
+                "stove knob": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "in the off position",
+                        "after": "in the on position"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "medium-low",
+                        "after": "low"
+                    }
+                ]
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 553,
+        "task": "How to Prevent Night Sweats",
+        "step": [
+            "Discuss your symptoms with your doctor.",
+            "Identify the cause of the night sweats.",
+            "Get the necessary treatment from your doctor."
+        ],
+        "steps_predictions": [
+            "listen_to_doctor you doctor",
+            "identify_cause npc",
+            "get_medicare npc"
+        ],
+        "goal_state": " ((not (in anish npc)))",
+        "similar_entity": {
+            "doctor": {
+                "tv": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in"
+                    },
+                    {
+                        "attribute": "attachment",
+                        "before": "unattached",
+                        "after": "connected"
+                    }
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 553,
+        "task": "How to Prevent Body Acne",
+        "step": [
+            "Talk to your doctor.",
+            "Consider the side effects of medications you are taking.",
+            "Ask about medications that may help prevent body acne.",
+            "Discuss other possible causes of your acne."
+        ],
+        "steps_predictions": [
+            "talk_to_doctor you doctor",
+            "listen_to_medicare npc",
+            "get_medicare npc",
+            "listen_to_acquire_knowledge you acne"
+        ],
+        "goal_state": " ((not (acne npc)))",
+        "similar_entity": {
+            "doctor": {
+                "tv": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "unplugged",
+                        "after": "plugged in"
+                    },
+                    {
+                        "attribute": "attachment",
+                        "before": "unattached",
+                        "after": "connected"
+                    }
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ]
+            },
+            "acne": {
+                "oil": [
+                    {
+                        "attribute": "location",
+                        "before": "in pantry | in its place",
+                        "after": "in water | in boiling water"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in its place",
+                        "after": "in pan"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 504,
+        "task": "How to Eat a Persimmon",
+        "step": [
+            "Let your astringent persimmon ripen completely.",
+            "Speed up ripening.",
+            "Eat chilled, with a spoon.",
+            "Use shortcuts to eat unripe persimmons."
+        ],
+        "steps_predictions": [
+            "pick_peppers npc",
+            "speed_up_ripening npc",
+            "eat_chocolate spoon",
+            "eat_sliplargerbears persimmons"
+        ],
+        "goal_state": " ((not (hungry npc)))",
+        "similar_entity": {
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ]
+            },
+            "persimmons": {
+                "potato": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty | dry",
+                        "after": "cleaner | clean | wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bag",
+                        "after": "on counter"
+                    },
+                    {
+                        "attribute": "thickness",
+                        "before": "thicker",
+                        "after": "thinner"
+                    },
+                    {
+                        "attribute": "length",
+                        "before": "short",
+                        "after": "long"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "peeled"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "on cloth"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "raw",
+                        "after": "cooked"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pan | on stove",
+                        "after": "in dish | on table"
+                    }
+                ]
+            },
+            "spoon": {
+                "mixing spoon": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "outside of pitcher",
+                        "after": "inside pitcher"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ]
+            }
+        }
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "boil": [
+        "(:action boil_water\n    :parameters (?m - macaroni ?w - water)\n    :precondition (and (at ?m raw) (at ?w cold))\n    :effect (and (at ?m boiling) (at ?w hot) (not (at ?w cold)))\n)\n\n"
+    ],
+    "add": [
+        "(:action add_oil\n    :parameters (?m - macaroni ?p - pan)\n    :precondition (and (at ?m cooked) (at ?p empty))\n    :effect (and (at ?p with_oil) (at ?m in_pan) (not (at ?p empty)))\n)\n\n",
+        "(:action add_chill_sauce\n    :parameters (?s - sauce ?v - vinegar_and_cheese ?p - pan)\n    :precondition (and (at ?s in_fridge) (at ?v in_bottle) (at ?p with_oil))\n    :effect (and (at ?s in_pan) (at ?v in_pan) (not (at ?s in_fridge)) (not (at ?v in_bottle)))\n)\n\n"
+    ],
+    "cook": [
+        "(:action cook\n    :parameters (?npc - player ?k - kitchen)\n    :precondition (at ?npc ?k)\n    :effect (and (cooking ?npc ?k) (kitchen messy))\n)\n\n"
+    ],
+    "boiled": [
+        "(:action boiled_water\n    :parameters (?m - macaroni ?w - water)\n    :precondition (and (at ?m boiling) (at ?w hot))\n    :effect (and (at ?m cooked) (not (at ?m boiling)))\n)\n\n"
+    ],
+    "stirfry": [
+        "(:action stirfry\n    :parameters (?npc - player ?k - kitchen)\n    :precondition (and (cooking ?npc ?k) (at ?npc ?k))\n    :effect (and (at ?npc cooked_stirfry) (not (cooking ?npc ?k)))\n)\n```\n\n### Explanation of Actions:\n1. **boil_water**: This action boils the macaroni in hot water.\n2. **boiled_water**: This action indicates that the macaroni is now boiled and no longer in the boiling state.\n3. **add_oil**: This action adds oil to a pan and tosses the cooked macaroni into it.\n4. **add_chill_sauce**: This action adds sauce and vinegar to the pan containing the macaroni and oil.\n5. **cook**: This action represents the NPC cooking in the kitchen, making the kitchen messy.\n6. **stirfry**: This action represents the NPC stir-frying in the kitchen, resulting in a cooked stirfry dish.\n\nThese actions should capture the intent and logic of each step provided in the task. If there are any specific details or corrections needed, please let me know!"
+    ]
+}

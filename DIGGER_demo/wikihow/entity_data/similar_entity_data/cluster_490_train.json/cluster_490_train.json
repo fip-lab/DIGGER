@@ -1,0 +1,2527 @@
+[
+    {
+        "cluster_label": 490,
+        "task": "How to Solar Bleach Cloth Diapers",
+        "step": [
+            "Wash the diapers.",
+            "Lay the diapers out flat, with the stains facing up.",
+            "Alternatively, line-dry the diapers or drape them over a drying rack.",
+            "Choose a sunny day to achieve the best, most potent results.",
+            "Spray lemon juice onto the worst stains.",
+            "Bring the cloth diapers in after a few hours pass.",
+            "Repeat the process for stubborn stains that do not come out after the first round of bleaching.",
+            "Throw the diapers into the dryer for a few minutes."
+        ],
+        "steps_predictions": [
+            "wash_papyrus npc",
+            "lay_add_stick npc",
+            "line-dry-papyrus npc",
+            "choose_amazing npc",
+            "slipluster_lemon_juice velveeta",
+            "bring-closest-to-bed cloth_diapers",
+            "blend_with_cloth npc",
+            "throw-in-dryer diapers"
+        ],
+        "goal_state": " ((on_rack npc cloth_diapers))",
+        "similar_entity": {
+            "diapers": {
+                "trash bags": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on floor | laying around",
+                        "after": "in waste baskets | in waste baskts | in trashcan"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in waste baskets",
+                        "after": "in trash bag"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "flat",
+                        "after": "rounder"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[diapers]] can be [[recycled]]"
+                ]
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "cloth diapers": {
+                "sponge": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in bucket"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "wet | dirty | dirtier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Cotton",
+        "step": [
+            "Set your washer to the highest heat possible.",
+            "Add detergent and bleach if your machine has a bleach dispenser.",
+            "Add water first if your machine doesn\u2019t have a bleach dispenser.",
+            "Add bleach 5 minutes into the cycle.",
+            "Add the clothing to the washer.",
+            "Allow the washer to run normally.",
+            "Finished."
+        ],
+        "steps_predictions": [
+            "set_washer_to_highest_heat washer1 heat1",
+            "add_dew_and_blend_machine machine",
+            "add-water water",
+            "add_blend_to_cycle alice",
+            "add-clothing clothing",
+            "run_washer_with_machine washer1 bike1 oil1",
+            "finish-wreath wreath"
+        ],
+        "goal_state": " ((on_rack clothing))",
+        "similar_entity": {
+            "heat": {
+                "heating element": [
+                    {
+                        "attribute": "color",
+                        "before": "black",
+                        "after": "red"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot | hotter | warm"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "open",
+                        "after": "closed"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "unused",
+                        "after": "active"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cooler",
+                        "after": "heating"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off | on",
+                        "after": "on | off"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in drawer",
+                        "after": "on hands"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "sound",
+                        "before": "making noise",
+                        "after": "quiet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[fire]] is related to [[heat]]",
+                    "[[heat]] is a kind of [[energy]]",
+                    "*Something you find in [[the oven]] is [[heat]]",
+                    "[[the sun]] is for [[heat]]",
+                    "The effect of [[lighting a fire]] is [[heat]]",
+                    "[[heat]] is not [[cold]]",
+                    "[[heat]] is the opposite of [[cold]]"
+                ]
+            },
+            "bike": {
+                "bike": [
+                    {
+                        "attribute": "location",
+                        "before": "beside person's body | absent",
+                        "after": "now between person's legs | present"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unstable",
+                        "after": "stable"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "unbalanced",
+                        "after": "balanced"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "crooked",
+                        "after": "straight"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "still",
+                        "after": "moving"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "stationary",
+                        "after": "in motion"
+                    },
+                    {
+                        "attribute": "stability",
+                        "before": "in motion | moving",
+                        "after": "stopped | stationary"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[riding a bike]] requires [[a bike]]",
+                    "[[a bike]] has [[two wheels]]"
+                ]
+            },
+            "wreath": {
+                "wreath": [
+                    {
+                        "attribute": "status",
+                        "before": "in progress",
+                        "after": "completed"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "machine": {
+                "washing machine": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full with polar fleece"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "off",
+                        "after": "on"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You can use [[a machine]] to [[work]]",
+                    "[[Client\u00e9lisme]] is a translation of [[machine]]",
+                    "[[A refrigerator]] is [[a machine]]",
+                    "[[machine]] is related to [[mechanical]]"
+                ]
+            },
+            "oil": {
+                "oil": [
+                    {
+                        "attribute": "location",
+                        "before": "in pantry | in its place",
+                        "after": "in water | in boiling water"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle | in its place",
+                        "after": "in pan"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[oil]] is related to [[liquid]]",
+                    "You are likely to find [[oil]] in [[the ground]]"
+                ]
+            },
+            "clothing": {
+                "clothing": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "*Something you find in [[the closet]] is [[clothing]]",
+                    "[[dress]] is related to [[clothing]]",
+                    "[[a person]] wants [[clothing]]",
+                    "[[Clothing]] is [[made from fabric]]",
+                    "[[Shoes]] are [[clothing]]",
+                    "[[fabric]] is for [[clothing]]"
+                ]
+            },
+            "washer": {
+                "washing machine": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full with polar fleece"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "off",
+                        "after": "on"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach a Shirt",
+        "step": [
+            "Bring all necessary materials to your work area.",
+            "Lay the shirt flat on the floor or another surface.",
+            "Slide the rags or cardboard into the shirt to protect the back from being bleached.",
+            "Choose the design that you want to bleach into the shirt.",
+            "Apply the design to the shirt.",
+            "Pour bleach into a glass container or measuring cup.",
+            "Dip a folded-up rag or sponge into the bleach.",
+            "Blot the shirt all around the design.",
+            "Wait for the bleach to take effect.",
+            "Peel the stencil or design off of the shirt.",
+            "Remove the rags or cardboard and rinse the shirt in cold water.",
+            "Dry the shirt accordingly."
+        ],
+        "steps_predictions": [
+            "bring-materials work_area",
+            "lay_on_floor shirt1",
+            "slide-and-burn you rags",
+            "choose_design npc work_station",
+            "apply_designer npc work_station shirt",
+            "pour_blend_into_glass_container alice",
+            "dip_gap_in_blend user1 cloth1 sponge1",
+            "blot_shirt npc work_station",
+            "wait_for_blend user1 bleach1 bottle1",
+            "peel_strips npc",
+            "clean_tape npc",
+            "dry_shirt npc"
+        ],
+        "goal_state": " ((selected npc work_station))",
+        "similar_entity": {
+            "work station": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "you": {
+                "you": [
+                    {
+                        "attribute": "focus",
+                        "before": "focused on making bracelet",
+                        "after": "admiring bracelet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[me]] is not [[you]]",
+                    "[[body]] is related to [[you]]"
+                ]
+            },
+            "work area": {
+                "area": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "cloth": {
+                "sponge": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in bucket"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "wet | dirty | dirtier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You can use [[cloth]] to [[clean]]",
+                    "[[napkin]] is related to [[cloth]]",
+                    "You are likely to find [[a cloth]] in [[a fabric store]]",
+                    "[[A linen]] is [[a cloth]]",
+                    "[[a cloth]] can [[become wet]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "sponge": {
+                "sponge": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in bucket"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "wet | dirty | dirtier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[cake]] is related to [[sponge]]"
+                ]
+            },
+            "bottle": {
+                "bottle": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a bottle]] is for [[storing liquids]]",
+                    "You are likely to find [[water]] in [[a bottle]]",
+                    "[[Garrafa]] is a translation of [[bottle]]",
+                    "[[a bottle]] is a type of [[container]]",
+                    "[[bottle]] can be made of [[plastic]]"
+                ]
+            },
+            "bleach": {
+                "detergent": [
+                    {
+                        "attribute": "location",
+                        "before": "in bottle",
+                        "after": "in drain"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "rags": {
+                "sponge": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in bucket"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "wet | dirty | dirtier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "shirt": {
+                "clothing": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a shirt]] in [[closet]]",
+                    "[[a shirt]] is [[an item of clothing]]",
+                    "[[A shirt]] is [[worn on your upper body]]",
+                    "[[a shirt]] is for [[wearing]]",
+                    "[[cotton]] is related to [[shirt]]",
+                    null
+                ]
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Use Bleach when Doing Your Laundry",
+        "step": [
+            "Fill a bucket or sink with 1 gallon (3.8 L) of hot water.",
+            "Mix 1 tablespoon (15 mL) of oxygen or chlorine bleach into the water.",
+            "Add your usual washing detergent to treat stained items.",
+            "Soak your laundry for up to 1 hour.",
+            "Rinse the items under cold water."
+        ],
+        "steps_predictions": [
+            "fill-bucket water",
+            "mix_ingredients alice",
+            "add-dish washing_machine_treated items",
+            "soak_laundry npc",
+            "clean_items items water"
+        ],
+        "goal_state": " ((clean_items items) (in_laundry items))",
+        "similar_entity": {
+            "washing machine treated": {
+                "washing machine": [
+                    {
+                        "attribute": "fullness",
+                        "before": "empty",
+                        "after": "full with polar fleece"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "off",
+                        "after": "on"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "items": {
+                "straw items": [
+                    {
+                        "attribute": "location",
+                        "before": "around house",
+                        "after": "in waste basket"
+                    },
+                    {
+                        "attribute": "messiness",
+                        "before": "disorganized",
+                        "after": "organized"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Linen",
+        "step": [
+            "Let the sun do the work.",
+            "Use non-bleach alternatives in your laundry.",
+            "Heat and soak on the stove with salt and baking soda."
+        ],
+        "steps_predictions": [
+            "let_sun_set npc beach",
+            "use_as_cleaning_machine npc",
+            "add_salt_and_ingredients canola_oil stove_knob velveeta"
+        ],
+        "goal_state": " ((not (bleed_lens npc)))",
+        "similar_entity": {
+            "beach": {
+                "outside area": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created | made"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[sand]] is related to [[beach]]",
+                    "*Something you find at [[beach]] is [[driftwood]]",
+                    "[[Praias]] is a translation of [[beach]]"
+                ]
+            },
+            "canola oil": {
+                "funnel": [
+                    {
+                        "attribute": "location",
+                        "before": "in drawer | in cupboard | on table",
+                        "after": "on bottle | in bottle | over mouth of bottle"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "stove knob": {
+                "stove knob": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | cold",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "electric conductivity",
+                        "before": "turned off",
+                        "after": "turned on"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "in the off position",
+                        "after": "in the on position"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "medium-low",
+                        "after": "low"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Your Hair",
+        "step": [
+            "Start with unprocessed hair.",
+            "Pre-condition your hair with a deep conditioner.",
+            "Juice several lemons.",
+            "Dilute the lemon juice.",
+            "Pour the solution into a spray bottle.",
+            "Spray your hair with lemon juice solution.",
+            "Sit outside in bright sunshine.",
+            "Wash your hair."
+        ],
+        "steps_predictions": [
+            "start_with_unprocessed_hair npc",
+            "check_conditioner my_hair conditioner",
+            "juice-lemon water faucet",
+            "dilute_lemon_juice pitcher",
+            "pour_soap_into_fridge user1 bottle1",
+            "spray_with_lemon_juice alice",
+            "sliplargerbend npc",
+            "wash_wicks npc"
+        ],
+        "goal_state": " ((clean_wicks npc) (flattened wicks))",
+        "similar_entity": {
+            "faucet": {
+                "faucet": [
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a faucet]] in [[a bathroom]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "conditioner": {
+                "freezer": [
+                    {
+                        "attribute": "volume",
+                        "before": "less full | slightly less full",
+                        "after": "fuller | more full"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[Conditioner]] can [[condition that hair]]"
+                ]
+            },
+            "bottle": {
+                "bottle": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a bottle]] is for [[storing liquids]]",
+                    "You are likely to find [[water]] in [[a bottle]]",
+                    "[[Garrafa]] is a translation of [[bottle]]",
+                    "[[a bottle]] is a type of [[container]]",
+                    "[[bottle]] can be made of [[plastic]]"
+                ]
+            },
+            "pitcher": {
+                "pitcher": [
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "juicy | dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter | light",
+                        "after": "heavier | heavy"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier",
+                        "after": "lighter"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirtier"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A pitcher]] can [[throw a fast ball]]",
+                    "[[a pitcher]] is [[a container]]",
+                    "[[A pitcher]] is part of [[a baseball team]]"
+                ]
+            },
+            "my hair": {
+                "pedals": [
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "in air"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in air | on ground",
+                        "after": "on pedal"
+                    },
+                    {
+                        "attribute": "placement",
+                        "before": "on ground",
+                        "after": "now off ground"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on ground",
+                        "after": "on pedal"
+                    },
+                    {
+                        "attribute": "motion",
+                        "before": "still",
+                        "after": "moving"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on bike",
+                        "after": "on ground"
+                    },
+                    {
+                        "attribute": "placement",
+                        "before": "on pedal",
+                        "after": "now on ground"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ]
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Lighten Clothing with Bleach",
+        "step": [
+            "Read the tag to determine if the fabric is safe to bleach.",
+            "Spread the garment on an old towel in a well-ventilated space.",
+            "Fill a spray bottle with bleach and water.",
+            "Spritz the garment until it's as lightened as you like.",
+            "Machine wash the clothes according to the care label."
+        ],
+        "steps_predictions": [
+            "read_tag npc",
+            "gather_garments npc",
+            "fill_spice_bottle user1 bottle1",
+            "spritz_with_garnish npc",
+            "wash_clothes npc"
+        ],
+        "goal_state": " ((inventory npc clothing))",
+        "similar_entity": {
+            "bottle": {
+                "bottle": [
+                    {
+                        "attribute": "cleanness",
+                        "before": "dirty",
+                        "after": "clean"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | dry",
+                        "after": "dirty | wet"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "heavy"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open | on counter | on table",
+                        "after": "closed with lid | on bottle"
+                    },
+                    {
+                        "attribute": "clarity",
+                        "before": "blank",
+                        "after": "written on"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "refrigerator"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warm | room temperature",
+                        "after": "cold"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a bottle]] is for [[storing liquids]]",
+                    "You are likely to find [[water]] in [[a bottle]]",
+                    "[[Garrafa]] is a translation of [[bottle]]",
+                    "[[a bottle]] is a type of [[container]]",
+                    "[[bottle]] can be made of [[plastic]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "user": {
+                "players": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "knowledge",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "away from wall",
+                        "after": "against wall"
+                    },
+                    {
+                        "attribute": "division",
+                        "before": "together",
+                        "after": "separated"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Towels",
+        "step": [
+            "Never mix bleach with other cleaning products.",
+            "Wear rubber gloves to protect your hands when handling bleach.",
+            "Mix bleach solutions outdoors or in a well-ventilated room.",
+            "Choose a bleach product recommended for use in the laundry."
+        ],
+        "steps_predictions": [
+            "mix_blend_with_cleaning_products alice",
+            "wear_rubber_gens velveeta",
+            "mix_soap alice",
+            "choose_blend_product alice"
+        ],
+        "goal_state": " ((on_rack alice))",
+        "similar_entity": {
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Neutralize Bleach",
+        "step": [
+            "Determine what neutralizing agent you need.",
+            "Bleach your wood.",
+            "Rinse the wood.",
+            "Mix your neutralizer.",
+            "Apply your neutralizing agent."
+        ],
+        "steps_predictions": [
+            "determine_agent neutralizing agent",
+            "blend_wood wood",
+            "clean_wood fir1 log1",
+            "mix_neutralizer neutralizer mixing_bowl",
+            "apply_neutralizing agent apply_agent agent"
+        ],
+        "goal_state": " ((not (bleed_wicks)) (clean_wood fir1))",
+        "similar_entity": {
+            "wood": {
+                "bare wood": [
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "tacky"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "absent",
+                        "after": "present"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "color",
+                        "before": "brown",
+                        "after": "white"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "smooth",
+                        "after": "sticky"
+                    },
+                    {
+                        "attribute": "moisture",
+                        "before": "dry",
+                        "after": "wet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[wood]] is related to [[tree]]",
+                    "You can use [[wood]] to [[fence in a property]]",
+                    "[[Wood]] can [[burn]]",
+                    "[[wood]] is [[a material]]",
+                    "[[Wood]] can be [[carved]]",
+                    "You are likely to find [[wood]] in [[a tree]]"
+                ]
+            },
+            "neutralizer": {
+                "the blender": [
+                    {
+                        "attribute": "volume",
+                        "before": "less full | lighter",
+                        "after": "fuller | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry | clean",
+                        "after": "soaked in pineapple | covered in pineapple"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty | smelling like nothing",
+                        "after": "full of pineapple | smelling like pineapple"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "less full | lighter",
+                        "after": "fuller | heavier"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "isolated",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "off",
+                        "after": "on"
+                    },
+                    {
+                        "attribute": "movement",
+                        "before": "stationary",
+                        "after": "spinning"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller | heavier",
+                        "after": "less full | lighter"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "full",
+                        "after": "empty"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "log": {
+                "tails": [
+                    {
+                        "attribute": "orientation",
+                        "before": "bare",
+                        "after": "adorned | beaded"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "open",
+                        "after": "closed"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "apply agent": {
+                "spray cleaner": [
+                    {
+                        "attribute": "location",
+                        "before": "inside bottle",
+                        "after": "on windows"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "neutralizing": {
+                "bomb": [
+                    {
+                        "attribute": "skill",
+                        "before": "absent | unplanted",
+                        "after": "planted"
+                    },
+                    {
+                        "attribute": "skill",
+                        "before": "active | ticking",
+                        "after": "deactivated | defused | being defused"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "mixing bowl": {
+                "mixing bowl": [
+                    {
+                        "attribute": "location",
+                        "before": "in separate packages | in pantry | in cupboard | separate",
+                        "after": "in bowl | in mixing bowl | mixed"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "holding flour and salt"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "light",
+                        "after": "slightly heavier"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separatee",
+                        "after": "mixed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "wetter | wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separated",
+                        "after": "blended"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bowl",
+                        "after": "on baking sheet"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "put in fridge",
+                        "after": "removed from fridge"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer | room temperature",
+                        "after": "cooler | chilled"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "larger",
+                        "after": "smaller"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "agent": {
+                "game character": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[agent]] is related to [[secret]]"
+                ]
+            },
+            "fir": {
+                "fir": [
+                    {
+                        "attribute": "location",
+                        "before": "in garden",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "cost",
+                        "before": "owned by garden center",
+                        "after": "purchased from garden center"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "at nursery",
+                        "after": "in possession"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "heavier | lighter",
+                        "after": "lighter | heavier"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty"
+                    },
+                    {
+                        "attribute": "weight",
+                        "before": "lighter",
+                        "after": "heavier"
+                    },
+                    {
+                        "attribute": "container",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hand",
+                        "after": "in container"
+                    },
+                    {
+                        "attribute": "watered",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "contentment",
+                        "before": "thirsty",
+                        "after": "fed"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "dry",
+                        "after": "watered"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "fuller",
+                        "after": "emptier"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on plant",
+                        "after": "in new containers"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Skin with Peroxide",
+        "step": [
+            "Grate 2 tbsp (30 g) of mild bar soap into a plastic container.",
+            "Add 2 US tbsp (30 mL) of 3% hydrogen peroxide to the container.",
+            "Use a plastic spoon or wooden spatula to create a paste.",
+            "Apply the paste to your dark skin patch using the spoon or spatula.",
+            "Allow the paste to sit for 10 minutes.",
+            "Rinse off the paste using warm water.",
+            "Use the treatment as often as once a week until your skin lightens."
+        ],
+        "steps_predictions": [
+            "garnish-soap bar soap1 container1",
+            "add_hydrogen_peroxide container1",
+            "create_paste_and_spapyrus velveeta",
+            "apply_ingredients_to_masking agent1 razor1",
+            "sliplargerbeads alice",
+            "clean_paste_with_water alice",
+            "lighten_skin npc"
+        ],
+        "goal_state": " ((clean_masking npc))",
+        "similar_entity": {
+            "soap": {
+                "soap bottle": [
+                    {
+                        "attribute": "fullness",
+                        "before": "more full | heavier",
+                        "after": "less full | lighter"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bottle",
+                        "after": "in bucket"
+                    },
+                    {
+                        "attribute": "mixture",
+                        "before": "separate",
+                        "after": "mixed together"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in bucket",
+                        "after": "on window"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[soap]] is related to [[cleaning]]",
+                    "[[a soap]] can be used to [[clean something]]",
+                    "*Something you find at [[the supermarket]] is [[soap]]"
+                ]
+            },
+            "razor": {
+                "razor blade": [
+                    {
+                        "attribute": "location",
+                        "before": "in box",
+                        "after": "in hand"
+                    },
+                    {
+                        "attribute": "contact",
+                        "before": "in contact with box",
+                        "after": "in contact with window"
+                    },
+                    {
+                        "attribute": "sharpness",
+                        "before": "sharper",
+                        "after": "more dull"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean",
+                        "after": "dirty | dirtier"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A razor]] is used to [[shave with]]"
+                ]
+            },
+            "container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[box]] is related to [[container]]",
+                    "[[a box]] is [[a container]]",
+                    "[[a container]] is used for [[holding something]]",
+                    "[[a]] can [[is a container]]",
+                    "You are likely to find [[a container]] in [[a pantry]]"
+                ]
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "agent": {
+                "game character": [
+                    {
+                        "attribute": "location",
+                        "before": "further out",
+                        "after": "in"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "out",
+                        "after": "hidden"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "pulling out pistol",
+                        "after": "investigating"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "investigating routes",
+                        "after": "waiting"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in hiding spot",
+                        "after": "now at bomb"
+                    },
+                    {
+                        "attribute": "focus",
+                        "before": "hiding",
+                        "after": "defusing"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[agent]] is related to [[secret]]"
+                ]
+            },
+            "bar": {
+                "chocolate": [
+                    {
+                        "attribute": "cost",
+                        "before": "in store",
+                        "after": "purchased for use"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "solid | lumpy",
+                        "after": "liquid | smooth | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "colder | room temperature | cooler",
+                        "after": "warmer | warm | hotter"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "packaged",
+                        "after": "out of package"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "in pot",
+                        "after": "in molds"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "liquid",
+                        "after": "frozen"
+                    },
+                    {
+                        "attribute": "hardness",
+                        "before": "liquid",
+                        "after": "solid | hardened"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "warmer",
+                        "after": "colder"
+                    },
+                    {
+                        "attribute": "ease of release",
+                        "before": "hard to release from molds",
+                        "after": "easy to release from molds"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "in molds | in mold",
+                        "after": "on plate | out of molds"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "liquid",
+                        "after": "heart shaped"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "in pile | in molds",
+                        "after": "in box"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[bar]] is related to [[place]]",
+                    "[[a bar]] is [[a place]]",
+                    "*Something you find at [[a bar]] is [[beer]]"
+                ]
+            },
+            "velveeta": {
+                "velveeta": [
+                    {
+                        "attribute": "granularity",
+                        "before": "whole | a block",
+                        "after": "cubed | cut into cubes | cut into pieces"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in the fridge | in package | in front of me",
+                        "after": "on the counter | in bowl | on the cutting board | to the side of me"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "room temperature"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "large | whole",
+                        "after": "small | cut up"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "open"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on the cutting board",
+                        "after": "in the sauce pan"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool | room temperature",
+                        "after": "hot | warming"
+                    },
+                    {
+                        "attribute": "granularity",
+                        "before": "solid",
+                        "after": "liquid | melted"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "hot"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "thick",
+                        "after": "runny"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Bleach Paper",
+        "step": [
+            "Prepare an acetone wash in a glass casserole pan.",
+            "Put on a pair of rubber gloves or prepare a set of metal tongs.",
+            "Hold the ink-stained paper under the acetone for 3 minutes.",
+            "Place the washed paper on a bed of paper towels.",
+            "Let the paper completely air dry."
+        ],
+        "steps_predictions": [
+            "prepare_acetone_wicks alice",
+            "put_gens_in_machine npc",
+            "hold_ink_stained_paper npc",
+            "wash_paper npc work_station",
+            "let_paper_wicks_open wick1"
+        ],
+        "goal_state": " ((clean wick1) (transparent npc))",
+        "similar_entity": {
+            "work station": {
+                "kids room": [
+                    {
+                        "attribute": "availability",
+                        "before": "unmade | non-existent",
+                        "after": "created"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "alice": {
+                "character": [
+                    {
+                        "attribute": "step",
+                        "before": "unselected",
+                        "after": "selected"
+                    },
+                    {
+                        "attribute": "choice",
+                        "before": "nameless",
+                        "after": "named"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "wick": {
+                "wicks": [
+                    {
+                        "attribute": "cost",
+                        "before": "on sale at store",
+                        "after": "purchased from store"
+                    },
+                    {
+                        "attribute": "orientation",
+                        "before": "on lamp",
+                        "after": "removed"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "dry",
+                        "after": "wet"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "wet",
+                        "after": "dry"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "whole",
+                        "after": "burned"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter",
+                        "after": "in lamp"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "cool",
+                        "after": "heated"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    },
+    {
+        "cluster_label": 490,
+        "task": "How to Do a Bleach Bath",
+        "step": [
+            "Fill a bathtub with 40 US gal (150 L) of water.",
+            "Mix in \u20444\u2013\u20442  c (59\u2013118 ml) of chlorine bleach.",
+            "Soak in the tub for up to 10 minutes.",
+            "Rinse off in warm water.",
+            "Moisturize your body with lotion after your bath.",
+            "Take bleach baths up to 3 times a week."
+        ],
+        "steps_predictions": [
+            "fill bathtub water",
+            " ((in_container chlorine_blend) (sealed container))",
+            "soak_wicks npc",
+            "clean_wicks npc",
+            "Moisturize_body bath",
+            "blend_bath npc bathroom"
+        ],
+        "goal_state": " ((in_bath npc) (sealed container))",
+        "similar_entity": {
+            "bathroom": {
+                "sink": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full of macaroni"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter top",
+                        "after": "under faucet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | cleaner",
+                        "after": "dirty | dirtier"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "drier",
+                        "after": "wetter"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a toilet]] in [[a bathroom]]",
+                    "[[a bathroom]] is [[room]]",
+                    "[[a bathroom]] is used for [[taking a bath]]"
+                ]
+            },
+            "bathtub": {
+                "the towels": [
+                    {
+                        "attribute": "size",
+                        "before": "larger | wider",
+                        "after": "smaller | narrower"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "straight | flat",
+                        "after": "folded | now folded"
+                    },
+                    {
+                        "attribute": "power",
+                        "before": "relaxed",
+                        "after": "being used"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "holding towel"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "thinner | longer",
+                        "after": "thicker | shorter"
+                    },
+                    {
+                        "attribute": "height",
+                        "before": "low",
+                        "after": "higher"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "laundry room | outside | out",
+                        "after": "in linen closet | in closet"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in closet",
+                        "after": "on rack | on towel rack"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "folded",
+                        "after": "hanging | unfolded"
+                    },
+                    {
+                        "attribute": "openness",
+                        "before": "closed",
+                        "after": "opened"
+                    },
+                    {
+                        "attribute": "emptiness",
+                        "before": "empty",
+                        "after": "full"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[A bathtub]] is for [[bathing]]",
+                    "Something you need to do before you [[have a bath]] is [[a bathtub]]"
+                ]
+            },
+            "chlorine blend)": {
+                "sherbet": [
+                    {
+                        "attribute": "location",
+                        "before": "in blender",
+                        "after": "in baking dish"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "outside of freezer",
+                        "after": "inside freezer"
+                    },
+                    {
+                        "attribute": "temperature",
+                        "before": "room temperature",
+                        "after": "frozen"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in baking dish",
+                        "after": "on plate"
+                    },
+                    {
+                        "attribute": "size",
+                        "before": "whole",
+                        "after": "in pieces | in slices"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "uniform",
+                        "after": "cut"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "container))": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "npc": {
+                "helmet": [
+                    {
+                        "attribute": "decoration",
+                        "before": "bare | plain",
+                        "after": "camouflaged"
+                    },
+                    {
+                        "attribute": "visibility",
+                        "before": "visible",
+                        "after": "invisible"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "(sealed": {
+                "money": [
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register"
+                    },
+                    {
+                        "attribute": "value",
+                        "before": "more",
+                        "after": "less"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in possession",
+                        "after": "in center's possesion"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "greater",
+                        "after": "less"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in purse",
+                        "after": "in cash register"
+                    },
+                    {
+                        "attribute": "amount",
+                        "before": "more",
+                        "after": "less"
+                    }
+                ],
+                "concept_knowledge": []
+            },
+            "bath": {
+                "sink": [
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "full of macaroni"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on counter top",
+                        "after": "under faucet"
+                    },
+                    {
+                        "attribute": "cleanness",
+                        "before": "clean | cleaner",
+                        "after": "dirty | dirtier"
+                    },
+                    {
+                        "attribute": "wetness",
+                        "before": "drier",
+                        "after": "wetter"
+                    }
+                ],
+                "concept_knowledge": [
+                    "[[a bath]] is for [[relaxation]]",
+                    "You are likely to find [[a bath]] in [[your house]]",
+                    "[[a cat]] doesn't want [[a bath]]"
+                ]
+            },
+            "water": {
+                "boiling pot": [
+                    {
+                        "attribute": "temperature",
+                        "before": "cold",
+                        "after": "hote"
+                    },
+                    {
+                        "attribute": "fullness",
+                        "before": "emptier",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "in pipes",
+                        "after": "out of faucet"
+                    }
+                ],
+                "concept_knowledge": [
+                    "You are likely to find [[a fish]] in [[water]].",
+                    "[[river]] is related to [[water]]",
+                    "[[rain]] is [[water]]",
+                    "You can use [[water]] to [[drink]]",
+                    "[[Water]] is [[liquid]]"
+                ]
+            },
+            "((in container": {
+                "container": [
+                    {
+                        "attribute": "location",
+                        "before": "in cabinet",
+                        "after": "on countertop"
+                    },
+                    {
+                        "attribute": "volume",
+                        "before": "empty",
+                        "after": "fuller"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on countertop",
+                        "after": "on table"
+                    }
+                ],
+                "concept_knowledge": []
+            }
+        }
+    }
+]

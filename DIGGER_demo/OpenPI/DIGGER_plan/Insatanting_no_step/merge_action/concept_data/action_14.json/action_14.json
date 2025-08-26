@@ -1,0 +1,10 @@
+{
+    "choose": [
+        "(:action choose_vs_duel\n       :parameters (?p - player)\n       :precondition (and (option deselected) (population one_player))\n       :effect (and (option selected) (population two_player))\n   )\n   ```\n\n2. **Choose Goku as Player One and Player Two**\n\n   ```lisp\n   ",
+        "(:action choose_goku\n       :parameters (?p1 - player ?p2 - player)\n       :precondition (and (knowledge ?p1 unselected) (knowledge ?p2 unselected))\n       :effect (and (knowledge ?p1 selected) (knowledge ?p2 selected))\n   )\n   ```\n\n3. **Choose Mountain Road as the Stage**\n\n   ```lisp\n   ",
+        "(:action choose_stage\n       :parameters (?s - stage)\n       :precondition (location unspecified)\n       :effect (location specified)\n   )\n   ```\n\n4. **Move to Opposite Ends of the Street Against the Wall**\n\n   ```lisp\n   "
+    ],
+    "move": [
+        "(:action move_to_wall\n       :parameters (?p1 - player ?p2 - player)\n       :precondition (and (location ?p1 away_from_wall) (location ?p2 away_from_wall) (division together))\n       :effect (and (location ?p1 against_wall) (location ?p2 against_wall) (division separated))\n   )\n   ```\n\nThese actions capture the process of setting up a duel in Dragonball Z Budokai Tenkaichi 2, selecting the characters, stage, and positioning the players appropriately. Each action considers the necessary preconditions and the resulting effects to achieve the task's goals."
+    ]
+}

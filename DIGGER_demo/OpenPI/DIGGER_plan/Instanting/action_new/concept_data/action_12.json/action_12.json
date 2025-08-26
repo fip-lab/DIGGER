@@ -1,0 +1,6 @@
+[
+    "(:action obtain ; Obtain a resource or replace a component\n  :parameters (?agent - agent ?resource - entity ?location - place)\n  :precondition (and (at ?agent ?location) \n                     (or (available ?resource) \n                         (and (requires_replacement ?resource) (condition_met ?resource))))\n  :effect (and (or (inventory ?agent ?resource) \n                   (replaced ?resource))",
+    "(:action pour ;  Perform an action involving pouring and updating the state of objects\n:parameters (?p - player ?item1 - object ?item2 - object ?location - location)\n:precondition (and (at ?p ?location) (inventory ?p ?item1) (at ?item2 ?location))\n:effect (and (not (inventory ?p ?item1))",
+    "(:action clean ;  Perform an action involving cleaning and updating the state of objects\n:parameters (?p - player ?item1 - object ?item2 - object ?location - location)\n:precondition (and (at ?p ?location) (inventory ?p ?item1) (on ?item2 ?location))\n:effect (and (not (on ?item2 ?location))",
+    "(:action dissolve ; Dissolve a substance from an object\n  :parameters (?agent - entity ?object - object ?substance - dissolvent)\n  :precondition (and (at ?agent ?object) (on ?substance ?object))\n  :effect (and (dissolved ?object) (not (on ?substance ?object))"
+]

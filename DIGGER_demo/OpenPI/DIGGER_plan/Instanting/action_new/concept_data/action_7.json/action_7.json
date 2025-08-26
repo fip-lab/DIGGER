@@ -1,0 +1,9 @@
+[
+    "(:action acquire\n  :parameters (?agent - entity ?location - place ?resource - object)\n  :precondition (and (at ?agent ?location) (available ?resource))\n  :effect (and (inventory ?agent ?resource) (not (available ?resource))",
+    "(:action move ; Move an object to a location\n    :parameters (?agent - agent ?location - location ?item - object)\n    :precondition (and (at ?agent ?location) (available ?item))\n    :effect (and (at ?item ?location) (not (available ?item))",
+    "(:action clean ; Clean a location and update its status\n    :parameters (?agent - agent ?location - place)\n    :precondition (and (at ?agent ?location) (dirty ?location))\n    :effect (and (not (dirty ?location))",
+    "(:action finish ; Complete a task and update its status to finished\n :parameters (?entity - entity ?task - task)\n :precondition (and (in_progress ?task))\n :effect (and (completed ?task) (not (in_progress ?task))",
+    "(:action be_amazed\n    :parameters (?npc - npc)\n    :precondition (and (completed ?task))\n    :effect (amazed ?npc)\n)",
+    "(:action be_sad\n    :parameters (?npc - npc)\n    :precondition (and (failed ?task))\n    :effect (sad ?npc)\n)",
+    "(:action be_ready\n    :parameters (?npc - npc)\n    :precondition (and (prepared ?task))\n    :effect (ready ?npc)\n)"
+]

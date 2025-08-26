@@ -1,0 +1,47 @@
+[
+    {
+        "task": "get_materials",
+        "step": [
+            "get knife npc home",
+            "get linen_sheets npc home",
+            "get rolling_pin npc home",
+            "get water npc home",
+            "get wooden_boards npc home"
+        ],
+        "desc": []
+    },
+    {
+        "task": "make_papyrus",
+        "step": [
+            "cut_stalks npc knife papyrus_plant papyrus_stalks",
+            "cut_strips npc papyrus_strips papyrus_stalks knife",
+            "soak_strips npc water papyrus_strips",
+            "roll_strips npc rolling_pin papyrus_strips",
+            "weave_strips npc papyrus_strips",
+            "bundle_strips npc papyrus_strips wooden_boards linen_sheets",
+            "cut_sheet npc papyrus_strips knife papyrus"
+        ],
+        "desc": [
+            "Cut the stalks. About 12 inches (30 cm) of papyrus plant will make a large piece of paper that will be nearly 24 inches (61 cm) in length. Cut off as many stalks as you will need to make the amount of paper you want. The cuts must be diagonally made. Then, cut the tips of the papyrus. You will not use the tips, which are the thinner, grass-like end of the plant.",
+            "Cut up the inner portion into strips. Use the knife you used to cut off the outer portion to cut the inner layers of the papyrus plant (pith) into thin strips. Hold the plant in your hand and cut towards you vertically. Make sure that all of the strips have the same size and thickness.",
+            "Cut up the inner portion into strips. Use the knife you used to cut off the outer portion to cut the inner layers of the papyrus plant (pith) into thin strips. Hold the plant in your hand and cut towards you vertically. Make sure that all of the strips have the same size and thickness.",
+            "Roll the excess water and sugar out of the plant. Grab a rolling pin and use it to roll the strips flat. The rolling pin should be squeezing the water out of them and flattening the strips into sheets.",
+            "Weave the strips together. Lay the strips on the cloth. Get a dry sheet of linen cloth or felt. Then, begin to weave them together. You want to create 2 layers of strips, with the top layer strips being perpendicular to the bottom layer strips. It should resemble a placemat. The strips should slightly overlap one another to prevent the papyrus from falling apart later.",
+            "Place the bundle between 2 wooden boards. Make sure that the wooden boards are somewhat heavy. The pressure is necessary to flatten the papyrus strips together. Once the strips have been placed between the boards, press them together. Lay the sandwiched papyrus sheet on a flat surface and allow the wooden boards to flatten the sheet using gravity.",
+            "Cut the paper. The sheet may be larger than you want when it is finished. Use a razor, scissors, or paper cutter to cut the papyrus into smaller sheets. Measure the sizes you are cutting so you will have multiple sheets of the same size."
+        ]
+    },
+    {
+        "task": "get_papyrus_plant",
+        "step": [
+            "travel npc home river",
+            "search_location npc river",
+            "pluck_river_reeds npc papyrus_plant river",
+            "travel npc river home"
+        ],
+        "desc": [
+            "Obtain a papyrus plant. Papyrus paper is created from the Cyperus papyrus plant, which is a light but strong reed. You can buy them online or in nurseries. A nursery that specializes in papyrus would be your best bet, however.",
+            "You can also make the paper out of wide grasses, like river reeds."
+        ]
+    }
+]

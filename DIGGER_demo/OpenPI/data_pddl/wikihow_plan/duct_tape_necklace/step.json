@@ -1,0 +1,213 @@
+{
+    "goal": "Make a Duct Tape Necklace",
+    "steps": [
+        "Take one roll of duct tape and make a piece about a little bigger than your head.",
+        "Measure it around your head, and cut it off the roll.",
+        "Fold it halfway through the middle, like shown.",
+        "Fold the other half so there is no sticky part showing.",
+        "Tape the ends together.",
+        "And you are done!"
+    ],
+    "topics": "Hobbies and Crafts",
+    "image_urls": [
+        "https://www.wikihow.com/video/b/b9/Make a Duct Tape Necklace Step 1.360p.mp4",
+        "https://www.wikihow.com/video/8/8b/Make a Duct Tape Necklace Step 2.360p.mp4",
+        "https://www.wikihow.com/video/7/7f/Make a Duct Tape Necklace Step 3.360p.mp4",
+        "https://www.wikihow.com/video/9/96/Make a Duct Tape Necklace Step 4.360p.mp4",
+        "https://www.wikihow.com/video/2/21/Make a Duct Tape Necklace Step 5.360p.mp4",
+        "https://www.wikihow.com/video/a/a2/Make a Duct Tape Necklace Step 6.360p.mp4"
+    ],
+    "states": [
+        {
+            "entity": "duct tape",
+            "answers": {
+                "step1": [
+                    {
+                        "attribute": "length",
+                        "before": "rolled",
+                        "after": "unrolled | in pieces",
+                        "saliency": 0.6085662525879917,
+                        "attribute_annotation": "length | size"
+                    },
+                    {
+                        "attribute": "location",
+                        "before": "on roll",
+                        "after": "in pieces",
+                        "saliency": 0.5762163561076604,
+                        "attribute_annotation": "location"
+                    }
+                ],
+                "step2": [
+                    {
+                        "attribute": "length",
+                        "before": "longer | rolled | whole",
+                        "after": "shorter | extended | cut | in pieces",
+                        "saliency": 0.5309265010351967,
+                        "attribute_annotation": "length | size"
+                    }
+                ],
+                "step3": [
+                    {
+                        "attribute": "shape",
+                        "before": "elongated",
+                        "after": "folded",
+                        "saliency": 0.4829192546583851,
+                        "attribute_annotation": "shape | orientation"
+                    }
+                ],
+                "step4": [
+                    {
+                        "attribute": "length",
+                        "before": "larger",
+                        "after": "smalle",
+                        "saliency": 0.6085662525879917,
+                        "attribute_annotation": "length | size"
+                    },
+                    {
+                        "attribute": "shape",
+                        "before": "elongated | long",
+                        "after": "folded",
+                        "saliency": 0.4052795031055901,
+                        "attribute_annotation": "shape | orientation"
+                    },
+                    {
+                        "attribute": "texture",
+                        "before": "sticky",
+                        "after": "smooth",
+                        "saliency": 0.3559265010351967,
+                        "attribute_annotation": "texture"
+                    }
+                ],
+                "step5": [
+                    {
+                        "attribute": "length",
+                        "before": "shorter",
+                        "after": "longer",
+                        "saliency": 0.6862060041407868,
+                        "attribute_annotation": "length | size"
+                    },
+                    {
+                        "attribute": "composition",
+                        "before": "separate pieces",
+                        "after": "one piece",
+                        "saliency": 0.3894064872325742,
+                        "attribute_annotation": "composition"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "tape | duct tape",
+                "duct tape"
+            ]
+        },
+        {
+            "entity": "duct table",
+            "answers": {
+                "step1": [],
+                "step2": [
+                    {
+                        "attribute": "knowledge",
+                        "before": "unmeasured",
+                        "after": "measured",
+                        "saliency": 0.592391304347826,
+                        "attribute_annotation": "knowledge"
+                    }
+                ],
+                "step3": [],
+                "step4": [],
+                "step5": [],
+                "step6": []
+            },
+            "entity_annotation": [
+                "duct table"
+            ]
+        },
+        {
+            "entity": "ends",
+            "answers": {
+                "step1": [],
+                "step2": [],
+                "step3": [],
+                "step4": [],
+                "step5": [
+                    {
+                        "attribute": "organization",
+                        "before": "seperate",
+                        "after": "touching",
+                        "saliency": 0.4353002070393375,
+                        "attribute_annotation": "organization"
+                    },
+                    {
+                        "attribute": "form",
+                        "before": "bare",
+                        "after": "joined together",
+                        "saliency": 0.4209368530020704,
+                        "attribute_annotation": "form"
+                    }
+                ],
+                "step6": []
+            },
+            "entity_annotation": [
+                "ends",
+                "tape ends"
+            ]
+        }
+    ],
+    "clusters": {
+        "ends": {
+            "entity_cluster": [
+                "tape ends",
+                "ends"
+            ],
+            "attribute_cluster": {
+                "organization": [
+                    "organization"
+                ],
+                "form": [
+                    "form"
+                ]
+            }
+        },
+        "duct tape": {
+            "entity_cluster": [
+                "tape",
+                "duct tape"
+            ],
+            "attribute_cluster": {
+                "length": [
+                    "length",
+                    "size"
+                ],
+                "shape": [
+                    "shape"
+                ],
+                "orientation": [
+                    "orientation"
+                ],
+                "appearance": [
+                    "appearance"
+                ],
+                "texture": [
+                    "texture"
+                ],
+                "composition": [
+                    "composition"
+                ],
+                "location": [
+                    "location"
+                ]
+            }
+        },
+        "duct table": {
+            "entity_cluster": [
+                "duct table"
+            ],
+            "attribute_cluster": {
+                "knowledge": [
+                    "knowledge"
+                ]
+            }
+        }
+    }
+}

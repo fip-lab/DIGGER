@@ -1,0 +1,17 @@
+{
+    "create": [
+        "(:action create_small_studio ; create a small studio for macro photography\n      :parameters (?p - person ?s - studio)\n      :precondition (and (not (has_studio ?p ?s)))\n      :effect (and (has_studio ?p ?s))\n)\n\n"
+    ],
+    "diffuse": [
+        "(:action diffuse_light ; diffuse light for the small subject in the studio\n      :parameters (?p - person ?l - light)\n      :precondition (and (has_studio ?p ?s) (has_reflector ?p ?r) (not (has_diffused_light ?p ?l)))\n      :effect (and (has_diffused_light ?p ?l))\n)\n\n"
+    ],
+    "start": [
+        "(:action start_experimenting ; start experimenting with macro photography\n      :parameters (?p - person ?e - experiment)\n      :precondition (and (has_studio ?p ?s) (has_reflector ?p ?r) (has_closeup_lens ?p ?l) (has_diffused_light ?p ?l))\n      :effect (and (is_experimenting ?p ?e))\n)\n```\n\nThese actions follow the guidelines and structure provided in the example and are tailored to the specific steps and descriptions of the task \"Learn Photography by Shooting Macro\"."
+    ],
+    "have": [
+        "(:action have_appropriate_reflector ; ensure the appropriate sized reflectors are available\n      :parameters (?p - person ?r - reflector)\n      :precondition (and (has_studio ?p ?s) (not (has_reflector ?p ?r)))\n      :effect (and (has_reflector ?p ?r))\n)\n\n"
+    ],
+    "closeup": [
+        "(:action closeup_lens ; ensure a closeup lens is available for macro photography\n      :parameters (?p - person ?l - lens)\n      :precondition (and (has_studio ?p ?s) (not (has_closeup_lens ?p ?l)))\n      :effect (and (has_closeup_lens ?p ?l))\n)\n\n"
+    ]
+}

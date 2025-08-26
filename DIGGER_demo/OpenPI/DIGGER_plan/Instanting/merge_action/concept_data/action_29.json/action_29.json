@@ -1,0 +1,16 @@
+{
+    "build": [
+        "(:action build_ingredients\n    :parameters (?m - mixture)\n    :precondition (and (separate ?m))\n    :effect (mixed ?m)\n)\n\n",
+        "(:action melt_chocolate\n    :parameters (?c - chocolate ?m - microwave)\n    :precondition (and (solid ?c) (at ?c ?m) (power ?m off))\n    :effect (and (liquid ?c) (power ?m on))\n)\n\n"
+    ],
+    "pour": [
+        "(:action pour_chocolate\n    :parameters (?c - chocolate ?b - mixing_bowl)\n    :precondition (and (liquid ?c) (empty ?b))\n    :effect (and (in_molds ?c) (not (empty ?b)))\n)\n\n",
+        "(:action box_chocolates\n    :parameters (?c - chocolate)\n    :precondition (and (solid ?c) (heart_shaped ?c))\n    :effect (in_box ?c)\n)\n```\n\nThese actions capture the steps and descriptions provided for making chocolate hearts for Valentine's Day. Each action includes the relevant parameters, preconditions, and effects based on the entity states before and after each action."
+    ],
+    "freeze": [
+        "(:action freeze_chocolate\n    :parameters (?c - chocolate)\n    :precondition (and (in_molds ?c) (liquid ?c))\n    :effect (and (frozen ?c) (solid ?c))\n)\n\n"
+    ],
+    "cut": [
+        "(:action cut_heart_shape\n    :parameters (?v - velveeta)\n    :precondition (and (cubed ?v) (on_cutting_board ?v))\n    :effect (heart_shaped ?v)\n)\n\n"
+    ]
+}

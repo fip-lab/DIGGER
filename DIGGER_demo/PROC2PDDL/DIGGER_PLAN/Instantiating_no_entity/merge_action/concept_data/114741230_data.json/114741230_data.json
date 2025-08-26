@@ -1,0 +1,20 @@
+{
+    "initiate": [
+        "(:action initiate_new_member\n    :parameters (?npc - person ?ss - secret_society)\n    :precondition (and\n                    (not (member-initiated ?npc ?ss))\n                    (closest-friend ?npc)\n                    (not (society-formed ?ss)))\n    :effect (and\n              (member-initiated ?npc ?ss)\n              (society-formed ?ss))\n  )\n\n;; Action 2: Set Meeting Location\n"
+    ],
+    "set": [
+        "(:action set_meeting_location\n    :parameters (?npc - person ?ss - secret_society)\n    :precondition (and\n                    (society-formed ?ss)\n                    (not (meeting-location-set ?ss)))\n    :effect (meeting-location-set ?ss)\n  )\n\n;; Action 3: Set Dress Code\n",
+        "(:action set_dress_code\n    :parameters (?npc - person ?ss - secret_society)\n    :precondition (and\n                    (society-formed ?ss)\n                    (not (dress-code-set ?ss)))\n    :effect (dress-code-set ?ss)\n  )\n\n;; Action 4: Teach New Member Secret\n"
+    ],
+    "create": [
+        "(:action create_new_member\n    :parameters (?npc - person ?ss - person)\n    :precondition (and\n                    (member-initiated ?npc)\n                    (member-initiated ?ss)\n                    (not (member-created ?npc)))\n    :effect (member-created ?npc)\n  )\n\n  ;; Action 4: Set dress code\n  ",
+        "(:action create_name\n    :parameters (?npc - person ?ss - secret_society)\n    :precondition (and\n                    (society-formed ?ss)\n                    (not (name-created ?ss)))\n    :effect (name-created ?ss)\n  )\n\n;; Action 6: Create Secret\n",
+        "(:action create_secret\n    :parameters (?npc - person ?ss - secret_society)\n    :precondition (and\n                    (society-formed ?ss)\n                    (not (secret-created ?ss)))\n    :effect (secret-created ?ss)\n  )\n\n;; Action 7: Read Cliques Info\n"
+    ],
+    "teach": [
+        "(:action teach_new_member_secret\n    :parameters (?adrian - person ?ss - secret_society)\n    :precondition (and\n                    (society-formed ?ss)\n                    (member-initiated ?adrian ?ss)\n                    (not (member-knows-secret ?adrian ?ss)))\n    :effect (member-knows-secret ?adrian ?ss)\n  )\n\n;; Action 5: Create Name\n"
+    ],
+    "read": [
+        "(:action read_cliques_info\n    :parameters (?npc - person ?ss - secret_society)\n    :precondition (and\n                    (society-formed ?ss)\n                    (not (cliques-info-read ?npc ?ss)))\n    :effect (cliques-info-read ?npc ?ss)\n  )\n```\n\nThese actions capture the steps and descriptions provided for creating a secret society (cult), ensuring that key elements such as initiation, meeting locations, dress codes, and secrets are properly represented in the PDDL actions."
+    ]
+}

@@ -1,0 +1,8 @@
+[
+    "(:action swing\n    :parameters (?entity - agent ?object - item)\n    :precondition (and (beside ?entity ?object) (not (engaged ?entity ?object)))\n    :effect (and (engaged ?entity ?object) (not (beside ?entity ?object))",
+    "(:action put ;  Put an item in a specific state or location\n  :parameters (?agent - person ?item - object ?target - object)\n  :precondition (and (not (in_state ?item ?target)) (available ?agent))\n  :effect (and (in_state ?item ?target))",
+    "(:action hold ; Hold an object and update task status\n    :parameters (?p - person ?obj - object)\n    :precondition (and (between_legs ?p ?obj) (not (holding ?p ?obj)))\n    :effect (holding ?p ?obj)\n)",
+    "(:action hold ; Hold an object and update task status\n    :parameters (?p - person ?obj - object)\n    :precondition (and (between_legs ?p ?obj) (not (holding ?p ?obj)))\n    :effect (holding ?p ?obj)\n)",
+    "(:action pedal ; Pedal a vehicle and start its movement\n  :parameters (?p - person ?v - vehicle ?pedal - pedal)\n  :precondition (and (foot_on_pedal ?p ?pedal) (holding_handlebars ?p ?v) (not (pedaling ?p)))\n  :effect (and (pedaling ?p) (moving ?v))",
+    "(:action stop ; Stop an ongoing activity and update the state\n  :parameters (?p - person ?target - object ?tool - object)\n  :precondition (and (active ?p) (engaged ?p ?target) (using ?p ?tool))\n  :effect (and (not (active ?p))"
+]

@@ -1,0 +1,5 @@
+(gotolocation agent1 bed2 bed1)
+(pickupobjectnoreceptacle agent1 laptop1 bed1)
+(gotolocation agent1 bed1 garbagecan1)
+(putobjectinreceptacle agent1 laptop1 garbagecan1)
+; cost = 4 (unit cost)

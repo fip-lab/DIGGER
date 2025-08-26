@@ -1,0 +1,9 @@
+[
+    "(:action lift_weather_stripping\n  :parameters (?w - weather_stripping ?d - door)\n  :precondition (and\n    (attached ?w ?d)\n    (not (lifted ?w))\n  )\n  :effect (and\n    (lifted ?w)\n    (not (attached ?w ?d))",
+    "(:action insert_hanger_into_door\n  :parameters (?h - hanger ?d - door)\n  :precondition (and\n    (not (inside ?h ?d))\n  )\n  :effect (inside ?h ?d)\n)",
+    "(:action lift\n  :parameters (?item - object ?target - object)\n  :precondition (and\n    (or (attached ?item ?target)\n        (not (inside ?item ?target)))\n    (not (lifted ?item))\n  )\n  :effect (and\n    (lifted ?item)\n    (not (attached ?item ?target))",
+    "(:action insert\n  :parameters (?tool - object ?target - object ?context - context)\n  :precondition (and\n    (usable ?tool)\n    (accessible ?context)\n    (not (inside ?tool ?target))\n  )\n  :effect (and\n    (inside ?tool ?target)\n    (not (outside ?tool ?target))",
+    "(:action hook ; Hook and manipulate a mechanism to change its state\n:parameters (?manipulator - tool ?mechanism - object ?container - location)\n:precondition (and\n  (inside ?manipulator ?container)\n  (not (unlocked ?mechanism))\n)\n:effect (and\n  (unlocked ?mechanism)\n  (not (locked ?mechanism))",
+    "(:action unravel\n  :parameters (?item - object)\n  :precondition (and\n    (not (straight ?item))\n    (hooked ?item)\n  )\n  :effect (and\n    (straight ?item)\n    (not (hooked ?item))",
+    "(:action SlideCreditCardToUnlock ;  Unlock a door using a credit card\n  :parameters (?agent - person ?cc - creditcard ?door - door ?lock - lock)\n  :precondition (and\n                 (atLocation ?agent ?door)\n                 (holds ?agent ?cc)\n                 (locked ?lock ?door)\n                 (isCreditCard ?cc)\n                 (isDoor ?door)\n                 (isLock ?lock)\n                 (lockAttachedToDoor ?lock ?door)\n                )\n  :effect (and\n           (not (locked ?lock ?door))"
+]

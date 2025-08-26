@@ -1,0 +1,80 @@
+(define (problem put_CreditCard1_next_to_Sofa1_Do_not_move_Laptop1_9)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    CellPhone1 - object
+    Book1 - object
+    CellPhone2 - object
+    AlarmClock1 - object
+    Laptop2 - object
+    CreditCard2 - object
+    CD2 - object
+    CreditCard1 - object
+    Laptop1 - object
+    CD1 - object
+    Watch1 - object
+    Pencil1 - object
+    Book2 - object
+    Pen1 - object
+    Sofa2 - receptacle
+    Desk4 - receptacle
+    Drawer4 - receptacle
+    Drawer3 - receptacle
+    Drawer1 - receptacle
+    Sofa1 - receptacle
+    Desk2 - receptacle
+    Desk1 - receptacle
+    Bed2 - receptacle
+    Bed1 - receptacle
+    GarbageCan2 - receptacle
+    Drawer2 - receptacle
+    Desk3 - receptacle
+    GarbageCan1 - receptacle
+    Candle1 - object
+    Book3 - object
+    Book4 - object
+    Book5 - object
+    KeyChain1 - object
+    KeyChain2 - object
+    Pencil2 - object
+    Pen2 - object
+    Watch2 - object
+    Floor1 - receptacle
+    Sofa3 - receptacle
+    Desk5 - receptacle
+  )
+
+  (:init
+    (atLocation agent1 Sofa1)
+    (objectAtLocation CreditCard1 Drawer1)
+    (objectAtLocation Laptop1 Sofa1)
+    (objectAtLocation CellPhone1 Bed1)
+    (objectAtLocation CellPhone2 Desk1)
+    (objectAtLocation Book1 Bed2)
+    (objectAtLocation Pencil1 Drawer2)
+    (objectAtLocation Laptop2 Desk2)
+    (objectAtLocation CreditCard2 Sofa2)
+    (objectAtLocation AlarmClock1 Desk3)
+    (objectAtLocation CD1 GarbageCan1)
+    (objectAtLocation CD2 Drawer3)
+    (objectAtLocation Pen1 GarbageCan2)
+    (objectAtLocation Book2 Desk4)
+    (objectAtLocation Watch1 Drawer4)
+    (objectAtLocation Candle1 Drawer4)
+    (objectAtLocation Book3 Desk4)
+    (objectAtLocation Book4 Bed1)
+    (objectAtLocation Book5 Drawer4)
+    (objectAtLocation KeyChain1 Desk4)
+    (objectAtLocation KeyChain2 Desk2)
+    (objectAtLocation Pencil2 Bed1)
+    (objectAtLocation Pen2 Drawer1)
+    (objectAtLocation Watch2 GarbageCan2)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation Laptop1 Sofa1)
+      (objectAtLocation CreditCard1 Sofa1)
+    )
+  )
+)

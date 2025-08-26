@@ -1,0 +1,92 @@
+[
+    {
+        "task": "3-decorate",
+        "step": [
+            "go south npc bedroom closet",
+            "get lantern npc closet",
+            "get balloon npc closet",
+            "go north npc closet bedroom",
+            "go west npc bedroom livingroom",
+            "turn_on_tv npc livingroom",
+            "hang_lantern npc",
+            "blow_balloon npc"
+        ],
+        "desc": [
+            "Ideas for main dishes include teriyaki meat or salmon, and stir fry with chicken or beef, noodles, vegetables, and toasted sesame seed sauce.",
+            "Put out anime balloons. Draw anime faces on balloons. Alternately, you can call local party supply stores to see if they have any relevant balloons. A third option is to purchase anime balloons online. You can have the balloons filled with helium, or blow them up yourself and place them around.",
+            "Hang paper lanterns. Buy paper lanterns, in the color of your party theme, at a party supply store or online. You can also make paper lanterns using tissue paper and bendable metal wire."
+        ],
+        "action": [
+            "(:action blow_balloon\n    :parameters (?p - player)\n    :precondition (and (inventory ?p balloon))\n    :effect (and (inflated balloon) (not (inventory ?p balloon)))\n  )",
+            "(:action go\n    :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n    :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n    :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n  )",
+            "(:action get_beer\n    :parameters (?p - player ?l - location)\n    :precondition (and (has_fridge ?l) (at ?p ?l))\n    :effect (and (inventory ?p beer) (opened beer))\n  )",
+            "(:action hang_lantern\n    :parameters (?p - player)\n    :precondition (and (inventory ?p lantern))\n    :effect (and (hung lantern) (not (inventory ?p lantern)))\n  )",
+            "(:action turn_on_tv\n    :parameters (?p - player ?l - location)\n    :precondition (and (at ?p ?l) (at tv ?l))\n    :effect (on tv)\n  )\n)",
+            "(:action get\n    :parameters (?obj - item ?p - player ?l - location)\n    :precondition (and (at ?p ?l) (at ?obj ?l))\n    :effect (and (inventory ?p ?obj) (not (at ?obj ?l)))\n  )"
+        ],
+        "goal_state": "((on tv) (inflated balloon) (hung lantern))"
+    },
+    {
+        "task": "1-cook-food",
+        "step": [
+            "go west npc bedroom livingroom",
+            "go west npc livingroom kitchen",
+            "cook npc kitchen clams",
+            "cook npc kitchen soup",
+            "cook npc kitchen stirfry",
+            "cook npc kitchen sushi",
+            "cook npc kitchen teriyaki",
+            "go east npc kitchen livingroom",
+            "drop teriyaki npc livingroom",
+            "drop stirfry npc livingroom",
+            "drop soup npc livingroom",
+            "drop sushi npc livingroom",
+            "drop clams npc livingroom"
+        ],
+        "desc": [
+            "Serve beverages. There are various Japanese-themed drinks you can serve at your party. If it\u2019s a kid\u2019s party, you\u2019ll of course want to stick to non-alcoholic options. If it\u2019s an adult party, you may want to include both alcoholic and non-alcoholic beverage choices."
+        ],
+        "action": [
+            "(:action cook\n    :parameters (?p - player ?l - location ?f - food)\n    :precondition (and (has_kitchen ?l) (at ?p ?l))\n    :effect (inventory ?p ?f)\n  )",
+            "(:action drop\n    :parameters (?obj - item ?p - player ?l - location)\n    :precondition (and (at ?p ?l) (inventory ?p ?obj))\n    :effect (and (at ?obj ?l) (not (inventory ?p ?obj)))\n  )",
+            "(:action go\n    :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n    :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n    :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n  )"
+        ],
+        "goal_state": "((at stirfry livingroom) (at sushi livingroom) (at soup livingroom) (at clams livingroom) (at teriyaki livingroom))"
+    },
+    {
+        "task": "2-serve-drinks",
+        "step": [
+            "get_beer npc bedroom",
+            "get phone npc bedroom",
+            "go west npc bedroom livingroom",
+            "go west npc livingroom kitchen",
+            "go north npc kitchen cupboard",
+            "get teabag npc cupboard",
+            "get soda npc cupboard",
+            "go south npc cupboard kitchen",
+            "brew npc kitchen",
+            "get soymilk npc kitchen",
+            "go east npc kitchen livingroom",
+            "buy_sake npc",
+            "serve npc tea livingroom",
+            "drop soymilk npc livingroom",
+            "drop soda npc livingroom",
+            "drop sake npc livingroom",
+            "serve npc beer livingroom"
+        ],
+        "desc": [
+            "Cut Rice Krispie treats into circles. Attach chewy fruit snacks and Swedish fish to them with Laffy Taffy. Wrap a Fruit Roll-Up around each circle.",
+            "Serve beverages. There are various Japanese-themed drinks you can serve at your party. If it\u2019s a kid\u2019s party, you\u2019ll of course want to stick to non-alcoholic options. If it\u2019s an adult party, you may want to include both alcoholic and non-alcoholic beverage choices."
+        ],
+        "action": [
+            "(:action drop\n    :parameters (?obj - item ?p - player ?l - location)\n    :precondition (and (at ?p ?l) (inventory ?p ?obj))\n    :effect (and (at ?obj ?l) (not (inventory ?p ?obj)))\n  )",
+            "(:action go\n    :parameters (?dir - direction ?p - player ?l1 - location ?l2 - location) \n    :precondition (and (at ?p ?l1) (connected ?l1 ?dir ?l2) (not (blocked ?l1 ?dir ?l2)))\n    :effect (and (at ?p ?l2) (not (at ?p ?l1)))\n  )",
+            "(:action serve\n    :parameters (?p - player ?d - drink ?l - location)\n    :precondition (and (inventory ?p ?d) (opened ?d) (at ?p ?l))\n    :effect (and (not (inventory ?p ?d)) (at ?d ?l))\n  )",
+            "(:action buy_sake\n    :parameters (?p - player)\n    :precondition (and (inventory ?p phone) (inventory ?p money))\n    :effect (and (inventory ?p sake) (not (inventory ?p money)))\n  )",
+            "(:action get_beer\n    :parameters (?p - player ?l - location)\n    :precondition (and (has_fridge ?l) (at ?p ?l))\n    :effect (and (inventory ?p beer) (opened beer))\n  )",
+            "(:action brew\n    :parameters (?p - player ?l - location)\n    :precondition (and (has_kitchen ?l) (at ?p ?l) (inventory ?p teabag))\n    :effect (and (inventory ?p tea) (not (inventory ?p teabag)) (opened tea))\n  )",
+            "(:action get\n    :parameters (?obj - item ?p - player ?l - location)\n    :precondition (and (at ?p ?l) (at ?obj ?l))\n    :effect (and (inventory ?p ?obj) (not (at ?obj ?l)))\n  )"
+        ],
+        "goal_state": "((at soymilk livingroom) (at soda livingroom) (at sake livingroom) (at tea livingroom) (at beer livingroom))"
+    }
+]

@@ -1,0 +1,6 @@
+[
+    "(:action scrub ; Scrub an item to clean it\n  :parameters (?item - object)\n  :precondition (and (is_empty ?item) (not (is_clean ?item)))\n  :effect (is_clean ?item)\n)",
+    "(:action place ; Place an item in a specified location or setup\n    :parameters (?u - user ?item - object ?loc - location)\n    :precondition (and (available ?u) (valid_location ?loc) (can_place ?item ?loc))\n    :effect (and (placed ?item ?loc) (not (available ?u))",
+    "(:action replace\n    :parameters (?actor - agent ?entity - object)\n    :precondition (and (requires_replacement ?entity) (not (replaced ?entity)))\n    :effect (and (replaced ?entity) (updated ?entity))",
+    "(:action finish\n  :parameters (?entity - object ?task - task)\n  :precondition (and (task_completed ?entity ?task))\n  :effect (is_finished ?task)\n)"
+]

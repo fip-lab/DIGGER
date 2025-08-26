@@ -1,0 +1,8 @@
+{
+    "peel": [
+        "(:action peel-papyrus-strips\n    :parameters (?npc - agent ?ps - papyrus_strips)\n    :precondition (and (not (peeled ?ps)) (has-knife ?npc))\n    :effect (and (peeled ?ps) (not (outer-layer ?ps)))\n  )\n\n;; Action 2: Buy Papyrus\n"
+    ],
+    "buy": [
+        "(:action buy-papyrus\n    :parameters (?npc - agent ?p - papyrus)\n    :precondition (and (not (obtained ?p)) (has-money ?npc))\n    :effect (obtained ?p)\n  )\n```\n\n### Explanation:\n\n1. **Peel Papyrus Strips**: \n   - **Parameters**: The agent (`?npc`) and the papyrus strips (`?ps`) are involved in this action.\n   - **Preconditions**: The action requires that the papyrus strips have not been peeled yet, and the agent must have a knife.\n   - **Effects**: After the action, the papyrus strips are peeled, and the outer layer is removed.\n\n2. **Buy Papyrus**:\n   - **Parameters**: The agent (`?npc`) and the papyrus (`?p`) are involved in this action.\n   - **Preconditions**: The action requires that the papyrus has not been obtained yet, and the agent must have money.\n   - **Effects**: After the action, the papyrus is obtained.\n\nThese actions reflect the steps described in the task of preparing papyrus, using the provided descriptions and entity states to define the preconditions and effects accurately."
+    ]
+}

@@ -1,0 +1,7 @@
+[
+    "(:action gather ; Collect an item from the environment and add it to the inventory\n  :parameters (?agent - agent ?item - object ?location - place)\n  :precondition (and (at ?agent ?location) (at ?item ?location) (not (in_inventory ?agent ?item)))\n  :effect (in_inventory ?agent ?item))",
+    "(:action push ; Push an item away from a container\n:parameters (?p - person ?container - container ?item - object)\n:precondition (and (inventory ?p ?container) (inventory ?p ?item) (threaded ?item ?container))\n:effect (pushed_away ?item ?container))",
+    "(:action slide ; Slide an object to adjust its position or state\n    :parameters (?actor - agent ?object - movable ?surface - surface)\n    :precondition (and (in_inventory ?actor ?surface) (pushed_away ?object ?surface))\n    :effect (and (slid ?object ?surface))",
+    "(:action finish ; Complete a task involving assembling and finalizing an item\n :parameters (?actor - person ?item1 - object ?item2 - object ?final_item - object)\n :precondition (and (inventory ?actor ?item1) (inventory ?actor ?item2) (not (finished ?final_item)))\n :effect (and (at ?final_item ?actor) (not (inventory ?actor ?item1))",
+    "(:action untwist ; Untwist an object and update its state\n  :parameters (?p - entity ?object - twistable ?tool - tool)\n  :precondition (and (inventory ?p ?object) (inventory ?p ?tool) (twisted ?object))\n  :effect (and (not (twisted ?object))"
+]

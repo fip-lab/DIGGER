@@ -1,0 +1,5 @@
+[
+    "(:action place ; Place an item into a container and update its location status\n    :parameters (?actor - agent ?item - object ?container - container)\n    :precondition (and (inventory ?actor ?item) (inventory ?actor ?container) (not (in ?item ?container)))\n    :effect (and (in ?item ?container) (not (on_surface ?item))",
+    "(:action separate ; Separate an item using a specified method\n  :parameters (?p - player ?item - object ?method - method)\n  :precondition (and (in ?item ?container) (inventory ?p ?method))\n  :effect (and (separated ?item) (prepared ?container))",
+    "(:action freeze_or_thaw\n  ; General action to either freeze or thaw an item\n  :parameters (?p - player ?item - object ?state - state ?location - location)\n  :precondition (and (in ?item ?container) (separated ?item) (lined ?container) (or (and (in_freezer ?item) (frozen ?item) (equals ?state thawed)) (and (not (in_freezer ?item)) (not (frozen ?item)) (equals ?state frozen))))\n  :effect (and (when (equals ?state frozen)\n                  (and (in_freezer ?item) (frozen ?item) (not (pliable ?item))"
+]

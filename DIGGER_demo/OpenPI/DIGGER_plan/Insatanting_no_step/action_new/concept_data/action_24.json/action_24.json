@@ -1,0 +1,7 @@
+[
+    "(:action scrub ; Scrub an item to clean it\n  :parameters (?actor - person ?item - object)\n  :precondition (and (at ?actor ?location) (cleanness ?item dirty))\n  :effect (and (cleanness ?item clean) (wetness ?item wet))",
+    "(:action place ; Place an item in a designated location and update its status\n  :parameters (?p - player ?item - object ?loc - location)\n  :precondition (and (at ?p kitchen) (available ?item) (not (placed ?item ?loc)))\n  :effect (and (placed ?item ?loc) (status ?item updated) (status ?loc updated))",
+    "(:action replace-lid-label\n    :parameters (?p - player ?b - bottle ?lid - lid ?label - label)\n    :precondition (and (at ?p kitchen) (emptiness ?b full) (cleanness ?b clean) (wetness ?b wet))\n    :effect (and (orientation ?b closed_with_lid) (clarity ?b written_on))",
+    "(:action place_in_refrigerator\n    :parameters (?p - player ?b - bottle ?r - refrigerator)\n    :precondition (and (at ?p kitchen) (orientation ?b closed_with_lid) (clarity ?b written_on))\n    :effect (in ?b ?r)\n)",
+    "(:action replace\n    :parameters (?p - player ?item - object ?new_state - state ?location - place)\n    :precondition (and (at ?p kitchen) (not (state ?item ?new_state)))\n    :effect (and (state ?item ?new_state) (in ?item ?location))"
+]

@@ -1,0 +1,5 @@
+[
+    "(:action select ; Select an item and update its status\n    :parameters (?p - person ?item - object)\n    :precondition (and (inventory ?p ?item))\n    :effect (and (selected ?item))\n)",
+    "(:action create ; Create an item and update task status\n  :parameters (?p - player ?item - object ?material - object)\n  :precondition (and (selected ?material))\n  :effect (and (inventory ?p ?item) (not (selected ?material)))\n)",
+    "(:action finish ; Complete a task by combining components\n    :parameters (?person - person ?component1 - object ?component2 - object ?final_product - object)\n    :precondition (and (inventory ?person ?component1) (prepared ?component2))\n    :effect (and (inventory ?person ?final_product) (not (inventory ?person ?component1)) (not (prepared ?component2)))\n)"
+]

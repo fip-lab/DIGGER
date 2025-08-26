@@ -1,0 +1,65 @@
+[
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate the Winter Solstice",
+        "step": [
+            "Research the time of winter solstice, as well as the occurrences.",
+            "Understand the religious, magical and natural significance of winter solstice.",
+            "Decorate your home.",
+            "Make some solstice-themed traditional crafts, such as a Yule log.",
+            "Prepare a feast.",
+            "Go wassailing.",
+            "Stay up until sunrise.",
+            "Keep the flame."
+        ],
+        "steps_predictions": [
+            "get_shelter npc",
+            "understand npc",
+            "decorate-room living_room",
+            "make_sliplargerblog npc",
+            "prepare_famestick npc",
+            "go_wailmer npc",
+            "stay_up npc",
+            "keep_fire npc camp campfire"
+        ],
+        "goal_state": " ((at npc living_room) (has_sliplargerbamboo_container campfire))"
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Visit the September 11th Memorial Museum",
+        "step": [
+            "Purchase tickets online ahead of your visit.",
+            "Spend some time paying your respects at the two reflecting pool memorials.",
+            "Enter the museum after passing a through security screening.",
+            "Explore the exhibits and displays on the basement level.",
+            "Proceed one level up to the main exhibition hall.",
+            "Visit the museum store on your way to the exit."
+        ],
+        "steps_predictions": [
+            "buy_tickets npc",
+            "pay_visibility npc covering_tracks",
+            "pass_through_security_screen npc",
+            "gather_exhibitions npc basement_level",
+            "get_level_up npc ground_surface",
+            "get_museum_store npc"
+        ],
+        "goal_state": " ((in npc Salt_Lake))"
+    },
+    {
+        "cluster_label": 1927,
+        "task": "How to Celebrate Women's History Month",
+        "step": [
+            "Look for women\u2019s history events in your area.",
+            "Visit your local museum to check out a gallery exhibit.",
+            "Attend lectures about women in history or women\u2019s issues.",
+            "Organize a women\u2019s history event in your community."
+        ],
+        "steps_predictions": [
+            "check_area npc",
+            "check_museums npc",
+            "listen_to_loot_wailmer npc",
+            "organize_event npc"
+        ],
+        "goal_state": " ((in npc Salt_Lake))"
+    }
+]

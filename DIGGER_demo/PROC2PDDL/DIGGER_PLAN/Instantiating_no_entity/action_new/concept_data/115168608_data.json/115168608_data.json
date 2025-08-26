@@ -1,0 +1,7 @@
+[
+    "(:action gather\n  :parameters (?entity - object ?location - place)\n  :precondition (and (at ?entity ?location) (available ?entity))\n  :effect (and (gathered ?entity) (not (at ?entity ?location))",
+    "(:action collect_nails\n    :parameters (?n - nails ?t - toolbox)\n    :precondition (and\n      (at ?n ?t)\n      (available ?n)\n    )\n    :effect (and\n      (collected ?n)\n      (not (at ?n ?t))",
+    "(:action retrieve_paint\n    :parameters (?p - paint ?r - supply_room)\n    :precondition (and\n      (at ?p ?r)\n      (available ?p)\n    )\n    :effect (and\n      (collected ?p)\n      (not (at ?p ?r))",
+    "(:action collect ; Collect an item from a location and update its state\n    :parameters (?item - object ?loc - location)\n    :precondition (and\n      (at ?item ?loc)\n      (available ?item)\n    )\n    :effect (and\n      (collected ?item)\n      (not (at ?item ?loc))",
+    "(:action make ; Create or transform an entity\n  :parameters (?npc - person ?item - object ?location - place)\n  :precondition (and (obtained ?item) (at ?npc ?location) (not (made ?item)))\n  :effect (made ?item)\n)"
+]

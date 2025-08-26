@@ -1,0 +1,4 @@
+[
+    "(:action select ; Select an option and update relevant statuses\n  :parameters (?entity - object ?context - object)\n  :precondition (and (not (selected ?entity ?context)))\n  :effect (selected ?entity ?context)\n)",
+    "(:action move\n  :parameters (?p1 - player ?p2 - player ?s - stage ?pos1 - position ?pos2 - position)\n  :precondition (and \n                  (location ?pos1 ?p1 ?s)\n                  (not (location ?pos2 ?p1 ?s))\n                  (not (location ?pos2 ?p2 ?s))\n                  (or (together ?p1 ?p2) (away_from_wall ?p1))\n                )\n  :effect (and \n            (location ?pos2 ?p1 ?s)\n            (location ?pos2 ?p2 ?s)\n            (not (location ?pos1 ?p1 ?s))"
+]

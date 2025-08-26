@@ -1,0 +1,8 @@
+{
+    "aim": [
+        "(:action aim_and_shoot_sniper\n  :parameters (?p - player ?w - sniper_rifle ?t - target)\n  :precondition (and (has_weapon ?p ?w) (at ?p ?t))\n  :effect (headshot ?p ?t))\n\n",
+        "(:action aim_and_shoot_shotgun\n  :parameters (?p - player ?w - shotgun ?t - target)\n  :precondition (and (has_weapon ?p ?w) (at ?p ?t))\n  :effect (headshot ?p ?t))\n\n",
+        "(:action aim_and_shoot_pistol\n  :parameters (?p - player ?w - pistol ?t - target)\n  :precondition (and (has_weapon ?p ?w) (at ?p ?t))\n  :effect (headshot ?p ?t))\n\n",
+        "(:action aim_and_shoot_boomshot\n  :parameters (?p - player ?w - boomshot ?t - target)\n  :precondition (and (has_weapon ?p ?w) (at ?p ?t))\n  :effect (headshot ?p ?t))\n```\n\nExplanation:\n- The `aim_and_shoot_sniper` action captures the requirement to aim at the head with a Sniper Rifle and pull the trigger.\n- The `aim_and_shoot_shotgun` action captures the requirement to aim and shoot at the head with a Shotgun.\n- The `aim_and_shoot_pistol` action captures the requirement to aim and shoot at the head with a Pistol.\n- The `aim_and_shoot_boomshot` action captures the requirement to aim and shoot at the head with a BoomShot.\n\nThese actions include the necessary parameters, preconditions, and effects based on the entity states and descriptions provided."
+    ]
+}

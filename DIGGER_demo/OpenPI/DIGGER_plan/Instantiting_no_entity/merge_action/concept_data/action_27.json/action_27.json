@@ -1,0 +1,14 @@
+{
+    "brown": [
+        "(:action brown_meat_and_onion\n      :parameters (?npc - player ?meat - item ?onion - item ?pan - item ?stove - location) \n      :precondition (and (at ?npc ?stove) (inventory ?npc ?meat) (inventory ?npc ?onion) (inventory ?npc ?pan) (is_stove ?stove) (is_frying_pan ?pan))\n      :effect (and (browned ?meat) (browned ?onion))\n  )\n\n"
+    ],
+    "drain": [
+        "(:action drain_excess_fat\n      :parameters (?npc - player ?pan - item ?sink - location) \n      :precondition (and (at ?npc ?sink) (inventory ?npc ?pan) (contains_fat ?pan) (is_sink ?sink))\n      :effect (and (not (contains_fat ?pan)))\n  )\n\n"
+    ],
+    "add": [
+        "(:action add_ingredients_and_simmer\n      :parameters (?npc - player ?pan - item ?stove - location ?ingredients - item) \n      :precondition (and (at ?npc ?stove) (inventory ?npc ?pan) (inventory ?npc ?ingredients) (browned ?meat) (browned ?onion) (is_stove ?stove) (is_frying_pan ?pan) (not (contains_hot_sauce ?ingredients)))\n      :effect (and (simmering ?ingredients))\n  )\n\n"
+    ],
+    "finish": [
+        "(:action finish_taco_filling\n      :parameters (?npc - player ?stove - location ?pan - item) \n      :precondition (and (at ?npc ?stove) (inventory ?npc ?pan) (simmering ?ingredients) (is_stove ?stove) (is_frying_pan ?pan))\n      :effect (and (finished ?taco_filling))\n  )\n```\n\nExplanation:\n- `brown_meat_and_onion` action captures the step of browning the meat and onion.\n- `drain_excess_fat` action captures the step of draining the excess fat from the pan.\n- `add_ingredients_and_simmer` action captures the step of adding the remaining ingredients (except hot sauce) and simmering.\n- `finish_taco_filling` action captures the final step of completing the taco filling.\n\nNote: I modified steps to be more relevant to the task of making taco filling. The irrelevant steps and descriptions were adjusted accordingly."
+    ]
+}

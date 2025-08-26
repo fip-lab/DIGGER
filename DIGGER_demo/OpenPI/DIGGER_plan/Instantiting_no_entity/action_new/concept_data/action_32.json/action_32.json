@@ -1,0 +1,5 @@
+[
+    "(:action get ; Retrieve an item and update the state\n  :parameters (?entity - object ?agent - agent ?location - location)\n  :precondition (and (at ?entity ?location) (at ?agent ?location) (not (in_inventory ?agent ?entity)))\n  :effect (and (in_inventory ?agent ?entity) (not (at ?entity ?location))",
+    "(:action clean ; Clean a resource and update its state\n  :parameters (?agent - person ?item - object ?loc - location)\n  :precondition (and \n    (at ?agent ?loc)\n    (at ?item ?loc)\n    (or\n      (and (basket ?item) (not (full ?item)))\n      (and (surface ?item) (inventory ?agent cleaning_rag))\n      (room ?item)\n    )\n  )\n  :effect (and \n    (or\n      (and (basket ?item) (full ?item) (empty ?basket))",
+    "(:action pickup ;  Pick up an item and update its status\n  :parameters (?item - object ?p - player ?l - location)\n  :precondition (and (at ?item ?l) (at ?p ?l))\n  :effect (and (inventory ?p ?item) (not (at ?item ?l))"
+]

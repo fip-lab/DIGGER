@@ -1,0 +1,6 @@
+(mix_soap_and_water alice soap1 soap1 bowl1 mixture1)
+(enhance_solution alice mixture1)
+(go_outside alice)
+(make_bubble_wand alice wand1)
+(make_bubble alice wand1 bubble1)
+; cost = 5 (unit cost)

@@ -1,0 +1,5 @@
+(swing-leg-over-bike you bike)
+(put-foot-on-pedal you pedals)
+(pedal-with-feet you)
+(stop you bike)
+; cost = 4 (unit cost)

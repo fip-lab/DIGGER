@@ -1,0 +1,132 @@
+[
+    {
+        "title": "How to Start a Gluten Free Diet",
+        "steps": [
+            "Find gluten-free replacements.",
+            "Read the labels.",
+            "Have separate gluten-free kitchen appliances.",
+            "Ask questions at restaurants.",
+            "Try gluten-free recipes at home.",
+            "Be conscious of cross-contamination."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Eat Grain Free",
+        "steps": [
+            "Look up the menu before you go.",
+            "Consider calling ahead to ask about grain-free options.",
+            "Ask for a gluten-free menu.",
+            "Be patient with your server when asking questions."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Add More Raw Foods to Your Diet",
+        "steps": [
+            "Figure out which kinds of food can be eaten raw.",
+            "Make sure you know where to get this food.",
+            "Go through your list.",
+            "Buy those things or plant them on your backyard.",
+            "Acquire the habit of buying smaller quantities of perishable food and shopping more often.",
+            "Look closely at your eating habits and think how much you want to change and where do you want to add more raw.",
+            "Plan."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Succeed on the Raw Food Diet",
+        "steps": [
+            "Research the science of the raw food diet.",
+            "Understand which foods are acceptable and why.",
+            "Plan out your meals ahead of time.",
+            "Eliminate unacceptable foods from the home.",
+            "Use combinations of flavors to add variety to your meals.",
+            "Secure the support of family members and friends.",
+            "Start a journal to monitor your success."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Avoid Gluten",
+        "steps": [
+            "Find the gluten-free aisle at your grocery store.",
+            "Shop at a health food store.",
+            "Use gluten-free flour in your favorite recipes.",
+            "Purchase a gluten-free cookbook.",
+            "Inquire about gluten-free options before attending a party.",
+            "Ask a restaurant server about gluten-free options.",
+            "Scout out gluten-free restaurants or bakeries in your area."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Know if a Gluten\u2010Free Diet Is Right for You",
+        "steps": [
+            "Keep a food journal.",
+            "Learn which grains contain gluten.",
+            "Understand what types of food contain gluten.",
+            "Plan to supplement gluten with healthy alternatives.",
+            "Consider other diets if you\u2019re trying to lose weight.",
+            "Avoid a gluten-free diet if you\u2019re at risk for vitamin deficiency."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Know What Flour to Use for Gluten Free Baking",
+        "steps": [
+            "Review gluten-free baking websites.",
+            "Download a list of gluten-free flour manufacturers."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Prepare Low Sodium Lunches",
+        "steps": [
+            "Read the nutrition label.",
+            "Pay attention to serving size.",
+            "Identify low sodium labels.",
+            "Aim for fresh, frozen, or dried foods.",
+            "Find dairy products.",
+            "Avoid processed foods."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Make Brownies",
+        "steps": [
+            "Make chocolate brownies.",
+            "Make cream-covered brownies.",
+            "Make S'more brownies.",
+            "Make gluten free brownies.",
+            "Make peppermint brownies."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Remove Gluten from Your Diet",
+        "steps": [
+            "Remove wheat from your kitchen: start with bread, pasta and pizzas as these items contain a lot of wheat, which is really bad for people on a gluten free diet.",
+            "Remove items containing barley and other cereals like oats and barley as they also contain gluten.",
+            "Regarding alcohol, you need to stop drinking beer (you can now find gluten-free beer though) and whiskey.",
+            "Start reading the labels on every item you are going to buy.",
+            "Nearly all supermarkets sell gluten-free food: bread, pizzas, biscuits, pastas...",
+            "Be careful when you go out as you don't know what ingredients are used in their recipes.",
+            "Start cooking fresh food!."
+        ],
+        "cluster_label": 56
+    },
+    {
+        "title": "How to Be Gluten Free and Vegan",
+        "steps": [
+            "Check for the label \"vegan.\".",
+            "Look for labels like \"gluten-free.\".",
+            "Look for the allergen list.",
+            "Read the ingredient list for non-vegan ingredients.",
+            "Check the ingredients list for wheat.",
+            "Look out for food starch.",
+            "Check for signs of cross-contamination with gluten."
+        ],
+        "cluster_label": 56
+    }
+]

@@ -1,0 +1,131 @@
+[
+    {
+        "title": "How to Make Risotto",
+        "steps": [
+            "Make pumpkin risotto.",
+            "Make tomato risotto.",
+            "Make vegetarian risotto.",
+            "Make risotto with artichokes."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make Succotash",
+        "steps": [
+            "Combine the ingredients in your slow cooker.",
+            "Cook the succotash.",
+            "Serve the succotash.",
+            "Finished."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make a Caipiroska",
+        "steps": [
+            "Start with the traditional caipiroska recipe.",
+            "Before transferring the ingredients to the shaker, add 3oz of your favorite fruit juice or puree.",
+            "Try a different type of Vodka."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make Humitas",
+        "steps": [
+            "Make a corn puree.",
+            "Season the puree.",
+            "Saut\u00e9 the rest of the ingredients.",
+            "Prepare the humita filling.",
+            "Fill the cornhusks.",
+            "Cook the humitas.",
+            "Serve."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make Radish Juice",
+        "steps": [
+            "Choose the radishes.",
+            "Wash the radishes.",
+            "Feed the radishes through the juicer.",
+            "Rinse the juicer with water.",
+            "Drink the radish juice."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make Avocado Salsa",
+        "steps": [
+            "Wash and prepare the produce.",
+            "Add the remaining ingredients to the blender.",
+            "Blend the avocado tomatillo salsa.",
+            "Chill and taste the salsa."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make Ecuadorian Shrimp Ceviche",
+        "steps": [
+            "Bring a large pot of water to a boil.",
+            "Add the shrimp to the pot.",
+            "Remove the shrimp from heat and drain.",
+            "Combine the ceviche ingredients.",
+            "Refrigerate the ceviche for one hour.",
+            "Finished."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make Guava Juice",
+        "steps": [
+            "Wash and chop the guavas.",
+            "Blend the guavas with water.",
+            "Strain and thin the guava puree.",
+            "Stir in lime, honey, and salt.",
+            "Taste and serve the guava lime juice."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make Mozzarella Risotto Balls",
+        "steps": [
+            "Heat the water and chicken stock.",
+            "Make the risotto.",
+            "Chill the risotto.",
+            "Make the risotto balls.",
+            "Bread the balls.",
+            "Fry the risotto balls.",
+            "Serve."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make Gazpacho",
+        "steps": [
+            "Consider making a non-traditional, creative twist on gazpacho.",
+            "Assemble all the ingredients.",
+            "Blend the ingredients.",
+            "Test the gazpacho for taste.",
+            "Serve the gazpacho."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make a Smoothie Bowl",
+        "steps": [
+            "Put all the ingredients in a blender.",
+            "Blend.",
+            "Plate.",
+            "Garnish your smoothie bowl."
+        ],
+        "cluster_label": 869
+    },
+    {
+        "title": "How to Make Blueberry Mousse",
+        "steps": [
+            "Wash and prepare the produce.",
+            "Measure the ingredients.",
+            "Blend and chill the vegan blueberry mousse."
+        ],
+        "cluster_label": 869
+    }
+]

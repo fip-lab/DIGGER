@@ -1,0 +1,157 @@
+[
+    {
+        "title": "How to Choose Chemical Free Cosmetics",
+        "steps": [
+            "Learn the connection between cancer and cosmetics.",
+            "Understand the concern for endocrine disruptors.",
+            "Know that your skin absorbs chemicals through pores."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Cure Breast Cancer",
+        "steps": [
+            "Note that the effectiveness of treating (and curing) breast cancer depends on how early it is detected.",
+            "Follow through with all screening tests.",
+            "Receive genetic testing if you have a family history of breast cancer."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Decrease Your Breast Cancer Risk",
+        "steps": [
+            "Consider the dose and duration of your hormone therapy.",
+            "Avoid unnecessary exposure to radiation.",
+            "Obtain regular mammograms.",
+            "Perform breast self-exams.",
+            "Be extra cautious if you have an increased genetic risk."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Know if You Have Prostate Cancer",
+        "steps": [
+            "Ask your doctor for a prognosis.",
+            "Look into a radical prostatectomy for localized prostate cancer.",
+            "Ask your doctor about radiation therapy for locally invasive prostate cancer.",
+            "Consider options for metastatic prostate cancer."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Identify a Lump in a Breast",
+        "steps": [
+            "Call your family doctor if you are unsure whether your breast lump is of concern.",
+            "Set up a mammography appointment.",
+            "Proceed with a breast ultrasound for further investigation of your lump if your physician recommends this.",
+            "Have your physician prescribe a breast lump biopsy if the other test results are unable to rule out breast cancer.",
+            "Follow-up as per your doctor's advice."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Recognize Prostate Cancer Symptoms",
+        "steps": [
+            "Learn about the prostate.",
+            "Understand how prostate cancer develops.",
+            "Know the risk factors for prostate cancer."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Weigh Your Breasts",
+        "steps": [
+            "Tell your doctor if you have concerns about your breast weight.",
+            "Ask about imaging tests if you need an accurate weight estimate.",
+            "Get a quick and inexpensive estimate using the Archimedes method."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Live with Breast Cancer",
+        "steps": [
+            "Get screened for breast cancer every 6-12 months.",
+            "Communicate with your romantic partner to maintain your sexual health.",
+            "Consider breast reconstruction surgery, if you had a mastectomy (optional).",
+            "Donate or volunteer with breast cancer awareness organizations."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Prepare for a Breast Biopsy",
+        "steps": [
+            "Learn the reasons that prompt a physician to recommend a breast biopsy.",
+            "Learn the different types of biopsy procedures to get ready for a breast biopsy.",
+            "Refrain from taking any over-the-counter medications, such as aspirin and supplements such as vitamin E, 7 days before the biopsy procedure.",
+            "Discuss any prescription medications with your physician to determine if you should keep taking them as you prepare for a biopsy.",
+            "Inform your doctor if you are pregnant or suspect that you might be.",
+            "Remove any jewelry that may obstruct access to the breast such as nipple piercings and necklaces.",
+            "Wear a bra to your appointment.",
+            "Arrange to have an adult accompany you to do the driving after the procedure.",
+            "Learn the side effects and risks of a breast biopsy procedure so that you may identify them and have them treated as necessary."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Test for Cancer",
+        "steps": [
+            "Ask about genetic testing if you have a family history of cancer.",
+            "Prevent a recurrence of cancer by monitoring tumor markers.",
+            "Understand that it is the progression of tumor markers over time that matters."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Measure Radiation",
+        "steps": [
+            "Estimate your annual dose with an online calculator.",
+            "Identify radiation dose with a device that measures Grays or sieverts.",
+            "Set your device to detect a particular type of radiation, if necessary.",
+            "Move the meter over the object or person slowly.",
+            "Multiply the dose by a quality factor to assess the biological risk."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Determine Prostate Cancer Recurrence",
+        "steps": [
+            "Know the risk factors for prostate cancer recurrence.",
+            "Ask about the size of your initial tumor.",
+            "Learn about cancer staging.",
+            "Study the levels on the Gleason score.",
+            "Ask your doctor about use of the Han tables for knowing how to determine prostate cancer recurrence.",
+            "Take steps to lower your risk of prostate cancer recurrence by having your prostate checked regularly after cancer treatment.",
+            "Educate yourself about the various risk factors and available tests so you can take charge of your health after a prostate cancer diagnosis."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Check for Breast Cancer",
+        "steps": [
+            "Be aware of the basic risk factors for breast cancer.",
+            "Be aware that your lifestyle can affect your breast cancer risk.",
+            "Know your personal and family medical history.",
+            "Be aware that most women diagnosed with breast cancer have NO risk factors."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Know if You Have Eczema",
+        "steps": [
+            "Understand that age plays a factor.",
+            "Watch out for triggers.",
+            "Keep your environment in mind.",
+            "Be aware that stress can bring on an eczema outbreak."
+        ],
+        "cluster_label": 1431
+    },
+    {
+        "title": "How to Detect Rectal Cancer",
+        "steps": [
+            "Discuss your test results with your doctor.",
+            "Determine the stage of your rectal cancer, if you test positive.",
+            "Get screened for rectal cancer as necessary."
+        ],
+        "cluster_label": 1431
+    }
+]

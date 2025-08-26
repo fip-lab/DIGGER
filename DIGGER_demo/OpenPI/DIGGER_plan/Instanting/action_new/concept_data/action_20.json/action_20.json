@@ -1,0 +1,7 @@
+[
+    "(:action gather ; Gather resources from a location and add them to inventory\n:parameters (?p - person ?loc - location ?item - object)\n:precondition (and (at ?p ?loc) (at ?item ?loc))\n:effect (inventory ?p ?item))",
+    "(:action push ; Push an object to a designated position\n  :parameters (?actor - entity ?obj - object ?target - location)\n  :precondition (and (at ?actor ?target) (inventory ?actor ?obj) (shape ?target circular))\n  :effect (squares_position ?obj away_from_ends))",
+    "(:action slide ; Slide a movable object within a defined space\n:parameters (?agent - entity ?object - movable ?space - area ?pos - position)\n:precondition (and (at ?agent ?pos) (at ?object ?pos) (object_position ?object initial_state))\n:effect (object_position ?object final_state))",
+    "(:action finish ; Finalize a task by updating the status of an entity\n    :parameters (?p - person ?entity - object ?status_from - status ?status_to - status ?loc - location)\n    :precondition (and (at ?p ?loc) (status ?entity ?status_from))\n    :effect (and (status ?entity ?status_to) (not (status ?entity ?status_from))",
+    "(:action untwist ; Untwist an object and change its shape or configuration\n  :parameters (?entity - object ?tool - tool ?loc - location)\n  :precondition (and (at ?entity ?loc) (at ?tool ?loc) (shape ?entity straight))\n  :effect (and (shape ?entity untwisted) (not (shape ?entity straight))"
+]

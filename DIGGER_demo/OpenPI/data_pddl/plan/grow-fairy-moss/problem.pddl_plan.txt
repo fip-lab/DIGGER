@@ -1,0 +1,7 @@
+(find-container bowl-container)
+(ask-for-moss fairy-moss)
+(fill-bowl water-1 bowl-container)
+(prune fairy-moss)
+(add-fairy-moss fairy-moss water-1)
+(place-suitable-position bowl-container water-1)
+; cost = 6 (unit cost)

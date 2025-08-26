@@ -1,0 +1,21 @@
+[
+    {
+        "cluster_label": 2216,
+        "task": "How to Order a Factory Vehicle",
+        "step": [
+            "Decide what kind of car you want.",
+            "Conduct an online search for the manufacturer of the particular make and model you are interested in.",
+            "Make a list of the factory features you desire.",
+            "Visit a dealership that sells the type of car you are interested in.",
+            "Order your factory vehicle."
+        ],
+        "steps_predictions": [
+            "choose_car car",
+            "choose_name npc home",
+            "make_listen_to_converter_with_name npc",
+            "buy_car npc car",
+            "buy_vehicle npc car"
+        ],
+        "goal_state": " ((name_saved npc))"
+    }
+]

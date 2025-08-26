@@ -1,0 +1,106 @@
+[
+    {
+        "title": "How to Treat Bronchitis Naturally",
+        "steps": [
+            "See your doctor if you have a severe cough, discolored mucus, or fever.",
+            "Get emergency treatment for wheezing or shortness of breath.",
+            "Talk to your doctor if you have chronic bronchitis.",
+            "Undergo diagnostic tests to help your doctor find the best treatment.",
+            "Use medical treatments if your doctor recommends them."
+        ],
+        "cluster_label": 730
+    },
+    {
+        "title": "How to Cough Up Phlegm",
+        "steps": [
+            "Use the right herbs.",
+            "Add the herbs.",
+            "Inhale the steam.",
+            "Repeat the treatment.",
+            "Make yourself cough."
+        ],
+        "cluster_label": 730
+    },
+    {
+        "title": "How to Test for Tuberculosis",
+        "steps": [
+            "Schedule an x-ray or CT scan of your chest.",
+            "Prepare for your CT scan.",
+            "Hold your breath during the x-ray if instructed to.",
+            "Wait for your doctor to assess the test results."
+        ],
+        "cluster_label": 730
+    },
+    {
+        "title": "How to Treat an Upper Respiratory Infection",
+        "steps": [
+            "Take note if your symptoms are located in the upper respiratory tract.",
+            "Look at your nasal secretions to make sure they are clear or light.",
+            "Visit your doctor if the symptoms last longer than 14 days."
+        ],
+        "cluster_label": 730
+    },
+    {
+        "title": "How to Treat Asthma Naturally",
+        "steps": [
+            "See your doctor if you think you might have asthma.",
+            "Get emergency care if you have a severe asthma attack.",
+            "Go to your doctor for regular follow-up appointments after diagnosis.",
+            "Contact your doctor if you have new or worsening symptoms.",
+            "Discuss any treatment approaches you plan to take with your doctor."
+        ],
+        "cluster_label": 730
+    },
+    {
+        "title": "How to Treat a Pulmonary Edema at Home",
+        "steps": [
+            "Visit your doctor immediately if you think you have pulmonary edema.",
+            "Seek emergency treatment for symptoms of acute pulmonary edema.",
+            "Get your doctor\u2019s approval before switching to a new treatment.",
+            "Check with your doctor before using supplements or herbs."
+        ],
+        "cluster_label": 730
+    },
+    {
+        "title": "How to Treat Pneumonia Naturally",
+        "steps": [
+            "See your doctor if you suspect you have pneumonia.",
+            "Get prompt care if you\u2019re in a high-risk group for complications.",
+            "Seek emergency care for trouble breathing, chest pain, and fever.",
+            "Talk to your doctor about your treatment options."
+        ],
+        "cluster_label": 730
+    },
+    {
+        "title": "How to Determine if You Have Pneumonia",
+        "steps": [
+            "Take antibiotics.",
+            "Drink plenty of water.",
+            "Control your fever.",
+            "Ask your doctor about cough medicines.",
+            "Get a bronchoscopy if you have aspiration pneumonia.",
+            "Go to the hospital if home-care isn\u2019t helping.",
+            "Bring a child to the hospital if they are not improving."
+        ],
+        "cluster_label": 730
+    },
+    {
+        "title": "How to Make Yourself Cough",
+        "steps": [
+            "Use a cough stimulator.",
+            "Apply pressure to the chest.",
+            "Use fentanyl to induce a cough."
+        ],
+        "cluster_label": 730
+    },
+    {
+        "title": "How to Naturally Ease the Symptoms of Lung Sarcoidosis",
+        "steps": [
+            "See your doctor if you have the symptoms of sarcoidosis in your lungs.",
+            "Undergo diagnostic tests to get a diagnosis.",
+            "Ask your doctor about treatments for your underlying condition.",
+            "Talk to your doctor about a transplant if your lungs are damaged."
+        ],
+        "cluster_label": 730
+    }
+]

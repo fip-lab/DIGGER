@@ -1,0 +1,55 @@
+(define (problem put_Laptop1_to_Desk2_46)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    CellPhone1 - object
+    Box1 - receptacle
+    Book2 - object
+    Pen2 - object
+    Laptop1 - object
+    Pillow1 - object
+    Book3 - object
+    Pencil1 - object
+    CreditCard2 - object
+    CellPhone2 - object
+    CD1 - object
+    Book1 - object
+    Pen1 - object
+    CreditCard1 - object
+    Bed1 - receptacle
+    Drawer1 - receptacle
+    Box2 - receptacle
+    Box3 - receptacle
+    Desk3 - receptacle
+    Sofa3 - receptacle
+    Sofa2 - receptacle
+    Bed2 - receptacle
+    Desk1 - receptacle
+    Box4 - receptacle
+    Sofa1 - receptacle
+    GarbageCan1 - receptacle
+    Desk2 - receptacle
+    Pencil2 - object
+  )
+
+  (:init
+    (atLocation agent1 Bed2)
+    (objectAtLocation Laptop1 Bed1)
+    (objectAtLocation CellPhone1 Desk2)
+    (objectAtLocation CellPhone2 Bed2)
+    (objectAtLocation Pen1 GarbageCan1)
+    (objectAtLocation Pillow1 Sofa1)
+    (objectAtLocation CreditCard2 Sofa3)
+    (objectAtLocation Pencil1 Desk2)
+    (objectAtLocation Pencil2 Desk1)
+    (objectAtLocation Book3 Box1)
+    (objectAtLocation Book1 Box2)
+    (objectAtLocation Book2 Box1)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation Laptop1 Desk2)
+    )
+  )
+)

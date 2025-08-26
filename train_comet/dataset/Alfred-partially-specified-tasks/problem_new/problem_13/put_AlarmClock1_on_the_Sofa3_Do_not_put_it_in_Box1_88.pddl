@@ -1,0 +1,66 @@
+(define (problem put_AlarmClock1_on_the_Sofa3_Do_not_put_it_in_Box1_88)
+  (:domain put_task)
+  (:objects
+    agent1 - agent
+    Pen1 - object
+    AlarmClock1 - object
+    Laptop1 - object
+    Watch1 - object
+    Book2 - object
+    KeyChain1 - object
+    CreditCard2 - object
+    CD1 - object
+    Book1 - object
+    CreditCard1 - object
+    Laptop2 - object
+    Pillow1 - object
+    Desk1 - receptacle
+    Bed1 - receptacle
+    Box2 - receptacle
+    Sofa3 - receptacle
+    Box3 - receptacle
+    Drawer2 - receptacle
+    Drawer3 - receptacle
+    Box1 - receptacle
+    Sofa1 - receptacle
+    Drawer1 - receptacle
+    Desk2 - receptacle
+    Sofa2 - receptacle
+    Pencil1 - object
+    Pencil2 - object
+    Pencil3 - object
+    Pencil4 - object
+    Book3 - object
+    Box4 - receptacle
+  )
+
+  (:init
+    (atLocation agent1 Drawer1)
+    (objectAtLocation AlarmClock1 Desk1)
+    (objectAtLocation CD1 Drawer1)
+    (objectAtLocation CreditCard1 Sofa1)
+    (objectAtLocation Pillow1 Bed1)
+    (objectAtLocation Laptop1 Desk2)
+    (objectAtLocation Book1 Sofa2)
+    (objectAtLocation KeyChain1 Drawer2)
+    (objectAtLocation Pen1 Drawer3)
+    (objectAtLocation Laptop2 Sofa3)
+    (objectAtLocation Pencil2 Box1)
+    (objectAtLocation Pencil3 Sofa1)
+    (objectAtLocation Pencil4 Box1)
+    (objectAtLocation Book2 Sofa3)
+    (objectAtLocation Book3 Sofa3)
+    (objectAtLocation Pencil1 Box3)
+    (objectAtLocation Box1 Sofa3)
+    (objectAtLocation Box2 Sofa3)
+    (objectAtLocation Box3 Sofa1)
+    (objectAtLocation Box4 Sofa2)
+  )
+
+  (:goal
+    (and
+      (objectAtLocation AlarmClock1 Sofa3)
+      (not (objectAtLocation AlarmClock1 Box1))
+    )
+  )
+)

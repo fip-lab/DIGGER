@@ -1,0 +1,724 @@
+[
+    {
+        "step": [
+            "Decide what kind of nature journal you'd like to make.",
+            "Make or buy a suitable journal of you choice.",
+            "Get any other equipment you'll need.",
+            "Dedicate time to journaling.",
+            "Observe the world around you.",
+            "Do your writing on location.",
+            "Begin each entry with the location, date, and time.",
+            "Record your observations with drawings or paintings.",
+            "Write about what you observe.",
+            "Learn more about what you've seen.",
+            "Revisit your past entries."
+        ],
+        "task": "How to Make a Nature Journal",
+        "goal_state": "make_nature_journal npc forest",
+        "steps": "```pddl\n1. (choose(npc journal context))\n2. (set(npc journal context nature))\n3. (write_journal(npc journal entry forest))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 1041,
+                "task": "How to Make a Gardening Journal",
+                "step": [
+                    "Decide what purpose you want your gardening journal to fulfill.",
+                    "Choose a journal format that suits your purpose.",
+                    "Divide your garden journal into sections.",
+                    "Leave space in your new sections for non-text items such as seed samples, diagrams and pictures of your garden.",
+                    "Cover your gardening journal with a book cover or plastic lamination so that it can safely get wet and dirty.",
+                    "Begin entering information, such as description of a day's work or planting dates into the appropriate sections of the garden journal.",
+                    "Let your gardening journal evolve as the growing season goes on, adding new sections, including a second volume, inserting additional paper."
+                ],
+                "steps_predictions": [
+                    "choose_purpose npc garden_center",
+                    "choose_journal_form npc",
+                    "divide_into_sections garden_journal journal",
+                    "create_area npc",
+                    "cover_journal npc garden_center book_cover",
+                    "start_fire npc garden_center",
+                    "evolve_journal npc garden journal"
+                ],
+                "goal_state": " ((selected_journal_center))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden journal": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "journal": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden": {
+                        "moss": [
+                            {
+                                "attribute": "cost",
+                                "before": "for sale at nursery",
+                                "after": "purchased from nursery"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter"
+                            },
+                            {
+                                "attribute": "position",
+                                "before": "outside of bowl",
+                                "after": "inside of bowl"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "mess",
+                                "after": "pruned"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[flowers]]",
+                            "You are likely to find [[a lizard]] in [[your garden]]",
+                            "[[a garden]] has [[flowers]]"
+                        ]
+                    },
+                    "garden center": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "book cover": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1041,
+                "task": "How to Journal in Public",
+                "step": [
+                    "Bring your journal with you.",
+                    "Find somewhere comfortable to write.",
+                    "Just write!.",
+                    "Be calm about onlookers or questions.",
+                    "Avoid making a big deal out of it."
+                ],
+                "steps_predictions": [
+                    "bring-journal-with-you journal",
+                    "find_comfortable_location npc",
+                    "create_sliplargerbinder npc",
+                    "be_calm_wailmer npc",
+                    "make_not_big_deal npc basement"
+                ],
+                "goal_state": " ((not (in npc basement)))",
+                "similar_entity": {
+                    "journal": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Purchase a suitable journal that you can carry about with you.",
+            "Start carrying the journal about with you.",
+            "Keep a record of the day's weather.",
+            "Take photos.",
+            "Attach small paper or cloth mementos.",
+            "Do WordPress of the things you enjoyed the most during summer months.",
+            "Have friends contribute to your summer journal.",
+            "Add a summer bucket list at the front of the journal.",
+            "Use the journal as a writing prompt.",
+            "Keep a note of your travels.",
+            "Draw in your summer journal.",
+            "Finish the summer journal at the end of summer."
+        ],
+        "task": "How to Keep a Summer Journal",
+        "goal_state": "gotolocation agent Summer Journal",
+        "steps": "```pddl\n1. (choose(agent journal summer))\n2. (write_journal(agent journal entry summer))\n3. (secure_item(agent journal section))\n4. (reflect(agent journal summer))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 1041,
+                "task": "How to Journal in Public",
+                "step": [
+                    "Bring your journal with you.",
+                    "Find somewhere comfortable to write.",
+                    "Just write!.",
+                    "Be calm about onlookers or questions.",
+                    "Avoid making a big deal out of it."
+                ],
+                "steps_predictions": [
+                    "bring-journal-with-you journal",
+                    "find_comfortable_location npc",
+                    "create_sliplargerbinder npc",
+                    "be_calm_wailmer npc",
+                    "make_not_big_deal npc basement"
+                ],
+                "goal_state": " ((not (in npc basement)))",
+                "similar_entity": {
+                    "journal": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1041,
+                "task": "How to Make a Gardening Journal",
+                "step": [
+                    "Decide what purpose you want your gardening journal to fulfill.",
+                    "Choose a journal format that suits your purpose.",
+                    "Divide your garden journal into sections.",
+                    "Leave space in your new sections for non-text items such as seed samples, diagrams and pictures of your garden.",
+                    "Cover your gardening journal with a book cover or plastic lamination so that it can safely get wet and dirty.",
+                    "Begin entering information, such as description of a day's work or planting dates into the appropriate sections of the garden journal.",
+                    "Let your gardening journal evolve as the growing season goes on, adding new sections, including a second volume, inserting additional paper."
+                ],
+                "steps_predictions": [
+                    "choose_purpose npc garden_center",
+                    "choose_journal_form npc",
+                    "divide_into_sections garden_journal journal",
+                    "create_area npc",
+                    "cover_journal npc garden_center book_cover",
+                    "start_fire npc garden_center",
+                    "evolve_journal npc garden journal"
+                ],
+                "goal_state": " ((selected_journal_center))",
+                "similar_entity": {
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden journal": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "journal": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "garden": {
+                        "moss": [
+                            {
+                                "attribute": "cost",
+                                "before": "for sale at nursery",
+                                "after": "purchased from nursery"
+                            },
+                            {
+                                "attribute": "wetness",
+                                "before": "dry",
+                                "after": "wetter"
+                            },
+                            {
+                                "attribute": "position",
+                                "before": "outside of bowl",
+                                "after": "inside of bowl"
+                            },
+                            {
+                                "attribute": "size",
+                                "before": "larger",
+                                "after": "smaller"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "mess",
+                                "after": "pruned"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[garden]] is related to [[flowers]]",
+                            "You are likely to find [[a lizard]] in [[your garden]]",
+                            "[[a garden]] has [[flowers]]"
+                        ]
+                    },
+                    "garden center": {
+                        "area": [
+                            {
+                                "attribute": "knowledge",
+                                "before": "unselected",
+                                "after": "selected"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "book cover": {
+                        "container": [
+                            {
+                                "attribute": "location",
+                                "before": "in cabinet",
+                                "after": "on countertop"
+                            },
+                            {
+                                "attribute": "volume",
+                                "before": "empty",
+                                "after": "fuller"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "on countertop",
+                                "after": "on table"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "step": [
+            "Look for entries about traveling to a foreign country.",
+            "Describe a certain place using notes from your journal.",
+            "Include sensory details from your journal."
+        ],
+        "task": "How to Write a Novel Using Your Journal",
+        "goal_state": "create_novel npc",
+        "steps": "```pddl\n1. (write_journal(actor journal passage context))\n2. (reflect(person journal topic))\n3. (write_journal(actor journal novel context))\n4. (review(p r c))\n5. (update(npc resource new_content additional_item))\n```",
+        "similar_task": [
+            {
+                "cluster_label": 1041,
+                "task": "How to Write a Reading Log",
+                "step": [
+                    "Purchase an attractive journal.",
+                    "Keep the log near your favorite reading spot.",
+                    "Read actively and widely.",
+                    "Read slowly and carefully.",
+                    "Write down the bibliographic information for everything you read.",
+                    "Include the dates of when you read.",
+                    "Write down page numbers of your favorite passages.",
+                    "Take notes while you read.",
+                    "Reflect on the book once it's complete.",
+                    "Reread your personal reading journal."
+                ],
+                "steps_predictions": [
+                    "purchase_journal npc",
+                    "keep_log npc log",
+                    "read_wailmer npc",
+                    "read slowly npc",
+                    "write_bibliographic_info npc book",
+                    "listen_to_broadcast npc",
+                    "write_page_number npc",
+                    "take_note npc book",
+                    "reflect_on_book npc book",
+                    "reread_journal npc book"
+                ],
+                "goal_state": " ((not (in npc book)))",
+                "similar_entity": {
+                    "log": {
+                        "tails": [
+                            {
+                                "attribute": "orientation",
+                                "before": "bare",
+                                "after": "adorned | beaded"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "open",
+                                "after": "closed"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "book": {
+                        "character": [
+                            {
+                                "attribute": "step",
+                                "before": "unselected",
+                                "after": "selected"
+                            },
+                            {
+                                "attribute": "choice",
+                                "before": "nameless",
+                                "after": "named"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "[[page]] is related to [[book]]",
+                            "[[a book]] is used for [[learning]]",
+                            "[[a book]] is part of [[library]]",
+                            "[[A book]] is created by [[a writer]].",
+                            "You are likely to find [[a book]] in [[a classroom]]",
+                            "[[the bible]] is [[a book]]",
+                            "[[A book]] is made of [[Paper]].",
+                            "[[a book]] contains [[knowledge]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "slowly": {
+                        "ability to ride a bike": [
+                            {
+                                "attribute": "skill",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "speed",
+                                "before": "constant",
+                                "after": "slowing"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            },
+            {
+                "cluster_label": 1041,
+                "task": "How to Journal in Public",
+                "step": [
+                    "Bring your journal with you.",
+                    "Find somewhere comfortable to write.",
+                    "Just write!.",
+                    "Be calm about onlookers or questions.",
+                    "Avoid making a big deal out of it."
+                ],
+                "steps_predictions": [
+                    "bring-journal-with-you journal",
+                    "find_comfortable_location npc",
+                    "create_sliplargerbinder npc",
+                    "be_calm_wailmer npc",
+                    "make_not_big_deal npc basement"
+                ],
+                "goal_state": " ((not (in npc basement)))",
+                "similar_entity": {
+                    "journal": {
+                        "paper": [
+                            {
+                                "attribute": "texture",
+                                "before": "flat | straight",
+                                "after": "crumpled"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "whole",
+                                "after": "pierced with hanger"
+                            },
+                            {
+                                "attribute": "orientation",
+                                "before": "bunched on hanger",
+                                "after": "spread out on hanger"
+                            },
+                            {
+                                "attribute": "shape",
+                                "before": "straighter",
+                                "after": "scruched"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    },
+                    "basement": {
+                        "drop cloth": [
+                            {
+                                "attribute": "availability",
+                                "before": "absent",
+                                "after": "present"
+                            },
+                            {
+                                "attribute": "coverage",
+                                "before": "uncovered",
+                                "after": "covered"
+                            },
+                            {
+                                "attribute": "location",
+                                "before": "present",
+                                "after": "removed"
+                            }
+                        ],
+                        "concept_knowledge": [
+                            "*Something you find in [[the basement]] is [[the furnace]]",
+                            "[[cellar]] is related to [[basement]]",
+                            "[[a house]] has [[a basement]]",
+                            "[[A basement]] is [[a room under a house]]",
+                            "[[Something you find downstairs]] is the [[basement]]"
+                        ]
+                    },
+                    "npc": {
+                        "helmet": [
+                            {
+                                "attribute": "decoration",
+                                "before": "bare | plain",
+                                "after": "camouflaged"
+                            },
+                            {
+                                "attribute": "visibility",
+                                "before": "visible",
+                                "after": "invisible"
+                            }
+                        ],
+                        "concept_knowledge": []
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,5 @@
+(travel npc home river)
+(search_location npc river)
+(pluck_river_reeds npc papyrus_plant river)
+(travel npc river home)
+; cost = 4 (unit cost)

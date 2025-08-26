@@ -1,0 +1,5 @@
+[
+    "(:action acquire ; Acquire an item from one location to another\n  :parameters (?p - person ?item - object ?from - location ?to - location)\n  :precondition (and (at ?p ?from) (at ?item ?from))\n  :effect (and (at ?item ?to) (not (at ?item ?from))",
+    "(:action finish ; Complete a task with precision and update the status\n  :parameters (?agent - person ?task - task ?item - object ?tool - tool ?location - location)\n  :precondition (and (at ?agent ?location) (at ?item ?location) (inventory ?agent ?tool) (precondition_met ?item))\n  :effect (and (completed ?task) (not (incomplete ?item))",
+    "(:action apply ; Apply a layer of material to an object and update its state\n  :parameters (?p - player ?loc - location ?obj - object ?tool - tool ?material - material)\n  :precondition (and (at ?p ?loc) (at ?obj ?loc) (inventory ?p ?tool) (inventory ?p ?material)\n                     (or (and (dry ?obj))\n                         (and (wet ?obj) (tacky ?obj))))\n  :effect (and (or (and (dry ?obj) (wet ?obj) (tacky ?obj) (not (dry ?obj))"
+]

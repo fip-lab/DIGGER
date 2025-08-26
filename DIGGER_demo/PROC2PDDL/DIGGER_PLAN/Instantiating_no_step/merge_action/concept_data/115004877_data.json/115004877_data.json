@@ -1,0 +1,22 @@
+{
+    "replace": [
+        "(:action replace-linen\n    :parameters (?l - linen ?p - papyrus)\n    :precondition (and (wet ?l) (covering ?p ?l))\n    :effect (and (dry ?l) (not (wet ?l)))\n)\n```\n\n### Explanation:\n\n1. **Polish the Papyrus:**\n   - **Parameters:** The papyrus to be polished, a shell, and a piece of ivory.\n   - **Preconditions:** The papyrus is not yet polished, and a smooth shell or ivory is available.\n   - **Effects:** The papyrus becomes polished.\n\n2. **Flatten the Sheet:**\n   - **Parameters:** The sheet to be flattened and the stone slab used for flattening.\n   - **Preconditions:** The sheet is not flat, and the stone slab is available.\n   - **Effects:** The sheet becomes flat, and the stone slab is no longer available (since it is being used).\n\n3. **Replace Wet Linen Sheets:**\n   - **Parameters:** The linen sheets and the papyrus they are covering.\n   - **Preconditions:** The linen is wet and covering the papyrus.\n   - **Effects:** The linen becomes dry, and the wet condition is removed.\n\nThis PDDL representation captures the essence of the task \"get-papyrus\" by defining actions that reflect the necessary steps and their logical conditions and effects.",
+        "(:action obtain-papyrus\n    :parameters (?p - papyrus)\n    :precondition (not (obtained ?p))\n    :effect (obtained ?p)\n)\n```\n\n- **Parameters**: ?p - papyrus\n- **Preconditions**: The papyrus plant has not been obtained.\n- **Effects**: The papyrus plant is now obtained.\n\n2. **Peel Outer Layer**\n\n```lisp\n"
+    ],
+    "lay": [
+        "(:action lay-strips-on-surface\n    :parameters (?s - strips ?surface - flat_surface)\n    :precondition (and\n                    (not (on ?s ?surface))\n                    (not (overlapping ?s))\n                  )\n    :effect (on ?s ?surface)\n  )\n\n;; Action 4: Dip the strips into the glue and water mixture\n"
+    ],
+    "dip": [
+        "(:action dip-strips-into-mixture\n    :parameters (?s - strips ?mixture - glue_and_water)\n    :precondition (and\n                    (not (dipped ?s ?mixture))\n                    (flat ?s)\n                  )\n    :effect (dipped ?s ?mixture)\n  )\n```\n\nThese actions should capture the intent and logic of each step based on the descriptions and entity states provided."
+    ],
+    "peel": [
+        "(:action peel-outer-layer\n    :parameters (?p - papyrus)\n    :precondition (and (obtained ?p) (outer-layer-intact ?p))\n    :effect (and (not (outer-layer-intact ?p)) (inner-part-exposed ?p))\n)\n```\n\n- **Parameters**: ?p - papyrus\n- **Preconditions**: The papyrus plant is obtained and the outer layer is intact.\n- **Effects**: The outer layer of the papyrus is removed, exposing the inner part.\n\n3. **Cut Stalks**\n\n```lisp\n",
+        "(:action polish-papyrus\n    :parameters (?p - papyrus ?s - shell ?i - ivory)\n    :precondition (and (not (polished ?p)) (smooth ?s) (smooth ?i))\n    :effect (polished ?p)\n)\n\n;; Action 2: Flatten the sheet\n"
+    ],
+    "cut": [
+        "(:action cut-stalks\n    :parameters (?p - papyrus)\n    :precondition (and (inner-part-exposed ?p) (stalks-intact ?p))\n    :effect (and (not (stalks-intact ?p)) (stalks-cut ?p))\n)\n```\n\n- **Parameters**: ?p - papyrus\n- **Preconditions**: The inner part of the papyrus is exposed and the stalks are intact.\n- **Effects**: The stalks are cut diagonally and the tips removed.\n\nThese actions capture the essential steps for preparing papyrus strips from the plant, following the descriptions provided. If there are any additional steps or modifications needed, please let me know!"
+    ],
+    "flatten": [
+        "(:action flatten-sheet\n    :parameters (?s - sheet ?slab - stone-slab)\n    :precondition (and (not (flat ?s)) (available ?slab))\n    :effect (and (flat ?s) (not (available ?slab)))\n)\n\n;; Action 3: Replace wet linen sheets\n"
+    ]
+}

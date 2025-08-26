@@ -1,0 +1,22 @@
+{
+    "move": [
+        "(:action move_away\n    :parameters (?npc - npc ?from - location ?to - location)\n    :precondition (not (moved_away ?npc ?from ?to))\n    :effect (moved_away ?npc ?from ?to)\n  )\n\n  ;; Action 10: Check weapons\n  "
+    ],
+    "check": [
+        "(:action listen_to_astronomers\n    :parameters (?npc - npc ?location - location)\n    :precondition (not (listening_to_astronomers ?npc ?location))\n    :effect (listening_to_astronomers ?npc ?location)\n  )\n\n  ;; Action 8: Check bunker\n  ",
+        "(:action check_supplies\n    :parameters (?food - food ?npc - npc)\n    :precondition (not (supplies_checked ?npc ?food))\n    :effect (supplies_checked ?npc ?food)\n  )\n\n  ;; Action 2: Wait it out until you hear unified reports\n  ",
+        "(:action check_bunker\n    :parameters (?bunker - bunker ?npc - npc)\n    :precondition (not (checked_bunker ?npc ?bunker))\n    :effect (checked_bunker ?npc ?bunker)\n  )\n\n  ;; Action 9: Move away\n  ",
+        "(:action check_weapons\n    :parameters (?pistol - weapon ?ammunition - ammunition ?npc - npc)\n    :precondition (not (checked_weapons ?npc ?pistol ?ammunition))\n    :effect (checked_weapons ?npc ?pistol ?ammunition)\n  )\n)\n```\n\n### Explanation:\n- **check_supplies**: Checks if the supplies are available.\n- **wait_for_unified_reports**: Waits until unified reports are heard.\n- **outfit_bunker_with_energy_source**: Outfits the bunker with an energy source.\n- **stay_in_isolation**: Ensures the NPC stays in isolation within the bunker.\n- **buy_weapons**: Buys weapons for the NPC.\n- **buy_supplies**: Buys supplies from the market for the NPC.\n- **listen_to_astronomers**: NPC listens to astronomers' predictions.\n- **check_bunker**: NPC checks the bunker.\n- **move_away**: NPC moves away from the current location to a safer one.\n- **check_weapons**: NPC checks the weapons and ammunition."
+    ],
+    "wait": [
+        "(:action wait_for_unified_reports\n    :parameters (?npc - npc)\n    :precondition (not (unified_reports_heard ?npc))\n    :effect (unified_reports_heard ?npc)\n  )\n\n  ;; Action 3: Outfit bunker with energy source\n  ",
+        "(:action stay_in_isolation\n    :parameters (?bunker - bunker ?npc - npc)\n    :precondition (and (in_bunker ?npc ?bunker) (not (isolated ?npc ?bunker)))\n    :effect (isolated ?npc ?bunker)\n  )\n\n  ;; Action 5: Buy weapons\n  "
+    ],
+    "buy": [
+        "(:action buy_weapons\n    :parameters (?npc - npc ?weapon - weapon)\n    :precondition (not (has_weapon ?npc ?weapon))\n    :effect (has_weapon ?npc ?weapon)\n  )\n\n  ;; Action 6: Buy supplies\n  ",
+        "(:action buy_supplies\n    :parameters (?food - food ?npc - npc ?market - market)\n    :precondition (and (in_market ?npc ?market) (not (has_food ?npc ?food)))\n    :effect (has_food ?npc ?food)\n  )\n\n  ;; Action 7: Listen to astronomers\n  "
+    ],
+    "outfit": [
+        "(:action outfit_bunker_with_energy_source\n    :parameters (?bunker - bunker ?npc - npc ?heat - heat)\n    :precondition (and (in_bunker ?npc ?bunker) (not (energy_source ?bunker ?heat)))\n    :effect (energy_source ?bunker ?heat)\n  )\n\n  ;; Action 4: Stay in isolation\n  "
+    ]
+}

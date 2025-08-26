@@ -1,0 +1,5 @@
+(make_initial_mixture mixture)
+(add_ingredients_to_slow_cooker mixture)
+(heat_mixture mixture)
+(serve_cocoa mixture)
+; cost = 4 (unit cost)

@@ -1,0 +1,231 @@
+[
+    {
+        "cluster_label": 1208,
+        "task": "How to Freeze Mashed Potatoes",
+        "step": [
+            "Use a good mashing variety of potato.",
+            "Use full fat milk and butter when mashing.",
+            "Peel the potatoes.",
+            "Boil to preference.",
+            "Mash.",
+            "Allow the mashed potatoes to cool thoroughly."
+        ],
+        "steps_predictions": [
+            "use_potatoes potato1 mixing_bowl1 pot1",
+            "use_full_of_milk milk_and_butter mixing_bowl",
+            "peel potato peeler",
+            "boil_wicks wick1",
+            "mix_mixture mixing_bowl canola_oil table",
+            "cool_potatoes potato1 oven1"
+        ],
+        "goal_state": " ((thawed potato1 mixing_bowl1))",
+        "similar_entity": {
+            "table": "table",
+            "potato": "potato",
+            "oven": "oven",
+            "milk and butter": "milk",
+            "peeler": "peeler",
+            "canola oil": "oil can",
+            "mixing bowl": "mixing bowl",
+            "wick": "wick",
+            "pot": "pot"
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Use Goat Cheese",
+        "step": [
+            "Default to fresh goat cheese for spreading.",
+            "Opt for aged goat cheeses for firmness.",
+            "Use soft-ripened goat cheeses for specific purposes.",
+            "Store goat cheese according to the style."
+        ],
+        "steps_predictions": [
+            "default_to_garnish goat cheese mixing_bowl",
+            "pick_gamel goat_cheese cheese",
+            "use_as_appropriate_purpose goat_cheese",
+            "store-gamel goat cheese mixing_bowl"
+        ],
+        "goal_state": " ((in_container goat_cheese mixing_bowl) (served_garnish goat cheese))",
+        "similar_entity": {
+            "cheese": "cheese",
+            "goat": "cheese",
+            "goat cheese": "cheese",
+            "mixing bowl": "mixing bowl"
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Make Dinosaur Eggs",
+        "step": [
+            "Use coffee grounds instead of dirt.",
+            "Make fizzing dough.",
+            "Shape the eggs using plastic eggs.",
+            "Make frozen dinosaur eggs."
+        ],
+        "steps_predictions": [
+            "use_coffee_ground ground_floor pot",
+            "make_fizzing_dough mixing_bowl",
+            "shape_to_shape npc",
+            "free_dinosaur_egg npc"
+        ],
+        "goal_state": " ((in_container npc) (served_dinosaur_eggs))",
+        "similar_entity": {
+            "ground floor": "floor",
+            "npc": "hat",
+            "pot": "pot",
+            "mixing bowl": "mixing bowl"
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Use Egg Yolks",
+        "step": [
+            "Put your yolks in an airtight container to save for later.",
+            "Freeze your egg yolks with a simple syrup so they don’t crystalize.",
+            "Cure your egg yolks in salt."
+        ],
+        "steps_predictions": [
+            "save-yolks container",
+            "free_eraser npc",
+            "cure-eraser egg yolks salt"
+        ],
+        "goal_state": " ((in_container egg_yolks container) (served_ingredients container))",
+        "similar_entity": {
+            "salt": "salt",
+            "yolks": "yogurt",
+            "npc": "hat",
+            "egg": "milk",
+            "container": "container"
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Cook Frozen Fish",
+        "step": [
+            "Learn basic fish-cooking techniques.",
+            "Get ideas for your specific type of fish.",
+            "Try new marinades and seasoning.",
+            "Learn unique recipes."
+        ],
+        "steps_predictions": [
+            "learn_fish_cooking techniques",
+            "get_ideas npc spear fish",
+            "treat_new_member_with_salt marshmallow_cream",
+            "learn_new_recipe npc kitchen"
+        ],
+        "goal_state": " ((learned npc sushi) (in sherbet plate))",
+        "similar_entity": {
+            "npc": "hat",
+            "spear": "weapon",
+            "kitchen": "kitchen counter",
+            "marshmallow cream": "marshmallow cream",
+            "fish": "boat",
+            "techniques": "instructions"
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Freeze Meatballs",
+        "step": [
+            "Cook the meatballs.",
+            "Allow the meatballs to cool.",
+            "Decide where you'd like to freeze the meatballs.",
+            "Know how to reheat the cooked meatballs."
+        ],
+        "steps_predictions": [
+            "cook_meatballs velveeta",
+            "cool_meatballs velveeta",
+            "free_meatballs velveeta",
+            "cook npc"
+        ],
+        "goal_state": " ((thawed meatballs velveeta))",
+        "similar_entity": {
+            "velveeta": "velveeta",
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Clean Chicken Livers",
+        "step": [
+            "Collect chicken livers from whole chickens.",
+            "Buy the livers from a butcher.",
+            "Clean and freeze the chicken livers.",
+            "Make chopped liver."
+        ],
+        "steps_predictions": [
+            "collect_livers npc",
+            "buy_livers livers",
+            "free_chicken livers freezer",
+            "chopped_lemon npc"
+        ],
+        "goal_state": " ((cleaned_chicken livers) (flattened chicken Livers))",
+        "similar_entity": {
+            "freezer": "freezer",
+            "npc": "hat",
+            "livers": "chocolates"
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Store Egg Yolks",
+        "step": [
+            "Put the egg yolks into a small container.",
+            "Cover the yolks with either water or a small amount of melted butter.",
+            "Put a lid on the container and place the container in the refrigerator."
+        ],
+        "steps_predictions": [
+            "put_ingredients_in_container egg_yolks container",
+            "cover_yolks velveeta",
+            "put_lid_on_container container1 refrigerator1 container2"
+        ],
+        "goal_state": " ((in_container egg_yolks container))",
+        "similar_entity": {
+            "velveeta": "velveeta",
+            "refrigerator": "refrigerator",
+            "container": "container",
+            "egg yolks": "yogurt"
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Use up Sour Milk for Hen Food",
+        "step": [
+            "Give chicks and hens sour milk to help them grow and make eggs.",
+            "Mix sour milk into the hen feed as an occasional protein supplement.",
+            "Make sour milk cheese to treat your hens."
+        ],
+        "steps_predictions": [
+            "gather_chicks npc",
+            "mix_sour_milk npc",
+            "make_sliplargerbead npc"
+        ],
+        "goal_state": " ((in_container sour_milk))",
+        "similar_entity": {
+            "npc": "hat"
+        }
+    },
+    {
+        "cluster_label": 1208,
+        "task": "How to Use an Egg Boiler",
+        "step": [
+            "Determine the best way to clean your egg boiler between uses.",
+            "Clean the heating unit with a damp cloth and diluted vinegar mixture.",
+            "Use distilled water to extend the life of your egg boiler."
+        ],
+        "steps_predictions": [
+            "clean_eraser user1 eraser1",
+            "clean_oven npc",
+            "drink_water person water"
+        ],
+        "goal_state": " ((clean_eraser user1 eraser1) (cleaned_machine linoleum_floor))",
+        "similar_entity": {
+            "person": "person",
+            "npc": "hat",
+            "user": "player",
+            "eraser": "eraser",
+            "water": "water"
+        }
+    }
+]
